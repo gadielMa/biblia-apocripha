@@ -1005,7 +1005,8 @@
     "Idioma original": "Siríaco (trad. al Ge'ez)",
     "Resumen": "“Testamento del Señor”; revelaciones post-resurrección de Jesús sobre liturgia, jerarquía y vida cristiana (s. IV-V).",
     "_archivo": "pdfs/testamentum-domini.pdf",
-    "_tipo": "pdf"
+    "_tipo": "pdf",
+    "_propio": true
   },
   {
     "Grupo": "Evangelios Gnósticos / Nag Hammadi",
@@ -1473,7 +1474,8 @@
     "Idioma original": "Arameo",
     "Resumen": "El bebé nació con una apariencia divina y radiante. Su esposa, Bathenosh, tiene que jurarle. El manuscrito se esfuerza mucho por delimitar las tierras prometidas a Abraham y cómo se repartió el mundo entre los hijos de Noé, funcionando casi como un \"atlas bíblico\" de la época",
     "_archivo": "pdfs/rollo-de-lamec.pdf",
-    "_tipo": "pdf"
+    "_tipo": "pdf",
+    "_propio": true
   },
   {
     "Grupo": "Textos de Qumrán / Rollos del Mar Muerto",
@@ -1485,7 +1487,8 @@
     "Idioma original": "Arameo",
     "Resumen": "Lamec se preocupa al ver que su hijo recién nacido puede ser un Vigilantes o Nephilim y le consulta a Enoc.",
     "_archivo": "pdfs/rollo-de-lamec.pdf",
-    "_tipo": "pdf"
+    "_tipo": "pdf",
+    "_propio": true
   },
   {
     "Grupo": "Textos de Qumrán / Rollos del Mar Muerto",
