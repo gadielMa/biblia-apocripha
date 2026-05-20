@@ -1,0 +1,20 @@
+index.html
+  s_50fb0e829e6810::t_068892c8fd4598 234-239,256-269
+  s_50fb0e829e6810::t_1930371b3d7b21 452-455,466-474,479,481-487,490
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "229c90e584ac4a843cc9f780c28b86036d176f6c",
+  "prompts": {},
+  "sessions": {
+    "s_50fb0e829e6810": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e462e-28ce-7622-a386-3b9a706efc74",
+        "model": "gpt-5.5"
+      },
+      "human_author": "gadielMa <gadiel.malagrino@mercadolibre.com>"
+    }
+  }
+}
