@@ -1,0 +1,145 @@
+CLINE
+# ╔══════════════════════════════════════════════════════════╗
+# ║  .clineignore — plantilla multi-lenguaje                   ║
+# ║  Copiar a la RAÍZ de cada proyecto. Funciona como          ║
+# ║  .gitignore: estos archivos NO se mandan al contexto.      ║
+# ╚══════════════════════════════════════════════════════════╝
+
+pdfs/
+
+
+# ───────────────── Dependencias (lo más importante) ─────────────────
+# JavaScript / Node / React / React Native
+node_modules/
+.pnp/
+.pnp.js
+bower_components/
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.tox/
+
+# Go
+vendor/
+bin/
+
+# Swift / iOS / macOS
+Pods/
+.build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Android
+.gradle/
+captures/
+.cxx/
+
+# ───────────────── Builds / output compilado ─────────────────
+# Web / JS
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.expo/
+.expo-shared/
+coverage/
+*.min.js
+*.min.css
+*.bundle.js
+
+# Android
+app/build/
+*/build/
+*.apk
+*.aab
+*.dex
+
+# iOS / Swift
+*.ipa
+*.app/
+*.dSYM/
+
+# Go
+*.exe
+*.test
+*.out
+
+# ───────────────── Lockfiles (enormes, sin valor para el modelo) ─────────────────
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Pipfile.lock
+go.sum
+Podfile.lock
+Gemfile.lock
+
+# ───────────────── Secretos / config sensible (NUNCA al contexto) ─────────────────
+.env
+.env.*
+*.pem
+*.key
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+secrets/
+credentials*
+*.local
+
+# ───────────────── Binarios y archivos pesados ─────────────────
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.sqlite
+*.sqlite3
+*.db
+
+# ───────────────── Logs y temporales ─────────────────
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# ───────────────── IDE / sistema ─────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ───────────────── Git ─────────────────
+.git/
