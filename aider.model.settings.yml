@@ -1,5 +1,0 @@
-# Ajustes del modelo local. Lo clave: num_ctx 8192 para no reventar la RAM
-# de tu M2 12GB. Si subís a 16384 vas a ir más lento / swapear.
-- name: ollama_chat/qwen2.5-coder:7b
-  extra_params:
-    num_ctx: 8192
