@@ -186,8 +186,15 @@
       position: sticky;
       top: 0;
       cursor: pointer;
-      white-space: nowrap;
       z-index: 1;
+    }
+    thead th[data-col="Tipo de entrada"] {
+      white-space: normal;
+      min-width: 120px;
+      line-height: 1.15;
+    }
+    thead th[data-col="Tipo de entrada"] .sort-arrow {
+      white-space: nowrap;
     }
     thead th:hover { color: var(--text); }
     thead th .sort-arrow { margin-left: 4px; opacity: .4; }
