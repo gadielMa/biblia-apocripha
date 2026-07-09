@@ -172,6 +172,7 @@
       width: 100%;
       border-collapse: collapse;
       font-size: .88rem;
+      table-layout: fixed;
     }
     thead th {
       background: #efe0cb;
@@ -190,7 +191,7 @@
     }
     thead th[data-col="Tipo de entrada"] {
       white-space: normal;
-      min-width: 120px;
+      min-width: 140px;
       line-height: 1.15;
     }
     thead th[data-col="Tipo de entrada"] .sort-arrow {
@@ -210,6 +211,13 @@
       padding: .72rem 1rem;
       vertical-align: middle;
     }
+    th:nth-child(1), td:nth-child(1) { width: 12%; }
+    th:nth-child(2), td:nth-child(2) { width: 28%; }
+    th:nth-child(3), td:nth-child(3) { width: 11%; }
+    th:nth-child(4), td:nth-child(4) { width: 18%; }
+    th:nth-child(5), td:nth-child(5) { width: 10%; }
+    th:nth-child(6), td:nth-child(6) { width: 8%; }
+    th:nth-child(7), td:nth-child(7) { width: 13%; }
 
     /* Group color dots */
     .grupo-dot {
@@ -295,6 +303,10 @@
     .fecha { color: var(--text2); font-size: .82rem; white-space: nowrap; }
     .idioma { color: var(--text2); font-size: .82rem; }
     .resumen { color: var(--text2); font-size: .82rem; max-width: 340px; line-height: 1.45; }
+    td:nth-child(2), td:nth-child(4) {
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
     .entry-type {
       display: inline-block;
       padding: .2rem .48rem;
