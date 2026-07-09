@@ -214,10 +214,10 @@
     th:nth-child(1), td:nth-child(1) { width: 12%; }
     th:nth-child(2), td:nth-child(2) { width: 28%; }
     th:nth-child(3), td:nth-child(3) { width: 11%; }
-    th:nth-child(4), td:nth-child(4) { width: 18%; }
-    th:nth-child(5), td:nth-child(5) { width: 10%; }
+    th:nth-child(4), td:nth-child(4) { width: 22%; }
+    th:nth-child(5), td:nth-child(5) { width: 9%; }
     th:nth-child(6), td:nth-child(6) { width: 8%; }
-    th:nth-child(7), td:nth-child(7) { width: 13%; }
+    th:nth-child(7), td:nth-child(7) { width: 10%; }
 
     /* Group color dots */
     .grupo-dot {
@@ -229,7 +229,19 @@
       flex-shrink: 0;
       box-shadow: 0 0 0 3px rgba(255, 250, 242, .95), 0 0 0 4px rgba(141, 95, 53, .12);
     }
-    .grupo-cell { display: flex; align-items: center; white-space: nowrap; }
+    .grupo-cell {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      white-space: normal;
+      min-width: 0;
+    }
+    .grupo-cell span:last-child {
+      min-width: 0;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      line-height: 1.35;
+    }
 
     /* Canones tags */
     .tag {
@@ -316,7 +328,11 @@
       color: var(--text2);
       font-size: .74rem;
       line-height: 1.2;
-      white-space: nowrap;
+      white-space: normal;
+      max-width: 100%;
+      text-align: center;
+      overflow-wrap: anywhere;
+      word-break: normal;
     }
     .entry-type.collection { background: #e8f0ff; border-color: #b9c9e7; color: #4d6180; }
     .entry-type.section { background: #fff0cf; border-color: #dfbd76; color: #7a5a1f; }
@@ -375,8 +391,16 @@
       .controls {
         margin: .75rem .75rem 0;
         padding: .8rem;
+        align-items: stretch;
       }
       .search-box, .show-select { width: 100%; }
+      .filters {
+        gap: .35rem;
+      }
+      .filter-btn {
+        font-size: .72rem;
+        padding: .38rem .7rem;
+      }
       .table-wrap {
         margin: 0 .75rem 1.5rem;
       }
@@ -384,7 +408,36 @@
         margin: .9rem .75rem .6rem;
         padding: 0;
       }
-      td, th { padding: .5rem .6rem; }
+      td, th { padding: .5rem .55rem; font-size: .8rem; }
+      th:nth-child(4), td:nth-child(4),
+      th:nth-child(5), td:nth-child(5),
+      th:nth-child(6), td:nth-child(6),
+      th:nth-child(7), td:nth-child(7) {
+        display: none;
+      }
+      th:nth-child(1), td:nth-child(1) { width: 28%; }
+      th:nth-child(2), td:nth-child(2) { width: 42%; }
+      th:nth-child(3), td:nth-child(3) { width: 14%; }
+      .resumen {
+        max-width: none;
+        line-height: 1.35;
+      }
+      .grupo-cell {
+        align-items: center;
+      }
+      .grupo-cell span:last-child {
+        font-size: .74rem;
+        line-height: 1.2;
+      }
+      .archivo-pdf,
+      .archivo-bible {
+        min-height: 30px;
+        padding: .3rem .55rem;
+        font-size: .74rem;
+      }
+      .fecha, .idioma {
+        font-size: .76rem;
+      }
       .stat { flex: 1 1 130px; }
     }
   </style>
@@ -434,7 +487,7 @@
 </div>
 
 <footer>
-  <p>Colección generada con <strong>Claude Code</strong> ·
+  <p>Colección generada por <strong>INDULIRU S.A.</strong> ·
   PDFs descargables ·
   Libros canónicos via <a href="https://www.biblegateway.com" target="_blank">BibleGateway RVR1960</a> ·
   <a href="https://github.com/gadielMa/biblia-apocripha" target="_blank">GitHub</a></p>
