@@ -60,6 +60,8 @@ Los Salmos de Salomón están incorporados en sus 18 salmos, con traducción
 automática inicial al español.
 El Testamento de Abraham está incorporado en 20 capítulos, con traducción
 automática inicial al español.
+La Vida de Adán y Eva (Apocalipsis de Moisés) está incorporada en 43 capítulos
+y 158 versículos, con traducción automática inicial al español.
 
 ## Grupos
 

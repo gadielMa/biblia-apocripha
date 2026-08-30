@@ -43,6 +43,7 @@ translated["title"] = {
     "apocalypse-paul": "Apocalipsis de Pablo",
     "psalms-solomon": "Salmos de Salomón",
     "testament-abraham": "Testamento de Abraham",
+    "apocalypse-moses": "Vida de Adán y Eva (Apocalipsis de Moisés)",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (

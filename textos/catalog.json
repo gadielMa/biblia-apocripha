@@ -202,5 +202,17 @@
     "title": "Testamento de Abraham (traducción automática)",
     "language": "es",
     "file": "testament-abraham.es.json"
+  },
+  {
+    "id": "apocalypse-moses",
+    "title": "Life of Adam and Eve (Apocalypse of Moses)",
+    "language": "en",
+    "file": "apocalypse-moses.en.json"
+  },
+  {
+    "id": "apocalypse-moses-es",
+    "title": "Vida de Adán y Eva (traducción automática)",
+    "language": "es",
+    "file": "apocalypse-moses.es.json"
   }
 ]
