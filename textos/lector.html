@@ -83,7 +83,10 @@
         }).join('');
         const work = await (await fetch(entry.file)).json();
         window.document.getElementById('title').textContent = work.title;
-        window.document.getElementById('meta').textContent = work.language === 'es' ? 'Español' : 'English';
+        const languageLabel = work.language === 'es' ? 'Español' : 'English';
+        const sourceTranslator = work.sourceTranslator || (work.language === 'es' ? '' : work.translator);
+        window.document.getElementById('meta').textContent = [languageLabel, sourceTranslator, work.publication]
+          .filter(Boolean).join(' · ');
         window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
         reader.innerHTML = `<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';

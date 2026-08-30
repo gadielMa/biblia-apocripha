@@ -56,6 +56,7 @@ translated["title"] = {
     "gospel-truth": "Evangelio de la Verdad",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
+translated["sourceTranslator"] = source.get("translator", "")
 translated["translationNote"] = (
     "Traducción automática inicial desde la edición inglesa indicada. "
     "No es una traducción crítica ni sustituye el texto fuente."
