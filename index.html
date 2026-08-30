@@ -572,6 +572,11 @@ if (alianza2) {
   alianza2._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
   alianza2._tipo = 'web';
 }
+const octateuco = DATA.find(row => row['Biblia Etíope'] === 'Octateuco de Clemente');
+if (octateuco) {
+  octateuco._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
+  octateuco._tipo = 'web';
+}
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
 function normalizeData() {
