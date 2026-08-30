@@ -283,20 +283,6 @@
       transition: all .2s;
     }
     .archivo-pdf:hover { background: #744a28; border-color: #744a28; }
-    .own-pdf-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 6px;
-      background: #fff5e6;
-      border: 1px solid #d0ad82;
-      color: #68492d;
-      line-height: 1;
-      cursor: help;
-    }
-    .own-pdf-badge svg { width: 16px; height: 16px; }
     .archivo-bible {
       display: inline-flex;
       align-items: center;
@@ -820,20 +806,6 @@ function getBookName(row) {
   return uniqueBookNames(row).join(' / ') || '—';
 }
 
-function isOwnPdf(row) {
-  return row._propio === true;
-}
-
-function renderOwnPdfBadge(row) {
-  if (!isOwnPdf(row)) return '';
-  return `<span class="own-pdf-badge" title="PDF creado por Induliru" aria-label="PDF creado por Induliru">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-      <path d="M14 2v6h6M12 12l.8 1.8 1.9.2-1.5 1.3.5 1.9-1.7-1-1.7 1 .5-1.9-1.5-1.3 1.9-.2z"/>
-    </svg>
-  </span>`;
-}
-
 function renderArchivo(row) {
   const tipo = row._tipo;
   const arch = row._archivo;
@@ -845,7 +817,6 @@ function renderArchivo(row) {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
         PDF
       </a>
-      ${renderOwnPdfBadge(row)}
     </span>`;
   }
   if (tipo === 'bible') {
