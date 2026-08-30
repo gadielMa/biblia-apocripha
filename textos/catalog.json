@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1-enoc",
+    "title": "1 Enoch",
+    "language": "en",
+    "file": "1-enoc.en.json"
+  },
+  {
+    "id": "1-enoc-es",
+    "title": "1 Enoc (traducción automática al español)",
+    "language": "es",
+    "file": "1-enoc.es.json"
+  },
+  {
+    "id": "2-enoc",
+    "title": "2 Enoch (Book of the Secrets of Enoch)",
+    "language": "en",
+    "file": "2-enoc.en.json"
+  },
+  {
+    "id": "2-enoc-es",
+    "title": "2 Enoc (traducción automática al español)",
+    "language": "es",
+    "file": "2-enoc.es.json"
+  },
+  {
+    "id": "3-enoc",
+    "title": "3 Enoch (Hebrew Book of Enoch / Sefer Hekhalot)",
+    "language": "en",
+    "file": "3-enoc.en.json"
+  },
+  {
+    "id": "3-enoc-es",
+    "title": "3 Enoc (traducción automática al español)",
+    "language": "es",
+    "file": "3-enoc.es.json"
+  },
+  {
+    "id": "proto-james",
+    "title": "Protoevangelium of James",
+    "language": "en",
+    "file": "proto-james.en.json"
+  },
+  {
+    "id": "proto-james-es",
+    "title": "Protoevangelio de Santiago (traducción automática)",
+    "language": "es",
+    "file": "proto-james.es.json"
+  },
+  {
+    "id": "nicodemus",
+    "title": "Gospel of Nicodemus / Acts of Pilate",
+    "language": "en",
+    "file": "nicodemus.en.json"
+  },
+  {
+    "id": "nicodemus-es",
+    "title": "Evangelio de Nicodemo (traducción automática)",
+    "language": "es",
+    "file": "nicodemus.es.json"
+  },
+  {
+    "id": "infancy-thomas",
+    "title": "Infancy Gospel of Thomas (M. R. James, 1924)",
+    "language": "en",
+    "file": "infancy-thomas.en.json"
+  },
+  {
+    "id": "infancy-thomas-es",
+    "title": "Evangelio de la Infancia de Tomás (traducción automática)",
+    "language": "es",
+    "file": "infancy-thomas.es.json"
+  },
+  {
+    "id": "didache",
+    "title": "Didache (The Teaching of the Twelve Apostles)",
+    "language": "en",
+    "file": "didache.en.json"
+  },
+  {
+    "id": "didache-es",
+    "title": "Didaché (traducción automática)",
+    "language": "es",
+    "file": "didache.es.json"
+  },
+  {
+    "id": "ascension-isaiah",
+    "title": "Ascension of Isaiah (R. H. Charles, 1900)",
+    "language": "en",
+    "file": "ascension-isaiah.en.json"
+  },
+  {
+    "id": "ascension-isaiah-es",
+    "title": "Ascensión de Isaías (traducción automática)",
+    "language": "es",
+    "file": "ascension-isaiah.es.json"
+  },
+  {
+    "id": "hermas",
+    "title": "Shepherd of Hermas (Lightfoot translation)",
+    "language": "en",
+    "file": "hermas.en.json"
+  },
+  {
+    "id": "hermas-es",
+    "title": "Pastor de Hermas (traducción automática)",
+    "language": "es",
+    "file": "hermas.es.json"
+  },
+  {
+    "id": "barnabas",
+    "title": "Epistle of Barnabas (Hoole translation)",
+    "language": "en",
+    "file": "barnabas.en.json"
+  },
+  {
+    "id": "barnabas-es",
+    "title": "Epístola de Bernabé (traducción automática)",
+    "language": "es",
+    "file": "barnabas.es.json"
+  },
+  {
+    "id": "apocalypse-peter",
+    "title": "Apocalypse of Peter (M. R. James, 1924)",
+    "language": "en",
+    "file": "apocalypse-peter.en.json"
+  },
+  {
+    "id": "apocalypse-peter-es",
+    "title": "Apocalipsis de Pedro (traducción automática)",
+    "language": "es",
+    "file": "apocalypse-peter.es.json"
+  }
+]

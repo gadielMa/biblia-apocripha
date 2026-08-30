@@ -1,58 +1,71 @@
 # Biblioteca Bíblica Universal
 
-Biblioteca web de estudio que reúne cánones bíblicos, deuterocanónicos, apócrifos, pseudoepígrafos, literatura cristiana primitiva y manuscritos de Qumrán.
+Tabla interactiva de cánones bíblicos y textos apócrifos con acceso directo a PDFs locales.
 
-## Estado actual
+La aplicación funciona como PWA instalable y adapta el catálogo a tarjetas en pantalla móvil. Los enlaces externos a BibleGateway se retiraron porque no representan de forma fiable todos los cánones del catálogo.
 
-- Sitio estático HTML/CSS/JavaScript con búsqueda, filtros, ordenamiento y vista compacta.
-- 46 PDFs locales y enlaces externos a BibleGateway, Wikisource, Google Books y fuentes institucionales.
-- Etiquetas diferenciadas para **PDF**, **BibleGateway** y **Leer texto**.
-- Colecciones católica, etíope, ortodoxa oriental, gnóstica, cristiana primitiva, pseudoepigráfica y de Qumrán.
+## Contenido
 
-## Política de fuentes
+- **59 archivos PDF** en el repositorio (56 obras enlazadas en el catálogo)
+- **141 textos visibles** organizados por grupo y canon
 
-Los PDFs locales solo se incorporan cuando su licencia o condición de dominio público es clara. El resto se enlaza externamente con atribución. Cada registro debe distinguir entre PDF, texto HTML, BibleGateway y recurso pendiente.
+El estado de completitud de cada archivo y las fuentes abiertas candidatas se
+mantienen en [AUDITORIA_PDFS.md](AUDITORIA_PDFS.md).
 
-## Roadmap
+Las ausencias relevantes y el alcance respecto del Tanaj y el Corán se documentan
+en [LACUNAS_CATALOGO.md](LACUNAS_CATALOGO.md).
 
-### Fase 1 — Lector interno
+## Textos buscables
 
-- Vista de lectura dentro de `/biblia/`, con navegación por capítulos o secciones.
-- Tamaño de letra, ancho de lectura, modo oscuro y modo sepia.
-- Búsqueda dentro del texto y URLs compartibles por obra.
-- PDFs descargables y textos HTML identificados con su fuente.
+El inicio también busca dentro de los textos que ya fueron importados a HTML/JSON.
+Por ahora incluye **1 Enoc** (108 capítulos), **2 Enoc** (68 capítulos) y **3 Enoc**
+(48 capítulos con sub-secciones tradicionales) en inglés,
+con lector propio y referencias por
+capítulo:versículo. Cuando una fuente no trae versificación, el proyecto asigna
+divisiones editoriales; se distinguen con letras, por ejemplo `3a`.
+Cada obra futura debe conservar la estructura de `textos/1-enoc.en.json` y figurar en
+`textos/catalog.json`; luego ejecutar `node scripts/build-search-index.mjs` para que
+la búsqueda global la incorpore.
 
-### Fase 2 — Datos y descubrimiento
+2 Enoc también tiene una edición española automática completa, señalada como
+pendiente de revisión; los capítulos 1–22 cuentan además con un borrador de
+revisión humana en `textos/borradores/`.
 
-- Normalizar título, alias, tradición, fecha, idioma, fuente, licencia y estado.
-- Corregir enlaces que presentan obras no canónicas como RVR1960.
-- Filtros combinables, fichas individuales, bibliografía y referencias cruzadas.
-- Comparador de cánones y cronología visual.
+El Protoevangelio de Santiago ya está incorporado en inglés (25 capítulos) y en
+una edición española automática inicial.
+También están incorporados el Evangelio de Nicodemo (20 capítulos) y el Evangelio
+de la Infancia de Tomás (tres formas históricas: griega A, griega B y latina; 45
+secciones), ambos con edición inglesa histórica y traducción automática inicial
+al español.
+La Didaché (Doctrina de los Doce Apóstoles) también está disponible en sus 16
+capítulos, en inglés y con traducción automática inicial al español.
+La Ascensión de Isaías está incorporada en 11 capítulos (296 versículos), a
+partir de la edición inglesa de R. H. Charles (1900), con traducción automática
+inicial al español.
+El Pastor de Hermas está incorporado en sus tres partes (Visiones, Mandatos y
+Semejanzas), con 100 secciones y traducción automática inicial al español.
+La Epístola de Bernabé está incorporada en 21 capítulos y 199 versículos, con
+traducción automática inicial al español.
+El Apocalipsis de Pedro está incorporado en sus fragmentos griego, etíope y
+testimoniales de la edición de 1924, organizados en 5 secciones y 124 pasajes.
 
-### Fase 3 — Experiencia de aplicación
+## Grupos
 
-- PWA instalable, lectura offline de recursos permitidos, favoritos e historial.
-- Importación/exportación de favoritos en JSON.
-- Mejoras responsive, accesibilidad WCAG básica y estadísticas por tradición, idioma y siglo.
+| Grupo | Descripción |
+|---|---|
+| Torá / Antiguo Testamento | Los 5 libros de Moisés |
+| Antiguo Testamento | Resto del Tanaj (34 libros) |
+| Deuterocanónicos | 7 libros católicos no en el Tanaj |
+| Nuevo Testamento | 27 libros del NT |
+| Antiguo Testamento Etíope | 5 libros exclusivos del canon etíope |
+| Nuevo Testamento Etíope | 6 libros litúrgicos etíopes |
+| Evangelios Gnósticos / Nag Hammadi | Textos de Nag Hammadi |
+| Apócrifos del NT | Hechos, Apocalipsis y Epístolas apócrifas |
+| Literatura Cristiana Primitiva | Didaché, 1 Clemente, Bernabé, Hermas |
+| Pseudoepígrafos del Segundo Templo | Enoc, Testamentos, Odas, etc. |
+| Textos de Qumrán / Rollos del Mar Muerto | DSS: 1QS, 1QM, 1QpHab, 1QH, CD |
+| Canon Ortodoxo Oriental | 3 y 4 Macabeos, Oración de Manasés, Salmo 151 |
 
-### Fase 4 — Contenido diferencial de Induliru
+## Uso
 
-- Introducciones editoriales, notas históricas, glosario, mapas y cronologías.
-- Bibliografía verificable y página metodológica sobre canon, deuterocanon, apócrifos y pseudoepígrafos.
-
-## Estructura
-
-- `index.html`: interfaz, estilos, catálogo y comportamiento.
-- `data.json` / `data.csv`: fuentes estructuradas del catálogo.
-- `pdfs/`: archivos PDF alojados localmente.
-
-## Desarrollo y calidad
-
-Abrir `index.html` directamente o servir el directorio con cualquier servidor estático. Publicar haciendo push a `main`; GitHub Pages sirve el repositorio.
-
-Antes de publicar, verificar enlaces, búsqueda, filtros, vista móvil y ejecutar `git diff --check`. Ningún texto no canónico debe presentarse como parte de RVR1960.
-
-## Enlaces
-
-- [Sitio publicado](https://gadielMa.github.io/biblia-apocripha)
-- [Repositorio](https://github.com/gadielMa/biblia-apocripha)
+Abrir `index.html` en un navegador o visitar [GitHub Pages](https://gadielMa.github.io/biblia-apocripha).

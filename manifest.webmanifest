@@ -1,0 +1,13 @@
+{
+  "name": "Biblioteca Bíblica Universal",
+  "short_name": "Biblia Universal",
+  "description": "Cánones, apócrifos, pseudoepígrafos y rollos del Mar Muerto.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5eadb",
+  "theme_color": "#8d5f35",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

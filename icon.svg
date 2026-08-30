@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Biblioteca Bíblica Universal</title>
+  <rect width="512" height="512" rx="104" fill="#f5eadb"/>
+  <rect x="38" y="38" width="436" height="436" rx="78" fill="#fffaf2" stroke="#c69b6d" stroke-width="18"/>
+  <path d="M256 142c-50-38-112-32-150-10v190c42-23 103-28 150 13 47-41 108-36 150-13V132c-38-22-100-28-150 10Z" fill="#8d5f35"/>
+  <path d="M256 142v193M128 165c35-14 76-11 106 8M384 165c-35-14-76-11-106 8M128 206c35-14 76-11 106 8M384 206c-35-14-76-11-106 8M128 247c35-14 76-11 106 8M384 247c-35-14-76-11-106 8" fill="none" stroke="#f5eadb" stroke-linecap="round" stroke-width="14"/>
+  <path d="m256 84 12 31 32 12-32 12-12 32-12-32-32-12 32-12Z" fill="#c69b6d"/>
+</svg>
