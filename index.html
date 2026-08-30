@@ -642,6 +642,9 @@ function normalizeData() {
     if (getBookName(row).includes('Salmos de Salomón')) {
       row._texto = 'psalms-solomon-es';
     }
+    if (getBookName(row).includes('Testamento de Abraham')) {
+      row._texto = 'testament-abraham-es';
+    }
   });
 
   DATA.forEach(row => {

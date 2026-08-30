@@ -58,6 +58,8 @@ El Apocalipsis de Pablo está incorporado desde la edición de 1924, con 89
 pasajes organizados en su visión principal y traducción automática inicial.
 Los Salmos de Salomón están incorporados en sus 18 salmos, con traducción
 automática inicial al español.
+El Testamento de Abraham está incorporado en 20 capítulos, con traducción
+automática inicial al español.
 
 ## Grupos
 

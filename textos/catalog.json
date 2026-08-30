@@ -190,5 +190,17 @@
     "title": "Salmos de Salomón (traducción automática)",
     "language": "es",
     "file": "psalms-solomon.es.json"
+  },
+  {
+    "id": "testament-abraham",
+    "title": "Testament of Abraham (Roberts, 1885)",
+    "language": "en",
+    "file": "testament-abraham.en.json"
+  },
+  {
+    "id": "testament-abraham-es",
+    "title": "Testamento de Abraham (traducción automática)",
+    "language": "es",
+    "file": "testament-abraham.es.json"
   }
 ]
