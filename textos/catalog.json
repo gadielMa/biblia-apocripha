@@ -166,5 +166,17 @@
     "title": "Hechos de Pablo y Tecla (traducción automática)",
     "language": "es",
     "file": "paul-thecla.es.json"
+  },
+  {
+    "id": "apocalypse-paul",
+    "title": "Apocalypse of Paul (M. R. James, 1924)",
+    "language": "en",
+    "file": "apocalypse-paul.en.json"
+  },
+  {
+    "id": "apocalypse-paul-es",
+    "title": "Apocalipsis de Pablo (traducción automática)",
+    "language": "es",
+    "file": "apocalypse-paul.es.json"
   }
 ]

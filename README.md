@@ -54,6 +54,8 @@ El Evangelio de Pedro está incorporado como el Fragmento I de la edición de
 automática inicial al español.
 Los Hechos de Pablo y Tecla están incorporados en 11 capítulos y 170 versículos,
 con traducción automática inicial al español.
+El Apocalipsis de Pablo está incorporado desde la edición de 1924, con 89
+pasajes organizados en su visión principal y traducción automática inicial.
 
 ## Grupos
 
