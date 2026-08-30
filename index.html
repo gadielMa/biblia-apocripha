@@ -648,6 +648,9 @@ function normalizeData() {
     if (getBookName(row).includes('Libro de Adán y Eva')) {
       row._texto = 'apocalypse-moses-es';
     }
+    if (getBookName(row).includes('4 Esdras')) {
+      row._texto = '4-esdras-es';
+    }
   });
 
   DATA.forEach(row => {

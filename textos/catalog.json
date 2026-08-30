@@ -214,5 +214,17 @@
     "title": "Vida de Adán y Eva (traducción automática)",
     "language": "es",
     "file": "apocalypse-moses.es.json"
+  },
+  {
+    "id": "4-esdras",
+    "title": "4 Ezra (2 Esdras in the King James Apocrypha)",
+    "language": "en",
+    "file": "4-esdras.en.json"
+  },
+  {
+    "id": "4-esdras-es",
+    "title": "4 Esdras (traducción automática)",
+    "language": "es",
+    "file": "4-esdras.es.json"
   }
 ]

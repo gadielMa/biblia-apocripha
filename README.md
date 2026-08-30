@@ -62,6 +62,9 @@ El Testamento de Abraham está incorporado en 20 capítulos, con traducción
 automática inicial al español.
 La Vida de Adán y Eva (Apocalipsis de Moisés) está incorporada en 43 capítulos
 y 158 versículos, con traducción automática inicial al español.
+4 Esdras está incorporado desde la edición inglesa pública que lo transmite como
+2 Esdras (16 capítulos y 874 versículos); su ficha diferencia el núcleo de 4
+Esdras de las adiciones latinas tradicionales y ofrece traducción automática inicial.
 
 ## Grupos
 
