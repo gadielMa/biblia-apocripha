@@ -11,14 +11,14 @@
     * { box-sizing:border-box; }
     body { margin:0; background:#f5eadb; color:var(--ink); font:17px/1.65 Georgia, serif; }
     header, main { max-width:900px; margin:auto; }
-    header { max-width:none; padding:1.5rem 1rem 1.8rem; text-align:center; background:linear-gradient(135deg, rgba(255,250,242,.98), rgba(239,221,197,.96)); border-bottom:1px solid var(--border); box-shadow:0 10px 30px rgba(93,61,33,.08); }
-    .header-inner { max-width:1120px; margin:auto; }
-    .reader-tools { display:flex; align-items:center; justify-content:space-between; gap:1rem; max-width:1120px; margin:auto; }
+    header { max-width:none; padding:1rem 1rem 1.25rem; text-align:center; background:linear-gradient(135deg, rgba(255,250,242,.98), rgba(239,221,197,.96)); border-bottom:1px solid var(--border); box-shadow:0 10px 30px rgba(93,61,33,.08); }
+    .header-inner { width:min(1120px, 100%); margin:auto; }
+    .reader-tools { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:auto; }
     header a { color:var(--accent); text-decoration:none; font-size:.9rem; }
     .reader-search { width:min(280px, 45vw); min-height:36px; padding:.45rem .7rem; border:1px solid var(--border); border-radius:6px; background:#fffdf8; color:var(--ink); font:inherit; font-size:.82rem; }
     .reader-search-status { color:var(--soft); font-size:.78rem; min-height:1.2em; margin:.5rem 0 0; }
-    h1 { font-size:2.2rem; color:var(--accent); font-weight:normal; margin:.7rem 0 .15rem; text-wrap:balance; }
-    .meta { color:var(--soft); font-size:.95rem; font-style:italic; }
+    h1 { font-size:clamp(1.7rem, 4vw, 2.2rem); color:var(--accent); font-weight:normal; margin:.8rem 0 .15rem; text-wrap:balance; }
+    .meta { color:var(--soft); font-size:.9rem; font-style:italic; }
     .language-switch { display:flex; justify-content:center; gap:.5rem; margin-top:.9rem; }
     .language-switch a { padding:.35rem .7rem; border:1px solid var(--border); border-radius:5px; color:var(--accent); text-decoration:none; font-size:.8rem; }
     .language-switch a.active { background:var(--accent); color:#fffaf2; }
@@ -30,7 +30,19 @@
     .verse-number { color:var(--accent); font-size:.78em; font-weight:bold; margin-right:.35rem; }
     .loading, .error { color:var(--soft); }
     .passage:target { background:#fff0cf; outline:2px solid #dfbd76; border-radius:4px; padding:.25rem .4rem; margin-left:-.4rem; }
-    @media (max-width:600px) { .reader-tools { align-items:stretch; flex-direction:column; } .reader-search { width:100%; } h1 { font-size:1.5rem; } header { padding:1.6rem 1rem 1.25rem; } }
+    @media (max-width:600px) {
+      header { padding:.85rem .75rem 1rem; }
+      .reader-tools { gap:.55rem; }
+      header a { font-size:.78rem; white-space:nowrap; }
+      .reader-search { width:min(210px,52vw); min-height:34px; font-size:.78rem; }
+      h1 { font-size:1.55rem; margin:.65rem 0 .1rem; }
+      .meta { font-size:.8rem; }
+      .language-switch { margin-top:.65rem; }
+    }
+    @media (max-width:380px) {
+      .reader-tools { align-items:stretch; flex-direction:column; }
+      .reader-search { width:100%; }
+    }
   </style>
 </head>
 <body>
@@ -71,10 +83,8 @@
         }).join('');
         const work = await (await fetch(entry.file)).json();
         window.document.getElementById('title').textContent = work.title;
-        window.document.getElementById('meta').textContent = `${work.language.toUpperCase()} · ${work.translator} · ${work.publication}`;
+        window.document.getElementById('meta').textContent = work.language === 'es' ? 'Español' : 'English';
         window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
-        const languageNotice = work.language === 'es' ? 'Texto en español.' : 'Text in English.';
-        const translationNote = work.translationNote ? ` ${escapeHtml(work.translationNote)}` : '';
         reader.innerHTML = `<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));
