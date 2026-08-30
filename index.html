@@ -34,6 +34,12 @@
       min-height: 100vh;
       line-height: 1.5;
     }
+    body.theme-dark { --bg: #1d1b19; --bg2: #2b2723; --bg3: #252321; --surface: #292624; --surface2: #342e29; --text: #eee4d7; --text2: #c5b5a3; --muted: #a08f7b; --border: #594b3d; --accent: #d9a875; background: #1d1b19; color: var(--text); }
+    body.theme-dark header, body.theme-dark .controls, body.theme-dark .table-wrap, body.theme-dark footer { background: var(--surface); }
+    body.theme-dark table, body.theme-dark td, body.theme-dark th { border-color: var(--border); }
+    body.theme-dark .reader-dialog { background: var(--surface); }
+    body.theme-dark .reader-frame { background: #fff; }
+    body.theme-sepia { filter: sepia(.22); }
 
     /* ── HEADER ── */
     header {
@@ -159,6 +165,9 @@
       border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(198, 155, 109, .22);
     }
+    .theme-controls { display: inline-flex; gap: .35rem; margin-left: auto; }
+    .theme-btn { border: 1px solid var(--border); border-radius: 5px; padding: .4rem .6rem; background: var(--surface); color: var(--text2); cursor: pointer; font: inherit; font-size: .75rem; }
+    .theme-btn.active { background: var(--accent); color: #fff8ec; border-color: var(--accent); }
 
     /* ── TABLE ── */
     .table-wrap {
@@ -543,6 +552,11 @@
     <option value="all">Todas las columnas</option>
     <option value="compact">Vista compacta</option>
   </select>
+  <div class="theme-controls" aria-label="Tema visual">
+    <button class="theme-btn active" type="button" data-theme="light">Claro</button>
+    <button class="theme-btn" type="button" data-theme="sepia">Sepia</button>
+    <button class="theme-btn" type="button" data-theme="dark">Oscuro</button>
+  </div>
 </div>
 
 <div class="row-count" id="row-count"></div>
@@ -930,6 +944,16 @@ let activeGroup = '';
 let searchTerm = '';
 let sortCol = '';
 let sortAsc = true;
+const themeKey = 'biblia-apocripha-theme';
+const themeButtons = document.querySelectorAll('[data-theme]');
+function applyTheme(theme) {
+  document.body.classList.toggle('theme-dark', theme === 'dark');
+  document.body.classList.toggle('theme-sepia', theme === 'sepia');
+  themeButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+  localStorage.setItem(themeKey, theme);
+}
+applyTheme(localStorage.getItem(themeKey) || 'light');
+themeButtons.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
 
 function esc(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
