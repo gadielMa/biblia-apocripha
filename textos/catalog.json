@@ -295,4 +295,5 @@
   {"id":"gospel-judas-es","title":"Evangelio de Judas (traducción automática)","language":"es","file":"gospel-judas.es.json"},
   {"id":"gospel-truth","title":"Gospel of Truth (Mattison)","language":"en","file":"gospel-truth.en.json"},
   {"id":"gospel-truth-es","title":"Evangelio de la Verdad (traducción automática)","language":"es","file":"gospel-truth.es.json"}
+  ,{"id":"gospel-egyptians-es","title":"Evangelio copto de los Egipcios (edición local)","language":"es","file":"gospel-egyptians.es.json"}
 ]

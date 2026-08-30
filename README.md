@@ -71,6 +71,8 @@ La misma edición pública incorpora 4 Macabeos (18 capítulos, 483 versículos)
 Oración de Manasés (15 versículos), ambas con traducción automática inicial al español.
 Salmo 151 está disponible por separado en sus 7 versículos, tal como lo transmite
 la Septuaginta de Brenton, también con una traducción automática inicial.
+El Evangelio copto de los Egipcios está disponible en sus siete capítulos a partir
+de la edición española PDF incluida en el proyecto, con divisiones editoriales para búsqueda.
 
 ## Grupos
 
