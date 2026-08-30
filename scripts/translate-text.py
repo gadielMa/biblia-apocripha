@@ -49,6 +49,7 @@ translated["title"] = {
     "4-maccabees": "4 Macabeos",
     "prayer-manasseh": "Oración de Manasés",
     "psalm-151": "Salmo 151",
+    "gospel-mary": "Evangelio de María Magdalena",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (

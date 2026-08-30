@@ -274,5 +274,17 @@
     "title": "Salmo 151 (traducción automática)",
     "language": "es",
     "file": "psalm-151.es.json"
+  },
+  {
+    "id": "gospel-mary",
+    "title": "Gospel of Mary (Mattison)",
+    "language": "en",
+    "file": "gospel-mary.en.json"
+  },
+  {
+    "id": "gospel-mary-es",
+    "title": "Evangelio de María Magdalena (traducción automática)",
+    "language": "es",
+    "file": "gospel-mary.es.json"
   }
 ]

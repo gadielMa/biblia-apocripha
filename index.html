@@ -663,6 +663,9 @@ function normalizeData() {
     if (getBookName(row) === 'Salmo 151') {
       row._texto = 'psalm-151-es';
     }
+    if (getBookName(row).includes('Evangelio de María')) {
+      row._texto = 'gospel-mary-es';
+    }
   });
 
   DATA.forEach(row => {
