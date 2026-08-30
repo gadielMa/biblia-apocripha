@@ -311,20 +311,10 @@
       transition: all .2s;
     }
     .archivo-pdf:hover { background: #744a28; border-color: #744a28; }
-    .own-pdf-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 6px;
-      background: #fff5e6;
-      border: 1px solid #d0ad82;
-      color: #68492d;
-      font-size: .95rem;
-      line-height: 1;
-      cursor: help;
-    }
+    .archivo-web { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: .35rem .75rem; background: #f7ead6; border: 1px solid #d3b38a; border-radius: 6px; color: #7a5636; text-decoration: none; font-size: .8rem; white-space: nowrap; }
+    .archivo-web:hover { background: #ecd7b8; border-color: var(--accent2); }
+    .archivo-download { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: .35rem .6rem; border: 1px solid #d0ad82; border-radius: 6px; background: #fff5e6; color: #68492d; text-decoration: none; font-size: .72rem; white-space: nowrap; }
+    .archivo-download:hover { background: #f0dfc8; }
     .archivo-bible {
       display: inline-flex;
       align-items: center;
@@ -915,31 +905,21 @@ function getBookName(row) {
   return uniqueBookNames(row).join(' / ') || '—';
 }
 
-function isOwnPdf(row) {
-  return row._propio === true;
-}
-
-function renderOwnPdfBadge(row) {
-  if (!isOwnPdf(row)) return '';
-  return '<span class="own-pdf-badge" title="PDF 100% mío" aria-label="PDF 100% mío">✍️</span>';
-}
-
 function renderArchivo(row) {
   const tipo = row._tipo;
   const arch = row._archivo;
   const readerLink = row._texto
-    ? `<a class="archivo-pdf" href="textos/lector.html?obra=${encodeURIComponent(row._texto)}">Leer</a>`
+    ? `<a class="archivo-web" href="textos/lector.html?obra=${encodeURIComponent(row._texto)}">Leer texto</a>`
     : '';
   if (!arch) return readerLink || '<span class="archivo-none">—</span>';
   const safeArch = escAttr(arch);
   if (tipo === 'pdf') {
     return `<span class="archivo-wrap">
-      <a class="archivo-pdf" href="${safeArch}" target="_blank" rel="noopener noreferrer">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-        PDF
-      </a>
       ${readerLink}
-      ${renderOwnPdfBadge(row)}
+      <a class="archivo-download" href="${safeArch}" target="_blank" rel="noopener noreferrer" download>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        Descargar PDF
+      </a>
     </span>`;
   }
   return '<span class="archivo-none">—</span>';
