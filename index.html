@@ -567,6 +567,11 @@ if (alianza1) {
   alianza1._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
   alianza1._tipo = 'web';
 }
+const alianza2 = DATA.find(row => row['Biblia Etíope'] === 'Libro de la Alianza II');
+if (alianza2) {
+  alianza2._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
+  alianza2._tipo = 'web';
+}
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
 function normalizeData() {
