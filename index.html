@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biblioteca Bíblica Universal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #f5eadb;
@@ -352,15 +355,39 @@
 
     /* Footer */
     footer {
-      text-align: center;
-      padding: 2rem 1rem 2.5rem;
-      color: var(--text2);
-      font-size: .8rem;
-      border-top: 1px solid var(--border);
-      background: rgba(234, 216, 191, .5);
+      border-top: 1px solid #dce5e3;
+      background: #fff;
+      color: #526575;
+      font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    .footer-flex {
+      width: min(1120px, 90%);
+      margin: auto;
+      padding: 32px 0;
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      text-align: center;
+      font-size: .9rem;
+    }
+    .footer-copy { margin: 0; }
+    .footer-copy b { color: #071b39; font-weight: 700; }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .footer-links a:hover { text-decoration: underline; }
+    .footer-links img { width: 20px; height: 20px; object-fit: contain; }
 
     .canon-boundary td {
       background: #ead4be;
@@ -439,6 +466,8 @@
         font-size: .76rem;
       }
       .stat { flex: 1 1 130px; }
+      .footer-flex { width: calc(100% - 32px); padding: 26px 0; font-size: .82rem; }
+      .footer-links { gap: 10px 14px; }
     }
   </style>
 </head>
@@ -487,10 +516,14 @@
 </div>
 
 <footer>
-  <p>Colección generada por <strong>INDULIRU S.A.</strong> ·
-  PDFs descargables ·
-  Libros canónicos via <a href="https://www.biblegateway.com" target="_blank">BibleGateway RVR1960</a> ·
-  <a href="https://github.com/gadielMa/biblia-apocripha" target="_blank">GitHub</a></p>
+  <div class="footer-flex">
+    <p class="footer-copy">© 2026 <b>Induliru</b>. Innovación | Calidad | Desarrollo. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="https://wa.me/5491172657749" target="_blank" rel="noopener"><img src="../WSP_LOGO.png" alt="WhatsApp">+54 9 11 7265-7749</a>
+      <a href="https://www.instagram.com/induliru.tech/" target="_blank" rel="noopener"><img src="../INSTA_LOGO.png" alt="Instagram">@induliru.tech</a>
+      <a href="mailto:hola@induliru.com"><img src="../GMAIL_LOGO.png" alt="Email">hola@induliru.com</a>
+    </div>
+  </div>
 </footer>
 
 <script>
