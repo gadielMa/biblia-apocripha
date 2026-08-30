@@ -651,6 +651,9 @@ function normalizeData() {
     if (getBookName(row).includes('4 Esdras')) {
       row._texto = '4-esdras-es';
     }
+    if (getBookName(row) === '3 Macabeos') {
+      row._texto = '3-maccabees-es';
+    }
   });
 
   DATA.forEach(row => {

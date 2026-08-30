@@ -45,6 +45,7 @@ translated["title"] = {
     "testament-abraham": "Testamento de Abraham",
     "apocalypse-moses": "Vida de Adán y Eva (Apocalipsis de Moisés)",
     "4-esdras": "4 Esdras (Apocalipsis de Esdras)",
+    "3-maccabees": "3 Macabeos",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (

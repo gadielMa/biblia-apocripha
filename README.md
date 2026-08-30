@@ -65,6 +65,8 @@ y 158 versículos, con traducción automática inicial al español.
 4 Esdras está incorporado desde la edición inglesa pública que lo transmite como
 2 Esdras (16 capítulos y 874 versículos); su ficha diferencia el núcleo de 4
 Esdras de las adiciones latinas tradicionales y ofrece traducción automática inicial.
+3 Macabeos también está incorporado desde la Septuaginta inglesa de Brenton (1851),
+en sus 7 capítulos y con traducción automática inicial al español.
 
 ## Grupos
 

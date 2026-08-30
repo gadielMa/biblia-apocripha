@@ -226,5 +226,17 @@
     "title": "4 Esdras (traducción automática)",
     "language": "es",
     "file": "4-esdras.es.json"
+  },
+  {
+    "id": "3-maccabees",
+    "title": "3 Maccabees (Brenton, 1851)",
+    "language": "en",
+    "file": "3-maccabees.en.json"
+  },
+  {
+    "id": "3-maccabees-es",
+    "title": "3 Macabeos (traducción automática)",
+    "language": "es",
+    "file": "3-maccabees.es.json"
   }
 ]
