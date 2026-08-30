@@ -19,7 +19,7 @@
     .language-switch a { padding:.35rem .7rem; border:1px solid var(--border); border-radius:5px; color:var(--accent); text-decoration:none; font-size:.8rem; }
     .language-switch a.active { background:var(--accent); color:#fffaf2; }
     .notice { padding:.8rem; border-left:4px solid var(--accent); background:#f0dfc8; font-size:.85rem; }
-    main { background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:clamp(1rem,5vw,3rem); margin:0 1rem 3rem; }
+    main { width:calc(100% - 2rem); background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:clamp(1rem,5vw,3rem); margin:0 auto 3rem; }
     section { scroll-margin-top:1rem; margin:0 0 2.5rem; }
     h2 { color:var(--accent); border-bottom:1px solid var(--border); padding-bottom:.35rem; }
     p { margin:0 0 1rem; }
@@ -62,7 +62,7 @@
         window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
         const languageNotice = work.language === 'es' ? 'Texto en español.' : 'Text in English.';
         const translationNote = work.translationNote ? ` ${escapeHtml(work.translationNote)}` : '';
-        reader.innerHTML = `<p class="notice">${languageNotice}${translationNote} Los números con letra (por ejemplo, 3a) son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
+        reader.innerHTML = `<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));
           return `<section id="capitulo-${chapter.number}"${hidden}><h2>${work.language === 'es' ? 'Capítulo' : 'Chapter'} ${chapter.number}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;
