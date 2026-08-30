@@ -15,6 +15,9 @@
     header a { color:var(--accent); text-decoration:none; font-size:.9rem; }
     h1 { font-size:clamp(1.7rem,5vw,2.5rem); margin:.7rem 0 .15rem; }
     .meta { color:var(--soft); font-size:.88rem; }
+    .language-switch { display:flex; justify-content:center; gap:.5rem; margin-top:.9rem; }
+    .language-switch a { padding:.35rem .7rem; border:1px solid var(--border); border-radius:5px; color:var(--accent); text-decoration:none; font-size:.8rem; }
+    .language-switch a.active { background:var(--accent); color:#fffaf2; }
     .notice { padding:.8rem; border-left:4px solid var(--accent); background:#f0dfc8; font-size:.85rem; }
     main { background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:clamp(1rem,5vw,3rem); margin:0 1rem 3rem; }
     section { scroll-margin-top:1rem; margin:0 0 2.5rem; }
@@ -30,6 +33,7 @@
     <a href="../index.html">← Volver a la biblioteca</a>
     <h1 id="title">Cargando texto…</h1>
     <p class="meta" id="meta"></p>
+    <nav class="language-switch" id="language-switch" aria-label="Idioma"></nav>
   </header>
   <main id="reader"><p class="loading">Cargando lectura…</p></main>
   <script>
@@ -42,18 +46,26 @@
     async function loadReader() {
       try {
         const catalog = await (await fetch('catalog.json')).json();
-        const entry = catalog.find(item => item.id === documentId) || catalog[0];
+        const requestedEntry = catalog.find(item => item.id === documentId) || catalog[0];
+        const baseId = requestedEntry.id.replace(/-es$/, '');
+        const variants = catalog.filter(item => item.id === baseId || item.id === `${baseId}-es`);
+        const entry = requestedEntry;
         if (!entry) throw new Error('No hay textos disponibles.');
+        document.getElementById('language-switch').innerHTML = variants.map(item => {
+          const label = item.language === 'es' ? 'Español' : 'English';
+          const active = item.id === entry.id ? ' active' : '';
+          return `<a class="${active}" href="?obra=${encodeURIComponent(item.id)}" aria-current="${active ? 'page' : 'false'}">${label}</a>`;
+        }).join('');
         const work = await (await fetch(entry.file)).json();
         window.document.getElementById('title').textContent = work.title;
         window.document.getElementById('meta').textContent = `${work.language.toUpperCase()} · ${work.translator} · ${work.publication}`;
         window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
-        const languageNotice = work.language === 'es' ? 'Texto en español.' : 'Texto en inglés.';
+        const languageNotice = work.language === 'es' ? 'Texto en español.' : 'Text in English.';
         const translationNote = work.translationNote ? ` ${escapeHtml(work.translationNote)}` : '';
-        reader.innerHTML = `<p class="notice">${languageNotice} Fuente: <a href="${escapeHtml(work.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(work.sourceUrl)}</a>. ${escapeHtml(work.license)}${translationNote} Los números con letra (por ejemplo, 3a) son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
+        reader.innerHTML = `<p class="notice">${languageNotice}${translationNote} Los números con letra (por ejemplo, 3a) son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));
-          return `<section id="capitulo-${chapter.number}"${hidden}><h2>Chapter ${chapter.number}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;
+          return `<section id="capitulo-${chapter.number}"${hidden}><h2>${work.language === 'es' ? 'Capítulo' : 'Chapter'} ${chapter.number}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;
         }).join('');
         if (requestedChapter) window.document.getElementById(`capitulo-${requestedChapter}`)?.removeAttribute('hidden');
       } catch (error) {
