@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v2';
+const CACHE = 'biblia-universal-v3';
 const APP_SHELL = ['./', './index.html', './icon.svg', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {
@@ -18,15 +18,13 @@ self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   if (url.origin === self.location.origin && url.pathname.includes('/textos/')) {
     event.respondWith(
-      caches.match(event.request).then(async hit => {
-        if (hit) return hit;
-        const response = await fetch(event.request);
+      fetch(event.request).then(async response => {
         if (response.ok) {
           const cache = await caches.open(CACHE);
           cache.put(event.request, response.clone());
         }
         return response;
-      })
+      }).catch(() => caches.match(event.request))
     );
     return;
   }
