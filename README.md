@@ -1,30 +1,58 @@
 # Biblioteca Bíblica Universal
 
-Tabla interactiva de los cánones bíblicos y textos apócrifos con acceso directo a PDFs y BibleGateway.
+Biblioteca web de estudio que reúne cánones bíblicos, deuterocanónicos, apócrifos, pseudoepígrafos, literatura cristiana primitiva y manuscritos de Qumrán.
 
-## Contenido
+## Estado actual
 
-- **46 PDFs** generados/descargados de textos apócrifos, pseudoepígrafos y rollos del Mar Muerto
-- **84 libros canónicos** con link directo a BibleGateway (RVR1960)
-- **134 textos** en total organizados por grupo y canon
+- Sitio estático HTML/CSS/JavaScript con búsqueda, filtros, ordenamiento y vista compacta.
+- 46 PDFs locales y enlaces externos a BibleGateway, Wikisource, Google Books y fuentes institucionales.
+- Etiquetas diferenciadas para **PDF**, **BibleGateway** y **Leer texto**.
+- Colecciones católica, etíope, ortodoxa oriental, gnóstica, cristiana primitiva, pseudoepigráfica y de Qumrán.
 
-## Grupos
+## Política de fuentes
 
-| Grupo | Descripción |
-|---|---|
-| Torá / Antiguo Testamento | Los 5 libros de Moisés |
-| Antiguo Testamento | Resto del Tanaj (34 libros) |
-| Deuterocanónicos | 7 libros católicos no en el Tanaj |
-| Nuevo Testamento | 27 libros del NT |
-| Antiguo Testamento Etíope | 5 libros exclusivos del canon etíope |
-| Nuevo Testamento Etíope | 6 libros litúrgicos etíopes |
-| Evangelios Gnósticos / Nag Hammadi | Textos de Nag Hammadi |
-| Apócrifos del NT | Hechos, Apocalipsis y Epístolas apócrifas |
-| Literatura Cristiana Primitiva | Didaché, 1 Clemente, Bernabé, Hermas |
-| Pseudoepígrafos del Segundo Templo | Enoc, Testamentos, Odas, etc. |
-| Textos de Qumrán / Rollos del Mar Muerto | DSS: 1QS, 1QM, 1QpHab, 1QH, CD |
-| Canon Ortodoxo Oriental | 3 y 4 Macabeos, Oración de Manasés, Salmo 151 |
+Los PDFs locales solo se incorporan cuando su licencia o condición de dominio público es clara. El resto se enlaza externamente con atribución. Cada registro debe distinguir entre PDF, texto HTML, BibleGateway y recurso pendiente.
 
-## Uso
+## Roadmap
 
-Abrir `index.html` en un navegador o visitar [GitHub Pages](https://gadielMa.github.io/biblia-apocripha).
+### Fase 1 — Lector interno
+
+- Vista de lectura dentro de `/biblia/`, con navegación por capítulos o secciones.
+- Tamaño de letra, ancho de lectura, modo oscuro y modo sepia.
+- Búsqueda dentro del texto y URLs compartibles por obra.
+- PDFs descargables y textos HTML identificados con su fuente.
+
+### Fase 2 — Datos y descubrimiento
+
+- Normalizar título, alias, tradición, fecha, idioma, fuente, licencia y estado.
+- Corregir enlaces que presentan obras no canónicas como RVR1960.
+- Filtros combinables, fichas individuales, bibliografía y referencias cruzadas.
+- Comparador de cánones y cronología visual.
+
+### Fase 3 — Experiencia de aplicación
+
+- PWA instalable, lectura offline de recursos permitidos, favoritos e historial.
+- Importación/exportación de favoritos en JSON.
+- Mejoras responsive, accesibilidad WCAG básica y estadísticas por tradición, idioma y siglo.
+
+### Fase 4 — Contenido diferencial de Induliru
+
+- Introducciones editoriales, notas históricas, glosario, mapas y cronologías.
+- Bibliografía verificable y página metodológica sobre canon, deuterocanon, apócrifos y pseudoepígrafos.
+
+## Estructura
+
+- `index.html`: interfaz, estilos, catálogo y comportamiento.
+- `data.json` / `data.csv`: fuentes estructuradas del catálogo.
+- `pdfs/`: archivos PDF alojados localmente.
+
+## Desarrollo y calidad
+
+Abrir `index.html` directamente o servir el directorio con cualquier servidor estático. Publicar haciendo push a `main`; GitHub Pages sirve el repositorio.
+
+Antes de publicar, verificar enlaces, búsqueda, filtros, vista móvil y ejecutar `git diff --check`. Ningún texto no canónico debe presentarse como parte de RVR1960.
+
+## Enlaces
+
+- [Sitio publicado](https://gadielMa.github.io/biblia-apocripha)
+- [Repositorio](https://github.com/gadielMa/biblia-apocripha)
