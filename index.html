@@ -552,6 +552,11 @@ if (meqabyan3) {
   meqabyan3._archivo = 'https://en.wikisource.org/wiki/Translation:3_Meqabyan';
   meqabyan3._tipo = 'web';
 }
+const didascalia = DATA.find(row => row['Biblia Etíope'] === 'Didascalia de los Apóstoles');
+if (didascalia) {
+  didascalia._archivo = 'https://books.google.com/books?id=ZqhPjh7bLUAC&output=html_text';
+  didascalia._tipo = 'web';
+}
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
 function normalizeData() {
