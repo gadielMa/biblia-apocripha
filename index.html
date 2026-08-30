@@ -1130,8 +1130,23 @@ const readerFrame = document.getElementById('reader-frame');
 const readerTitle = document.getElementById('reader-title');
 const readerExternal = document.getElementById('reader-external');
 const readerClose = document.getElementById('reader-close');
+const readerPositionsKey = 'biblia-apocripha-reader-positions';
+let readerPositions = JSON.parse(localStorage.getItem(readerPositionsKey) || '{}');
+let activeReaderUrl = '';
+
+function saveReaderPosition() {
+  if (!activeReaderUrl) return;
+  try {
+    const doc = readerFrame.contentDocument;
+    if (doc) {
+      readerPositions[activeReaderUrl] = doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+      localStorage.setItem(readerPositionsKey, JSON.stringify(readerPositions));
+    }
+  } catch (_) { /* Fuentes externas pueden impedir acceso al contenido del iframe. */ }
+}
 
 function closeReader() {
+  saveReaderPosition();
   readerModal.classList.remove('open');
   readerModal.setAttribute('aria-hidden', 'true');
   readerFrame.src = 'about:blank';
@@ -1149,12 +1164,21 @@ document.getElementById('tbody').addEventListener('click', e => {
   const link = e.target.closest('.reader-link');
   if (!link) return;
   e.preventDefault();
+  saveReaderPosition();
   readerTitle.textContent = link.dataset.readerTitle || 'Lector';
   readerExternal.href = link.dataset.readerUrl;
+  activeReaderUrl = link.dataset.readerUrl;
   readerFrame.src = link.dataset.readerUrl;
   readerModal.classList.add('open');
   readerModal.setAttribute('aria-hidden', 'false');
   readerClose.focus();
+});
+readerFrame.addEventListener('load', () => {
+  const position = readerPositions[activeReaderUrl] || 0;
+  try {
+    const doc = readerFrame.contentDocument;
+    if (doc) doc.documentElement.scrollTop = position;
+  } catch (_) { /* Fallback: el botón Abrir fuente siempre está disponible. */ }
 });
 readerClose.addEventListener('click', closeReader);
 readerModal.addEventListener('click', e => { if (e.target === readerModal) closeReader(); });
