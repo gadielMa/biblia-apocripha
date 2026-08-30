@@ -542,6 +542,11 @@ if (meqabyan) {
   meqabyan._archivo = 'https://en.wikisource.org/wiki/Translation:1_Meqabyan';
   meqabyan._tipo = 'web';
 }
+const meqabyan2 = DATA.find(row => row['Biblia Etíope'] === '2 Meqabyan');
+if (meqabyan2) {
+  meqabyan2._archivo = 'https://en.wikisource.org/wiki/Translation:2_Meqabyan';
+  meqabyan2._tipo = 'web';
+}
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
 function normalizeData() {
