@@ -627,6 +627,15 @@ function normalizeData() {
     if (getBookName(row).includes('Apocalipsis de Pedro')) {
       row._texto = 'apocalypse-peter-es';
     }
+    if (getBookName(row).includes('Evangelio de Pedro')) {
+      row._texto = 'gospel-peter-es';
+    }
+    if (getBookName(row).includes('1 Clemente')) {
+      row._texto = '1-clement-es';
+    }
+    if (getBookName(row).includes('Hechos de Pablo y Tecla')) {
+      row._texto = 'paul-thecla-es';
+    }
   });
 
   DATA.forEach(row => {

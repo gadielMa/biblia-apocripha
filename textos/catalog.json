@@ -130,5 +130,41 @@
     "title": "Apocalipsis de Pedro (traducción automática)",
     "language": "es",
     "file": "apocalypse-peter.es.json"
+  },
+  {
+    "id": "gospel-peter",
+    "title": "Gospel of Peter (M. R. James, 1924)",
+    "language": "en",
+    "file": "gospel-peter.en.json"
+  },
+  {
+    "id": "gospel-peter-es",
+    "title": "Evangelio de Pedro (traducción automática)",
+    "language": "es",
+    "file": "gospel-peter.es.json"
+  },
+  {
+    "id": "1-clement",
+    "title": "First Epistle of Clement (Lightfoot translation)",
+    "language": "en",
+    "file": "1-clement.en.json"
+  },
+  {
+    "id": "1-clement-es",
+    "title": "1 Clemente (traducción automática)",
+    "language": "es",
+    "file": "1-clement.es.json"
+  },
+  {
+    "id": "paul-thecla",
+    "title": "Acts of Paul and Thecla (Jeremiah Jones, 1820)",
+    "language": "en",
+    "file": "paul-thecla.en.json"
+  },
+  {
+    "id": "paul-thecla-es",
+    "title": "Hechos de Pablo y Tecla (traducción automática)",
+    "language": "es",
+    "file": "paul-thecla.es.json"
   }
 ]

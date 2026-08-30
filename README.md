@@ -48,6 +48,12 @@ La Epístola de Bernabé está incorporada en 21 capítulos y 199 versículos, c
 traducción automática inicial al español.
 El Apocalipsis de Pedro está incorporado en sus fragmentos griego, etíope y
 testimoniales de la edición de 1924, organizados en 5 secciones y 124 pasajes.
+El Evangelio de Pedro está incorporado como el Fragmento I de la edición de
+1924, con 11 secciones y traducción automática inicial al español.
+1 Clemente está incorporada en 65 capítulos y 393 versículos, con traducción
+automática inicial al español.
+Los Hechos de Pablo y Tecla están incorporados en 11 capítulos y 170 versículos,
+con traducción automática inicial al español.
 
 ## Grupos
 

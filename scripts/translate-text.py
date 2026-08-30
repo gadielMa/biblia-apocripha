@@ -37,6 +37,9 @@ translated["title"] = {
     "hermas": "Pastor de Hermas",
     "barnabas": "Epístola de Bernabé",
     "apocalypse-peter": "Apocalipsis de Pedro",
+    "gospel-peter": "Evangelio de Pedro",
+    "1-clement": "1 Clemente",
+    "paul-thecla": "Hechos de Pablo y Tecla",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (
