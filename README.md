@@ -67,6 +67,10 @@ y 158 versículos, con traducción automática inicial al español.
 Esdras de las adiciones latinas tradicionales y ofrece traducción automática inicial.
 3 Macabeos también está incorporado desde la Septuaginta inglesa de Brenton (1851),
 en sus 7 capítulos y con traducción automática inicial al español.
+La misma edición pública incorpora 4 Macabeos (18 capítulos, 483 versículos) y la
+Oración de Manasés (15 versículos), ambas con traducción automática inicial al español.
+Salmo 151 está disponible por separado en sus 7 versículos, tal como lo transmite
+la Septuaginta de Brenton, también con una traducción automática inicial.
 
 ## Grupos
 

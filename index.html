@@ -654,6 +654,15 @@ function normalizeData() {
     if (getBookName(row) === '3 Macabeos') {
       row._texto = '3-maccabees-es';
     }
+    if (getBookName(row) === '4 Macabeos') {
+      row._texto = '4-maccabees-es';
+    }
+    if (getBookName(row).includes('Oración de Manasés')) {
+      row._texto = 'prayer-manasseh-es';
+    }
+    if (getBookName(row) === 'Salmo 151') {
+      row._texto = 'psalm-151-es';
+    }
   });
 
   DATA.forEach(row => {

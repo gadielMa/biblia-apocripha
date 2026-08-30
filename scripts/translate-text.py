@@ -46,6 +46,9 @@ translated["title"] = {
     "apocalypse-moses": "Vida de Adán y Eva (Apocalipsis de Moisés)",
     "4-esdras": "4 Esdras (Apocalipsis de Esdras)",
     "3-maccabees": "3 Macabeos",
+    "4-maccabees": "4 Macabeos",
+    "prayer-manasseh": "Oración de Manasés",
+    "psalm-151": "Salmo 151",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (

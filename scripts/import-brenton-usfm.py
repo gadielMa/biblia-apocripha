@@ -14,7 +14,7 @@ current = None
 verse = None
 
 def clean(text):
-    text = re.sub(r"\\f\s.*?\\f\\*", "", text)
+    text = re.sub(r"\\f\s.*?\\f\*", "", text)
     text = re.sub(r"\\[a-z0-9]+\*?", "", text, flags=re.I)
     return re.sub(r"\s+", " ", text).strip()
 

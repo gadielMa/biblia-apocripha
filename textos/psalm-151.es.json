@@ -1,0 +1,51 @@
+{
+  "id": "psalm-151-es",
+  "title": "Salmo 151",
+  "language": "es",
+  "sourceLanguage": "Greek (with a Hebrew witness at Qumran)",
+  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "publication": "Brenton English Septuagint",
+  "license": "Public domain (eBible.org record for the Brenton English Septuagint).",
+  "sourceUrl": "https://ebible.org/eng-Brenton/",
+  "chapters": [
+    {
+      "number": 151,
+      "title": "Psalm 151",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Este Salmo es un verdadero de David, aunque supernumerario, compuesto cuando luchó en combate único con Goliad."
+        },
+        {
+          "number": "2",
+          "text": "Mis manos formaron un instrumento musical, y mis dedos sintonizaron un salterio."
+        },
+        {
+          "number": "3",
+          "text": "¿Y quién le dirá a mi Señor? el Señor mismo, él mismo oye."
+        },
+        {
+          "number": "4",
+          "text": "Envió su ángel, y me quitó de las ovejas de mi padre, y me ungió con el aceite de su unción."
+        },
+        {
+          "number": "5",
+          "text": "Mis hermanos eran apuestos y altos; pero el Señor no tomó placer en ellos."
+        },
+        {
+          "number": "6",
+          "text": "Salí al encuentro del Filisteo, y me maldijo por sus ídolos."
+        },
+        {
+          "number": "7",
+          "text": "Pero dibujé su propia espada, y le decaí, y quité el oprobio de los hijos de Israel."
+        }
+      ]
+    }
+  ],
+  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationProgress": {
+    "completedThroughChapter": 1,
+    "totalChapters": 1
+  }
+}
