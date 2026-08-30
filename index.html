@@ -562,6 +562,11 @@ if (sinodos) {
   sinodos._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
   sinodos._tipo = 'web';
 }
+const alianza1 = DATA.find(row => row['Biblia Etíope'] === 'Libro de la Alianza I');
+if (alianza1) {
+  alianza1._archivo = 'https://ethiopianorthodox.org/english/canonical/books.html';
+  alianza1._tipo = 'web';
+}
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
 function normalizeData() {
