@@ -299,6 +299,21 @@
       transition: all .2s;
     }
     .archivo-bible:hover { background: #ecd7b8; border-color: var(--accent2); }
+    .archivo-web {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 32px;
+      padding: .35rem .75rem;
+      background: #f7ead6;
+      border: 1px solid #d3b38a;
+      border-radius: 6px;
+      color: #7a5636;
+      text-decoration: none;
+      font-size: .8rem;
+      white-space: nowrap;
+    }
+    .archivo-web:hover { background: #ecd7b8; border-color: var(--accent2); }
     .archivo-none { color: var(--text2); font-size: .8rem; }
 
     .fecha { color: var(--text2); font-size: .82rem; white-space: nowrap; }
@@ -521,6 +536,11 @@ const jubileos = DATA.find(row => row['Biblia Etíope'] === 'Jubileos');
 if (jubileos) {
   jubileos._archivo = 'https://yhwhandthetorah.net/wp-content/uploads/2022/12/el-libro-de-los-jubileos.pdf';
   jubileos._tipo = 'pdf';
+}
+const meqabyan = DATA.find(row => row['Biblia Etíope'] === '1 Meqabyan');
+if (meqabyan) {
+  meqabyan._archivo = 'https://en.wikisource.org/wiki/Translation:1_Meqabyan';
+  meqabyan._tipo = 'web';
 }
 
 // ── Data cleanup ────────────────────────────────────────────────────────────
@@ -830,6 +850,12 @@ function renderArchivo(row) {
     return `<a class="archivo-bible" href="${safeArch}" target="_blank" rel="noopener noreferrer">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2v20l6-4 6 4V2H6zm10 14.8l-4-2.67-4 2.67V4h8v12.8z"/></svg>
       BibleGateway
+    </a>`;
+  }
+  if (tipo === 'web') {
+    return `<a class="archivo-web" href="${safeArch}" target="_blank" rel="noopener noreferrer">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M4 5h12M8 8h5M8 12h5"/></svg>
+      Leer texto
     </a>`;
   }
   return '<span class="archivo-none">—</span>';
