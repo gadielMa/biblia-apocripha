@@ -639,6 +639,9 @@ function normalizeData() {
     if (getBookName(row).includes('Apocalipsis de Pablo')) {
       row._texto = 'apocalypse-paul-es';
     }
+    if (getBookName(row).includes('Salmos de Salomón')) {
+      row._texto = 'psalms-solomon-es';
+    }
   });
 
   DATA.forEach(row => {

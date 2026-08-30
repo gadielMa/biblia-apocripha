@@ -1,0 +1,201 @@
+{
+  "id": "psalms-solomon-es",
+  "title": "Salmos de Salomón",
+  "language": "es",
+  "sourceLanguage": "Greek (from Hebrew)",
+  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "publication": "The Forgotten Books of Eden",
+  "license": "Public-domain historical translation; verify local status before redistribution.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Psalms_of_Solomon",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Salmo 1",
+      "verses": [
+        {
+          "number": "1",
+          "text": "\"Se hicieron insolentes en su prosperidad...\""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Salmo 2",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La profanación de Jerusalén; cautiverio, asesinato y rapto. Un salmo de desesperación absoluta."
+        },
+        {
+          "number": "2",
+          "text": ". . ."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Salmo 3",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La justicia contra el pecado."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Salmo 4",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Una conversación de Salomón con los hombres."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Salmo 5",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Una declaración de la filosofía de la indestructibilidad de la materia. Uno de los principios de la física moderna."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Salmo 6",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Una canción de esperanza y desesperanza y paz."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Salmo 7",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La bella vieja doctrina: ¡Tú eres nuestro escudo!"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Salmo 8",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Algunos similes notables de guerra se arrastran sobre Jerusalén. Una encuesta de los pecados que trajo todo este problema."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Salmo 9",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El exilio de las tribus de Israel. Una referencia al pacto que Dios hizo con Adán. (Véase el Primer Libro de Adán y Eva, cap. III, Verso 7)."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Salmo 10",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Un himno glorioso. Más referencia al pacto eterno entre Dios y el Hombre."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Salmo 11",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jerusalén escucha una trompeta y se pone de puntilla para ver a sus hijos que regresan del Norte, del Este y del Oeste."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Salmo 12",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Un llamamiento para la tranquilidad familiar y la paz y tranquilidad en casa."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Salmo 13",
+      "verses": [
+        {
+          "number": "1",
+          "text": "De Salomón. Un salmo. Confort para los justos."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Salmo 14",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los pecadores “amanezcan el breve día pasado en compañía con su pecado”. Sabiduría profunda, bellamente expresada."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Salmo 15",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El salmista reafirma la gran filosofía de la derecha y del mal."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Salmo 16",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El salmista expresa una vez más profunda verdad: “Porque si no da fuerza, ¿quién puede soportar el castigo?”"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Salmo 17",
+      "verses": [
+        {
+          "number": "1",
+          "text": "“Ellos pusieron una monarquía . . . . ellos desperdician el Trono de David!” Una narración poética sobre la desintegración total de una gran nación."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Salmo 18",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Con este salmo terminan las Canciones de Salomón."
+        }
+      ]
+    }
+  ],
+  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationProgress": {
+    "completedThroughChapter": 18,
+    "totalChapters": 18
+  }
+}

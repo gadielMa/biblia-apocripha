@@ -178,5 +178,17 @@
     "title": "Apocalipsis de Pablo (traducción automática)",
     "language": "es",
     "file": "apocalypse-paul.es.json"
+  },
+  {
+    "id": "psalms-solomon",
+    "title": "Psalms of Solomon (R. H. Charles)",
+    "language": "en",
+    "file": "psalms-solomon.en.json"
+  },
+  {
+    "id": "psalms-solomon-es",
+    "title": "Salmos de Salomón (traducción automática)",
+    "language": "es",
+    "file": "psalms-solomon.es.json"
   }
 ]
