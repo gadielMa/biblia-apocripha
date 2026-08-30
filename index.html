@@ -666,6 +666,10 @@ function normalizeData() {
     if (getBookName(row).includes('Evangelio de María')) {
       row._texto = 'gospel-mary-es';
     }
+    if (getBookName(row) === 'Evangelio de Tomás') row._texto = 'gospel-thomas-es';
+    if (getBookName(row) === 'Evangelio de Felipe') row._texto = 'gospel-philip-es';
+    if (getBookName(row) === 'Evangelio de Judas') row._texto = 'gospel-judas-es';
+    if (getBookName(row) === 'Evangelio de la Verdad') row._texto = 'gospel-truth-es';
   });
 
   DATA.forEach(row => {

@@ -50,6 +50,10 @@ translated["title"] = {
     "prayer-manasseh": "Oración de Manasés",
     "psalm-151": "Salmo 151",
     "gospel-mary": "Evangelio de María Magdalena",
+    "gospel-thomas": "Evangelio de Tomás",
+    "gospel-philip": "Evangelio de Felipe",
+    "gospel-judas": "Evangelio de Judas",
+    "gospel-truth": "Evangelio de la Verdad",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["translationNote"] = (

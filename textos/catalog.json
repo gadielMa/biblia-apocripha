@@ -286,5 +286,13 @@
     "title": "Evangelio de María Magdalena (traducción automática)",
     "language": "es",
     "file": "gospel-mary.es.json"
-  }
+  },
+  {"id":"gospel-thomas","title":"Gospel of Thomas (Mattison)","language":"en","file":"gospel-thomas.en.json"},
+  {"id":"gospel-thomas-es","title":"Evangelio de Tomás (traducción automática)","language":"es","file":"gospel-thomas.es.json"},
+  {"id":"gospel-philip","title":"Gospel of Philip (Mattison)","language":"en","file":"gospel-philip.en.json"},
+  {"id":"gospel-philip-es","title":"Evangelio de Felipe (traducción automática)","language":"es","file":"gospel-philip.es.json"},
+  {"id":"gospel-judas","title":"Gospel of Judas (Mattison)","language":"en","file":"gospel-judas.en.json"},
+  {"id":"gospel-judas-es","title":"Evangelio de Judas (traducción automática)","language":"es","file":"gospel-judas.es.json"},
+  {"id":"gospel-truth","title":"Gospel of Truth (Mattison)","language":"en","file":"gospel-truth.en.json"},
+  {"id":"gospel-truth-es","title":"Evangelio de la Verdad (traducción automática)","language":"es","file":"gospel-truth.es.json"}
 ]
