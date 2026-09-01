@@ -55,6 +55,7 @@ translated["title"] = {
     "gospel-judas": "Evangelio de Judas",
     "gospel-truth": "Evangelio de la Verdad",
     "acts-peter": "Hechos de Pedro",
+    "acts-andrew": "Hechos de Andrés",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["sourceTranslator"] = source.get("translator", "")

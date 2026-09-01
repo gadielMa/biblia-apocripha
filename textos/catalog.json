@@ -298,4 +298,6 @@
   ,{"id":"gospel-egyptians-es","title":"Evangelio copto de los Egipcios (edición local)","language":"es","file":"gospel-egyptians.es.json"}
   ,{"id":"acts-peter","title":"Acts of Peter (M. R. James, 1924)","language":"en","file":"acts-peter.en.json"}
   ,{"id":"acts-peter-es","title":"Hechos de Pedro (traducción automática)","language":"es","file":"acts-peter.es.json"}
+  ,{"id":"acts-andrew","title":"Acts of Andrew (M. R. James, 1924)","language":"en","file":"acts-andrew.en.json"}
+  ,{"id":"acts-andrew-es","title":"Hechos de Andrés (traducción automática)","language":"es","file":"acts-andrew.es.json"}
 ]

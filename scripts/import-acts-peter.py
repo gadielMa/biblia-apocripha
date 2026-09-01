@@ -54,11 +54,13 @@ class ActsReader(HTMLParser):
             self.buffer.append(data)
 
 
-if len(sys.argv) != 3:
-    raise SystemExit("Uso: import-acts-peter.py fuente.html salida.json")
+if len(sys.argv) != 7:
+    raise SystemExit("Uso: import-acts-peter.py fuente.html salida.json id titulo idioma-fuente url")
+
+source_path, output_path, work_id, title, source_language, source_url = sys.argv[1:]
 
 reader = ActsReader()
-reader.feed(Path(sys.argv[1]).read_text())
+reader.feed(Path(source_path).read_text())
 skip_titles = {"Notes on the translation", "Footnotes"}
 chapters = [
     chapter
@@ -68,20 +70,20 @@ chapters = [
 for number, chapter in enumerate(chapters, 1):
     chapter["number"] = number
 
-if len(chapters) < 40:
+if len(chapters) < 20:
     raise SystemExit(f"Extracción incompleta: solo {len(chapters)} secciones.")
 
 work = {
-    "id": "acts-peter",
-    "title": "Acts of Peter",
+    "id": work_id,
+    "title": title,
     "language": "en",
-    "sourceLanguage": "Greek (surviving chiefly in Latin, with Coptic and Greek fragments)",
+    "sourceLanguage": source_language,
     "translator": "M. R. James (1924)",
     "publication": "The Apocryphal New Testament (1924), reproduced by The Gnostic Gospels",
     "license": "Public-domain historical translation, as dedicated by The Gnostic Gospels.",
-    "sourceUrl": "https://thegnosticgospels.org/gospels/acts-of-peter/",
+    "sourceUrl": source_url,
     "scopeNote": "Las secciones y pasajes son divisiones editoriales para lectura y búsqueda. Se conservan las lagunas, notas y alternativas de la edición fuente cuando aparecen en el texto.",
     "chapters": chapters,
 }
-Path(sys.argv[2]).write_text(json.dumps(work, ensure_ascii=False, indent=2) + "\n")
+Path(output_path).write_text(json.dumps(work, ensure_ascii=False, indent=2) + "\n")
 print(f"Importadas {len(chapters)} secciones y {sum(len(c['verses']) for c in chapters)} pasajes.")
