@@ -301,4 +301,5 @@
   ,{"id":"acts-andrew","title":"Acts of Andrew (M. R. James, 1924)","language":"en","file":"acts-andrew.en.json"}
   ,{"id":"acts-andrew-es","title":"Hechos de Andrés (traducción automática)","language":"es","file":"acts-andrew.es.json"}
   ,{"id":"acts-thomas","title":"Acts of Thomas (M. R. James, 1924)","language":"en","file":"acts-thomas.en.json"}
+  ,{"id":"acts-thomas-es","title":"Hechos de Tomás (traducción automática)","language":"es","file":"acts-thomas.es.json"}
 ]
