@@ -54,10 +54,11 @@ class ActsReader(HTMLParser):
             self.buffer.append(data)
 
 
-if len(sys.argv) != 7:
-    raise SystemExit("Uso: import-acts-peter.py fuente.html salida.json id titulo idioma-fuente url")
+if len(sys.argv) not in {7, 8}:
+    raise SystemExit("Uso: import-acts-peter.py fuente.html salida.json id titulo idioma-fuente url [numeracion-original]")
 
-source_path, output_path, work_id, title, source_language, source_url = sys.argv[1:]
+source_path, output_path, work_id, title, source_language, source_url = sys.argv[1:7]
+preserve_numeric_titles = len(sys.argv) == 8 and sys.argv[7] == "numeracion-original"
 
 reader = ActsReader()
 reader.feed(Path(source_path).read_text())
@@ -68,7 +69,7 @@ chapters = [
     if chapter["verses"] and chapter["title"] not in skip_titles
 ]
 for number, chapter in enumerate(chapters, 1):
-    chapter["number"] = number
+    chapter["number"] = int(chapter["title"]) if preserve_numeric_titles and chapter["title"].isdigit() else number
 
 if len(chapters) < 20:
     raise SystemExit(f"Extracción incompleta: solo {len(chapters)} secciones.")
