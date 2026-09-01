@@ -54,6 +54,7 @@ translated["title"] = {
     "gospel-philip": "Evangelio de Felipe",
     "gospel-judas": "Evangelio de Judas",
     "gospel-truth": "Evangelio de la Verdad",
+    "acts-peter": "Hechos de Pedro",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["sourceTranslator"] = source.get("translator", "")
@@ -68,6 +69,8 @@ for chapter_index, chapter in enumerate(translated["chapters"], start=1):
     verses = chapter.get("verses") or []
     for verse in verses:
         verse["text"] = argostranslate.translate.translate(verse["text"], "en", "es")
+    translated["translationProgress"] = {"completedThroughChapter": chapter_index, "totalChapters": len(translated["chapters"])}
+    output_path.write_text(json.dumps(translated, ensure_ascii=False, indent=2) + "\n")
     print(f"Capítulo {chapter_index}/{len(translated['chapters'])} traducido.", flush=True)
 
 translated["translationProgress"] = {"completedThroughChapter": end, "totalChapters": len(translated["chapters"])}

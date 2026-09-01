@@ -637,6 +637,9 @@ function normalizeData() {
     if (getBookName(row).includes('Hechos de Pablo y Tecla')) {
       row._texto = 'paul-thecla-es';
     }
+    if (getBookName(row) === 'Hechos de Pedro') {
+      row._texto = 'acts-peter-es';
+    }
     if (getBookName(row).includes('Apocalipsis de Pablo')) {
       row._texto = 'apocalypse-paul-es';
     }
