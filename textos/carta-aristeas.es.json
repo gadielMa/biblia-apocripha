@@ -1,0 +1,197 @@
+{
+  "id": "carta-aristeas-es",
+  "title": "Carta de Aristeas",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Edición española incluida en el proyecto",
+  "publication": "Selección local de 8 capítulos",
+  "license": "Edición aportada en este repositorio; conservar como transcripción de la edición local.",
+  "sourceUrl": "../pdfs/carta-aristeas.pdf",
+  "scopeNote": "Selección local de ocho capítulos; la numeración de pasajes es editorial para facilitar la lectura y la búsqueda.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "El pedido de Demetrio de Falero",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Demetrio de Falero, bibliotecario del rey Ptolomeo, aconsejo al rey: Seria conveniente que la ley de los"
+        },
+        {
+          "number": "2",
+          "text": "judios fuera traducida al griego para incluirla en la gran biblioteca."
+        },
+        {
+          "number": "3",
+          "text": "El rey se alegro de esto y ordeno que se enviara embajada al sumo sacerdote de Jerusalen pidiendo 72"
+        },
+        {
+          "number": "4",
+          "text": "sabios, seis de cada tribu, que pudieran realizar la traduccion."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "La descripcion del Templo de Jerusalen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y Aristeas fue a Jerusalen como embajador. Y vio el Templo con sus maravillosas construcciones y el altar"
+        },
+        {
+          "number": "2",
+          "text": "y el servicio de los sacerdotes."
+        },
+        {
+          "number": "3",
+          "text": "Y vio la ciudad de Jerusalen con sus hermosas calles y el palacio del sumo sacerdote. Todo era de"
+        },
+        {
+          "number": "4",
+          "text": "admirable magnificencia y esplendor."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Los 72 sabios llegan a Alejandria",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y el sumo sacerdote eligio a seis varones sabios de cada una de las doce tribus de Israel. Y los envio a"
+        },
+        {
+          "number": "2",
+          "text": "Alejandria con una carta y dones para el rey."
+        },
+        {
+          "number": "3",
+          "text": "Y el rey los recibio con gran honor. Y les preparo alojamiento en la isla de Faros, donde en setenta y dos"
+        },
+        {
+          "number": "4",
+          "text": "dias completaron la traduccion."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "El primer banquete filosofico",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y el rey ofrecio banquetes en honor de los 72 sabios durante siete dias. Y en cada banquete el rey les hacia"
+        },
+        {
+          "number": "2",
+          "text": "preguntas filosoficas y ellos respondian con gran sabiduria."
+        },
+        {
+          "number": "3",
+          "text": "El primer dia el rey pregunto: Como puede un rey ser siempre un buen gobernante? Y el primero de los"
+        },
+        {
+          "number": "4",
+          "text": "sabios respondio: Siendo justo con todos, recordando que Dios es el soberano supremo."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Las preguntas sobre la sabiduria y el poder",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El rey pregunto: Como puede el rey hacer justicia a todos? Y el sabio respondio: Viendo a todos los"
+        },
+        {
+          "number": "2",
+          "text": "hombres como iguales ante Dios y juzgando con equidad."
+        },
+        {
+          "number": "3",
+          "text": "El rey pregunto: Como puede el rey controlar su ira? Y el sabio respondio: Sabiendo que el poder es un"
+        },
+        {
+          "number": "4",
+          "text": "don de Dios y no una posesion propia."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Las preguntas sobre la felicidad",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El rey pregunto: Que es la felicidad mas duradera? Y el sabio respondio: Conocer que Dios esta con"
+        },
+        {
+          "number": "2",
+          "text": "nosotros y actuar segun su voluntad."
+        },
+        {
+          "number": "3",
+          "text": "El rey pregunto: Que es lo mas bello? Y el sabio respondio: Honrar a los padres, pues Dios manda honrar"
+        },
+        {
+          "number": "4",
+          "text": "a quienes nos dieron la vida."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "La autenticidad de la traduccion",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y cuando los 72 sabios terminaron la traduccion en setenta y dos dias, la leyeron ante la comunidad judia"
+        },
+        {
+          "number": "2",
+          "text": "de Alejandria."
+        },
+        {
+          "number": "3",
+          "text": "Y todos aplaudieron la traduccion. Y los sacerdotes y los ancianos dijeron que era perfecta y que nadie"
+        },
+        {
+          "number": "4",
+          "text": "debia cambiar ni agregar ni quitar ninguna palabra."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "El epilogo - Aristeas concluye",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y Aristeas escribio todo esto a su hermano Filocrates para que supiera la verdad sobre el origen de los"
+        },
+        {
+          "number": "2",
+          "text": "libros sagrados judios en griego."
+        },
+        {
+          "number": "3",
+          "text": "Porque muchos cuentan fabulas sobre esto, pero yo Aristeas estuve presente y vi con mis ojos todas estas"
+        },
+        {
+          "number": "4",
+          "text": "cosas que te he narrado."
+        },
+        {
+          "number": "5",
+          "text": "❦"
+        },
+        {
+          "number": "6",
+          "text": "Fin - CARTA DE ARISTEAS"
+        }
+      ]
+    }
+  ]
+}
