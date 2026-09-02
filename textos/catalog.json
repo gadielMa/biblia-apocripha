@@ -310,4 +310,6 @@
   ,{"id":"testament-job-es","title":"Testamento de Job","language":"es","file":"testament-job.es.json"}
   ,{"id":"2-baruch","title":"2 Baruch (Syriac Apocalypse of Baruch)","language":"en","file":"2-baruch.en.json"}
   ,{"id":"2-baruch-es","title":"2 Baruc (Apocalipsis siríaco de Baruc)","language":"es","file":"2-baruch.es.json"}
+  ,{"id":"3-baruch","title":"3 Baruch (Greek Apocalypse of Baruch)","language":"en","file":"3-baruch.en.json"}
+  ,{"id":"3-baruch-es","title":"3 Baruc (Apocalipsis griego de Baruc)","language":"es","file":"3-baruch.es.json"}
 ]
