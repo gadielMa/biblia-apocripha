@@ -316,4 +316,5 @@
   ,{"id":"odes-solomon-es","title":"Odas de Salomón","language":"es","file":"odes-solomon.es.json"}
   ,{"id":"carta-aristeas-es","title":"Carta de Aristeas (edición local)","language":"es","file":"carta-aristeas.es.json"}
   ,{"id":"documento-damasco-es","title":"Documento de Damasco (edición local)","language":"es","file":"documento-damasco.es.json"}
+  ,{"id":"comentario-habacuc-es","title":"Comentario de Habacuc (1QpHab, edición local)","language":"es","file":"comentario-habacuc.es.json"}
 ]
