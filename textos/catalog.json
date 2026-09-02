@@ -304,4 +304,6 @@
   ,{"id":"acts-thomas-es","title":"Hechos de Tomás (traducción automática)","language":"es","file":"acts-thomas.es.json"}
   ,{"id":"epistle-apostles","title":"Epistle of the Apostles (M. R. James, 1924)","language":"en","file":"epistle-apostles.en.json"}
   ,{"id":"epistle-apostles-es","title":"Epístola de los Apóstoles (traducción automática)","language":"es","file":"epistle-apostles.es.json"}
+  ,{"id":"testament-moses","title":"Testament of Moses (Assumption of Moses)","language":"en","file":"testament-moses.en.json"}
+  ,{"id":"testament-moses-es","title":"Testamento de Moisés (Asunción de Moisés)","language":"es","file":"testament-moses.es.json"}
 ]
