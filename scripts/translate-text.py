@@ -59,6 +59,7 @@ translated["title"] = {
     "acts-thomas": "Hechos de Tomás",
     "epistle-apostles": "Epístola de los Apóstoles",
     "testament-moses": "Testamento de Moisés (Asunción de Moisés)",
+    "testament-job": "Testamento de Job",
 }.get(source["id"], source["title"])
 translated["translator"] = "Traducción automática local (Argos Translate), pendiente de revisión humana"
 translated["sourceTranslator"] = source.get("translator", "")

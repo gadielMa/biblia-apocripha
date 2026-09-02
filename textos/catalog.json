@@ -306,4 +306,6 @@
   ,{"id":"epistle-apostles-es","title":"Epístola de los Apóstoles (traducción automática)","language":"es","file":"epistle-apostles.es.json"}
   ,{"id":"testament-moses","title":"Testament of Moses (Assumption of Moses)","language":"en","file":"testament-moses.en.json"}
   ,{"id":"testament-moses-es","title":"Testamento de Moisés (Asunción de Moisés)","language":"es","file":"testament-moses.es.json"}
+  ,{"id":"testament-job","title":"Testament of Job","language":"en","file":"testament-job.en.json"}
+  ,{"id":"testament-job-es","title":"Testamento de Job","language":"es","file":"testament-job.es.json"}
 ]
