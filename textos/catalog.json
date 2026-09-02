@@ -315,4 +315,5 @@
   ,{"id":"odes-solomon","title":"Odes of Solomon","language":"en","file":"odes-solomon.en.json"}
   ,{"id":"odes-solomon-es","title":"Odas de Salomón","language":"es","file":"odes-solomon.es.json"}
   ,{"id":"carta-aristeas-es","title":"Carta de Aristeas (edición local)","language":"es","file":"carta-aristeas.es.json"}
+  ,{"id":"documento-damasco-es","title":"Documento de Damasco (edición local)","language":"es","file":"documento-damasco.es.json"}
 ]

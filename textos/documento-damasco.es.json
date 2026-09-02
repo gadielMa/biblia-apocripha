@@ -1,0 +1,197 @@
+{
+  "id": "documento-damasco-es",
+  "title": "Documento de Damasco",
+  "language": "es",
+  "sourceLanguage": "Hebreo",
+  "translator": "Edición española incluida en el proyecto",
+  "publication": "Selección local de 8 capítulos",
+  "license": "Edición aportada en este repositorio; conservar como transcripción de la edición local.",
+  "sourceUrl": "../pdfs/documento-damasco.pdf",
+  "scopeNote": "Selección local de ocho capítulos procedente de las copias del Cairo y Qumrán; la versificación es editorial para lectura y búsqueda.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "El origen de la comunidad - La planta santa",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Escucha ahora todos los que conoceis la justicia y entendeis las obras de Dios. Porque el tiene una disputa"
+        },
+        {
+          "number": "2",
+          "text": "con toda carne y ejecutara juicio sobre todos los que le desprecian."
+        },
+        {
+          "number": "3",
+          "text": "En la era de la ira de trescientos noventa anos de haber entregado a Nabucodonosor, rey de Babilonia, los"
+        },
+        {
+          "number": "4",
+          "text": "visitara. Y brotara de Israel y de Aaron una raiz de plantacion para heredar la tierra."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "El Maestro de Justicia",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y Dios considero sus obras, porque le buscaron con corazon perfecto. Y levanto para ellos un Maestro de"
+        },
+        {
+          "number": "2",
+          "text": "Justicia para guiarlos en el camino de su corazon."
+        },
+        {
+          "number": "3",
+          "text": "Y el Maestro les hizo conocer los misterios de las palabras de los profetas. Y ellos entendieron las cosas"
+        },
+        {
+          "number": "4",
+          "text": "que estaban ocultas y los tiempos que habian de venir."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "El Sacerdote Impio y los traidores",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Pero surgieron entre ellos los que buscaban lo resbaladizo, que eligieron caminos equivocados y buscaron"
+        },
+        {
+          "number": "2",
+          "text": "brechas en la Ley. Y el Predicador de la Mentira los desvio."
+        },
+        {
+          "number": "3",
+          "text": "Y el Sacerdote Impio traiciono el pacto y profano el lugar santo. Y por eso la ira de Dios ardio contra toda"
+        },
+        {
+          "number": "4",
+          "text": "su congregacion."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Los tres lazos de Belial",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y ahora hijos, escuchad y os dire como actua Belial en Israel. El actua mediante tres redes: la fornicacion,"
+        },
+        {
+          "number": "2",
+          "text": "las riquezas y la profanacion del templo."
+        },
+        {
+          "number": "3",
+          "text": "Que cada uno que entre en el pacto se aparte de la fornicacion y de la codicia y de la profanacion del"
+        },
+        {
+          "number": "4",
+          "text": "santuario de Dios."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Las leyes del pacto - El sabado",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Que nadie trabaje el dia del sabado. Que nadie hable palabras vanas el dia del sabado. Que nadie saque"
+        },
+        {
+          "number": "2",
+          "text": "dinero ni compre ni venda el sabado."
+        },
+        {
+          "number": "3",
+          "text": "Que nadie camine mas de mil codos fuera de su ciudad el dia del sabado. Que nadie coma nada el sabado"
+        },
+        {
+          "number": "4",
+          "text": "que no haya sido preparado antes."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Las normas de la comunidad dispersa",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y en los lugares donde viven en campamentos de la comunidad, los hombres se reuniran diez por diez"
+        },
+        {
+          "number": "2",
+          "text": "bajo la autoridad de un sacerdote instruido en el libro de Hagu."
+        },
+        {
+          "number": "3",
+          "text": "Que haya un inspector en cada campamento que instruya a la multitud en las obras de Dios. Y que juzgue"
+        },
+        {
+          "number": "4",
+          "text": "todos los casos y todos los asuntos de la comunidad."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Las penalidades por transgresiones",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El que mienta intencionalmente sobre sus bienes sera excluido un año. El que murmure contra los padres"
+        },
+        {
+          "number": "2",
+          "text": "de la comunidad sera excluido un ano."
+        },
+        {
+          "number": "3",
+          "text": "El que sea descuidado con la Ley y no la observe debidamente sera castigado. Y el que blasfeme el"
+        },
+        {
+          "number": "4",
+          "text": "nombre de Dios sera expulsado sin retorno."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "La promesa del nuevo pacto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y todos los que entran en el pacto nuevo en la tierra de Damasco y se apartan del camino del pueblo, estos"
+        },
+        {
+          "number": "2",
+          "text": "son los que el Dios de Israel llamara sus elegidos."
+        },
+        {
+          "number": "3",
+          "text": "Y el Maestro de la congregacion les ensenara hasta que venga el Maestro de Justicia al fin de los dias. Y"
+        },
+        {
+          "number": "4",
+          "text": "entonces Dios visitara la tierra y se cumpliran todas las promesas."
+        },
+        {
+          "number": "5",
+          "text": "❦"
+        },
+        {
+          "number": "6",
+          "text": "Fin - DOCUMENTO DE DAMASCO"
+        }
+      ]
+    }
+  ]
+}

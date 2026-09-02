@@ -676,6 +676,9 @@ function normalizeData() {
     if (getBookName(row).includes('Carta de Aristeas')) {
       row._texto = 'carta-aristeas-es';
     }
+    if (getBookName(row).includes('Documento de Damasco')) {
+      row._texto = 'documento-damasco-es';
+    }
     if (getBookName(row).includes('Libro de Adán y Eva')) {
       row._texto = 'apocalypse-moses-es';
     }
