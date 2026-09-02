@@ -308,4 +308,6 @@
   ,{"id":"testament-moses-es","title":"Testamento de Moisés (Asunción de Moisés)","language":"es","file":"testament-moses.es.json"}
   ,{"id":"testament-job","title":"Testament of Job","language":"en","file":"testament-job.en.json"}
   ,{"id":"testament-job-es","title":"Testamento de Job","language":"es","file":"testament-job.es.json"}
+  ,{"id":"2-baruch","title":"2 Baruch (Syriac Apocalypse of Baruch)","language":"en","file":"2-baruch.en.json"}
+  ,{"id":"2-baruch-es","title":"2 Baruc (Apocalipsis siríaco de Baruc)","language":"es","file":"2-baruch.es.json"}
 ]
