@@ -318,4 +318,5 @@
   ,{"id":"documento-damasco-es","title":"Documento de Damasco (edición local)","language":"es","file":"documento-damasco.es.json"}
   ,{"id":"comentario-habacuc-es","title":"Comentario de Habacuc (1QpHab, edición local)","language":"es","file":"comentario-habacuc.es.json"}
   ,{"id":"himnos-accion-gracias-es","title":"Himnos de Acción de Gracias (1QH, edición local)","language":"es","file":"himnos-accion-gracias.es.json"}
+  ,{"id":"regla-comunidad-es","title":"Regla de la Comunidad (1QS, edición local)","language":"es","file":"regla-comunidad.es.json"}
 ]

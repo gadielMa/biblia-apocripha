@@ -685,6 +685,9 @@ function normalizeData() {
     if (getBookName(row).includes('Himnos de Acción de Gracias')) {
       row._texto = 'himnos-accion-gracias-es';
     }
+    if (getBookName(row).includes('Regla de la Comunidad')) {
+      row._texto = 'regla-comunidad-es';
+    }
     if (getBookName(row).includes('Libro de Adán y Eva')) {
       row._texto = 'apocalypse-moses-es';
     }
