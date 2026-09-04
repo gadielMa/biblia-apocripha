@@ -582,6 +582,9 @@
     .resumen, .fecha, .idioma { color: var(--text2); }
     .tag, .entry-type { background: #f5f7fa; border-color: var(--border); color: var(--text2); }
     .archivo-web, .archivo-bible { background: #fff5ef; border-color: #efc7ad; color: #984b2d; border-radius: 9px; }
+    .reader-hint { color: var(--accent); font-size: .78rem; font-weight: 700; white-space: nowrap; }
+    tbody tr[data-reader-href] { cursor: pointer; }
+    tbody tr[data-reader-href]:focus-visible { outline: 3px solid rgba(180,83,45,.35); outline-offset: -3px; }
     .archivo-pdf { background: var(--accent); border-color: var(--accent); border-radius: 9px; }
     .canon-boundary td { background: #e8eef6; color: #3f5872; border-color: #cfdae7; }
     footer { background: #17283f; border: 0; color: #b8c7d8; }
@@ -1087,15 +1090,17 @@ function getBookName(row) {
   return uniqueBookNames(row).join(' / ') || '—';
 }
 
+function readerHref(documentId, suffix = '') {
+  return `lectura/?obra=${encodeURIComponent(documentId)}${suffix}`;
+}
+
 function renderArchivo(row) {
   const tipo = row._tipo;
   const arch = row._archivo;
-  const readerLink = row._texto
-    ? `<a class="archivo-web" href="textos/lector.html?obra=${encodeURIComponent(row._texto)}">Leer texto</a>`
-    : '';
-  if (!arch) return readerLink || '<span class="archivo-none">—</span>';
+  const readerHint = row._texto ? '<span class="reader-hint">Abrir lectura&nbsp;↗</span>' : '';
+  if (!arch) return readerHint || '<span class="archivo-none">—</span>';
   const safeArch = escAttr(arch);
-  if (tipo === 'pdf') return readerLink || '<span class="archivo-none">—</span>';
+  if (tipo === 'pdf') return readerHint || '<span class="archivo-none">—</span>';
   return '<span class="archivo-none">—</span>';
 }
 
@@ -1116,7 +1121,8 @@ function renderRow(row) {
   const color = getColor(g);
   const nombre = getBookName(row);
 
-  return `<tr>
+  const rowReaderHref = row._texto ? readerHref(row._texto) : '';
+  return `<tr${rowReaderHref ? ` data-reader-href="${escAttr(rowReaderHref)}" tabindex="0" role="link" aria-label="Abrir ${escAttr(nombre)}"` : ''}>
     <td style="font-weight:600;color:var(--text)">${esc(nombre)}</td>
     <td class="resumen">${esc(row.Resumen || '')}</td>
     <td>${renderArchivo(row)}</td>
@@ -1180,7 +1186,7 @@ function renderTextResults() {
   }
   const label = results.length === 12 ? 'Mostrando las primeras 12 coincidencias.' : `${results.length} coincidencia${results.length === 1 ? '' : 's'}.`;
   content.innerHTML = `<p class="text-search-note">${label}</p><div class="text-result-list">${results.map(item => `
-    <a class="text-result" href="textos/lector.html?obra=${encodeURIComponent(item.documentId)}&capitulo=${item.chapter}#pasaje-${item.chapter}-${item.verse}">
+    <a class="text-result" href="lectura/?obra=${encodeURIComponent(item.documentId)}&capitulo=${item.chapter}#pasaje-${item.chapter}-${item.verse}">
       <span class="text-result-meta">${esc(item.title)} · capítulo ${item.chapter}, versículo ${esc(item.verse)}</span>
       <span class="text-result-excerpt">${esc(item.text)}</span>
     </a>`).join('')}</div>`;
@@ -1248,6 +1254,18 @@ document.getElementById('filters').addEventListener('click', e => {
   btn.classList.add('active');
   activeGroup = btn.dataset.group;
   render();
+});
+
+document.getElementById('tbody').addEventListener('click', e => {
+  const row = e.target.closest('tr[data-reader-href]');
+  if (row) window.location.href = row.dataset.readerHref;
+});
+document.getElementById('tbody').addEventListener('keydown', e => {
+  const row = e.target.closest('tr[data-reader-href]');
+  if (row && (e.key === 'Enter' || e.key === ' ')) {
+    e.preventDefault();
+    window.location.href = row.dataset.readerHref;
+  }
 });
 
 document.getElementById('show-select').addEventListener('change', e => {

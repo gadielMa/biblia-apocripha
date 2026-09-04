@@ -5,8 +5,8 @@
   "lang": "es",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f5eadb",
-  "theme_color": "#8d5f35",
+  "background_color": "#f4f7fb",
+  "theme_color": "#17283f",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
