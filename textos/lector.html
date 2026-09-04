@@ -120,8 +120,10 @@
           return `<a class="${active}" href="${href}" aria-current="${active ? 'page' : 'false'}">${label}</a>`;
         }).join('');
         const work = await (await fetch(`${assetPrefix}${entry.file}`)).json();
-        document.querySelector('.reader-tools a').href = homeHref;
-        document.getElementById('footer-home').href = homeHref;
+        const backLink = document.querySelector('.reader-tools a');
+        const footerHome = document.getElementById('footer-home');
+        if (backLink) backLink.href = homeHref;
+        if (footerHome) footerHome.href = homeHref;
         window.document.getElementById('title').textContent = work.title;
         const languageLabel = work.language === 'es' ? 'Español' : 'English';
         const sourceTranslator = work.sourceTranslator || (work.language === 'es' ? '' : work.translator);
