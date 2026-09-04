@@ -65,8 +65,14 @@
     .passage { font-family:Georgia,serif; font-size:1.08rem; line-height:1.85; color:#2c3a4b; }
     .verse-number { color:var(--accent); font-family:Inter,ui-sans-serif,sans-serif; }
     .passage:target { background:#fff1e8; outline-color:#efbd9f; }
-    .reader-footer { background:#17283f; color:#b8c7d8; padding:2rem 1rem; text-align:center; font-size:.86rem; }
-    .reader-footer a { color:#fff; text-decoration:none; }
+    .reader-footer { border:0; background:#17283f; color:#b8c7d8; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .reader-footer .footer-flex { width:min(1120px,90%); margin:auto; padding:32px 0; display:grid; justify-items:center; gap:14px; text-align:center; font-size:.9rem; }
+    .reader-footer .footer-copy { margin:0; }
+    .reader-footer .footer-copy b { color:#fff; font-weight:700; }
+    .reader-footer .footer-links { display:flex; justify-content:center; align-items:center; gap:18px; flex-wrap:wrap; }
+    .reader-footer .footer-links a { display:inline-flex; align-items:center; gap:7px; color:inherit; text-decoration:none; }
+    .reader-footer .footer-links a:hover { text-decoration:underline; }
+    .reader-footer .footer-links img { width:30px; height:30px; object-fit:contain; }
     @media (max-width:600px) { header { border-radius:0 0 22px 22px; padding-bottom:2.5rem; } main { width:calc(100% - 1rem); margin-top:-1rem; border-radius:14px; padding:1.15rem; } .passage { font-size:1rem; line-height:1.72; } }
   </style>
 </head>
@@ -144,6 +150,15 @@
     }
     loadReader();
   </script>
-  <footer class="reader-footer">Biblioteca Bíblica Universal · <a id="footer-home" href="../index.html">Volver a todos los textos</a></footer>
+  <footer class="reader-footer">
+    <div class="footer-flex">
+      <p class="footer-copy">© 2026 <b>Induliru</b>. Innovación | Calidad | Desarrollo. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="https://wa.me/5491172657749" target="_blank" rel="noopener"><img src="https://induliru.com/WSP_LOGO.png" alt="WhatsApp">+54 9 11 7265-7749</a>
+        <a href="https://www.instagram.com/induliru.tech/" target="_blank" rel="noopener"><img src="https://induliru.com/INSTA_LOGO.png" alt="Instagram">@induliru.tech</a>
+        <a href="mailto:hola@induliru.com"><img src="https://induliru.com/GMAIL_LOGO.png" alt="Email">hola@induliru.com</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
