@@ -2,7 +2,17 @@ import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const outputDir = process.argv[2] || 'textos';
-const files = (await readdir(outputDir)).filter(file => file.endsWith('.json') && file !== 'search-index.json' && file !== 'catalog.json');
+async function findJsonFiles(dir, relative = '') {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const rel = join(relative, entry.name);
+    if (entry.isDirectory()) files.push(...await findJsonFiles(join(dir, entry.name), rel));
+    else if (entry.name.endsWith('.json') && entry.name !== 'search-index.json' && entry.name !== 'catalog.json') files.push(rel);
+  }
+  return files;
+}
+const files = await findJsonFiles(outputDir);
 const works = (await Promise.all(files.map(async file => JSON.parse(await readFile(join(outputDir, file), 'utf8')))))
   .filter(work => Array.isArray(work.chapters));
 

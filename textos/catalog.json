@@ -287,38 +287,604 @@
     "language": "es",
     "file": "gospel-mary.es.json"
   },
-  {"id":"gospel-thomas","title":"Gospel of Thomas (Mattison)","language":"en","file":"gospel-thomas.en.json"},
-  {"id":"gospel-thomas-es","title":"Evangelio de Tomás (traducción automática)","language":"es","file":"gospel-thomas.es.json"},
-  {"id":"gospel-philip","title":"Gospel of Philip (Mattison)","language":"en","file":"gospel-philip.en.json"},
-  {"id":"gospel-philip-es","title":"Evangelio de Felipe (traducción automática)","language":"es","file":"gospel-philip.es.json"},
-  {"id":"gospel-judas","title":"Gospel of Judas (Mattison)","language":"en","file":"gospel-judas.en.json"},
-  {"id":"gospel-judas-es","title":"Evangelio de Judas (traducción automática)","language":"es","file":"gospel-judas.es.json"},
-  {"id":"gospel-truth","title":"Gospel of Truth (Mattison)","language":"en","file":"gospel-truth.en.json"},
-  {"id":"gospel-truth-es","title":"Evangelio de la Verdad (traducción automática)","language":"es","file":"gospel-truth.es.json"}
-  ,{"id":"gospel-egyptians-es","title":"Evangelio copto de los Egipcios (edición local)","language":"es","file":"gospel-egyptians.es.json"}
-  ,{"id":"acts-peter","title":"Acts of Peter (M. R. James, 1924)","language":"en","file":"acts-peter.en.json"}
-  ,{"id":"acts-peter-es","title":"Hechos de Pedro (traducción automática)","language":"es","file":"acts-peter.es.json"}
-  ,{"id":"acts-andrew","title":"Acts of Andrew (M. R. James, 1924)","language":"en","file":"acts-andrew.en.json"}
-  ,{"id":"acts-andrew-es","title":"Hechos de Andrés (traducción automática)","language":"es","file":"acts-andrew.es.json"}
-  ,{"id":"acts-thomas","title":"Acts of Thomas (M. R. James, 1924)","language":"en","file":"acts-thomas.en.json"}
-  ,{"id":"acts-thomas-es","title":"Hechos de Tomás (traducción automática)","language":"es","file":"acts-thomas.es.json"}
-  ,{"id":"epistle-apostles","title":"Epistle of the Apostles (M. R. James, 1924)","language":"en","file":"epistle-apostles.en.json"}
-  ,{"id":"epistle-apostles-es","title":"Epístola de los Apóstoles (traducción automática)","language":"es","file":"epistle-apostles.es.json"}
-  ,{"id":"testament-moses","title":"Testament of Moses (Assumption of Moses)","language":"en","file":"testament-moses.en.json"}
-  ,{"id":"testament-moses-es","title":"Testamento de Moisés (Asunción de Moisés)","language":"es","file":"testament-moses.es.json"}
-  ,{"id":"testament-job","title":"Testament of Job","language":"en","file":"testament-job.en.json"}
-  ,{"id":"testament-job-es","title":"Testamento de Job","language":"es","file":"testament-job.es.json"}
-  ,{"id":"2-baruch","title":"2 Baruch (Syriac Apocalypse of Baruch)","language":"en","file":"2-baruch.en.json"}
-  ,{"id":"2-baruch-es","title":"2 Baruc (Apocalipsis siríaco de Baruc)","language":"es","file":"2-baruch.es.json"}
-  ,{"id":"3-baruch","title":"3 Baruch (Greek Apocalypse of Baruch)","language":"en","file":"3-baruch.en.json"}
-  ,{"id":"3-baruch-es","title":"3 Baruc (Apocalipsis griego de Baruc)","language":"es","file":"3-baruch.es.json"}
-  ,{"id":"odes-solomon","title":"Odes of Solomon","language":"en","file":"odes-solomon.en.json"}
-  ,{"id":"odes-solomon-es","title":"Odas de Salomón","language":"es","file":"odes-solomon.es.json"}
-  ,{"id":"carta-aristeas-es","title":"Carta de Aristeas (edición local)","language":"es","file":"carta-aristeas.es.json"}
-  ,{"id":"documento-damasco-es","title":"Documento de Damasco (edición local)","language":"es","file":"documento-damasco.es.json"}
-  ,{"id":"comentario-habacuc-es","title":"Comentario de Habacuc (1QpHab, edición local)","language":"es","file":"comentario-habacuc.es.json"}
-  ,{"id":"himnos-accion-gracias-es","title":"Himnos de Acción de Gracias (1QH, edición local)","language":"es","file":"himnos-accion-gracias.es.json"}
-  ,{"id":"regla-comunidad-es","title":"Regla de la Comunidad (1QS, edición local)","language":"es","file":"regla-comunidad.es.json"}
-  ,{"id":"guerra-hijos-luz-es","title":"Guerra de los Hijos de la Luz (1QM, edición local)","language":"es","file":"guerra-hijos-luz.es.json"}
-  ,{"id":"rollo-lamec-es","title":"Rollo de Lamec (1QapGen, edición local)","language":"es","file":"rollo-lamec.es.json"}
+  {
+    "id": "gospel-thomas",
+    "title": "Gospel of Thomas (Mattison)",
+    "language": "en",
+    "file": "gospel-thomas.en.json"
+  },
+  {
+    "id": "gospel-thomas-es",
+    "title": "Evangelio de Tomás (traducción automática)",
+    "language": "es",
+    "file": "gospel-thomas.es.json"
+  },
+  {
+    "id": "gospel-philip",
+    "title": "Gospel of Philip (Mattison)",
+    "language": "en",
+    "file": "gospel-philip.en.json"
+  },
+  {
+    "id": "gospel-philip-es",
+    "title": "Evangelio de Felipe (traducción automática)",
+    "language": "es",
+    "file": "gospel-philip.es.json"
+  },
+  {
+    "id": "gospel-judas",
+    "title": "Gospel of Judas (Mattison)",
+    "language": "en",
+    "file": "gospel-judas.en.json"
+  },
+  {
+    "id": "gospel-judas-es",
+    "title": "Evangelio de Judas (traducción automática)",
+    "language": "es",
+    "file": "gospel-judas.es.json"
+  },
+  {
+    "id": "gospel-truth",
+    "title": "Gospel of Truth (Mattison)",
+    "language": "en",
+    "file": "gospel-truth.en.json"
+  },
+  {
+    "id": "gospel-truth-es",
+    "title": "Evangelio de la Verdad (traducción automática)",
+    "language": "es",
+    "file": "gospel-truth.es.json"
+  },
+  {
+    "id": "gospel-egyptians-es",
+    "title": "Evangelio copto de los Egipcios (edición local)",
+    "language": "es",
+    "file": "gospel-egyptians.es.json"
+  },
+  {
+    "id": "acts-peter",
+    "title": "Acts of Peter (M. R. James, 1924)",
+    "language": "en",
+    "file": "acts-peter.en.json"
+  },
+  {
+    "id": "acts-peter-es",
+    "title": "Hechos de Pedro (traducción automática)",
+    "language": "es",
+    "file": "acts-peter.es.json"
+  },
+  {
+    "id": "acts-andrew",
+    "title": "Acts of Andrew (M. R. James, 1924)",
+    "language": "en",
+    "file": "acts-andrew.en.json"
+  },
+  {
+    "id": "acts-andrew-es",
+    "title": "Hechos de Andrés (traducción automática)",
+    "language": "es",
+    "file": "acts-andrew.es.json"
+  },
+  {
+    "id": "acts-thomas",
+    "title": "Acts of Thomas (M. R. James, 1924)",
+    "language": "en",
+    "file": "acts-thomas.en.json"
+  },
+  {
+    "id": "acts-thomas-es",
+    "title": "Hechos de Tomás (traducción automática)",
+    "language": "es",
+    "file": "acts-thomas.es.json"
+  },
+  {
+    "id": "epistle-apostles",
+    "title": "Epistle of the Apostles (M. R. James, 1924)",
+    "language": "en",
+    "file": "epistle-apostles.en.json"
+  },
+  {
+    "id": "epistle-apostles-es",
+    "title": "Epístola de los Apóstoles (traducción automática)",
+    "language": "es",
+    "file": "epistle-apostles.es.json"
+  },
+  {
+    "id": "testament-moses",
+    "title": "Testament of Moses (Assumption of Moses)",
+    "language": "en",
+    "file": "testament-moses.en.json"
+  },
+  {
+    "id": "testament-moses-es",
+    "title": "Testamento de Moisés (Asunción de Moisés)",
+    "language": "es",
+    "file": "testament-moses.es.json"
+  },
+  {
+    "id": "testament-job",
+    "title": "Testament of Job",
+    "language": "en",
+    "file": "testament-job.en.json"
+  },
+  {
+    "id": "testament-job-es",
+    "title": "Testamento de Job",
+    "language": "es",
+    "file": "testament-job.es.json"
+  },
+  {
+    "id": "2-baruch",
+    "title": "2 Baruch (Syriac Apocalypse of Baruch)",
+    "language": "en",
+    "file": "2-baruch.en.json"
+  },
+  {
+    "id": "2-baruch-es",
+    "title": "2 Baruc (Apocalipsis siríaco de Baruc)",
+    "language": "es",
+    "file": "2-baruch.es.json"
+  },
+  {
+    "id": "3-baruch",
+    "title": "3 Baruch (Greek Apocalypse of Baruch)",
+    "language": "en",
+    "file": "3-baruch.en.json"
+  },
+  {
+    "id": "3-baruch-es",
+    "title": "3 Baruc (Apocalipsis griego de Baruc)",
+    "language": "es",
+    "file": "3-baruch.es.json"
+  },
+  {
+    "id": "odes-solomon",
+    "title": "Odes of Solomon",
+    "language": "en",
+    "file": "odes-solomon.en.json"
+  },
+  {
+    "id": "odes-solomon-es",
+    "title": "Odas de Salomón",
+    "language": "es",
+    "file": "odes-solomon.es.json"
+  },
+  {
+    "id": "carta-aristeas-es",
+    "title": "Carta de Aristeas (edición local)",
+    "language": "es",
+    "file": "carta-aristeas.es.json"
+  },
+  {
+    "id": "documento-damasco-es",
+    "title": "Documento de Damasco (edición local)",
+    "language": "es",
+    "file": "documento-damasco.es.json"
+  },
+  {
+    "id": "comentario-habacuc-es",
+    "title": "Comentario de Habacuc (1QpHab, edición local)",
+    "language": "es",
+    "file": "comentario-habacuc.es.json"
+  },
+  {
+    "id": "himnos-accion-gracias-es",
+    "title": "Himnos de Acción de Gracias (1QH, edición local)",
+    "language": "es",
+    "file": "himnos-accion-gracias.es.json"
+  },
+  {
+    "id": "regla-comunidad-es",
+    "title": "Regla de la Comunidad (1QS, edición local)",
+    "language": "es",
+    "file": "regla-comunidad.es.json"
+  },
+  {
+    "id": "guerra-hijos-luz-es",
+    "title": "Guerra de los Hijos de la Luz (1QM, edición local)",
+    "language": "es",
+    "file": "guerra-hijos-luz.es.json"
+  },
+  {
+    "id": "rollo-lamec-es",
+    "title": "Rollo de Lamec (1QapGen, edición local)",
+    "language": "es",
+    "file": "rollo-lamec.es.json"
+  },
+  {
+    "id": "rvr1909-genesis",
+    "title": "Génesis (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/genesis.es.json"
+  },
+  {
+    "id": "rvr1909-exodo",
+    "title": "Éxodo (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/exodo.es.json"
+  },
+  {
+    "id": "rvr1909-levitico",
+    "title": "Levítico (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/levitico.es.json"
+  },
+  {
+    "id": "rvr1909-numeros",
+    "title": "Números (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/numeros.es.json"
+  },
+  {
+    "id": "rvr1909-deuteronomio",
+    "title": "Deuteronomio (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/deuteronomio.es.json"
+  },
+  {
+    "id": "rvr1909-josue",
+    "title": "Josué (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/josue.es.json"
+  },
+  {
+    "id": "rvr1909-jueces",
+    "title": "Jueces (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/jueces.es.json"
+  },
+  {
+    "id": "rvr1909-rut",
+    "title": "Rut (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/rut.es.json"
+  },
+  {
+    "id": "rvr1909-1-samuel",
+    "title": "1 Samuel (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-samuel.es.json"
+  },
+  {
+    "id": "rvr1909-2-samuel",
+    "title": "2 Samuel (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-samuel.es.json"
+  },
+  {
+    "id": "rvr1909-1-reyes",
+    "title": "1 Reyes (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-reyes.es.json"
+  },
+  {
+    "id": "rvr1909-2-reyes",
+    "title": "2 Reyes (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-reyes.es.json"
+  },
+  {
+    "id": "rvr1909-1-cronicas",
+    "title": "1 Crónicas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-cronicas.es.json"
+  },
+  {
+    "id": "rvr1909-2-cronicas",
+    "title": "2 Crónicas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-cronicas.es.json"
+  },
+  {
+    "id": "rvr1909-esdras",
+    "title": "Esdras (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/esdras.es.json"
+  },
+  {
+    "id": "rvr1909-nehemias",
+    "title": "Nehemías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/nehemias.es.json"
+  },
+  {
+    "id": "rvr1909-ester",
+    "title": "Ester (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/ester.es.json"
+  },
+  {
+    "id": "rvr1909-job",
+    "title": "Job (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/job.es.json"
+  },
+  {
+    "id": "rvr1909-salmos",
+    "title": "Salmos (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/salmos.es.json"
+  },
+  {
+    "id": "rvr1909-proverbios",
+    "title": "Proverbios (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/proverbios.es.json"
+  },
+  {
+    "id": "rvr1909-eclesiastes",
+    "title": "Eclesiastés (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/eclesiastes.es.json"
+  },
+  {
+    "id": "rvr1909-cantar-de-los-cantares",
+    "title": "Cantar de los Cantares (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/cantar-de-los-cantares.es.json"
+  },
+  {
+    "id": "rvr1909-isaias",
+    "title": "Isaías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/isaias.es.json"
+  },
+  {
+    "id": "rvr1909-jeremias",
+    "title": "Jeremías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/jeremias.es.json"
+  },
+  {
+    "id": "rvr1909-lamentaciones",
+    "title": "Lamentaciones (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/lamentaciones.es.json"
+  },
+  {
+    "id": "rvr1909-ezequiel",
+    "title": "Ezequiel (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/ezequiel.es.json"
+  },
+  {
+    "id": "rvr1909-daniel",
+    "title": "Daniel (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/daniel.es.json"
+  },
+  {
+    "id": "rvr1909-oseas",
+    "title": "Oseas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/oseas.es.json"
+  },
+  {
+    "id": "rvr1909-joel",
+    "title": "Joel (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/joel.es.json"
+  },
+  {
+    "id": "rvr1909-amos",
+    "title": "Amós (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/amos.es.json"
+  },
+  {
+    "id": "rvr1909-abdias",
+    "title": "Abdías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/abdias.es.json"
+  },
+  {
+    "id": "rvr1909-jonas",
+    "title": "Jonás (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/jonas.es.json"
+  },
+  {
+    "id": "rvr1909-miqueas",
+    "title": "Miqueas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/miqueas.es.json"
+  },
+  {
+    "id": "rvr1909-nahum",
+    "title": "Nahúm (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/nahum.es.json"
+  },
+  {
+    "id": "rvr1909-habacuc",
+    "title": "Habacuc (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/habacuc.es.json"
+  },
+  {
+    "id": "rvr1909-sofonias",
+    "title": "Sofonías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/sofonias.es.json"
+  },
+  {
+    "id": "rvr1909-hageo",
+    "title": "Hageo (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/hageo.es.json"
+  },
+  {
+    "id": "rvr1909-zacarias",
+    "title": "Zacarías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/zacarias.es.json"
+  },
+  {
+    "id": "rvr1909-malaquias",
+    "title": "Malaquías (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/malaquias.es.json"
+  },
+  {
+    "id": "rvr1909-mateo",
+    "title": "Mateo (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/mateo.es.json"
+  },
+  {
+    "id": "rvr1909-marcos",
+    "title": "Marcos (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/marcos.es.json"
+  },
+  {
+    "id": "rvr1909-lucas",
+    "title": "Lucas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/lucas.es.json"
+  },
+  {
+    "id": "rvr1909-juan",
+    "title": "Juan (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/juan.es.json"
+  },
+  {
+    "id": "rvr1909-hechos",
+    "title": "Hechos (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/hechos.es.json"
+  },
+  {
+    "id": "rvr1909-romanos",
+    "title": "Romanos (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/romanos.es.json"
+  },
+  {
+    "id": "rvr1909-1-corintios",
+    "title": "1 Corintios (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-corintios.es.json"
+  },
+  {
+    "id": "rvr1909-2-corintios",
+    "title": "2 Corintios (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-corintios.es.json"
+  },
+  {
+    "id": "rvr1909-galatas",
+    "title": "Gálatas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/galatas.es.json"
+  },
+  {
+    "id": "rvr1909-efesios",
+    "title": "Efesios (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/efesios.es.json"
+  },
+  {
+    "id": "rvr1909-filipenses",
+    "title": "Filipenses (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/filipenses.es.json"
+  },
+  {
+    "id": "rvr1909-colosenses",
+    "title": "Colosenses (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/colosenses.es.json"
+  },
+  {
+    "id": "rvr1909-1-tesalonicenses",
+    "title": "1 Tesalonicenses (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-tesalonicenses.es.json"
+  },
+  {
+    "id": "rvr1909-2-tesalonicenses",
+    "title": "2 Tesalonicenses (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-tesalonicenses.es.json"
+  },
+  {
+    "id": "rvr1909-1-timoteo",
+    "title": "1 Timoteo (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-timoteo.es.json"
+  },
+  {
+    "id": "rvr1909-2-timoteo",
+    "title": "2 Timoteo (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-timoteo.es.json"
+  },
+  {
+    "id": "rvr1909-tito",
+    "title": "Tito (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/tito.es.json"
+  },
+  {
+    "id": "rvr1909-filemon",
+    "title": "Filemón (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/filemon.es.json"
+  },
+  {
+    "id": "rvr1909-hebreos",
+    "title": "Hebreos (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/hebreos.es.json"
+  },
+  {
+    "id": "rvr1909-santiago",
+    "title": "Santiago (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/santiago.es.json"
+  },
+  {
+    "id": "rvr1909-1-pedro",
+    "title": "1 Pedro (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-pedro.es.json"
+  },
+  {
+    "id": "rvr1909-2-pedro",
+    "title": "2 Pedro (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-pedro.es.json"
+  },
+  {
+    "id": "rvr1909-1-juan",
+    "title": "1 Juan (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/1-juan.es.json"
+  },
+  {
+    "id": "rvr1909-2-juan",
+    "title": "2 Juan (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/2-juan.es.json"
+  },
+  {
+    "id": "rvr1909-3-juan",
+    "title": "3 Juan (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/3-juan.es.json"
+  },
+  {
+    "id": "rvr1909-judas",
+    "title": "Judas (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/judas.es.json"
+  },
+  {
+    "id": "rvr1909-apocalipsis",
+    "title": "Apocalipsis (Reina-Valera 1909)",
+    "language": "es",
+    "file": "rvr1909/apocalipsis.es.json"
+  }
 ]
