@@ -637,7 +637,7 @@
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(75, minmax(205px, 1fr)); gap: .8rem; min-width: 15840px; padding: 2.9rem .2rem 1.1rem; }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(26, minmax(205px, 1fr)); gap: .8rem; min-width: 5500px; padding: 2.9rem .2rem 1.1rem; }
     .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 1.3rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
     .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -951,6 +951,7 @@
       </article>
 
       <article class="timeline-event">
+        <img class="timeline-image" src="assets/timeline/jesus-nino.png" alt="Ilustración de Jesús niño con María y José en Nazaret">
         <span class="source-badge apocryphal">Tradición apócrifa</span>
         <div><p class="timeline-date">infancia de Jesús</p><h3>Relatos del niño Jesús</h3></div>
         <p>El Evangelio de la Infancia de Tomás narra gorriones de barro que cobran vida y un episodio polémico en que un niño cae muerto tras enfrentarse con Jesús.</p>
@@ -1001,8 +1002,8 @@
       <article class="timeline-event">
         <img class="timeline-image" src="assets/timeline/jesus-descenso.png" alt="Representación simbólica del descenso de Cristo a los muertos">
         <span class="source-badge apocryphal">Canónico y tradición</span>
-        <div><p class="timeline-date">entre muerte y resurrección</p><h3>El descenso a los muertos</h3></div>
-        <p>El lenguaje bíblico habla de muerte, sepultura y resurrección al tercer día. No llama a ese lugar “purgatorio”; la bajada al Hades se desarrolla de modo narrativo en tradiciones posteriores.</p>
+        <div><p class="timeline-date">entre muerte y resurrección</p><h3>Evangelio de Nicodemo</h3></div>
+        <p>El Evangelio de Nicodemo desarrolla el descenso de Cristo a los muertos: abre las puertas del Hades y lleva esperanza a los justos. Es una tradición posterior a los evangelios canónicos.</p>
         <a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a>
         <a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo</a>
       </article>
@@ -1029,7 +1030,6 @@
         <div><p class="timeline-date">tradiciones de los siglos II–III d. C.</p><h3>El Resucitado en María Magdalena y Nag Hammadi</h3></div>
         <p>El Evangelio de María y varios textos de Nag Hammadi describen diálogos del Resucitado con sus discípulos, con un lenguaje espiritual distinto al de los evangelios canónicos.</p>
         <a href="lectura/?obra=evangelio-maria-es&amp;capitulo=1">Evangelio de María</a>
-        <p class="timeline-note">Tradición no canónica: se presenta como literatura cristiana temprana, no como un relato histórico equivalente a los evangelios.</p>
       </article>
     </div>
   </div>
@@ -1855,20 +1855,20 @@ const extraTimelineEvents = [
 ];
 const timelineTrack = document.querySelector('.timeline-track');
 const earlyTimelineEvents = [
-  ['orígenes','Adán y Eva','La humanidad comienza en el jardín; Génesis presenta creación, mandato y expulsión.','Génesis 1–3','lectura/?obra=rvr1909-genesis&capitulo=1','canonical'],
+  ['orígenes','Adán y Eva','Dios crea al primer hombre, Adán, y a Eva; viven en el jardín hasta su expulsión.','Génesis 1–3','lectura/?obra=rvr1909-genesis&capitulo=1','canonical','assets/timeline/adan-eva.png'],
   ['primeras generaciones','Set y Enós','La línea de Set continúa tras Adán; en días de Enós se invoca el nombre del Señor.','Génesis 4:25–26','lectura/?obra=rvr1909-genesis&capitulo=4#pasaje-4-25','canonical'],
-  ['mundo antiguo','Noé y el arca','Noé construye el arca, atraviesa el diluvio y recibe el signo del arco.','Génesis 6–9','lectura/?obra=rvr1909-genesis&capitulo=6','canonical'],
+  ['mundo antiguo','Noé y el arca','Noé construye el arca, atraviesa el diluvio con su familia y recibe el arco como señal de alianza.','Génesis 6–9','lectura/?obra=rvr1909-genesis&capitulo=6','canonical','assets/timeline/noe-arca.png'],
   ['patriarcas','Abraham y la promesa','La promesa de una descendencia y bendición para las naciones inicia el ciclo patriarcal.','Génesis 12:1–3','lectura/?obra=rvr1909-genesis&capitulo=12#pasaje-12-1','canonical'],
   ['patriarcas','Jacob y Judá','Jacob bendice a Judá con una imagen real que la tradición cristiana lee mesiánicamente.','Génesis 49:10','lectura/?obra=rvr1909-genesis&capitulo=49#pasaje-49-10','canonical'],
   ['Egipto','José y sus hermanos','José llega a Egipto y su familia se instala allí, preparando el relato del éxodo.','Génesis 37–50','lectura/?obra=rvr1909-genesis&capitulo=37','canonical'],
   ['promesa','Moisés anuncia un profeta','Moisés habla de un profeta semejante a él; Hechos lo aplica a Jesús.','Deuteronomio 18:15','lectura/?obra=rvr1909-deuteronomio&capitulo=18#pasaje-18-15','canonical'],
   ['profecía','Isaías y Emanuel','Isaías anuncia: “Una virgen concebirá y dará a luz un hijo, y su nombre será Emanuel”.','Isaías 7:14','lectura/?obra=rvr1909-isaias&capitulo=7#pasaje-7-14','canonical']
 ];
-function makeTimelineCard([date, title, description, reference, href, source]) {
+function makeTimelineCard([date, title, description, reference, href, source, image]) {
   const card = document.createElement('article');
   card.className = 'timeline-event';
   const sourceLabel = source === 'canonical' ? 'Canónico' : source === 'apocryphal' ? 'Tradición apócrifa' : 'Contexto histórico';
-  card.innerHTML = `<span class="source-badge ${source}">${sourceLabel}</span><div><p class="timeline-date"></p><h3></h3></div><p class="timeline-description"></p><a></a>`;
+  card.innerHTML = `${image ? `<img class="timeline-image" src="${image}" alt="Ilustración de ${title}">` : ''}<span class="source-badge ${source}">${sourceLabel}</span><div><p class="timeline-date"></p><h3></h3></div><p class="timeline-description"></p><a></a>`;
   card.querySelector('.timeline-date').textContent = date; card.querySelector('h3').textContent = title; card.querySelector('.timeline-description').textContent = description;
   const link = card.querySelector('a'); link.textContent = reference; link.href = href;
   return card;
@@ -1879,7 +1879,7 @@ if (timelineTrack) {
   const moisesCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Moisés y la alianza');
   earlyTimelineEvents.slice(2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), moisesCard));
   extraTimelineEvents.forEach(([date, title, description, reference, href, source]) => {
-    if (title === 'Protoevangelio de Santiago' || title === 'Infancia de Tomás') return;
+    if (title !== 'Pentecostés') return;
     timelineTrack.append(makeTimelineCard([date, title, description, reference, href, source]));
   });
 }
