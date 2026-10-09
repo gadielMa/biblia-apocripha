@@ -629,10 +629,11 @@
     .source-badge.apocryphal { color: #8d452b; background: #fbe7d9; }
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(7, minmax(245px, 1fr)); gap: 1rem; min-width: 1860px; padding: 1.1rem .2rem; }
-    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 2.05rem; height: 3px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); }
+    #catalog-view .controls { margin-top: 1rem; }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(13, minmax(245px, 1fr)); gap: 1rem; min-width: 3420px; padding: 2.9rem .2rem 1.1rem; }
+    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 1.3rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .7rem; min-height: 355px; padding: 1rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
-    .timeline-event::before { content: ""; width: .9rem; height: .9rem; margin-left: .15rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
     .timeline-event h3 { margin: 0; font-size: 1.16rem; line-height: 1.15; letter-spacing: -.025em; }
     .timeline-date { margin: -.38rem 0 0; color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
     .timeline-event p { margin: 0; color: var(--text2); font-size: .91rem; }
@@ -647,6 +648,7 @@
       .stats { margin-top: 1.4rem; }
       .stat { min-width: 0; flex: 1 1 42%; }
       .controls { margin-top: -.8rem; }
+      #catalog-view .controls { margin-top: .85rem; }
       tbody tr:not(.canon-boundary) { border-radius: 14px; border-color: var(--border); box-shadow: 0 8px 22px rgba(26,48,77,.07); }
       .view-tabs { margin-top: .7rem; overflow-x: auto; padding-bottom: .2rem; }
       .view-tab { flex: 0 0 auto; }
@@ -654,6 +656,7 @@
       .timeline-track { display: flex; flex-direction: column; min-width: 0; padding: 0 0 0 1.25rem; gap: .8rem; }
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; }
+      .timeline-event::before { top: 1.1rem; left: -1.3rem; }
     }
   </style>
 </head>
@@ -732,11 +735,27 @@
       </article>
 
       <article class="timeline-event">
+        <span class="source-badge context">Contexto histórico</span>
+        <div><p class="timeline-date">siglos II a. C.–I d. C.</p><h3>El mundo del Segundo Templo</h3></div>
+        <p>Judea vive entre tradiciones judías diversas, dominio imperial y expectativa de liberación. Los libros deuterocanónicos, Qumrán y otros textos ayudan a dibujar ese escenario.</p>
+        <a href="lectura/?obra=rvr1909-daniel&amp;capitulo=7#pasaje-7-13">Daniel 7:13–14</a>
+        <a href="lectura/?obra=1-enoc-es&amp;capitulo=1">Explorar 1 Enoc</a>
+      </article>
+
+      <article class="timeline-event">
         <img class="timeline-image" src="assets/timeline/infancia-jesus.png" alt="Ilustración de María, José y Jesús niño en Judea">
         <span class="source-badge canonical">Canónico</span>
         <div><p class="timeline-date">c. 6–4 a. C.</p><h3>Jesús bebé</h3></div>
         <p>Los relatos de nacimiento sitúan a Jesús con María y José, en Belén y luego Nazaret. Mateo y Lucas conservan perspectivas distintas y complementarias de esos primeros años.</p>
         <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2">Leer Lucas 2</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">primeros años</p><h3>Huida, regreso y templo</h3></div>
+        <p>Mateo cuenta la huida a Egipto y el regreso a Nazaret. Lucas recuerda a Jesús adolescente dialogando en el templo, una de las pocas escenas canónicas de su crecimiento.</p>
+        <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=2">Mateo 2</a>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2#pasaje-2-41">Lucas 2:41–52</a>
       </article>
 
       <article class="timeline-event">
@@ -749,10 +768,33 @@
 
       <article class="timeline-event">
         <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">inicio del ministerio</p><h3>Bautismo y desierto</h3></div>
+        <p>Jesús es bautizado por Juan y, según los evangelios sinópticos, atraviesa un período de prueba en el desierto antes de predicar públicamente.</p>
+        <a href="lectura/?obra=rvr1909-marcos&amp;capitulo=1#pasaje-1-9">Marcos 1:9–13</a>
+        <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=4">Mateo 4</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
         <div><p class="timeline-date">c. 27–30 d. C.</p><h3>Jesús adulto</h3></div>
         <p>Predica el Reino de Dios, enseña en parábolas, llama discípulos y sana. Los evangelios sitúan su ministerio público en Galilea y Judea.</p>
         <a href="lectura/?obra=rvr1909-marcos&amp;capitulo=1#pasaje-1-14">Marcos 1:14–15</a>
         <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=4#pasaje-4-16">Lucas 4:16–21</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">ministerio público</p><h3>Parábolas, signos y discípulos</h3></div>
+        <p>Las parábolas describen el Reino; las curaciones y las comidas compartidas marcan el modo en que Jesús se acerca a enfermos, excluidos y seguidores.</p>
+        <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=5">Mateo 5–7</a>
+        <a href="lectura/?obra=rvr1909-juan&amp;capitulo=11">Juan 11</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">la última noche</p><h3>La cena y el arresto</h3></div>
+        <p>En Jerusalén comparte una última cena con sus discípulos, ora en Getsemaní y es arrestado. Este tramo prepara la narración de la pasión.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=22#pasaje-22-7">Lucas 22:7–54</a>
       </article>
 
       <article class="timeline-event">
@@ -778,6 +820,14 @@
         <p>Se aparece a sus discípulos, comparte con ellos, los envía y habla del Reino de Dios. Después, Hechos narra la ascensión.</p>
         <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=24">Lucas 24</a>
         <a href="lectura/?obra=rvr1909-hechos&amp;capitulo=1#pasaje-1-3">Hechos 1:3–9</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">misión y ascensión</p><h3>Lo que dijo e hizo resucitado</h3></div>
+        <p>Jesús resucitado explica las Escrituras, comparte la paz con sus discípulos y los envía a anunciar el mensaje. La secuencia culmina con la ascensión en Hechos.</p>
+        <a href="lectura/?obra=rvr1909-juan&amp;capitulo=20#pasaje-20-19">Juan 20:19–23</a>
+        <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=28#pasaje-28-16">Mateo 28:16–20</a>
       </article>
     </div>
   </div>
