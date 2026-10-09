@@ -778,10 +778,10 @@
       .family-tree { width: 100%; }
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
-      .tree-parents { grid-template-columns: 1fr; width: min(300px, 100%); min-width: 0; gap: 1rem; padding: 28px 0 0; }
-      .tree-parents::after { display: none; }
-      .tree-parent.jose-parent { grid-column: 1; }
-      .tree-parent:first-child::after { display: none; }
+      .tree-parents { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; min-width: 0; gap: .7rem; padding: 28px 0 26px; }
+      .tree-parents::after { display: block; left: 25%; right: 25%; }
+      .tree-parent.jose-parent { grid-column: 2; }
+      .tree-parent:first-child::after { display: block; }
       .tree-parent.jose-parent::after { bottom: -26px; height: 26px; }
       .prophecy-list { padding-left: 1.8rem; }
       .prophecy-card { padding: .9rem; }
