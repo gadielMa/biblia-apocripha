@@ -680,7 +680,13 @@
     .genealogy-jesus .genealogy-name { align-self: center; font-size: .82rem; }
     .family-tree { width: min(760px, 100%); margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     .genealogy-scroll > .genealogy-flow { display: none; }
+    .family-tree { counter-reset: main-generation; }
     .tree-node { position: relative; z-index: 1; min-width: 168px; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; font-size: .83rem; font-weight: 800; text-align: center; }
+    .family-tree > .tree-node { counter-increment: main-generation; }
+    .tree-node::before { position: absolute; right: calc(100% + .75rem); top: 50%; color: #9b4829; content: "Gen. " counter(main-generation); font-size: .68rem; font-weight: 900; white-space: nowrap; transform: translateY(-50%); }
+    .tree-node::after { display: block; margin-top: .14rem; color: #718095; content: attr(data-relation); font-size: .61rem; font-weight: 700; letter-spacing: .035em; line-height: 1.2; }
+    .tree-node small { display: none; }
+    .tree-node[data-generation]::before { content: attr(data-generation); }
     .tree-node.key { border-color: #e4af91; background: #fff3eb; color: #944322; }
     .tree-node small { display: block; margin-top: .12rem; color: #718095; font-size: .61rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
     .tree-down { position: relative; width: 3px; height: 24px; background: #c46a42; }
@@ -689,7 +695,9 @@
     .tree-branches::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; height: 3px; background: #c46a42; }
     .tree-branches::after { content: ""; position: absolute; top: -25px; left: 50%; width: 3px; height: 26px; background: #c46a42; transform: translateX(-50%); }
     .tree-siblings { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
-    .tree-branch { position: relative; display: flex; flex-direction: column; align-items: center; }
+    .tree-branch { position: relative; display: flex; flex-direction: column; align-items: center; counter-reset: branch-generation 33; }
+    .tree-branch .tree-node { counter-increment: branch-generation; }
+    .tree-branch .tree-node::before { content: "Gen. " counter(branch-generation); }
     .tree-branch::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
     .tree-branch-label { margin: 0 0 .7rem; color: #914221; font-size: .72rem; font-weight: 900; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
     .tree-reference { display: block; width: fit-content; margin: .4rem auto 0; color: #9b4829; font-size: .78rem; font-weight: 800; text-align: center; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
@@ -991,7 +999,7 @@
         </div>
       </div>
       <div class="tree-down"></div>
-      <div class="tree-node key">Jesús<small>llamado el Cristo</small></div>
+      <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
       <a class="tree-reference" href="lectura/?obra=rvr1909-mateo&amp;capitulo=1">Ver Mateo 1:1–16</a>
       <a class="tree-reference" href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Ver Lucas 3:23–38</a>
     </div>
@@ -1706,6 +1714,22 @@ function selectView(view, updateHash = true) {
 viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
 if (location.hash === '#arbol-genealogico') selectView('genealogy', false);
+
+function setGenealogyRelationships() {
+  const textOf = node => node.firstChild.textContent.trim();
+  const trunk = Array.from(document.querySelectorAll('.family-tree > .tree-node'));
+  const davidIndex = trunk.findIndex(node => textOf(node) === 'David');
+  trunk.slice(0, davidIndex + 1).forEach((node, index, chain) => {
+    node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón y Natán' : `Padre de ${textOf(chain[index + 1])}`;
+  });
+  document.querySelectorAll('.tree-branch').forEach(branch => {
+    const nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
+    nodes.forEach((node, index) => {
+      node.dataset.relation = index === nodes.length - 1 ? 'Línea genealógica hasta Jesús' : `Padre de ${textOf(nodes[index + 1])}`;
+    });
+  });
+}
+setGenealogyRelationships();
 
 render();
 loadTextSearchIndex();
