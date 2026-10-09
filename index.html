@@ -783,6 +783,8 @@
       .tree-parent.jose-parent { grid-column: 2; }
       .tree-parent:first-child::after { display: block; }
       .tree-parent.jose-parent::after { bottom: -26px; height: 26px; }
+      /* La flecha que sale de las dos ramas debe entrar al centro de José (segunda columna). */
+      .tree-branches + .tree-down { align-self: flex-start; margin-left: calc(75% - 1.5px); }
       .prophecy-list { padding-left: 1.8rem; }
       .prophecy-card { padding: .9rem; }
     }
