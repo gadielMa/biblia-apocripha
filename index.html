@@ -712,7 +712,8 @@
     .tree-parents::after { content: ""; position: absolute; bottom: 0; left: 16.666%; right: 50%; height: 3px; background: #c46a42; }
     .tree-parent { position: relative; display: flex; flex-direction: column; min-width: 0; align-items: center; }
     .tree-parent .tree-node { box-sizing: border-box; min-width: 0; width: 100%; }
-    .tree-parent .tree-node .tree-verse { width: 100%; }
+    /* A parent comment must remain inside its own branch: María's note must not cover José. */
+    .tree-parent .tree-node .tree-verse { box-sizing: border-box; width: 100% !important; max-width: 100%; }
     .tree-parent::after { content: ""; position: absolute; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
     .tree-parent::after { bottom: -26px; height: 26px; }
     .tree-parent.jose-parent::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
