@@ -659,8 +659,10 @@
     .genealogy-era::after, .genealogy-branches::after { display: none; }
     .genealogy-era h3, .genealogy-branches h3 { margin: .35rem 0 .7rem; font-size: 1.04rem; line-height: 1.18; }
     .genealogy-kicker { margin: 0; color: var(--accent); font-size: .68rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
-    .genealogy-names { display: flex; flex-wrap: wrap; gap: .38rem; }
-    .genealogy-name { padding: .24rem .46rem; border: 1px solid #dce5ef; border-radius: 999px; background: #f7f9fc; color: #3e5065; font-size: .73rem; font-weight: 700; line-height: 1.2; }
+    .genealogy-chain-note { margin: -.25rem 0 .75rem; color: var(--text2); font-size: .78rem; line-height: 1.4; }
+    .genealogy-names { display: flex; flex-wrap: wrap; column-gap: 1.3rem; row-gap: .68rem; }
+    .genealogy-name { position: relative; padding: .24rem .46rem; border: 1px solid #dce5ef; border-radius: 999px; background: #f7f9fc; color: #3e5065; font-size: .73rem; font-weight: 700; line-height: 1.2; }
+    .genealogy-name:not(:last-child)::after { content: "→"; position: absolute; top: 50%; right: -1.02rem; color: var(--accent); font-size: .85rem; font-weight: 900; transform: translateY(-51%); }
     .genealogy-name.key { border-color: #e9bda6; background: #fff0e8; color: #984b2d; }
     .genealogy-reference { display: inline-block; margin-top: .8rem; color: #9b4829; font-size: .78rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .genealogy-branches { width: min(1040px, 100%); }
@@ -669,8 +671,10 @@
     .genealogy-branch { position: relative; padding: .8rem; border: 1px solid var(--border); border-radius: 12px; background: #fbfcfe; }
     .genealogy-branch::before { content: ""; position: absolute; top: -1.12rem; left: 50%; width: 3px; height: 1.15rem; background: #dca17b; transform: translateX(-50%); }
     .genealogy-branch h4 { margin: 0 0 .35rem; font-size: .86rem; }
-    .genealogy-branch .genealogy-names { gap: .3rem; }
+    .genealogy-branch .genealogy-names { column-gap: 1.1rem; row-gap: .5rem; }
     .genealogy-branch .genealogy-name { font-size: .66rem; }
+    .genealogy-branch .genealogy-name:not(:last-child)::after { right: -.87rem; font-size: .73rem; }
+    .genealogy-david-node { display: inline-block; margin: 0 0 .55rem; padding: .35rem .7rem; border: 1px solid #e9bda6; border-radius: 999px; background: #fff0e8; color: #984b2d; font-weight: 850; }
     .genealogy-jesus { width: min(330px, 100%); display: flex; flex-direction: column; justify-content: center; text-align: center; background: linear-gradient(145deg, #fff8ed, #fff); border-color: #e9bda6; }
     .genealogy-jesus h3 { font-size: 1.45rem; color: #7e391f; }
     .genealogy-jesus .genealogy-name { align-self: center; font-size: .82rem; }
@@ -698,6 +702,7 @@
       .genealogy-branch-grid::before { left: .45rem; right: auto; top: 1.15rem; bottom: 1.15rem; width: 3px; height: auto; }
       .genealogy-branch-grid { grid-template-columns: 1fr; gap: .7rem; padding: 0 0 0 1.2rem; }
       .genealogy-branch::before { top: 50%; left: -1.22rem; width: 1.25rem; height: 3px; transform: translateY(-50%); }
+      .genealogy-names { column-gap: 1.15rem; }
       .genealogy-branch-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -915,39 +920,44 @@
   <div class="genealogy-intro">
     <h2 id="genealogy-title">Árbol genealógico: de Adán a Jesús</h2>
     <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto.</p>
-    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> la primera parte sigue la cadena compartida hasta David. Después se abren las dos genealogías canónicas: Mateo 1 sigue la línea real por Salomón; Lucas 3 pasa por Natán y asciende de Jesús hasta Adán.</p>
+    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> cada flecha significa “padre o antepasado → hijo o descendiente”; no representa hermanos. La primera parte sigue la cadena compartida hasta David. Después se abren las dos genealogías canónicas: Mateo 1 sigue la línea real por Salomón; Lucas 3 pasa por Natán y asciende de Jesús hasta Adán.</p>
   </div>
 
   <div class="genealogy-scroll" aria-label="Desplazá horizontalmente para recorrer el árbol genealógico">
     <div class="genealogy-flow">
       <article class="genealogy-era">
         <p class="genealogy-kicker">orígenes</p><h3>Adán hasta Noé</h3>
+        <p class="genealogy-chain-note"><b>Padre → hijo:</b> Adán es padre de Set; Set es padre de Enós, y así continúa la cadena.</p>
         <div class="genealogy-names"><span class="genealogy-name key">Adán</span><span class="genealogy-name">Set</span><span class="genealogy-name">Enós</span><span class="genealogy-name">Cainán</span><span class="genealogy-name">Mahalaleel</span><span class="genealogy-name">Jared</span><span class="genealogy-name key">Enoc</span><span class="genealogy-name">Matusalén</span><span class="genealogy-name">Lamec</span><span class="genealogy-name key">Noé</span></div>
         <a class="genealogy-reference" href="lectura/?obra=rvr1909-genesis&amp;capitulo=5">Génesis 5</a>
       </article>
 
       <article class="genealogy-era">
         <p class="genealogy-kicker">patriarcas</p><h3>De Sem a Abraham</h3>
+        <p class="genealogy-chain-note"><b>Puente:</b> Noé → Sem. Desde Sem, la descendencia llega hasta Abraham.</p>
         <div class="genealogy-names"><span class="genealogy-name">Sem</span><span class="genealogy-name">Arfaxad</span><span class="genealogy-name">Sala</span><span class="genealogy-name">Heber</span><span class="genealogy-name">Peleg</span><span class="genealogy-name">Reu</span><span class="genealogy-name">Serug</span><span class="genealogy-name">Nacor</span><span class="genealogy-name">Taré</span><span class="genealogy-name key">Abraham</span></div>
         <a class="genealogy-reference" href="lectura/?obra=rvr1909-genesis&amp;capitulo=11#pasaje-11-10">Génesis 11:10–32</a>
       </article>
 
       <article class="genealogy-era">
         <p class="genealogy-kicker">promesa y realeza</p><h3>De Abraham a David</h3>
+        <p class="genealogy-chain-note"><b>Padre → hijo:</b> Abraham → Isaac → Jacob; la rama continúa por Judá hasta David.</p>
         <div class="genealogy-names"><span class="genealogy-name key">Isaac</span><span class="genealogy-name key">Jacob</span><span class="genealogy-name">Judá</span><span class="genealogy-name">Fares</span><span class="genealogy-name">Esrom</span><span class="genealogy-name">Aram</span><span class="genealogy-name">Aminadab</span><span class="genealogy-name">Naasón</span><span class="genealogy-name">Salmón</span><span class="genealogy-name key">Booz</span><span class="genealogy-name">Obed</span><span class="genealogy-name">Isaí</span><span class="genealogy-name key">David</span></div>
         <a class="genealogy-reference" href="lectura/?obra=rvr1909-rut&amp;capitulo=4#pasaje-4-18">Rut 4:18–22</a>
       </article>
 
       <article class="genealogy-branches">
         <p class="genealogy-kicker">dos relatos canónicos</p><h3>Desde David hasta Jesús</h3>
+        <div class="genealogy-david-node">David</div>
+        <p class="genealogy-chain-note">David abre dos ramas: Mateo escribe David → Salomón; Lucas escribe David → Natán.</p>
         <div class="genealogy-branch-grid">
           <section class="genealogy-branch">
-            <h4>Mateo 1 · por Salomón</h4>
+            <h4>Mateo 1 · David → Salomón</h4>
             <div class="genealogy-names"><span class="genealogy-name">Salomón</span><span class="genealogy-name">Roboam</span><span class="genealogy-name">Abías</span><span class="genealogy-name">Asa</span><span class="genealogy-name">Josafat</span><span class="genealogy-name">Joram</span><span class="genealogy-name">Ozías</span><span class="genealogy-name">Joatam</span><span class="genealogy-name">Acaz</span><span class="genealogy-name">Ezequías</span><span class="genealogy-name">Manasés</span><span class="genealogy-name">Amón</span><span class="genealogy-name">Josías</span><span class="genealogy-name">Jeconías</span><span class="genealogy-name">Salatiel</span><span class="genealogy-name">Zorobabel</span><span class="genealogy-name">Abiud</span><span class="genealogy-name">Eliaquim</span><span class="genealogy-name">Azor</span><span class="genealogy-name">Sadoc</span><span class="genealogy-name">Aquim</span><span class="genealogy-name">Eliud</span><span class="genealogy-name">Eleazar</span><span class="genealogy-name">Matán</span><span class="genealogy-name">Jacob</span><span class="genealogy-name key">José</span></div>
             <a class="genealogy-reference" href="lectura/?obra=rvr1909-mateo&amp;capitulo=1">Mateo 1:6–16</a>
           </section>
           <section class="genealogy-branch">
-            <h4>Lucas 3 · por Natán</h4>
+            <h4>Lucas 3 · David → Natán</h4>
             <div class="genealogy-names"><span class="genealogy-name">Natán</span><span class="genealogy-name">Matata</span><span class="genealogy-name">Mainán</span><span class="genealogy-name">Melea</span><span class="genealogy-name">Eliaquim</span><span class="genealogy-name">Jonán</span><span class="genealogy-name">José</span><span class="genealogy-name">Judá</span><span class="genealogy-name">Simeón</span><span class="genealogy-name">Leví</span><span class="genealogy-name">Matat</span><span class="genealogy-name">Jorim</span><span class="genealogy-name">Eliezer</span><span class="genealogy-name">Josué</span><span class="genealogy-name">Er</span><span class="genealogy-name">Elmodam</span><span class="genealogy-name">Cosam</span><span class="genealogy-name">Abdi</span><span class="genealogy-name">Melqui</span><span class="genealogy-name">Neri</span><span class="genealogy-name">Salatiel</span><span class="genealogy-name">Zorobabel</span><span class="genealogy-name">Resa</span><span class="genealogy-name">Joana</span><span class="genealogy-name">Judá</span><span class="genealogy-name">José</span><span class="genealogy-name">Semei</span><span class="genealogy-name">Matatías</span><span class="genealogy-name">Maat</span><span class="genealogy-name">Nagai</span><span class="genealogy-name">Esli</span><span class="genealogy-name">Nahum</span><span class="genealogy-name">Amós</span><span class="genealogy-name">Matatías</span><span class="genealogy-name">José</span><span class="genealogy-name">Jannai</span><span class="genealogy-name">Melqui</span><span class="genealogy-name">Leví</span><span class="genealogy-name">Matat</span><span class="genealogy-name">Heli</span><span class="genealogy-name key">José</span></div>
             <a class="genealogy-reference" href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Lucas 3:23–38</a>
           </section>
