@@ -637,11 +637,11 @@
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(27, minmax(205px, 1fr)); gap: .8rem; min-width: 5705px; padding: 4.8rem .2rem 1.1rem; }
-    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 3.2rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(27, minmax(205px, 1fr)); gap: .8rem; min-width: 5705px; padding: 6.5rem .2rem 1.1rem; }
+    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 5.1rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
     .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
-    .timeline-event::after { content: attr(data-year); position: absolute; top: -4.35rem; left: .25rem; width: max-content; max-width: 195px; color: #53657a; font-size: .64rem; font-weight: 800; line-height: 1.2; }
+    .timeline-event::after { content: attr(data-year); position: absolute; top: -5.9rem; left: .25rem; width: max-content; max-width: 195px; color: #53657a; font-size: .64rem; font-weight: 800; line-height: 1.2; }
     .timeline-date { display: none !important; }
     .timeline-event h3 { margin: 0; font-size: 1rem; line-height: 1.15; letter-spacing: -.025em; }
     .timeline-date { margin: -.3rem 0 0; color: var(--accent); font-size: .66rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
@@ -1890,6 +1890,7 @@ const earlyTimelineEvents = [
   ['patriarcas','Abraham y la promesa','La promesa de una descendencia y bendición para las naciones inicia el ciclo patriarcal.','Génesis 12:1–3','lectura/?obra=rvr1909-genesis&capitulo=12#pasaje-12-1','canonical'],
   ['patriarcas','Jacob y Judá','Jacob bendice a Judá con una imagen real que la tradición cristiana lee mesiánicamente.','Génesis 49:10','lectura/?obra=rvr1909-genesis&capitulo=49#pasaje-49-10','canonical'],
   ['Egipto','José y sus hermanos','José llega a Egipto y su familia se instala allí, preparando el relato del éxodo.','Génesis 37–50','lectura/?obra=rvr1909-genesis&capitulo=37','canonical'],
+  ['éxodo · c. 1300 a. C.','Moisés abre el mar Rojo','Moisés extiende su vara y Dios abre un camino entre las aguas; el pueblo de Israel cruza el mar y escapa de la persecución egipcia.','Éxodo 14:15–31','lectura/?obra=rvr1909-exodo&capitulo=14#pasaje-14-15','canonical','assets/timeline/moises-mar-rojo.png'],
   ['promesa','Moisés anuncia un profeta','Moisés habla de un profeta semejante a él; Hechos lo aplica a Jesús.','Deuteronomio 18:15','lectura/?obra=rvr1909-deuteronomio&capitulo=18#pasaje-18-15','canonical'],
   ['profecía','Isaías y Emanuel','Isaías anuncia: “Una virgen concebirá y dará a luz un hijo, y su nombre será Emanuel”.','Isaías 7:14','lectura/?obra=rvr1909-isaias&capitulo=7#pasaje-7-14','canonical']
 ];
@@ -1921,7 +1922,7 @@ if (timelineTrack) {
   });
   const timelineOrder = [
     'Adán y Eva','Set y Enós','Enoc y los vigilantes','Noé y el arca','Abraham y la promesa','Jacob y Judá','José y sus hermanos',
-    'Moisés anuncia un profeta','Isaías y Emanuel','El mundo del Segundo Templo','Jesús bebé','Simeón carga al niño Jesús',
+    'Moisés abre el mar Rojo','Moisés anuncia un profeta','Isaías y Emanuel','El mundo del Segundo Templo','Jesús bebé','Simeón carga al niño Jesús',
     'Huida y regreso a Nazaret','Relatos del niño Jesús','Jesús adolescente en el Templo','Ayuno y tentación en el desierto',
     'Jesús adulto','Parábolas, signos y discípulos','La cena y el arresto','Pasión, muerte y sepultura','Evangelio de Nicodemo',
     'Carino y Leucio, testigos del descenso','Jesús resucitado','El Resucitado en María Magdalena y Nag Hammadi',
@@ -1938,22 +1939,23 @@ if (timelineTrack) {
     'Moisés anuncia un profeta':[-1300,'1300 años antes de Cristo (aprox.)'],
     'Isaías y Emanuel':[-700,'700 años antes de Cristo (aprox.)'],
     'El mundo del Segundo Templo':[-200,'200 años antes de Cristo (aprox.)'],
-    'Jesús bebé':[-4,'entre 6 y 4 años antes de Cristo (aprox.)'],
-    'Simeón carga al niño Jesús':[-4,'entre 6 y 4 años antes de Cristo (aprox.)'],
-    'Huida y regreso a Nazaret':[-4,'alrededor de 4 años antes de Cristo'],
-    'Relatos del niño Jesús':[5,'cuando Jesús era niño (relato apócrifo)'],
-    'Jesús adolescente en el Templo':[8,'8 años después de Cristo (aprox.)'],
-    'Ayuno y tentación en el desierto':[27,'27 años después de Cristo (aprox.)'],
-    'Jesús adulto':[28,'28 años después de Cristo (aprox.)'],
-    'Parábolas, signos y discípulos':[29,'29 años después de Cristo (aprox.)'],
-    'La cena y el arresto':[30,'30 años después de Cristo (aprox.)'],
-    'Pasión, muerte y sepultura':[30,'30 años después de Cristo (aprox.)'],
-    'Evangelio de Nicodemo':[30,'30 años después de Cristo (según la narración)'],
-    'Carino y Leucio, testigos del descenso':[30,'30 años después de Cristo (según la narración)'],
-    'Jesús resucitado':[30,'30 años después de Cristo (aprox.)'],
-    'El Resucitado en María Magdalena y Nag Hammadi':[30,'después de la resurrección (según esos textos)'],
-    'Lo que dijo e hizo resucitado':[30,'30 años después de Cristo (aprox.)'],
-    'Pentecostés':[30,'30 años después de Cristo (aprox.)']
+    'Moisés abre el mar Rojo':[-1300,'1300 años antes de Cristo (aprox.)'],
+    'Jesús bebé':[0,'año 0'],
+    'Simeón carga al niño Jesús':[0,'año 0'],
+    'Huida y regreso a Nazaret':[0,'año 0 (aprox.)'],
+    'Relatos del niño Jesús':[7,'7 años después de Cristo (relato apócrifo)'],
+    'Jesús adolescente en el Templo':[12,'12 años después de Cristo'],
+    'Ayuno y tentación en el desierto':[30,'30 años después de Cristo (aprox.)'],
+    'Jesús adulto':[30,'30–33 años después de Cristo'],
+    'Parábolas, signos y discípulos':[31,'31–33 años después de Cristo'],
+    'La cena y el arresto':[33,'33 años después de Cristo'],
+    'Pasión, muerte y sepultura':[33,'33 años después de Cristo'],
+    'Evangelio de Nicodemo':[33,'33 años después de Cristo (según la narración)'],
+    'Carino y Leucio, testigos del descenso':[33,'33 años después de Cristo (según la narración)'],
+    'Jesús resucitado':[33,'33 años después de Cristo'],
+    'El Resucitado en María Magdalena y Nag Hammadi':[33,'33 años después de Cristo (según esos textos)'],
+    'Lo que dijo e hizo resucitado':[33,'33 años después de Cristo'],
+    'Pentecostés':[33,'33 años después de Cristo (aprox.)']
   };
   const cardsByTitle = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
   timelineOrder.forEach(title => {
