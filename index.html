@@ -967,6 +967,13 @@
       </article>
 
       <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">c. 6–4 a. C. · presentación en el templo</p><h3>Simeón carga al niño Jesús</h3></div>
+        <p>María y José llevan a Jesús al Templo. Simeón, anciano justo, lo toma en sus brazos y bendice a Dios al reconocer al niño como luz para las naciones.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2#pasaje-2-25">Lucas 2:25–35</a>
+      </article>
+
+      <article class="timeline-event">
         <img class="timeline-image" src="assets/timeline/jesus-ensenando.png" alt="Ilustración de Jesús enseñando a una multitud en Galilea">
         <span class="source-badge canonical">Canónico</span>
         <div><p class="timeline-date">c. 27–30 d. C.</p><h3>Jesús adulto</h3></div>
@@ -1006,6 +1013,13 @@
         <p>El Evangelio de Nicodemo desarrolla el descenso de Cristo a los muertos: abre las puertas del Hades y lleva esperanza a los justos. Es una tradición posterior a los evangelios canónicos.</p>
         <a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a>
         <a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge apocryphal">Tradición apócrifa</span>
+        <div><p class="timeline-date">tres días entre muerte y resurrección</p><h3>Carino y Leucio, testigos del descenso</h3></div>
+        <p>El Evangelio de Nicodemo relata que, durante los tres días, Jesús desciende al purgatorio y revive a Carino y Leucio. El texto los presenta como hijos de Simeón, el anciano que cargó a Jesús en el Templo; ambos narran lo que vieron.</p>
+        <a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · capítulos 17–27</a>
       </article>
 
       <article class="timeline-event">
@@ -1874,6 +1888,9 @@ function makeTimelineCard([date, title, description, reference, href, source, im
   return card;
 }
 if (timelineTrack) {
+  const simeonCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Simeón carga al niño Jesús');
+  const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida, regreso y templo');
+  if (simeonCard && flightCard) timelineTrack.insertBefore(simeonCard, flightCard);
   const enocCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Enoc y los vigilantes');
   earlyTimelineEvents.slice(0, 2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), enocCard));
   const moisesCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Moisés y la alianza');
