@@ -708,10 +708,12 @@
     .tree-reference { display: block; width: fit-content; margin: .4rem auto 0; color: #9b4829; font-size: .78rem; font-weight: 800; text-align: center; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .tree-node + .tree-down + .tree-node { margin-top: 0; }
     .tree-parent-label { margin: 1.1rem 0 .55rem; color: #914221; font-size: .75rem; font-weight: 900; letter-spacing: .055em; text-align: center; text-transform: uppercase; }
-    .tree-parents { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; width: min(500px, 100%); padding: 28px 0 26px; }
+    .tree-parents { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; width: min(760px, 100%); padding: 28px 0 26px; }
     .tree-parents::before { content: ""; position: absolute; top: 0; left: 50%; right: 25%; height: 3px; background: #c46a42; }
     .tree-parents::after { content: ""; position: absolute; bottom: 0; left: 25%; right: 25%; height: 3px; background: #c46a42; }
-    .tree-parent { position: relative; display: flex; flex-direction: column; align-items: center; }
+    .tree-parent { position: relative; display: flex; flex-direction: column; min-width: 0; align-items: center; }
+    .tree-parent .tree-node { box-sizing: border-box; min-width: 0; width: 100%; }
+    .tree-parent .tree-node .tree-verse { width: 100%; }
     .tree-parent::after { content: ""; position: absolute; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
     .tree-parent::after { bottom: -26px; height: 26px; }
     .tree-parent.jose-parent::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
