@@ -693,14 +693,24 @@
     .tree-branches { position: relative; width: min(690px, 100%); margin: .15rem 0; padding-top: 28px; }
     .tree-branches::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; height: 3px; background: #c46a42; }
     .tree-branches::after { content: ""; position: absolute; top: -25px; left: 50%; width: 3px; height: 26px; background: #c46a42; transform: translateX(-50%); }
-    .tree-siblings { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .tree-siblings { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; padding-bottom: 26px; }
+    .tree-siblings::after { content: ""; position: absolute; bottom: 0; left: 25%; right: 25%; height: 3px; background: #c46a42; }
     .tree-branch { position: relative; display: flex; flex-direction: column; align-items: center; counter-reset: branch-generation 33; }
     .tree-branch .tree-node { counter-increment: branch-generation; }
     .tree-branch .tree-node::before { content: "Gen. " counter(branch-generation); }
     .tree-branch::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
+    .tree-branch-tail { width: 3px; min-height: 26px; flex: 1 1 auto; background: #c46a42; }
     .tree-branch-label { margin: 0 0 .7rem; color: #914221; font-size: .72rem; font-weight: 900; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
     .tree-reference { display: block; width: fit-content; margin: .4rem auto 0; color: #9b4829; font-size: .78rem; font-weight: 800; text-align: center; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .tree-node + .tree-down + .tree-node { margin-top: 0; }
+    .tree-parents { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; width: min(500px, 100%); padding: 28px 0 26px; }
+    .tree-parents::before, .tree-parents::after { content: ""; position: absolute; left: 25%; right: 25%; height: 3px; background: #c46a42; }
+    .tree-parents::before { top: 0; }
+    .tree-parents::after { bottom: 0; }
+    .tree-parent { position: relative; display: flex; flex-direction: column; align-items: center; }
+    .tree-parent::before, .tree-parent::after { content: ""; position: absolute; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
+    .tree-parent::before { top: -28px; height: 28px; }
+    .tree-parent::after { bottom: -26px; height: 26px; }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -729,7 +739,8 @@
       .genealogy-branch-grid { grid-template-columns: 1fr; }
       .family-tree { width: 100%; }
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
-      .tree-siblings { min-width: 570px; padding: 0 .8rem; }
+      .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
+      .tree-parents { min-width: 420px; }
     }
   </style>
 </head>
@@ -996,6 +1007,13 @@
             <div class="tree-node key">Natán</div><div class="tree-down"></div><div class="tree-node">Matata</div><div class="tree-down"></div><div class="tree-node">Mainán</div><div class="tree-down"></div><div class="tree-node">Melea</div><div class="tree-down"></div><div class="tree-node">Eliaquim</div><div class="tree-down"></div><div class="tree-node">Jonán</div><div class="tree-down"></div><div class="tree-node">José</div><div class="tree-down"></div><div class="tree-node">Judá</div><div class="tree-down"></div><div class="tree-node">Simeón</div><div class="tree-down"></div><div class="tree-node">Leví</div><div class="tree-down"></div><div class="tree-node">Matat</div><div class="tree-down"></div><div class="tree-node">Jorim</div><div class="tree-down"></div><div class="tree-node">Eliezer</div><div class="tree-down"></div><div class="tree-node">Josué</div><div class="tree-down"></div><div class="tree-node">Er</div><div class="tree-down"></div><div class="tree-node">Elmodam</div><div class="tree-down"></div><div class="tree-node">Cosam</div><div class="tree-down"></div><div class="tree-node">Abdi</div><div class="tree-down"></div><div class="tree-node">Melqui</div><div class="tree-down"></div><div class="tree-node">Neri</div><div class="tree-down"></div><div class="tree-node">Salatiel</div><div class="tree-down"></div><div class="tree-node">Zorobabel</div><div class="tree-down"></div><div class="tree-node">Resa</div><div class="tree-down"></div><div class="tree-node">Joana</div><div class="tree-down"></div><div class="tree-node">Judá</div><div class="tree-down"></div><div class="tree-node">José</div><div class="tree-down"></div><div class="tree-node">Semei</div><div class="tree-down"></div><div class="tree-node">Matatías</div><div class="tree-down"></div><div class="tree-node">Maat</div><div class="tree-down"></div><div class="tree-node">Nagai</div><div class="tree-down"></div><div class="tree-node">Esli</div><div class="tree-down"></div><div class="tree-node">Nahum</div><div class="tree-down"></div><div class="tree-node">Amós</div><div class="tree-down"></div><div class="tree-node">Matatías</div><div class="tree-down"></div><div class="tree-node">José</div><div class="tree-down"></div><div class="tree-node">Jannai</div><div class="tree-down"></div><div class="tree-node">Melqui</div><div class="tree-down"></div><div class="tree-node">Leví</div><div class="tree-down"></div><div class="tree-node">Matat</div><div class="tree-down"></div><div class="tree-node">Heli</div><div class="tree-down"></div><div class="tree-node key">José</div>
           </section>
         </div>
+      </div>
+      <div class="tree-down"></div>
+      <div class="tree-node key" data-generation="José" data-relation="Convergencia de las dos genealogías">José<small>esposo de María</small></div>
+      <div class="tree-down"></div>
+      <div class="tree-parents" aria-label="María y José, padres de Jesús">
+        <div class="tree-parent"><div class="tree-node" data-generation="Madre" data-relation="Madre de Jesús">María</div></div>
+        <div class="tree-parent"><div class="tree-node" data-generation="Padre legal" data-relation="Padre legal de Jesús">José</div></div>
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
@@ -1723,9 +1741,17 @@ function setGenealogyRelationships() {
   });
   document.querySelectorAll('.tree-branch').forEach(branch => {
     const nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
+    const isMatthew = branch.querySelector('.tree-branch-label').textContent.includes('Mateo');
     nodes.forEach((node, index) => {
-      node.dataset.relation = index === nodes.length - 1 ? 'Línea genealógica hasta Jesús' : `Padre de ${textOf(nodes[index + 1])}`;
+      node.dataset.relation = index === nodes.length - 1
+        ? (isMatthew ? 'José según Mateo · hijo de Jacob' : 'José según Lucas · vinculado a Elí')
+        : `Padre de ${textOf(nodes[index + 1])}`;
     });
+    if (!branch.querySelector('.tree-branch-tail')) {
+      const tail = document.createElement('div');
+      tail.className = 'tree-branch-tail';
+      branch.append(tail);
+    }
   });
 }
 setGenealogyRelationships();
