@@ -637,7 +637,7 @@
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(16, minmax(205px, 1fr)); gap: .8rem; min-width: 3390px; padding: 2.9rem .2rem 1.1rem; }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(66, minmax(205px, 1fr)); gap: .8rem; min-width: 13940px; padding: 2.9rem .2rem 1.1rem; }
     .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 1.3rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
     .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -1787,6 +1787,79 @@ document.querySelectorAll('thead th[data-col]').forEach(th => {
     render();
   });
 });
+
+// Extensión cronológica: 50 hitos posteriores a la resurrección para recorrer también
+// la misión apostólica, la transmisión de los textos y las tradiciones tempranas.
+const extraTimelineEvents = [
+  ['c. 30 d. C.','Pentecostés','El Espíritu desciende sobre los discípulos y comienza la predicación pública en Jerusalén.','Hechos 2:1–41','lectura/?obra=rvr1909-hechos&capitulo=2#pasaje-2-1','canonical'],
+  ['c. 30 d. C.','La primera comunidad','La comunidad comparte oración, enseñanza, mesa y bienes.','Hechos 2:42–47','lectura/?obra=rvr1909-hechos&capitulo=2#pasaje-2-42','canonical'],
+  ['c. 31 d. C.','Pedro y Juan en el templo','Una curación junto a la puerta Hermosa abre una nueva predicación.','Hechos 3:1–10','lectura/?obra=rvr1909-hechos&capitulo=3#pasaje-3-1','canonical'],
+  ['c. 31 d. C.','Esteban y su discurso','Esteban repasa la historia de Israel antes de su muerte como testigo.','Hechos 7','lectura/?obra=rvr1909-hechos&capitulo=7','canonical'],
+  ['c. 31–34 d. C.','Felipe en Samaria','El anuncio llega a Samaria y a un funcionario etíope.','Hechos 8:4–40','lectura/?obra=rvr1909-hechos&capitulo=8#pasaje-8-4','canonical'],
+  ['c. 34 d. C.','Conversión de Saulo','Saulo encuentra a Cristo camino a Damasco y pasa a ser Pablo.','Hechos 9:1–19','lectura/?obra=rvr1909-hechos&capitulo=9#pasaje-9-1','canonical'],
+  ['c. 38 d. C.','Pedro y Cornelio','La casa de Cornelio marca una apertura decisiva hacia los gentiles.','Hechos 10','lectura/?obra=rvr1909-hechos&capitulo=10','canonical'],
+  ['c. 40 d. C.','Iglesia de Antioquía','En Antioquía los discípulos reciben por primera vez el nombre de cristianos.','Hechos 11:19–26','lectura/?obra=rvr1909-hechos&capitulo=11#pasaje-11-19','canonical'],
+  ['c. 44 d. C.','Santiago, hijo de Zebedeo','Herodes ejecuta a Santiago; Pedro es liberado de prisión según Hechos.','Hechos 12:1–17','lectura/?obra=rvr1909-hechos&capitulo=12#pasaje-12-1','canonical'],
+  ['c. 46–48 d. C.','Primera misión de Pablo','Pablo y Bernabé recorren Chipre y ciudades de Asia Menor.','Hechos 13–14','lectura/?obra=rvr1909-hechos&capitulo=13','canonical'],
+  ['c. 49 d. C.','Asamblea de Jerusalén','La comunidad debate cómo incorporar a los no judíos.','Hechos 15:1–35','lectura/?obra=rvr1909-hechos&capitulo=15#pasaje-15-1','canonical'],
+  ['c. 49–52 d. C.','Misión a Macedonia','Pablo cruza hacia Europa; nacen comunidades en Filipos y Tesalónica.','Hechos 16–17','lectura/?obra=rvr1909-hechos&capitulo=16','canonical'],
+  ['c. 50 d. C.','Pablo en Atenas','El discurso en el Areópago dialoga con oyentes griegos.','Hechos 17:16–34','lectura/?obra=rvr1909-hechos&capitulo=17#pasaje-17-16','canonical'],
+  ['c. 50–52 d. C.','Comunidad de Corinto','Pablo permanece en Corinto y funda una comunidad plural.','Hechos 18:1–18','lectura/?obra=rvr1909-hechos&capitulo=18#pasaje-18-1','canonical'],
+  ['c. 53–57 d. C.','Éfeso y el camino','La predicación en Éfeso provoca adhesiones y resistencia social.','Hechos 19','lectura/?obra=rvr1909-hechos&capitulo=19','canonical'],
+  ['c. 55 d. C.','Cartas a Corinto','Pablo aborda divisiones, la cena, los dones y la resurrección.','1 Corintios 15','lectura/?obra=rvr1909-1-corintios&capitulo=15','canonical'],
+  ['c. 57 d. C.','Arresto en Jerusalén','Pablo es arrestado en el templo e inicia un prolongado proceso judicial.','Hechos 21–23','lectura/?obra=rvr1909-hechos&capitulo=21','canonical'],
+  ['c. 59–60 d. C.','Naufragio camino a Roma','Hechos narra la travesía, el naufragio y la llegada a Malta.','Hechos 27–28','lectura/?obra=rvr1909-hechos&capitulo=27','canonical'],
+  ['c. 60–62 d. C.','Pablo en Roma','Pablo anuncia el Reino bajo custodia, según el final de Hechos.','Hechos 28:16–31','lectura/?obra=rvr1909-hechos&capitulo=28#pasaje-28-16','canonical'],
+  ['c. 62 d. C.','Santiago en Jerusalén','La tradición antigua sitúa en este período la muerte de Santiago, hermano de Jesús.','Santiago 1','lectura/?obra=rvr1909-santiago&capitulo=1','context'],
+  ['c. 64 d. C.','Persecución en Roma','Fuentes romanas posteriores asocian a Nerón con violencia contra cristianos tras el incendio.','1 Pedro 4:12–16','lectura/?obra=rvr1909-1-pedro&capitulo=4#pasaje-4-12','context'],
+  ['c. 64–67 d. C.','Pedro y Pablo en la memoria cristiana','Tradiciones eclesiales posteriores vinculan sus muertes con Roma bajo Nerón.','2 Timoteo 4:6–8','lectura/?obra=rvr1909-2-timoteo&capitulo=4#pasaje-4-6','context'],
+  ['c. 66–70 d. C.','Guerra judía','La revuelta contra Roma transforma profundamente Judea y Jerusalén.','Marcos 13','lectura/?obra=rvr1909-marcos&capitulo=13','context'],
+  ['70 d. C.','Destrucción del Segundo Templo','Roma destruye el templo de Jerusalén; cambia el horizonte judío y cristiano.','Lucas 21:20–24','lectura/?obra=rvr1909-lucas&capitulo=21#pasaje-21-20','context'],
+  ['c. 70 d. C.','Evangelio según Marcos','La tradición suele considerar a Marcos el primer evangelio canónico escrito.','Marcos 1:1','lectura/?obra=rvr1909-marcos&capitulo=1#pasaje-1-1','context'],
+  ['c. 80–90 d. C.','Evangelio según Mateo','Mateo presenta a Jesús en diálogo constante con las Escrituras de Israel.','Mateo 1','lectura/?obra=rvr1909-mateo&capitulo=1','context'],
+  ['c. 80–90 d. C.','Evangelio según Lucas y Hechos','Lucas enlaza el ministerio de Jesús con la expansión apostólica.','Lucas 1:1–4','lectura/?obra=rvr1909-lucas&capitulo=1#pasaje-1-1','context'],
+  ['c. 90–100 d. C.','Evangelio según Juan','Juan organiza signos y discursos alrededor de la identidad de Jesús.','Juan 20:30–31','lectura/?obra=rvr1909-juan&capitulo=20#pasaje-20-30','context'],
+  ['c. 95 d. C.','Apocalipsis','Juan escribe visiones de juicio, resistencia y esperanza para las iglesias.','Apocalipsis 1','lectura/?obra=rvr1909-apocalipsis&capitulo=1','canonical'],
+  ['c. 95 d. C.','1 Clemente','La iglesia de Roma escribe a Corinto sobre concordia y orden comunitario.','1 Clemente','lectura/?obra=1-clemente-es&capitulo=1','apocryphal'],
+  ['c. 100 d. C.','Didaché','Manual temprano sobre el camino de vida, bautismo, mesa y comunidad.','Didaché','lectura/?obra=didache-es&capitulo=1','apocryphal'],
+  ['c. 107 d. C.','Cartas de Ignacio','Ignacio de Antioquía escribe camino al martirio sobre unidad y eucaristía.','Ignacio a los Romanos','lectura/?obra=ignacio-romanos-es&capitulo=1','apocryphal'],
+  ['c. 110 d. C.','Cartas de Plinio','Plinio describe ante Trajano prácticas de cristianos de Bitinia.','Carta a Trajano','lectura/?obra=rvr1909-hechos&capitulo=11','context'],
+  ['c. 120 d. C.','Papías y la memoria oral','Papías conserva tradiciones tempranas sobre la transmisión de palabras de Jesús.','Fragmentos de Papías','lectura/?obra=rvr1909-marcos&capitulo=1','context'],
+  ['c. 125 d. C.','Papiro Rylands P52','Un pequeño fragmento de Juan se cuenta entre los testimonios manuscritos más tempranos.','Juan 18','lectura/?obra=rvr1909-juan&capitulo=18','context'],
+  ['c. 130 d. C.','Epístola de Bernabé','Texto cristiano temprano que interpreta alegóricamente las Escrituras.','Carta de Bernabé','lectura/?obra=carta-bernabe-es&capitulo=1','apocryphal'],
+  ['c. 140 d. C.','Marción y su colección','Marción propone un canon propio, acelerando debates sobre los escritos recibidos.','Gálatas 1:6–9','lectura/?obra=rvr1909-galatas&capitulo=1#pasaje-1-6','context'],
+  ['c. 140–155 d. C.','Justino Mártir','Justino describe el culto cristiano y defiende la fe ante lectores romanos.','Primera Apología','lectura/?obra=rvr1909-hechos&capitulo=17','context'],
+  ['c. 150 d. C.','Pastor de Hermas','Obra de visiones y parábolas sobre arrepentimiento y vida eclesial.','Pastor de Hermas','lectura/?obra=pastor-hermas-es&capitulo=1','apocryphal'],
+  ['siglo II d. C.','Protoevangelio de Santiago','Relato apócrifo sobre María, Joaquín, Ana y el nacimiento de Jesús.','Protoevangelio de Santiago','pdfs/protoevangelio-santiago.pdf','apocryphal'],
+  ['siglo II d. C.','Infancia de Tomás','Relatos apócrifos de Jesús niño; no son parte de los evangelios canónicos.','Infancia de Tomás','pdfs/evangelio-infancia-tomas.pdf','apocryphal'],
+  ['siglo II d. C.','Evangelio de Pedro','Texto apócrifo sobre pasión y resurrección conservado de forma fragmentaria.','Evangelio de Pedro','pdfs/evangelio-pedro.pdf','apocryphal'],
+  ['siglo II d. C.','Hechos de Pablo y Tecla','Relato apócrifo de misión, conversión y resistencia de Tecla.','Hechos de Pablo y Tecla','pdfs/hechos-pablo-tecla.pdf','apocryphal'],
+  ['c. 180 d. C.','Ireneo y los cuatro evangelios','Ireneo defiende la recepción de cuatro evangelios en la gran Iglesia.','Contra las herejías','lectura/?obra=rvr1909-juan&capitulo=20#pasaje-20-30','context'],
+  ['c. 180–200 d. C.','Fragmento Muratoriano','Lista antigua y parcial de escritos leídos como autorizados en Roma.','Canon y lectura','lectura/?obra=rvr1909-2-timoteo&capitulo=3#pasaje-3-14','context'],
+  ['c. 200 d. C.','Tertuliano','Autor latino que escribe sobre fe, persecución y práctica cristiana.','Apologético','lectura/?obra=rvr1909-1-pedro&capitulo=3#pasaje-3-13','context'],
+  ['c. 230 d. C.','Orígenes y la exégesis','Orígenes compara textos bíblicos y desarrolla una lectura erudita de las Escrituras.','Homilías y comentarios','lectura/?obra=rvr1909-lucas&capitulo=24#pasaje-24-25','context'],
+  ['c. 250 d. C.','Persecución de Decio','La exigencia de sacrificio imperial genera una crisis para muchas comunidades.','Apocalipsis 2:10','lectura/?obra=rvr1909-apocalipsis&capitulo=2#pasaje-2-10','context'],
+  ['c. 303 d. C.','Gran persecución','Diocleciano impulsa la última gran persecución imperial contra cristianos.','Mateo 5:10–12','lectura/?obra=rvr1909-mateo&capitulo=5#pasaje-5-10','context'],
+  ['313 d. C.','Edicto de Milán','Constantino y Licinio conceden tolerancia religiosa en el Imperio romano.','Historia de la Iglesia','lectura/?obra=rvr1909-romanos&capitulo=13#pasaje-13-1','context'],
+  ['325 d. C.','Concilio de Nicea','Obispos debaten el lenguaje sobre Cristo y formulan el Credo niceno.','Juan 1:1–18','lectura/?obra=rvr1909-juan&capitulo=1#pasaje-1-1','context']
+];
+const timelineTrack = document.querySelector('.timeline-track');
+if (timelineTrack) {
+  extraTimelineEvents.forEach(([date, title, description, reference, href, source]) => {
+    const card = document.createElement('article');
+    card.className = 'timeline-event';
+    const sourceLabel = source === 'canonical' ? 'Canónico' : source === 'apocryphal' ? 'Tradición apócrifa' : 'Contexto histórico';
+    card.innerHTML = `<span class="source-badge ${source}">${sourceLabel}</span><div><p class="timeline-date"></p><h3></h3></div><p class="timeline-description"></p><a></a>`;
+    card.querySelector('.timeline-date').textContent = date;
+    card.querySelector('h3').textContent = title;
+    card.querySelector('.timeline-description').textContent = description;
+    const link = card.querySelector('a');
+    link.textContent = reference;
+    link.href = href;
+    if (href.startsWith('http') || href.startsWith('pdfs/')) link.target = '_blank';
+    timelineTrack.append(card);
+  });
+}
 
 const catalogView = document.getElementById('catalog-view');
 const timelineView = document.getElementById('timeline-view');
