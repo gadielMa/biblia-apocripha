@@ -641,6 +641,8 @@
     .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 1.3rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
     .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-event::after { content: attr(data-year); position: absolute; top: -2.65rem; left: .25rem; width: max-content; max-width: 195px; color: #53657a; font-size: .66rem; font-weight: 800; line-height: 1.2; }
+    .timeline-date { display: none !important; }
     .timeline-event h3 { margin: 0; font-size: 1rem; line-height: 1.15; letter-spacing: -.025em; }
     .timeline-date { margin: -.3rem 0 0; color: var(--accent); font-size: .66rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
     .timeline-event p { margin: 0; color: var(--text2); font-size: .78rem; line-height: 1.42; }
@@ -767,6 +769,7 @@
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
+      .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
       .genealogy-flow { min-width: 0; gap: 1rem; padding-left: 1.25rem; }
       .genealogy-flow::before { left: .42rem; }
       .genealogy-era, .genealogy-branches, .genealogy-jesus { width: 100%; }
@@ -883,7 +886,7 @@
 <section class="timeline-view" id="timeline-view" hidden aria-labelledby="timeline-title">
   <div class="timeline-intro">
     <h2 id="timeline-title">Línea de tiempo: de la espera a la resurrección</h2>
-    <p>Una guía de lectura cronológica que reúne referencias canónicas y relatos apócrifos. Las fechas son aproximadas; cada hito indica claramente la procedencia de su fuente.</p>
+    <p>Una guía de lectura cronológica que reúne referencias canónicas y relatos apócrifos. Las fechas son aproximadas; las de los relatos primordiales siguen cronologías tradicionales y cada hito indica la procedencia de su fuente.</p>
     <div class="timeline-key" aria-label="Referencias de fuentes"><span class="source-badge canonical">Canónico</span><span class="source-badge apocryphal">Tradición apócrifa</span><span class="source-badge context">Contexto histórico</span></div>
   </div>
 
@@ -1904,6 +1907,7 @@ if (timelineTrack) {
   ['Moisés y la alianza', 'Isaías y la esperanza'].forEach(title =>
     Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === title)?.remove()
   );
+  Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Los libros más antiguos')?.remove();
   const simeonCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Simeón carga al niño Jesús');
   const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida y regreso a Nazaret');
   if (simeonCard && flightCard) timelineTrack.insertBefore(simeonCard, flightCard);
@@ -1915,6 +1919,54 @@ if (timelineTrack) {
     if (title !== 'Pentecostés') return;
     timelineTrack.append(makeTimelineCard([date, title, description, reference, href, source]));
   });
+  const timelineOrder = [
+    'Adán y Eva','Set y Enós','Enoc y los vigilantes','Noé y el arca','Abraham y la promesa','Jacob y Judá','José y sus hermanos',
+    'Moisés anuncia un profeta','Isaías y Emanuel','El mundo del Segundo Templo','Jesús bebé','Simeón carga al niño Jesús',
+    'Huida y regreso a Nazaret','Relatos del niño Jesús','Jesús adolescente en el Templo','Ayuno y tentación en el desierto',
+    'Jesús adulto','Parábolas, signos y discípulos','La cena y el arresto','Pasión, muerte y sepultura','Evangelio de Nicodemo',
+    'Carino y Leucio, testigos del descenso','Jesús resucitado','El Resucitado en María Magdalena y Nag Hammadi',
+    'Lo que dijo e hizo resucitado','Pentecostés'
+  ];
+  const timelineDates = {
+    'Adán y Eva':[-4000,'4000 años antes de Cristo (cronología tradicional)'],
+    'Set y Enós':[-3900,'3900 años antes de Cristo (aprox.)'],
+    'Enoc y los vigilantes':[-3000,'3000 años antes de Cristo (aprox.)'],
+    'Noé y el arca':[-2500,'2500 años antes de Cristo (aprox.)'],
+    'Abraham y la promesa':[-2000,'2000 años antes de Cristo (aprox.)'],
+    'Jacob y Judá':[-1800,'1800 años antes de Cristo (aprox.)'],
+    'José y sus hermanos':[-1700,'1700 años antes de Cristo (aprox.)'],
+    'Moisés anuncia un profeta':[-1300,'1300 años antes de Cristo (aprox.)'],
+    'Isaías y Emanuel':[-700,'700 años antes de Cristo (aprox.)'],
+    'El mundo del Segundo Templo':[-200,'200 años antes de Cristo (aprox.)'],
+    'Jesús bebé':[-4,'entre 6 y 4 años antes de Cristo (aprox.)'],
+    'Simeón carga al niño Jesús':[-4,'entre 6 y 4 años antes de Cristo (aprox.)'],
+    'Huida y regreso a Nazaret':[-4,'alrededor de 4 años antes de Cristo'],
+    'Relatos del niño Jesús':[5,'cuando Jesús era niño (relato apócrifo)'],
+    'Jesús adolescente en el Templo':[8,'8 años después de Cristo (aprox.)'],
+    'Ayuno y tentación en el desierto':[27,'27 años después de Cristo (aprox.)'],
+    'Jesús adulto':[28,'28 años después de Cristo (aprox.)'],
+    'Parábolas, signos y discípulos':[29,'29 años después de Cristo (aprox.)'],
+    'La cena y el arresto':[30,'30 años después de Cristo (aprox.)'],
+    'Pasión, muerte y sepultura':[30,'30 años después de Cristo (aprox.)'],
+    'Evangelio de Nicodemo':[30,'30 años después de Cristo (según la narración)'],
+    'Carino y Leucio, testigos del descenso':[30,'30 años después de Cristo (según la narración)'],
+    'Jesús resucitado':[30,'30 años después de Cristo (aprox.)'],
+    'El Resucitado en María Magdalena y Nag Hammadi':[30,'después de la resurrección (según esos textos)'],
+    'Lo que dijo e hizo resucitado':[30,'30 años después de Cristo (aprox.)'],
+    'Pentecostés':[30,'30 años después de Cristo (aprox.)']
+  };
+  const cardsByTitle = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
+  timelineOrder.forEach(title => {
+    const card = cardsByTitle.get(title);
+    if (!card) return;
+    const [year, label] = timelineDates[title];
+    card.dataset.year = label;
+    const date = card.querySelector('.timeline-date');
+    if (date) date.textContent = label;
+    timelineTrack.append(card);
+  });
+  timelineTrack.style.gridTemplateColumns = `repeat(${timelineOrder.length}, minmax(205px, 1fr))`;
+  timelineTrack.style.minWidth = `${timelineOrder.length * 205 + (timelineOrder.length - 1) * 12}px`;
 }
 
 const catalogView = document.getElementById('catalog-view');
