@@ -678,7 +678,7 @@
     .genealogy-jesus { width: min(330px, 100%); display: flex; flex-direction: column; justify-content: center; text-align: center; background: linear-gradient(145deg, #fff8ed, #fff); border-color: #e9bda6; }
     .genealogy-jesus h3 { font-size: 1.45rem; color: #7e391f; }
     .genealogy-jesus .genealogy-name { align-self: center; font-size: .82rem; }
-    .family-tree { width: min(760px, 100%); margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .family-tree { position: relative; width: min(760px, 100%); margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     .genealogy-scroll > .genealogy-flow { display: none; }
     .family-tree { counter-reset: main-generation; }
     .tree-node { position: relative; z-index: 1; min-width: 168px; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; font-size: .83rem; font-weight: 800; text-align: center; }
@@ -711,6 +711,11 @@
     .tree-parent::after { content: ""; position: absolute; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
     .tree-parent::after { bottom: -26px; height: 26px; }
     .tree-parent.jose-parent::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
+    .tree-verse { position: absolute; z-index: 3; left: calc(50% + 142px); width: 245px; padding: .7rem .8rem; border: 1px solid #e8c4ae; border-radius: 12px; background: #fffaf6; box-shadow: 0 8px 22px rgba(77,47,31,.10); color: #5e4c43; transform: translateY(-50%); }
+    .tree-verse::before { content: ""; position: absolute; top: 50%; right: 100%; width: 26px; height: 2px; background: #d28a68; }
+    .tree-verse strong { display: block; color: #974522; font-size: .7rem; letter-spacing: .045em; text-transform: uppercase; }
+    .tree-verse q { display: block; margin-top: .28rem; font-size: .75rem; font-style: italic; line-height: 1.38; }
+    .tree-verse a { display: inline-block; margin-top: .35rem; color: #9b4829; font-size: .7rem; font-weight: 850; }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -741,6 +746,8 @@
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { min-width: 420px; }
+      .tree-verse { position: static; width: auto; margin: .55rem auto; transform: none; }
+      .tree-verse::before { display: none; }
     }
   </style>
 </head>
@@ -1015,6 +1022,12 @@
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
+      <aside class="tree-verse" data-target="Enoc"><strong>Enoc · Judas 1:14</strong><q>He aquí, el Señor es venido con sus santos millares.</q><a href="lectura/?obra=rvr1909-judas&amp;capitulo=1#pasaje-1-14">Leer Judas 1:14–15</a></aside>
+      <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:8</strong><q>Noé halló gracia en los ojos de Jehová.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-8">Leer Génesis 6:8</a></aside>
+      <aside class="tree-verse" data-target="Abraham"><strong>Abraham · Génesis 15:6</strong><q>Y creyó á Jehová, y contóselo por justicia.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=15#pasaje-15-6">Leer Génesis 15:6</a></aside>
+      <aside class="tree-verse" data-target="David"><strong>David · Salmo 23:1</strong><q>JEHOVÁ es mi pastor; nada me faltará.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=23#pasaje-23-1">Leer Salmo 23:1</a></aside>
+      <aside class="tree-verse" data-target="María"><strong>María · Lucas 1:38</strong><q>He aquí la sierva del Señor; hágase á mí conforme á tu palabra.</q><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-38">Leer Lucas 1:38</a></aside>
+      <aside class="tree-verse" data-target="Jesús"><strong>Jesús · Juan 14:6</strong><q>Yo soy el camino, y la verdad, y la vida.</q><a href="lectura/?obra=rvr1909-juan&amp;capitulo=14#pasaje-14-6">Leer Juan 14:6</a></aside>
       <a class="tree-reference" href="lectura/?obra=rvr1909-mateo&amp;capitulo=1">Ver Mateo 1:1–16</a>
       <a class="tree-reference" href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Ver Lucas 3:23–38</a>
     </div>
@@ -1724,6 +1737,7 @@ function selectView(view, updateHash = true) {
     tab.classList.toggle('active', active);
     tab.setAttribute('aria-selected', String(active));
   });
+  if (isGenealogy) requestAnimationFrame(positionTreeVerses);
   if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
@@ -1753,6 +1767,18 @@ function setGenealogyRelationships() {
   });
 }
 setGenealogyRelationships();
+
+function positionTreeVerses() {
+  const tree = document.querySelector('.family-tree');
+  if (!tree) return;
+  const treeTop = tree.getBoundingClientRect().top;
+  tree.querySelectorAll('.tree-verse').forEach(verse => {
+    const target = Array.from(tree.querySelectorAll('.tree-node')).find(node => node.firstChild.textContent.trim() === verse.dataset.target);
+    if (target) verse.style.top = `${target.getBoundingClientRect().top - treeTop + target.offsetHeight / 2}px`;
+  });
+}
+positionTreeVerses();
+window.addEventListener('resize', positionTreeVerses);
 
 render();
 loadTextSearchIndex();
