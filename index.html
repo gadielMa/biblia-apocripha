@@ -410,6 +410,10 @@
       display: none;
     }
 
+    @media (max-width: 1200px) {
+      .genealogy-scroll { display: block; }
+      .tree-verse-list { max-width: 760px; margin: 1rem auto 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
     @media (max-width: 768px) {
       header h1 { font-size: 1.5rem; }
       header { padding: 1.6rem 1rem 1.25rem; }
@@ -650,7 +654,7 @@
     .genealogy-intro h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
     .genealogy-intro p { max-width: 860px; margin: .45rem 0 0; color: var(--text2); }
     .genealogy-disclaimer { margin-top: .85rem !important; padding: .65rem .8rem; border-left: 3px solid var(--accent); border-radius: 0 9px 9px 0; background: #fff6f1; font-size: .83rem; }
-    .genealogy-scroll { max-width: 1120px; margin: 1rem auto 0; padding: 1rem 0; }
+    .genealogy-scroll { display: grid; grid-template-columns: minmax(0, 760px) minmax(245px, 285px); gap: 2rem; max-width: 1120px; margin: 1rem auto 0; padding: 1rem 0; }
     .genealogy-flow { position: relative; display: flex; flex-direction: column; align-items: center; gap: 1.45rem; padding: 1rem 1rem 1.6rem; }
     .genealogy-flow::before { content: ""; position: absolute; top: 1.25rem; bottom: 1.25rem; left: 50%; width: 4px; border-radius: 999px; background: linear-gradient(#b4532d, #dca17b 60%, #6d8da8); box-shadow: 0 0 0 4px rgba(180,83,45,.07); }
     .genealogy-era, .genealogy-branches { position: relative; z-index: 1; width: min(660px, 100%); padding: 1rem; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.97); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
@@ -716,6 +720,9 @@
     .tree-verse strong { display: block; color: #974522; font-size: .7rem; letter-spacing: .045em; text-transform: uppercase; }
     .tree-verse q { display: block; margin-top: .28rem; font-size: .75rem; font-style: italic; line-height: 1.38; }
     .tree-verse a { display: inline-block; margin-top: .35rem; color: #9b4829; font-size: .7rem; font-weight: 850; }
+    .tree-verse-list { display: flex; flex-direction: column; gap: .8rem; align-self: start; }
+    .tree-verse-list .tree-verse { position: static; box-sizing: border-box; width: 100%; transform: none; }
+    .tree-verse-list .tree-verse::before { display: none; }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -746,9 +753,8 @@
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { min-width: 420px; }
-      .tree-verse { position: static; width: auto; margin: .55rem auto; transform: none; }
-      .tree-verse::before { display: none; }
     }
+    @media (max-width: 600px) { .tree-verse-list { display: flex; } }
   </style>
 </head>
 <body>
@@ -1022,15 +1028,18 @@
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
-      <aside class="tree-verse" data-target="Enoc"><strong>Enoc · Judas 1:14</strong><q>He aquí, el Señor es venido con sus santos millares.</q><a href="lectura/?obra=rvr1909-judas&amp;capitulo=1#pasaje-1-14">Leer Judas 1:14–15</a></aside>
-      <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:8</strong><q>Noé halló gracia en los ojos de Jehová.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-8">Leer Génesis 6:8</a></aside>
-      <aside class="tree-verse" data-target="Abraham"><strong>Abraham · Génesis 15:6</strong><q>Y creyó á Jehová, y contóselo por justicia.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=15#pasaje-15-6">Leer Génesis 15:6</a></aside>
+      <aside class="tree-verse" data-target="Adán"><strong>Adán · tradición apócrifa</strong><q>¡Oh Dios! Perdónanos. Cuando estábamos en el jardín no conocíamos el calor ni el frío, ni sabíamos lo que era el miedo. Pero ahora que hemos salido, tenemos miedo de morir en esta oscuridad.</q><a href="pdfs/libro-adan-eva.pdf" target="_blank" rel="noopener">Vida de Adán y Eva</a></aside>
+      <aside class="tree-verse" data-target="Enoc"><strong>Enoc · 1 Enoc 12:4–5</strong><q>Enoc, escriba de justicia, ve y di a los Vigilantes del cielo que han abandonado el cielo excelso y se han contaminado con mujeres: habéis causado una gran destrucción sobre la tierra, y no tendréis paz ni perdón de pecados.</q><a href="lectura/?obra=1-enoc-es&amp;capitulo=12#pasaje-12-4">Leer 1 Enoc 12:4–5</a></aside>
+      <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:14</strong><q>Hazte un arca de madera de Gopher: harás aposentos en el arca, y la embetunarás con brea por dentro y por fuera.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Leer Génesis 6:14–16</a></aside>
+      <aside class="tree-verse" data-target="Abraham"><strong>Abraham · Génesis 12:1–2</strong><q>Vete de tu tierra y de tu parentela, y de la casa de tu padre, á la tierra que te mostraré. Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=12#pasaje-12-1">Leer Génesis 12:1–2</a></aside>
+      <aside class="tree-verse" data-target="Isaac"><strong>Isaac · Génesis 35:28–29</strong><q>Fueron los días de Isaac ciento ochenta años. Y exhaló Isaac el espíritu, y murió, y fue reunido a su pueblo, viejo y lleno de días; y lo sepultaron sus hijos Esaú y Jacob.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=35#pasaje-35-28">Leer Génesis 35:28–29</a></aside>
       <aside class="tree-verse" data-target="David"><strong>David · Salmo 23:1</strong><q>JEHOVÁ es mi pastor; nada me faltará.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=23#pasaje-23-1">Leer Salmo 23:1</a></aside>
-      <aside class="tree-verse" data-target="María"><strong>María · Lucas 1:38</strong><q>He aquí la sierva del Señor; hágase á mí conforme á tu palabra.</q><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-38">Leer Lucas 1:38</a></aside>
+      <aside class="tree-verse" data-target="María"><strong>María · Lucas 1:28</strong><q>Dios te salve, María, llena eres de gracia; el Señor es contigo.</q><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-28">Leer Lucas 1:28</a></aside>
       <aside class="tree-verse" data-target="Jesús"><strong>Jesús · Juan 14:6</strong><q>Yo soy el camino, y la verdad, y la vida.</q><a href="lectura/?obra=rvr1909-juan&amp;capitulo=14#pasaje-14-6">Leer Juan 14:6</a></aside>
       <a class="tree-reference" href="lectura/?obra=rvr1909-mateo&amp;capitulo=1">Ver Mateo 1:1–16</a>
       <a class="tree-reference" href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Ver Lucas 3:23–38</a>
     </div>
+    <aside class="tree-verse-list" aria-label="Versículos destacados del árbol"></aside>
     <div class="genealogy-flow">
       <article class="genealogy-era">
         <p class="genealogy-kicker">orígenes</p><h3>Adán hasta Noé</h3>
@@ -1767,6 +1776,13 @@ function setGenealogyRelationships() {
   });
 }
 setGenealogyRelationships();
+
+function arrangeTreeVerses() {
+  const tree = document.querySelector('.family-tree');
+  const list = document.querySelector('.tree-verse-list');
+  if (tree && list) tree.querySelectorAll('.tree-verse').forEach(verse => list.append(verse));
+}
+arrangeTreeVerses();
 
 function positionTreeVerses() {
   const tree = document.querySelector('.family-tree');
