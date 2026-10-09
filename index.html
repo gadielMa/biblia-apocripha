@@ -708,15 +708,15 @@
     .tree-reference { display: block; width: fit-content; margin: .4rem auto 0; color: #9b4829; font-size: .78rem; font-weight: 800; text-align: center; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .tree-node + .tree-down + .tree-node { margin-top: 0; }
     .tree-parent-label { margin: 1.1rem 0 .55rem; color: #914221; font-size: .75rem; font-weight: 900; letter-spacing: .055em; text-align: center; text-transform: uppercase; }
-    .tree-parents { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; width: min(760px, 100%); padding: 28px 0 26px; }
-    .tree-parents::before { content: ""; position: absolute; top: 0; left: 50%; right: 25%; height: 3px; background: #c46a42; }
-    .tree-parents::after { content: ""; position: absolute; bottom: 0; left: 25%; right: 25%; height: 3px; background: #c46a42; }
+    .tree-parents { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; width: min(760px, 100%); padding: 28px 0 26px; }
+    .tree-parents::after { content: ""; position: absolute; bottom: 0; left: 16.666%; right: 50%; height: 3px; background: #c46a42; }
     .tree-parent { position: relative; display: flex; flex-direction: column; min-width: 0; align-items: center; }
     .tree-parent .tree-node { box-sizing: border-box; min-width: 0; width: 100%; }
     .tree-parent .tree-node .tree-verse { width: 100%; }
     .tree-parent::after { content: ""; position: absolute; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
     .tree-parent::after { bottom: -26px; height: 26px; }
     .tree-parent.jose-parent::before { content: ""; position: absolute; top: -28px; left: 50%; width: 3px; height: 28px; background: #c46a42; transform: translateX(-50%); }
+    .tree-parent.jose-parent { grid-column: 2; }
     .tree-verse { position: absolute; z-index: 3; left: calc(50% + 142px); width: 245px; padding: .7rem .8rem; border: 1px solid #e8c4ae; border-radius: 12px; background: #fffaf6; box-shadow: 0 8px 22px rgba(77,47,31,.10); color: #5e4c43; transform: translateY(-50%); }
     .tree-verse::before { content: ""; position: absolute; top: 50%; right: 100%; width: 26px; height: 2px; background: #d28a68; }
     .tree-verse strong { display: block; color: #974522; font-size: .7rem; letter-spacing: .045em; text-transform: uppercase; }
