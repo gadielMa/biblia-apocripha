@@ -723,6 +723,12 @@
     .tree-verse-list { display: flex; flex-direction: column; gap: .8rem; align-self: start; }
     .tree-verse-list .tree-verse { position: static; box-sizing: border-box; width: 100%; transform: none; }
     .tree-verse-list .tree-verse::before { display: none; }
+    .genealogy-scroll { display: block; }
+    .tree-verse-list { display: none; }
+    .tree-node .tree-verse { position: absolute; z-index: 5; top: 50%; left: calc(100% + 34px); box-sizing: border-box; width: 285px; transform: translateY(-50%); }
+    .tree-node .tree-verse::before { display: block; top: 50%; right: 100%; left: auto; width: 27px; }
+    .tree-parent:first-child .tree-verse { right: calc(100% + 34px); left: auto; }
+    .tree-parent:first-child .tree-verse::before { right: auto; left: 100%; }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -754,7 +760,10 @@
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { min-width: 420px; }
     }
-    @media (max-width: 600px) { .tree-verse-list { display: flex; } }
+    @media (max-width: 1200px) {
+      .tree-node .tree-verse, .tree-parent:first-child .tree-verse { position: static; width: auto; margin: .6rem auto 0; transform: none; }
+      .tree-node .tree-verse::before { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -1028,7 +1037,7 @@
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
-      <aside class="tree-verse" data-target="Adán"><strong>Adán · tradición apócrifa</strong><q>¡Oh Dios! Perdónanos. Cuando estábamos en el jardín no conocíamos el calor ni el frío, ni sabíamos lo que era el miedo. Pero ahora que hemos salido, tenemos miedo de morir en esta oscuridad.</q><a href="pdfs/libro-adan-eva.pdf" target="_blank" rel="noopener">Vida de Adán y Eva</a></aside>
+      <aside class="tree-verse" data-target="Adán"><strong>Adán · tradición apócrifa</strong><q>¡Oh Dios! Perdónanos. Cuando estábamos en el jardín no conocíamos el calor ni el frío, ni sabíamos lo que era el miedo. Pero ahora que hemos salido, tenemos miedo de morir en esta oscuridad y ser devorados por los hombres.</q><a href="pdfs/libro-adan-eva.pdf" target="_blank" rel="noopener">Vida de Adán y Eva</a></aside>
       <aside class="tree-verse" data-target="Enoc"><strong>Enoc · 1 Enoc 12:4–5</strong><q>Enoc, escriba de justicia, ve y di a los Vigilantes del cielo que han abandonado el cielo excelso y se han contaminado con mujeres: habéis causado una gran destrucción sobre la tierra, y no tendréis paz ni perdón de pecados.</q><a href="lectura/?obra=1-enoc-es&amp;capitulo=12#pasaje-12-4">Leer 1 Enoc 12:4–5</a></aside>
       <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:14</strong><q>Hazte un arca de madera de Gopher: harás aposentos en el arca, y la embetunarás con brea por dentro y por fuera.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Leer Génesis 6:14–16</a></aside>
       <aside class="tree-verse" data-target="Abraham"><strong>Abraham · Génesis 12:1–2</strong><q>Vete de tu tierra y de tu parentela, y de la casa de tu padre, á la tierra que te mostraré. Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=12#pasaje-12-1">Leer Génesis 12:1–2</a></aside>
@@ -1761,11 +1770,16 @@ function setGenealogyRelationships() {
     node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón y Natán' : `Padre de ${textOf(chain[index + 1])}`;
   });
   document.querySelectorAll('.tree-branch').forEach(branch => {
-    const nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
-    const isMatthew = branch.querySelector('.tree-branch-label').textContent.includes('Mateo');
+    let nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
+    const finalJoseph = nodes.at(-1);
+    if (finalJoseph && textOf(finalJoseph) === 'José') {
+      finalJoseph.previousElementSibling?.remove();
+      finalJoseph.remove();
+      nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
+    }
     nodes.forEach((node, index) => {
       node.dataset.relation = index === nodes.length - 1
-        ? (isMatthew ? 'José según Mateo · hijo de Jacob' : 'José según Lucas · vinculado a Elí')
+        ? 'Padre de José'
         : `Padre de ${textOf(nodes[index + 1])}`;
     });
     if (!branch.querySelector('.tree-branch-tail')) {
@@ -1779,20 +1793,15 @@ setGenealogyRelationships();
 
 function arrangeTreeVerses() {
   const tree = document.querySelector('.family-tree');
-  const list = document.querySelector('.tree-verse-list');
-  if (tree && list) tree.querySelectorAll('.tree-verse').forEach(verse => list.append(verse));
+  if (!tree) return;
+  tree.querySelectorAll('.tree-verse').forEach(verse => {
+    const target = Array.from(tree.querySelectorAll('.tree-node')).find(node => node.firstChild.textContent.trim() === verse.dataset.target);
+    if (target) target.append(verse);
+  });
 }
 arrangeTreeVerses();
 
-function positionTreeVerses() {
-  const tree = document.querySelector('.family-tree');
-  if (!tree) return;
-  const treeTop = tree.getBoundingClientRect().top;
-  tree.querySelectorAll('.tree-verse').forEach(verse => {
-    const target = Array.from(tree.querySelectorAll('.tree-node')).find(node => node.firstChild.textContent.trim() === verse.dataset.target);
-    if (target) verse.style.top = `${target.getBoundingClientRect().top - treeTop + target.offsetHeight / 2}px`;
-  });
-}
+function positionTreeVerses() {}
 positionTreeVerses();
 window.addEventListener('resize', positionTreeVerses);
 
