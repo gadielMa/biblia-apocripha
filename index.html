@@ -589,6 +589,57 @@
     .canon-boundary td { background: #e8eef6; color: #3f5872; border-color: #cfdae7; }
     footer { background: #17283f; border: 0; color: #b8c7d8; }
     .footer-copy b { color: #fff; }
+    .view-tabs {
+      max-width: 1240px;
+      margin: 1rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      gap: .55rem;
+      position: relative;
+      z-index: 3;
+    }
+    .view-tab {
+      appearance: none;
+      border: 1px solid #bfccdc;
+      border-radius: 999px;
+      padding: .62rem 1rem;
+      color: #e7edf5;
+      background: rgba(23,40,63,.72);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .view-tab:hover, .view-tab:focus-visible { border-color: #fff; background: rgba(255,255,255,.15); outline: none; }
+    .view-tab.active { color: #182536; border-color: #fff; background: #fff; box-shadow: 0 8px 20px rgba(14,28,45,.18); }
+    .timeline-view { max-width: 1240px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; }
+    .timeline-view[hidden] { display: none; }
+    .timeline-intro {
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow);
+    }
+    .timeline-intro h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
+    .timeline-intro p { max-width: 800px; margin: .45rem 0 0; color: var(--text2); }
+    .timeline-key { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem; }
+    .source-badge { display: inline-flex; align-items: center; width: fit-content; padding: .22rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .03em; }
+    .source-badge.canonical { color: #1b4f54; background: #ddefed; }
+    .source-badge.apocryphal { color: #8d452b; background: #fbe7d9; }
+    .source-badge.context { color: #4e5376; background: #e7e9f7; }
+    .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(7, minmax(245px, 1fr)); gap: 1rem; min-width: 1860px; padding: 1.1rem .2rem; }
+    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 2.05rem; height: 3px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); }
+    .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .7rem; min-height: 355px; padding: 1rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
+    .timeline-event::before { content: ""; width: .9rem; height: .9rem; margin-left: .15rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-event h3 { margin: 0; font-size: 1.16rem; line-height: 1.15; letter-spacing: -.025em; }
+    .timeline-date { margin: -.38rem 0 0; color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .timeline-event p { margin: 0; color: var(--text2); font-size: .91rem; }
+    .timeline-event a { color: #9b4829; font-size: .84rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
+    .timeline-event a:hover { color: #6e2b18; }
+    .timeline-image { width: calc(100% + 2rem); height: 138px; margin: -.2rem -1rem .1rem; object-fit: cover; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+    .timeline-note { margin-top: auto; padding-top: .65rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .78rem; line-height: 1.4; }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -597,6 +648,12 @@
       .stat { min-width: 0; flex: 1 1 42%; }
       .controls { margin-top: -.8rem; }
       tbody tr:not(.canon-boundary) { border-radius: 14px; border-color: var(--border); box-shadow: 0 8px 22px rgba(26,48,77,.07); }
+      .view-tabs { margin-top: .7rem; overflow-x: auto; padding-bottom: .2rem; }
+      .view-tab { flex: 0 0 auto; }
+      .timeline-view { margin-top: .8rem; padding: 0 .75rem; }
+      .timeline-track { display: flex; flex-direction: column; min-width: 0; padding: 0 0 0 1.25rem; gap: .8rem; }
+      .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
+      .timeline-event { min-height: 0; }
     }
   </style>
 </head>
@@ -613,6 +670,12 @@
   </div>
 </header>
 
+<nav class="view-tabs" aria-label="Vistas de la biblioteca">
+  <button class="view-tab active" type="button" data-view="catalog" aria-selected="true">Catálogo</button>
+  <button class="view-tab" type="button" data-view="timeline" aria-selected="false">Línea de tiempo</button>
+</nav>
+
+<section id="catalog-view">
 <div class="controls">
   <input class="search-box" id="search" type="search" placeholder="Buscar libros o palabras dentro de los textos…" aria-label="Buscar en el catálogo y los textos">
   <div class="filters" id="filters">
@@ -648,6 +711,77 @@
   </table>
   <div class="empty" id="empty" style="display:none">No hay resultados para esta búsqueda.</div>
 </div>
+</section>
+
+<section class="timeline-view" id="timeline-view" hidden aria-labelledby="timeline-title">
+  <div class="timeline-intro">
+    <h2 id="timeline-title">Línea de tiempo: de la espera a la resurrección</h2>
+    <p>Una guía de lectura cronológica que reúne referencias canónicas y relatos apócrifos. Las fechas son aproximadas; cada hito indica claramente la procedencia de su fuente.</p>
+    <div class="timeline-key" aria-label="Referencias de fuentes"><span class="source-badge canonical">Canónico</span><span class="source-badge apocryphal">Tradición apócrifa</span><span class="source-badge context">Contexto histórico</span></div>
+  </div>
+
+  <div class="timeline-scroll" aria-label="Desplazá horizontalmente para recorrer la línea de tiempo">
+    <div class="timeline-track">
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">siglos X–IV a. C.</p><h3>Los libros más antiguos</h3></div>
+        <p>La Torá, los salmos y los profetas trazan la historia, la alianza y la esperanza de Israel. La línea comienza con las promesas y voces que preceden a los evangelios.</p>
+        <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=12#pasaje-12-1">Génesis 12:1–3</a>
+        <a href="lectura/?obra=rvr1909-isaias&amp;capitulo=9#pasaje-9-6">Isaías 9:6</a>
+        <a href="lectura/?obra=rvr1909-miqueas&amp;capitulo=5#pasaje-5-2">Miqueas 5:2</a>
+      </article>
+
+      <article class="timeline-event">
+        <img class="timeline-image" src="assets/timeline/infancia-jesus.png" alt="Ilustración de María, José y Jesús niño en Judea">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">c. 6–4 a. C.</p><h3>Jesús bebé</h3></div>
+        <p>Los relatos de nacimiento sitúan a Jesús con María y José, en Belén y luego Nazaret. Mateo y Lucas conservan perspectivas distintas y complementarias de esos primeros años.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2">Leer Lucas 2</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge apocryphal">Tradición apócrifa</span>
+        <div><p class="timeline-date">infancia de Jesús</p><h3>Relatos del niño Jesús</h3></div>
+        <p>El Evangelio de la Infancia de Tomás narra gorriones de barro que cobran vida y un episodio polémico en que un niño cae muerto tras enfrentarse con Jesús.</p>
+        <a href="lectura/?obra=infancy-thomas-es&amp;capitulo=2">Leer Evangelio de la Infancia de Tomás</a>
+        <p class="timeline-note">Estos relatos no forman parte de los evangelios canónicos y se leen como tradición literaria posterior, no como una biografía histórica comprobada.</p>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">c. 27–30 d. C.</p><h3>Jesús adulto</h3></div>
+        <p>Predica el Reino de Dios, enseña en parábolas, llama discípulos y sana. Los evangelios sitúan su ministerio público en Galilea y Judea.</p>
+        <a href="lectura/?obra=rvr1909-marcos&amp;capitulo=1#pasaje-1-14">Marcos 1:14–15</a>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=4#pasaje-4-16">Lucas 4:16–21</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">Pascua, c. 30 d. C.</p><h3>Pasión, muerte y sepultura</h3></div>
+        <p>La última cena, el arresto, el juicio y la crucifixión conducen a la sepultura. Los cuatro evangelios cuentan estos hechos desde ángulos propios.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=22">Lucas 22–23</a>
+        <a href="lectura/?obra=rvr1909-juan&amp;capitulo=19">Juan 19</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge apocryphal">Canónico y tradición</span>
+        <div><p class="timeline-date">entre muerte y resurrección</p><h3>El descenso a los muertos</h3></div>
+        <p>El lenguaje bíblico habla de muerte, sepultura y resurrección al tercer día. No llama a ese lugar “purgatorio”; la bajada al Hades se desarrolla de modo narrativo en tradiciones posteriores.</p>
+        <a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a>
+        <a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo</a>
+      </article>
+
+      <article class="timeline-event">
+        <img class="timeline-image" src="assets/timeline/resurreccion-jesus.png" alt="Ilustración del sepulcro vacío al amanecer y Jesús resucitado">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">Pascua y 40 días</p><h3>Jesús resucitado</h3></div>
+        <p>Se aparece a sus discípulos, comparte con ellos, los envía y habla del Reino de Dios. Después, Hechos narra la ascensión.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=24">Lucas 24</a>
+        <a href="lectura/?obra=rvr1909-hechos&amp;capitulo=1#pasaje-1-3">Hechos 1:3–9</a>
+      </article>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="footer-flex">
@@ -1289,6 +1423,23 @@ document.querySelectorAll('thead th[data-col]').forEach(th => {
     render();
   });
 });
+
+const catalogView = document.getElementById('catalog-view');
+const timelineView = document.getElementById('timeline-view');
+const viewTabs = document.querySelectorAll('.view-tab');
+function selectView(view, updateHash = true) {
+  const isTimeline = view === 'timeline';
+  catalogView.hidden = isTimeline;
+  timelineView.hidden = !isTimeline;
+  viewTabs.forEach(tab => {
+    const active = tab.dataset.view === view;
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', String(active));
+  });
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : location.pathname + location.search);
+}
+viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
+if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
 
 render();
 loadTextSearchIndex();
