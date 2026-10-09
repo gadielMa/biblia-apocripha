@@ -637,7 +637,7 @@
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(26, minmax(205px, 1fr)); gap: .8rem; min-width: 5500px; padding: 2.9rem .2rem 1.1rem; }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(27, minmax(205px, 1fr)); gap: .8rem; min-width: 5705px; padding: 2.9rem .2rem 1.1rem; }
     .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 1.3rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
     .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
     .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -944,10 +944,9 @@
 
       <article class="timeline-event">
         <span class="source-badge canonical">Canónico</span>
-        <div><p class="timeline-date">primeros años</p><h3>Huida, regreso y templo</h3></div>
-        <p>Mateo cuenta la huida a Egipto y el regreso a Nazaret. Lucas recuerda a Jesús adolescente dialogando en el templo, una de las pocas escenas canónicas de su crecimiento.</p>
+        <div><p class="timeline-date">primeros años</p><h3>Huida y regreso a Nazaret</h3></div>
+        <p>Mateo cuenta la huida a Egipto para proteger al niño y el regreso posterior de la familia a Nazaret.</p>
         <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=2#pasaje-2-13">Mateo 2:13–23</a>
-        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2#pasaje-2-41">Lucas 2:41–52</a>
       </article>
 
       <article class="timeline-event">
@@ -960,8 +959,15 @@
 
       <article class="timeline-event">
         <span class="source-badge canonical">Canónico</span>
-        <div><p class="timeline-date">inicio del ministerio</p><h3>Bautismo y desierto</h3></div>
-        <p>Jesús es bautizado por Juan y, según los evangelios sinópticos, atraviesa un período de prueba en el desierto antes de predicar públicamente.</p>
+        <div><p class="timeline-date">a los doce años</p><h3>Jesús adolescente en el Templo</h3></div>
+        <p>Jesús se queda en Jerusalén dialogando con los maestros del Templo; María y José lo encuentran después de buscarlo.</p>
+        <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=2#pasaje-2-41">Lucas 2:41–52</a>
+      </article>
+
+      <article class="timeline-event">
+        <span class="source-badge canonical">Canónico</span>
+        <div><p class="timeline-date">inicio del ministerio · 40 días</p><h3>Ayuno y tentación en el desierto</h3></div>
+        <p>Después de su bautismo, Jesús ayuna cuarenta días en el desierto. El diablo lo tienta tres veces antes de que comience a predicar públicamente.</p>
         <a href="lectura/?obra=rvr1909-marcos&amp;capitulo=1#pasaje-1-9">Marcos 1:9–13</a>
         <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=4#pasaje-4-1">Mateo 4:1–11</a>
       </article>
@@ -1888,8 +1894,12 @@ function makeTimelineCard([date, title, description, reference, href, source, im
   return card;
 }
 if (timelineTrack) {
+  // Las fichas breves de promesa ya cuentan Moisés e Isaías; evitamos repetirlos más adelante.
+  ['Moisés y la alianza', 'Isaías y la esperanza'].forEach(title =>
+    Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === title)?.remove()
+  );
   const simeonCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Simeón carga al niño Jesús');
-  const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida, regreso y templo');
+  const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida y regreso a Nazaret');
   if (simeonCard && flightCard) timelineTrack.insertBefore(simeonCard, flightCard);
   const enocCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Enoc y los vigilantes');
   earlyTimelineEvents.slice(0, 2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), enocCard));
