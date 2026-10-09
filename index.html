@@ -729,6 +729,8 @@
     .tree-node .tree-verse::before { display: block; top: 50%; right: 100%; left: auto; width: 27px; }
     .tree-parent:first-child .tree-verse { right: calc(100% + 34px); left: auto; }
     .tree-parent:first-child .tree-verse::before { right: auto; left: 100%; }
+    .tree-node .tree-verse, .tree-parent:first-child .tree-verse { position: relative; top: auto; right: auto; left: auto; width: min(360px, calc(100vw - 3rem)); margin: .7rem auto 0; transform: none; text-align: left; }
+    .tree-node .tree-verse::before { display: block; top: -7px; right: auto; left: 50%; width: 12px; height: 12px; border-top: 2px solid #e8c4ae; border-left: 2px solid #e8c4ae; background: #fffaf6; transform: translateX(-50%) rotate(45deg); }
     @media (max-width: 768px) {
       header { padding: 3rem 1rem 2rem; border-radius: 0 0 22px 22px; }
       header h1 { font-size: 2rem; }
@@ -761,8 +763,6 @@
       .tree-parents { min-width: 420px; }
     }
     @media (max-width: 1200px) {
-      .tree-node .tree-verse, .tree-parent:first-child .tree-verse { position: static; width: auto; margin: .6rem auto 0; transform: none; }
-      .tree-node .tree-verse::before { display: none; }
     }
   </style>
 </head>
@@ -1032,8 +1032,8 @@
       </div>
       <div class="tree-down"></div>
       <div class="tree-parents" aria-label="María y José, padres de Jesús">
-        <div class="tree-parent"><div class="tree-node" data-generation="Madre" data-relation="Madre de Jesús">María</div></div>
-        <div class="tree-parent jose-parent"><div class="tree-node key" data-generation="José" data-relation="Convergencia de las dos genealogías · padre legal de Jesús">José</div></div>
+        <div class="tree-parent"><div class="tree-node" data-generation="" data-relation="Madre de Jesús">María</div></div>
+        <div class="tree-parent jose-parent"><div class="tree-node key" data-generation="" data-relation="Convergencia de las dos genealogías">José</div></div>
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
@@ -1045,8 +1045,6 @@
       <aside class="tree-verse" data-target="David"><strong>David · Salmo 23:1</strong><q>JEHOVÁ es mi pastor; nada me faltará.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=23#pasaje-23-1">Leer Salmo 23:1</a></aside>
       <aside class="tree-verse" data-target="María"><strong>María · Lucas 1:28</strong><q>Dios te salve, María, llena eres de gracia; el Señor es contigo.</q><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-28">Leer Lucas 1:28</a></aside>
       <aside class="tree-verse" data-target="Jesús"><strong>Jesús · Juan 14:6</strong><q>Yo soy el camino, y la verdad, y la vida.</q><a href="lectura/?obra=rvr1909-juan&amp;capitulo=14#pasaje-14-6">Leer Juan 14:6</a></aside>
-      <a class="tree-reference" href="lectura/?obra=rvr1909-mateo&amp;capitulo=1">Ver Mateo 1:1–16</a>
-      <a class="tree-reference" href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Ver Lucas 3:23–38</a>
     </div>
     <aside class="tree-verse-list" aria-label="Versículos destacados del árbol"></aside>
     <div class="genealogy-flow">
