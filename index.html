@@ -726,6 +726,7 @@
     .timeline-event a { color: #9b4829; font-size: .72rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .timeline-event a:hover { color: #6e2b18; }
     .timeline-image { width: calc(100% + 1.7rem); height: 112px; margin: -.1rem -.85rem .1rem; object-fit: cover; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+    .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 1; }
     .timeline-note { margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .69rem !important; line-height: 1.4; }
     .genealogy-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
     .genealogy-view[hidden] { display: none; }
@@ -2366,10 +2367,12 @@ if (timelineTrack) {
     ['año 0 · relato de Mateo','Huida y regreso a Nazaret','Mateo cuenta la huida de la familia a Egipto y el regreso posterior a Nazaret.','Mateo 2:13–23','lectura/?obra=rvr1909-mateo&capitulo=2','jesus'],
     ['7 años después de Cristo · relato apócrifo','Relatos del niño Jesús','El Evangelio de la Infancia de Tomás reúne relatos legendarios sobre la niñez de Jesús.','Evangelio de la Infancia de Tomás','lectura/?obra=infancy-thomas-es&capitulo=2','jesus'],
     ['12 años después de Cristo','Jesús adolescente en el Templo','Jesús dialoga con los maestros y es encontrado por María y José en el Templo.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-41','jesus'],
-    ['c. 27–30 d. C.','Bautismo de Jesús','Juan bautiza a Jesús en el Jordán y comienza su ministerio público.','Mateo 3:13–17','lectura/?obra=rvr1909-mateo&capitulo=3','jesus'],
+    ['c. 27–30 d. C.','Bautismo de Jesús','Juan el Bautista bautiza a Jesús en el Jordán y comienza su ministerio público.','Mateo 3:13–17','lectura/?obra=rvr1909-mateo&capitulo=3','jesus'],
     ['c. 30 d. C. · 40 días','Ayuno y tentación en el desierto','Después de ayunar cuarenta días, Jesús es tentado por el diablo antes de predicar públicamente.','Mateo 4:1–11 · Marcos 1:9–13','lectura/?obra=rvr1909-mateo&capitulo=4','jesus'],
     ['c. 28–30 d. C.','Sermón del Monte y bienaventuranzas','Mateo reúne enseñanzas de Jesús sobre el Reino, la justicia y la vida comunitaria.','Mateo 5–7','lectura/?obra=rvr1909-mateo&capitulo=5','jesus'],
-    ['c. 27–30 d. C.','Milagros de Jesús','Los evangelios cuentan curaciones y señales, como la multiplicación de los panes, la tempestad calmada y Lázaro.','Marcos 6:30–44 · Marcos 4:35–41 · Juan 11','lectura/?obra=rvr1909-juan&capitulo=11','jesus'],
+    ['c. 27–30 d. C.','Multiplicación de los panes','Jesús bendice y reparte cinco panes y dos peces; la multitud come y quedan canastas con sobras.','Marcos 6:30–44','lectura/?obra=rvr1909-marcos&capitulo=6','jesus'],
+    ['c. 27–30 d. C.','Jesús calma la tempestad','Durante la travesía por el lago, Jesús reprende al viento y las aguas se aquietan.','Marcos 4:35–41','lectura/?obra=rvr1909-marcos&capitulo=4','jesus'],
+    ['c. 27–30 d. C.','Lázaro vuelve a la vida','Jesús llama a Lázaro para que salga del sepulcro, después de cuatro días.','Juan 11:1–44','lectura/?obra=rvr1909-juan&capitulo=11','jesus'],
     ['33 años después de Cristo · cronología tradicional','La última cena y el arresto','Jesús comparte la cena con sus discípulos y luego es arrestado en Getsemaní.','Mateo 26:17–56','lectura/?obra=rvr1909-mateo&capitulo=26','jesus'],
     ['33 años después de Cristo · cronología tradicional','Crucifixión y muerte de Jesús','Los evangelios narran el juicio, la crucifixión y la sepultura de Jesús.','Lucas 23 · Juan 19','lectura/?obra=rvr1909-lucas&capitulo=23','jesus'],
     ['33 años después de Cristo · al tercer día','Resurrección de Jesús','Los evangelios proclaman que Jesús resucitó y se apareció a sus seguidores.','Mateo 28 · Lucas 24','lectura/?obra=rvr1909-mateo&capitulo=28','jesus'],
@@ -2393,9 +2396,19 @@ if (timelineTrack) {
   ];
   extra.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'context'])); });
   milestones.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'canonical'])); });
-  const order = [...milestones.slice(0,44), extra[0], ...milestones.slice(44,54), extra[2], extra[3], ...milestones.slice(54,55), extra[4], ...milestones.slice(55)];
+  const order = [...milestones.slice(0,44), extra[0], ...milestones.slice(44,56), extra[2], extra[3], ...milestones.slice(56,57), extra[4], ...milestones.slice(57)];
   const timelineImages = {
     'Adán y Eva en el Edén': ['assets/timeline/adan-eva.png', 'Adán y Eva en el jardín del Edén'],
+    'David derrota a Goliat': ['assets/linea-tiempo/david-goliat.jpg', 'David se enfrenta a Goliat en el valle de Ela'],
+    'El Primer Templo de Jerusalén': ['assets/linea-tiempo/primer-templo.jpg', 'Reconstrucción artística del Primer Templo de Jerusalén'],
+    'Jerusalén cae y el Primer Templo es destruido': ['assets/linea-tiempo/caida-jerusalen.jpg', 'Jerusalén y el Primer Templo en llamas durante la conquista babilónica'],
+    'Reconstrucción del Segundo Templo': ['assets/linea-tiempo/segundo-templo.jpg', 'La comunidad reconstruye el Segundo Templo de Jerusalén'],
+    'Bautismo de Jesús': ['assets/linea-tiempo/bautismo-juan-jesus.jpg', 'Juan el Bautista bautiza a Jesús en el río Jordán'],
+    'Multiplicación de los panes': ['assets/linea-tiempo/multiplicacion-panes.jpg', 'Jesús comparte panes y peces con una multitud junto al lago'],
+    'Jesús calma la tempestad': ['assets/linea-tiempo/tempestad-calmada.jpg', 'Jesús calma la tempestad mientras sus discípulos están en la barca'],
+    'Lázaro vuelve a la vida': ['assets/linea-tiempo/lazaro.jpg', 'Lázaro sale de su sepulcro al llamado de Jesús'],
+    'La última cena y el arresto': ['assets/linea-tiempo/ultima-cena.jpg', 'Jesús comparte la última cena con sus discípulos'],
+    'Carino y Leucio, testigos del descenso': ['assets/linea-tiempo/carino-leucio.jpg', 'Carino y Leucio, dos jóvenes testigos según el Evangelio de Nicodemo'],
     'La torre de Babel': ['assets/extintos/torre-babel-v2.jpg', 'La torre de Babel elevándose sobre la antigua ciudad'],
     'Sodoma y Gomorra': ['assets/extintos/sodoma-gomorra.jpg', 'La destrucción de Sodoma y Gomorra en una llanura antigua'],
     'Las diez plagas de Egipto': ['assets/timeline/plagas-egipto.png', 'Moisés contempla Egipto y el Nilo bajo las plagas'],
@@ -2412,6 +2425,7 @@ if (timelineTrack) {
     if (!card || ordered.includes(card)) return;
     card.dataset.era = eventEra(item[1]);
     card.dataset.year = item[0];
+    if (['Multiplicación de los panes','Jesús calma la tempestad','Lázaro vuelve a la vida'].includes(item[1])) card.dataset.milagro = 'true';
     const date = card.querySelector('.timeline-date');
     if (date) date.textContent = item[0];
     if (timelineImages[item[1]]) {
