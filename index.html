@@ -2363,8 +2363,15 @@ const devilCardsToMove = new Map([
 devilCardsToMove.forEach(([src, alt], title) => {
   const card = Array.from(document.querySelectorAll('#extinct-view .extinct-card')).find(item => item.querySelector('h3')?.textContent.trim() === title);
   if (!card) return;
-  const image = card.querySelector('img');
-  if (image) { image.src = src; image.alt = alt; }
+  let image = card.querySelector('img');
+  if (!image) {
+    image = document.createElement('img');
+    image.className = 'extinct-card-image';
+    image.loading = 'lazy';
+    card.prepend(image);
+  }
+  image.src = src;
+  image.alt = alt;
   if (title === 'Lîlît en Isaías') card.querySelector('.source-badge').textContent = 'Isaías 34:14 · traducción discutida';
   devilGrid?.append(card);
 });
@@ -2433,13 +2440,13 @@ afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Tradiciones cristianas diversas</span><h3>¿Adónde van los muertos después de la victoria de Cristo?</h3><p>El Evangelio de Nicodemo dramatiza el descenso de Cristo al Hades y la liberación de los justos; no afirma que desde entonces toda persona fallecida vaya directamente al cielo o al infierno. Las iglesias interpretan de distinto modo el estado intermedio, la resurrección final y pasajes como Lucas 23:43 y 2 Corintios 5:8. Apocalipsis 20 mantiene una escena futura de resurrección y juicio. “Furia” en algunas traducciones del relato apócrifo describe la ira, no un demonio llamado Furia.</p><div class="extinct-refs"><a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · descenso al Hades</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=23#pasaje-23-43">Lucas 23:43</a><a href="lectura/?obra=rvr1909-2-corintios&amp;capitulo=5#pasaje-5-8">2 Corintios 5:8</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–15</a></div></div></article>
 </div>`;
 const afterlifeIllustrations = [
-  ['assets/timeline/jesus-cruz.png', 'Seol representado simbólicamente como el ámbito de los muertos'],
-  ['assets/timeline/jesus-descenso.png', 'Cristo desciende al Hades en una tradición cristiana posterior'],
-  ['assets/extintos/sodoma-gomorra.jpg', 'Fuego que consume una ciudad como imagen bíblica de juicio'],
-  ['assets/extintos/dragon-escarlata-v2.jpg', 'Figura apocalíptica ante un paisaje de fuego, como símbolo del juicio final'],
-  ['assets/diablos/abaddon.jpg', 'El ángel Abaddón junto a la abertura del abismo'],
-  ['assets/enoc/cielo-2.jpg', 'Región oscura del segundo cielo en la visión de 2 Enoc'],
-  ['assets/timeline/resurreccion-jesus.png', 'La resurrección de Jesús y la esperanza cristiana']
+  ['assets/mas-alla/seol.png', 'Sepulcro excavado en la roca como imagen del Seol, ámbito de los muertos'],
+  ['assets/mas-alla/hades.png', 'Umbral del Hades en una escena de inspiración griega antigua'],
+  ['assets/mas-alla/gehenna.png', 'Valle rocoso de Hinom junto a Jerusalén, con fuego distante como imagen de juicio'],
+  ['assets/mas-alla/lago-fuego.png', 'Vasto lago de fuego en un paisaje apocalíptico simbólico'],
+  ['assets/mas-alla/abismo-abaddon.png', 'Abertura del abismo y figuras lejanas en una escena apocalíptica'],
+  ['assets/mas-alla/segundo-cielo.png', 'Ángeles rebeldes encadenados entre las nubes en la visión de 2 Enoc'],
+  ['assets/mas-alla/esperanza-cristiana.png', 'Tumba abierta al amanecer y figuras que caminan hacia la luz como imagen de esperanza']
 ];
 afterlifeSection.querySelectorAll('.extinct-card').forEach((card, index) => {
   const [src, alt] = afterlifeIllustrations[index];
