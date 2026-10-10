@@ -664,10 +664,18 @@
       .view-tabs { max-width: min(1600px, calc(100vw - 5rem)); }
       .view-links { width: 100%; grid-template-columns: repeat(6, minmax(0, 1fr)); }
     }
-    .related-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .85rem; padding-top: .7rem; border-top: 1px solid var(--border); }
-    .related-links-label { color: var(--text2); font-size: .78rem; font-weight: 700; }
-    .related-link { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .65rem; color: var(--accent); background: #f8fafc; font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
-    .related-link:hover, .related-link:focus-visible { background: #fff5ef; border-color: var(--accent); outline: none; }
+    .related-links { margin-top: .85rem; padding-top: .7rem; border-top: 1px solid var(--border); }
+    .related-links-label { display: block; margin-bottom: .45rem; color: var(--text2); font-size: .76rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .related-link-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: .45rem; }
+    .related-link { display: flex; flex-direction: column; align-items: flex-start; gap: .12rem; min-width: 0; border: 1px solid rgba(201,168,140,.45); border-radius: 11px; padding: .5rem .65rem; text-align: left; color: var(--accent); background: rgba(255,249,241,.74); font: inherit; cursor: pointer; transition: transform .16s ease, border-color .16s ease, background .16s ease; }
+    .related-link:hover, .related-link:focus-visible { background: #fff5ef; border-color: var(--accent); outline: none; transform: translateY(-1px); }
+    .related-link-title { font-size: .8rem; font-weight: 800; line-height: 1.3; }
+    .related-link-reason { color: var(--text2); font-size: .7rem; font-weight: 500; line-height: 1.35; }
+    .cross-nav-trail { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; margin: 0 0 .85rem; padding: .7rem .9rem; border: 1px solid rgba(201,168,140,.46); border-radius: 13px; color: var(--text2); background: linear-gradient(110deg, rgba(255,248,238,.88), rgba(255,255,255,.8)); box-shadow: 0 8px 20px rgba(93,61,33,.06); }
+    .cross-nav-path { min-width: 0; font-size: .78rem; line-height: 1.4; }
+    .cross-nav-path strong { color: var(--text); }
+    .cross-nav-back { flex: 0 0 auto; border: 1px solid rgba(180,83,45,.28); border-radius: 999px; padding: .38rem .7rem; color: var(--accent); background: rgba(255,255,255,.76); font: inherit; font-size: .75rem; font-weight: 800; cursor: pointer; }
+    .cross-nav-back:hover, .cross-nav-back:focus-visible { background: #fff1e5; border-color: var(--accent); outline: 2px solid rgba(180,83,45,.2); }
     .search-hit { outline: 3px solid rgba(180,83,45,.42); outline-offset: 3px; transition: outline-color .3s ease; }
     .view-entering { animation: library-view-enter .34s cubic-bezier(.2,.7,.25,1) both; }
     @keyframes library-view-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -2614,36 +2622,64 @@ function findLibraryCard(view, title) {
   return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage'))
     .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
 }
-const relatedPairs = [
-  { view: 'ark', title: 'La construcción y sus dimensiones', links: [['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo'], ['enoch', 'Enoc 10:1', 'Enoc y el anuncio del diluvio']] },
-  { view: 'shroud', title: 'Qué dicen los Evangelios', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver la pasión en la línea de tiempo'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Explorar las tradiciones sobre la muerte']] },
-  { view: 'afterlife', title: 'Seol', links: [['afterlife', 'Hades', 'Comparar con Hades'], ['afterlife', 'Gehena y el valle de Hinom', 'Ver Gehena']] },
-  { view: 'afterlife', title: 'Hades', links: [['afterlife', 'Seol', 'Comparar con Seol'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Tradiciones sobre el destino de los muertos']] },
-  { view: 'devils', title: 'Satanás', links: [['devils', 'La serpiente / el dragón antiguo', 'Ver la conexión con el dragón'], ['afterlife', 'El abismo y Abaddón', 'Explorar el abismo']] },
-  { view: 'devils', title: 'La serpiente / el dragón antiguo', links: [['devils', 'Satanás', 'Ver la conexión con Satanás']] },
-  { view: 'prophecies', title: 'Contar puedo todos mis huesos', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver el relato de la pasión']] },
-  { view: 'enoch', title: 'Enoc 10:1', links: [['ark', 'El Arca de Noé', 'Ir al Arca de Noé'], ['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo']] }
+const crossConnections = [
+  { a: ['ark', 'El Arca de Noé'], b: ['timeline', 'El gran diluvio y el arca'], why: 'La ficha amplía el mismo relato que la cronología resume.' },
+  { a: ['ark', 'El Arca de Noé'], b: ['enoch', 'Enoc 10:1'], why: '1 Enoc amplía la tradición del diluvio con el aviso a Noé.' },
+  { a: ['ark', 'El Arca de Noé'], b: ['objects', 'El Arca de la Alianza'], why: 'Comparten la palabra “arca”, pero son objetos distintos: una nave y un cofre ritual.' },
+  { a: ['shroud', 'Qué dicen los Evangelios'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'Los Evangelios narran la sepultura; la reliquia se vincula a ese episodio por tradición, sin que el texto la identifique.' },
+  { a: ['shroud', 'Qué dicen los Evangelios'], b: ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?'], why: 'Ambas fichas parten de la sepultura y distinguen el relato bíblico de las tradiciones posteriores.' },
+  { a: ['prophecies', 'Contar puedo todos mis huesos'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'La lectura cristiana relaciona el poema del justo sufriente con la Pasión.' },
+  { a: ['prophecies', 'La descendencia de la mujer'], b: ['devils', 'La serpiente / el dragón antiguo'], why: 'La interpretación cristiana enlaza Génesis 3:15 con la derrota final de la serpiente en Apocalipsis.' },
+  { a: ['devils', 'Satanás'], b: ['devils', 'La serpiente / el dragón antiguo'], why: 'Apocalipsis 12:9 y 20:2 identifican explícitamente al dragón antiguo con Satanás y el Diablo.' },
+  { a: ['devils', 'Satanás'], b: ['timeline', 'Ayuno y tentación en el desierto'], why: 'Los Evangelios presentan al Diablo como el tentador de Jesús en el desierto.' },
+  { a: ['afterlife', 'El abismo y Abaddón'], b: ['devils', 'Abaddón / Apolión'], why: 'Apocalipsis 9:11 nombra a Abaddón/Apolión como rey del abismo.' },
+  { a: ['afterlife', 'Seol'], b: ['afterlife', 'Hades'], why: 'Seol y Hades suelen ponerse en paralelo, aunque pertenecen a contextos lingüísticos distintos.' },
+  { a: ['afterlife', 'Gehena y el valle de Hinom'], b: ['afterlife', 'Lago de fuego / fuego eterno'], why: 'Son imágenes de juicio diferentes; el enlace permite compararlas sin tratarlas como sinónimos automáticos.' },
+  { a: ['devils', 'Baal'], b: ['timeline', 'Elías desafía a los profetas de Baal'], why: 'La cronología sitúa el enfrentamiento de Elías en su contexto narrativo.' },
+  { a: ['prophecies', 'Un profeta como Moisés'], b: ['timeline', 'Moisés anuncia un profeta'], why: 'Ambas fichas remiten a Deuteronomio 18 y a su lectura posterior en Hechos.' },
+  { a: ['extinct', 'Los gigantes Nefilim'], b: ['enoch', 'Enoc 7:2'], why: 'Génesis menciona a los Nefilim y 1 Enoc desarrolla la tradición de los gigantes.' },
+  { a: ['objects', 'La Vera Cruz'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'La reliquia se asocia a la cruz del relato evangélico; la identificación de fragmentos es una tradición histórica posterior.' }
 ];
-relatedPairs.forEach(pair => {
-  const card = findLibraryCard(pair.view, pair.title);
-  const body = card?.querySelector('.extinct-card-body') || card;
-  if (!body) return;
+const connectionIndex = new Map();
+function addCrossConnection(from, to, why) {
+  const sourceCard = findLibraryCard(from[0], from[1]);
+  const targetCard = findLibraryCard(to[0], to[1]);
+  if (!sourceCard || !targetCard || sourceCard === targetCard) return;
+  const key = `${from[0]}|${normalizeSearchText(from[1])}`;
+  const items = connectionIndex.get(key) || { card: sourceCard, items: new Map() };
+  items.items.set(`${to[0]}|${normalizeSearchText(to[1])}`, { view: to[0], title: to[1], why });
+  connectionIndex.set(key, items);
+}
+crossConnections.forEach(({ a, b, why }) => {
+  addCrossConnection(a, b, why);
+  addCrossConnection(b, a, why);
+});
+connectionIndex.forEach(({ card, items }) => {
+  const body = card.querySelector('.extinct-card-body') || card;
   const links = document.createElement('div');
   links.className = 'related-links';
+  links.setAttribute('aria-label', 'Navegación cruzada');
   const label = document.createElement('span');
   label.className = 'related-links-label';
-  label.textContent = 'Relacionado:';
-  links.append(label);
-  pair.links.forEach(([view, title, text]) => {
-    if (!findLibraryCard(view, title)) return;
+  label.textContent = `Conexiones · ${items.size}`;
+  const list = document.createElement('div');
+  list.className = 'related-link-list';
+  items.forEach(({ view, title, why }) => {
     const button = document.createElement('button');
     button.className = 'related-link';
     button.type = 'button';
     button.dataset.crossView = view;
     button.dataset.crossTitle = title;
-    button.textContent = text;
-    links.append(button);
+    const linkedTitle = document.createElement('span');
+    linkedTitle.className = 'related-link-title';
+    linkedTitle.textContent = `↗ ${title}`;
+    const reason = document.createElement('span');
+    reason.className = 'related-link-reason';
+    reason.textContent = why;
+    button.append(linkedTitle, reason);
+    list.append(button);
   });
+  links.append(label, list);
   body.append(links);
 });
 
@@ -2692,9 +2728,37 @@ const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
 const currentViewLabel = document.getElementById('view-menu-current');
+let activeLibraryView = 'catalog';
+const crossNavigationStack = [];
 function closeViewMenu() {
   viewNavigation.classList.remove('open');
   viewMenuToggle.setAttribute('aria-expanded', 'false');
+}
+function clearCrossNavigation() {
+  crossNavigationStack.length = 0;
+  document.querySelectorAll('.cross-nav-trail').forEach(trail => trail.remove());
+}
+function renderCrossNavigation(view) {
+  document.querySelectorAll('.cross-nav-trail').forEach(trail => trail.remove());
+  const route = crossNavigationStack.at(-1);
+  if (!route || route.toView !== view) return;
+  const section = document.querySelector(libraryViewRoots[view]);
+  if (!section) return;
+  const trail = document.createElement('nav');
+  trail.className = 'cross-nav-trail';
+  trail.setAttribute('aria-label', 'Tu recorrido entre temas relacionados');
+  const path = document.createElement('span');
+  path.className = 'cross-nav-path';
+  const routeTitles = crossNavigationStack.map(item => item.fromTitle).concat(route.toTitle).filter(Boolean);
+  path.innerHTML = '<strong>Tu recorrido:</strong> ';
+  path.append(document.createTextNode(routeTitles.join('  →  ')));
+  const back = document.createElement('button');
+  back.className = 'cross-nav-back';
+  back.type = 'button';
+  back.dataset.crossBack = 'true';
+  back.textContent = `← Volver a ${route.fromTitle || 'la ficha anterior'}`;
+  trail.append(path, back);
+  section.prepend(trail);
 }
 viewMenuToggle.addEventListener('click', () => {
   const open = viewMenuToggle.getAttribute('aria-expanded') !== 'true';
@@ -2708,6 +2772,7 @@ document.addEventListener('click', event => {
   if (!viewNavigation.contains(event.target)) closeViewMenu();
 });
 function selectView(view, updateHash = true) {
+  activeLibraryView = view;
   const isTimeline = view === 'timeline';
   const isGenealogy = view === 'genealogy';
   const isProphecies = view === 'prophecies';
@@ -2745,10 +2810,11 @@ function selectView(view, updateHash = true) {
   });
   const selectedTab = Array.from(viewTabs).find(tab => tab.dataset.view === view);
   currentViewLabel.textContent = `· ${selectedTab?.textContent.trim() || 'Catálogo'}`;
+  renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
   if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : location.pathname + location.search);
 }
-viewTabs.forEach(tab => tab.addEventListener('click', () => { selectView(tab.dataset.view); closeViewMenu(); }));
+viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
 if (location.hash === '#arbol-genealogico') selectView('genealogy', false);
 if (location.hash === '#profecias') selectView('prophecies', false);
@@ -2779,7 +2845,36 @@ document.addEventListener('click', event => {
   const link = event.target.closest('[data-cross-view]');
   if (!link) return;
   event.preventDefault();
+  if (link.classList.contains('cross-search-result')) {
+    clearCrossNavigation();
+    jumpToLibraryItem(link.dataset.crossView, link.dataset.crossTarget, link.dataset.crossTitle);
+    return;
+  }
+  const originCard = link.closest('.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage');
+  const originTitle = originCard?.querySelector('h3,h4,h2,strong')?.textContent.trim() || document.querySelector(`.view-tab[data-view="${activeLibraryView}"]`)?.textContent.trim() || 'Catálogo';
+  const targetTitle = link.dataset.crossTitle;
+  const targetCard = findLibraryCard(link.dataset.crossView, targetTitle);
+  if (targetCard) {
+    const relatedReason = link.querySelector('.related-link-reason')?.textContent.trim() || '';
+    crossNavigationStack.push({ fromView: activeLibraryView, fromTitle: originTitle, toView: link.dataset.crossView, toTitle: targetTitle, why: relatedReason });
+  }
   jumpToLibraryItem(link.dataset.crossView, link.dataset.crossTarget, link.dataset.crossTitle);
+});
+document.addEventListener('click', event => {
+  const back = event.target.closest('[data-cross-back]');
+  if (!back) return;
+  const route = crossNavigationStack.pop();
+  if (!route) return;
+  selectView(route.fromView);
+  closeViewMenu();
+  requestAnimationFrame(() => {
+    renderCrossNavigation(route.fromView);
+    const target = findLibraryCard(route.fromView, route.fromTitle);
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.add('search-hit');
+    setTimeout(() => target.classList.remove('search-hit'), 1800);
+  });
 });
 
 function setGenealogyRelationships() {
