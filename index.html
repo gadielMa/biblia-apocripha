@@ -173,6 +173,7 @@
     }
     .text-results[hidden] { display: none; }
     .text-results h2 { font-size: 1rem; color: var(--accent); margin-bottom: .65rem; }
+    .text-results h3 { margin: .85rem 0 .4rem; color: var(--text); font-size: .9rem; }
     .text-result-list { display: grid; gap: .55rem; }
     .text-result {
       display: block;
@@ -597,16 +598,53 @@
       max-width: 1240px;
       margin: 1rem auto 0;
       padding: 0 1rem;
-      display: flex;
-      gap: .55rem;
       position: relative;
       z-index: 3;
     }
+    .view-menu-toggle {
+      display: flex;
+      max-width: 100%;
+      align-items: center;
+      gap: .7rem;
+      min-height: 48px;
+      padding: .65rem 1rem;
+      border: 1px solid #bfccdc;
+      border-radius: 14px;
+      color: #fff;
+      background: rgba(23,40,63,.9);
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(14,28,45,.14);
+    }
+    .view-menu-toggle:hover, .view-menu-toggle:focus-visible { background: #253e5c; outline: 2px solid #fff; outline-offset: 2px; }
+    .view-menu-icon { font-size: 1.25rem; line-height: 1; }
+    .view-menu-current { max-width: 55vw; margin-left: .2rem; overflow: hidden; color: #cbd8e7; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
+    .view-links {
+      display: none;
+      position: absolute;
+      top: calc(100% + .45rem);
+      left: 1rem;
+      right: 1rem;
+      max-height: min(70vh, 520px);
+      overflow-y: auto;
+      padding: .75rem;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: .5rem;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 18px;
+      background: rgba(23,40,63,.98);
+      box-shadow: 0 18px 40px rgba(14,28,45,.28);
+      backdrop-filter: blur(16px);
+    }
+    .view-tabs.open .view-links { display: grid; }
     .view-tab {
       appearance: none;
       border: 1px solid #bfccdc;
-      border-radius: 999px;
-      padding: .62rem 1rem;
+      border-radius: 12px;
+      padding: .72rem .85rem;
+      text-align: left;
+      min-height: 44px;
       color: #e7edf5;
       background: rgba(23,40,63,.72);
       font: inherit;
@@ -616,6 +654,11 @@
     }
     .view-tab:hover, .view-tab:focus-visible { border-color: #fff; background: rgba(255,255,255,.15); outline: none; }
     .view-tab.active { color: #182536; border-color: #fff; background: #fff; box-shadow: 0 8px 20px rgba(14,28,45,.18); }
+    .related-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .85rem; padding-top: .7rem; border-top: 1px solid var(--border); }
+    .related-links-label { color: var(--text2); font-size: .78rem; font-weight: 700; }
+    .related-link { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .65rem; color: var(--accent); background: #f8fafc; font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
+    .related-link:hover, .related-link:focus-visible { background: #fff5ef; border-color: var(--accent); outline: none; }
+    .search-hit { outline: 3px solid rgba(180,83,45,.42); outline-offset: 3px; transition: outline-color .3s ease; }
     .timeline-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
     .timeline-view[hidden] { display: none; }
     .timeline-intro {
@@ -804,8 +847,10 @@
       .controls { margin-top: -.8rem; }
       #catalog-view .controls { margin-top: .85rem; }
       tbody tr:not(.canon-boundary) { border-radius: 14px; border-color: var(--border); box-shadow: 0 8px 22px rgba(26,48,77,.07); }
-      .view-tabs { margin-top: .7rem; overflow-x: auto; padding-bottom: .2rem; }
-      .view-tab { flex: 0 0 auto; }
+      .view-tabs { margin-top: .7rem; padding: 0 .75rem; }
+      .view-links { left: .75rem; right: .75rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .view-tab { min-width: 0; font-size: .84rem; }
+      .view-menu-current { max-width: 42vw; }
       .timeline-view { margin-top: .8rem; padding: 0 .75rem; }
       .genealogy-view { margin-top: .8rem; padding: 0 .75rem; }
       .prophecies-view { margin-top: .8rem; padding: 0 .75rem; }
@@ -861,7 +906,11 @@
   </div>
 </header>
 
-<nav class="view-tabs" aria-label="Vistas de la biblioteca">
+<nav class="view-tabs" id="view-navigation" aria-label="Secciones de la biblioteca">
+  <button class="view-menu-toggle" id="view-menu-toggle" type="button" aria-expanded="false" aria-controls="view-links">
+    <span class="view-menu-icon" aria-hidden="true">☰</span><span>Secciones</span><span class="view-menu-current" id="view-menu-current">· Catálogo</span>
+  </button>
+  <div class="view-links" id="view-links">
   <button class="view-tab active" type="button" data-view="catalog" aria-selected="true">Catálogo</button>
   <button class="view-tab" type="button" data-view="timeline" aria-selected="false">Línea de tiempo</button>
   <button class="view-tab" type="button" data-view="genealogy" aria-selected="false">Árbol genealógico</button>
@@ -872,11 +921,13 @@
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
   <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
   <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Más allá</button>
+  <button class="view-tab" type="button" data-view="relics" aria-selected="false">Arca de Noé y Sábana Santa</button>
+  </div>
 </nav>
 
 <section id="catalog-view">
 <div class="controls">
-  <input class="search-box" id="search" type="search" placeholder="Buscar libros o palabras dentro de los textos…" aria-label="Buscar en el catálogo y los textos">
+  <input class="search-box" id="search" type="search" placeholder="Buscar en libros, textos y todas las secciones…" aria-label="Buscar en libros, textos y secciones de la biblioteca">
   <div class="filters" id="filters">
     <button class="filter-btn active" data-group="">Todos</button>
   </div>
@@ -887,7 +938,7 @@
 </div>
 
 <section class="text-results" id="text-results" hidden aria-live="polite">
-  <h2>Resultados dentro de los textos</h2>
+  <h2>Resultados en la biblioteca</h2>
   <div id="text-results-content"></div>
 </section>
 
@@ -1920,29 +1971,75 @@ function renderRows(rows) {
 function renderTextResults() {
   const container = document.getElementById('text-results');
   const content = document.getElementById('text-results-content');
-  const query = searchTerm.toLowerCase();
+  const query = normalizeSearchText(searchTerm);
   if (query.length < 3) {
     container.hidden = true;
     content.innerHTML = '';
     return;
   }
-  if (!textSearchLoaded) {
-    container.hidden = false;
-    content.innerHTML = '<p class="text-search-note">Cargando el índice de textos…</p>';
-    return;
-  }
-  const results = textSearchIndex.filter(item => item.text.toLowerCase().includes(query)).slice(0, 12);
+  const results = textSearchLoaded
+    ? textSearchIndex.filter(item => normalizeSearchText(item.text).includes(query)).slice(0, 12)
+    : [];
+  const libraryResults = findLibraryMatches(query).slice(0, 12);
   container.hidden = false;
-  if (!results.length) {
-    content.innerHTML = '<p class="text-search-note">No hay coincidencias dentro de los textos disponibles todavía.</p>';
-    return;
-  }
-  const label = results.length === 12 ? 'Mostrando las primeras 12 coincidencias.' : `${results.length} coincidencia${results.length === 1 ? '' : 's'}.`;
-  content.innerHTML = `<p class="text-search-note">${label}</p><div class="text-result-list">${results.map(item => `
+  const bibleBlock = results.length ? `<h3>En los textos bíblicos</h3><div class="text-result-list">${results.map(item => `
     <a class="text-result" href="lectura/?obra=${encodeURIComponent(item.documentId)}&capitulo=${item.chapter}#pasaje-${item.chapter}-${item.verse}">
       <span class="text-result-meta">${esc(item.title)} · capítulo ${item.chapter}, versículo ${esc(item.verse)}</span>
       <span class="text-result-excerpt">${esc(item.text)}</span>
-    </a>`).join('')}</div>`;
+    </a>`).join('')}</div>` : '';
+  const libraryBlock = libraryResults.length ? `<h3>En las secciones</h3><div class="text-result-list">${libraryResults.map(item => `
+    <a class="text-result cross-search-result" href="#${escAttr(item.view)}" data-cross-view="${escAttr(item.view)}" data-cross-target="${escAttr(item.id)}">
+      <span class="text-result-meta">${esc(item.title)} · ${esc(item.section)}</span>
+      <span class="text-result-excerpt">${esc(item.excerpt)}</span>
+    </a>`).join('')}</div>` : '';
+  const loadingNote = textSearchLoaded ? '' : '<p class="text-search-note">Cargando el índice de textos bíblicos…</p>';
+  const emptyNote = !results.length && !libraryResults.length && textSearchLoaded
+    ? '<p class="text-search-note">No encontramos coincidencias en libros, textos ni secciones.</p>' : '';
+  const count = results.length + libraryResults.length;
+  const label = count ? `${count}${results.length === 12 || libraryResults.length === 12 ? '+' : ''} resultado${count === 1 ? '' : 's'}; elegí una ficha para abrir su sección.` : '';
+  content.innerHTML = `${loadingNote}${label ? `<p class="text-search-note">${label}</p>` : ''}${bibleBlock}${libraryBlock}${emptyNote}`;
+}
+
+function normalizeSearchText(value) {
+  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es');
+}
+
+function findLibraryMatches(query) {
+  const sections = {
+    'timeline-view': ['Línea de tiempo', 'timeline'],
+    'genealogy-view': ['Árbol genealógico', 'genealogy'],
+    'prophecies-view': ['Profecías', 'prophecies'],
+    'extinct-view': ['Extintos', 'extinct'],
+    'objects-view': ['Objetos', 'objects'],
+    'enoch-view': ['Enoc', 'enoch'],
+    'devils-view': ['Diablos', 'devils'],
+    'gnosticism-view': ['Gnosticismo', 'gnosticism'],
+    'afterlife-view': ['Más allá', 'afterlife'],
+    'relics-view': ['Arca de Noé y Sábana Santa', 'relics']
+  };
+  const selectors = [
+    '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
+    '#prophecies-view .prophecies-intro', '#prophecies-view .prophecy-card', '.extinct-view .extinct-intro', '.extinct-view .extinct-card', '#enoch-view .enoch-intro', '#enoch-view .enoch-passage',
+    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage'
+  ].join(',');
+  const matches = [];
+  document.querySelectorAll(selectors).forEach(card => {
+    const section = card.closest('.timeline-view,.genealogy-view,.prophecies-view,.extinct-view,.enoch-view');
+    const sectionInfo = section && sections[section.id];
+    if (!sectionInfo) return;
+    const heading = card.querySelector('h3,h4,h2,strong');
+    const rawText = card.innerText || card.textContent || '';
+    const normalizedText = normalizeSearchText(rawText);
+    if (!normalizedText.includes(query)) return;
+    const title = (heading?.textContent || rawText).trim().replace(/\s+/g, ' ').slice(0, 120);
+    const sourceText = rawText.trim().replace(/\s+/g, ' ');
+    const matchAt = normalizedText.indexOf(query);
+    const startAt = Math.max(0, matchAt - 70);
+    const excerpt = `${startAt ? '…' : ''}${sourceText.slice(startAt, startAt + 180)}${sourceText.length > startAt + 180 ? '…' : ''}`;
+    if (!card.dataset.librarySearchId) card.dataset.librarySearchId = `library-${matches.length}-${Math.random().toString(36).slice(2, 8)}`;
+    matches.push({ id: card.dataset.librarySearchId, title, excerpt, section: sectionInfo[0], view: sectionInfo[1] });
+  });
+  return matches;
 }
 
 async function loadTextSearchIndex() {
@@ -1963,10 +2060,10 @@ function render() {
     if (row._hidden) return false;
     if (activeGroup && row.Grupo !== activeGroup) return false;
     if (searchTerm) {
-      const s = searchTerm.toLowerCase();
-      const haystack = [getBookName(row), row.Grupo, row.Tanaj, row['Biblia Católica'], row['Biblia Etíope'],
+      const s = normalizeSearchText(searchTerm);
+      const haystack = normalizeSearchText([getBookName(row), row.Grupo, row.Tanaj, row['Biblia Católica'], row['Biblia Etíope'],
         row.BIBLIOTECA, row['Fecha aproximada'], row['Idioma original'], row['Tipo de entrada'], row.Resumen]
-        .join(' ').toLowerCase();
+        .join(' '));
       if (!haystack.includes(s)) return false;
     }
     return true;
@@ -2459,6 +2556,64 @@ afterlifeSection.querySelectorAll('.extinct-card').forEach((card, index) => {
 });
 gnosticSection.after(afterlifeSection);
 
+const relicsSection = document.createElement('section');
+relicsSection.className = 'extinct-view';
+relicsSection.id = 'relics-view';
+relicsSection.hidden = true;
+relicsSection.setAttribute('aria-labelledby', 'relics-title');
+relicsSection.innerHTML = `<div class="extinct-intro"><h2 id="relics-title">El Arca de Noé y la Sábana Santa</h2><p>Dos objetos con trayectorias distintas: uno pertenece al relato del diluvio en Génesis; el otro es una reliquia cuya identificación con los lienzos funerarios del Evangelio sigue siendo discutida.</p></div><div class="extinct-grid">
+<article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/noe-arca.png" alt="El arca de Noé sobre las aguas del diluvio" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato del diluvio</span><h3>El Arca de Noé</h3><p>Génesis describe cómo Noé construye un arca para preservar a su familia y a los animales durante el diluvio. La narración la presenta como refugio y parte del pacto posterior; esta sección la conecta con la línea temporal y con las tradiciones sobre Enoc.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Génesis 6:14–22</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-15">Génesis 8:15–22</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=9#pasaje-9-8">Génesis 9:8–17</a></div></div></article>
+<article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin.jpg" alt="Lienzo funerario de lino extendido en una tumba de piedra" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Reliquia cristiana · identificación discutida</span><h3>La Sábana Santa</h3><p>Los Evangelios mencionan lienzos usados para envolver el cuerpo de Jesús. La tradición identifica la Sábana Santa de Turín con uno de ellos, pero esa identificación no está demostrada; la datación por radiocarbono publicada en 1989 situó la tela entre 1260 y 1390 d. C.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-40">Juan 19:40–42</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-59">Mateo 27:59–60</a></div></div></article>
+</div>`;
+document.getElementById('objects-view')?.after(relicsSection);
+document.querySelectorAll('#objects-view .extinct-card').forEach(card => {
+  if (card.querySelector('h3')?.textContent.trim() === 'El Santo Sudario') card.remove();
+});
+
+const libraryViewRoots = {
+  timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
+  extinct: '#extinct-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
+  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', relics: '#relics-view'
+};
+function findLibraryCard(view, title) {
+  const root = document.querySelector(libraryViewRoots[view]);
+  if (!root) return null;
+  return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage'))
+    .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
+}
+const relatedPairs = [
+  { view: 'relics', title: 'El Arca de Noé', links: [['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo'], ['enoch', 'Enoc 10:1', 'Enoc y el anuncio del diluvio']] },
+  { view: 'relics', title: 'La Sábana Santa', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver la pasión en la línea de tiempo'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Explorar las tradiciones sobre la muerte']] },
+  { view: 'afterlife', title: 'Seol', links: [['afterlife', 'Hades', 'Comparar con Hades'], ['afterlife', 'Gehena y el valle de Hinom', 'Ver Gehena']] },
+  { view: 'afterlife', title: 'Hades', links: [['afterlife', 'Seol', 'Comparar con Seol'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Tradiciones sobre el destino de los muertos']] },
+  { view: 'devils', title: 'Satanás', links: [['devils', 'La serpiente / el dragón antiguo', 'Ver la conexión con el dragón'], ['afterlife', 'El abismo y Abaddón', 'Explorar el abismo']] },
+  { view: 'devils', title: 'La serpiente / el dragón antiguo', links: [['devils', 'Satanás', 'Ver la conexión con Satanás']] },
+  { view: 'prophecies', title: 'Contar puedo todos mis huesos', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver el relato de la pasión']] },
+  { view: 'enoch', title: 'Enoc 10:1', links: [['relics', 'El Arca de Noé', 'Ir al Arca de Noé'], ['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo']] }
+];
+relatedPairs.forEach(pair => {
+  const card = findLibraryCard(pair.view, pair.title);
+  const body = card?.querySelector('.extinct-card-body') || card;
+  if (!body) return;
+  const links = document.createElement('div');
+  links.className = 'related-links';
+  const label = document.createElement('span');
+  label.className = 'related-links-label';
+  label.textContent = 'Relacionado:';
+  links.append(label);
+  pair.links.forEach(([view, title, text]) => {
+    if (!findLibraryCard(view, title)) return;
+    const button = document.createElement('button');
+    button.className = 'related-link';
+    button.type = 'button';
+    button.dataset.crossView = view;
+    button.dataset.crossTitle = title;
+    button.textContent = text;
+    links.append(button);
+  });
+  body.append(links);
+});
+
 const objectsGrid = document.querySelector('#objects-view .extinct-grid');
 const removedObjectTitles = new Set(['Demonios y “Legión”', 'El Demiurgo', 'Baal, símbolo taurino']);
 objectsGrid?.querySelectorAll('.extinct-card').forEach(card => {
@@ -2498,7 +2653,26 @@ const enochView = document.getElementById('enoch-view');
 const devilsView = document.getElementById('devils-view');
 const gnosticismView = document.getElementById('gnosticism-view');
 const afterlifeView = document.getElementById('afterlife-view');
+const relicsView = document.getElementById('relics-view');
 const viewTabs = document.querySelectorAll('.view-tab');
+const viewNavigation = document.getElementById('view-navigation');
+const viewMenuToggle = document.getElementById('view-menu-toggle');
+const currentViewLabel = document.getElementById('view-menu-current');
+function closeViewMenu() {
+  viewNavigation.classList.remove('open');
+  viewMenuToggle.setAttribute('aria-expanded', 'false');
+}
+viewMenuToggle.addEventListener('click', () => {
+  const open = viewMenuToggle.getAttribute('aria-expanded') !== 'true';
+  viewNavigation.classList.toggle('open', open);
+  viewMenuToggle.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeViewMenu();
+});
+document.addEventListener('click', event => {
+  if (!viewNavigation.contains(event.target)) closeViewMenu();
+});
 function selectView(view, updateHash = true) {
   const isTimeline = view === 'timeline';
   const isGenealogy = view === 'genealogy';
@@ -2509,7 +2683,8 @@ function selectView(view, updateHash = true) {
   const isDevils = view === 'devils';
   const isGnosticism = view === 'gnosticism';
   const isAfterlife = view === 'afterlife';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife;
+  const isRelics = view === 'relics';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isRelics;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -2519,24 +2694,49 @@ function selectView(view, updateHash = true) {
   devilsView.hidden = !isDevils;
   gnosticismView.hidden = !isGnosticism;
   afterlifeView.hidden = !isAfterlife;
+  relicsView.hidden = !isRelics;
   viewTabs.forEach(tab => {
     const active = tab.dataset.view === view;
     tab.classList.toggle('active', active);
     tab.setAttribute('aria-selected', String(active));
   });
+  const selectedTab = Array.from(viewTabs).find(tab => tab.dataset.view === view);
+  currentViewLabel.textContent = `· ${selectedTab?.textContent.trim() || 'Catálogo'}`;
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : isRelics ? '#arca-noe-sabana-santa' : location.pathname + location.search);
 }
-viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
+viewTabs.forEach(tab => tab.addEventListener('click', () => { selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
 if (location.hash === '#arbol-genealogico') selectView('genealogy', false);
 if (location.hash === '#profecias') selectView('prophecies', false);
 if (location.hash === '#elementos-extintos') selectView('extinct', false);
+if (location.hash === '#extintos') selectView('extinct', false);
 if (location.hash === '#objetos' || location.hash === '#objetos-y-seres') selectView('objects', false);
 if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
 if (location.hash === '#gnosticismo') selectView('gnosticism', false);
 if (location.hash === '#mas-alla') selectView('afterlife', false);
+if (location.hash === '#arca-noe-sabana-santa') selectView('relics', false);
+
+function jumpToLibraryItem(view, targetId, title) {
+  selectView(view);
+  closeViewMenu();
+  requestAnimationFrame(() => {
+    const target = targetId
+      ? Array.from(document.querySelectorAll('[data-library-search-id]')).find(item => item.dataset.librarySearchId === targetId)
+      : findLibraryCard(view, title);
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.add('search-hit');
+    setTimeout(() => target.classList.remove('search-hit'), 1800);
+  });
+}
+document.addEventListener('click', event => {
+  const link = event.target.closest('[data-cross-view]');
+  if (!link) return;
+  event.preventDefault();
+  jumpToLibraryItem(link.dataset.crossView, link.dataset.crossTarget, link.dataset.crossTitle);
+});
 
 function setGenealogyRelationships() {
   const textOf = node => node.firstChild.textContent.trim();
