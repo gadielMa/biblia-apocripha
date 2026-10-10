@@ -926,13 +926,9 @@
     @media (max-width: 480px) { .extinct-grid { grid-template-columns: 1fr; } }
     @media (max-width: 1200px) {
     }
-    .view-tabs { position: fixed; z-index: 50; right: .85rem; bottom: calc(.85rem + env(safe-area-inset-bottom)); left: auto; display: flex; width: min(900px, calc(100vw - 1.7rem)); max-width: min(900px, calc(100vw - 1.7rem)); margin: 0; padding: 0; flex-direction: column-reverse; align-items: flex-end; }
+    .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
     .view-tabs .view-links { width: 100%; }
-    .view-tabs.open .view-links { margin: 0 0 .55rem; }
-    @media (min-width: 769px) {
-      .view-tabs { top: 1rem; bottom: auto; flex-direction: column; }
-      .view-tabs.open .view-links { margin: .55rem 0 0; }
-    }
+    .view-tabs.open .view-links { margin: .55rem 0 0; }
   </style>
 </head>
 <body>
