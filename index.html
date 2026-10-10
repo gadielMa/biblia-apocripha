@@ -2457,7 +2457,7 @@ if (timelineTrack) {
 
 // Ilustraciones individualizadas y fichas ampliadas para la guía de figuras adversarias.
 const devilImageByTitle = {
-  'El Diablo': ['assets/diablos/diablo.jpg', 'Jesús tentado en el desierto por una figura encapuchada'],
+  'El Diablo': ['assets/diablos/diablo-v2.jpg', 'Representación artística del Diablo como figura encapuchada y solitaria en un desierto al atardecer'],
   'Belcebú o Beelzebul': ['assets/diablos/beelzebul.jpg', 'Figura alegórica de Beelzebul rodeada de moscas en un santuario antiguo'],
   'Satanás': ['assets/diablos/satan.jpg', 'Satanás como acusador ante una corte celestial'],
   'Belial': ['assets/diablos/belial.jpg', 'Belial al frente de un ejército en una visión apocalíptica'],
@@ -2491,7 +2491,7 @@ const addedDevilCards = [
   ['la-furia', 'La Furia', 'Evangelio de Nicodemo · personificación apócrifa', 'En el capítulo XXI, Satanás se dirige a la Furia y le dice que se prepare para recibir a Jesús. El pasaje la presenta como interlocutora en el diálogo del inframundo; no es una figura de los evangelios canónicos.', 'Evangelio de Nicodemo, Descenso al Hades, capítulo XXI (la numeración varía)', 'La imagen es una representación artística de la personificación del texto, no un retrato histórico.'],
 ];
 for (const [slug, title, badge, description, refs, note] of addedDevilCards) {
-  const imageSrc = slug === 'hades-jesus' ? 'assets/diablos/hades-furia.jpg' : slug === 'la-furia' ? 'assets/diablos/la-furia.jpg' : `assets/diablos/${slug}.jpg`;
+  const imageSrc = slug === 'hades-jesus' ? 'assets/diablos/hades-furia.jpg' : slug === 'la-furia' ? 'assets/diablos/la-furia-v2.jpg' : `assets/diablos/${slug}.jpg`;
   const imageAlt = ({lucifer:'Lucifer como lucero al caer del cielo', mamon:'Mamón personificado junto al oro y las riquezas', asmodeo:'Asmodeo retrocede ante el humo del pez en el relato de Tobit', amon:'Aamon como lobo con cola de serpiente, según un grimorio posterior', belfegor:'Belphegor personificado como figura de la pereza en un grabado alegórico', 'hades-jesus':'Satanás se dirige a La Furia en el inframundo mientras Cristo se acerca', 'la-furia':'Representación artística de La Furia, interlocutora de Satanás en el Evangelio de Nicodemo'})[slug];
   const links = refs.split('|').map(ref => `<span>${ref}</span>`).join('');
   devilGrid.insertAdjacentHTML('beforeend', `<article class="extinct-card" id="diablos-${slug}"><img class="extinct-card-image" src="${imageSrc}" alt="${imageAlt}" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">${badge}</span><h3>${title}</h3><p>${description}</p><div class="extinct-refs">${links}</div><p class="extinct-note">${note}</p></div></article>`);
