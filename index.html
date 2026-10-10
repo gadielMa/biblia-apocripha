@@ -866,7 +866,7 @@
   <button class="view-tab" type="button" data-view="timeline" aria-selected="false">Línea de tiempo</button>
   <button class="view-tab" type="button" data-view="genealogy" aria-selected="false">Árbol genealógico</button>
   <button class="view-tab" type="button" data-view="prophecies" aria-selected="false">Profecías</button>
-  <button class="view-tab" type="button" data-view="extinct" aria-selected="false">Elementos extintos</button>
+  <button class="view-tab" type="button" data-view="extinct" aria-selected="false">Extintos</button>
   <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos</button>
   <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
@@ -944,7 +944,7 @@
 
 <section class="extinct-view" id="extinct-view" hidden aria-labelledby="extinct-title">
   <div class="extinct-intro">
-    <h2 id="extinct-title">Elementos extintos</h2>
+    <h2 id="extinct-title">Extintos</h2>
     <p>Animales que desaparecieron de una región, criaturas de la literatura bíblica y relatos que marcaron su tradición. Las citas identifican la fuente; las notas distinguen historia natural, traducción antigua e imagen simbólica.</p>
   </div>
   <div class="extinct-grid">
@@ -2440,13 +2440,13 @@ afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Tradiciones cristianas diversas</span><h3>¿Adónde van los muertos después de la victoria de Cristo?</h3><p>El Evangelio de Nicodemo dramatiza el descenso de Cristo al Hades y la liberación de los justos; no afirma que desde entonces toda persona fallecida vaya directamente al cielo o al infierno. Las iglesias interpretan de distinto modo el estado intermedio, la resurrección final y pasajes como Lucas 23:43 y 2 Corintios 5:8. Apocalipsis 20 mantiene una escena futura de resurrección y juicio. “Furia” en algunas traducciones del relato apócrifo describe la ira, no un demonio llamado Furia.</p><div class="extinct-refs"><a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · descenso al Hades</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=23#pasaje-23-43">Lucas 23:43</a><a href="lectura/?obra=rvr1909-2-corintios&amp;capitulo=5#pasaje-5-8">2 Corintios 5:8</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–15</a></div></div></article>
 </div>`;
 const afterlifeIllustrations = [
-  ['assets/mas-alla/seol.png', 'Sepulcro excavado en la roca como imagen del Seol, ámbito de los muertos'],
+  ['assets/mas-alla/seol-cueva.png', 'Caverna subterránea con figuras en reposo, imagen del Seol'],
   ['assets/mas-alla/hades.png', 'Umbral del Hades en una escena de inspiración griega antigua'],
   ['assets/mas-alla/gehenna.png', 'Valle rocoso de Hinom junto a Jerusalén, con fuego distante como imagen de juicio'],
   ['assets/mas-alla/lago-fuego.png', 'Vasto lago de fuego en un paisaje apocalíptico simbólico'],
   ['assets/mas-alla/abismo-abaddon.png', 'Abertura del abismo y figuras lejanas en una escena apocalíptica'],
   ['assets/mas-alla/segundo-cielo.png', 'Ángeles rebeldes encadenados entre las nubes en la visión de 2 Enoc'],
-  ['assets/mas-alla/esperanza-cristiana.png', 'Tumba abierta al amanecer y figuras que caminan hacia la luz como imagen de esperanza']
+  ['assets/mas-alla/destino-muertos-inferno.png', 'Pintura clásica del Infierno como representación artística del destino de los muertos']
 ];
 afterlifeSection.querySelectorAll('.extinct-card').forEach((card, index) => {
   const [src, alt] = afterlifeIllustrations[index];
