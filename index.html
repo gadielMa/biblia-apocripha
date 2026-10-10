@@ -621,23 +621,26 @@
     .view-menu-icon { font-size: 1.25rem; line-height: 1; }
     .view-menu-current { max-width: 55vw; margin-left: .2rem; overflow: hidden; color: #cbd8e7; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
     .view-links {
-      display: none;
-      position: absolute;
-      top: calc(100% + .45rem);
-      left: 1rem;
-      right: 1rem;
-      max-height: min(70vh, 520px);
+      display: grid;
+      width: min(900px, 100%);
       overflow-y: auto;
-      padding: .75rem;
-      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      max-height: 0;
+      margin-top: 0;
+      padding: 0 .75rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: .5rem;
       border: 1px solid rgba(255,255,255,.22);
       border-radius: 18px;
       background: rgba(23,40,63,.98);
       box-shadow: 0 18px 40px rgba(14,28,45,.28);
       backdrop-filter: blur(16px);
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: max-height .28s ease, margin .28s ease, padding .28s ease, opacity .2s ease, transform .2s ease, visibility .2s;
     }
-    .view-tabs.open .view-links { display: grid; }
+    .view-tabs.open .view-links { max-height: min(70vh, 520px); margin-top: .55rem; padding: .75rem; visibility: visible; opacity: 1; pointer-events: auto; transform: translateY(0); }
     .view-tab {
       appearance: none;
       border: 1px solid #bfccdc;
@@ -659,6 +662,11 @@
     .related-link { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .65rem; color: var(--accent); background: #f8fafc; font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
     .related-link:hover, .related-link:focus-visible { background: #fff5ef; border-color: var(--accent); outline: none; }
     .search-hit { outline: 3px solid rgba(180,83,45,.42); outline-offset: 3px; transition: outline-color .3s ease; }
+    .view-entering { animation: library-view-enter .34s cubic-bezier(.2,.7,.25,1) both; }
+    @keyframes library-view-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      .view-links, .view-entering { transition: none !important; animation: none !important; }
+    }
     .timeline-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
     .timeline-view[hidden] { display: none; }
     .timeline-intro {
@@ -848,7 +856,7 @@
       #catalog-view .controls { margin-top: .85rem; }
       tbody tr:not(.canon-boundary) { border-radius: 14px; border-color: var(--border); box-shadow: 0 8px 22px rgba(26,48,77,.07); }
       .view-tabs { margin-top: .7rem; padding: 0 .75rem; }
-      .view-links { left: .75rem; right: .75rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .view-links { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .view-tab { min-width: 0; font-size: .84rem; }
       .view-menu-current { max-width: 42vw; }
       .timeline-view { margin-top: .8rem; padding: 0 .75rem; }
@@ -2695,6 +2703,13 @@ function selectView(view, updateHash = true) {
   gnosticismView.hidden = !isGnosticism;
   afterlifeView.hidden = !isAfterlife;
   relicsView.hidden = !isRelics;
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, relicsView]
+    .find(section => !section.hidden);
+  if (activeSection) {
+    activeSection.classList.remove('view-entering');
+    void activeSection.offsetWidth;
+    activeSection.classList.add('view-entering');
+  }
   viewTabs.forEach(tab => {
     const active = tab.dataset.view === view;
     tab.classList.toggle('active', active);
