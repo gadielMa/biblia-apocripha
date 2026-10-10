@@ -660,6 +660,10 @@
     }
     .view-tab:hover, .view-tab:focus-visible { border-color: rgba(255,235,215,.82); background: rgba(255,231,207,.16); outline: none; }
     .view-tab.active { color: #38271f; border-color: rgba(255,242,225,.95); background: linear-gradient(120deg, rgba(255,238,216,.98), rgba(224,163,125,.96)); box-shadow: 0 8px 20px rgba(37,23,18,.2); }
+    @media (min-width: 1200px) {
+      .view-tabs { max-width: min(1600px, calc(100vw - 5rem)); }
+      .view-links { width: 100%; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    }
     .related-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .85rem; padding-top: .7rem; border-top: 1px solid var(--border); }
     .related-links-label { color: var(--text2); font-size: .78rem; font-weight: 700; }
     .related-link { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .65rem; color: var(--accent); background: #f8fafc; font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
