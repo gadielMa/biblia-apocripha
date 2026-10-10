@@ -685,6 +685,8 @@
     .extinct-intro h2 { margin: 0; color: #24364b; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
     .extinct-intro p { max-width: 900px; margin: .45rem 0 0; color: var(--text2); }
     .extinct-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .extinct-category { margin-top: 1.4rem; }
+    .extinct-category-title { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.7rem); letter-spacing: -.025em; }
     .extinct-card { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.97); box-shadow: 0 9px 22px rgba(26,48,77,.07); }
     .extinct-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #e7edf4; }
     .extinct-card-body { padding: 1rem 1.05rem 1.1rem; }
@@ -704,7 +706,7 @@
     .enoch-passages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
     .enoch-passage { min-width: 0; padding: .85rem 1rem; border: 1px solid var(--border); border-radius: 13px; background: #fbfcfe; }
     .enoch-passage h4 { margin: 0 0 .4rem; color: #9b4829; font-size: .95rem; }
-    .enoch-passage img { display: block; width: 100%; aspect-ratio: 16 / 9; margin: 0 0 .65rem; border-radius: 9px; object-fit: cover; }
+    .enoch-passage img { display: block; width: 100%; aspect-ratio: 8 / 5; margin: 0 0 .65rem; border-radius: 9px; object-fit: cover; object-position: center 12%; }
     .enoch-passage blockquote { margin: 0; color: #46596f; line-height: 1.5; }
     .enoch-passage p { margin: .5rem 0 0; color: var(--text2); font-size: .88rem; line-height: 1.45; }
     .enoch-passage a { display: inline-block; margin-top: .5rem; color: #9b4829; font-weight: 800; text-underline-offset: 3px; }
@@ -864,7 +866,7 @@
   <button class="view-tab" type="button" data-view="genealogy" aria-selected="false">Árbol genealógico</button>
   <button class="view-tab" type="button" data-view="prophecies" aria-selected="false">Profecías</button>
   <button class="view-tab" type="button" data-view="extinct" aria-selected="false">Elementos extintos</button>
-  <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos y seres</button>
+  <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos</button>
   <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
   <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
@@ -919,7 +921,7 @@
     <article class="prophecy-card"><img class="prophecy-card-image" src="assets/timeline/profecia-genesis-315.png" alt="Un pie de mujer pisa la cabeza de una serpiente"><p class="prophecy-era">orígenes · tradición patriarcal</p><h3>La descendencia de la mujer</h3><q>Pondré enemistad entre ti y la mujer, y entre tu simiente y la simiente suya; esta te herirá en la cabeza.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=3#pasaje-3-15">Génesis 3:15</a><p class="prophecy-note">En la lectura cristiana se conoce como el “protoevangelio”: una primera promesa de victoria sobre el mal.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">c. siglo XIX a. C. · Abraham</p><h3>La bendición para todas las naciones</h3><q>En tu simiente serán benditas todas las naciones de la tierra.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=22#pasaje-22-18">Génesis 22:18</a><p class="prophecy-note">Pablo relaciona esta promesa a Abraham con Cristo en Gálatas 3:16.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">patriarcas · Jacob</p><h3>El cetro de Judá</h3><q>No será quitado el cetro de Judá, y el legislador de entre sus pies, hasta que venga Siloh; y á él se congregarán los pueblos.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=49#pasaje-49-10">Génesis 49:10</a><p class="prophecy-note">Es una de las promesas reales asociadas a la tribu de Judá, de la que procede David y, en las genealogías evangélicas, Jesús.</p></article>
-    <article class="prophecy-card"><p class="prophecy-era">éxodo · Moisés</p><h3>Un profeta como Moisés</h3><q>Profeta de en medio de ti, de tus hermanos, como yo, te levantará Jehová tu Dios: á él oiréis.</q><a href="lectura/?obra=rvr1909-deuteronomio&amp;capitulo=18#pasaje-18-15">Deuteronomio 18:15</a><p class="prophecy-note">Hechos 3:22 aplica expresamente este pasaje a Jesús.</p></article>
+    <article class="prophecy-card"><p class="prophecy-era">éxodo · Moisés</p><h3>Un profeta como Moisés</h3><q>Profeta de en medio de ti, de tus hermanos, como yo, te levantará Jehová tu Dios: á él oiréis.</q><a href="lectura/?obra=rvr1909-deuteronomio&amp;capitulo=18#pasaje-18-15">Deuteronomio 18:15</a><p class="prophecy-note">Hechos 3:22 aplica expresamente este pasaje a Jesús. La cronología tradicional suele situar a Moisés hacia el siglo XIII a. C.; la fecha es discutida y no puede fijarse con certeza.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">monarquía · David y Natán</p><h3>Un trono duradero para la casa de David</h3><q>Yo levantaré después de ti á uno de tu linaje… y afirmaré el trono de su reino para siempre.</q><a href="lectura/?obra=rvr1909-2-samuel&amp;capitulo=7#pasaje-7-12">2 Samuel 7:12–16</a><p class="prophecy-note">La promesa davídica sostiene la expectativa de un Mesías descendiente de David.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">salmos reales · David</p><h3>El rey ungido y el Señor de David</h3><q>Dijo Jehová á mi Señor: Siéntate á mi diestra, entretanto que pongo tus enemigos por estrado de tus pies.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=110#pasaje-110-1">Salmo 110:1</a><p class="prophecy-note">Jesús cita este salmo al hablar del Mesías (Mateo 22:41–46). También la tradición cristiana lee los Salmos 2, 16 y 22 en clave mesiánica.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">salmos · David</p><h3>El Santo no verá corrupción</h3><q>No dejarás mi alma en el sepulcro; ni permitirás que tu santo vea corrupción.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=16#pasaje-16-10">Salmo 16:10</a><p class="prophecy-note">Hechos 2:25–32 aplica este salmo a la resurrección de Jesús.</p></article>
@@ -981,7 +983,7 @@
 
 <section class="extinct-view objects-view" id="objects-view" hidden aria-labelledby="objects-title">
   <div class="extinct-intro">
-    <h2 id="objects-title">Objetos y seres de las tradiciones bíblicas</h2>
+    <h2 id="objects-title">Objetos bíblicos y reliquias</h2>
     <p>Reliquias veneradas, objetos del culto antiguo y figuras espirituales. Las referencias bíblicas muestran el pasaje relacionado; cuando un nombre o una identificación viene de una tradición posterior, lo aclaramos.</p>
   </div>
   <div class="extinct-grid">
@@ -2354,6 +2356,35 @@ afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title
 </div>`;
 gnosticSection.after(afterlifeSection);
 
+const objectsGrid = document.querySelector('#objects-view .extinct-grid');
+const removedObjectTitles = new Set(['Demonios y “Legión”', 'El Demiurgo', 'Baal, símbolo taurino']);
+objectsGrid?.querySelectorAll('.extinct-card').forEach(card => {
+  if (removedObjectTitles.has(card.querySelector('h3')?.textContent.trim())) card.remove();
+});
+
+const extinctGrid = document.querySelector('#extinct-view > .extinct-grid');
+if (extinctGrid) {
+  const removedExtinctTitles = new Set(['Behemot', 'Leviatán', 'Los ángeles caídos', 'El dragón escarlata']);
+  const animalTitles = new Set(['El unicornio', 'El uro (re’em)', 'Elefantes de Siria', 'León asiático', 'Oso pardo sirio', 'Los gigantes Nefilim', 'Lîlît en Isaías', 'Serpientes ardientes']);
+  const cards = Array.from(extinctGrid.querySelectorAll('.extinct-card'));
+  cards.forEach(card => { if (removedExtinctTitles.has(card.querySelector('h3')?.textContent.trim())) card.remove(); });
+  const animals = document.createElement('section');
+  animals.className = 'extinct-category';
+  animals.innerHTML = '<h3 class="extinct-category-title">Animales extintos</h3><div class="extinct-grid"></div>';
+  const places = document.createElement('section');
+  places.className = 'extinct-category';
+  places.innerHTML = '<h3 class="extinct-category-title">Lugares extintos</h3><div class="extinct-grid"></div>';
+  cards.filter(card => card.isConnected).forEach(card => {
+    const title = card.querySelector('h3')?.textContent.trim();
+    (animalTitles.has(title) ? animals : places).querySelector('.extinct-grid').append(card);
+  });
+  extinctGrid.replaceWith(animals, places);
+  const extinctIntro = document.querySelector('#extinct-view .extinct-intro p');
+  if (extinctIntro) extinctIntro.textContent = 'Animales y criaturas de los relatos bíblicos, junto con ciudades y parajes que dejaron de existir o quedaron como lugares perdidos en la tradición. Las notas distinguen fauna regional, traducciones antiguas y narraciones simbólicas.';
+  const nefilimNote = Array.from(animals.querySelectorAll('.extinct-card')).find(card => card.querySelector('h3')?.textContent.trim() === 'Los gigantes Nefilim');
+  nefilimNote?.querySelector('.extinct-card-body')?.insertAdjacentHTML('beforeend', '<p class="extinct-note">Se conserva aquí como criatura de un relato, no como especie zoológica documentada.</p>');
+}
+
 const catalogView = document.getElementById('catalog-view');
 const timelineView = document.getElementById('timeline-view');
 const genealogyView = document.getElementById('genealogy-view');
@@ -2391,14 +2422,14 @@ function selectView(view, updateHash = true) {
     tab.setAttribute('aria-selected', String(active));
   });
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos-y-seres' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
 if (location.hash === '#arbol-genealogico') selectView('genealogy', false);
 if (location.hash === '#profecias') selectView('prophecies', false);
 if (location.hash === '#elementos-extintos') selectView('extinct', false);
-if (location.hash === '#objetos-y-seres') selectView('objects', false);
+if (location.hash === '#objetos' || location.hash === '#objetos-y-seres') selectView('objects', false);
 if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
 if (location.hash === '#gnosticismo') selectView('gnosticism', false);
@@ -2451,7 +2482,11 @@ render();
 loadTextSearchIndex();
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
+      .then(registration => registration.update().catch(() => {}))
+      .catch(() => {});
+  });
 }
 </script>
 </body>
