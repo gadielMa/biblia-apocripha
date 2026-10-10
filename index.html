@@ -631,16 +631,27 @@
     .timeline-intro h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
     .timeline-intro p { max-width: 800px; margin: .45rem 0 0; color: var(--text2); }
     .timeline-key { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem; }
+    .timeline-era-key { display:inline-flex; align-items:center; gap:.35rem; padding:.22rem .5rem; border-radius:999px; color:#34465b; background:#f3f6fa; font-size:.68rem; font-weight:800; }
+    .timeline-era-key::before { content:""; width:.62rem; height:.62rem; border-radius:50%; background:var(--era-color); }
     .source-badge { display: inline-flex; align-items: center; width: fit-content; padding: .22rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .03em; }
     .source-badge.canonical { color: #1b4f54; background: #ddefed; }
     .source-badge.apocryphal { color: #8d452b; background: #fbe7d9; }
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
-    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(27, minmax(205px, 1fr)); gap: .8rem; min-width: 5705px; padding: 6.5rem .2rem 1.1rem; }
-    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 5.1rem; height: 4px; border-radius: 999px; background: linear-gradient(90deg, #b4532d, #e2a47a 48%, #6d8da8); box-shadow: 0 2px 9px rgba(180,83,45,.25); }
-    .timeline-event { position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
-    .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-track { position: relative; display: grid; grid-template-columns: repeat(50, minmax(205px, 1fr)); gap: .8rem; min-width: 10842px; padding: 6.5rem .2rem 1.1rem; }
+    .timeline-track::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 5.1rem; height: 5px; border-radius: 999px; background: linear-gradient(90deg,#c9e5bd 0 8%,#a9c99d 8% 17%,#9dbbda 17% 28%,#c7e5ee 28% 39%,#cbc0df 39% 50%,#df9bb1 50% 62%,#e894a3 62% 74%,#f1ae86 74% 88%,#f0db88 88%); box-shadow: 0 2px 9px rgba(78,96,113,.2); }
+    .timeline-event { --era-color:#9dbbda; --era-tint:#eef4fb; position: relative; z-index: 1; display: flex; flex-direction: column; gap: .55rem; min-height: 300px; padding: .85rem; border: 1px solid var(--border); border-radius: 15px; background: linear-gradient(180deg,var(--era-tint),rgba(255,255,255,.97) 45%); box-shadow: 0 10px 25px rgba(26,48,77,.07); }
+    .timeline-event[data-era="origins"] { --era-color:#8bbf78; --era-tint:#eef7e9; }
+    .timeline-event[data-era="patriarchs"] { --era-color:#719e69; --era-tint:#edf5eb; }
+    .timeline-event[data-era="exodus"] { --era-color:#7095c0; --era-tint:#edf3fa; }
+    .timeline-event[data-era="judges"] { --era-color:#75b6ca; --era-tint:#edf8fa; }
+    .timeline-event[data-era="kingdom"] { --era-color:#947bb7; --era-tint:#f3eff8; }
+    .timeline-event[data-era="exile"] { --era-color:#b75f7e; --era-tint:#faeff3; }
+    .timeline-event[data-era="jesus"] { --era-color:#c85b71; --era-tint:#fbf0f2; }
+    .timeline-event[data-era="church"] { --era-color:#cc774e; --era-tint:#fbf2ec; }
+    .timeline-event[data-era="hope"] { --era-color:#b49b35; --era-tint:#fbf7e7; }
+    .timeline-event::before { content: ""; position: absolute; top: -1.86rem; left: 1.1rem; width: .9rem; height: .9rem; border: 3px solid #fff; border-radius: 50%; background: var(--era-color); box-shadow: 0 0 0 2px var(--era-color); }
     .timeline-event::after { content: attr(data-year); position: absolute; top: -5.9rem; left: .25rem; width: max-content; max-width: 195px; color: #53657a; font-size: .64rem; font-weight: 800; line-height: 1.2; }
     .timeline-date { display: none !important; }
     .timeline-event h3 { margin: 0; font-size: 1rem; line-height: 1.15; letter-spacing: -.025em; }
@@ -857,6 +868,7 @@
   <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
   <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
+  <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Más allá</button>
 </nav>
 
 <section id="catalog-view">
@@ -960,6 +972,7 @@
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/torre-babel-v2.jpg" alt="Torre de ladrillo sin terminar sobre una antigua ciudad mesopotámica" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato bíblico</span><h3>La torre de Babel</h3><p>La humanidad construye una ciudad y una torre para hacerse un nombre; Dios confunde sus lenguas y los dispersa por la tierra.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=11#pasaje-11-1">Génesis 11:1–9</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/dragon-escarlata-v2.jpg" alt="Dragón escarlata simbólico en una visión apocalíptica" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Visión apocalíptica</span><h3>El dragón escarlata</h3><p>En la visión de Juan aparece un gran dragón rojo con siete cabezas y diez cuernos; el texto lo identifica con la serpiente antigua y Satanás.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=12#pasaje-12-3">Apocalipsis 12:3–9</a></div><p class="extinct-note">Símbolo visionario, no animal presentado como especie histórica.</p></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/eden-v2.jpg" alt="Jardín frondoso con ríos y animales en armonía" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato de los orígenes</span><h3>El Edén</h3><p>Dios planta un jardín en Edén, hace brotar árboles y sitúa allí al ser humano; de él salen ríos que riegan otras tierras.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=2#pasaje-2-8">Génesis 2:8–14</a></div></div></article>
+    <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Traducción discutida</span><h3>Lîlît en Isaías</h3><p>Isaías 34:14 contiene la palabra hebrea <i>lîlît</i>. Según la traducción y la interpretación, puede entenderse como una criatura o espectro nocturno, o como un ave nocturna (a veces, búho). El versículo no identifica sin discusión a un demonio llamado Lilith.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=34#pasaje-34-14">Isaías 34:14</a><a href="https://biblehub.com/text/isaiah/34-14.htm" target="_blank" rel="noreferrer">Texto hebreo y comparación de traducciones</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/sodoma-gomorra.jpg" alt="Ciudades de la llanura entre fuego y humo en el relato de Sodoma y Gomorra" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato patriarcal</span><h3>Sodoma y Gomorra</h3><p>La narración cuenta que fuego y azufre caen sobre las ciudades de la llanura, que quedan destruidas junto con su entorno.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=19#pasaje-19-24">Génesis 19:24–28</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/serpientes-ardientes-v2.jpg" alt="Serpientes ardientes entre las rocas del desierto" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato del Éxodo</span><h3>Serpientes ardientes</h3><p>Durante la marcha por el desierto, aparecen serpientes ardientes; Moisés levanta una serpiente de bronce y quienes la miran viven.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-numeros&amp;capitulo=21#pasaje-21-6">Números 21:6–9</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/extintos/muros-jerico-v2.jpg" alt="Las murallas de Jericó se derrumban mientras suenan las trompetas" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato de Josué</span><h3>Los muros de Jericó</h3><p>Tras rodear Jericó durante siete días, el pueblo grita al sonido de las trompetas y el relato cuenta que la muralla cae.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-josue&amp;capitulo=6#pasaje-6-15">Josué 6:15–21</a></div></div></article>
@@ -1077,9 +1090,9 @@
 
 <section class="timeline-view" id="timeline-view" hidden aria-labelledby="timeline-title">
   <div class="timeline-intro">
-    <h2 id="timeline-title">Línea de tiempo: de la espera a la resurrección</h2>
-    <p>Una guía de lectura cronológica que reúne referencias canónicas y relatos apócrifos. Las fechas son aproximadas; las de los relatos primordiales siguen cronologías tradicionales y cada hito indica la procedencia de su fuente.</p>
-    <div class="timeline-key" aria-label="Referencias de fuentes"><span class="source-badge canonical">Canónico</span><span class="source-badge apocryphal">Tradición apócrifa</span><span class="source-badge context">Contexto histórico</span></div>
+    <h2 id="timeline-title">Línea temporal de la Biblia</h2>
+    <p>Un recorrido desde los relatos de los orígenes hasta la visión de Patmos, con los 50 acontecimientos que pediste y otros hitos que ya estaban. Las fechas son aproximadas; las de los relatos primordiales siguen cronologías tradicionales y cada ficha identifica su fuente.</p>
+    <div class="timeline-key" aria-label="Referencias de fuentes"><span class="source-badge canonical">Canónico</span><span class="source-badge apocryphal">Tradición apócrifa</span><span class="source-badge context">Contexto histórico</span><span class="timeline-era-key" style="--era-color:#8bbf78">Orígenes</span><span class="timeline-era-key" style="--era-color:#719e69">Patriarcas</span><span class="timeline-era-key" style="--era-color:#7095c0">Éxodo</span><span class="timeline-era-key" style="--era-color:#75b6ca">Jueces</span><span class="timeline-era-key" style="--era-color:#947bb7">Reinos</span><span class="timeline-era-key" style="--era-color:#b75f7e">Exilio</span><span class="timeline-era-key" style="--era-color:#c85b71">Jesús</span><span class="timeline-era-key" style="--era-color:#cc774e">Iglesia</span><span class="timeline-era-key" style="--era-color:#b49b35">Nueva creación</span></div>
   </div>
 
   <div class="timeline-scroll" aria-label="Desplazá horizontalmente para recorrer la línea de tiempo">
@@ -2164,6 +2177,97 @@ if (timelineTrack) {
   timelineTrack.style.minWidth = `${timelineOrder.length * 205 + (timelineOrder.length - 1) * 12}px`;
 }
 
+// Hitos bíblicos solicitados: reutilizamos las fichas ilustradas ya existentes y
+// generamos solo las que faltan, manteniendo cada acontecimiento una sola vez.
+if (timelineTrack) {
+  const milestones = [
+    ['cronología tradicional · 4000 a. C.','Creación del mundo y del ser humano','Génesis abre con la creación del mundo y de la humanidad.','Génesis 1–2','lectura/?obra=rvr1909-genesis&capitulo=1','origins'],
+    ['cronología tradicional · 4000 a. C.','La caída y la expulsión del Edén','La primera pareja desobedece y sale del jardín de Edén.','Génesis 3','lectura/?obra=rvr1909-genesis&capitulo=3','origins'],
+    ['cronología tradicional · 3900 a. C.','Caín y Abel','Caín mata a su hermano Abel, primer homicidio narrado en Génesis.','Génesis 4:1–16','lectura/?obra=rvr1909-genesis&capitulo=4','origins'],
+    ['cronología tradicional · antes del diluvio','Enoc y los vigilantes','Génesis dice que Enoc caminó con Dios; 1 Enoc amplía su figura con relatos de los Vigilantes.','Génesis 5:21–24 · Judas 14–15 · 1 Enoc','lectura/?obra=rvr1909-judas&capitulo=1#pasaje-1-14','origins'],
+    ['cronología tradicional · 2500 a. C.','El gran diluvio y el arca','Noé construye el arca y sobrevive al diluvio con su familia.','Génesis 6–9','lectura/?obra=rvr1909-genesis&capitulo=6','origins'],
+    ['cronología tradicional · 2300 a. C.','La torre de Babel','La narración atribuye a Babel la diversidad de lenguas y la dispersión de los pueblos.','Génesis 11:1–9','lectura/?obra=rvr1909-genesis&capitulo=11','origins'],
+    ['2.º milenio a. C. · fecha tradicional','El llamado de Abraham','Abraham deja su tierra tras recibir la promesa de una gran nación y bendición.','Génesis 12:1–9','lectura/?obra=rvr1909-genesis&capitulo=12','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Sodoma y Gomorra','Génesis relata la destrucción de las ciudades de la llanura.','Génesis 19','lectura/?obra=rvr1909-genesis&capitulo=19','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','La prueba de Abraham e Isaac','Abraham lleva a Isaac al monte; el relato termina con la intervención de un mensajero divino.','Génesis 22:1–19','lectura/?obra=rvr1909-genesis&capitulo=22','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Jacob lucha y recibe el nombre Israel','Jacob lucha durante la noche y recibe el nombre Israel.','Génesis 32:22–32','lectura/?obra=rvr1909-genesis&capitulo=32','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','José es vendido y asciende en Egipto','Sus hermanos venden a José; después, el faraón lo pone a cargo de Egipto.','Génesis 37–41','lectura/?obra=rvr1909-genesis&capitulo=37','patriarchs'],
+    ['fecha debatida · tradición del Éxodo','El nacimiento y rescate de Moisés','La hija del faraón encuentra al niño en una cesta en el Nilo y lo cría.','Éxodo 2:1–10','lectura/?obra=rvr1909-exodo&capitulo=2','exodus'],
+    ['fecha debatida · tradición del Éxodo','La zarza ardiente','Dios llama a Moisés desde una zarza que arde sin consumirse.','Éxodo 3:1–15','lectura/?obra=rvr1909-exodo&capitulo=3','exodus'],
+    ['fecha debatida · tradición del Éxodo','Las diez plagas de Egipto','El relato presenta las plagas como señales ante el faraón antes de la salida de Israel.','Éxodo 7–12','lectura/?obra=rvr1909-exodo&capitulo=7','exodus'],
+    ['fecha debatida · tradición del Éxodo','La institución de la Pascua','La cena pascual conmemora la liberación de la esclavitud en Egipto.','Éxodo 12:1–28','lectura/?obra=rvr1909-exodo&capitulo=12','exodus'],
+    ['fecha debatida · tradición del Éxodo','Moisés abre el mar Rojo','Israel cruza entre las aguas y escapa de la persecución egipcia.','Éxodo 14:15–31','lectura/?obra=rvr1909-exodo&capitulo=14','exodus'],
+    ['fecha debatida · tradición del Éxodo','Los Diez Mandamientos en el Sinaí','Moisés recibe las palabras de la alianza en el monte Sinaí.','Éxodo 20:1–17','lectura/?obra=rvr1909-exodo&capitulo=20','exodus'],
+    ['fecha debatida · tradición del Éxodo','El Tabernáculo','Israel construye un santuario móvil conforme a las instrucciones del relato.','Éxodo 35–40','lectura/?obra=rvr1909-exodo&capitulo=35','exodus'],
+    ['época de Josué · fecha debatida','El cruce del río Jordán','El pueblo cruza el Jordán para entrar en la tierra que el relato presenta como prometida.','Josué 3–4','lectura/?obra=rvr1909-josue&capitulo=3','judges'],
+    ['época de Josué · fecha debatida','La caída de Jericó','El relato cuenta que las murallas de Jericó caen después de una procesión y toques de trompeta.','Josué 6','lectura/?obra=rvr1909-josue&capitulo=6','judges'],
+    ['periodo de los Jueces · fecha debatida','Débora, Gedeón y Jefté','Los relatos reúnen líderes que juzgan y liberan a Israel en distintos conflictos.','Jueces 4–8; 11–12','lectura/?obra=rvr1909-jueces&capitulo=4','judges'],
+    ['periodo de los Jueces · fecha debatida','Sansón','La historia de Sansón vincula su fuerza extraordinaria con su voto y su conflicto con los filisteos.','Jueces 13–16','lectura/?obra=rvr1909-jueces&capitulo=13','judges'],
+    ['periodo de los Jueces · fecha debatida','Rut y Noemí','Rut acompaña a Noemí y se integra en la familia de la que, según la genealogía bíblica, desciende David.','Rut 1–4','lectura/?obra=rvr1909-rut&capitulo=1','judges'],
+    ['siglo XI a. C. · cronología tradicional','El llamado de Samuel','Samuel oye la llamada de Dios y se convierte en profeta y juez de Israel.','1 Samuel 3','lectura/?obra=rvr1909-1-samuel&capitulo=3','judges'],
+    ['siglo XI a. C. · cronología tradicional','Saúl es ungido primer rey','Samuel unge a Saúl como primer rey de Israel.','1 Samuel 10:1–24','lectura/?obra=rvr1909-1-samuel&capitulo=10','kingdom'],
+    ['siglo XI a. C. · cronología tradicional','David derrota a Goliat','El joven David vence al guerrero filisteo Goliat.','1 Samuel 17','lectura/?obra=rvr1909-1-samuel&capitulo=17','kingdom'],
+    ['siglo X a. C. · cronología tradicional','David reina y establece Jerusalén','David es proclamado rey y hace de Jerusalén su capital.','2 Samuel 5:1–12','lectura/?obra=rvr1909-2-samuel&capitulo=5','kingdom'],
+    ['siglo X a. C. · cronología tradicional','David, Betsabé y Natán','El relato de Betsabé y Urías es seguido por el reproche del profeta Natán y el arrepentimiento de David.','2 Samuel 11–12','lectura/?obra=rvr1909-2-samuel&capitulo=11','kingdom'],
+    ['siglo X a. C. · cronología tradicional','Salomón pide sabiduría','Salomón pide discernimiento para gobernar al pueblo.','1 Reyes 3:3–15','lectura/?obra=rvr1909-1-reyes&capitulo=3','kingdom'],
+    ['siglo X a. C. · cronología tradicional','El Primer Templo de Jerusalén','Salomón inicia la construcción del templo de Jerusalén.','1 Reyes 6','lectura/?obra=rvr1909-1-reyes&capitulo=6','kingdom'],
+    ['siglo X a. C. · cronología tradicional','La división del reino','Tras Salomón, el reino se divide en Israel al norte y Judá al sur.','1 Reyes 12','lectura/?obra=rvr1909-1-reyes&capitulo=12','kingdom'],
+    ['siglo IX a. C. · cronología tradicional','Elías desafía a los profetas de Baal','Elías confronta a los profetas de Baal en el monte Carmelo.','1 Reyes 18','lectura/?obra=rvr1909-1-reyes&capitulo=18','kingdom'],
+    ['siglo IX a. C. · cronología tradicional','Elías es llevado en un carro de fuego','El relato de Eliseo cuenta que Elías asciende en un torbellino.','2 Reyes 2:1–12','lectura/?obra=rvr1909-2-reyes&capitulo=2','kingdom'],
+    ['siglo VIII a. C.','Isaías y Emanuel','Isaías anuncia: “Una virgen concebirá y dará a luz un hijo, y su nombre será Emanuel”.','Isaías 7:14','lectura/?obra=rvr1909-isaias&capitulo=7#pasaje-7-14','kingdom'],
+    ['722 a. C.','Caída del reino del norte ante Asiria','Samaria cae ante Asiria y parte de su población es deportada.','2 Reyes 17:5–23','lectura/?obra=rvr1909-2-reyes&capitulo=17','exile'],
+    ['586 a. C.','Jerusalén cae y el Primer Templo es destruido','Las fuerzas de Babilonia toman Jerusalén y destruyen el templo.','2 Reyes 25:1–21','lectura/?obra=rvr1909-2-reyes&capitulo=25','exile'],
+    ['siglo VI a. C. · relato de Daniel','Sadrac, Mesac y Abed-nego en el horno','Daniel cuenta que los tres jóvenes sobreviven al horno ardiente.','Daniel 3','lectura/?obra=rvr1909-daniel&capitulo=3','exile'],
+    ['siglo VI a. C. · relato de Daniel','Daniel en el foso de los leones','Daniel es arrojado al foso y sale ileso según el relato.','Daniel 6','lectura/?obra=rvr1909-daniel&capitulo=6','exile'],
+    ['538 a. C. · cronología tradicional','Ciro permite el regreso','El decreto atribuido a Ciro permite a los exiliados regresar a Jerusalén.','Esdras 1:1–4','lectura/?obra=rvr1909-esdras&capitulo=1','exile'],
+    ['516 a. C. · fecha aproximada','Reconstrucción del Segundo Templo','La comunidad concluye el Segundo Templo tras el regreso del exilio.','Esdras 3–6','lectura/?obra=rvr1909-esdras&capitulo=3','exile'],
+    ['siglo V a. C. · fecha aproximada','Nehemías reconstruye los muros','Nehemías organiza la reconstrucción de las murallas de Jerusalén.','Nehemías 1–6','lectura/?obra=rvr1909-nehemias&capitulo=1','exile'],
+    ['entre los siglos VI y V a. C.','El mundo del Segundo Templo','Judea vive bajo imperios sucesivos; se desarrollan distintas corrientes y textos judíos.','Daniel 7 · contexto histórico','lectura/?obra=rvr1909-daniel&capitulo=7','exile'],
+    ['c. 6–4 a. C. · fecha aproximada','La anunciación a María','Gabriel anuncia a María el nacimiento de Jesús.','Lucas 1:26–38','lectura/?obra=rvr1909-lucas&capitulo=1','jesus'],
+    ['año 0 · convención cronológica','Jesús bebé','Mateo y Lucas sitúan el nacimiento de Jesús en Belén y narran sus primeros años.','Lucas 2:1–20 · Mateo 1:18–25','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
+    ['año 0 · relato de Mateo','Huida y regreso a Nazaret','Mateo cuenta la huida de la familia a Egipto y el regreso posterior a Nazaret.','Mateo 2:13–23','lectura/?obra=rvr1909-mateo&capitulo=2','jesus'],
+    ['7 años después de Cristo · relato apócrifo','Relatos del niño Jesús','El Evangelio de la Infancia de Tomás reúne relatos legendarios sobre la niñez de Jesús.','Evangelio de la Infancia de Tomás','lectura/?obra=infancy-thomas-es&capitulo=2','jesus'],
+    ['12 años después de Cristo','Jesús adolescente en el Templo','Jesús dialoga con los maestros y es encontrado por María y José en el Templo.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-41','jesus'],
+    ['c. 27–30 d. C.','Bautismo de Jesús','Juan bautiza a Jesús en el Jordán y comienza su ministerio público.','Mateo 3:13–17','lectura/?obra=rvr1909-mateo&capitulo=3','jesus'],
+    ['c. 30 d. C. · 40 días','Ayuno y tentación en el desierto','Después de ayunar cuarenta días, Jesús es tentado por el diablo antes de predicar públicamente.','Mateo 4:1–11 · Marcos 1:9–13','lectura/?obra=rvr1909-mateo&capitulo=4','jesus'],
+    ['c. 28–30 d. C.','Sermón del Monte y bienaventuranzas','Mateo reúne enseñanzas de Jesús sobre el Reino, la justicia y la vida comunitaria.','Mateo 5–7','lectura/?obra=rvr1909-mateo&capitulo=5','jesus'],
+    ['c. 27–30 d. C.','Milagros de Jesús','Los evangelios cuentan curaciones y señales, como la multiplicación de los panes, la tempestad calmada y Lázaro.','Marcos 6:30–44 · Marcos 4:35–41 · Juan 11','lectura/?obra=rvr1909-juan&capitulo=11','jesus'],
+    ['33 años después de Cristo · cronología tradicional','La última cena y el arresto','Jesús comparte la cena con sus discípulos y luego es arrestado en Getsemaní.','Mateo 26:17–56','lectura/?obra=rvr1909-mateo&capitulo=26','jesus'],
+    ['33 años después de Cristo · cronología tradicional','Crucifixión y muerte de Jesús','Los evangelios narran el juicio, la crucifixión y la sepultura de Jesús.','Lucas 23 · Juan 19','lectura/?obra=rvr1909-lucas&capitulo=23','jesus'],
+    ['33 años después de Cristo · al tercer día','Resurrección de Jesús','Los evangelios proclaman que Jesús resucitó y se apareció a sus seguidores.','Mateo 28 · Lucas 24','lectura/?obra=rvr1909-mateo&capitulo=28','jesus'],
+    ['33 años después de Cristo · cronología tradicional','Ascensión de Jesús','Hechos relata que Jesús fue elevado y que sus discípulos recibieron una misión.','Hechos 1:1–11','lectura/?obra=rvr1909-hechos&capitulo=1','church'],
+    ['33 años después de Cristo · cronología tradicional','Pentecostés','El Espíritu desciende sobre los discípulos y comienza su proclamación pública.','Hechos 2:1–41','lectura/?obra=rvr1909-hechos&capitulo=2','church'],
+    ['siglo I d. C. · fecha debatida','Juan en Patmos y el Apocalipsis','Apocalipsis se presenta como una visión recibida por Juan en Patmos y dirigida a siete iglesias.','Apocalipsis 1:9–20','lectura/?obra=rvr1909-apocalipsis&capitulo=1','hope']
+  ];
+  const existing = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
+  const byTitle = new Map(existing);
+  const imageCardAliases = {'El gran diluvio y el arca':'Noé y el arca','La última cena y el arresto':'La cena y el arresto','Crucifixión y muerte de Jesús':'Pasión, muerte y sepultura','Resurrección de Jesús':'Jesús resucitado'};
+  Object.entries(imageCardAliases).forEach(([newTitle, oldTitle]) => {
+    const card = existing.get(oldTitle);
+    if (card) { card.querySelector('h3').textContent = newTitle; byTitle.set(newTitle, card); }
+  });
+  const extra = [
+    ['c. 7 d. C. · según la narración','Simeón carga al niño Jesús','Simeón reconoce al niño como luz para las naciones.','Lucas 2:25–35','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
+    ['c. 7 d. C. · tradición apócrifa','Jesús adolescente en el Templo','El relato canónico sitúa a Jesús a los doce años en Jerusalén.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
+    ['33 d. C. · tradición posterior','Evangelio de Nicodemo','Un relato apócrifo desarrolla el descenso de Cristo al reino de los muertos.','Evangelio de Nicodemo','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
+    ['33 d. C. · tradición posterior','Carino y Leucio, testigos del descenso','El Evangelio de Nicodemo los presenta como testigos de un relato del descenso.','Evangelio de Nicodemo 17–27','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
+    ['33 d. C. · tradición posterior','El Resucitado en María Magdalena y Nag Hammadi','Textos posteriores describen diálogos del Resucitado con sus discípulos.','Evangelio de María','lectura/?obra=evangelio-maria-es&capitulo=1','church']
+  ];
+  extra.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'context'])); });
+  milestones.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'canonical'])); });
+  const order = [...milestones.slice(0,44), extra[0], ...milestones.slice(44,52), extra[2], extra[3], ...milestones.slice(52,54), extra[4], ...milestones.slice(54)];
+  const eras = {origins:'origins',patriarchs:'patriarchs',exodus:'exodus',judges:'judges',kingdom:'kingdom',exile:'exile',jesus:'jesus',church:'church',hope:'hope'};
+  const eventEra = title => {
+    const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title);
+    return item?.[5] || (title.includes('Noé') ? 'origins' : title.includes('Abraham') || title.includes('Jacob') || title.includes('José') ? 'patriarchs' : title.includes('Moisés') ? 'exodus' : title.includes('Jesús') || title.includes('Pasión') || title.includes('Resurrección') ? 'jesus' : 'church');
+  };
+  const ordered = [];
+  order.forEach(item => { const card = byTitle.get(item[1]); if (card && !ordered.includes(card)) { card.dataset.era = eventEra(item[1]); card.dataset.year = item[0]; const date = card.querySelector('.timeline-date'); if (date) date.textContent = item[0]; ordered.push(card); } });
+  timelineTrack.replaceChildren(...ordered);
+  timelineTrack.style.gridTemplateColumns = `repeat(${ordered.length}, minmax(205px, 1fr))`;
+  timelineTrack.style.minWidth = `${ordered.length * 205 + (ordered.length - 1) * 12}px`;
+}
+
 // Ilustraciones individualizadas y fichas ampliadas para la guía de figuras adversarias.
 const devilImageByTitle = {
   'El Diablo': ['assets/diablos/diablo.jpg', 'Jesús tentado en el desierto por una figura encapuchada'],
@@ -2211,6 +2315,9 @@ document.querySelector('#diablos-lucifer .extinct-refs').insertAdjacentHTML('bef
 const satanCard = document.getElementById('diablos-satanas');
 satanCard?.querySelector('.extinct-card-body').insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión explícita: Apocalipsis 12:9 identifica al gran dragón y la serpiente antigua como “el Diablo y Satanás”. Ver también <a href="#diablos-dragon">la ficha del dragón antiguo</a>. En Apocalipsis 12:7–9 Miguel y sus ángeles combaten al dragón y lo expulsan; la escena no dice que Miguel necesitara “ayuda” de Dios, aunque la victoria se enmarca en la autoridad divina.</p>');
 document.getElementById('diablos-dragon')?.querySelector('.extinct-card-body').insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión textual: <a href="#diablos-satanas">ver Satanás</a>. La identificación con el Diablo no se formula igual en Génesis 3, sino explícitamente en Apocalipsis 12:9 y 20:2.</p>');
+document.querySelector('#diablos-lucifer .extinct-card-body')?.insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión interpretativa: parte de la tradición cristiana identificó al lucero caído de Isaías con Satanás y enlazó las imágenes del querubín de Ezequiel 28. En sus contextos inmediatos, Isaías se burla del rey de Babilonia y Ezequiel lamenta al rey de Tiro; “Lucifer” procede de la traducción latina del lucero de la mañana, no es un nombre propio hebreo explícito del Diablo. La Biblia tampoco lo describe literalmente como “el ángel más hermoso”.</p>');
+const azazelCard = document.getElementById('devils-view');
+azazelCard?.querySelector('.extinct-grid')?.insertAdjacentHTML('beforeend', '<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Rito bíblico y tradición posterior</span><h3>Azazel y el chivo expiatorio</h3><p>En Levítico 16 se echan suertes sobre dos machos cabríos: uno “para el Señor” y otro “para Azazel”, que es enviado vivo al desierto cargando simbólicamente las culpas de Israel. El sentido exacto de Azazel es discutido; 1 Enoc lo presenta después como un Vigilante caído. No puede asegurarse que ambos usos tengan idéntico significado.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-levitico&amp;capitulo=16#pasaje-16-8">Levítico 16:8–10, 20–22, 26</a><a href="lectura/?obra=1-enoc-es&amp;capitulo=10">1 Enoc 10:4–8</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Azazel" target="_blank" rel="noreferrer">Nota enciclopédica sobre Azazel</a></div></div></article><article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Comparación interreligiosa</span><h3>Jibril (Gabriel) en el islam</h3><p>En la tradición islámica, Jibril es el ángel que transmite la revelación a Muhammad; el Corán 2:97 lo menciona. No es presentado como demonio por el islam, y no hay base para clasificarlo así: se incluye aquí como comparación de tradiciones, no como figura diabólica.</p><div class="extinct-refs"><a href="https://quran.com/2/97" target="_blank" rel="noreferrer">Corán 2:97</a><a href="https://www.britannica.com/biography/Muhammad" target="_blank" rel="noreferrer">Britannica · revelación a Muhammad</a></div></div></article>');
 const gnosticSection = document.createElement('section');
 gnosticSection.className = 'extinct-view';
 gnosticSection.id = 'gnosticism-view';
@@ -2231,6 +2338,22 @@ gnosticSection.innerHTML = `<div class="extinct-intro"><h2 id="gnosticism-title"
 </div>`;
 document.getElementById('devils-view').after(gnosticSection);
 
+const afterlifeSection = document.createElement('section');
+afterlifeSection.className = 'extinct-view';
+afterlifeSection.id = 'afterlife-view';
+afterlifeSection.hidden = true;
+afterlifeSection.setAttribute('aria-labelledby', 'afterlife-title');
+afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title">Seol, Hades y las imágenes del juicio</h2><p>Los textos bíblicos usan vocabulario e imágenes de épocas distintas. No son siempre nombres intercambiables ni describen un único mapa detallado del más allá; separamos el ámbito de los muertos, las metáforas de juicio y las visiones del final.</p></div><div class="extinct-grid">
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Antiguo Testamento · hebreo</span><h3>Seol</h3><p>Seol suele designar la tumba o el ámbito de los muertos en general. En numerosos pasajes no implica por sí mismo un lugar de tormento; el sentido depende del contexto y de la etapa literaria.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=6#pasaje-6-6">Salmo 6:5</a><a href="lectura/?obra=rvr1909-job&amp;capitulo=14#pasaje-14-13">Job 14:13</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Nuevo Testamento · griego</span><h3>Hades</h3><p>Hades es el término griego que la Biblia griega usa para Seol y aparece en el Nuevo Testamento para el reino o dominio de la muerte. Apocalipsis lo distingue del lago de fuego: al final, la Muerte y el Hades entregan a sus muertos y son arrojados al lago.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–14</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Evangelios · imagen de juicio</span><h3>Gehena y el valle de Hinom</h3><p>Gehena deriva del nombre del valle de Hinom, al sur de Jerusalén. Jesús la emplea como imagen de juicio (por ejemplo, Mateo 5:22 y Marcos 9:43–48). La explicación popular de que era simplemente el basural permanentemente encendido de Jerusalén no debe presentarse como un hecho seguro.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=5#pasaje-5-22">Mateo 5:22</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=9#pasaje-9-43">Marcos 9:43–48</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Gehenna" target="_blank" rel="noreferrer">Nota bíblica sobre Gehena</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Apocalipsis · juicio final</span><h3>Lago de fuego / fuego eterno</h3><p>Mateo dice que el fuego eterno fue preparado para el diablo y sus ángeles; Apocalipsis lo presenta como destino final de juicio y lo llama “segunda muerte”. No debe confundirse sin más con Seol o Hades, que el propio Apocalipsis muestra entregando a sus muertos antes del juicio.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=25#pasaje-25-41">Mateo 25:41</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-10">Apocalipsis 20:10–15</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=21#pasaje-21-8">Apocalipsis 21:8</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Apocalipsis · visión</span><h3>El abismo y Abaddón</h3><p>En Apocalipsis 9, una estrella caída abre el abismo y de allí sale una plaga; el rey de esas criaturas es llamado Abaddón en hebreo y Apolión en griego (“Destructor”). El texto no lo identifica allí con Satanás: en Apocalipsis 20, otro ángel encierra a Satanás en el abismo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=9#pasaje-9-1">Apocalipsis 9:1–11</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-1">Apocalipsis 20:1–3</a><a href="https://bible.usccb.org/es/bible/revelation/9" target="_blank" rel="noreferrer">Nota USCCB sobre Abaddón</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge apocryphal">2 Enoc · tradición eslava</span><h3>Los ángeles rebeldes en el segundo cielo</h3><p>En 2 Enoc 7, Enoc ve ángeles rebeldes retenidos en el segundo cielo mientras esperan juicio. Es una descripción de ese apócrifo, no la ubicación que la Biblia canónica asigna al infierno. Mateo 25:41 habla del fuego preparado para el diablo y sus ángeles, pero no lo sitúa en el segundo cielo.</p><div class="extinct-refs"><a href="lectura/?obra=2-enoc-es&amp;capitulo=7">2 Enoc 7:1–3</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=25#pasaje-25-41">Mateo 25:41</a><a href="https://www.studylight.org/historical-writings/pseudepigrapha/2-enoch.html" target="_blank" rel="noreferrer">Texto de 2 Enoc</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Tradiciones cristianas diversas</span><h3>¿Adónde van los muertos después de la victoria de Cristo?</h3><p>El Evangelio de Nicodemo dramatiza el descenso de Cristo al Hades y la liberación de los justos; no afirma que desde entonces toda persona fallecida vaya directamente al cielo o al infierno. Las iglesias interpretan de distinto modo el estado intermedio, la resurrección final y pasajes como Lucas 23:43 y 2 Corintios 5:8. Apocalipsis 20 mantiene una escena futura de resurrección y juicio. “Furia” en algunas traducciones del relato apócrifo describe la ira, no un demonio llamado Furia.</p><div class="extinct-refs"><a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · descenso al Hades</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=23#pasaje-23-43">Lucas 23:43</a><a href="lectura/?obra=rvr1909-2-corintios&amp;capitulo=5#pasaje-5-8">2 Corintios 5:8</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–15</a></div></div></article>
+</div>`;
+gnosticSection.after(afterlifeSection);
+
 const catalogView = document.getElementById('catalog-view');
 const timelineView = document.getElementById('timeline-view');
 const genealogyView = document.getElementById('genealogy-view');
@@ -2240,6 +2363,7 @@ const objectsView = document.getElementById('objects-view');
 const enochView = document.getElementById('enoch-view');
 const devilsView = document.getElementById('devils-view');
 const gnosticismView = document.getElementById('gnosticism-view');
+const afterlifeView = document.getElementById('afterlife-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 function selectView(view, updateHash = true) {
   const isTimeline = view === 'timeline';
@@ -2250,7 +2374,8 @@ function selectView(view, updateHash = true) {
   const isEnoch = view === 'enoch';
   const isDevils = view === 'devils';
   const isGnosticism = view === 'gnosticism';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism;
+  const isAfterlife = view === 'afterlife';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -2259,13 +2384,14 @@ function selectView(view, updateHash = true) {
   enochView.hidden = !isEnoch;
   devilsView.hidden = !isDevils;
   gnosticismView.hidden = !isGnosticism;
+  afterlifeView.hidden = !isAfterlife;
   viewTabs.forEach(tab => {
     const active = tab.dataset.view === view;
     tab.classList.toggle('active', active);
     tab.setAttribute('aria-selected', String(active));
   });
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos-y-seres' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos-y-seres' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -2276,6 +2402,7 @@ if (location.hash === '#objetos-y-seres') selectView('objects', false);
 if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
 if (location.hash === '#gnosticismo') selectView('gnosticism', false);
+if (location.hash === '#mas-alla') selectView('afterlife', false);
 
 function setGenealogyRelationships() {
   const textOf = node => node.firstChild.textContent.trim();
