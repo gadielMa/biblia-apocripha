@@ -856,6 +856,7 @@
   <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos y seres</button>
   <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
+  <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
 </nav>
 
 <section id="catalog-view">
@@ -2163,6 +2164,73 @@ if (timelineTrack) {
   timelineTrack.style.minWidth = `${timelineOrder.length * 205 + (timelineOrder.length - 1) * 12}px`;
 }
 
+// Ilustraciones individualizadas y fichas ampliadas para la guía de figuras adversarias.
+const devilImageByTitle = {
+  'El Diablo': ['assets/diablos/diablo.jpg', 'Jesús tentado en el desierto por una figura encapuchada'],
+  'Belcebú o Beelzebul': ['assets/diablos/beelzebul.jpg', 'Figura alegórica de Beelzebul rodeada de moscas en un santuario antiguo'],
+  'Satanás': ['assets/diablos/satan.jpg', 'Satanás como acusador ante una corte celestial'],
+  'Belial': ['assets/diablos/belial.jpg', 'Belial al frente de un ejército en una visión apocalíptica'],
+  'Mastema': ['assets/diablos/mastema.jpg', 'Mastema señala el campamento humano desde el desierto'],
+  'Abaddón / Apolión': ['assets/diablos/abaddon.jpg', 'El ángel Abaddón junto al abismo abierto'],
+  'Demonios y “Legión”': ['assets/diablos/legion.jpg', 'Un hombre liberado contempla una piara que corre hacia el lago'],
+  'El Anticristo y la Bestia': ['assets/diablos/bestia-marca.jpg', 'Figura apocalíptica con el número 666 claramente marcado en la frente'],
+};
+document.querySelectorAll('#devils-view .extinct-card').forEach(card => {
+  const title = card.querySelector('h3')?.textContent.trim();
+  if (devilImageByTitle[title]) {
+    const [src, alt] = devilImageByTitle[title];
+    card.querySelector('img').src = src;
+    card.querySelector('img').alt = alt;
+  }
+  if (title === 'Satanás') card.id = 'diablos-satanas';
+  if (title === 'La serpiente / el dragón antiguo') card.id = 'diablos-dragon';
+  if (title === 'El Anticristo y la Bestia') {
+    const refs = card.querySelector('.extinct-refs');
+    refs.insertAdjacentHTML('beforeend', '<a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=13#pasaje-13-16">Apocalipsis 13:16–18 · marca en la mano o en la frente y número de la Bestia</a>');
+  }
+});
+const devilGrid = document.querySelector('#devils-view .extinct-grid');
+const addedDevilCards = [
+  ['lucifer', 'Lucifer / Luzbel', 'Lectura posterior de Isaías y Ezequiel', 'Isaías 14:12 usa la imagen del lucero de la mañana dentro de una sátira contra el rey de Babilonia; la Vulgata latina tradujo el término como <i>lucifer</i>, “portador de luz”. Ezequiel 28 emplea imágenes de belleza y querubín en una lamentación contra el rey de Tiro. La Biblia no afirma literalmente que Lucifer fuera “el ángel más hermoso”: esa síntesis pertenece a interpretaciones cristianas posteriores que relacionaron ambos pasajes con la caída de Satanás.', 'Isaías 14:4, 12–15 · rey de Babilonia|Ezequiel 28:12–17 · rey de Tiro|Lucas 10:18 · lectura cristiana posterior', 'Diferenciar los pasajes originales de la lectura teológica posterior evita presentar “Lucifer” como nombre propio hebreo del Diablo.'],
+  ['mamon', 'Mamón', 'Evangelios · riqueza personificada', 'Jesús contrapone servir a Dios y servir a Mamón, palabra aramea para riqueza o bienes. El pasaje personifica el poder del dinero como amo rival; no establece claramente que Mamón sea un dios o demonio con existencia propia.', 'Mateo 6:24|Lucas 16:9–13', 'La identificación de Mamón como demonio individual se desarrolla en tradiciones posteriores.'],
+  ['asmodeo', 'Asmodeo', 'Tobit / Tobías · demonio nombrado', 'En el libro de Tobit, Asmodeo atormenta a Sara y Rafael ayuda a Tobías a librarla. Tobit forma parte de los cánones católico y ortodoxo; no está en todos los cánones protestantes.', 'Tobit 3:8, 3:17|Tobit 6:14–17|Tobit 8:1–3', 'Aquí sí es llamado demonio de forma explícita en el propio relato.'],
+  ['amon', 'Amon / Aamon', 'Ars Goetia · demonología posterior', 'La descripción de Aamon como criatura con forma de lobo y cola de serpiente procede de la Ars Goetia, un grimorio moderno temprano, no de la Biblia. La fuente lo presenta como marqués infernal; no lo define de manera uniforme como “demonio de la ira”.', 'Ars Goetia, espíritu VII · fuente demonológica posterior', 'La imagen representa esa descripción del grimorio, no una criatura bíblica.'],
+  ['belfegor', 'Belfegor / Belphegor', 'Demonología cristiana posterior', 'La asociación de Belphegor con la pereza y su lugar entre los “príncipes del infierno” proceden de clasificaciones demonológicas tardías, especialmente la de Peter Binsfeld (1589), no de una lista bíblica de siete príncipes.', 'Números 25:3 · Baal-peor (contexto bíblico distinto)|Peter Binsfeld, clasificación de 1589', 'No confundir el topónimo/culto Baal-peor del texto bíblico con el personaje de la demonología posterior.'],
+  ['hades-jesus', 'Jesús desciende al Hades', 'Evangelio de Nicodemo · tradición apócrifa', 'En la segunda parte del Evangelio de Nicodemo, Satanás conversa con Hades y Cristo desciende al reino de los muertos, libera a los justos y encadena a Satanás. El texto usa “con furia” como parte de una frase; no presenta a un personaje llamado Furia ni relata que Jesús luche contra una entidad con ese nombre.', 'Hechos 2:27–31 · lenguaje del Hades|Evangelio de Nicodemo, Descenso al Hades, caps. 5–10 (la numeración varía)', 'Es un desarrollo narrativo apócrifo; no equivale a una escena descrita así por los evangelios canónicos.'],
+];
+for (const [slug, title, badge, description, refs, note] of addedDevilCards) {
+  const imageSrc = `assets/diablos/${slug}.jpg`;
+  const imageAlt = ({lucifer:'Lucifer como lucero al caer del cielo', mamon:'Mamón personificado junto al oro y las riquezas', asmodeo:'Asmodeo retrocede ante el humo del pez en el relato de Tobit', amon:'Aamon como lobo con cola de serpiente, según un grimorio posterior', belfegor:'Belphegor personificado como figura de la pereza en un grabado alegórico', 'hades-jesus':'Cristo desciende al Hades ante Satanás y Hades en una escena apócrifa'})[slug];
+  const links = refs.split('|').map(ref => `<span>${ref}</span>`).join('');
+  devilGrid.insertAdjacentHTML('beforeend', `<article class="extinct-card" id="diablos-${slug}"><img class="extinct-card-image" src="${imageSrc}" alt="${imageAlt}" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">${badge}</span><h3>${title}</h3><p>${description}</p><div class="extinct-refs">${links}</div><p class="extinct-note">${note}</p></div></article>`);
+}
+document.querySelector('#diablos-mamon .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Mammon" target="_blank" rel="noreferrer">Nota enciclopédica: sentido de “Mamón”</a>');
+document.querySelector('#diablos-asmodeo .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://bible.usccb.org/bible/tobit/3" target="_blank" rel="noreferrer">Tobit 3 · Biblia de la USCCB</a>');
+document.querySelector('#diablos-amon .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://original.sacred-texts.com/grim/lks/lks05.htm" target="_blank" rel="noreferrer">Ars Goetia · texto de Amon</a>');
+document.querySelector('#diablos-lucifer .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://vulgata.linguasacra.org/bible/isaiah/14/" target="_blank" rel="noreferrer">Isaías 14 · Vulgata y contexto del rey de Babilonia</a>');
+const satanCard = document.getElementById('diablos-satanas');
+satanCard?.querySelector('.extinct-card-body').insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión explícita: Apocalipsis 12:9 identifica al gran dragón y la serpiente antigua como “el Diablo y Satanás”. Ver también <a href="#diablos-dragon">la ficha del dragón antiguo</a>. En Apocalipsis 12:7–9 Miguel y sus ángeles combaten al dragón y lo expulsan; la escena no dice que Miguel necesitara “ayuda” de Dios, aunque la victoria se enmarca en la autoridad divina.</p>');
+document.getElementById('diablos-dragon')?.querySelector('.extinct-card-body').insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión textual: <a href="#diablos-satanas">ver Satanás</a>. La identificación con el Diablo no se formula igual en Génesis 3, sino explícitamente en Apocalipsis 12:9 y 20:2.</p>');
+const gnosticSection = document.createElement('section');
+gnosticSection.className = 'extinct-view';
+gnosticSection.id = 'gnosticism-view';
+gnosticSection.hidden = true;
+gnosticSection.setAttribute('aria-labelledby', 'gnosticism-title');
+gnosticSection.innerHTML = `<div class="extinct-intro"><h2 id="gnosticism-title">Gnosticismo y textos cristianos antiguos</h2><p>Esta selección reúne los pasajes que pediste y conserva su redacción. No todos son textos gnósticos: los evangelios canónicos se leen desde tradiciones cristianas diversas; el <i>Testamentum Domini</i> es un orden eclesiástico antiguo, y la <i>Epistula Apostolorum</i> suele entenderse como respuesta a ideas docéticas/gnósticas. La clasificación del Evangelio de Tomás también es debatida. Las citas y numeraciones pueden variar según la edición.</p></div><div class="enoch-passages gnostic-passages">
+<article class="enoch-passage"><h4>Juan 10:34</h4><blockquote>“Jesus les respondio: 'No esta escrito en vuestra ley: Yo dije: Sois Dioses?'”</blockquote><p>Jesús cita el Salmo 82:6 en una discusión sobre su identidad; el versículo aislado no resume por sí solo una doctrina gnóstica.</p><a href="lectura/?obra=rvr1909-juan&amp;capitulo=10#pasaje-10-34">Leer Juan 10</a></article>
+<article class="enoch-passage"><h4>Romanos 8:11</h4><blockquote>“El mismo espiritu que levanto a Jesus de la muerte, vive dentro tuyo”</blockquote><p>Paráfrasis del pasaje paulino sobre el Espíritu de Dios que habita en los creyentes.</p><a href="lectura/?obra=rvr1909-romanos&amp;capitulo=8#pasaje-8-11">Leer Romanos 8</a></article>
+<article class="enoch-passage"><h4>Juan 17:15</h4><blockquote>“Y que importa si este mundo te abandona, Se te olvido que no eres de este mundo?”</blockquote><p>La frase es una paráfrasis interpretativa, no una cita literal de Juan 17:15. “No son del mundo” aparece en Juan 17:14 y 16; el versículo 15 pide que los discípulos no sean quitados del mundo, sino guardados del mal.</p><a href="lectura/?obra=rvr1909-juan&amp;capitulo=17#pasaje-17-15">Leer Juan 17</a></article>
+<article class="enoch-passage"><h4>Juan 3:3</h4><blockquote>“De cierto, de cierto te digo, que el que no naciere de nuevo no puede ver el Reino de Dios”</blockquote><a href="lectura/?obra=rvr1909-juan&amp;capitulo=3#pasaje-3-3">Leer Juan 3</a></article>
+<article class="enoch-passage"><h4>Testamentum Domini 1:6</h4><blockquote>“Y habrá señales en el sol y en la luna; las estrellas caerán, los abismos se abrirán, y los cielos temblarán... y habrá un gran pavor sobre los hombres, porque verán el fin acercarse.”</blockquote><p>Texto cristiano antiguo de carácter apocalíptico y orden eclesiástico; no es un escrito gnóstico.</p></article>
+<article class="enoch-passage"><h4>Testamentum Domini 1:21 · Sobre el obispo</h4><blockquote>“El obispo sea elegido por todo el pueblo, de manera que sea irreprochable, casto, manso, humilde, no dado a la ansiedad, vigilante, que ame a los pobres y sea capaz de gobernar.”</blockquote><p>Las divisiones y numeraciones dependen de la edición.</p></article>
+<article class="enoch-passage"><h4>Epistula Apostolorum 14</h4><blockquote>“Porque ustedes saben que el ángel Gabriel trajo el mensaje a María. Y nosotros respondimos: 'Sí, Señor'. Él contestó: 'Recuerden que yo me hice semejante a él; entré en el vientre de María y me vestí con la carne'.”</blockquote><p>Escrito cristiano antiguo que suele leerse como defensa de la encarnación corporal frente a corrientes docéticas.</p></article>
+<article class="enoch-passage"><h4>Epistula Apostolorum 26</h4><blockquote>“En verdad les digo que el cuerpo resucitará vivo con el alma, para que en él puedan dar cuenta de todo lo que han hecho, ya sea bueno o malo.”</blockquote></article>
+<article class="enoch-passage"><h4>Epistula Apostolorum 16</h4><blockquote>“Cuando se cumplan ciento cincuenta años, entre el Pentecostés y la Fiesta de los Panes sin Levadura, vendrá el día de mi regreso en gloria, brillando siete veces más que el sol.”</blockquote><p>Conservamos la numeración que compartiste; la organización de capítulos puede variar entre ediciones.</p></article>
+<article class="enoch-passage"><h4>Epistula Apostolorum 31</h4><blockquote>“Surgirá un hombre llamado Saulo, que perseguirá la fe... pero mis manos lo alcanzarán, y él se convertirá en un instrumento elegido para predicar a los gentiles.”</blockquote></article>
+<article class="enoch-passage"><h4>Evangelio de Tomás · Logion 3 (Dicho 3)</h4><blockquote>“Jesús dijo: Si aquellos que os guían os dicen: 'Ved, el Reino está en el cielo', entonces las aves del cielo os precederán. Si os dicen: 'Está en el mar', entonces los peces os precederán. En verdad, el Reino está dentro de vosotros y fuera de vosotros. Cuando os conozcáis a vosotros mismos, entonces seréis conocidos y os daréis cuenta de que sois los hijos del Padre viviente...”</blockquote><p>Evangelio apócrifo de dichos. Suele vincularse con el gnosticismo, aunque su clasificación como texto gnóstico es discutida.</p></article>
+</div>`;
+document.getElementById('devils-view').after(gnosticSection);
+
 const catalogView = document.getElementById('catalog-view');
 const timelineView = document.getElementById('timeline-view');
 const genealogyView = document.getElementById('genealogy-view');
@@ -2171,6 +2239,7 @@ const extinctView = document.getElementById('extinct-view');
 const objectsView = document.getElementById('objects-view');
 const enochView = document.getElementById('enoch-view');
 const devilsView = document.getElementById('devils-view');
+const gnosticismView = document.getElementById('gnosticism-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 function selectView(view, updateHash = true) {
   const isTimeline = view === 'timeline';
@@ -2180,7 +2249,8 @@ function selectView(view, updateHash = true) {
   const isObjects = view === 'objects';
   const isEnoch = view === 'enoch';
   const isDevils = view === 'devils';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils;
+  const isGnosticism = view === 'gnosticism';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -2188,13 +2258,14 @@ function selectView(view, updateHash = true) {
   objectsView.hidden = !isObjects;
   enochView.hidden = !isEnoch;
   devilsView.hidden = !isDevils;
+  gnosticismView.hidden = !isGnosticism;
   viewTabs.forEach(tab => {
     const active = tab.dataset.view === view;
     tab.classList.toggle('active', active);
     tab.setAttribute('aria-selected', String(active));
   });
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos-y-seres' : isEnoch ? '#enoc' : isDevils ? '#diablos' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#elementos-extintos' : isObjects ? '#objetos-y-seres' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => selectView(tab.dataset.view)));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -2204,6 +2275,7 @@ if (location.hash === '#elementos-extintos') selectView('extinct', false);
 if (location.hash === '#objetos-y-seres') selectView('objects', false);
 if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
+if (location.hash === '#gnosticismo') selectView('gnosticism', false);
 
 function setGenealogyRelationships() {
   const textOf = node => node.firstChild.textContent.trim();
