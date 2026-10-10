@@ -747,6 +747,8 @@
     .extinct-category-title { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.7rem); letter-spacing: -.025em; }
     .extinct-card { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.97); box-shadow: 0 9px 22px rgba(26,48,77,.07); }
     .extinct-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #e7edf4; }
+    #extinct-view .extinct-card-image[src*="leon-asiatico"] { object-position: center top; clip-path: inset(0 0 6px); margin-bottom: -6px; }
+    #extinct-view .extinct-card-image[src*="serpientes-ardientes"] { clip-path: inset(0 0 6px); margin-bottom: -6px; }
     .extinct-card-body { padding: 1rem 1.05rem 1.1rem; }
     .extinct-card h3 { margin: .5rem 0 .4rem; color: #24364b; font-size: 1.15rem; line-height: 1.2; }
     .extinct-card p { margin: .4rem 0; color: var(--text2); font-size: .9rem; line-height: 1.5; }
@@ -936,7 +938,8 @@
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
   <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
   <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Más allá</button>
-  <button class="view-tab" type="button" data-view="relics" aria-selected="false">Arca de Noé y Sábana Santa</button>
+  <button class="view-tab" type="button" data-view="ark" aria-selected="false">Arca de Noé</button>
+  <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
   </div>
 </nav>
 
@@ -2030,7 +2033,8 @@ function findLibraryMatches(query) {
     'devils-view': ['Diablos', 'devils'],
     'gnosticism-view': ['Gnosticismo', 'gnosticism'],
     'afterlife-view': ['Más allá', 'afterlife'],
-    'relics-view': ['Arca de Noé y Sábana Santa', 'relics']
+    'ark-view': ['Arca de Noé', 'ark'],
+    'shroud-view': ['Sábana Santa', 'shroud']
   };
   const selectors = [
     '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
@@ -2571,16 +2575,30 @@ afterlifeSection.querySelectorAll('.extinct-card').forEach((card, index) => {
 });
 gnosticSection.after(afterlifeSection);
 
-const relicsSection = document.createElement('section');
-relicsSection.className = 'extinct-view';
-relicsSection.id = 'relics-view';
-relicsSection.hidden = true;
-relicsSection.setAttribute('aria-labelledby', 'relics-title');
-relicsSection.innerHTML = `<div class="extinct-intro"><h2 id="relics-title">El Arca de Noé y la Sábana Santa</h2><p>Dos objetos con trayectorias distintas: uno pertenece al relato del diluvio en Génesis; el otro es una reliquia cuya identificación con los lienzos funerarios del Evangelio sigue siendo discutida.</p></div><div class="extinct-grid">
-<article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/noe-arca.png" alt="El arca de Noé sobre las aguas del diluvio" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato del diluvio</span><h3>El Arca de Noé</h3><p>Génesis describe cómo Noé construye un arca para preservar a su familia y a los animales durante el diluvio. La narración la presenta como refugio y parte del pacto posterior; esta sección la conecta con la línea temporal y con las tradiciones sobre Enoc.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Génesis 6:14–22</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-15">Génesis 8:15–22</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=9#pasaje-9-8">Génesis 9:8–17</a></div></div></article>
-<article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin.jpg" alt="Lienzo funerario de lino extendido en una tumba de piedra" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Reliquia cristiana · identificación discutida</span><h3>La Sábana Santa</h3><p>Los Evangelios mencionan lienzos usados para envolver el cuerpo de Jesús. La tradición identifica la Sábana Santa de Turín con uno de ellos, pero esa identificación no está demostrada; la datación por radiocarbono publicada en 1989 situó la tela entre 1260 y 1390 d. C.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-40">Juan 19:40–42</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-59">Mateo 27:59–60</a></div></div></article>
+const arkSection = document.createElement('section');
+arkSection.className = 'extinct-view';
+arkSection.id = 'ark-view';
+arkSection.hidden = true;
+arkSection.setAttribute('aria-labelledby', 'ark-title');
+arkSection.innerHTML = `<div class="extinct-intro"><h2 id="ark-title">El Arca de Noé</h2><p>La nave que protagoniza el relato del diluvio en Génesis: refugio para Noé, su familia y los animales, y punto de partida para la alianza narrada después de las aguas. La presentamos como tradición bíblica; no como un hallazgo arqueológico confirmado.</p></div><div class="extinct-grid">
+<article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/noe-arca.png" alt="Representación artística del arca de Noé sobre las aguas del diluvio" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato del diluvio</span><h3>La construcción y sus dimensiones</h3><p>Génesis indica madera, compartimentos y recubrimiento de brea por dentro y por fuera. Da medidas de 300 codos de largo, 50 de ancho y 30 de alto, con una puerta lateral, una abertura superior y tres niveles. La equivalencia en metros depende de cuánto midiera el codo antiguo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Génesis 6:14–16 · materiales y medidas</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-17">Génesis 6:17–22 · propósito y animales</a><a href="https://www.biblegateway.com/passage/?search=Genesis+6%3A14-16&amp;version=NET" target="_blank" rel="noopener noreferrer">Comparar traducciones y notas sobre Génesis 6</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Génesis 7–8</span><h3>El diluvio y el fin de las aguas</h3><p>Noé entra con su familia y los animales; el texto cuenta la lluvia, la subida de las aguas y el descenso posterior. Cuando el arca se posa “sobre los montes de Ararat”, Noé envía primero un cuervo y luego palomas para saber si la tierra está seca.</p><p>El relato usa distintos intervalos —cuarenta días de lluvia y ciento cincuenta días en que prevalecieron las aguas—; son medidas del relato y no una cronología histórica independiente.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=7#pasaje-7-1">Génesis 7:1–24 · entrada y diluvio</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-1">Génesis 8:1–12 · cuervo y paloma</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-4">Génesis 8:4 · montes de Ararat</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Génesis 8–9</span><h3>Alianza y arco en las nubes</h3><p>Al salir del arca, Noé ofrece un sacrificio. Génesis presenta el arco en las nubes como señal de la alianza de Dios con Noé, sus descendientes y los seres vivos: el texto promete que las aguas no volverán a destruir toda vida de ese modo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-20">Génesis 8:20–22 · ofrenda y promesa</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=9#pasaje-9-8">Génesis 9:8–17 · alianza y arco</a><a href="https://www.vatican.va/archive/bible/genesis/documents/bible_genesis_en.html" target="_blank" rel="noopener noreferrer">Génesis completo · Biblioteca del Vaticano</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Contexto histórico y arqueológico</span><h3>Relato, tradición y evidencia</h3><p>La búsqueda de restos del arca ha producido numerosas afirmaciones populares, pero no existe una identificación arqueológica aceptada por la comunidad científica. El texto bíblico localiza el descanso en “los montes de Ararat”; no nombra por sí solo una estructura moderna concreta ni demuestra que se haya encontrado.</p><div class="extinct-refs"><a href="https://www.nationalgeographic.com/magazine/article/noahs-ark-archaeology-search-science" target="_blank" rel="noopener noreferrer">National Geographic · arqueología y búsquedas del arca</a><a href="https://www.biblegateway.com/passage/?search=Genesis+6-9&amp;version=NABRE" target="_blank" rel="noopener noreferrer">Génesis 6–9 · texto y notas de estudio</a></div></div></article>
 </div>`;
-document.getElementById('objects-view')?.after(relicsSection);
+
+const shroudSection = document.createElement('section');
+shroudSection.className = 'extinct-view';
+shroudSection.id = 'shroud-view';
+shroudSection.hidden = true;
+shroudSection.setAttribute('aria-labelledby', 'shroud-title');
+shroudSection.innerHTML = `<div class="extinct-intro"><h2 id="shroud-title">La Sábana Santa de Turín</h2><p>Una tela de lino venerada por muchos cristianos como el sudario de Jesús. Esta sección separa lo que cuentan los Evangelios, la historia documentada de la reliquia y los resultados científicos, sin presentar su autenticidad como un hecho demostrado.</p></div><div class="extinct-grid">
+<article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin.jpg" alt="Representación artística de un lienzo de lino funerario junto a una tumba vacía" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Reliquia cristiana · autenticidad debatida</span><h3>Qué dicen los Evangelios</h3><p>Los relatos evangélicos mencionan lienzos funerarios y describen el entierro de Jesús. Juan menciona lienzos y un sudario para la cabeza; ninguno identifica por nombre la tela conservada hoy en Turín ni ofrece una cadena de custodia que la conecte con ella.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-57">Mateo 27:57–61 · sepultura</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=15#pasaje-15-42">Marcos 15:42–47 · lienzo funerario</a><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-38">Juan 19:38–42 y 20:5–7 · lienzos y sudario</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Historia documentada</span><h3>De Lirey a Turín</h3><p>La historia verificable de la reliquia que hoy se conserva en Turín aparece en la Europa medieval: el lienzo se exhibía en Lirey, Francia, a mediados del siglo XIV. Fue trasladado a Turín en 1578. La tradición devocional puede proponer una historia anterior, pero no se conserva una documentación continua que la confirme.</p><div class="extinct-refs"><a href="https://doi.org/10.1080/03044181.2025.2546884" target="_blank" rel="noopener noreferrer">Journal of Medieval History · nueva fuente medieval sobre la aparición de la reliquia</a><a href="https://sindone.org/en/home-english/the-shroud/historical-outline/" target="_blank" rel="noopener noreferrer">Custodios de la Sábana Santa · reseña histórica (traslado en 1578)</a><a href="https://www.vatican.va/content/john-paul-ii/en/travels/1998/documents/hf_jp-ii_spe_24051998_sindone.html" target="_blank" rel="noopener noreferrer">Juan Pablo II · la Sábana como icono de la Pasión</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Estudio científico · 1988</span><h3>La datación por radiocarbono</h3><p>En 1988, tres laboratorios analizaron una muestra de lino. El artículo publicado en Nature en 1989 informó un intervalo calibrado de 1260–1390 d. C. con al menos 95 % de confianza. El resultado se refiere a la muestra estudiada; desde entonces se han debatido su representatividad y otros aspectos del análisis. Un trabajo publicado en 2026 volvió a examinar fragmentos textiles conservados de la muestra de Arizona: aporta análisis del material, no una nueva fecha para toda la tela.</p><div class="extinct-refs"><a href="https://doi.org/10.1038/337611a0" target="_blank" rel="noopener noreferrer">Nature 337 (1989), págs. 611–615 · artículo original</a><a href="https://experts.arizona.edu/en/publications/radiocarbon-dating-of-the-shroud-of-turin/" target="_blank" rel="noopener noreferrer">Universidad de Arizona · registro bibliográfico del estudio</a><a href="https://doi.org/10.1038/s40494-026-02530-7" target="_blank" rel="noopener noreferrer">npj Heritage Science (2026) · análisis de fragmentos de la muestra de 1988</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge apocryphal">Tradición y devoción</span><h3>Valor religioso y límites de la evidencia</h3><p>Para quienes la veneran, la imagen del lienzo invita a contemplar la Pasión y la muerte de Jesús. Su importancia religiosa y cultural no depende de que la identidad material con la tela del sepulcro pueda probarse: la autenticidad sigue siendo una cuestión distinta de la devoción.</p><div class="extinct-refs"><a href="https://www.vatican.va/content/benedict-xvi/en/speeches/2010/may/documents/hf_ben-xvi_spe_20100502_meditazione-torino.html" target="_blank" rel="noopener noreferrer">Benedicto XVI · meditación ante la Sábana Santa</a></div></div></article>
+</div>`;
+document.getElementById('objects-view')?.after(arkSection, shroudSection);
 document.querySelectorAll('#objects-view .extinct-card').forEach(card => {
   if (card.querySelector('h3')?.textContent.trim() === 'El Santo Sudario') card.remove();
 });
@@ -2588,7 +2606,7 @@ document.querySelectorAll('#objects-view .extinct-card').forEach(card => {
 const libraryViewRoots = {
   timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
   extinct: '#extinct-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
-  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', relics: '#relics-view'
+  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view'
 };
 function findLibraryCard(view, title) {
   const root = document.querySelector(libraryViewRoots[view]);
@@ -2597,14 +2615,14 @@ function findLibraryCard(view, title) {
     .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
 }
 const relatedPairs = [
-  { view: 'relics', title: 'El Arca de Noé', links: [['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo'], ['enoch', 'Enoc 10:1', 'Enoc y el anuncio del diluvio']] },
-  { view: 'relics', title: 'La Sábana Santa', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver la pasión en la línea de tiempo'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Explorar las tradiciones sobre la muerte']] },
+  { view: 'ark', title: 'La construcción y sus dimensiones', links: [['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo'], ['enoch', 'Enoc 10:1', 'Enoc y el anuncio del diluvio']] },
+  { view: 'shroud', title: 'Qué dicen los Evangelios', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver la pasión en la línea de tiempo'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Explorar las tradiciones sobre la muerte']] },
   { view: 'afterlife', title: 'Seol', links: [['afterlife', 'Hades', 'Comparar con Hades'], ['afterlife', 'Gehena y el valle de Hinom', 'Ver Gehena']] },
   { view: 'afterlife', title: 'Hades', links: [['afterlife', 'Seol', 'Comparar con Seol'], ['afterlife', '¿Adónde van los muertos después de la victoria de Cristo?', 'Tradiciones sobre el destino de los muertos']] },
   { view: 'devils', title: 'Satanás', links: [['devils', 'La serpiente / el dragón antiguo', 'Ver la conexión con el dragón'], ['afterlife', 'El abismo y Abaddón', 'Explorar el abismo']] },
   { view: 'devils', title: 'La serpiente / el dragón antiguo', links: [['devils', 'Satanás', 'Ver la conexión con Satanás']] },
   { view: 'prophecies', title: 'Contar puedo todos mis huesos', links: [['timeline', 'Pasión, muerte y sepultura', 'Ver el relato de la pasión']] },
-  { view: 'enoch', title: 'Enoc 10:1', links: [['relics', 'El Arca de Noé', 'Ir al Arca de Noé'], ['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo']] }
+  { view: 'enoch', title: 'Enoc 10:1', links: [['ark', 'El Arca de Noé', 'Ir al Arca de Noé'], ['timeline', 'El gran diluvio y el arca', 'Ver el diluvio en la línea de tiempo']] }
 ];
 relatedPairs.forEach(pair => {
   const card = findLibraryCard(pair.view, pair.title);
@@ -2668,7 +2686,8 @@ const enochView = document.getElementById('enoch-view');
 const devilsView = document.getElementById('devils-view');
 const gnosticismView = document.getElementById('gnosticism-view');
 const afterlifeView = document.getElementById('afterlife-view');
-const relicsView = document.getElementById('relics-view');
+const arkView = document.getElementById('ark-view');
+const shroudView = document.getElementById('shroud-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
@@ -2698,8 +2717,9 @@ function selectView(view, updateHash = true) {
   const isDevils = view === 'devils';
   const isGnosticism = view === 'gnosticism';
   const isAfterlife = view === 'afterlife';
-  const isRelics = view === 'relics';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isRelics;
+  const isArk = view === 'ark';
+  const isShroud = view === 'shroud';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isExtinct || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -2709,8 +2729,9 @@ function selectView(view, updateHash = true) {
   devilsView.hidden = !isDevils;
   gnosticismView.hidden = !isGnosticism;
   afterlifeView.hidden = !isAfterlife;
-  relicsView.hidden = !isRelics;
-  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, relicsView]
+  arkView.hidden = !isArk;
+  shroudView.hidden = !isShroud;
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView]
     .find(section => !section.hidden);
   if (activeSection) {
     activeSection.classList.remove('view-entering');
@@ -2725,7 +2746,7 @@ function selectView(view, updateHash = true) {
   const selectedTab = Array.from(viewTabs).find(tab => tab.dataset.view === view);
   currentViewLabel.textContent = `· ${selectedTab?.textContent.trim() || 'Catálogo'}`;
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : isRelics ? '#arca-noe-sabana-santa' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isExtinct ? '#extintos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -2738,7 +2759,8 @@ if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
 if (location.hash === '#gnosticismo') selectView('gnosticism', false);
 if (location.hash === '#mas-alla') selectView('afterlife', false);
-if (location.hash === '#arca-noe-sabana-santa') selectView('relics', false);
+if (location.hash === '#arca-de-noe' || location.hash === '#arca-noe-sabana-santa') selectView('ark', false);
+if (location.hash === '#sabana-santa') selectView('shroud', false);
 
 function jumpToLibraryItem(view, targetId, title) {
   selectView(view);
