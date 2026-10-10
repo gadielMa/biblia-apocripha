@@ -535,8 +535,9 @@
       --radius: 16px;
     }
     body {
-      background: radial-gradient(circle at 8% 0%, #fff 0 18rem, transparent 40rem),
-        linear-gradient(180deg, #f7f9fc 0%, #edf2f8 100%);
+      background: radial-gradient(circle at 8% 0%, rgba(255,244,229,.92) 0 15rem, transparent 39rem),
+        radial-gradient(circle at 92% 26%, rgba(206,151,116,.14) 0 10rem, transparent 35rem),
+        linear-gradient(135deg, #f8f5f0 0%, #edf1f4 55%, #f2e8df 100%);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
@@ -567,12 +568,13 @@
     .stat { min-width: 132px; padding: .8rem 1rem; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 12px; box-shadow: none; text-align: left; backdrop-filter: blur(8px); }
     .stat .n { color: #fff; font-size: 1.45rem; }
     .stat .l { color: #cbd8e7; font-size: .68rem; letter-spacing: .08em; }
-    .controls, .text-results, .table-wrap { max-width: 1240px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
-    .controls { margin-top: -1.35rem; position: relative; z-index: 2; padding: .75rem; background: rgba(255,255,255,.94); backdrop-filter: blur(14px); }
-    .search-box, .show-select { background: #f8fafc; border-color: var(--border); border-radius: 11px; min-height: 46px; }
+    .controls, .text-results, .table-wrap { max-width: 1240px; border-radius: var(--radius); border: 1px solid rgba(201,168,140,.42); box-shadow: var(--shadow); }
+    .controls, .text-results, .table-wrap, .timeline-intro, .genealogy-intro, .prophecies-intro, .extinct-intro, .extinct-card, .prophecy-card { background: linear-gradient(135deg, rgba(255,249,240,.84), rgba(255,255,255,.76)); backdrop-filter: blur(16px); }
+    .controls { margin-top: -1.35rem; position: relative; z-index: 2; padding: .75rem; }
+    .search-box, .show-select { background: rgba(255,249,241,.78); border-color: rgba(201,168,140,.48); border-radius: 11px; min-height: 46px; backdrop-filter: blur(10px); }
     .search-box { font-size: .95rem; padding-left: 1rem; }
-    .filter-btn { border-color: var(--border); background: #f8fafc; color: var(--text2); border-radius: 999px; }
-    .filter-btn.active { background: var(--accent); border-color: var(--accent); box-shadow: 0 7px 16px rgba(180,83,45,.2); }
+    .filter-btn { border-color: rgba(201,168,140,.48); background: rgba(255,249,241,.72); color: var(--text2); border-radius: 999px; backdrop-filter: blur(10px); }
+    .filter-btn.active { background: linear-gradient(120deg, #b4532d, #cf7950); border-color: rgba(180,83,45,.55); box-shadow: 0 7px 16px rgba(180,83,45,.2); }
     .text-results { background: rgba(255,255,255,.92); }
     .text-results h2 { color: var(--text); font-size: 1.05rem; }
     .text-result { border-color: var(--border); border-radius: 11px; background: #fbfcfe; }
@@ -608,16 +610,17 @@
       gap: .7rem;
       min-height: 48px;
       padding: .65rem 1rem;
-      border: 1px solid #bfccdc;
+      border: 1px solid rgba(255,238,219,.38);
       border-radius: 14px;
       color: #fff;
-      background: rgba(23,40,63,.9);
+      background: linear-gradient(115deg, rgba(31,61,82,.84), rgba(130,70,51,.82));
       font: inherit;
       font-weight: 750;
       cursor: pointer;
-      box-shadow: 0 8px 18px rgba(14,28,45,.14);
+      box-shadow: 0 10px 24px rgba(83,52,38,.2);
+      backdrop-filter: blur(14px);
     }
-    .view-menu-toggle:hover, .view-menu-toggle:focus-visible { background: #253e5c; outline: 2px solid #fff; outline-offset: 2px; }
+    .view-menu-toggle:hover, .view-menu-toggle:focus-visible { background: linear-gradient(115deg, rgba(42,75,94,.91), rgba(153,82,57,.9)); outline: 2px solid rgba(255,242,224,.82); outline-offset: 2px; }
     .view-menu-icon { font-size: 1.25rem; line-height: 1; }
     .view-menu-current { max-width: 55vw; margin-left: .2rem; overflow: hidden; color: #cbd8e7; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
     .view-links {
@@ -629,11 +632,11 @@
       padding: 0 .75rem;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: .5rem;
-      border: 1px solid rgba(255,255,255,.22);
+      border: 1px solid rgba(255,230,207,.34);
       border-radius: 18px;
-      background: rgba(23,40,63,.98);
-      box-shadow: 0 18px 40px rgba(14,28,45,.28);
-      backdrop-filter: blur(16px);
+      background: linear-gradient(130deg, rgba(27,52,71,.9), rgba(111,59,52,.88));
+      box-shadow: 0 18px 42px rgba(68,45,37,.24);
+      backdrop-filter: blur(22px) saturate(135%);
       visibility: hidden;
       opacity: 0;
       pointer-events: none;
@@ -643,20 +646,20 @@
     .view-tabs.open .view-links { max-height: min(70vh, 520px); margin-top: .55rem; padding: .75rem; visibility: visible; opacity: 1; pointer-events: auto; transform: translateY(0); }
     .view-tab {
       appearance: none;
-      border: 1px solid #bfccdc;
+      border: 1px solid rgba(255,230,207,.36);
       border-radius: 12px;
       padding: .72rem .85rem;
       text-align: left;
       min-height: 44px;
-      color: #e7edf5;
-      background: rgba(23,40,63,.72);
+      color: #fff8f1;
+      background: rgba(255,248,239,.075);
       font: inherit;
       font-weight: 700;
       cursor: pointer;
       transition: .18s ease;
     }
-    .view-tab:hover, .view-tab:focus-visible { border-color: #fff; background: rgba(255,255,255,.15); outline: none; }
-    .view-tab.active { color: #182536; border-color: #fff; background: #fff; box-shadow: 0 8px 20px rgba(14,28,45,.18); }
+    .view-tab:hover, .view-tab:focus-visible { border-color: rgba(255,235,215,.82); background: rgba(255,231,207,.16); outline: none; }
+    .view-tab.active { color: #38271f; border-color: rgba(255,242,225,.95); background: linear-gradient(120deg, rgba(255,238,216,.98), rgba(224,163,125,.96)); box-shadow: 0 8px 20px rgba(37,23,18,.2); }
     .related-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .85rem; padding-top: .7rem; border-top: 1px solid var(--border); }
     .related-links-label { color: var(--text2); font-size: .78rem; font-weight: 700; }
     .related-link { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .65rem; color: var(--accent); background: #f8fafc; font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
