@@ -624,7 +624,7 @@
       cursor: pointer;
       box-shadow: 0 10px 24px rgba(83,52,38,.2);
       backdrop-filter: blur(14px);
-      transition: width .22s ease, box-shadow .22s ease, background .22s ease;
+      transition: width .12s linear, box-shadow .22s ease, background .22s ease;
     }
     .view-menu-toggle:hover, .view-menu-toggle:focus-visible { background: linear-gradient(115deg, rgba(42,75,94,.91), rgba(153,82,57,.9)); outline: 2px solid rgba(255,242,224,.82); outline-offset: 2px; }
     .view-menu-icon { font-size: 1.25rem; line-height: 1; }
@@ -942,7 +942,6 @@
     @media (max-width: 1200px) {
     }
     .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
-    .view-tabs.is-scrolled .view-menu-toggle { width: max-content; }
     .view-tabs .view-links { width: 100%; }
     .view-tabs.open .view-links { margin: .55rem 0 0; }
   </style>
@@ -2966,12 +2965,33 @@ const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
 const currentViewLabel = document.getElementById('view-menu-current');
+function measureCompactMenuWidth() {
+  const measure = viewMenuToggle.cloneNode(true);
+  measure.removeAttribute('id');
+  measure.removeAttribute('aria-controls');
+  Object.assign(measure.style, { position: 'fixed', left: '-10000px', top: '0', width: 'max-content', maxWidth: 'calc(100vw - 2rem)', visibility: 'hidden', pointerEvents: 'none' });
+  document.body.append(measure);
+  const width = measure.getBoundingClientRect().width;
+  measure.remove();
+  return width;
+}
+let compactMenuWidth = measureCompactMenuWidth();
 const updateViewMenuSize = () => {
-  const compactAfter = window.innerWidth >= 768 ? 220 : 48;
-  viewNavigation.classList.toggle('is-scrolled', window.scrollY > compactAfter);
+  const desktop = window.innerWidth >= 768;
+  const compactAfter = desktop ? 220 : 48;
+  const shrinkDuration = desktop ? 520 : 180;
+  const progress = Math.max(0, Math.min(1, (window.scrollY - compactAfter) / shrinkDuration));
+  const eased = progress * progress * (3 - 2 * progress);
+  const expandedWidth = viewNavigation.getBoundingClientRect().width;
+  const width = expandedWidth - (expandedWidth - compactMenuWidth) * eased;
+  viewNavigation.classList.toggle('is-scrolled', progress > 0);
+  viewMenuToggle.style.width = `${Math.round(width)}px`;
 };
 window.addEventListener('scroll', updateViewMenuSize, { passive: true });
-window.addEventListener('resize', updateViewMenuSize);
+window.addEventListener('resize', () => {
+  compactMenuWidth = measureCompactMenuWidth();
+  updateViewMenuSize();
+});
 updateViewMenuSize();
 let activeLibraryView = 'catalog';
 const crossNavigationStack = [];
@@ -3059,6 +3079,8 @@ function selectView(view, updateHash = true) {
   });
   const selectedTab = Array.from(viewTabs).find(tab => tab.dataset.view === (view === 'extinct' ? 'animals' : view));
   currentViewLabel.textContent = `· ${selectedTab?.textContent.trim() || 'Catálogo'}`;
+  compactMenuWidth = measureCompactMenuWidth();
+  updateViewMenuSize();
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
   if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
