@@ -1,0 +1,43 @@
+{
+  "id": "rollo-templo-es",
+  "title": "Rollo del Templo (11QT)",
+  "language": "es",
+  "sourceLanguage": "Hebreo",
+  "translator": "Resumen original en español; pendiente de edición crítica completa",
+  "publication": "Ficha de referencia del corpus",
+  "license": "Resumen original; no sustituye una edición crítica.",
+  "sourceUrl": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/11Q19-1",
+  "notes": "Entrada textual de orientación: secciones editoriales resumidas para hacer visible y buscable la obra mientras se integra una transcripción completa con licencia compatible.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Rollo del Templo (11QT)",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 1: sección de orientación para búsqueda y lectura del contenido."
+        },
+        {
+          "number": "2",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 2: sección de orientación para búsqueda y lectura del contenido."
+        },
+        {
+          "number": "3",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 3: sección de orientación para búsqueda y lectura del contenido."
+        },
+        {
+          "number": "4",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 4: sección de orientación para búsqueda y lectura del contenido."
+        },
+        {
+          "number": "5",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 5: sección de orientación para búsqueda y lectura del contenido."
+        },
+        {
+          "number": "6",
+          "text": "Composición legal de Qumrán que presenta un templo ideal, calendarios, pureza, sacrificios y normas para una comunidad santa. Reescribe leyes bíblicas como instrucciones dadas directamente por Dios. División editorial 6: sección de orientación para búsqueda y lectura del contenido."
+        }
+      ]
+    }
+  ]
+}

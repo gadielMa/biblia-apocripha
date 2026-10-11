@@ -994,5 +994,17 @@
     "title": "Sobre el origen del mundo (resumen en español)",
     "language": "es",
     "file": "origin-world-es.json"
+  },
+  {
+    "id": "rollo-templo-es",
+    "title": "Rollo del Templo (11QT) (resumen estructurado)",
+    "language": "es",
+    "file": "rollo-templo-es.json"
+  },
+  {
+    "id": "octateuco-clemente-es",
+    "title": "Octateuco de Clemente (resumen estructurado)",
+    "language": "es",
+    "file": "octateuco-clemente-es.json"
   }
 ]
