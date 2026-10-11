@@ -1,0 +1,23 @@
+{
+  "id": "acts-john-es",
+  "title": "Hechos de Juan",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.earlychristianwritings.com/actsjohn.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Relatos de viajes, milagros y discursos del apóstol Juan, con episodios de conversión, himnos y una cristología diversa."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "origin-world-es",
+  "title": "Sobre el origen del mundo",
+  "language": "es",
+  "sourceLanguage": "Copto (Nag Hammadi)",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.gnosis.org/naghamm/origin.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cosmogonía gnóstica que reinterpreta Génesis, describe a los gobernantes celestes, la creación de la humanidad y el destino final del mundo."
+        }
+      ]
+    }
+  ]
+}

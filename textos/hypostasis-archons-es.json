@@ -1,0 +1,23 @@
+{
+  "id": "hypostasis-archons-es",
+  "title": "Hipóstasis de los Arcontes",
+  "language": "es",
+  "sourceLanguage": "Copto (Nag Hammadi)",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.gnosis.org/naghamm/hypostas.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Tratado setiano sobre los arcontes, la creación del mundo material, Adán y Eva, y la liberación de la humanidad mediante conocimiento revelado."
+        }
+      ]
+    }
+  ]
+}

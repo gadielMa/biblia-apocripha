@@ -1,0 +1,23 @@
+{
+  "id": "acts-philip-es",
+  "title": "Hechos de Felipe",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.earlychristianwritings.com/actsphilip.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Tradiciones sobre la misión de Felipe en Asia Menor, confrontaciones con autoridades y poderes paganos, conversiones y martirio."
+        }
+      ]
+    }
+  ]
+}

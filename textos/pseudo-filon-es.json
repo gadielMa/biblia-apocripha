@@ -1,0 +1,23 @@
+{
+  "id": "pseudo-filon-es",
+  "title": "Antigüedades bíblicas de Pseudo-Filón",
+  "language": "es",
+  "sourceLanguage": "Hebreo/Latín",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.earlyjewishwritings.com/pseudophilo.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Reescritura de la historia bíblica desde Adán hasta Saúl, con ampliaciones legendarias, discursos y tradiciones que no aparecen en el texto canónico."
+        }
+      ]
+    }
+  ]
+}

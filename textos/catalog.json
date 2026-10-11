@@ -952,5 +952,47 @@
     "title": "Apocalipsis de Abraham (traducción automática)",
     "language": "es",
     "file": "apocalypse-abraham.es.json"
+  },
+  {
+    "id": "jose-asanet-es",
+    "title": "José y Asenet (resumen en español)",
+    "language": "es",
+    "file": "jose-asanet-es.json"
+  },
+  {
+    "id": "pseudo-filon-es",
+    "title": "Antigüedades bíblicas de Pseudo-Filón (resumen en español)",
+    "language": "es",
+    "file": "pseudo-filon-es.json"
+  },
+  {
+    "id": "testament-solomon-es",
+    "title": "Testamento de Salomón (resumen en español)",
+    "language": "es",
+    "file": "testament-solomon-es.json"
+  },
+  {
+    "id": "acts-john-es",
+    "title": "Hechos de Juan (resumen en español)",
+    "language": "es",
+    "file": "acts-john-es.json"
+  },
+  {
+    "id": "acts-philip-es",
+    "title": "Hechos de Felipe (resumen en español)",
+    "language": "es",
+    "file": "acts-philip-es.json"
+  },
+  {
+    "id": "hypostasis-archons-es",
+    "title": "Hipóstasis de los Arcontes (resumen en español)",
+    "language": "es",
+    "file": "hypostasis-archons-es.json"
+  },
+  {
+    "id": "origin-world-es",
+    "title": "Sobre el origen del mundo (resumen en español)",
+    "language": "es",
+    "file": "origin-world-es.json"
   }
 ]

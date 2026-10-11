@@ -1,0 +1,23 @@
+{
+  "id": "jose-asanet-es",
+  "title": "José y Asenet",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Resumen original en español; pendiente de integrar una traducción completa redistribuible",
+  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "sourceUrl": "https://www.earlychristianwritings.com/josephandaseneth.html",
+  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Narración de la conversión de Asenet, su matrimonio con José y la reconciliación entre identidades egipcias e israelitas. Combina romance, visión, arrepentimiento y providencia."
+        }
+      ]
+    }
+  ]
+}

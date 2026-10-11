@@ -1729,5 +1729,89 @@
     "Resumen": "Evangelio perdido conocido por fragmentos de una comunidad judeocristiana asociada a los ebionitas.",
     "_archivo": null,
     "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "José y Asenet",
+    "Fecha aproximada": "siglo I a.C.–II d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Narración de la conversión de Asenet, su matrimonio con José y la reconciliación entre identidades egipcias e israelitas. Combina romance, visión, arrepentimiento y providencia.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Antigüedades bíblicas de Pseudo-Filón",
+    "Fecha aproximada": "siglo I d.C.",
+    "Idioma original": "Hebreo/Latín",
+    "Resumen": "Reescritura de la historia bíblica desde Adán hasta Saúl, con ampliaciones legendarias, discursos y tradiciones que no aparecen en el texto canónico.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Testamento de Salomón",
+    "Fecha aproximada": "siglo III–V d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Diálogo de Salomón con demonios y ángeles durante la construcción del templo; incluye nombres, funciones, enfermedades y medios de sometimiento espiritual.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Hechos de Juan",
+    "Fecha aproximada": "siglo II d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Relatos de viajes, milagros y discursos del apóstol Juan, con episodios de conversión, himnos y una cristología diversa.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Hechos de Felipe",
+    "Fecha aproximada": "siglo IV–V d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Tradiciones sobre la misión de Felipe en Asia Menor, confrontaciones con autoridades y poderes paganos, conversiones y martirio.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Hipóstasis de los Arcontes",
+    "Fecha aproximada": "siglo III–IV d.C.",
+    "Idioma original": "Copto (Nag Hammadi)",
+    "Resumen": "Tratado setiano sobre los arcontes, la creación del mundo material, Adán y Eva, y la liberación de la humanidad mediante conocimiento revelado.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Apócrifos y pseudoepígrafos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Sobre el origen del mundo",
+    "Fecha aproximada": "siglo III–IV d.C.",
+    "Idioma original": "Copto (Nag Hammadi)",
+    "Resumen": "Cosmogonía gnóstica que reinterpreta Génesis, describe a los gobernantes celestes, la creación de la humanidad y el destino final del mundo.",
+    "_archivo": null,
+    "_tipo": null
   }
 ]
