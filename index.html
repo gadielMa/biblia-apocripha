@@ -1835,6 +1835,9 @@ function normalizeData() {
     const name = getBookName(row);
     if (name.includes('Manuscritos de Nag Hammadi') || name.includes('Textos de Qumrán')) {
       setType(row, 'colección');
+      // El catálogo muestra obras individuales, no inventarios de colecciones.
+      // Las fichas concretas de Nag Hammadi y Qumrán permanecen disponibles.
+      row._hidden = true;
     }
     if (name.includes('Rollo de Lamec')) {
       setType(row, 'sección de otra obra');
