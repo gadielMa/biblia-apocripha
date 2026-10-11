@@ -126,17 +126,52 @@
         }).join('');
         const work = await (await fetch(`${assetPrefix}${entry.file}`)).json();
         const currentChapterIndex = work.chapters.findIndex(chapter => Number(chapter.number) === requestedChapter);
-        const chapterNavigation = currentChapterIndex < 0 ? '' : (() => {
+        const gospelAndActsOrder = ['rvr1909-mateo', 'rvr1909-marcos', 'rvr1909-lucas', 'rvr1909-juan', 'rvr1909-hechos'];
+        const bookPosition = gospelAndActsOrder.indexOf(entry.id);
+        const previousBook = bookPosition > 0 ? catalog.find(item => item.id === gospelAndActsOrder[bookPosition - 1]) : null;
+        const nextBook = bookPosition >= 0 && bookPosition < gospelAndActsOrder.length - 1
+          ? catalog.find(item => item.id === gospelAndActsOrder[bookPosition + 1])
+          : null;
+        const chapterNavigation = currentChapterIndex < 0 ? '' : await (async () => {
           const chapterUrl = chapterNumber => {
             const url = new URL(window.location.href);
+            url.searchParams.set('obra', entry.id);
             url.searchParams.set('capitulo', chapterNumber);
             url.hash = '';
             return `${url.pathname}${url.search}`;
           };
-          const previousChapter = work.chapters[currentChapterIndex - 1];
-          const nextChapter = work.chapters[currentChapterIndex + 1];
-          const previousLink = previousChapter ? `<a href="${escapeHtml(chapterUrl(previousChapter.number))}" rel="prev">← Anterior</a>` : '<span class="chapter-disabled" aria-disabled="true">← Anterior</span>';
-          const nextLink = nextChapter ? `<a href="${escapeHtml(chapterUrl(nextChapter.number))}" rel="next">Siguiente →</a>` : '<span class="chapter-disabled" aria-disabled="true">Siguiente →</span>';
+          const adjacentBookUrl = (book, chapterNumber) => friendlyReader && friendlyRoute
+            ? `../${encodeURIComponent(book.id)}/?capitulo=${chapterNumber}`
+            : (() => {
+              const url = new URL(window.location.href);
+              url.searchParams.set('obra', book.id);
+              url.searchParams.set('capitulo', chapterNumber);
+              url.hash = '';
+              return `${url.pathname}${url.search}`;
+            })();
+          let previousTarget = currentChapterIndex > 0
+            ? { book: entry, chapter: work.chapters[currentChapterIndex - 1].number }
+            : null;
+          if (!previousTarget && currentChapterIndex === 0 && previousBook) {
+            const previousWork = await (await fetch(`${assetPrefix}${previousBook.file}`)).json();
+            previousTarget = { book: previousBook, chapter: previousWork.chapters.at(-1).number };
+          }
+          const nextTarget = currentChapterIndex < work.chapters.length - 1
+            ? { book: entry, chapter: work.chapters[currentChapterIndex + 1].number }
+            : nextBook ? { book: nextBook, chapter: 1 } : null;
+          const bookLabel = book => book.title.replace(/ \(Reina-Valera 1909\)$/, '');
+          const previousLabel = previousTarget?.book.id === entry.id
+            ? '← Anterior'
+            : previousTarget ? `← ${bookLabel(previousTarget.book)} ${previousTarget.chapter}` : '';
+          const nextLabel = nextTarget?.book.id === entry.id
+            ? 'Siguiente →'
+            : nextTarget ? `${bookLabel(nextTarget.book)} ${nextTarget.chapter} →` : '';
+          const previousLink = previousTarget
+            ? `<a href="${escapeHtml(previousTarget.book.id === entry.id ? chapterUrl(previousTarget.chapter) : adjacentBookUrl(previousTarget.book, previousTarget.chapter))}" rel="prev">${previousLabel}</a>`
+            : '<span class="chapter-disabled" aria-disabled="true">← Anterior</span>';
+          const nextLink = nextTarget
+            ? `<a href="${escapeHtml(nextTarget.book.id === entry.id ? chapterUrl(nextTarget.chapter) : adjacentBookUrl(nextTarget.book, nextTarget.chapter))}" rel="next">${nextLabel}</a>`
+            : '<span class="chapter-disabled" aria-disabled="true">Siguiente →</span>';
           return `<nav class="chapter-navigation" aria-label="Navegación de capítulos">${previousLink}<span class="chapter-position">Capítulo ${escapeHtml(work.chapters[currentChapterIndex].number)} de ${work.chapters.length}</span>${nextLink}</nav>`;
         })();
         const backLink = document.querySelector('.reader-tools a');
