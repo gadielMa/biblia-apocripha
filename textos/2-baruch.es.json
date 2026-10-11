@@ -3,7 +3,7 @@
   "title": "2 Baruc (Apocalipsis siríaco de Baruc)",
   "language": "es",
   "sourceLanguage": "Syriac (translated from Greek, probably from Hebrew)",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Apocrypha and Pseudepigrapha of the Old Testament, vol. 2 (1913)",
   "license": "Public-domain historical translation.",
   "sourceUrl": "https://www.futurerevealed.com/hebrew/apocalypse-baruch.htm",
@@ -3553,7 +3553,7 @@
     }
   ],
   "sourceTranslator": "R. H. Charles (1913)",
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 87,
     "totalChapters": 87

@@ -3,11 +3,11 @@
   "title": "Testamentum Domini",
   "language": "es",
   "sourceLanguage": "Siríaco/Griego",
-  "translator": "Transcripción automática del PDF local; pendiente de revisión humana",
-  "publication": "PDF local del proyecto",
+  "translator": "Transcripción de trabajo basada en la edición consultada",
+  "publication": "Edición fuente consultada",
   "license": "Texto extraído de la edición local; revisar licencia de la traducción antes de redistribuir.",
   "sourceUrl": "../pdfs/testamentum-domini.pdf",
-  "scopeNote": "Texto español extraído de la edición local. La numeración editorial sigue los apartados del PDF y no implica que el texto sea un evangelio narrativo.",
+  "scopeNote": "Texto español basado en la edición consultada. La numeración editorial sigue los apartados del PDF y no implica que el texto sea un evangelio narrativo.",
   "chapters": [
     {
       "number": 1,

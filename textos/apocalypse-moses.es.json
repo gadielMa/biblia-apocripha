@@ -3,7 +3,7 @@
   "title": "Vida de Adán y Eva (Apocalipsis de Moisés)",
   "language": "es",
   "sourceLanguage": "Greek",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Apocrypha and Pseudepigrapha of the Old Testament",
   "license": "Public-domain historical translation; verify local status before redistribution.",
   "sourceUrl": "https://ccel.org/c/charles/otpseudepig/apcmose.htm",
@@ -899,7 +899,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 43,
     "totalChapters": 43

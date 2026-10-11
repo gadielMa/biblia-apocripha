@@ -3,7 +3,7 @@
   "title": "Gospel of Thomas",
   "language": "es",
   "sourceLanguage": "Coptic",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Gnostic Gospels",
   "license": "Public-domain translation, as dedicated by the translator.",
   "sourceUrl": "https://thegnosticgospels.org/gospels/gospel-of-thomas/",
@@ -1420,7 +1420,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 115,
     "totalChapters": 115

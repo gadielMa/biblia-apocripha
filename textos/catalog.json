@@ -7,7 +7,7 @@
   },
   {
     "id": "1-enoc-es",
-    "title": "1 Enoc (traducción automática al español)",
+    "title": "1 Enoc (traducción de trabajo al español)",
     "language": "es",
     "file": "1-enoc.es.json"
   },
@@ -19,7 +19,7 @@
   },
   {
     "id": "2-enoc-es",
-    "title": "2 Enoc (recensión larga, traducción automática al español)",
+    "title": "2 Enoc (recensión larga, traducción de trabajo al español)",
     "language": "es",
     "file": "2-enoc.es.json"
   },
@@ -31,7 +31,7 @@
   },
   {
     "id": "3-enoc-es",
-    "title": "3 Enoc (traducción automática al español)",
+    "title": "3 Enoc (traducción de trabajo al español)",
     "language": "es",
     "file": "3-enoc.es.json"
   },
@@ -43,7 +43,7 @@
   },
   {
     "id": "proto-james-es",
-    "title": "Protoevangelio de Santiago (traducción automática)",
+    "title": "Protoevangelio de Santiago (traducción de trabajo)",
     "language": "es",
     "file": "proto-james.es.json"
   },
@@ -55,7 +55,7 @@
   },
   {
     "id": "nicodemus-es",
-    "title": "Evangelio de Nicodemo (traducción automática)",
+    "title": "Evangelio de Nicodemo (traducción de trabajo)",
     "language": "es",
     "file": "nicodemus.es.json"
   },
@@ -67,7 +67,7 @@
   },
   {
     "id": "infancy-thomas-es",
-    "title": "Evangelio de la Infancia de Tomás (traducción automática)",
+    "title": "Evangelio de la Infancia de Tomás (traducción de trabajo)",
     "language": "es",
     "file": "infancy-thomas.es.json"
   },
@@ -79,7 +79,7 @@
   },
   {
     "id": "didache-es",
-    "title": "Didaché (traducción automática)",
+    "title": "Didaché (traducción de trabajo)",
     "language": "es",
     "file": "didache.es.json"
   },
@@ -91,7 +91,7 @@
   },
   {
     "id": "ascension-isaiah-es",
-    "title": "Ascensión de Isaías (traducción automática)",
+    "title": "Ascensión de Isaías (traducción de trabajo)",
     "language": "es",
     "file": "ascension-isaiah.es.json"
   },
@@ -103,7 +103,7 @@
   },
   {
     "id": "hermas-es",
-    "title": "Pastor de Hermas (traducción automática)",
+    "title": "Pastor de Hermas (traducción de trabajo)",
     "language": "es",
     "file": "hermas.es.json"
   },
@@ -115,7 +115,7 @@
   },
   {
     "id": "barnabas-es",
-    "title": "Epístola de Bernabé (traducción automática)",
+    "title": "Epístola de Bernabé (traducción de trabajo)",
     "language": "es",
     "file": "barnabas.es.json"
   },
@@ -127,7 +127,7 @@
   },
   {
     "id": "apocalypse-peter-es",
-    "title": "Apocalipsis de Pedro (traducción automática)",
+    "title": "Apocalipsis de Pedro (traducción de trabajo)",
     "language": "es",
     "file": "apocalypse-peter.es.json"
   },
@@ -139,7 +139,7 @@
   },
   {
     "id": "gospel-peter-es",
-    "title": "Evangelio de Pedro (traducción automática)",
+    "title": "Evangelio de Pedro (traducción de trabajo)",
     "language": "es",
     "file": "gospel-peter.es.json"
   },
@@ -151,7 +151,7 @@
   },
   {
     "id": "1-clement-es",
-    "title": "1 Clemente (traducción automática)",
+    "title": "1 Clemente (traducción de trabajo)",
     "language": "es",
     "file": "1-clement.es.json"
   },
@@ -163,7 +163,7 @@
   },
   {
     "id": "paul-thecla-es",
-    "title": "Hechos de Pablo y Tecla (traducción automática)",
+    "title": "Hechos de Pablo y Tecla (traducción de trabajo)",
     "language": "es",
     "file": "paul-thecla.es.json"
   },
@@ -175,7 +175,7 @@
   },
   {
     "id": "apocalypse-paul-es",
-    "title": "Apocalipsis de Pablo (traducción automática)",
+    "title": "Apocalipsis de Pablo (traducción de trabajo)",
     "language": "es",
     "file": "apocalypse-paul.es.json"
   },
@@ -187,7 +187,7 @@
   },
   {
     "id": "psalms-solomon-es",
-    "title": "Salmos de Salomón (traducción automática)",
+    "title": "Salmos de Salomón (traducción de trabajo)",
     "language": "es",
     "file": "psalms-solomon.es.json"
   },
@@ -199,7 +199,7 @@
   },
   {
     "id": "testament-abraham-es",
-    "title": "Testamento de Abraham (traducción automática)",
+    "title": "Testamento de Abraham (traducción de trabajo)",
     "language": "es",
     "file": "testament-abraham.es.json"
   },
@@ -211,7 +211,7 @@
   },
   {
     "id": "apocalypse-moses-es",
-    "title": "Vida de Adán y Eva (traducción automática)",
+    "title": "Vida de Adán y Eva (traducción de trabajo)",
     "language": "es",
     "file": "apocalypse-moses.es.json"
   },
@@ -223,7 +223,7 @@
   },
   {
     "id": "4-esdras-es",
-    "title": "4 Esdras (traducción automática)",
+    "title": "4 Esdras (traducción de trabajo)",
     "language": "es",
     "file": "4-esdras.es.json"
   },
@@ -235,7 +235,7 @@
   },
   {
     "id": "3-maccabees-es",
-    "title": "3 Macabeos (traducción automática)",
+    "title": "3 Macabeos (traducción de trabajo)",
     "language": "es",
     "file": "3-maccabees.es.json"
   },
@@ -247,7 +247,7 @@
   },
   {
     "id": "4-maccabees-es",
-    "title": "4 Macabeos (traducción automática)",
+    "title": "4 Macabeos (traducción de trabajo)",
     "language": "es",
     "file": "4-maccabees.es.json"
   },
@@ -259,7 +259,7 @@
   },
   {
     "id": "prayer-manasseh-es",
-    "title": "Oración de Manasés (traducción automática)",
+    "title": "Oración de Manasés (traducción de trabajo)",
     "language": "es",
     "file": "prayer-manasseh.es.json"
   },
@@ -271,7 +271,7 @@
   },
   {
     "id": "psalm-151-es",
-    "title": "Salmo 151 (traducción automática)",
+    "title": "Salmo 151 (traducción de trabajo)",
     "language": "es",
     "file": "psalm-151.es.json"
   },
@@ -283,7 +283,7 @@
   },
   {
     "id": "gospel-mary-es",
-    "title": "Evangelio de María Magdalena (traducción automática)",
+    "title": "Evangelio de María Magdalena (traducción de trabajo)",
     "language": "es",
     "file": "gospel-mary.es.json"
   },
@@ -295,7 +295,7 @@
   },
   {
     "id": "gospel-thomas-es",
-    "title": "Evangelio de Tomás (traducción automática)",
+    "title": "Evangelio de Tomás (traducción de trabajo)",
     "language": "es",
     "file": "gospel-thomas.es.json"
   },
@@ -307,7 +307,7 @@
   },
   {
     "id": "gospel-philip-es",
-    "title": "Evangelio de Felipe (traducción automática)",
+    "title": "Evangelio de Felipe (traducción de trabajo)",
     "language": "es",
     "file": "gospel-philip.es.json"
   },
@@ -319,7 +319,7 @@
   },
   {
     "id": "gospel-judas-es",
-    "title": "Evangelio de Judas (traducción automática)",
+    "title": "Evangelio de Judas (traducción de trabajo)",
     "language": "es",
     "file": "gospel-judas.es.json"
   },
@@ -331,7 +331,7 @@
   },
   {
     "id": "gospel-truth-es",
-    "title": "Evangelio de la Verdad (traducción automática)",
+    "title": "Evangelio de la Verdad (traducción de trabajo)",
     "language": "es",
     "file": "gospel-truth.es.json"
   },
@@ -349,7 +349,7 @@
   },
   {
     "id": "acts-peter-es",
-    "title": "Hechos de Pedro (traducción automática)",
+    "title": "Hechos de Pedro (traducción de trabajo)",
     "language": "es",
     "file": "acts-peter.es.json"
   },
@@ -361,7 +361,7 @@
   },
   {
     "id": "acts-andrew-es",
-    "title": "Hechos de Andrés (traducción automática)",
+    "title": "Hechos de Andrés (traducción de trabajo)",
     "language": "es",
     "file": "acts-andrew.es.json"
   },
@@ -373,7 +373,7 @@
   },
   {
     "id": "acts-thomas-es",
-    "title": "Hechos de Tomás (traducción automática)",
+    "title": "Hechos de Tomás (traducción de trabajo)",
     "language": "es",
     "file": "acts-thomas.es.json"
   },
@@ -385,7 +385,7 @@
   },
   {
     "id": "epistle-apostles-es",
-    "title": "Epístola de los Apóstoles (traducción automática)",
+    "title": "Epístola de los Apóstoles (traducción de trabajo)",
     "language": "es",
     "file": "epistle-apostles.es.json"
   },
@@ -895,31 +895,31 @@
   },
   {
     "id": "apocalipsis-tomas-es",
-    "title": "Apocalipsis de Tomás (traducción automática)",
+    "title": "Apocalipsis de Tomás (traducción de trabajo)",
     "language": "es",
     "file": "apocalipsis-tomas.es.json"
   },
   {
     "id": "apocalypse-sedrach-es",
-    "title": "Apocalipsis de Sedrac (traducción automática)",
+    "title": "Apocalipsis de Sedrac (traducción de trabajo)",
     "language": "es",
     "file": "apocalipsis-sedrac.es.json"
   },
   {
     "id": "testament-isaac-es",
-    "title": "Testamento de Isaac (traducción automática)",
+    "title": "Testamento de Isaac (traducción de trabajo)",
     "language": "es",
     "file": "testamento-isaac.es.json"
   },
   {
     "id": "ladder-jacob-es",
-    "title": "Escalera de Jacob (fragmentos, traducción automática)",
+    "title": "Escalera de Jacob (fragmentos, traducción de trabajo)",
     "language": "es",
     "file": "escalera-jacob.es.json"
   },
   {
     "id": "testament-jacob-es",
-    "title": "Testamento de Jacob (fragmento, traducción automática)",
+    "title": "Testamento de Jacob (fragmento, traducción de trabajo)",
     "language": "es",
     "file": "testamento-jacob.es.json"
   },
@@ -949,7 +949,7 @@
   },
   {
     "id": "apocalypse-abraham-es",
-    "title": "Apocalipsis de Abraham (traducción automática)",
+    "title": "Apocalipsis de Abraham (traducción de trabajo)",
     "language": "es",
     "file": "apocalypse-abraham.es.json"
   },

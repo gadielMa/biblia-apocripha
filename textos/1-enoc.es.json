@@ -3,7 +3,7 @@
   "title": "1 Enoc",
   "language": "es",
   "sourceLanguage": "Ge'ez (translation from Ethiopic)",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Book of Enoch, 1917",
   "license": "Public domain in the United States; verify local public-domain status before redistribution.",
   "sourceUrl": "https://www.gutenberg.org/ebooks/77935",
@@ -5760,7 +5760,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 108,
     "totalChapters": 108

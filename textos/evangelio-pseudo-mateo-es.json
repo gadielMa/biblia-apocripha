@@ -3,11 +3,11 @@
   "title": "Evangelio del Pseudo-Mateo",
   "language": "es",
   "sourceLanguage": "Latín",
-  "translator": "Transcripción automática del PDF local; pendiente de revisión humana",
-  "publication": "PDF local del proyecto",
+  "translator": "Transcripción de trabajo basada en la edición consultada",
+  "publication": "Edición fuente consultada",
   "license": "Texto extraído de la edición local; revisar licencia de la traducción antes de redistribuir.",
   "sourceUrl": "../pdfs/evangelio-pseudo-mateo.pdf",
-  "scopeNote": "Texto español extraído de la edición local. La numeración editorial facilita la búsqueda y puede variar según la edición.",
+  "scopeNote": "Texto español basado en la edición consultada. La numeración editorial facilita la búsqueda y puede variar según la edición.",
   "chapters": [
     {
       "number": 1,

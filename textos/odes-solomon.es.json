@@ -3,7 +3,7 @@
   "title": "Odas de Salomón",
   "language": "es",
   "sourceLanguage": "Syriac (with Greek and Coptic witnesses)",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Odes and Psalms of Solomon (1911)",
   "license": "Public-domain historical translation.",
   "sourceUrl": "https://archive.org/details/odespsalmsofsolo02harruoft",
@@ -2343,7 +2343,7 @@
     }
   ],
   "sourceTranslator": "J. Rendel Harris and Alphonse Mingana (1911)",
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 42,
     "totalChapters": 42

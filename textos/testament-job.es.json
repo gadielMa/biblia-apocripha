@@ -3,7 +3,7 @@
   "title": "Testamento de Job",
   "language": "es",
   "sourceLanguage": "Greek",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "Apocrypha Anecdota II, Texts and Studies 5/1 (1897)",
   "license": "Public-domain historical translation.",
   "sourceUrl": "https://wesley.nnu.edu/sermons-essays-books/noncanonical-literature/noncanonical-literature-ot-pseudepigrapha/testament-of-job/",
@@ -1375,7 +1375,7 @@
     }
   ],
   "sourceTranslator": "M. R. James (1897)",
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 12,
     "totalChapters": 12

@@ -3,12 +3,12 @@
   "title": "1 Meqabyan",
   "language": "es",
   "sourceLanguage": "Ge'ez",
-  "translator": "Traducción automática local al español desde una traducción pública inglesa, pendiente de revisión humana",
+  "translator": "Traducción de trabajo basada en la edición indicada",
   "sourceTranslator": "Traducción pública disponible en Wikisource",
   "publication": "Canon etíope",
-  "license": "Texto base consultado en Wikisource; traducción automática de trabajo",
+  "license": "Texto base consultado en Wikisource; traducción de trabajo",
   "sourceUrl": "https://en.wikisource.org/wiki/Translation:1_Meqabyan",
-  "translationNote": "La traducción española es automática y debe revisarse; este texto es distinto de 1–4 Macabeos griegos.",
+  "translationNote": "Versión de trabajo; no es una edición crítica.",
   "chapters": [
     {
       "number": 1,

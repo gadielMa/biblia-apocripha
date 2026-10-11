@@ -3,7 +3,7 @@
   "title": "Hechos de Andrés",
   "language": "es",
   "sourceLanguage": "Greek (surviving in Latin epitome and Greek fragments)",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Apocryphal New Testament (1924), reproduced by The Gnostic Gospels",
   "license": "Public-domain historical translation, as dedicated by The Gnostic Gospels.",
   "sourceUrl": "https://thegnosticgospels.org/gospels/acts-of-andrew/",
@@ -731,7 +731,7 @@
     }
   ],
   "sourceTranslator": "M. R. James (1924)",
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 60,
     "totalChapters": 60

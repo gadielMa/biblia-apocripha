@@ -3,7 +3,7 @@
   "title": "Evangelio de Pedro",
   "language": "es",
   "sourceLanguage": "Greek fragment",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "The Apocryphal New Testament (1924)",
   "license": "Public-domain historical translation; verify local status before redistribution.",
   "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Passion_Gospels/The_Gospel_of_Peter",
@@ -151,7 +151,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 11,
     "totalChapters": 11

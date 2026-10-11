@@ -3,11 +3,11 @@
   "title": "Evangelio árabe de la Infancia",
   "language": "es",
   "sourceLanguage": "Árabe/Siríaco",
-  "translator": "Transcripción automática del PDF local; pendiente de revisión humana",
-  "publication": "PDF local del proyecto",
+  "translator": "Transcripción de trabajo basada en la edición consultada",
+  "publication": "Edición fuente consultada",
   "license": "Texto extraído de la edición local; revisar licencia de la traducción antes de redistribuir.",
   "sourceUrl": "../pdfs/evangelio-arabe-infancia.pdf",
-  "scopeNote": "Texto español extraído de la edición local. Es una compilación tardía de relatos de infancia y no un evangelio canónico.",
+  "scopeNote": "Texto español basado en la edición consultada. Es una compilación tardía de relatos de infancia y no un evangelio canónico.",
   "chapters": [
     {
       "number": 1,

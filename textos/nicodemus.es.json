@@ -3,7 +3,7 @@
   "title": "Evangelio de Nicodemo (Hechos de Pilato)",
   "language": "es",
   "sourceLanguage": "Greek/Latin traditions",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "Forbidden Gospels and Epistles",
   "license": "Public-domain edition; verify local status before redistribution.",
   "sourceUrl": "https://www.gutenberg.org/files/6516/6516-h/6516-h.htm",
@@ -1989,7 +1989,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 4,
     "totalChapters": 20

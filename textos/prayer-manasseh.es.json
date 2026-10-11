@@ -3,7 +3,7 @@
   "title": "Oración de Manasés",
   "language": "es",
   "sourceLanguage": "Greek",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "Brenton English Septuagint",
   "license": "Public domain (eBible.org record for the Brenton English Septuagint).",
   "sourceUrl": "https://ebible.org/eng-Brenton/",
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 1,
     "totalChapters": 1

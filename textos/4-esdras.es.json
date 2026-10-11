@@ -3,7 +3,7 @@
   "title": "4 Esdras (Apocalipsis de Esdras)",
   "language": "es",
   "sourceLanguage": "Latin, with lost Greek and Hebrew/Aramaic antecedents",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "Deuterocanonical Books of the Bible, Project Gutenberg eBook 124",
   "license": "Public domain in the United States (Project Gutenberg record).",
   "sourceUrl": "https://www.gutenberg.org/ebooks/124",
@@ -3602,7 +3602,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 16,
     "totalChapters": 16

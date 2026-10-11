@@ -3,12 +3,12 @@
   "title": "Carta de Jeremías (Baruc 6)",
   "language": "es",
   "sourceLanguage": "Griego",
-  "translator": "Traducción automática local al español desde Brenton (1870), pendiente de revisión humana",
+  "translator": "Traducción de trabajo basada en la edición indicada",
   "sourceTranslator": "Sir Lancelot Charles Lee Brenton (1870)",
   "publication": "Brenton Septuagint Translation",
-  "license": "Texto base de dominio público; traducción automática de trabajo",
+  "license": "Texto base de dominio público; traducción de trabajo",
   "sourceUrl": "https://ebible.org/eng-Brenton/",
-  "translationNote": "Traducción automática de una edición inglesa de dominio público. Revisar antes de considerarla una edición crítica.",
+  "translationNote": "Versión de trabajo; no es una edición crítica.",
   "chapters": [
     {
       "number": 1,

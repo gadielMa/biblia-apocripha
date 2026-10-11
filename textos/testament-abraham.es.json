@@ -3,7 +3,7 @@
   "title": "Testamento de Abraham",
   "language": "es",
   "sourceLanguage": "Greek",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "Ante-Nicene Fathers, Volume IX",
   "license": "Public-domain historical translation; verify local status before redistribution.",
   "sourceUrl": "https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_IX/The_Testament_of_Abraham/The_Testament_of_Abraham/Version_I",
@@ -209,7 +209,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 20,
     "totalChapters": 20

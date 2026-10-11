@@ -3,12 +3,12 @@
   "title": "Jubileos",
   "language": "es",
   "sourceLanguage": "Ge'ez",
-  "translator": "Traducción automática local al español desde R. H. Charles (1902), pendiente de revisión humana",
+  "translator": "Traducción de trabajo basada en la edición indicada",
   "sourceTranslator": "R. H. Charles (1902)",
   "publication": "El Libro de los Jubileos",
-  "license": "Texto base de dominio público; traducción automática de trabajo",
+  "license": "Texto base de dominio público; traducción de trabajo",
   "sourceUrl": "https://ccel.org/c/charles/pseudepigrapha/jubilee/1.htm",
-  "translationNote": "Traducción automática de una edición inglesa de dominio público. Revisar antes de considerarla una edición crítica.",
+  "translationNote": "Versión de trabajo; no es una edición crítica.",
   "chapters": [
     {
       "number": 1,

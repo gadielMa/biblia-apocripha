@@ -3,7 +3,7 @@
   "title": "3 Enoc (Libro hebreo de Enoc / Sefer Hekhalot)",
   "language": "es",
   "sourceLanguage": "Hebrew",
-  "translator": "Traducción automática local (Argos Translate), pendiente de revisión humana",
+  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
   "publication": "3 Enoch or The Hebrew Book of Enoch, 1928",
   "license": "Public domain in the United States due to its 1928 publication; verify local status before redistribution.",
   "sourceUrl": "https://archive.org/details/HebrewBookOfEnochenoch3",
@@ -1683,7 +1683,7 @@
       ]
     }
   ],
-  "translationNote": "Traducción automática inicial desde la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
+  "translationNote": "Traducción de trabajo basada en la edición inglesa indicada. No es una traducción crítica ni sustituye el texto fuente.",
   "translationProgress": {
     "completedThroughChapter": 53,
     "totalChapters": 53

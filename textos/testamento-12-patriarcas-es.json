@@ -3,11 +3,11 @@
   "title": "Testamento de los 12 Patriarcas",
   "language": "es",
   "sourceLanguage": "Griego (transmisión)",
-  "translator": "Transcripción automática del PDF local; pendiente de revisión humana",
-  "publication": "PDF local del proyecto",
+  "translator": "Transcripción de trabajo basada en la edición consultada",
+  "publication": "Edición fuente consultada",
   "license": "Texto extraído de la edición local; revisar licencia de la traducción antes de redistribuir.",
   "sourceUrl": "../pdfs/testamento-12-patriarcas.pdf",
-  "scopeNote": "Texto español extraído de la edición local. La numeración se conserva como división editorial para búsqueda; la obra contiene materiales transmitidos y capas de redacción discutidas.",
+  "scopeNote": "Texto español basado en la edición consultada. La numeración se conserva como división editorial para búsqueda; la obra contiene materiales transmitidos y capas de redacción discutidas.",
   "chapters": [
     {
       "number": 1,
