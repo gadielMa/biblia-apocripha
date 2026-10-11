@@ -85,7 +85,7 @@
   <header>
     <div class="header-inner">
       <div class="reader-tools">
-        <a href="../index.html">← Volver a la biblioteca</a>
+        <a href="../">← Volver a la biblioteca</a>
         <input class="reader-search" id="reader-search" type="search" placeholder="Buscar en este texto…" aria-label="Buscar en este texto">
       </div>
     <h1 id="title">Cargando texto…</h1>
@@ -103,7 +103,7 @@
     const friendlyReader = routeIndex >= 0;
     const documentId = params.get('obra') || friendlyRoute;
     const assetPrefix = friendlyReader ? (friendlyRoute ? '../../textos/' : '../textos/') : '';
-    const homeHref = friendlyReader ? (friendlyRoute ? '../../index.html' : '../index.html') : '../index.html';
+    const homeHref = friendlyReader ? (friendlyRoute ? '../../' : '../') : '../';
     const requestedChapter = Number(params.get('capitulo'));
     const reader = document.getElementById('reader');
     const readerSearch = document.getElementById('reader-search');

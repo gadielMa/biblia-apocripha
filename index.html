@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://induliru.com/biblia/">
+  <script>
+    if (/\/index\.html$/i.test(location.pathname)) {
+      const canonicalPath = location.pathname.slice(0, -'index.html'.length);
+      history.replaceState(null, '', `${canonicalPath}${location.search}${location.hash}`);
+    }
+  </script>
   <meta name="theme-color" content="#8d5f35">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
