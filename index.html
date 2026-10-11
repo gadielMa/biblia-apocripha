@@ -1662,9 +1662,8 @@ function normalizeData() {
   const find = (name) => DATA.find(row => getBookName(row).includes(name));
 
   DATA.forEach(row => {
-    const isCanonicalBook = row._canonico === true || row._tipo === 'bible';
-    // Las búsquedas externas no cubren de forma fiable los cánones y textos del catálogo.
-    // Hasta tener HTML propio, es preferible no ofrecer una búsqueda engañosa.
+    const canonicalGroups = new Set(['Torá / Antiguo Testamento', 'Antiguo Testamento', 'Nuevo Testamento']);
+    const isCanonicalBook = row._canonico === true || row._tipo === 'bible' || canonicalGroups.has(row.Grupo);
     if (isCanonicalBook) {
       row._archivo = null;
       row._tipo = null;
