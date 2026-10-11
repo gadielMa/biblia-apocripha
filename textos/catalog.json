@@ -922,5 +922,11 @@
     "title": "Testamento de Jacob (fragmento, traducción automática)",
     "language": "es",
     "file": "testamento-jacob.es.json"
+  },
+  {
+    "id": "apocryphon-john-es",
+    "title": "Apócrifo de Juan (resumen en español)",
+    "language": "es",
+    "file": "apocryphon-juan.es.json"
   }
 ]

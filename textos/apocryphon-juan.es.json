@@ -1,0 +1,23 @@
+{
+  "id": "apocryphon-john-es",
+  "title": "Apócrifo de Juan (Libro Secreto de Juan)",
+  "language": "es",
+  "sourceLanguage": "Copto",
+  "translator": "Resumen original en español; no reproduce una traducción editorial protegida",
+  "publication": "Biblioteca de Nag Hammadi",
+  "license": "Resumen original; el texto completo requiere una edición con licencia compatible.",
+  "sourceUrl": "https://www.gnosis.org/naghamm/apocjn-meyer.html",
+  "notes": "Entrada de orientación: el texto completo tiene varias recensiones y traducciones modernas. Se incorpora un resumen buscable hasta integrar una edición redistribuible.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Resumen de contenido",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Apócrifo de Juan presenta una revelación secreta de Jesús a Juan. Describe al Espíritu invisible, la emanación de Barbelo, el origen de las potencias celestiales y la creación del demiurgo Yaldabaot. Explica cómo la humanidad queda atrapada en la ignorancia y cómo el conocimiento espiritual, la memoria y la revelación permiten regresar a la luz. Las recensiones larga y breve difieren en extensión y orden de algunos pasajes."
+        }
+      ]
+    }
+  ]
+}
