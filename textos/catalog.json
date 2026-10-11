@@ -910,5 +910,11 @@
     "title": "Testamento de Isaac (traducción automática)",
     "language": "es",
     "file": "testamento-isaac.es.json"
+  },
+  {
+    "id": "ladder-jacob-es",
+    "title": "Escalera de Jacob (fragmentos, traducción automática)",
+    "language": "es",
+    "file": "escalera-jacob.es.json"
   }
 ]
