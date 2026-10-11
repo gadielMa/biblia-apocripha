@@ -946,5 +946,11 @@
     "title": "Evangelio de los Ebionitas (fragmentos y resumen)",
     "language": "es",
     "file": "evangelio-ebionitas.es.json"
+  },
+  {
+    "id": "apocalypse-abraham-es",
+    "title": "Apocalipsis de Abraham (traducción automática)",
+    "language": "es",
+    "file": "apocalypse-abraham.es.json"
   }
 ]
