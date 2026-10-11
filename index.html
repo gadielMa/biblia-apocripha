@@ -942,13 +942,9 @@
     @media (max-width: 1200px) {
     }
     .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
-    .view-tabs.is-scrolled .view-menu-toggle { width: 100%; }
+    .view-tabs.is-scrolled .view-menu-toggle { width: max-content; }
     .view-tabs .view-links { width: 100%; }
     .view-tabs.open .view-links { margin: .55rem 0 0; }
-    @media (min-width: 769px) {
-      .view-tabs.is-scrolled { width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); }
-      .view-tabs.is-scrolled .view-menu-toggle { width: 100%; }
-    }
   </style>
 </head>
 <body>
@@ -2749,7 +2745,7 @@ gnosticSection.innerHTML = `<div class="extinct-intro"><h2 id="gnosticism-title"
 const gnosticIllustrations = {
   'Juan 10:34': ['assets/timeline/jesus-ensenando.png', 'Jesús enseña y dialoga con sus oyentes'],
   'Romanos 8:11': ['assets/timeline/resurreccion-jesus.png', 'La resurrección de Jesús como imagen de vida nueva'],
-  'Juan 17:15': ['assets/gnosticismo/juan-17-15.jpg', 'Jesús ora de noche en un huerto mientras sus discípulos descansan a distancia'],
+  'Juan 17:15–16': ['assets/gnosticismo/juan-17-15.jpg', 'Jesús ora de noche en un huerto mientras sus discípulos descansan a distancia'],
   'Juan 3:3': ['assets/timeline/jesus-resucitado-gnostico.png', 'Jesús resucitado conversa con sus discípulos sobre una vida renovada'],
   'Testamentum Domini 1:6': ['assets/gnosticismo/testamentum-domini-1-6.jpg', 'Cielo apocalíptico simbólico con el sol y la luna oscurecidos y estrellas fugaces'],
   'Testamentum Domini 1:21 · Sobre el obispo': ['assets/gnosticismo/testamentum-domini-1-21.jpg', 'Una comunidad cristiana antigua reunida para elegir a un obispo'],
