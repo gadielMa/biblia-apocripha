@@ -343,11 +343,11 @@
     .archivo-none { color: var(--text2); font-size: .8rem; }
 
     .fecha { color: var(--text2); font-size: .82rem; white-space: nowrap; }
-    .fecha-proximity { display: inline-block; max-width: 100%; padding: .18rem .48rem; border: 1px solid hsl(var(--date-hue, 210) 34% 78%); border-radius: 999px; color: hsl(var(--date-hue, 210) 46% 29%); background: hsl(var(--date-hue, 210) 58% 93%); font-size: .76rem; font-weight: 750; line-height: 1.35; white-space: normal; }
+    .fecha-proximity { display: inline-flex; align-items: center; justify-content: center; width: fit-content; min-width: 5.5rem; max-width: 100%; padding: .22rem .55rem; border: 1px solid hsl(var(--date-hue, 210) 62% 43%); border-radius: 999px; color: hsl(var(--date-hue, 210) 68% 20%); background: hsl(var(--date-hue, 210) 76% 82%); font-size: .76rem; font-weight: 800; line-height: 1.35; text-align: center; white-space: normal; }
     .catalog-date-key { max-width: 1240px; margin: .8rem auto; padding: .75rem 1rem; border: 1px solid var(--border); border-radius: 12px; color: var(--text2); background: rgba(255,255,255,.82); font-size: .78rem; }
     .catalog-date-key strong { color: var(--text); }
     .catalog-date-key p { margin: .35rem 0 0; }
-    .catalog-date-gradient { display: inline-block; width: min(220px, 38vw); height: .65rem; margin: 0 .55rem; border: 1px solid rgba(41,55,47,.15); border-radius: 999px; vertical-align: middle; background: linear-gradient(90deg, hsl(142 45% 43%), hsl(95 45% 48%), hsl(58 55% 50%), hsl(28 65% 51%), hsl(5 60% 48%)); }
+    .catalog-date-gradient { display: inline-block; width: min(220px, 38vw); height: .65rem; margin: 0 .55rem; border: 1px solid rgba(41,55,47,.15); border-radius: 999px; vertical-align: middle; background: linear-gradient(90deg, hsl(132 72% 36%) 0%, hsl(132 72% 36%) 30%, hsl(112 78% 42%) 48%, hsl(58 88% 48%) 65%, hsl(28 86% 48%) 82%, hsl(5 78% 45%) 100%); }
     .idioma { color: var(--text2); font-size: .82rem; }
     .resumen { color: var(--text2); font-size: .82rem; max-width: 340px; line-height: 1.45; }
     td:nth-child(2), td:nth-child(4) {
@@ -1017,8 +1017,8 @@
 <aside class="catalog-date-key" aria-label="Escala orientativa de proximidad temporal">
   <strong>Proximidad temporal al año 33 d. C.</strong>
   <span class="catalog-date-gradient" aria-hidden="true"></span>
-  <span>más cerca (verde) → más lejos (rojizo)</span>
-  <p>Es una orientación basada en las fechas aproximadas de composición; la cercanía por sí sola no demuestra la fidelidad ni la autenticidad de un texto.</p>
+  <span>más antiguo / hasta ~100 d. C. (verde) → posteriores (amarillo, naranja y rojo)</span>
+  <p>La escala se basa en fechas aproximadas de composición y expresa una orientación editorial sobre cercanía temporal a la resurrección; no demuestra por sí sola la fidelidad ni la autenticidad de un texto.</p>
 </aside>
 
 <div class="table-wrap">
@@ -1525,6 +1525,8 @@
   <div class="extinct-grid">
     <article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/enoc-vision.png" alt="Enoc contempla una visión celeste" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis y Hebreos</span><h3>Enoc</h3><p>Génesis dice que Enoc caminó con Dios y «desapareció, porque Dios se lo llevó». Hebreos interpreta que fue trasladado sin ver la muerte. Los libros atribuidos a Enoc amplían después sus viajes celestes.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=5#pasaje-5-21">Génesis 5:21–24</a><a href="lectura/?obra=rvr1909-hebreos&amp;capitulo=11#pasaje-11-5">Hebreos 11:5</a><a href="lectura/?obra=1-enoc-es&amp;capitulo=14">1 Enoc 14 · tradición posterior</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/elias-carro-fuego.jpg" alt="Elías es llevado hacia el cielo en un torbellino" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relato bíblico</span><h3>Elías</h3><p>Elías y Eliseo caminan juntos cuando un torbellino lo lleva al cielo. El texto también describe un carro y caballos de fuego que los separan.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-2-reyes&amp;capitulo=2#pasaje-2-1">2 Reyes 2:1–12</a></div></div></article>
+    <article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/moises-ascension.png" alt="Moisés contempla la Tierra Prometida desde el monte Nebo al amanecer" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Muerte y elevación tradicional</span><h3>Moisés</h3><p>Deuteronomio cuenta que Moisés subió al monte Nebo, contempló la Tierra Prometida y murió allí. El texto no dice que ascendiera corporalmente al cielo; algunas tradiciones posteriores interpretan su despedida como una elevación especial.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-deuteronomio&amp;capitulo=34#pasaje-34-1">Deuteronomio 34:1–8</a><a href="lectura/?obra=rvr1909-judas&amp;capitulo=1#pasaje-1-9">Judas 1:9 · tradición sobre el cuerpo de Moisés</a></div></div></article>
+    <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Figura enigmática · interpretación tipológica</span><h3>Melquisedec</h3><p>Génesis presenta a Melquisedec como rey de Salem y sacerdote del Dios Altísimo. Hebreos lo describe “sin padre, sin madre, sin genealogía” dentro de su argumento teológico, pero no afirma que haya ascendido al cielo. Su inclusión aquí señala una tradición interpretativa, no una ascensión narrada.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=14#pasaje-14-18">Génesis 14:18–20</a><a href="lectura/?obra=rvr1909-hebreos&amp;capitulo=7#pasaje-7-1">Hebreos 7:1–3</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/resurreccion-jesus.png" alt="Jesús resucitado en una escena luminosa" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Nuevo Testamento</span><h3>Jesús</h3><p>Hechos cuenta que Jesús fue elevado y una nube lo ocultó de la vista de sus discípulos. Lucas también concluye con su ascensión al cielo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-hechos&amp;capitulo=1#pasaje-1-1">Hechos 1:1–11</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=24#pasaje-24-50">Lucas 24:50–53</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/anunciacion-maria.jpg" alt="Representación referencial de María, madre de Jesús; no representa la Asunción" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Dogma católico · 1950</span><h3>María, madre de Jesús</h3><p>La Iglesia católica enseña que María fue llevada en cuerpo y alma a la gloria celestial (Asunción). Es una doctrina eclesial, no un episodio narrado en la Biblia. No debe confundirse con María Magdalena, a quien los Evangelios presentan como testigo de la resurrección.</p><div class="extinct-refs"><a href="https://www.vatican.va/content/pius-xii/en/apost_constitutions/documents/hf_p-xii_apc_19501101_munificentissimus-deus.html" target="_blank" rel="noopener noreferrer">Pío XII · Munificentissimus Deus (1950)</a></div></div></article>
   </div>
@@ -2145,11 +2147,9 @@ function renderDateProximity(dateText) {
   if (!interval) return esc(date);
   const [start, end] = interval;
   const center = (start + end) / 2;
-  const uncertainty = (end - start) / 2;
-  const distance = Math.abs(center - 33) + uncertainty;
-  const hue = Math.round(142 - 137 * Math.min(1, Math.log1p(distance) / Math.log1p(2500)));
-  const approximateYears = Math.round(distance);
-  return `<span class="fecha-proximity" style="--date-hue:${hue}" title="Aproximadamente ${approximateYears} años de distancia cronológica del 33 d. C.; orientativo, no determina la fiabilidad del texto.">${esc(date)}</span>`;
+  const yearsAfterGreenBand = Math.max(0, center - 100);
+  const hue = Math.round(132 - 127 * Math.min(1, yearsAfterGreenBand / 600));
+  return `<span class="fecha-proximity" style="--date-hue:${hue}" title="Escala visual orientativa: fechas hasta alrededor de 100 d. C. en verde; las posteriores pasan gradualmente a tonos cálidos. No determina por sí sola la fiabilidad del texto.">${esc(date)}</span>`;
 }
 
 function renderRow(row) {
@@ -2345,6 +2345,16 @@ function render() {
 
   if (sortCol) {
     filtered.sort((a, b) => {
+      if (sortCol === 'Fecha aproximada') {
+        const dateA = dateInterval(a[sortCol]);
+        const dateB = dateInterval(b[sortCol]);
+        if (!dateA && !dateB) return getBookName(a).localeCompare(getBookName(b), 'es');
+        if (!dateA) return 1;
+        if (!dateB) return -1;
+        const midpointA = (dateA[0] + dateA[1]) / 2;
+        const midpointB = (dateB[0] + dateB[1]) / 2;
+        return (midpointA - midpointB || getBookName(a).localeCompare(getBookName(b), 'es')) * (sortAsc ? 1 : -1);
+      }
       const va = (sortCol === 'Nombre' ? getBookName(a) : (a[sortCol] || '')).toLowerCase();
       const vb = (sortCol === 'Nombre' ? getBookName(b) : (b[sortCol] || '')).toLowerCase();
       return sortAsc ? va.localeCompare(vb, 'es') : vb.localeCompare(va, 'es');
