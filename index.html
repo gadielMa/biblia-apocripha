@@ -1014,11 +1014,11 @@
 
 <div class="row-count" id="row-count"></div>
 
-<aside class="catalog-date-key" aria-label="Escala orientativa de proximidad temporal">
-  <strong>Proximidad temporal al año 33 d. C.</strong>
+<aside class="catalog-date-key" aria-label="Escala temporal orientativa de composición">
+  <strong>Escala temporal de composición</strong>
   <span class="catalog-date-gradient" aria-hidden="true"></span>
-  <span>más antiguo / hasta ~100 d. C. (verde) → posteriores (amarillo, naranja y rojo)</span>
-  <p>La escala se basa en fechas aproximadas de composición y expresa una orientación editorial sobre cercanía temporal a la resurrección; no demuestra por sí sola la fidelidad ni la autenticidad de un texto.</p>
+  <span>más antiguo, desde ~500 a. C. (verde) → más reciente, hasta ~2000 d. C. (rojo)</span>
+  <p>La escala usa fechas aproximadas de composición y sirve sólo como orientación cronológica; no demuestra por sí sola la fidelidad ni la autenticidad de un texto.</p>
 </aside>
 
 <div class="table-wrap">
@@ -2147,9 +2147,11 @@ function renderDateProximity(dateText) {
   if (!interval) return esc(date);
   const [start, end] = interval;
   const center = (start + end) / 2;
-  const yearsAfterGreenBand = Math.max(0, center - 100);
-  const hue = Math.round(132 - 127 * Math.min(1, yearsAfterGreenBand / 600));
-  return `<span class="fecha-proximity" style="--date-hue:${hue}" title="Escala visual orientativa: fechas hasta alrededor de 100 d. C. en verde; las posteriores pasan gradualmente a tonos cálidos. No determina por sí sola la fiabilidad del texto.">${esc(date)}</span>`;
+  const oldest = -500;
+  const newest = 2000;
+  const progress = Math.min(1, Math.max(0, (center - oldest) / (newest - oldest)));
+  const hue = Math.round(132 * (1 - progress));
+  return `<span class="fecha-proximity" style="--date-hue:${hue}" title="Escala visual orientativa: desde aproximadamente 500 a. C. (verde) hasta 2000 d. C. (rojo). No determina por sí sola la fidelidad ni la autenticidad del texto.">${esc(date)}</span>`;
 }
 
 function renderRow(row) {
