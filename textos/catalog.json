@@ -892,5 +892,11 @@
     "title": "4 Baruc (Paraleipomena Ieremiou)",
     "language": "es",
     "file": "4-baruc.es.json"
+  },
+  {
+    "id": "apocalipsis-tomas-es",
+    "title": "Apocalipsis de Tomás (traducción automática)",
+    "language": "es",
+    "file": "apocalipsis-tomas.es.json"
   }
 ]
