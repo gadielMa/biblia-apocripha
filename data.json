@@ -1524,7 +1524,8 @@
     "Idioma original": "Hebreo",
     "Resumen": "Descripción ideal del Templo y leyes",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen estructurado"
   },
   {
     "Grupo": "Textos de Qumrán / Rollos del Mar Muerto",
@@ -1692,7 +1693,8 @@
     "Idioma original": "Copto (orig. griego)",
     "Resumen": "Revelación secreta sobre el Espíritu invisible, Barbelo, Yaldabaot, la creación y el despertar mediante conocimiento espiritual.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Evangelios judeocristianos",
@@ -1704,7 +1706,8 @@
     "Idioma original": "Hebreo/Arameo",
     "Resumen": "Evangelio perdido conocido por fragmentos citados por autores cristianos; vinculado a comunidades judeocristianas.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Fragmentario"
   },
   {
     "Grupo": "Evangelios judeocristianos",
@@ -1716,7 +1719,8 @@
     "Idioma original": "Arameo/Hebreo",
     "Resumen": "Evangelio judeocristiano perdido, conocido por citas y variantes de relatos evangélicos conservadas por autores antiguos.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Fragmentario"
   },
   {
     "Grupo": "Evangelios judeocristianos",
@@ -1728,7 +1732,8 @@
     "Idioma original": "Griego",
     "Resumen": "Evangelio perdido conocido por fragmentos de una comunidad judeocristiana asociada a los ebionitas.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Fragmentario"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1740,7 +1745,8 @@
     "Idioma original": "Griego",
     "Resumen": "Narración de la conversión de Asenet, su matrimonio con José y la reconciliación entre identidades egipcias e israelitas. Combina romance, visión, arrepentimiento y providencia.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1752,7 +1758,8 @@
     "Idioma original": "Hebreo/Latín",
     "Resumen": "Reescritura de la historia bíblica desde Adán hasta Saúl, con ampliaciones legendarias, discursos y tradiciones que no aparecen en el texto canónico.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1764,7 +1771,8 @@
     "Idioma original": "Griego",
     "Resumen": "Diálogo de Salomón con demonios y ángeles durante la construcción del templo; incluye nombres, funciones, enfermedades y medios de sometimiento espiritual.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1776,7 +1784,8 @@
     "Idioma original": "Griego",
     "Resumen": "Relatos de viajes, milagros y discursos del apóstol Juan, con episodios de conversión, himnos y una cristología diversa.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1788,7 +1797,8 @@
     "Idioma original": "Griego",
     "Resumen": "Tradiciones sobre la misión de Felipe en Asia Menor, confrontaciones con autoridades y poderes paganos, conversiones y martirio.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1800,7 +1810,8 @@
     "Idioma original": "Copto (Nag Hammadi)",
     "Resumen": "Tratado setiano sobre los arcontes, la creación del mundo material, Adán y Eva, y la liberación de la humanidad mediante conocimiento revelado.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1812,7 +1823,8 @@
     "Idioma original": "Copto (Nag Hammadi)",
     "Resumen": "Cosmogonía gnóstica que reinterpreta Génesis, describe a los gobernantes celestes, la creación de la humanidad y el destino final del mundo.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen"
   },
   {
     "Grupo": "Textos de Qumrán / Tradiciones eclesiales",
@@ -1824,6 +1836,7 @@
     "Idioma original": "Ge’ez/Griego",
     "Resumen": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen estructurado"
   }
 ]
