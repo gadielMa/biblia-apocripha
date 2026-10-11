@@ -904,5 +904,11 @@
     "title": "Apocalipsis de Sedrac (traducción automática)",
     "language": "es",
     "file": "apocalipsis-sedrac.es.json"
+  },
+  {
+    "id": "testament-isaac-es",
+    "title": "Testamento de Isaac (traducción automática)",
+    "language": "es",
+    "file": "testamento-isaac.es.json"
   }
 ]

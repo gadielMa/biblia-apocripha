@@ -1,0 +1,23 @@
+{
+  "id": "testament-isaac-es",
+  "title": "Testamento de Isaac",
+  "language": "es",
+  "sourceLanguage": "Inglés",
+  "translator": "Traducción automática inicial al español; pendiente de revisión humana",
+  "publication": "Sahidic version, translation by K. H. Kuhn (1967)",
+  "license": "Public-domain historical translation; verify local status before redistribution.",
+  "sourceUrl": "https://realityroars.com/theology/writings/ot-apocrypha/ota-testament-of-isaac.html",
+  "notes": "La fuente conserva el texto en una sección extensa; se mantiene como una unidad para no inventar divisiones editoriales.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Testamento de Isaac",
+      "verses": [
+        {
+          "number": "1",
+          "text": "13. Esta es la salida del cuerpo de nuestro padre Isaac, el patriarca, el día veinticuatro del mes Mesore. Y el día en que su padre Abraham lo ofreció en sacrificio es el dieciocho de Mechir. (12 de febrero) Los cielos y la tierra se llenaron del olor reconfortante de nuestro padre Isaac, como de plata escogida: este es el sacrificio de nuestro padre Isaac el patriarca. Cuando Abraham lo ofreció como sacrificio a Dios, el olor reconfortante del sacrificio de Isaac subió a los cielos. Bienaventurado todo hombre que realiza un acto de misericordia en nombre de estos patriarcas, porque ellos serán sus hijos en el reino de los cielos. Porque nuestro Señor ha hecho con ellos pacto para siempre, que todo el que haga un acto de misericordia en el día de su conmemoración les será dado como hijo en el reino de los cielos para siempre. Y llegarán a la primera hora de los mil años, conforme a la promesa de nuestro Señor, nuestro Dios y Salvador Jesucristo, por quien toda gloria es debida a él y a su buen Padre y al Espíritu Santo, dador de vida a toda la creación y uno en ser con el Padre y el Hijo, ahora y siempre, por los siglos de los siglos. Amén\""
+        }
+      ]
+    }
+  ]
+}
