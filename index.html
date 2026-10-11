@@ -1696,6 +1696,9 @@ function normalizeData() {
     if (getBookName(row).includes('Epístola de Bernabé')) {
       row._texto = 'barnabas-es';
     }
+    if (getBookName(row) === 'Carta de Bernabé') {
+      row._texto = 'barnabas-es';
+    }
     if (getBookName(row).includes('Apocalipsis de Pedro')) {
       row._texto = 'apocalypse-peter-es';
     }
@@ -1883,6 +1886,7 @@ function normalizeData() {
   const egipcios = find('Evangelio de los Egipcios');
   if (egipcios) {
     egipcios.BIBLIOTECA = 'Evangelio copto de los Egipcios';
+    egipcios._texto = 'gospel-egyptians-es';
     egipcios.Resumen = 'También llamado Libro Sagrado del Gran Espíritu Invisible; texto gnóstico de Nag Hammadi sobre generación espiritual y revelación.';
     egipcios['Fecha aproximada'] = 'siglo II–III d.C.';
   }
