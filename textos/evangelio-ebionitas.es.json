@@ -1,0 +1,23 @@
+{
+  "id": "gospel-ebionites-es",
+  "title": "Evangelio de los Ebionitas (fragmentos)",
+  "language": "es",
+  "sourceLanguage": "Griego (fragmentario)",
+  "translator": "Resumen original en español; fragmentos en revisión",
+  "publication": "The Apocryphal New Testament (1924)",
+  "license": "Resumen original y referencias a fragmentos de dominio público.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
+  "notes": "Obra perdida conocida por citas de Epifanio y otros autores. Los fragmentos reflejan una tradición judeocristiana que enfatiza la continuidad con la Ley y presenta variantes propias de los relatos evangélicos.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fragmentos conservados",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Evangelio de los Ebionitas fue utilizado por comunidades judeocristianas asociadas por los autores antiguos con los ebionitas. Las citas preservan variantes sobre Juan el Bautista, el bautismo de Jesús, la elección de los discípulos y la misión a Israel. No se conserva un manuscrito continuo, por lo que los fragmentos no permiten reconstruir con seguridad la extensión ni el orden original."
+        }
+      ]
+    }
+  ]
+}
