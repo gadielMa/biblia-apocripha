@@ -2,10 +2,10 @@
 
 Generada automáticamente sobre todos los JSON del lector.
 
-Archivos auditados: 168
-Pasajes auditados: 49115
+Archivos auditados: 188
+Pasajes auditados: 58623
 Incidencias estructurales: 0
-Advertencias editoriales: 211
+Advertencias editoriales: 213
 - 1-enoc.en.json: etiquetas editoriales repetidas en capítulo 20
 - 1-enoc.en.json: etiquetas editoriales repetidas en capítulo 21
 - 1-enoc.en.json: etiquetas editoriales repetidas en capítulo 22

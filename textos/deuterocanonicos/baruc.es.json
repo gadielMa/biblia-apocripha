@@ -1,0 +1,604 @@
+{
+  "id": "deutero-baruc",
+  "title": "Baruc",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Traducción automática local al español desde Brenton (1870), pendiente de revisión humana",
+  "sourceTranslator": "Sir Lancelot Charles Lee Brenton (1870)",
+  "publication": "Brenton Septuagint Translation",
+  "license": "Texto base de dominio público; traducción automática de trabajo",
+  "sourceUrl": "https://ebible.org/eng-Brenton/",
+  "translationNote": "Traducción automática de una edición inglesa de dominio público. Revisar antes de considerarla una edición crítica.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Capítulo 1",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Y estas son las palabras del libro, que Baruc hijo de Nerias, hijo de Maasías, hijo de Sedecias, hijo de Asadías, hijo de Chelcias, escribió en Babilonia,"
+        },
+        {
+          "number": "2",
+          "text": "en el quinto año, y en el séptimo día del mes, qué hora como los caldeos tomaron Jerusalén, y lo quemaron con fuego."
+        },
+        {
+          "number": "3",
+          "text": "Y Baruc leyó las palabras de este libro en la audiencia de Jeconías hijo de Joachim rey de Judá, y en oídos de todo el pueblo que vino a escuchar el libro,"
+        },
+        {
+          "number": "4",
+          "text": "y en el oído de los nobles, y de los hijos del rey, y en el oído de los ancianos, y de todo el pueblo, desde el más bajo hasta el más alto, aun de todos los que habitaban en Babilonia junto al río Sud."
+        },
+        {
+          "number": "5",
+          "text": "Luego lloraron, ayunaron y oraron ante el Señor."
+        },
+        {
+          "number": "6",
+          "text": "También hicieron una colección de dinero según el poder de cada hombre:"
+        },
+        {
+          "number": "7",
+          "text": "y la enviaron á Jerusalem á Joachim sumo sacerdote, hijo de Quelcias, hijo de Salom, y á los sacerdotes, y á todo el pueblo que había sido hallado con él en Jerusalem,"
+        },
+        {
+          "number": "8",
+          "text": "al mismo tiempo que recibió los vasos de la casa del Señor, que fueron llevados del templo, para devolverlos a la tierra de Judá, el décimo día del mes de Sivan, es decir, vasos de plata, que Sedecias hijo de Josias rey de Judá había hecho,"
+        },
+        {
+          "number": "9",
+          "text": "Después que Nabucodonosor rey de Babilonia había llevado de Jerusalén a Jeconías, a los príncipes, a los cautivos, a los hombres poderosos y al pueblo de la tierra, y los trajo a Babilonia."
+        },
+        {
+          "number": "10",
+          "text": "Y ellos dijeron: He aquí, os hemos enviado dinero para compraros holocaustos, y ofrendas de pecado, y perfumes, y preparaos maná, y ofreceos sobre el altar del Señor nuestro Dios;"
+        },
+        {
+          "number": "11",
+          "text": "y orad por la vida de Nabucodonosor rey de Babilonia, y por la vida de Baltasar su hijo, para que sus días sean sobre la tierra como los días del cielo:"
+        },
+        {
+          "number": "12",
+          "text": "Y el Señor nos dará fuerza, y enciende nuestros ojos, y viviremos bajo la sombra de Nabucodonosor rey de Babilonia, y debajo de la sombra de Balthasar su hijo, y los serviremos muchos días, y encontraremos favor delante de ellos."
+        },
+        {
+          "number": "13",
+          "text": "Orad también por nosotros al Señor nuestro Dios, porque hemos pecado contra el Señor nuestro Dios; y hasta hoy la furia del Señor y su ira no se ha vuelto de nosotros."
+        },
+        {
+          "number": "14",
+          "text": "Y leeréis este libro que os hemos enviado, para confesar en la casa del Señor, en las fiestas y días solemnes."
+        },
+        {
+          "number": "15",
+          "text": "Y dirás: Al Señor nuestro Dios pertenece justicia, pero a nosotros la confusión de rostros, como ha venido a pasar hoy, a ellos de Judá, y a los habitantes de Jerusalén,"
+        },
+        {
+          "number": "16",
+          "text": "y á nuestros reyes, y á nuestros príncipes, y á nuestros sacerdotes, y á nuestros profetas, y á nuestros padres:"
+        },
+        {
+          "number": "17",
+          "text": "porque hemos pecado delante del Señor,"
+        },
+        {
+          "number": "18",
+          "text": "y lo desobedecieron, y no oyeron la voz del Señor nuestro Dios, para andar en los mandamientos que nos dio abiertamente:"
+        },
+        {
+          "number": "19",
+          "text": "Desde el día en que el Señor sacó a nuestros antepasados de la tierra de Egipto, hasta hoy hemos sido desobedientes al Señor nuestro Dios, y hemos sido negligentes en no escuchar su voz."
+        },
+        {
+          "number": "20",
+          "text": "Por tanto, los males nos dejaron, y la maldición, que el Señor designó por Moisés su siervo en el tiempo que sacó a nuestros padres de la tierra de Egipto, para darnos una tierra que fluye leche y miel, como es ver este día."
+        },
+        {
+          "number": "21",
+          "text": "Sin embargo, no hemos escuchado la voz del Señor nuestro Dios, según todas las palabras de los profetas, a quienes nos envió:"
+        },
+        {
+          "number": "22",
+          "text": "Pero cada hombre siguió la imaginación de su propio corazón malvado, para servir a dioses extraños, y para hacer el mal ante los ojos del Señor nuestro Dios."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Capítulo 2",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Por tanto, el Señor ha hecho bien su palabra, que ha pronunciado contra nosotros, y contra nuestros jueces que juzgaron a Israel, y contra nuestros reyes, y contra nuestros príncipes, y contra los hombres de Israel y Judá,"
+        },
+        {
+          "number": "2",
+          "text": "para traer sobre nosotros grandes plagas, como nunca sucedió debajo de todo el cielo, como sucedió en Jerusalén, según las cosas que fueron escritas en la ley de Moisés;"
+        },
+        {
+          "number": "3",
+          "text": "que el hombre comiere la carne de su propio hijo, y la carne de su propia hija."
+        },
+        {
+          "number": "4",
+          "text": "Por otra parte, los ha librado para estar sujetos a todos los reinos que están alrededor de nosotros, para ser como un oprobio y desolación entre todo el pueblo alrededor, donde el Señor los ha dispersado."
+        },
+        {
+          "number": "5",
+          "text": "Así fuimos derribados, y no exaltados, porque hemos pecado contra el Señor nuestro Dios, y no hemos sido obedientes a su voz."
+        },
+        {
+          "number": "6",
+          "text": "Para el Señor nuestro Dios tiene justicia; pero para nosotros y para nuestros padres abren la vergüenza, como aparece hoy."
+        },
+        {
+          "number": "7",
+          "text": "Porque todas estas plagas han venido sobre nosotros, que el Señor ha pronunciado contra nosotros."
+        },
+        {
+          "number": "8",
+          "text": "Sin embargo, no hemos orado ante el Señor, para que volvamos a cada uno de las imaginaciones de su malvado corazón."
+        },
+        {
+          "number": "9",
+          "text": "Por tanto, el Señor nos vio por el mal, y el Señor nos lo ha traído; porque el Señor es justo en todas sus obras que nos ha mandado."
+        },
+        {
+          "number": "10",
+          "text": "Sin embargo, no hemos escuchado su voz, para caminar en los mandamientos del Señor, que ha puesto delante de nosotros."
+        },
+        {
+          "number": "11",
+          "text": "Y ahora, oh Señor Dios de Israel, que ha sacado a tu pueblo de la tierra de Egipto con mano fuerte, y brazo alto, y con señales, y con prodigios, y con gran poder, y no te ha conseguido un nombre, como aparece hoy:"
+        },
+        {
+          "number": "12",
+          "text": "Señor nuestro Dios, hemos pecado, hemos hecho impíomente, hemos tratado injustamente en todas sus ordenanzas."
+        },
+        {
+          "number": "13",
+          "text": "Vuélvete tu ira de nosotros; porque somos unos pocos entre los gentiles, donde nos has esparcido."
+        },
+        {
+          "number": "14",
+          "text": "Oíd nuestras oraciones, oh Señor, y nuestras peticiones, y líbranos por vuestro propio bien, y dadnos gracia ante los ojos de los que nos han llevado:"
+        },
+        {
+          "number": "15",
+          "text": "para que toda la tierra sepa que tú eres el Señor nuestro Dios, porque Israel y su posteridad son llamados por tu nombre."
+        },
+        {
+          "number": "16",
+          "text": "Oh Señor, mira de tu santa casa, y consideranos: inclina tu oído, oh Señor, para escucharnos."
+        },
+        {
+          "number": "17",
+          "text": "Abre tus ojos, y mira; porque los muertos que están en las tumbas, cuyas almas son tomadas de sus cuerpos, no darán al Señor alabanza ni justicia;"
+        },
+        {
+          "number": "18",
+          "text": "Pero el alma que está grandemente afligida, que va a azotar y abominable, y los ojos que fallan, y el alma hambrienta, te dará alabanza y justicia, Señor."
+        },
+        {
+          "number": "19",
+          "text": "Por tanto, no hacemos nuestra humilde súplica delante de ti, Señor nuestro Dios, por la justicia de nuestros padres, y de nuestros reyes,"
+        },
+        {
+          "number": "20",
+          "text": "Porque has enviado tu ira y tu ira sobre nosotros, como has hablado por tus siervos los profetas, diciendo:"
+        },
+        {
+          "number": "21",
+          "text": "Así ha dicho el Señor: Inclinad vuestros hombros para servir al rey de Babilonia; así permaneceréis en la tierra que di a vuestros padres."
+        },
+        {
+          "number": "22",
+          "text": "Pero si no oyereis la voz del Señor, para servir al rey de Babilonia,"
+        },
+        {
+          "number": "23",
+          "text": "Haré cesar de las ciudades de Judá, y de fuera de Jerusalén, la voz de alegría, la voz del esposo, y la voz de la novia; y toda la tierra será desolada de habitantes."
+        },
+        {
+          "number": "24",
+          "text": "Pero no quisiéramos escuchar tu voz, para servir al rey de Babilonia; por tanto has hecho bien las palabras que has hablado por tus siervos los profetas, a saber, que los huesos de nuestros reyes, y los huesos de nuestros padres, sean sacados de sus lugares."
+        },
+        {
+          "number": "25",
+          "text": "Y he aquí, son echados al calor del día, y a la helada de la noche, y murieron en grandes miserias por hambre, por espada, y por pestilencia."
+        },
+        {
+          "number": "26",
+          "text": "Y la casa que es llamada por tu nombre, has desperdiciado, como se verá hoy, por la maldad de la casa de Israel y de la casa de Judá."
+        },
+        {
+          "number": "27",
+          "text": "Oh Señor nuestro Dios, has tratado con nosotros después de toda tu bondad, y conforme a toda esa gran misericordia de ti,"
+        },
+        {
+          "number": "28",
+          "text": "como has hablado por tu siervo Moisés en el día en que le mandaste escribir tu ley delante de los hijos de Israel, diciendo:"
+        },
+        {
+          "number": "29",
+          "text": "Si no oyereis mi voz, esta gran multitud será convertida en un pequeño número entre las naciones, donde yo los esparciré."
+        },
+        {
+          "number": "30",
+          "text": "Porque yo sabía que no me oirían, porque es un pueblo rígido; mas en la tierra de sus captividades se acordarán de sí mismos,"
+        },
+        {
+          "number": "31",
+          "text": "y sabrán que yo soy el Señor su Dios; porque les daré corazón, y oídos para oír:"
+        },
+        {
+          "number": "32",
+          "text": "y me alabarán en la tierra de su cautiverio, y pensarán en mi nombre,"
+        },
+        {
+          "number": "33",
+          "text": "Y tornad de su cuello rígido, y de sus malas obras; porque recordarán el camino de sus padres, que pecaron delante del Señor."
+        },
+        {
+          "number": "34",
+          "text": "Y los traeré de nuevo a la tierra que prometí con juramento a sus padres, Abraham, Isaac y Jacob, y ellos serán señores de ella; y los aumentaré, y no serán disminuidos."
+        },
+        {
+          "number": "35",
+          "text": "Y haré un pacto eterno con ellos para ser su Dios, y ellos serán mi pueblo; y no conduciré más a mi pueblo de Israel de la tierra que les he dado."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Capítulo 3",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Señor Todopoderoso, Dios de Israel, el alma en angustia, el espíritu angustiado, te aflige."
+        },
+        {
+          "number": "2",
+          "text": "Oíd, oh Señor, y ten misericordia; porque misericordioso eres; y tened piedad de nosotros, porque hemos pecado delante de ti."
+        },
+        {
+          "number": "3",
+          "text": "Porque tú permaneces para siempre, y perecemos completamente."
+        },
+        {
+          "number": "4",
+          "text": "Oh Señor Todopoderoso, Dios de Israel, escucha ahora las oraciones de los Israelitas muertos, y de sus hijos, que han pecado delante de ti, y no han escuchado la voz de tu Dios; porque la que causa estas plagas nos dejan."
+        },
+        {
+          "number": "5",
+          "text": "No os acordéis de las iniquidades de nuestros antepasados, sino pensad en vuestro poder y vuestro nombre ahora en este tiempo."
+        },
+        {
+          "number": "6",
+          "text": "Porque tú eres el Señor nuestro Dios, y tú, Señor, te alabaremos."
+        },
+        {
+          "number": "7",
+          "text": "Y por esta causa has puesto tu temor en nuestros corazones, a la intención de invocar tu nombre, y alabarte en nuestro cautiverio; porque hemos llamado a la mente toda la iniquidad de nuestros antepasados, que pecaron delante de ti."
+        },
+        {
+          "number": "8",
+          "text": "He aquí, hoy estamos en nuestro cautiverio, donde nos has esparcido, por afrenta y maldición, y para ser sujetos a pagos, conforme a todas las iniquidades de nuestros padres, que partieron del Señor nuestro Dios."
+        },
+        {
+          "number": "9",
+          "text": "Oíd, Israel, los mandamientos de la vida: dad oído para entender la sabiduría."
+        },
+        {
+          "number": "10",
+          "text": "¿Cómo sucede, Israel, que estás en la tierra de tus enemigos, que eres viejo en un país extraño, que estás contaminado con los muertos,"
+        },
+        {
+          "number": "11",
+          "text": "¿que te has contado con los que bajan a la tumba?"
+        },
+        {
+          "number": "12",
+          "text": "Has abandonado la fuente de sabiduría."
+        },
+        {
+          "number": "13",
+          "text": "Porque si hubieras andado en el camino de Dios, deberías haber habitado en paz para siempre."
+        },
+        {
+          "number": "14",
+          "text": "Aprenda dónde está la sabiduría, donde está la fuerza, donde está la comprensión; para que también sepan dónde es la longitud de los días, y la vida, donde está la luz de los ojos, y la paz."
+        },
+        {
+          "number": "15",
+          "text": "¿Quién ha descubierto su lugar? ¿Quién ha entrado en sus tesoros?"
+        },
+        {
+          "number": "16",
+          "text": "¿Dónde están los príncipes de las naciones, y los que gobernaron las bestias sobre la tierra;"
+        },
+        {
+          "number": "17",
+          "text": "los que tenían su pasatiempo con las aves del aire, y los que acaparaban plata y oro, en los que los hombres confían, y no acabaron de recibirlos?"
+        },
+        {
+          "number": "18",
+          "text": "Porque los que obraban en plata, y eran tan cuidadosos, y cuyas obras son inescrutables,"
+        },
+        {
+          "number": "19",
+          "text": "se desvanecen y bajan al sepulcro, y otros suben en su lugar."
+        },
+        {
+          "number": "20",
+          "text": "Los hombres jóvenes han visto luz, y habitaron sobre la tierra; pero el camino del conocimiento no han conocido,"
+        },
+        {
+          "number": "21",
+          "text": "ni entendieron sus caminos, ni lo sostuvieron; sus hijos estaban lejos de ese camino."
+        },
+        {
+          "number": "22",
+          "text": "No ha sido oído en Chanaán, ni ha sido visto en Temán."
+        },
+        {
+          "number": "23",
+          "text": "Los agarenes que buscan sabiduría sobre la tierra, los mercaderes de Merán y de Temán, los autores de las fábulas, y los buscadores fuera de entendimiento; ninguno de ellos han conocido el camino de la sabiduría, o recordado sus caminos."
+        },
+        {
+          "number": "24",
+          "text": "¡Oh Israel, cuán grande es la casa de Dios! ¡Y cuán grande es el lugar de su posesión!"
+        },
+        {
+          "number": "25",
+          "text": "Grande, y no tiene fin; alto, e inconmensurable."
+        },
+        {
+          "number": "26",
+          "text": "Había los gigantes famosos desde el principio, que eran de tan gran estatura, y tan experto en guerra."
+        },
+        {
+          "number": "27",
+          "text": "Aquellos no el Señor escogió, ni les dio el camino del conocimiento:"
+        },
+        {
+          "number": "28",
+          "text": "pero fueron destruidos, porque no tenían sabiduría, y perecieron por su propia necedad."
+        },
+        {
+          "number": "29",
+          "text": "¿Quién subió al cielo, y la tomó, y la sacó de las nubes?"
+        },
+        {
+          "number": "30",
+          "text": "¿Quién pasó por el mar, y la halló, y la traerá por oro puro?"
+        },
+        {
+          "number": "31",
+          "text": "Nadie conoce su camino, ni piensa en su camino."
+        },
+        {
+          "number": "32",
+          "text": "Mas el que conoce todas las cosas la conoce, y la halló con su entendimiento: el que preparó la tierra para siempre la llenó de bestias de cuatro pies:"
+        },
+        {
+          "number": "33",
+          "text": "El que envía luz, y va, la llama otra vez, y le obedece con temor."
+        },
+        {
+          "number": "34",
+          "text": "Las estrellas brillaron en sus relojes, y se regocijaron; cuando él los llama, dicen: Aquí estamos; y así con alegría mostraron luz al que los hizo."
+        },
+        {
+          "number": "35",
+          "text": "Este es nuestro Dios, y no se tendrá en cuenta ningún otro en comparación con él."
+        },
+        {
+          "number": "36",
+          "text": "Él ha descubierto todo el camino del conocimiento, y lo ha dado a Jacob su siervo, y a Israel su amado."
+        },
+        {
+          "number": "37",
+          "text": "Después se mostró sobre la tierra, y conversó con los hombres."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Capítulo 4",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Este es el libro de los mandamientos de Dios, y la ley que permanece para siempre: todos los que la guardan vendrán a la vida; mas los que la dejan morirán."
+        },
+        {
+          "number": "2",
+          "text": "Vuélvete, oh Jacob, y toma de ella: anda en presencia de su luz, para que seas iluminado."
+        },
+        {
+          "number": "3",
+          "text": "No des tu honor a otro, ni las cosas que te son provechosas a una nación extraña."
+        },
+        {
+          "number": "4",
+          "text": "Oh Israel, felices somos nosotros: porque las cosas que son agradables a Dios nos son dadas a conocer."
+        },
+        {
+          "number": "5",
+          "text": "Sé de buen ánimo, pueblo mío, memoria de Israel."
+        },
+        {
+          "number": "6",
+          "text": "Vosotros fuisteis vendidos a las naciones, no por la destrucción; sino porque movisteis a Dios a la ira, fuisteis entregados a los enemigos."
+        },
+        {
+          "number": "7",
+          "text": "Porque vosotros provocasteis al que os hizo sacrificando a los demonios y no a Dios."
+        },
+        {
+          "number": "8",
+          "text": "Vosotros habéis olvidado al Dios eterno, que os trajo; y habéis afligido a Jerusalén, que os enfermó."
+        },
+        {
+          "number": "9",
+          "text": "Porque cuando vio la ira de Dios viniendo sobre vosotros, dijo: Oid, oh moradores de Sión: Dios me ha puesto grande luto;"
+        },
+        {
+          "number": "10",
+          "text": "Porque vi el cautiverio de mis hijos e hijas, que el Eterno les trajo."
+        },
+        {
+          "number": "11",
+          "text": "Con alegría los alimenté, pero los envié con llanto y luto."
+        },
+        {
+          "number": "12",
+          "text": "Que nadie se regocije de mí, viuda, y desamparado de muchos, que por los pecados de mis hijos quedan desolados; porque ellos se fueron de la ley de Dios."
+        },
+        {
+          "number": "13",
+          "text": "No sabían sus estatutos, ni andaban en los caminos de sus mandamientos, ni tropezaban en los caminos de la disciplina en su justicia."
+        },
+        {
+          "number": "14",
+          "text": "Que vengan los que moran alrededor de Sión, y recuerden la cautividad de mis hijos e hijas, que el Eterno les ha traído."
+        },
+        {
+          "number": "15",
+          "text": "Porque él ha traído una nación sobre ellos de lejos, una nación desvergonzada, y de un lenguaje extraño, que ni reverenciaba al hombre viejo, ni a un niño compadecido,"
+        },
+        {
+          "number": "16",
+          "text": "y han llevado a los amados hijos de la viuda, y la dejaron sola desolada sin hijas."
+        },
+        {
+          "number": "17",
+          "text": "¿Pero qué puedo ayudarte?"
+        },
+        {
+          "number": "18",
+          "text": "Porque el que trajo estas plagas sobre vosotros os librará de las manos de vuestros enemigos."
+        },
+        {
+          "number": "19",
+          "text": "Ve por tu camino, hijos míos, ve por tu camino; porque he quedado desolado."
+        },
+        {
+          "number": "20",
+          "text": "He quitado la ropa de paz, y he puesto sobre mí el saco de mi oración: clamaré al Eterno en mis días."
+        },
+        {
+          "number": "21",
+          "text": "Sea de buen ánimo, hijos Míos, clamad al Señor, y os librará del poder y de la mano de los enemigos."
+        },
+        {
+          "number": "22",
+          "text": "Porque mi esperanza está en el Eterno, para que os salve; y vino a mí gozo del Santo, por la misericordia que pronto vendrá a vosotros del Eterno vuestro Salvador."
+        },
+        {
+          "number": "23",
+          "text": "Porque yo os envié con luto y lloro; mas Dios os dará de nuevo a mí con gozo y alegría para siempre."
+        },
+        {
+          "number": "24",
+          "text": "Como ahora los vecinos de Sión han visto tu cautiverio; así verán pronto tu salvación de tu Dios, que vendrá sobre ti con gran gloria, y brillo del Eterno."
+        },
+        {
+          "number": "25",
+          "text": "Hijitos míos, sufren pacientemente la ira que viene sobre vosotros de Dios; porque vuestro enemigo te ha perseguido; pero pronto verás su destrucción, y pisarás sobre su cuello."
+        },
+        {
+          "number": "26",
+          "text": "Mis delicados han ido caminos ásperos, y fueron llevados como un rebaño atrapado de los enemigos."
+        },
+        {
+          "number": "27",
+          "text": "Sé de buen consuelo, hijos Míos, y clamad a Dios; porque seréis recordados de aquel que os trajo estas cosas."
+        },
+        {
+          "number": "28",
+          "text": "Porque como era vuestra mente alejaros de Dios: así, siendo vuelto, buscádle diez veces más."
+        },
+        {
+          "number": "29",
+          "text": "Porque el que ha traído estas plagas sobre vosotros os traerá gozo eterno de nuevo con vuestra salvación."
+        },
+        {
+          "number": "30",
+          "text": "Toma un buen corazón, oh Jerusalén; porque el que te dio ese nombre te consolará."
+        },
+        {
+          "number": "31",
+          "text": "Miserables son los que te afligieron, y se alegraron de tu caída."
+        },
+        {
+          "number": "32",
+          "text": "Miserables son las ciudades que sirvieron tus hijos: miserable es la que recibió a tus hijos."
+        },
+        {
+          "number": "33",
+          "text": "Porque como ella se regocijó de tu ruina, y se alegró de tu caída; así será afligida por su propia desolación."
+        },
+        {
+          "number": "34",
+          "text": "Porque yo quitaré el gozo de su gran multitud, y su orgullo se tornará en luto."
+        },
+        {
+          "number": "35",
+          "text": "Porque vendrá fuego sobre ella desde el Eterno, mucho tiempo para soportar; y ella será habitada de demonios por mucho tiempo."
+        },
+        {
+          "number": "36",
+          "text": "Jerusalén, mírate hacia el oriente, y he aquí la alegría que te viene de Dios."
+        },
+        {
+          "number": "37",
+          "text": "He aquí que vienen tus hijos, a los cuales has enviado, se juntan del oriente al occidente por la palabra del Santo, regocijándose en la gloria de Dios."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Capítulo 5",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Quita, oh Jerusalén, la vestidura de tu luto y de tu aflicción, y ponte en la gracia de la gloria que viene de Dios para siempre."
+        },
+        {
+          "number": "2",
+          "text": "Echa sobre ti una vestidura doble de la justicia que viene de Dios; y pone un diadema en tu cabeza de la gloria del Eterno."
+        },
+        {
+          "number": "3",
+          "text": "Porque Dios mostrará tu resplandor a cada país bajo el cielo."
+        },
+        {
+          "number": "4",
+          "text": "Porque tu nombre será llamado de Dios para siempre La paz de la justicia, y la gloria de la adoración de Dios."
+        },
+        {
+          "number": "5",
+          "text": "Levántate, oh Jerusalén, y ponte en lo alto, y mira hacia el oriente, y he aquí que tus hijos se reunieron desde el occidente hasta el oriente por la palabra del Santo, regocijándose en el recuerdo de Dios."
+        },
+        {
+          "number": "6",
+          "text": "Porque ellos se apartaron de ti a pie, y fueron llevados de sus enemigos; mas Dios los lleva a ti exaltado con gloria, como hijos del reino."
+        },
+        {
+          "number": "7",
+          "text": "Porque Dios ha señalado que toda colina alta, y los bancos de larga continuidad, deben ser derribados, y vallies llenados, para hacer aún la tierra, para que Israel pueda ir con seguridad en la gloria de Dios."
+        },
+        {
+          "number": "8",
+          "text": "Además, los bosques y todo árbol que se bendece, por el mandamiento de Dios, cubrirán a Israel."
+        },
+        {
+          "number": "9",
+          "text": "Porque Dios guiará a Israel con gozo en la luz de su gloria con la misericordia y la justicia que viene de él."
+        }
+      ]
+    }
+  ]
+}

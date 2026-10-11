@@ -1,41 +1,91 @@
 {
   "id": "octateuco-clemente-es",
-  "title": "Octateuco de Clemente",
+  "title": "Octateuco de Clemente (edición relacionada)",
   "language": "es",
-  "sourceLanguage": "Ge’ez/Griego",
-  "translator": "Resumen original en español; pendiente de edición crítica completa",
-  "publication": "Ficha de referencia del corpus",
-  "license": "Resumen original; no sustituye una edición crítica.",
-  "sourceUrl": "https://www.earlychristianwritings.com/",
-  "notes": "Entrada textual de orientación: secciones editoriales resumidas para hacer visible y buscable la obra mientras se integra una transcripción completa con licencia compatible.",
+  "sourceLanguage": "Griego/Siríaco/Ge'ez",
+  "translator": "Ficha española de trabajo; texto completo pendiente de una edición pública verificable",
+  "publication": "Colección clementina etíope / Constituciones Apostólicas relacionadas",
+  "license": "Ficha editorial propia; no sustituye una traducción crítica",
+  "sourceUrl": "https://ccel.org/ccel/schaff/anf07/anf07.ix.html",
+  "translationNote": "El Octateuco etíope y las Constituciones Apostólicas comparten tradición y estructura en ocho libros, pero no deben tratarse como textos idénticos. Esta ficha evita inventar el contenido ausente.",
   "chapters": [
     {
       "number": 1,
-      "title": "Octateuco de Clemente",
+      "title": "Libro I",
       "verses": [
         {
           "number": "1",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 1: sección de orientación para búsqueda y lectura del contenido."
-        },
+          "text": "Normas morales y deberes de los laicos. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Libro II",
+      "verses": [
         {
-          "number": "2",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 2: sección de orientación para búsqueda y lectura del contenido."
-        },
+          "number": "1",
+          "text": "Organización de la comunidad y ministerios. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Libro III",
+      "verses": [
         {
-          "number": "3",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 3: sección de orientación para búsqueda y lectura del contenido."
-        },
+          "number": "1",
+          "text": "Obispos, presbíteros, diáconos y viudas. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Libro IV",
+      "verses": [
         {
-          "number": "4",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 4: sección de orientación para búsqueda y lectura del contenido."
-        },
+          "number": "1",
+          "text": "Ayuda a huérfanos, pobres y perseguidos. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Libro V",
+      "verses": [
         {
-          "number": "5",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 5: sección de orientación para búsqueda y lectura del contenido."
-        },
+          "number": "1",
+          "text": "Disciplina, ayuno, fiestas y conducta cristiana. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Libro VI",
+      "verses": [
         {
-          "number": "6",
-          "text": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo. División editorial 6: sección de orientación para búsqueda y lectura del contenido."
+          "number": "1",
+          "text": "Tradiciones apostólicas y advertencias contra herejías. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Libro VII",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Oraciones, bautismo, eucaristía y calendario litúrgico. Texto completo pendiente de una edición española verificable."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Libro VIII",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Ordenación, liturgia y cánones eclesiales. Texto completo pendiente de una edición española verificable."
         }
       ]
     }

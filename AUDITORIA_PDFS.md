@@ -27,7 +27,7 @@ Los siguientes estados se usan en el trabajo:
 | Obra | PDF actual | Diagnóstico | Fuente de referencia | Estado |
 |---|---:|---|---|---|
 | 1 Enoc | 70 págs. | Debe cotejarse contra sus 108 capítulos antes de llamarlo completo. | [Project Gutenberg — R. H. Charles, dominio público](https://www.gutenberg.org/ebooks/77935) | fuente abierta |
-| 2 Enoc / Enoc eslavo | 4 págs. | El PDF continúa abreviado, pero la web ya incluye lector HTML completo: 68 capítulos y 321 versículos. | [Wikisource — edición de 1928](https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Book_of_the_Secrets_of_Enoch) | incorporado en HTML |
+| 2 Enoc / Enoc eslavo | 4 págs. | El PDF continúa abreviado, pero la web ya incluye lector HTML de la recensión larga: 73 capítulos y 422 pasajes. | [Wikisource — edición de 1928](https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Book_of_the_Secrets_of_Enoch) | incorporado en HTML |
 | 3 Enoc / Sefer Hekhalot | 3 págs. | El PDF es una síntesis de 8 capítulos seleccionados; la web incluye ahora el texto de Odeberg: 53 secciones (capítulos 1–48 y sub-secciones tradicionales) y 352 versículos. | [Internet Archive — Odeberg, 1928](https://archive.org/details/HebrewBookOfEnochenoch3) | incorporado en HTML |
 | 2 Baruc | 3 págs. | Abreviado. | [Online Critical Pseudepigrapha — TEI/XML abierto](https://pseudepigrapha.org/) | fuente abierta |
 | 3 Baruc | 4 págs. | Abreviado. | [Online Critical Pseudepigrapha — TEI/XML abierto](https://pseudepigrapha.org/) | fuente abierta |

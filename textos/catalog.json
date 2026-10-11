@@ -1006,5 +1006,125 @@
     "title": "Octateuco de Clemente (resumen estructurado)",
     "language": "es",
     "file": "octateuco-clemente-es.json"
+  },
+  {
+    "id": "deutero-tobias",
+    "title": "Tobías",
+    "language": "es",
+    "file": "deuterocanonicos/tobias.es.json"
+  },
+  {
+    "id": "deutero-judit",
+    "title": "Judit",
+    "language": "es",
+    "file": "deuterocanonicos/judit.es.json"
+  },
+  {
+    "id": "deutero-1-macabeos",
+    "title": "1 Macabeos",
+    "language": "es",
+    "file": "deuterocanonicos/1-macabeos.es.json"
+  },
+  {
+    "id": "deutero-2-macabeos",
+    "title": "2 Macabeos",
+    "language": "es",
+    "file": "deuterocanonicos/2-macabeos.es.json"
+  },
+  {
+    "id": "deutero-sabiduria",
+    "title": "Sabiduría",
+    "language": "es",
+    "file": "deuterocanonicos/sabiduria.es.json"
+  },
+  {
+    "id": "deutero-eclesiastico",
+    "title": "Eclesiástico (Sirácides)",
+    "language": "es",
+    "file": "deuterocanonicos/eclesiastico.es.json"
+  },
+  {
+    "id": "deutero-baruc",
+    "title": "Baruc",
+    "language": "es",
+    "file": "deuterocanonicos/baruc.es.json"
+  },
+  {
+    "id": "deutero-carta-jeremias",
+    "title": "Carta de Jeremías (Baruc 6)",
+    "language": "es",
+    "file": "deuterocanonicos/carta-jeremias.es.json"
+  },
+  {
+    "id": "deutero-susana",
+    "title": "Susana",
+    "language": "es",
+    "file": "deuterocanonicos/susana.es.json"
+  },
+  {
+    "id": "deutero-bel-y-el-dragon",
+    "title": "Bel y el Dragón",
+    "language": "es",
+    "file": "deuterocanonicos/bel-y-el-dragon.es.json"
+  },
+  {
+    "id": "etiope-jubileos",
+    "title": "Jubileos",
+    "language": "es",
+    "file": "etiope/jubileos.es.json"
+  },
+  {
+    "id": "etiope-1-meqabyan",
+    "title": "1 Meqabyan",
+    "language": "es",
+    "file": "etiope/1-meqabyan.es.json"
+  },
+  {
+    "id": "etiope-2-meqabyan",
+    "title": "2 Meqabyan",
+    "language": "es",
+    "file": "etiope/2-meqabyan.es.json"
+  },
+  {
+    "id": "etiope-3-meqabyan",
+    "title": "3 Meqabyan",
+    "language": "es",
+    "file": "etiope/3-meqabyan.es.json"
+  },
+  {
+    "id": "etiope-didascalia-apostoles",
+    "title": "Didascalia de los Apóstoles",
+    "language": "es",
+    "file": "etiope/didascalia-apostoles.es.json"
+  },
+  {
+    "id": "etiope-testamentum-domini",
+    "title": "Testamentum Domini",
+    "language": "es",
+    "file": "etiope/testamentum-domini.es.json"
+  },
+  {
+    "id": "etiope-sinodos",
+    "title": "Sinodos",
+    "language": "es",
+    "file": "etiope/sinodos.es.json"
+  },
+  {
+    "id": "etiope-libro-alianza-i",
+    "title": "Libro de la Alianza I",
+    "language": "es",
+    "file": "etiope/libro-alianza-i.es.json"
+  },
+  {
+    "id": "etiope-libro-alianza-ii",
+    "title": "Libro de la Alianza II",
+    "language": "es",
+    "file": "etiope/libro-alianza-ii.es.json"
+  },
+  {
+    "id": "etiope-constituciones-apostolicas",
+    "title": "Constituciones Apostólicas (edición relacionada)",
+    "language": "es",
+    "file": "etiope/constituciones-apostolicas.es.json"
   }
 ]

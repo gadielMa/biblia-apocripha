@@ -7,7 +7,7 @@ La aplicación funciona como PWA instalable y adapta el catálogo a tarjetas en 
 ## Contenido
 
 - **59 archivos PDF** en el repositorio (56 obras enlazadas en el catálogo)
-- **141 textos visibles** organizados por grupo y canon
+- **188 ediciones indexadas** y **58.623 pasajes** disponibles para búsqueda
 
 El estado de completitud de cada archivo y las fuentes abiertas candidatas se
 mantienen en [AUDITORIA_PDFS.md](AUDITORIA_PDFS.md).
@@ -18,7 +18,7 @@ en [LACUNAS_CATALOGO.md](LACUNAS_CATALOGO.md).
 ## Textos buscables
 
 El inicio también busca dentro de los textos que ya fueron importados a HTML/JSON.
-Por ahora incluye **1 Enoc** (108 capítulos), **2 Enoc** (68 capítulos) y **3 Enoc**
+Por ahora incluye **1 Enoc** (108 capítulos), **2 Enoc** (73 capítulos) y **3 Enoc**
 (48 capítulos con sub-secciones tradicionales) en inglés,
 con lector propio y referencias por
 capítulo:versículo. Cuando una fuente no trae versificación, el proyecto asigna
@@ -27,9 +27,18 @@ Cada obra futura debe conservar la estructura de `textos/1-enoc.en.json` y figur
 `textos/catalog.json`; luego ejecutar `node scripts/build-search-index.mjs` para que
 la búsqueda global la incorpore.
 
-2 Enoc también tiene una edición española automática completa, señalada como
-pendiente de revisión; los capítulos 1–22 cuentan además con un borrador de
+2 Enoc también tiene una edición española automática de 73 capítulos, señalada
+como pendiente de revisión; los capítulos 1–22 cuentan además con un borrador de
 revisión humana en `textos/borradores/`.
+
+La carpeta de trabajo `/Users/gadiel/BIBLIA` se sincroniza mediante
+`node scripts/sync-work-corpus.mjs`. Las ediciones españolas deuterocanónicas y
+etíopes conservan su fuente y nota de traducción automática en los metadatos.
+
+La colección canónica publicada sigue siendo RVR1909, que es la edición de
+dominio público actualmente almacenada. La migración a RVR1960 queda pendiente
+de incorporar una copia con licencia de redistribución; no se sustituye el texto
+1909 por una etiqueta 1960 sin contar con esa autorización.
 
 El Protoevangelio de Santiago ya está incorporado en inglés (25 capítulos) y en
 una edición española automática inicial.

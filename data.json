@@ -1838,5 +1838,53 @@
     "_archivo": null,
     "_tipo": null,
     "_estado_texto": "Resumen estructurado"
+  },
+  {
+    "Grupo": "Deuterocanónicos / Antiguo Testamento",
+    "Tanaj": "",
+    "Biblia Católica": "Carta de Jeremías",
+    "Biblia Etíope": "Carta de Jeremías",
+    "BIBLIOTECA": "",
+    "Fecha aproximada": "siglo II–I a.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Carta profética contra la idolatría, transmitida como Baruc 6.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Deuterocanónicos / Antiguo Testamento",
+    "Tanaj": "",
+    "Biblia Católica": "Susana",
+    "Biblia Etíope": "Susana",
+    "BIBLIOTECA": "",
+    "Fecha aproximada": "siglo II–I a.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Relato judicial de Susana, acusada injustamente y defendida por Daniel.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Deuterocanónicos / Antiguo Testamento",
+    "Tanaj": "",
+    "Biblia Católica": "Bel y el Dragón",
+    "Biblia Etíope": "Bel y el Dragón",
+    "BIBLIOTECA": "",
+    "Fecha aproximada": "siglo II–I a.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Relatos de Daniel contra la idolatría de Bel y el culto al dragón.",
+    "_archivo": null,
+    "_tipo": null
+  },
+  {
+    "Grupo": "Nuevo Testamento Etíope",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "Constituciones Apostólicas",
+    "BIBLIOTECA": "",
+    "Fecha aproximada": "siglo IV d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Colección de instrucciones litúrgicas, disciplina eclesial y vida comunitaria.",
+    "_archivo": null,
+    "_tipo": null
   }
 ]
