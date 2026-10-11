@@ -898,5 +898,11 @@
     "title": "Apocalipsis de Tomás (traducción automática)",
     "language": "es",
     "file": "apocalipsis-tomas.es.json"
+  },
+  {
+    "id": "apocalypse-sedrach-es",
+    "title": "Apocalipsis de Sedrac (traducción automática)",
+    "language": "es",
+    "file": "apocalipsis-sedrac.es.json"
   }
 ]
