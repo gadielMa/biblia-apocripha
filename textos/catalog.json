@@ -1101,7 +1101,7 @@
     "id": "etiope-testamentum-domini",
     "title": "Testamentum Domini",
     "language": "es",
-    "file": "etiope/testamentum-domini.es.json"
+    "file": "testamentum-domini-es.json"
   },
   {
     "id": "etiope-sinodos",
@@ -1126,5 +1126,29 @@
     "title": "Constituciones Apostólicas (edición relacionada)",
     "language": "es",
     "file": "etiope/constituciones-apostolicas.es.json"
+  },
+  {
+    "id": "arabic-infancy-es",
+    "title": "Evangelio árabe de la Infancia",
+    "language": "es",
+    "file": "evangelio-arabe-infancia-es.json"
+  },
+  {
+    "id": "pseudo-mateo-es",
+    "title": "Evangelio del Pseudo-Mateo",
+    "language": "es",
+    "file": "evangelio-pseudo-mateo-es.json"
+  },
+  {
+    "id": "jose-carpintero-es",
+    "title": "Historia copta de José el Carpintero",
+    "language": "es",
+    "file": "historia-copta-jose-carpintero-es.json"
+  },
+  {
+    "id": "testament-12-patriarchs-es",
+    "title": "Testamento de los 12 Patriarcas",
+    "language": "es",
+    "file": "testamento-12-patriarcas-es.json"
   }
 ]

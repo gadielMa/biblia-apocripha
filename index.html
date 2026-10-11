@@ -732,7 +732,7 @@
     .timeline-event a { color: #9b4829; font-size: .72rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .timeline-event a:hover { color: #6e2b18; }
     .timeline-image { width: calc(100% + 1.7rem); height: 112px; margin: -.1rem -.85rem .1rem; object-fit: cover; border-top-left-radius: 14px; border-top-right-radius: 14px; }
-    .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 1; }
+    .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 16 / 10; }
     .timeline-note { margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .69rem !important; line-height: 1.4; }
     .genealogy-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
     .genealogy-view[hidden] { display: none; }
@@ -747,7 +747,7 @@
     .prophecy-card { position: relative; padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: 15px; background: rgba(255,255,255,.96); box-shadow: 0 9px 22px rgba(26,48,77,.07); }
     .prophecy-card-image { display: block; width: 100%; height: auto; margin: 0 0 .85rem; border-radius: 10px; object-fit: contain; }
     .prophecy-image-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; margin-bottom: .85rem; }
-    .prophecy-image-pair .prophecy-card-image { height: 150px; margin: 0; object-fit: cover; }
+    .prophecy-image-pair .prophecy-card-image { height: 150px; margin: 0; object-fit: contain; background: #eef2f4; }
     .prophecy-card::before { content: ""; position: absolute; top: 1.18rem; left: -1.82rem; width: .85rem; height: .85rem; border: 3px solid #fff; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
     .prophecy-era { margin: 0; color: var(--accent); font-size: .7rem; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
     .prophecy-card h3 { margin: .28rem 0 .48rem; color: #24364b; font-size: 1.08rem; }
@@ -797,6 +797,7 @@
     .enoch-intro p, .enoch-book > p { color: var(--text2); line-height: 1.55; }
     .enoch-book h3 { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.65rem); }
     .enoch-passages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+    .enoch-passages-full { grid-template-columns: 1fr; }
     .enoch-passage { min-width: 0; padding: .85rem 1rem; border: 1px solid var(--border); border-radius: 13px; background: #fbfcfe; }
     .enoch-passage h4 { margin: 0 0 .4rem; color: #9b4829; font-size: .95rem; }
     .enoch-reference { display: block; margin-bottom: .2rem; color: var(--text2); font-size: .72rem; font-weight: 750; }
@@ -1043,7 +1044,7 @@
     <article class="prophecy-card"><p class="prophecy-era">siglo 8 a. C. · Miqueas</p><h3>Belén, ciudad del gobernante</h3><q>Y tú, Bethlehem Ephrata… de ti me saldrá el que será Señor en Israel.</q><a href="lectura/?obra=rvr1909-miqueas&amp;capitulo=5#pasaje-5-2">Miqueas 5:2</a><p class="prophecy-note">Los principales sacerdotes y escribas citan Miqueas ante Herodes: <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=2#pasaje-2-5">Mateo 2:5–6</a>, al situar el nacimiento de Jesús en Belén.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">siglos 7–6 a. C. · Jeremías</p><h3>El Renuevo justo de David</h3><q>Levantaré á David renuevo justo, y reinará Rey, el cual será dichoso, y hará juicio y justicia en la tierra.</q><a href="lectura/?obra=rvr1909-jeremias&amp;capitulo=23#pasaje-23-5">Jeremías 23:5–6</a><p class="prophecy-note">Mantiene la esperanza de un rey justo de la casa de David.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">siglo 6 a. C. · Daniel</p><h3>El Hijo del Hombre recibe el reino</h3><q>He aquí en las nubes del cielo como un hijo de hombre que venía… y fuéle dado señorío, y gloria, y reino.</q><a href="lectura/?obra=rvr1909-daniel&amp;capitulo=7#pasaje-7-13">Daniel 7:13–14</a><p class="prophecy-note">La expresión “Hijo del Hombre” se vuelve central en el modo en que Jesús habla de sí mismo en los evangelios.</p></article>
-    <article class="prophecy-card"><img class="prophecy-card-image" src="assets/timeline/profecia-zacarias-12-10.png" alt="Jerusalén de luto ante la silueta de una cruz"><p class="prophecy-era">siglos 6–5 a. C. · Zacarías</p><h3>Mirarán al que traspasaron</h3><q>…y mirarán a mí, a quien traspasaron, y llorarán como se llora por hijo unigénito…</q><a href="lectura/?obra=rvr1909-zacarias&amp;capitulo=12#pasaje-12-10">Zacarías 12:10</a><p class="prophecy-note">Juan 19:37 relaciona este pasaje con la crucifixión de Jesús.</p></article>
+    <article class="prophecy-card"><img class="prophecy-card-image" src="assets/timeline/profecia-zacarias-12-10-lanza.png" alt="Representación simbólica de la lanza junto a Jesús en la cruz, sin mostrar una herida"><p class="prophecy-era">siglos 6–5 a. C. · Zacarías</p><h3>Mirarán al que traspasaron</h3><q>…y mirarán a mí, a quien traspasaron, y llorarán como se llora por hijo unigénito…</q><a href="lectura/?obra=rvr1909-zacarias&amp;capitulo=12#pasaje-12-10">Zacarías 12:10</a><p class="prophecy-note">Juan 19:34–37 relaciona la lanza y la cita de Zacarías con la crucifixión de Jesús.</p></article>
     <article class="prophecy-card"><img class="prophecy-card-image" src="assets/timeline/profecia-zacarias-9-9.png" alt="Jesús entra en Jerusalén montado en un asno"><p class="prophecy-era">siglos 6–5 a. C. · Zacarías</p><h3>El rey humilde entra en Jerusalén</h3><q>He aquí, á ti vendrá tu Rey, justo y salvador, humilde, y cabalgando sobre un asno.</q><a href="lectura/?obra=rvr1909-zacarias&amp;capitulo=9#pasaje-9-9">Zacarías 9:9</a><p class="prophecy-note">Los evangelios vinculan este pasaje con la entrada de Jesús en Jerusalén.</p></article>
     <article class="prophecy-card"><p class="prophecy-era">tradición apócrifa · 1 Enoc</p><h3>El Elegido y el Hijo del Hombre</h3><q>Antes que fuesen creados el sol y las señales… el nombre del Hijo del Hombre fue nombrado ante el Señor de los Espíritus.</q><a href="lectura/?obra=1-enoc-es&amp;capitulo=48">1 Enoc 48:2–7</a><p class="prophecy-note">Texto apócrifo: no forma parte del canon bíblico de la mayoría de las tradiciones cristianas, pero muestra el desarrollo judío de imágenes sobre el “Hijo del Hombre”.</p></article>
     <article class="prophecy-card"><img class="prophecy-card-image" src="assets/timeline/profecia-colosenses-1-15.png" alt="Cristo como figura luminosa en medio de la creación"><p class="prophecy-era">testimonio apostólico · siglo 1 d. C.</p><q>Él es la imagen del Dios invisible, el primogénito sobre toda creación.</q><a href="lectura/?obra=rvr1909-colosenses&amp;capitulo=1#pasaje-1-15">Colosenses 1:15–20</a></article>
@@ -1250,7 +1251,7 @@
   <section class="enoch-book" aria-labelledby="enoch-two-title">
     <h3 id="enoch-two-title">Segundo libro de Enoc - Los secretos de Enoc</h3>
     <p>También llamado 2 Enoc o Enoc eslavo; relata viajes celestes de Enoc y lo que allí contempla.</p>
-    <div class="enoch-passages">
+    <div class="enoch-passages enoch-passages-full">
       <article class="enoch-passage"><h4>Enoc2 1:2–3</h4><blockquote>“Dijo Enoc: En aquel tiempo, cuando se cumplieron mis 165 años engendre a mi hijo Matusalen. Despues de eso vivi otros 200 años, asi que en total los años de mi vida fueron 365”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=1">Leer 2 Enoc 1</a></article>
       <article class="enoch-passage"><img src="assets/enoc/cielo-1.jpg" alt="Primer cielo: mar celeste, ángeles que gobiernan estrellas y un olivo" loading="lazy"><h4>Enoc2 3:1 · Primer Cielo</h4><blockquote>“...Y me colocaron en el primer Cielo y me mostraron un mar mas grande que el de la Tierra... me mostraron los 200 angeles que gobiernan las estrellas... Me mostraron los almacenes del rocio y un olivo que era semejante al crisma y su tamaño era mucho mayor que cualquier flor terrenal.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=3">Leer 2 Enoc 3</a></article>
       <article class="enoch-passage"><img src="assets/enoc/cielo-2.jpg" alt="Segundo cielo: Enoc ve a los malhechores encadenados en una región oscura" loading="lazy"><h4>Enoc2 7:1 · Segundo Cielo</h4><blockquote>“...y me elevaron al Segundo Cielo. Me mostraron oscuridad mas prfunda que la de la Tierra. Aqui tambien vi malhechores, colgados de cadenas, esperando el juicio eterno... producian un llanto incesante en todo momento”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=7">Leer 2 Enoc 7</a></article>
@@ -1804,6 +1805,11 @@ function normalizeData() {
     if (getBookName(row) === 'Escalera de Jacob') row._texto = 'ladder-jacob-es';
     if (getBookName(row) === 'Testamento de Jacob') row._texto = 'testament-jacob-es';
     if (getBookName(row) === 'Apócrifo de Juan') row._texto = 'apocryphon-john-es';
+    if (getBookName(row) === 'Evangelio árabe de la Infancia') row._texto = 'arabic-infancy-es';
+    if (getBookName(row) === 'Evangelio del Pseudo-Mateo') row._texto = 'pseudo-mateo-es';
+    if (getBookName(row) === 'Historia copta de José el Carpintero') row._texto = 'jose-carpintero-es';
+    if (getBookName(row) === 'Testamento de los 12 Patriarcas') row._texto = 'testament-12-patriarchs-es';
+    if (getBookName(row) === 'Testamentum Domini') row._texto = 'etiope-testamentum-domini';
     if (getBookName(row) === 'Evangelio de los Hebreos') row._texto = 'gospel-hebrews-es';
     if (getBookName(row) === 'Evangelio de los Nazarenos') row._texto = 'gospel-nazarenes-es';
     if (getBookName(row) === 'Evangelio de los Ebionitas') row._texto = 'gospel-ebionites-es';
@@ -1901,6 +1907,8 @@ function normalizeData() {
   }
   const genesisApocrifo = find('Génesis Apócrifo');
   if (genesisApocrifo) {
+    genesisApocrifo.BIBLIOTECA = 'Rollo de Lamec (parte del Génesis Apócrifo)';
+    genesisApocrifo._texto = 'rollo-lamec-es';
     genesisApocrifo.Resumen = 'Reescritura aramea de Génesis hallada en Qumrán. Expande relatos de Lamec, Noé y Abraham: incluye la preocupación de Lamec por el nacimiento extraordinario de Noé, la consulta a Enoc y tradiciones sobre tierras, linajes y promesas.';
   }
   const rolloLamec = find('Rollo de Lamec');
@@ -2493,6 +2501,7 @@ if (timelineTrack) {
     ['c. 30 d. C. · 40 días','Ayuno y tentación en el desierto','Después de ayunar cuarenta días, Jesús es tentado por el diablo antes de predicar públicamente.','Mateo 4:1–11 · Marcos 1:9–13','lectura/?obra=rvr1909-mateo&capitulo=4','jesus'],
     ['c. 28–30 d. C.','Sermón del Monte y bienaventuranzas','Mateo reúne enseñanzas de Jesús sobre el Reino, la justicia y la vida comunitaria.','Mateo 5–7','lectura/?obra=rvr1909-mateo&capitulo=5','jesus'],
     ['c. 27–30 d. C.','Multiplicación de los panes','Jesús bendice y reparte cinco panes y dos peces; la multitud come y quedan canastas con sobras.','Marcos 6:30–44','lectura/?obra=rvr1909-marcos&capitulo=6','jesus'],
+    ['c. 27–30 d. C.','Jesús sana al ciego','Jesús devuelve la vista a un hombre ciego de nacimiento; Juan relata que se lava en el estanque de Siloé.','Juan 9:1–7','lectura/?obra=rvr1909-juan&capitulo=9#pasaje-9-6','jesus'],
     ['c. 27–30 d. C.','Jesús calma la tempestad','Durante la travesía por el lago, Jesús reprende al viento y las aguas se aquietan.','Marcos 4:35–41','lectura/?obra=rvr1909-marcos&capitulo=4','jesus'],
     ['c. 27–30 d. C.','Lázaro vuelve a la vida','Jesús llama a Lázaro para que salga del sepulcro, después de cuatro días.','Juan 11:1–44','lectura/?obra=rvr1909-juan&capitulo=11','jesus'],
     ['33 años después de Cristo · cronología tradicional','La última cena y el arresto','Jesús comparte la cena con sus discípulos y luego es arrestado en Getsemaní.','Mateo 26:17–56','lectura/?obra=rvr1909-mateo&capitulo=26','jesus'],
@@ -2530,6 +2539,7 @@ if (timelineTrack) {
     'Reconstrucción del Segundo Templo': ['assets/linea-tiempo/segundo-templo.jpg', 'La comunidad reconstruye el Segundo Templo de Jerusalén'],
     'Bautismo de Jesús': ['assets/linea-tiempo/bautismo-juan-jesus.jpg', 'Juan el Bautista bautiza a Jesús en el río Jordán'],
     'Multiplicación de los panes': ['assets/linea-tiempo/multiplicacion-panes.jpg', 'Jesús comparte panes y peces con una multitud junto al lago'],
+    'Jesús sana al ciego': ['assets/linea-tiempo/jesus-sana-ciego.png', 'Jesús devuelve la vista a un hombre ciego en una aldea de Judea'],
     'Jesús calma la tempestad': ['assets/linea-tiempo/tempestad-calmada.jpg', 'Jesús calma la tempestad mientras sus discípulos están en la barca'],
     'Lázaro vuelve a la vida': ['assets/linea-tiempo/lazaro.jpg', 'Lázaro sale de su sepulcro al llamado de Jesús'],
     'La última cena y el arresto': ['assets/linea-tiempo/ultima-cena.jpg', 'Jesús comparte la última cena con sus discípulos'],
@@ -2558,7 +2568,7 @@ if (timelineTrack) {
     if (!card || ordered.includes(card)) return;
     card.dataset.era = eventEra(item[1]);
     card.dataset.year = item[0];
-    if (['Multiplicación de los panes','Jesús calma la tempestad','Lázaro vuelve a la vida'].includes(item[1])) card.dataset.milagro = 'true';
+    if (['Multiplicación de los panes','Jesús sana al ciego','Jesús calma la tempestad','Lázaro vuelve a la vida'].includes(item[1])) card.dataset.milagro = 'true';
     const date = card.querySelector('.timeline-date');
     if (date) date.textContent = item[0];
     if (timelineImages[item[1]]) {
@@ -2689,8 +2699,8 @@ gnosticSection.innerHTML = `<div class="extinct-intro"><h2 id="gnosticism-title"
 <article class="enoch-passage"><h4>Epistula Apostolorum 16</h4><blockquote>“Cuando se cumplan ciento cincuenta años, entre el Pentecostés y la Fiesta de los Panes sin Levadura, vendrá el día de mi regreso en gloria, brillando siete veces más que el sol.”</blockquote><p>Conservamos la numeración que compartiste; la organización de capítulos puede variar entre ediciones.</p></article>
 <article class="enoch-passage"><h4>Epistula Apostolorum 31</h4><blockquote>“Surgirá un hombre llamado Saulo, que perseguirá la fe... pero mis manos lo alcanzarán, y él se convertirá en un instrumento elegido para predicar a los gentiles.”</blockquote></article>
 <article class="enoch-passage"><h4>Evangelio de Tomás · Logion 3 (Dicho 3)</h4><blockquote>“Jesús dijo: Si aquellos que os guían os dicen: 'Ved, el Reino está en el cielo', entonces las aves del cielo os precederán. Si os dicen: 'Está en el mar', entonces los peces os precederán. En verdad, el Reino está dentro de vosotros y fuera de vosotros. Cuando os conozcáis a vosotros mismos, entonces seréis conocidos y os daréis cuenta de que sois los hijos del Padre viviente...”</blockquote><p>Evangelio apócrifo de dichos. Suele vincularse con el gnosticismo, aunque su clasificación como texto gnóstico es discutida.</p></article>
-<article class="enoch-passage"><h4>Evangelio de María · BG 8502, pp. 7–10</h4><p>En el diálogo conservado, María Magdalena comparte con los discípulos una enseñanza recibida del Salvador y relata una visión. Las páginas y divisiones varían entre ediciones; no se numera como versículos bíblicos.</p><a href="pdfs/evangelio-maria-magdalena.pdf">Abrir PDF del Evangelio de María</a></article>
-<article class="enoch-passage"><h4>Evangelio de María · BG 8502, pp. 15–19</h4><p>Pedro cuestiona que el Salvador hablara en privado con María Magdalena; Leví la defiende y exhorta a los discípulos a anunciar el mensaje. La numeración del manuscrito puede variar según la edición.</p><a href="pdfs/evangelio-maria-magdalena.pdf">Abrir PDF del Evangelio de María</a></article>
+<article class="enoch-passage"><h4>Evangelio de María Magdalena · BG 8502, pp. 7–10</h4><p>En el diálogo conservado, María Magdalena comparte con los discípulos una enseñanza recibida del Salvador y relata una visión. Las páginas y divisiones varían entre ediciones; no se numera como versículos bíblicos.</p><a href="pdfs/evangelio-maria-magdalena.pdf">Abrir PDF del Evangelio de María Magdalena</a></article>
+<article class="enoch-passage"><h4>Evangelio de María Magdalena · BG 8502, pp. 15–19</h4><p>Pedro cuestiona que el Salvador hablara en privado con María Magdalena; Leví la defiende y exhorta a los discípulos a anunciar el mensaje. La numeración del manuscrito puede variar según la edición.</p><a href="pdfs/evangelio-maria-magdalena.pdf">Abrir PDF del Evangelio de María Magdalena</a></article>
 </div>`;
 const gnosticIllustrations = {
   'Juan 10:34': ['assets/timeline/jesus-ensenando.png', 'Jesús enseña y dialoga con sus oyentes'],
@@ -2809,6 +2819,8 @@ const crossConnections = [
   { a: ['ark', 'El Arca de Noé'], b: ['enoch', 'Enoc 10:1'], why: '1 Enoc amplía la tradición del diluvio con el aviso a Noé.' },
   { a: ['ark', 'El Arca de Noé'], b: ['objects', 'El Arca de la Alianza'], why: 'Comparten la palabra “arca”, pero son objetos distintos: una nave y un cofre ritual.' },
   { a: ['shroud', 'Qué dicen los Evangelios'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'Los Evangelios narran la sepultura; la reliquia se vincula a ese episodio por tradición, sin que el texto la identifique.' },
+  { a: ['shroud', 'Qué dicen los Evangelios'], b: ['timeline', 'Resurrección de Jesús'], why: 'Los Evangelios sitúan los lienzos y el sudario en el entierro y la tumba vacía; la tradición vincula la Sábana Santa con esos relatos, sin que el texto identifique la reliquia de Turín.' },
+  { a: ['timeline', 'Jesús sana al ciego'], b: ['prophecies', 'Señales de restauración'], why: 'Isaías 35 anuncia que se abrirían los ojos de los ciegos; Juan 9 presenta una curación atribuida a Jesús. La conexión es una lectura cristiana posterior.' },
   { a: ['prophecies', 'Contar puedo todos mis huesos'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'La lectura cristiana relaciona el poema del justo sufriente con la Pasión.' },
   { a: ['prophecies', 'La descendencia de la mujer'], b: ['devils', 'La serpiente / el dragón antiguo'], why: 'La interpretación cristiana enlaza Génesis 3:15 con la derrota final de la serpiente en Apocalipsis.' },
   { a: ['devils', 'Satanás'], b: ['devils', 'La serpiente / el dragón antiguo'], why: 'Apocalipsis 12:9 y 20:2 identifican explícitamente al dragón antiguo con Satanás y el Diablo.' },
