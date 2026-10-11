@@ -95,7 +95,8 @@
     </div>
   </header>
   <main id="reader"><p class="loading">Cargando lectura…</p></main>
-  <script>
+  <script type="module">
+    import { getAdjacentChapterTargets } from '../scripts/chapter-navigation.mjs';
     const params = new URLSearchParams(location.search);
     const routeParts = location.pathname.split('/').filter(Boolean);
     const routeIndex = routeParts.lastIndexOf('lectura');
@@ -128,10 +129,8 @@
         const currentChapterIndex = work.chapters.findIndex(chapter => Number(chapter.number) === requestedChapter);
         const gospelAndActsOrder = ['rvr1909-mateo', 'rvr1909-marcos', 'rvr1909-lucas', 'rvr1909-juan', 'rvr1909-hechos'];
         const bookPosition = gospelAndActsOrder.indexOf(entry.id);
-        const previousBook = bookPosition > 0 ? catalog.find(item => item.id === gospelAndActsOrder[bookPosition - 1]) : null;
-        const nextBook = bookPosition >= 0 && bookPosition < gospelAndActsOrder.length - 1
-          ? catalog.find(item => item.id === gospelAndActsOrder[bookPosition + 1])
-          : null;
+        const orderedBooks = gospelAndActsOrder.map(id => catalog.find(item => item.id === id)).filter(Boolean);
+        const previousBook = bookPosition > 0 ? orderedBooks[bookPosition - 1] : null;
         const chapterNavigation = currentChapterIndex < 0 ? '' : await (async () => {
           const chapterUrl = chapterNumber => {
             const url = new URL(window.location.href);
@@ -149,16 +148,18 @@
               url.hash = '';
               return `${url.pathname}${url.search}`;
             })();
-          let previousTarget = currentChapterIndex > 0
-            ? { book: entry, chapter: work.chapters[currentChapterIndex - 1].number }
-            : null;
-          if (!previousTarget && currentChapterIndex === 0 && previousBook) {
+          let previousBookLastChapter = null;
+          if (currentChapterIndex === 0 && previousBook) {
             const previousWork = await (await fetch(`${assetPrefix}${previousBook.file}`)).json();
-            previousTarget = { book: previousBook, chapter: previousWork.chapters.at(-1).number };
+            previousBookLastChapter = previousWork.chapters.at(-1).number;
           }
-          const nextTarget = currentChapterIndex < work.chapters.length - 1
-            ? { book: entry, chapter: work.chapters[currentChapterIndex + 1].number }
-            : nextBook ? { book: nextBook, chapter: 1 } : null;
+          const { previous: previousTarget, next: nextTarget } = getAdjacentChapterTargets({
+            bookId: entry.id,
+            chapterIndex: currentChapterIndex,
+            chapters: work.chapters,
+            orderedBooks,
+            previousBookLastChapter
+          });
           const bookLabel = book => book.title.replace(/ \(Reina-Valera 1909\)$/, '');
           const previousLabel = previousTarget?.book.id === entry.id
             ? '← Anterior'
