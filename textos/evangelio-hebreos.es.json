@@ -1,0 +1,23 @@
+{
+  "id": "gospel-hebrews-es",
+  "title": "Evangelio de los Hebreos (fragmentos)",
+  "language": "es",
+  "sourceLanguage": "Hebreo/Arameo (fragmentario)",
+  "translator": "Resumen original en español; fragmentos en revisión",
+  "publication": "The Apocryphal New Testament (1924)",
+  "license": "Resumen original y referencias a fragmentos de dominio público.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
+  "notes": "El evangelio original se perdió; esta entrada no reconstruye un texto continuo. Reúne una descripción y referencias a testimonios conservados por Clemente, Orígenes, Jerónimo, Eusebio y otros autores.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fragmentos conservados",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Evangelio de los Hebreos fue utilizado por comunidades judeocristianas y probablemente circuló en hebreo o arameo. Los fragmentos transmitidos aluden al bautismo de Jesús, al Espíritu Santo como figura materna, a apariciones posteriores a la resurrección, a Santiago y a enseñanzas éticas. Las citas no forman una narración continua y no permiten reconstruir con seguridad el texto original."
+        }
+      ]
+    }
+  ]
+}

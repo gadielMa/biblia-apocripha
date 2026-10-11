@@ -928,5 +928,11 @@
     "title": "Apócrifo de Juan (resumen en español)",
     "language": "es",
     "file": "apocryphon-juan.es.json"
+  },
+  {
+    "id": "gospel-hebrews-es",
+    "title": "Evangelio de los Hebreos (fragmentos y resumen)",
+    "language": "es",
+    "file": "evangelio-hebreos.es.json"
   }
 ]
