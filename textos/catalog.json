@@ -19,7 +19,7 @@
   },
   {
     "id": "2-enoc-es",
-    "title": "2 Enoc (traducción automática al español)",
+    "title": "2 Enoc (recensión larga, traducción automática al español)",
     "language": "es",
     "file": "2-enoc.es.json"
   },
@@ -886,5 +886,11 @@
     "title": "Apocalipsis (Reina-Valera 1909)",
     "language": "es",
     "file": "rvr1909/apocalipsis.es.json"
+  },
+  {
+    "id": "4-baruc-es",
+    "title": "4 Baruc (Paraleipomena Ieremiou)",
+    "language": "es",
+    "file": "4-baruc.es.json"
   }
 ]
