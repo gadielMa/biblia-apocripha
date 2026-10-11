@@ -2200,6 +2200,45 @@ function renderRows(rows) {
   }).join('');
 }
 
+function highlightSearchText(text, query) {
+  const source = String(text || '');
+  const normalized = Array.from(source).flatMap((char, index) => {
+    const chars = Array.from(normalizeSearchText(char));
+    return chars.map(value => ({ value, index }));
+  });
+  const haystack = normalized.map(item => item.value).join('');
+  const intervals = [];
+  for (const term of searchTermVariants(query)) {
+    if (!term) continue;
+    let cursor = 0;
+    while (cursor < haystack.length) {
+      const start = haystack.indexOf(term, cursor);
+      if (start < 0) break;
+      const end = start + term.length - 1;
+      const from = normalized[start]?.index;
+      const to = normalized[end]?.index;
+      if (from !== undefined && to !== undefined) intervals.push([from, to + 1]);
+      cursor = start + term.length;
+    }
+  }
+  if (!intervals.length) return esc(source);
+  intervals.sort((a, b) => a[0] - b[0]);
+  const merged = intervals.reduce((result, current) => {
+    const previous = result[result.length - 1];
+    if (previous && current[0] <= previous[1]) previous[1] = Math.max(previous[1], current[1]);
+    else result.push(current);
+    return result;
+  }, []);
+  let output = '';
+  let cursor = 0;
+  for (const [start, end] of merged) {
+    output += esc(source.slice(cursor, start));
+    output += `<strong class="search-highlight">${esc(source.slice(start, end))}</strong>`;
+    cursor = end;
+  }
+  return output + esc(source.slice(cursor));
+}
+
 function renderTextResults() {
   const container = document.getElementById('text-results');
   const content = document.getElementById('text-results-content');
@@ -2217,7 +2256,7 @@ function renderTextResults() {
   const bibleBlock = results.length ? `<h3>En los textos bíblicos</h3><div class="text-result-list">${results.map(item => `
     <a class="text-result" href="lectura/?obra=${encodeURIComponent(item.documentId)}&capitulo=${item.chapter}#pasaje-${item.chapter}-${item.verse}">
       <span class="text-result-meta">${esc(item.title)} · capítulo ${item.chapter}, versículo ${esc(item.verse)}${item.documentId === 'rvr1909-numeros' && item.chapter === 13 && item.verse === '11' && searchTermVariants(query).includes('gaddiel') ? ' (Gaddiel; en RVR1960/NVI: 13:10)' : ''}</span>
-      <span class="text-result-excerpt">${esc(item.text)}</span>
+      <span class="text-result-excerpt">${highlightSearchText(item.text, query)}</span>
     </a>`).join('')}</div>` : '';
   const libraryBlock = libraryResults.length ? `<h3>En las secciones</h3><div class="text-result-list">${libraryResults.map(item => `
     <a class="text-result cross-search-result" href="#${escAttr(item.view)}" data-cross-view="${escAttr(item.view)}" data-cross-target="${escAttr(item.id)}">
