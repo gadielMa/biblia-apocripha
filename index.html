@@ -343,6 +343,11 @@
     .archivo-none { color: var(--text2); font-size: .8rem; }
 
     .fecha { color: var(--text2); font-size: .82rem; white-space: nowrap; }
+    .fecha-proximity { display: inline-block; max-width: 100%; padding: .18rem .48rem; border: 1px solid hsl(var(--date-hue, 210) 34% 78%); border-radius: 999px; color: hsl(var(--date-hue, 210) 46% 29%); background: hsl(var(--date-hue, 210) 58% 93%); font-size: .76rem; font-weight: 750; line-height: 1.35; white-space: normal; }
+    .catalog-date-key { max-width: 1240px; margin: .8rem auto; padding: .75rem 1rem; border: 1px solid var(--border); border-radius: 12px; color: var(--text2); background: rgba(255,255,255,.82); font-size: .78rem; }
+    .catalog-date-key strong { color: var(--text); }
+    .catalog-date-key p { margin: .35rem 0 0; }
+    .catalog-date-gradient { display: inline-block; width: min(220px, 38vw); height: .65rem; margin: 0 .55rem; border: 1px solid rgba(41,55,47,.15); border-radius: 999px; vertical-align: middle; background: linear-gradient(90deg, hsl(142 45% 43%), hsl(95 45% 48%), hsl(58 55% 50%), hsl(28 65% 51%), hsl(5 60% 48%)); }
     .idioma { color: var(--text2); font-size: .82rem; }
     .resumen { color: var(--text2); font-size: .82rem; max-width: 340px; line-height: 1.45; }
     td:nth-child(2), td:nth-child(4) {
@@ -1008,6 +1013,13 @@
 </section>
 
 <div class="row-count" id="row-count"></div>
+
+<aside class="catalog-date-key" aria-label="Escala orientativa de proximidad temporal">
+  <strong>Proximidad temporal al año 33 d. C.</strong>
+  <span class="catalog-date-gradient" aria-hidden="true"></span>
+  <span>más cerca (verde) → más lejos (rojizo)</span>
+  <p>Es una orientación basada en las fechas aproximadas de composición; la cercanía por sí sola no demuestra la fidelidad ni la autenticidad de un texto.</p>
+</aside>
 
 <div class="table-wrap">
   <table id="main-table">
@@ -2089,6 +2101,54 @@ function renderEntryType(row) {
   return `<span class="entry-type ${className}">${esc(type)}</span>`;
 }
 
+function romanToNumber(value) {
+  const numerals = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+  return [...value.toUpperCase()].reduce((total, numeral, index, all) => {
+    const amount = numerals[numeral] || 0;
+    return total + (amount < (numerals[all[index + 1]] || 0) ? -amount : amount);
+  }, 0);
+}
+
+function dateInterval(dateText) {
+  const value = String(dateText || '');
+  const mixedCenturies = value.match(/siglo\s+([ivxlcdm]+)\s*a\.?\s*c\.?\s*[–-]\s*([ivxlcdm]+)\s*d\.?\s*c\.?/i);
+  if (mixedCenturies) {
+    return [-romanToNumber(mixedCenturies[1]) * 100, romanToNumber(mixedCenturies[2]) * 100];
+  }
+
+  const centuries = value.match(/siglos?\s+([ivxlcdm]+)(?:\s*[–-]\s*([ivxlcdm]+))?\s*(a\.?\s*c\.?|d\.?\s*c\.?)/i);
+  if (centuries) {
+    const first = romanToNumber(centuries[1]);
+    const second = romanToNumber(centuries[2] || centuries[1]);
+    const era = /^a/i.test(centuries[3]) ? -1 : 1;
+    const endpoints = [first, second].flatMap(century => era < 0
+      ? [-century * 100, -((century - 1) * 100 + 1)]
+      : [(century - 1) * 100 + 1, century * 100]);
+    return [Math.min(...endpoints), Math.max(...endpoints)];
+  }
+
+  const yearMatches = [...value.matchAll(/(\d{1,4})(?:\s*[–-]\s*(\d{1,4}))?\s*(a\.?\s*c\.?|d\.?\s*c\.?)/gi)];
+  if (!yearMatches.length) return null;
+  const endpoints = yearMatches.flatMap(match => {
+    const era = /^a/i.test(match[3]) ? -1 : 1;
+    return [Number(match[1]) * era, Number(match[2] || match[1]) * era];
+  });
+  return [Math.min(...endpoints), Math.max(...endpoints)];
+}
+
+function renderDateProximity(dateText) {
+  const date = String(dateText || '');
+  const interval = dateInterval(date);
+  if (!interval) return esc(date);
+  const [start, end] = interval;
+  const center = (start + end) / 2;
+  const uncertainty = (end - start) / 2;
+  const distance = Math.abs(center - 33) + uncertainty;
+  const hue = Math.round(142 - 137 * Math.min(1, Math.log1p(distance) / Math.log1p(2500)));
+  const approximateYears = Math.round(distance);
+  return `<span class="fecha-proximity" style="--date-hue:${hue}" title="Aproximadamente ${approximateYears} años de distancia cronológica del 33 d. C.; orientativo, no determina la fiabilidad del texto.">${esc(date)}</span>`;
+}
+
 function renderRow(row) {
   const g = row.Grupo || '';
   const color = getColor(g);
@@ -2103,7 +2163,7 @@ function renderRow(row) {
     <td class="resumen">${esc(row.Resumen || '')}</td>
     <td>${renderArchivo(row)}</td>
     <td><div class="grupo-cell"><span class="grupo-dot" style="background:${color}"></span><span style="font-size:.8rem">${esc(g)}</span></div></td>
-    <td class="fecha">${esc(row['Fecha aproximada'] || '')}</td>
+    <td class="fecha">${renderDateProximity(row['Fecha aproximada'] || '')}</td>
     <td class="idioma">${esc(row['Idioma original'] || '')}</td>
     <td>${renderEntryType(row)}</td>
   </tr>`;
