@@ -759,6 +759,7 @@
     .extinct-intro { margin-bottom: 1rem; padding: 1.25rem 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.94); box-shadow: var(--shadow); }
     .extinct-intro h2 { margin: 0; color: #24364b; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
     .extinct-intro p { max-width: 900px; margin: .45rem 0 0; color: var(--text2); }
+    .kingdoms-intro-image { display: block; width: calc(100% + 2.7rem); max-height: 270px; margin: -1.25rem -1.35rem 1rem; object-fit: cover; object-position: center 45%; border-radius: var(--radius) var(--radius) 0 0; }
     .extinct-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
     .extinct-category { margin-top: 1.4rem; }
     .extinct-category-title { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.7rem); letter-spacing: -.025em; }
@@ -939,9 +940,13 @@
     @media (max-width: 1200px) {
     }
     .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
-    .view-tabs.is-scrolled .view-menu-toggle { width: max-content; }
+    .view-tabs.is-scrolled .view-menu-toggle { width: 100%; }
     .view-tabs .view-links { width: 100%; }
     .view-tabs.open .view-links { margin: .55rem 0 0; }
+    @media (min-width: 769px) {
+      .view-tabs.is-scrolled { width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); }
+      .view-tabs.is-scrolled .view-menu-toggle { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -972,7 +977,7 @@
   <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
   <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
   <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
-  <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Más allá</button>
+  <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Infiernos</button>
   <button class="view-tab" type="button" data-view="ark" aria-selected="false">Arca de Noé</button>
   <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
   <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel y Judá</button>
@@ -1049,6 +1054,7 @@
 
 <section class="extinct-view" id="kingdoms-view" hidden aria-labelledby="kingdoms-title">
   <div class="extinct-intro">
+    <img class="kingdoms-intro-image" src="assets/lugares/siquem.jpg" alt="Paisaje de Siquem, lugar asociado al cisma entre Israel y Judá" loading="lazy">
     <h2 id="kingdoms-title">Israel y Judá: el reino dividido</h2>
     <p>Después del reinado de Salomón, la monarquía que la Biblia presenta como unida quedó separada en dos estados: Israel al norte y Judá al sur. Esta sección distingue el relato bíblico de la reconstrucción histórica posterior.</p>
   </div>
@@ -2218,7 +2224,7 @@ function findLibraryMatches(query) {
     'enoch-view': ['Enoc', 'enoch'],
     'devils-view': ['Diablos', 'devils'],
     'gnosticism-view': ['Gnosticismo', 'gnosticism'],
-    'afterlife-view': ['Más allá', 'afterlife'],
+    'afterlife-view': ['Infiernos', 'afterlife'],
     'ark-view': ['Arca de Noé', 'ark'],
     'shroud-view': ['Sábana Santa', 'shroud'],
     'kingdoms-view': ['Israel y Judá', 'kingdoms']
@@ -2583,6 +2589,8 @@ if (timelineTrack) {
     'La torre de Babel': ['assets/extintos/torre-babel-v2.jpg', 'La torre de Babel elevándose sobre la antigua ciudad'],
     'Sodoma y Gomorra': ['assets/extintos/sodoma-gomorra.jpg', 'La destrucción de Sodoma y Gomorra en una llanura antigua'],
     'Las diez plagas de Egipto': ['assets/timeline/plagas-egipto-ante-faraon.jpg', 'Moisés y Aarón ante el faraón, con el Nilo teñido de rojo y ranas'],
+    'Los Diez Mandamientos en el Sinaí': ['assets/timeline/moises-sinai.png', 'Moisés recibe las tablas de la alianza en el monte Sinaí'],
+    'La división del reino': ['assets/lugares/siquem.jpg', 'Paisaje de Siquem, asociado al cisma entre Israel y Judá'],
     'Sansón': ['assets/timeline/sanson.jpg', 'Sansón derriba las columnas del templo filisteo'],
     'Elías es llevado en un carro de fuego': ['assets/timeline/elias-carro-fuego.jpg', 'Elías asciende en un carro de fuego mientras Eliseo contempla la escena'],
     'Isaías y Emanuel': ['assets/timeline/isaias-emanuel.jpg', 'Isaías habla ante el rey Acaz mientras una mujer sostiene a su hijo'],
@@ -2768,7 +2776,7 @@ afterlifeSection.className = 'extinct-view';
 afterlifeSection.id = 'afterlife-view';
 afterlifeSection.hidden = true;
 afterlifeSection.setAttribute('aria-labelledby', 'afterlife-title');
-afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title">Seol, Hades y las imágenes del juicio</h2><p>Los textos bíblicos usan vocabulario e imágenes de épocas distintas. No son siempre nombres intercambiables ni describen un único mapa detallado del más allá; separamos el ámbito de los muertos, las metáforas de juicio y las visiones del final.</p></div><div class="extinct-grid">
+afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title">Infiernos, Seol, Hades y las imágenes del juicio</h2><p>Los textos bíblicos usan vocabulario e imágenes de épocas distintas. No son siempre nombres intercambiables ni describen un único mapa detallado de los infiernos; separamos el ámbito de los muertos, las metáforas de juicio y las visiones del final.</p></div><div class="extinct-grid">
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Antiguo Testamento · hebreo</span><h3>Seol</h3><p>Seol suele designar la tumba o el ámbito de los muertos en general. En numerosos pasajes no implica por sí mismo un lugar de tormento; el sentido depende del contexto y de la etapa literaria.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=6#pasaje-6-6">Salmo 6:5</a><a href="lectura/?obra=rvr1909-job&amp;capitulo=14#pasaje-14-13">Job 14:13</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Nuevo Testamento · griego</span><h3>Hades</h3><p>Hades es el término griego que la Biblia griega usa para Seol y aparece en el Nuevo Testamento para el reino o dominio de la muerte. Apocalipsis lo distingue del lago de fuego: al final, la Muerte y el Hades entregan a sus muertos y son arrojados al lago.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–14</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Evangelios · imagen de juicio</span><h3>Gehena y el valle de Hinom</h3><p>Gehena deriva del nombre del valle de Hinom, al sur de Jerusalén. Jesús la emplea como imagen de juicio (por ejemplo, Mateo 5:22 y Marcos 9:43–48). La explicación popular de que era simplemente el basural permanentemente encendido de Jerusalén no debe presentarse como un hecho seguro.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=5#pasaje-5-22">Mateo 5:22</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=9#pasaje-9-43">Marcos 9:43–48</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Gehenna" target="_blank" rel="noreferrer">Nota bíblica sobre Gehena</a></div></div></article>
@@ -3061,7 +3069,7 @@ function selectView(view, updateHash = true) {
   currentViewLabel.textContent = `· ${selectedTab?.textContent.trim() || 'Catálogo'}`;
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionTreeVerses);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#mas-alla' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -3073,7 +3081,7 @@ if (location.hash === '#objetos' || location.hash === '#objetos-y-seres') select
 if (location.hash === '#enoc') selectView('enoch', false);
 if (location.hash === '#diablos') selectView('devils', false);
 if (location.hash === '#gnosticismo') selectView('gnosticism', false);
-if (location.hash === '#mas-alla') selectView('afterlife', false);
+if (location.hash === '#mas-alla' || location.hash === '#infiernos') selectView('afterlife', false);
 if (location.hash === '#arca-de-noe' || location.hash === '#arca-noe-sabana-santa') selectView('ark', false);
 if (location.hash === '#sabana-santa') selectView('shroud', false);
 if (location.hash === '#israel-y-juda') selectView('kingdoms', false);
