@@ -1,0 +1,23 @@
+{
+  "id": "gospel-nazarenes-es",
+  "title": "Evangelio de los Nazarenos (fragmentos)",
+  "language": "es",
+  "sourceLanguage": "Arameo/Hebreo (fragmentario)",
+  "translator": "Resumen original en español; fragmentos en revisión",
+  "publication": "The Apocryphal New Testament (1924)",
+  "license": "Resumen original y referencias a fragmentos de dominio público.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
+  "notes": "No se conserva un manuscrito continuo; los testimonios proceden principalmente de citas de autores antiguos. No debe confundirse automáticamente con el Evangelio de los Hebreos ni con el de los Ebionitas.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fragmentos conservados",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Evangelio de los Nazarenos fue utilizado por comunidades judeocristianas de lengua aramea. Las citas antiguas presentan variantes de relatos evangélicos, dichos y escenas de la pasión, y muestran una relación compleja con las tradiciones atribuidas a Mateo. El texto completo se perdió y los fragmentos no permiten reconstruir una narración continua."
+        }
+      ]
+    }
+  ]
+}

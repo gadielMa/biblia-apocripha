@@ -1705,5 +1705,17 @@
     "Resumen": "Evangelio perdido conocido por fragmentos citados por autores cristianos; vinculado a comunidades judeocristianas.",
     "_archivo": null,
     "_tipo": null
+  },
+  {
+    "Grupo": "Evangelios judeocristianos",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Evangelio de los Nazarenos",
+    "Fecha aproximada": "siglo I–II d.C.",
+    "Idioma original": "Arameo/Hebreo",
+    "Resumen": "Evangelio judeocristiano perdido, conocido por citas y variantes de relatos evangélicos conservadas por autores antiguos.",
+    "_archivo": null,
+    "_tipo": null
   }
 ]

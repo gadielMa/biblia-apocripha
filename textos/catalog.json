@@ -934,5 +934,11 @@
     "title": "Evangelio de los Hebreos (fragmentos y resumen)",
     "language": "es",
     "file": "evangelio-hebreos.es.json"
+  },
+  {
+    "id": "gospel-nazarenes-es",
+    "title": "Evangelio de los Nazarenos (fragmentos y resumen)",
+    "language": "es",
+    "file": "evangelio-nazarenos.es.json"
   }
 ]
