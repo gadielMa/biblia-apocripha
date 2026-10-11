@@ -1,0 +1,23 @@
+{
+  "id": "testament-jacob-es",
+  "title": "Testamento de Jacob (fragmento)",
+  "language": "es",
+  "sourceLanguage": "Inglés",
+  "translator": "Traducción automática inicial al español; pendiente de revisión humana",
+  "publication": "The Lost Apocrypha of the Old Testament (M. R. James)",
+  "license": "Public-domain historical translation; verify local status before redistribution.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Lost_Apocrypha_of_the_Old_Testament/Jacob",
+  "notes": "La obra se conserva de manera fragmentaria; esta entrada contiene el testimonio citado por M. R. James, no una reconstrucción completa.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Testimonio fragmentario",
+      "verses": [
+        {
+          "number": "1",
+          "text": "\"Existe actualmente impreso un Testamento del patriarca Jacob que Gelasio en la Distinción 29 (del Decretum de Graciano) cuenta entre los libros de carácter apócrifo\". Aquí se refiere al Decreto Gelasiano, donde en muchas copias se lee erróneamente Testamentum Jacobi para Test. Jobí. No he podido determinar con certeza qué pudo haber sido este Testamento impreso de Jacob, corriente en Italia en el siglo XVI. Sólo existe la posibilidad de que, así como la Visión de Isaías fue impresa en latín más de una vez y completamente olvidada, alguna obra realmente apócrifa haya tenido una vida breve; pero es mucho más probable que se refiera a algún réchauffé de las Bendiciones de Jacob, que circuló con los Testamentos de los Doce Patriarcas. De hecho, tal cosa está antepuesta a algunas de las antiguas traducciones de estos Testamentos, e. gramo. el inglés impreso por Richard Day."
+        }
+      ]
+    }
+  ]
+}

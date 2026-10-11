@@ -916,5 +916,11 @@
     "title": "Escalera de Jacob (fragmentos, traducción automática)",
     "language": "es",
     "file": "escalera-jacob.es.json"
+  },
+  {
+    "id": "testament-jacob-es",
+    "title": "Testamento de Jacob (fragmento, traducción automática)",
+    "language": "es",
+    "file": "testamento-jacob.es.json"
   }
 ]
