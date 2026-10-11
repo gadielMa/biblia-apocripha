@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v16';
+const CACHE = 'biblia-universal-v17';
 const APP_SHELL = ['./', './index.html', './icon.svg', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {

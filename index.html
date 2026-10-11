@@ -2774,8 +2774,12 @@ const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
 const currentViewLabel = document.getElementById('view-menu-current');
-const updateViewMenuSize = () => viewNavigation.classList.toggle('is-scrolled', window.scrollY > 48);
+const updateViewMenuSize = () => {
+  const compactAfter = window.innerWidth >= 768 ? 220 : 48;
+  viewNavigation.classList.toggle('is-scrolled', window.scrollY > compactAfter);
+};
 window.addEventListener('scroll', updateViewMenuSize, { passive: true });
+window.addEventListener('resize', updateViewMenuSize);
 updateViewMenuSize();
 let activeLibraryView = 'catalog';
 const crossNavigationStack = [];
