@@ -2636,6 +2636,27 @@ if (timelineTrack) {
     ['visión apocalíptica','El jinete del caballo blanco','El jinete llamado Fiel y Verdadero aparece sobre un caballo blanco; sus ojos son como llama de fuego. El texto no dice que el caballo sea de fuego.','Apocalipsis 19:11–16','lectura/?obra=rvr1909-apocalipsis&capitulo=19','hope'],
     ['visión apocalíptica','Juicio final y nueva creación','Apocalipsis describe la resurrección y el juicio ante el gran trono blanco; después presenta un cielo nuevo y una tierra nueva.','Apocalipsis 20:11–15 · 21:1–5','lectura/?obra=rvr1909-apocalipsis&capitulo=20','hope']
   ];
+  // Hitos de la vida pública, pasión y resurrección solicitados para la línea temporal.
+  // Cada tarjeta conserva una referencia bíblica y una ilustración independiente.
+  const requestedTimelineEvents = [
+    ['c. 6–4 a. C.','La Adoración de los Magos','Sabios de Oriente visitan al niño Jesús; Mateo narra después la huida de la familia a Egipto para escapar de Herodes.','Mateo 2:1–18','lectura/?obra=rvr1909-mateo&capitulo=2','canonical','assets/linea-tiempo/adoracion-magos.png'],
+    ['12 años después de Cristo','Jesús entre los doctores','Jesús se queda rezagado en el Templo de Jerusalén y asombra a los maestros de la Ley con sus respuestas.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-46','canonical','assets/linea-tiempo/jesus-doctores.png'],
+    ['c. 29–30 d. C.','El Discurso del Pan de Vida','En Cafarnaúm, Jesús declara que quien come de su carne y bebe de su sangre tiene vida eterna.','Juan 6:22–59','lectura/?obra=rvr1909-juan&capitulo=6#pasaje-6-35','canonical','assets/linea-tiempo/pan-vida.png'],
+    ['c. 27–30 d. C.','La Pesca Milagrosa','Después de una noche sin capturas, Jesús hace que las redes de Pedro y sus compañeros se llenen de peces.','Lucas 5:1–11','lectura/?obra=rvr1909-lucas&capitulo=5','canonical','assets/linea-tiempo/pesca-milagrosa.png'],
+    ['c. 27–30 d. C.','La Sanidad del Leproso','Jesús toca y limpia a un hombre con lepra, desafiando las leyes de exclusión de la época.','Marcos 1:40–45','lectura/?obra=rvr1909-marcos&capitulo=1#pasaje-1-40','canonical','assets/linea-tiempo/sanidad-leproso.png'],
+    ['c. 27–30 d. C.','El Paralítico de Cafarnaúm','Jesús perdona los pecados de un hombre paralítico y lo sana, provocando críticas de los escribas.','Marcos 2:1–12','lectura/?obra=rvr1909-marcos&capitulo=2','canonical','assets/linea-tiempo/paralitico-cafarnaum.png'],
+    ['c. 27–30 d. C.','La Resurrección de la Hija de Jairo','Jesús toma de la mano a una niña de doce años y le dice: “Talita kumi”, es decir, “niña, a ti te digo, levántate”.','Marcos 5:21–43','lectura/?obra=rvr1909-marcos&capitulo=5#pasaje-5-41','canonical','assets/linea-tiempo/hija-jairo.png'],
+    ['33 d. C.','El Lavatorio de los Pies','Durante la última cena, Jesús asume el rol de siervo y lava los pies de sus discípulos para enseñar humildad.','Juan 13:1–17','lectura/?obra=rvr1909-juan&capitulo=13','canonical','assets/linea-tiempo/lavatorio-pies.png'],
+    ['c. 27–30 d. C.','El Primer Milagro en Caná','En una boda de Caná, Jesús transforma el agua en vino. Juan presenta este signo como el comienzo de sus señales.','Juan 2:1–11','lectura/?obra=rvr1909-juan&capitulo=2','canonical','assets/linea-tiempo/boda-cana.png'],
+    ['c. 27–30 d. C.','Caminando sobre las Aguas','Jesús camina sobre el mar de Galilea ante el asombro de sus discípulos.','Mateo 14:22–33','lectura/?obra=rvr1909-mateo&capitulo=14#pasaje-14-25','canonical','assets/linea-tiempo/camina-aguas.png'],
+    ['33 d. C.','La Traición y el Arresto','Judas Iscariote entrega a Jesús con un beso y la guardia del templo lo captura en Getsemaní.','Marcos 14:43–52','lectura/?obra=rvr1909-marcos&capitulo=14#pasaje-14-43','canonical','assets/linea-tiempo/traicion-arresto.png'],
+    ['33 d. C.','Las Negaciones de Pedro','Mientras Jesús es juzgado, Pedro niega conocerlo tres veces antes de que cante el gallo, tal como Jesús había anunciado.','Lucas 22:54–62','lectura/?obra=rvr1909-lucas&capitulo=22#pasaje-22-54','canonical','assets/linea-tiempo/negaciones-pedro.png'],
+    ['33 d. C.','El Camino al Gólgota','Jesús carga con su cruz hacia el Gólgota; Simón de Cirene lo ayuda durante parte del trayecto.','Lucas 23:26–32','lectura/?obra=rvr1909-lucas&capitulo=23#pasaje-23-26','canonical','assets/linea-tiempo/camino-golgota.png'],
+    ['33 d. C.','El Juicio de Jesús','Jesús es interrogado ante el consejo y posteriormente llevado ante el gobernador romano Poncio Pilato.','Marcos 14:53–65; 15:1–15','lectura/?obra=rvr1909-marcos&capitulo=15','canonical','assets/linea-tiempo/juicio-jesus.png'],
+    ['33 d. C.','Jesús es azotado','Antes de la crucifixión, Pilato entrega a Jesús para que sea azotado; la escena se presenta aquí sin detalles gráficos.','Juan 19:1–3','lectura/?obra=rvr1909-juan&capitulo=19#pasaje-19-1','canonical','assets/linea-tiempo/azotes-jesus.png'],
+    ['33 d. C. · después de la resurrección','Las Apariciones post-Resurrección','Jesús se manifiesta a los discípulos de Emaús, a los apóstoles y, según Pablo, a más de quinientas personas.','Lucas 24:13–49; 1 Corintios 15:3–8','lectura/?obra=rvr1909-lucas&capitulo=24','canonical','assets/linea-tiempo/apariciones.png'],
+    ['33 d. C. · cuarenta días después','La Ascensión','Jesús asciende al cielo desde el Monte de los Olivos y deja a sus discípulos la promesa de su regreso.','Hechos 1:1–12','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-9','canonical','assets/linea-tiempo/ascension.png']
+  ];
   const existing = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
   const byTitle = new Map(existing);
   const imageCardAliases = {'El gran diluvio y el arca':'Noé y el arca','La última cena y el arresto':'La cena y el arresto','Crucifixión y muerte de Jesús':'Pasión, muerte y sepultura','Resurrección de Jesús':'Jesús resucitado'};
@@ -2652,7 +2673,18 @@ if (timelineTrack) {
   ];
   extra.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'context'])); });
   milestones.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'canonical'])); });
+  requestedTimelineEvents.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard(item)); });
   const order = [...milestones.slice(0,44), extra[0], ...milestones.slice(44,56), extra[2], extra[3], ...milestones.slice(56,57), extra[4], ...milestones.slice(57)];
+  const insertRequestedBefore = (anchor, titles) => {
+    const index = order.findIndex(item => item[1] === anchor);
+    const position = index < 0 ? order.length : index;
+    order.splice(position, 0, ...titles.map(title => requestedTimelineEvents.find(item => item[1] === title)).filter(Boolean));
+  };
+  insertRequestedBefore('Huida y regreso a Nazaret', ['La Adoración de los Magos']);
+  insertRequestedBefore('Bautismo de Jesús', ['Jesús entre los doctores']);
+  insertRequestedBefore('Sermón del Monte y bienaventuranzas', ['El Primer Milagro en Caná','La Pesca Milagrosa','La Sanidad del Leproso','El Paralítico de Cafarnaúm','La Resurrección de la Hija de Jairo','El Discurso del Pan de Vida','Caminando sobre las Aguas']);
+  insertRequestedBefore('La última cena y el arresto', ['El Lavatorio de los Pies','La Traición y el Arresto','Las Negaciones de Pedro','El Camino al Gólgota','El Juicio de Jesús','Jesús es azotado']);
+  insertRequestedBefore('Resurrección de Jesús', ['Las Apariciones post-Resurrección','La Ascensión']);
   const timelineImages = {
     'Adán y Eva en el Edén': ['assets/timeline/adan-eva.png', 'Adán y Eva en el jardín del Edén'],
     'La caída y la expulsión del Edén': ['assets/timeline/adan-eva-fruto.jpg', 'Eva prueba el fruto prohibido en el jardín del Edén'],
@@ -2682,7 +2714,7 @@ if (timelineTrack) {
   };
   const eras = {origins:'origins',patriarchs:'patriarchs',exodus:'exodus',judges:'judges',kingdom:'kingdom',exile:'exile',jesus:'jesus',church:'church',hope:'hope'};
   const eventEra = title => {
-    const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title);
+    const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title) || requestedTimelineEvents.find(row => row[1] === title);
     return item?.[5] || (title.includes('Noé') ? 'origins' : title.includes('Abraham') || title.includes('Jacob') || title.includes('José') ? 'patriarchs' : title.includes('Moisés') ? 'exodus' : title.includes('Jesús') || title.includes('Pasión') || title.includes('Resurrección') ? 'jesus' : 'church');
   };
   const ordered = [];
