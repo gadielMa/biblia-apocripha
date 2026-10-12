@@ -919,6 +919,8 @@
       .prophecies-view { margin-top: .8rem; padding: 0 .75rem; }
       .extinct-view { margin-top: .8rem; padding: 0 .75rem; }
       .extinct-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+      #ascended-view .extinct-grid { grid-template-columns: 1fr; }
+      #ascended-view .extinct-card-image { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; }
       .enoch-passages { grid-template-columns: 1fr; }
       .enoch-view { margin-top: .8rem; padding: 0 .75rem; }
       .extinct-card-body { padding: .8rem; }
@@ -927,6 +929,7 @@
       .timeline-track { display: flex; flex-direction: column; min-width: 0; padding: 0 0 0 1.25rem; gap: .8rem; }
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; }
+      .timeline-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; margin: 0 0 .65rem; border-radius: 11px; object-fit: cover; object-position: center; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
       .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
       .genealogy-flow { min-width: 0; gap: 1rem; padding-left: 1.25rem; }
