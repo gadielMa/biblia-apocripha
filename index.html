@@ -803,6 +803,7 @@
     .extinct-category-title { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.7rem); letter-spacing: -.025em; }
     .extinct-card { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.97); box-shadow: 0 9px 22px rgba(26,48,77,.07); }
     .extinct-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; background: #e7edf4; }
+    #ascended-view .extinct-card-image { height: auto; aspect-ratio: auto; object-fit: contain; object-position: center; }
     .bilirubin-figure { max-width: 390px; margin: .8rem auto; padding: .45rem; border: 1px solid var(--border); border-radius: 12px; background: #f7f9f7; }
     .bilirubin-figure img { display: block; width: 100%; height: auto; }
     .bilirubin-figure figcaption { margin-top: .35rem; color: var(--text2); font-size: .72rem; line-height: 1.4; }
@@ -873,6 +874,15 @@
     .genealogy-jesus { width: min(330px, 100%); display: flex; flex-direction: column; justify-content: center; text-align: center; background: linear-gradient(145deg, #fff8ed, #fff); border-color: #e9bda6; }
     .genealogy-jesus h3 { font-size: 1.45rem; color: #7e391f; }
     .genealogy-jesus .genealogy-name { align-self: center; font-size: .82rem; }
+    .genealogy-sibling-groups { max-width: 1120px; margin: .75rem auto 2rem; padding: 1.15rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.94); box-shadow: var(--shadow); }
+    .genealogy-sibling-groups > h3 { margin: 0; font-size: 1.25rem; }
+    .genealogy-sibling-intro { margin: .35rem 0 1rem; color: var(--text2); }
+    .genealogy-sibling-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+    .genealogy-sibling-card { min-width: 0; padding: .9rem; border: 1px solid #e4eaf1; border-radius: 13px; background: #fbfcfe; }
+    .genealogy-sibling-card h4 { margin: 0 0 .4rem; color: #293d54; font-size: 1rem; }
+    .genealogy-sibling-card p { margin: 0; color: var(--text2); font-size: .88rem; line-height: 1.5; }
+    .genealogy-sibling-refs { display: flex; flex-wrap: wrap; gap: .35rem .8rem; margin-top: .65rem; }
+    .genealogy-sibling-refs a { color: #9b4829; font-size: .78rem; font-weight: 800; text-underline-offset: 2px; }
     .family-tree { position: relative; width: min(760px, 100%); margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     .genealogy-scroll > .genealogy-flow { display: none; }
     .family-tree { counter-reset: main-generation; }
@@ -981,6 +991,8 @@
       .genealogy-names { column-gap: 1.15rem; }
       .genealogy-branch-grid { grid-template-columns: 1fr; }
       .family-tree { width: 100%; }
+      .genealogy-sibling-groups { margin: .5rem 0 1.5rem; padding: .85rem; }
+      .genealogy-sibling-grid { grid-template-columns: 1fr; }
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; min-width: 0; gap: .7rem; padding: 28px 0 26px; }
@@ -1580,8 +1592,8 @@
 <section class="genealogy-view" id="genealogy-view" hidden aria-labelledby="genealogy-title">
   <div class="genealogy-intro">
     <h2 id="genealogy-title">Árbol genealógico: de Adán a Jesús</h2>
-    <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto. Moisés y Elías no aparecen porque fueron profetas, no antepasados de Jesús.</p>
-    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> cada flecha significa “padre o antepasado → hijo o descendiente”; no representa hermanos. La primera parte sigue la cadena compartida hasta David. Después se abren las dos genealogías canónicas: Mateo 1 sigue la línea real por Salomón; Lucas 3 pasa por Natán y asciende de Jesús hasta Adán.</p>
+    <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto. Debajo se agregan hermanos y ramas familiares laterales, separadas del tronco directo.</p>
+    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> cada flecha significa “padre o antepasado → hijo o descendiente”; no representa hermanos. La primera parte sigue la cadena compartida hasta David. Después se abren las dos genealogías canónicas: Mateo 1 sigue la línea real por Salomón; Lucas 3 pasa por Natán y asciende de Jesús hasta Adán. Las familias complementarias no implican que cada persona pertenezca a la línea directa.</p>
   </div>
 
   <div class="genealogy-scroll" aria-label="Desplazá horizontalmente para recorrer el árbol genealógico">
@@ -1697,6 +1709,42 @@
       </article>
     </div>
   </div>
+  <section class="genealogy-sibling-groups" aria-labelledby="genealogy-siblings-title">
+    <h3 id="genealogy-siblings-title">Hermanos y ramas familiares</h3>
+    <p class="genealogy-sibling-intro">Ramas colaterales mencionadas en los textos; se distinguen del linaje principal que conecta con Jesús.</p>
+    <div class="genealogy-sibling-grid">
+      <article class="genealogy-sibling-card">
+        <h4>Caín, Abel y Set</h4>
+        <p>Génesis nombra a Caín y Abel, y luego a Set. Caín mata a Abel; la genealogía que continúa en el árbol sigue la descendencia de Set. El texto también menciona otros hijos e hijas de Adán y Eva sin nombrarlos.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=4#pasaje-4-1">Génesis 4:1–26</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=5#pasaje-5-3">Génesis 5:3–4</a></div>
+      </article>
+      <article class="genealogy-sibling-card">
+        <h4>Ismael e Isaac</h4>
+        <p>Hijos de Abraham con madres distintas: Ismael, hijo de Agar, e Isaac, hijo de Sara. Isaac es la rama que continúa en el tronco genealógico de arriba; Ismael forma otra descendencia.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=16#pasaje-16-15">Génesis 16:15–16</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=21#pasaje-21-1">Génesis 21:1–13</a></div>
+      </article>
+      <article class="genealogy-sibling-card">
+        <h4>Jacob y Esaú</h4>
+        <p>Hijos gemelos de Isaac y Rebeca. Jacob recibe el nombre de Israel y continúa la línea de Judá; Esaú encabeza la rama asociada con Edom.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=25#pasaje-25-24">Génesis 25:24–34</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=36#pasaje-36-1">Génesis 36:1</a></div>
+      </article>
+      <article class="genealogy-sibling-card">
+        <h4>Los hijos de Jacob y Dina</h4>
+        <p>Jacob tuvo doce hijos y una hija nombrada, Dina, con Lea, Raquel, Bilha y Zilpa. Judá es uno de los hermanos y su rama es la que sigue el tronco hasta David. Los hijos: Rubén, Simeón, Leví, Judá, Dan, Neftalí, Gad, Aser, Isacar, Zabulón, José y Benjamín.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=29#pasaje-29-31">Génesis 29:31–30:24</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=35#pasaje-35-16">Génesis 35:16–26</a></div>
+      </article>
+      <article class="genealogy-sibling-card">
+        <h4>Moisés, Aarón y Miriam</h4>
+        <p>Hermanos, hijos de Amram y Jocabed. Aarón y Miriam aparecen junto a Moisés en el relato del Éxodo; son una familia importante, pero no antepasados de Jesús en las genealogías de Mateo y Lucas.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-exodo&amp;capitulo=2#pasaje-2-1">Éxodo 2:1–10</a><a href="lectura/?obra=rvr1909-exodo&amp;capitulo=15#pasaje-15-20">Éxodo 15:20–21</a><a href="lectura/?obra=rvr1909-numeros&amp;capitulo=26#pasaje-26-59">Números 26:59</a></div>
+      </article>
+      <article class="genealogy-sibling-card">
+        <h4>Los hermanos y hermanas de Jesús</h4>
+        <p>Marcos nombra a Santiago, José, Judas y Simón, y menciona hermanas sin dar sus nombres. Los Evangelios los llaman hermanos; las tradiciones cristianas difieren sobre el parentesco exacto, así que aquí no se impone una interpretación única.</p>
+        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=6#pasaje-6-3">Marcos 6:3</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=13#pasaje-13-55">Mateo 13:55–56</a></div>
+      </article>
+    </div>
+  </section>
 </section>
 
 <footer>
