@@ -929,7 +929,7 @@
       .timeline-track { display: flex; flex-direction: column; min-width: 0; padding: 0 0 0 1.25rem; gap: .8rem; }
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; }
-      .timeline-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; margin: 0 0 .65rem; border-radius: 11px; object-fit: cover; object-position: center; }
+      .timeline-image { display: block; width: 100%; height: 170px; aspect-ratio: auto; margin: 0 0 .65rem; border-radius: 11px; object-fit: cover; object-position: center; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
       .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
       .genealogy-flow { min-width: 0; gap: 1rem; padding-left: 1.25rem; }
@@ -954,7 +954,10 @@
       .prophecy-list { padding-left: 1.8rem; }
       .prophecy-card { padding: .9rem; }
     }
-    @media (max-width: 480px) { .extinct-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) {
+      .extinct-grid { grid-template-columns: 1fr; }
+      .timeline-image { height: 150px; }
+    }
     @media (max-width: 1200px) {
     }
     .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
