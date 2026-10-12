@@ -743,7 +743,7 @@
     .timeline-event p { margin: 0; color: var(--text2); font-size: .78rem; line-height: 1.42; }
     .timeline-event a { color: #9b4829; font-size: .72rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .timeline-event a:hover { color: #6e2b18; }
-    .timeline-image { width: calc(100% + 1.7rem); height: 112px; margin: -.1rem -.85rem .1rem; object-fit: cover; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+    .timeline-image { width: calc(100% + 1.7rem); height: 150px; margin: -.1rem -.85rem .1rem; object-fit: contain; border-top-left-radius: 14px; border-top-right-radius: 14px; }
     .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 16 / 10; }
     .timeline-note { margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .69rem !important; line-height: 1.4; }
     .genealogy-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
@@ -752,7 +752,7 @@
     .prophecies-view[hidden] { display: none; }
     .prophecies-intro { padding: 1.25rem 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.92); box-shadow: var(--shadow); }
     .prophecies-intro h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
-    .prophecies-image { display: block; width: 100%; max-height: 260px; margin: 0 0 1rem; object-fit: cover; border-radius: 12px; }
+    .prophecies-image { display: block; width: 100%; max-height: 320px; margin: 0 0 1rem; object-fit: contain; border-radius: 12px; }
     .prophecies-intro p { max-width: 860px; margin: .45rem 0 0; color: var(--text2); }
     .prophecy-list { position: relative; display: grid; gap: 1rem; max-width: 940px; margin: 1.4rem auto 0; padding-left: 2.1rem; }
     .prophecy-list::before { content: ""; position: absolute; top: .7rem; bottom: .7rem; left: .65rem; width: 3px; border-radius: 999px; background: linear-gradient(#b4532d, #dca17b 72%, #6d8da8); }
@@ -772,30 +772,28 @@
     .extinct-intro h2 { margin: 0; color: #24364b; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.035em; }
     .extinct-intro p { max-width: 900px; margin: .45rem 0 0; color: var(--text2); }
     .kingdoms-banner { position: relative; overflow: hidden; height: clamp(220px, 38vw, 470px); margin: 0 0 1rem; border: 1px solid var(--border); border-radius: 20px; background: #dce4ec; box-shadow: var(--shadow); }
-    .kingdoms-banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+    .kingdoms-banner img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
     .kingdoms-banner figcaption { position: absolute; right: .8rem; bottom: .7rem; padding: .35rem .65rem; border-radius: 999px; color: #fff; background: rgba(23,38,57,.68); font-size: .75rem; }
     .extinct-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
     .extinct-category { margin-top: 1.4rem; }
     .extinct-category-title { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.7rem); letter-spacing: -.025em; }
     .extinct-card { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.97); box-shadow: 0 9px 22px rgba(26,48,77,.07); }
-    .extinct-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #e7edf4; }
+    .extinct-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; background: #e7edf4; }
     .bilirubin-figure { max-width: 390px; margin: .8rem auto; padding: .45rem; border: 1px solid var(--border); border-radius: 12px; background: #f7f9f7; }
     .bilirubin-figure img { display: block; width: 100%; height: auto; }
     .bilirubin-figure figcaption { margin-top: .35rem; color: var(--text2); font-size: .72rem; line-height: 1.4; }
     .bilirubin-figure figcaption a { color: #9b4829; font-weight: 750; text-underline-offset: 2px; }
     .extinct-image-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem; background: #e7edf4; }
     .extinct-image-pair figure { min-width: 0; margin: 0; }
-    .extinct-image-pair img { display: block; width: 100%; height: 190px; object-fit: cover; }
+    .extinct-image-pair img { display: block; width: 100%; height: 190px; object-fit: contain; }
     .extinct-image-pair figcaption { padding: .3rem .5rem; color: var(--text2); background: #fff; font-size: .7rem; font-weight: 700; }
-    #extinct-view .extinct-card-image[src*="leon-asiatico"] { object-position: center top; clip-path: inset(0 0 6px); margin-bottom: -6px; }
-    #extinct-view .extinct-card-image[src*="serpientes-ardientes"] { clip-path: inset(0 0 6px); margin-bottom: -6px; }
     .extinct-card-body { padding: 1rem 1.05rem 1.1rem; }
     .extinct-card h3 { margin: .5rem 0 .4rem; color: #24364b; font-size: 1.15rem; line-height: 1.2; }
     .extinct-card p { margin: .4rem 0; color: var(--text2); font-size: .9rem; line-height: 1.5; }
     .extinct-refs { display: flex; flex-direction: column; gap: .45rem; margin-top: .75rem; }
     .extinct-refs a, .extinct-refs span { color: #9b4829; font-size: .85rem; font-weight: 850; text-underline-offset: 3px; }
     .shroud-shortcut-link { display: flex; height: 100%; flex-direction: column; align-items: flex-start; gap: .55rem; padding: .8rem; color: #24364b; text-decoration: none; }
-    .shroud-shortcut-link img { display: block; width: 100%; aspect-ratio: 1; border-radius: 11px; object-fit: cover; }
+    .shroud-shortcut-link img { display: block; width: 100%; aspect-ratio: 1; border-radius: 11px; object-fit: contain; }
     .shroud-shortcut-link strong { font-size: 1rem; }
     .shroud-shortcut-link span:last-child { color: #9b4829; font-size: .84rem; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
     .shroud-shortcut-link:hover span:last-child, .shroud-shortcut-link:focus-visible span:last-child { color: #6e2b18; }
@@ -804,7 +802,7 @@
     .enoch-view { max-width: 1240px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; }
     .enoch-view[hidden] { display: none; }
     .enoch-intro, .enoch-book { margin-bottom: 1rem; padding: 1.25rem 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.96); box-shadow: var(--shadow); }
-    .enoch-intro img { display: block; width: 100%; height: clamp(190px, 25vw, 300px); margin-bottom: 1rem; border-radius: 12px; object-fit: cover; object-position: center 12%; }
+    .enoch-intro img { display: block; width: 100%; height: clamp(190px, 25vw, 300px); margin-bottom: 1rem; border-radius: 12px; object-fit: contain; }
     .enoch-view h2 { margin: 0 0 .5rem; color: #24364b; font-size: clamp(1.4rem, 3vw, 2rem); }
     .enoch-intro p, .enoch-book > p { color: var(--text2); line-height: 1.55; }
     .enoch-book h3 { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.65rem); }
@@ -813,7 +811,7 @@
     .enoch-passage { min-width: 0; padding: .85rem 1rem; border: 1px solid var(--border); border-radius: 13px; background: #fbfcfe; }
     .enoch-passage h4 { margin: 0 0 .4rem; color: #9b4829; font-size: .95rem; }
     .enoch-reference { display: block; margin-bottom: .2rem; color: var(--text2); font-size: .72rem; font-weight: 750; }
-    .enoch-passage img { display: block; width: 100%; aspect-ratio: 8 / 5; margin: 0 0 .65rem; border-radius: 9px; object-fit: cover; object-position: center 12%; }
+    .enoch-passage img { display: block; width: 100%; aspect-ratio: 8 / 5; margin: 0 0 .65rem; border-radius: 9px; object-fit: contain; }
     .enoch-passage blockquote { margin: 0; color: #46596f; line-height: 1.5; }
     .enoch-passage p { margin: .5rem 0 0; color: var(--text2); font-size: .88rem; line-height: 1.45; }
     .enoch-passage a { display: inline-block; margin-top: .5rem; color: #9b4829; font-weight: 800; text-underline-offset: 3px; }
@@ -920,7 +918,7 @@
       .extinct-view { margin-top: .8rem; padding: 0 .75rem; }
       .extinct-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
       #ascended-view .extinct-grid { grid-template-columns: 1fr; }
-      #ascended-view .extinct-card-image { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; }
+      #ascended-view .extinct-card-image { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; object-position: center; }
       .enoch-passages { grid-template-columns: 1fr; }
       .enoch-view { margin-top: .8rem; padding: 0 .75rem; }
       .extinct-card-body { padding: .8rem; }
@@ -2722,18 +2720,18 @@ if (timelineTrack) {
     'Adán y Eva en el Edén': ['assets/timeline/adan-eva.png', 'Adán y Eva en el jardín del Edén'],
     'La caída y la expulsión del Edén': ['assets/timeline/adan-eva-fruto.jpg', 'Eva prueba el fruto prohibido en el jardín del Edén'],
     'Adán, Eva y sus tres hijos': ['assets/timeline/adan-eva-tres-hijos.png', 'Adán y Eva junto a sus hijos Caín, Abel y Set'],
-    'El pacto del monte Hermón': ['assets/enoc/vigilantes.jpg', 'Los Vigilantes se reúnen en el monte Hermón'],
-    'El nacimiento de los Nefilim': ['assets/enoc/gigantes.jpg', 'Los Nefilim, gigantes de la tradición de 1 Enoc'],
-    'Conocimientos prohibidos de los Vigilantes': ['assets/enoc/sol-luna.jpg', 'Los Vigilantes transmiten secretos de astrología y artes ocultas'],
-    'El clamor de la Tierra y los arcángeles': ['assets/enoc/cielo-4.jpg', 'Los arcángeles presentan ante Dios el clamor de la Tierra'],
-    'El Hijo del Hombre y el Anciano de Días': ['assets/enoc/enoc-hero.jpg', 'Enoc contempla al Hijo del Hombre ante el Anciano de Días'],
-    'El diseño exacto del Arca': ['assets/timeline/noe-arca.png', 'El Arca de Noé con sus pisos y proporciones descritas en Génesis'],
-    'Décadas de trabajo y advertencia': ['assets/timeline/noe-arca.png', 'Noé construye el Arca y advierte a su generación'],
-    'La recolección de las especies': ['assets/timeline/noe-arca.png', 'Animales entran en el Arca de Noé'],
-    'El ingreso de la familia de Noé': ['assets/timeline/noe-arca.png', 'Noé y su familia ingresan al Arca'],
-    'Cuarenta días y cuarenta noches de tormenta': ['assets/timeline/noe-arca.png', 'El Arca de Noé flota durante la tormenta del diluvio'],
-    'Ciento cincuenta días de inundación': ['assets/timeline/noe-arca.png', 'El Arca permanece sobre las aguas del diluvio'],
-    'El primer altar y el pacto del arcoíris': ['assets/timeline/noe-arca.png', 'Noé levanta un altar y recibe la señal del arcoíris'],
+    'El pacto del monte Hermón': ['assets/timeline/enoc-pacto-hermon.png', 'Doscientos Vigilantes se reúnen y juran su pacto en el monte Hermón'],
+    'El nacimiento de los Nefilim': ['assets/timeline/enoc-nefilim.png', 'Los Nefilim, gigantes de la tradición de 1 Enoc'],
+    'Conocimientos prohibidos de los Vigilantes': ['assets/timeline/enoc-conocimientos.png', 'Los Vigilantes transmiten metalurgia, botánica y secretos astrales'],
+    'El clamor de la Tierra y los arcángeles': ['assets/timeline/enoc-clamor-arcangeles.png', 'Miguel, Gabriel, Rafael y Uriel presentan el clamor de la Tierra'],
+    'El Hijo del Hombre y el Anciano de Días': ['assets/timeline/enoc-hijo-hombre.png', 'El Hijo del Hombre ante el Anciano de Días'],
+    'El diseño exacto del Arca': ['assets/timeline/noe-ingreso-arca.png', 'El Arca de Noé con sus pisos y proporciones descritas en Génesis'],
+    'Décadas de trabajo y advertencia': ['assets/timeline/noe-ingreso-arca.png', 'Noé construye el Arca y advierte a su generación'],
+    'La recolección de las especies': ['assets/timeline/noe-ingreso-arca.png', 'Animales entran en el Arca de Noé'],
+    'El ingreso de la familia de Noé': ['assets/timeline/noe-ingreso-arca.png', 'Noé y su familia ingresan al Arca'],
+    'Cuarenta días y cuarenta noches de tormenta': ['assets/timeline/noe-diluvio.png', 'El Arca de Noé flota durante la tormenta del diluvio'],
+    'Ciento cincuenta días de inundación': ['assets/timeline/noe-diluvio.png', 'El Arca permanece sobre las aguas del diluvio'],
+    'El primer altar y el pacto del arcoíris': ['assets/timeline/noe-diluvio.png', 'Noé levanta un altar y recibe la señal del arcoíris'],
     'David derrota a Goliat': ['assets/linea-tiempo/david-goliat.jpg', 'David se enfrenta a Goliat en el valle de Ela'],
     'El Primer Templo de Jerusalén': ['assets/linea-tiempo/primer-templo.jpg', 'Reconstrucción artística del Primer Templo de Jerusalén'],
     'Jerusalén cae y el Primer Templo es destruido': ['assets/linea-tiempo/caida-jerusalen.jpg', 'Jerusalén y el Primer Templo en llamas durante la conquista babilónica'],
