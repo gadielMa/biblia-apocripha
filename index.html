@@ -2847,6 +2847,10 @@ if (timelineTrack) {
   insertRequestedBefore('Resurrección de Jesús', ['Las Apariciones post-Resurrección']);
   insertRequestedBefore('Pentecostés', ['La Ascensión']);
   insertRequestedBefore('Isaías y Emanuel', ['Isaías ve al Señor en el Templo','Los Querubines de Ezequiel','Las ruedas centelleantes de Ezequiel','Ezequiel ve la gloria de Dios','Daniel ve al Anciano de Días']);
+  // Mantener las visiones y la caída de Samaria en orden histórico (a. C.):
+  // 722 → siglo VIII → 593 → siglo VI, en vez de dejarlas al final del bloque.
+  moveOrderBefore('Caída del reino del norte ante Asiria', 'Isaías ve al Señor en el Templo');
+  moveOrderBefore('Isaías y Emanuel', 'Los Querubines de Ezequiel');
   insertRequestedBefore('El jinete del caballo blanco', ['Juan ve el trono y al Cordero']);
   insertRequestedBefore('El jinete del caballo blanco', ['La Corte Celestial','Ángeles y huestes celestiales','La Mujer vestida del sol y el Gran Dragón']);
   const timelineImages = {
