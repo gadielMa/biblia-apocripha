@@ -13,10 +13,11 @@
   <meta name="theme-color" content="#8d5f35">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Biblia Universal">
+  <meta name="apple-mobile-web-app-title" content="Biblia + Textos">
+  <meta name="description" content="Biblia y textos extracanonónicos para explorar las historias y preguntas que rodean los relatos bíblicos.">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>Biblioteca Bíblica Universal</title>
+  <title>Biblia + Textos Extracanónicos</title>
   <style>
     :root {
       --bg: #f5eadb;
@@ -579,6 +580,8 @@
     header h1, header p, .stats { position: relative; z-index: 1; max-width: 1240px; margin-left: auto; margin-right: auto; }
     header h1 { color: #fff; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 750; letter-spacing: -.045em; line-height: 1.05; margin-bottom: .75rem; }
     header p { color: #cbd8e7; font-size: 1rem; font-style: normal; }
+    header .hero-tagline { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; color: #fff; }
+    header .hero-description { max-width: 850px; margin-top: .8rem; font-size: 1rem; line-height: 1.6; color: #dce7f2; }
     .stats { justify-content: flex-start; gap: .7rem; margin-top: 2rem; }
     .stat { min-width: 132px; padding: .8rem 1rem; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 12px; box-shadow: none; text-align: left; backdrop-filter: blur(8px); }
     .stat .n { color: #fff; font-size: 1.45rem; }
@@ -1069,8 +1072,9 @@
 <body>
 
 <header>
-  <h1>✦ Biblioteca Bíblica Universal ✦</h1>
-  <p>Cánones · Apócrifos · Extracanónicos</p>
+  <h1>Biblia + Textos Extracanónicos</h1>
+  <p class="hero-tagline">La historia completa</p>
+  <p class="hero-description">Los cánones bíblicos se definieron mediante decisiones humanas, y quienes los delimitaron podían equivocarse. Por eso reunimos la Biblia con textos extracanonónicos para explorar preguntas que los evangelios dejan abiertas: ¿cómo fue la niñez de Jesús más allá de los episodios conocidos? ¿Qué se cuenta sobre los tres días entre su muerte y resurrección? ¿Qué hizo durante los cuarenta días después de resucitar? Leé las fuentes y sacá tus propias conclusiones.</p>
   <div class="stats">
     <div class="stat" title="Obras visibles en el catálogo; algunas tienen más de una edición para leer o buscar"><span class="n" id="total-count">—</span><span class="l">Obras en catálogo</span></div>
     <div class="stat" title="Archivos PDF distintos enlazados desde el catálogo"><span class="n" id="pdf-count">—</span><span class="l">PDFs enlazados</span></div>

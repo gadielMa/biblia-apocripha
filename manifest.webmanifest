@@ -1,7 +1,7 @@
 {
-  "name": "Biblioteca Bíblica Universal",
-  "short_name": "Biblia Universal",
-  "description": "Cánones, apócrifos, pseudoepígrafos y rollos del Mar Muerto.",
+  "name": "Biblia + Textos Extracanónicos",
+  "short_name": "Biblia + Textos",
+  "description": "La historia completa: Biblia y textos extracanonónicos para explorar otras tradiciones.",
   "lang": "es",
   "start_url": "./",
   "display": "standalone",

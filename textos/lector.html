@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#8d5f35">
-  <title>Lector · Biblioteca Bíblica Universal</title>
+  <title>Lector · Biblia + Textos Extracanónicos</title>
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <style>
     :root { --paper:#fffaf2; --ink:#3d2d22; --soft:#7f6753; --accent:#8d5f35; --border:#dcc6aa; }
@@ -183,7 +183,7 @@
         const sourceTranslator = work.sourceTranslator || (work.language === 'es' ? '' : work.translator);
         window.document.getElementById('meta').textContent = [languageLabel, sourceTranslator, work.publication]
           .filter(Boolean).join(' · ');
-        window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
+        window.document.title = `${work.title} · Biblia + Textos Extracanónicos`;
         reader.innerHTML = `<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + chapterNavigation + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));

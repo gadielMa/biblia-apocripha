@@ -1,4 +1,4 @@
-# Biblioteca Bíblica Universal
+# Biblia + Textos Extracanónicos
 
 Tabla interactiva de cánones bíblicos y textos apócrifos con acceso directo a PDFs locales.
 
