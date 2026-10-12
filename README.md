@@ -6,8 +6,8 @@ La aplicación funciona como PWA instalable y adapta el catálogo a tarjetas en 
 
 ## Contenido
 
-- **59 archivos PDF** en el repositorio (56 obras enlazadas en el catálogo)
-- **188 ediciones indexadas** y **58.623 pasajes** disponibles para búsqueda
+- **59 archivos PDF** en el repositorio (51 archivos distintos enlazados desde el catálogo)
+- **192 ediciones indexadas** y **58.884 pasajes** disponibles para búsqueda
 
 El estado de completitud de cada archivo y las fuentes abiertas candidatas se
 mantienen en [AUDITORIA_PDFS.md](AUDITORIA_PDFS.md).
