@@ -875,15 +875,6 @@
     .genealogy-jesus { width: min(330px, 100%); display: flex; flex-direction: column; justify-content: center; text-align: center; background: linear-gradient(145deg, #fff8ed, #fff); border-color: #e9bda6; }
     .genealogy-jesus h3 { font-size: 1.45rem; color: #7e391f; }
     .genealogy-jesus .genealogy-name { align-self: center; font-size: .82rem; }
-    .genealogy-sibling-groups { max-width: 1120px; margin: .75rem auto 2rem; padding: 1.15rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.94); box-shadow: var(--shadow); }
-    .genealogy-sibling-groups > h3 { margin: 0; font-size: 1.25rem; }
-    .genealogy-sibling-intro { margin: .35rem 0 1rem; color: var(--text2); }
-    .genealogy-sibling-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
-    .genealogy-sibling-card { min-width: 0; padding: .9rem; border: 1px solid #e4eaf1; border-radius: 13px; background: #fbfcfe; }
-    .genealogy-sibling-card h4 { margin: 0 0 .4rem; color: #293d54; font-size: 1rem; }
-    .genealogy-sibling-card p { margin: 0; color: var(--text2); font-size: .88rem; line-height: 1.5; }
-    .genealogy-sibling-refs { display: flex; flex-wrap: wrap; gap: .35rem .8rem; margin-top: .65rem; }
-    .genealogy-sibling-refs a { color: #9b4829; font-size: .78rem; font-weight: 800; text-underline-offset: 2px; }
     .family-tree { position: relative; box-sizing: border-box; width: min(900px, 100%); margin: 0 auto; padding-left: 130px; display: flex; flex-direction: column; align-items: center; }
     .tree-date-rail { position: absolute; top: 0; bottom: 0; left: 0; width: 106px; pointer-events: none; }
     .tree-date-rail::before { content: ""; position: absolute; top: var(--rail-start, 0px); bottom: var(--rail-end, 0px); right: 0; width: 2px; background: #b9c8d6; }
@@ -899,18 +890,20 @@
     .tree-node small { display: none; }
     .tree-node[data-generation]::before { content: attr(data-generation); }
     .tree-node.key { border-color: #e4af91; background: #fff3eb; color: #944322; }
-    .tree-adam-children { box-sizing: border-box; }
-    .tree-adam-fork { position: absolute; top: -12px; left: calc(-50% - 20px); right: calc(-50% - 20px); border-top: 3px solid #c46a42; }
-    .tree-adam-sibling { position: absolute; top: 0; box-sizing: border-box; width: 100%; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; }
-    .tree-adam-sibling::before { content: ""; position: absolute; top: -12px; left: 50%; width: 3px; height: 12px; background: #c46a42; transform: translateX(-50%); }
-    .tree-adam-sibling.cain { right: calc(100% + 20px); }
-    .tree-adam-sibling.abel { left: calc(100% + 20px); }
-    .tree-collateral { position: absolute; top: 50%; left: calc(100% + 32px); box-sizing: border-box; width: 240px; padding: .65rem .75rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.08); color: #26384d; text-align: left; transform: translateY(-50%); }
-    .tree-collateral::before { content: ""; position: absolute; top: 50%; right: 100%; width: 32px; height: 2px; background: #c46a42; }
-    .tree-collateral strong { display: block; color: #944322; font-size: .7rem; text-transform: uppercase; }
-    .tree-collateral p { margin: .35rem 0; font-size: .68rem; font-weight: 650; line-height: 1.35; }
-    .tree-collateral-chain { margin-top: .2rem; font-size: .7rem; font-weight: 800; white-space: nowrap; }
-    .tree-collateral a { color: #934426; font-size: .66rem; font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
+    .tree-family-children { box-sizing: border-box; }
+    .tree-family-fork { position: absolute; top: -12px; left: calc(-50% - 20px); right: calc(-50% - 20px); border-top: 3px solid #c46a42; }
+    .tree-family-children.only-left .tree-family-fork { right: 50%; }
+    .tree-family-children.only-right .tree-family-fork { left: 50%; }
+    .tree-family-sibling { position: absolute; top: 0; box-sizing: border-box; width: 100%; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; }
+    .tree-family-sibling::before { content: ""; position: absolute; top: -12px; left: 50%; width: 3px; height: 12px; background: #c46a42; transform: translateX(-50%); }
+    .tree-family-sibling.left { right: calc(100% + 20px); }
+    .tree-family-sibling.right { left: calc(100% + 20px); }
+    .tree-mother, .tree-role { display: block; margin-top: .14rem; color: #718095; font-size: .61rem; font-weight: 700; line-height: 1.2; }
+    .tree-other-sons, .tree-kin-row { position: relative; box-sizing: border-box; width: min(690px, 100%); margin: .25rem 0; padding: .5rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #f8fafc; }
+    .tree-other-sons::before, .tree-kin-row.in-line::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: #c46a42; transform: translateX(-50%); }
+    .tree-other-sons-title { position: relative; display: block; width: fit-content; margin: 0 auto .4rem; padding: .1rem .45rem; background: #f8fafc; color: #914221; font-size: .68rem; font-weight: 900; text-transform: uppercase; }
+    .tree-other-sons-list { position: relative; display: flex; gap: .4rem; overflow-x: auto; padding-bottom: .2rem; scrollbar-width: thin; }
+    .tree-other-sons-list span { flex: 0 0 auto; padding: .34rem .6rem; border: 1px solid #d8e2ed; border-radius: 9px; background: #fff; color: #26384d; font-size: .68rem; font-weight: 800; }
     .tree-node .tree-related { box-sizing: border-box; width: min(285px, calc(100vw - 8rem)); margin: .55rem auto .15rem; padding: .55rem .65rem; border: 1px solid #e8c4ae; border-radius: 9px; background: #fffaf6; color: #5e4c43; text-align: left; }
     .tree-node .tree-related.context { border-color: #ccdbe8; background: #f5f9fc; color: #41566e; }
     .tree-related strong { display: block; color: #974522; font-size: .65rem; letter-spacing: .035em; text-transform: uppercase; }
@@ -1020,22 +1013,19 @@
       .genealogy-names { column-gap: 1.15rem; }
       .genealogy-branch-grid { grid-template-columns: 1fr; }
       .family-tree { width: 100%; }
-      .genealogy-sibling-groups { margin: .5rem 0 1.5rem; padding: .85rem; }
-      .genealogy-sibling-grid { grid-template-columns: 1fr; }
       .family-tree { width: 100%; padding-left: 92px; }
       .tree-date-rail { width: 78px; }
       .tree-date-mark { font-size: .61rem; gap: .25rem; }
       .tree-date-mark::after { width: 7px; }
       .family-tree > .tree-node::before, .tree-branch .tree-node::before { display: none; }
-      .tree-collateral { position: relative; top: auto; left: auto; width: 100%; margin: .65rem auto 0; padding: .55rem; transform: none; }
-      .tree-collateral::before { display: none; }
-      .tree-collateral-chain { white-space: normal; }
       .tree-node .tree-related { width: min(100%, 250px); }
-      .tree-adam-children { width: 100px; min-width: 100px; }
-      .tree-adam-sibling { width: 78px; padding: .48rem .3rem; font-size: .72rem; }
-      .tree-adam-sibling.cain { right: calc(100% + 8px); }
-      .tree-adam-sibling.abel { left: calc(100% + 8px); }
-      .tree-adam-fork { left: calc(-39% - 8px); right: calc(-39% - 8px); }
+      .tree-family-children { width: 100px; min-width: 100px; }
+      .tree-family-sibling { width: 78px; padding: .48rem .3rem; font-size: .72rem; }
+      .tree-family-sibling.left { right: calc(100% + 8px); }
+      .tree-family-sibling.right { left: calc(100% + 8px); }
+      .tree-family-fork { left: calc(-39% - 8px); right: calc(-39% - 8px); }
+      .tree-family-children.only-left .tree-family-fork { right: 50%; }
+      .tree-family-children.only-right .tree-family-fork { left: 50%; }
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; min-width: 0; gap: .7rem; padding: 28px 0 26px; }
@@ -1054,9 +1044,11 @@
       .timeline-event.is-portrait .timeline-image { height: 240px; }
     }
     @media (max-width: 360px) {
-      .tree-adam-children { width: 84px; min-width: 84px; }
-      .tree-adam-sibling { width: 64px; }
-      .tree-adam-fork { left: calc(-32px - 8px); right: calc(-32px - 8px); }
+      .tree-family-children { width: 84px; min-width: 84px; }
+      .tree-family-sibling { width: 64px; }
+      .tree-family-fork { left: -40px; right: -40px; }
+      .tree-family-children.only-left .tree-family-fork { right: 50%; }
+      .tree-family-children.only-right .tree-family-fork { left: 50%; }
     }
     @media (max-width: 1200px) {
     }
@@ -1640,8 +1632,8 @@
 <section class="genealogy-view" id="genealogy-view" hidden aria-labelledby="genealogy-title">
   <div class="genealogy-intro">
     <h2 id="genealogy-title">Árbol genealógico: de Adán a Jesús</h2>
-    <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto. Debajo se agregan hermanos y ramas familiares laterales, separadas del tronco directo.</p>
-    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> cada flecha significa “padre o antepasado → hijo o descendiente”; no representa hermanos. Moisés aparece junto a Jacob, en la rama lateral de Leví; Elías aparece junto a Josafat, como historia del período de los reinos. Los recuadros claros muestran otros familiares; los azules ubican historias de la época, sin indicar parentesco. La línea principal llega hasta David y luego se divide: Mateo 1 sigue por Salomón y Lucas 3 por Natán. Las fechas de la izquierda indican períodos aproximados, no el año de vida de cada persona. La sección de abajo amplía las ramas familiares laterales.</p>
+    <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto. Los hermanos aparecen horizontalmente junto a su familia.</p>
+    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> las flechas verticales siguen la descendencia principal; los nodos laterales muestran hermanos de esa línea. Moisés pertenece a la rama de Leví. Elías aparece en la línea de tiempo, no como familiar de Josafat. Desde David, Mateo 1 sigue por Salomón y Lucas 3 por Natán. Las fechas de la izquierda indican períodos aproximados.</p>
   </div>
 
   <div class="genealogy-scroll" aria-label="Desplazá horizontalmente para recorrer el árbol genealógico">
@@ -1654,7 +1646,7 @@
         <div class="tree-date-mark" data-date-target="José" data-date-branch="convergence"><span>c. 4 a. C.</span></div>
       </div>
       <div class="tree-node key">Adán<small>padre de Caín, Abel y Set</small></div><div class="tree-down"></div>
-      <div class="tree-node tree-adam-children">Set<span class="tree-adam-fork" aria-hidden="true"></span><span class="tree-adam-sibling cain">Caín</span><span class="tree-adam-sibling abel">Abel</span><small>padre de Enós</small></div><div class="tree-down"></div>
+      <div class="tree-node tree-family-children">Set<span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Caín</span><span class="tree-family-sibling right">Abel</span><small>padre de Enós</small></div><div class="tree-down"></div>
       <div class="tree-node">Enós</div><div class="tree-down"></div>
       <div class="tree-node">Cainán</div><div class="tree-down"></div>
       <div class="tree-node">Mahalaleel</div><div class="tree-down"></div>
@@ -1662,8 +1654,8 @@
       <div class="tree-node key">Enoc</div><div class="tree-down"></div>
       <div class="tree-node">Matusalén</div><div class="tree-down"></div>
       <div class="tree-node">Lamec</div><div class="tree-down"></div>
-      <div class="tree-node key">Noé<aside class="tree-related" data-target="Noé" data-branch="trunk"><strong>Otros hijos de Noé</strong><p>Cam y Jafet son hermanos de Sem, por quien continúa esta línea.</p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=9#pasaje-9-18">Génesis 9:18–19</a></aside><small>padre de Sem</small></div><div class="tree-down"></div>
-      <div class="tree-node">Sem</div><div class="tree-down"></div>
+      <div class="tree-node key">Noé<small>padre de Sem, Cam y Jafet</small></div><div class="tree-down"></div>
+      <div class="tree-node tree-family-children">Sem<span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Cam</span><span class="tree-family-sibling right">Jafet</span></div><div class="tree-down"></div>
       <div class="tree-node">Arfaxad</div><div class="tree-down"></div>
       <div class="tree-node">Sala</div><div class="tree-down"></div>
       <div class="tree-node">Heber</div><div class="tree-down"></div>
@@ -1672,11 +1664,13 @@
       <div class="tree-node">Serug</div><div class="tree-down"></div>
       <div class="tree-node">Nacor</div><div class="tree-down"></div>
       <div class="tree-node">Taré</div><div class="tree-down"></div>
-      <div class="tree-node key">Abraham<aside class="tree-related" data-target="Abraham" data-branch="trunk"><strong>Familia de Abraham</strong><p>Sara es madre de Isaac; Agar es madre de Ismael, otro hijo de Abraham.</p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=21#pasaje-21-1">Génesis 21:1–21</a></aside><small>padre de Isaac</small></div><div class="tree-down"></div>
-      <div class="tree-node key">Isaac<aside class="tree-related" data-target="Isaac" data-branch="trunk"><strong>Familia de Isaac</strong><p>Rebeca es madre de los gemelos Esaú y Jacob; el árbol sigue por Jacob.</p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=25#pasaje-25-19">Génesis 25:19–26</a></aside><small>padre de Jacob</small></div><div class="tree-down"></div>
-      <div class="tree-node key">Jacob<aside class="tree-related" data-target="Jacob" data-branch="trunk"><strong>Familia de Jacob</strong><p>Lea y Raquel forman parte de su historia. José de Egipto es otro hijo de Jacob y hermano de Judá; no es José, esposo de María.</p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=37#pasaje-37-1">Génesis 37:1–11</a></aside><small>rama de Judá</small><aside class="tree-collateral" aria-label="Rama de Leví hasta Moisés"><strong>Rama lateral · Leví</strong><div class="tree-collateral-chain">Leví → Coat → Amram → Moisés</div><p>Moisés desciende de Leví, hermano de Judá. Esta rama no continúa hacia David y Jesús.</p><a href="lectura/?obra=rvr1909-exodo&amp;capitulo=6#pasaje-6-16">Éxodo 6:16–20</a></aside></div><div class="tree-down"></div>
-      <div class="tree-node">Judá<aside class="tree-related" data-target="Judá" data-branch="trunk"><strong>Tamar · línea de Mateo</strong><p>Madre de Fares, hijo de Judá.</p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-3">Mateo 1:3</a></aside></div><div class="tree-down"></div>
-      <div class="tree-node">Fares</div><div class="tree-down"></div>
+      <div class="tree-node key">Abraham<small>padre de Isaac e Ismael</small></div><div class="tree-down"></div>
+      <div class="tree-node key tree-family-children only-right">Isaac<span class="tree-mother">Madre: Sara</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling right">Ismael<span class="tree-mother">Madre: Agar</span></span><small>padre de Jacob y Esaú</small></div><div class="tree-down"></div>
+      <div class="tree-node key tree-family-children only-left">Jacob<span class="tree-mother">Madre: Rebeca</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Esaú<span class="tree-mother">Madre: Rebeca</span></span><small>padre de Judá, Leví y José</small></div><div class="tree-down"></div>
+      <div class="tree-node tree-family-children">Judá<span class="tree-mother">Madre: Lea</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Leví<span class="tree-mother">Madre: Lea</span></span><span class="tree-family-sibling right">José<span class="tree-mother">Madre: Raquel</span></span></div><div class="tree-down"></div>
+      <div class="tree-kin-row in-line" aria-label="Otros hijos de Jacob"><span class="tree-other-sons-title">Otros hijos de Jacob</span><div class="tree-other-sons-list"><span>Rubén</span><span>Simeón</span><span>Dan</span><span>Neftalí</span><span>Gad</span><span>Aser</span><span>Isacar</span><span>Zabulón</span><span>Benjamín</span><span>Dina, hermana</span></div></div><div class="tree-down"></div>
+      <div class="tree-kin-row in-line" aria-label="Rama de Leví"><span class="tree-other-sons-title">Rama de Leví · Coat → Amram</span><div class="tree-other-sons-list"><span>Miriam</span><span>Aarón</span><span>Moisés</span></div></div><div class="tree-down"></div>
+      <div class="tree-node">Fares<span class="tree-mother">Madre: Tamar</span></div><div class="tree-down"></div>
       <div class="tree-node">Esrom</div><div class="tree-down"></div>
       <div class="tree-node">Aram</div><div class="tree-down"></div>
       <div class="tree-node">Aminadab</div><div class="tree-down"></div>
@@ -1685,13 +1679,14 @@
       <div class="tree-node key">Booz<aside class="tree-related" data-target="Booz" data-branch="trunk"><strong>Rut · línea de Mateo</strong><p>Madre de Obed; su historia se cuenta en el libro de Rut.</p><a href="lectura/?obra=rvr1909-rut&amp;capitulo=4#pasaje-4-13">Rut 4:13–22</a></aside></div><div class="tree-down"></div>
       <div class="tree-node">Obed</div><div class="tree-down"></div>
       <div class="tree-node">Isaí</div><div class="tree-down"></div>
-      <div class="tree-node key">David<aside class="tree-related context" data-target="David" data-branch="trunk"><strong>Historia de la época · Samuel y Saúl</strong><p>Samuel unge a David, quien llega a la corte del rey Saúl. No son eslabones de su genealogía.</p><a href="lectura/?obra=rvr1909-1-samuel&amp;capitulo=16#pasaje-16-1">1 Samuel 16</a></aside><aside class="tree-related" data-target="David" data-branch="trunk"><strong>Betsabé · línea de Mateo</strong><p>Madre de Salomón; Mateo la llama «la mujer de Urías».</p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-6">Mateo 1:6</a></aside><small>padre de Salomón y Natán</small></div><div class="tree-down"></div>
+      <div class="tree-node key">David<small>padre de Salomón, Natán y otros hijos</small></div><div class="tree-down"></div>
+      <div class="tree-other-sons" aria-label="Otros hijos de David"><span class="tree-other-sons-title">Otros hijos de David · 2 Samuel 3 y 5</span><div class="tree-other-sons-list"><span>Amnón</span><span>Quileab</span><span>Absalón</span><span>Adonías</span><span>Sefatías</span><span>Itream</span><span>Samúa</span><span>Sobab</span><span>Ibhar</span><span>Elisúa</span><span>Nefeg</span><span>Jafía</span><span>Elisama</span><span>Eliada</span><span>Elifelet</span></div></div><div class="tree-down"></div>
 
       <div class="tree-branches" aria-label="Ramas de David">
         <div class="tree-siblings">
           <section class="tree-branch" aria-label="Rama de Mateo por Salomón">
             <p class="tree-branch-label">Mateo 1 · por Salomón</p>
-            <div class="tree-node key">Salomón</div><div class="tree-down"></div><div class="tree-node">Roboam</div><div class="tree-down"></div><div class="tree-node">Abías</div><div class="tree-down"></div><div class="tree-node">Asa</div><div class="tree-down"></div><div class="tree-node">Josafat<aside class="tree-related context" data-target="Josafat" data-branch="mateo"><strong>Historia de los reinos · Elías</strong><p>El profeta Elías enfrenta a los profetas de Baal en tiempos del reino dividido; no se indica parentesco con esta línea.</p><a href="lectura/?obra=rvr1909-1-reyes&amp;capitulo=18#pasaje-18-20">1 Reyes 18:20–40</a></aside></div><div class="tree-down"></div><div class="tree-node">Joram</div><div class="tree-down"></div><div class="tree-node">Ozías</div><div class="tree-down"></div><div class="tree-node">Joatam</div><div class="tree-down"></div><div class="tree-node">Acaz</div><div class="tree-down"></div><div class="tree-node">Ezequías<aside class="tree-related context" data-target="Ezequías" data-branch="mateo"><strong>Historia de los reinos · Isaías</strong><p>El profeta Isaías actúa durante reinados de Judá que incluyen el de Ezequías.</p><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=1#pasaje-1-1">Isaías 1:1</a></aside></div><div class="tree-down"></div><div class="tree-node">Manasés</div><div class="tree-down"></div><div class="tree-node">Amón</div><div class="tree-down"></div><div class="tree-node">Josías<aside class="tree-related context" data-target="Josías" data-branch="mateo"><strong>Historia de los reinos · Jeremías</strong><p>La actividad de Jeremías comienza durante el reinado de Josías.</p><a href="lectura/?obra=rvr1909-jeremias&amp;capitulo=1#pasaje-1-2">Jeremías 1:2–3</a></aside></div><div class="tree-down"></div><div class="tree-node">Jeconías<aside class="tree-related context" data-target="Jeconías" data-branch="mateo"><strong>Historia del exilio · Daniel</strong><p>El libro de Daniel sitúa su relato inicial durante la deportación a Babilonia.</p><a href="lectura/?obra=rvr1909-daniel&amp;capitulo=1#pasaje-1-1">Daniel 1:1–6</a></aside></div><div class="tree-down"></div><div class="tree-node">Salatiel</div><div class="tree-down"></div><div class="tree-node">Zorobabel<aside class="tree-related context" data-target="Zorobabel" data-branch="mateo"><strong>Historia del período persa · Ester</strong><p>La historia de Ester transcurre en la corte persa; no se indica parentesco con Zorobabel.</p><a href="lectura/?obra=rvr1909-ester&amp;capitulo=2#pasaje-2-1">Ester 2</a></aside></div><div class="tree-down"></div><div class="tree-node">Abiud</div><div class="tree-down"></div><div class="tree-node">Eliaquim</div><div class="tree-down"></div><div class="tree-node">Azor</div><div class="tree-down"></div><div class="tree-node">Sadoc</div><div class="tree-down"></div><div class="tree-node">Aquim</div><div class="tree-down"></div><div class="tree-node">Eliud</div><div class="tree-down"></div><div class="tree-node">Eleazar</div><div class="tree-down"></div><div class="tree-node">Matán</div><div class="tree-down"></div><div class="tree-node">Jacob</div><div class="tree-down"></div><div class="tree-node key">José</div>
+            <div class="tree-node key">Salomón</div><div class="tree-down"></div><div class="tree-node">Roboam</div><div class="tree-down"></div><div class="tree-node">Abías</div><div class="tree-down"></div><div class="tree-node">Asa</div><div class="tree-down"></div><div class="tree-node">Josafat<span class="tree-role">Rey de Judá</span></div><div class="tree-down"></div><div class="tree-node">Joram</div><div class="tree-down"></div><div class="tree-node">Ozías</div><div class="tree-down"></div><div class="tree-node">Joatam</div><div class="tree-down"></div><div class="tree-node">Acaz</div><div class="tree-down"></div><div class="tree-node">Ezequías<aside class="tree-related context" data-target="Ezequías" data-branch="mateo"><strong>Historia de los reinos · Isaías</strong><p>El profeta Isaías actúa durante reinados de Judá que incluyen el de Ezequías.</p><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=1#pasaje-1-1">Isaías 1:1</a></aside></div><div class="tree-down"></div><div class="tree-node">Manasés</div><div class="tree-down"></div><div class="tree-node">Amón</div><div class="tree-down"></div><div class="tree-node">Josías<aside class="tree-related context" data-target="Josías" data-branch="mateo"><strong>Historia de los reinos · Jeremías</strong><p>La actividad de Jeremías comienza durante el reinado de Josías.</p><a href="lectura/?obra=rvr1909-jeremias&amp;capitulo=1#pasaje-1-2">Jeremías 1:2–3</a></aside></div><div class="tree-down"></div><div class="tree-node">Jeconías<aside class="tree-related context" data-target="Jeconías" data-branch="mateo"><strong>Historia del exilio · Daniel</strong><p>El libro de Daniel sitúa su relato inicial durante la deportación a Babilonia.</p><a href="lectura/?obra=rvr1909-daniel&amp;capitulo=1#pasaje-1-1">Daniel 1:1–6</a></aside></div><div class="tree-down"></div><div class="tree-node">Salatiel</div><div class="tree-down"></div><div class="tree-node">Zorobabel</div><div class="tree-down"></div><div class="tree-node">Abiud</div><div class="tree-down"></div><div class="tree-node">Eliaquim</div><div class="tree-down"></div><div class="tree-node">Azor</div><div class="tree-down"></div><div class="tree-node">Sadoc</div><div class="tree-down"></div><div class="tree-node">Aquim</div><div class="tree-down"></div><div class="tree-node">Eliud</div><div class="tree-down"></div><div class="tree-node">Eleazar</div><div class="tree-down"></div><div class="tree-node">Matán</div><div class="tree-down"></div><div class="tree-node">Jacob</div><div class="tree-down"></div><div class="tree-node key">José</div>
           </section>
           <section class="tree-branch" aria-label="Rama de Lucas por Natán">
             <p class="tree-branch-label">Lucas 3 · por Natán</p>
@@ -1702,16 +1697,16 @@
       <div class="tree-down"></div>
       <div class="tree-parents" aria-label="María y José, padres de Jesús">
         <div class="tree-parent"><div class="tree-node" data-generation="" data-relation="Madre de Jesús">María</div></div>
-        <div class="tree-parent jose-parent"><div class="tree-node key jose-convergence" data-generation="">José<strong class="tree-jose-headline">Une ambos linajes de sangre de David</strong><span class="tree-jose-detail">En este árbol, la rama de Salomón (<a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-6">Mateo 1</a>) y la de Natán (<a href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-31">Lucas 3</a>) confluyen en José. Mateo lo llama hijo de Jacob; Lucas lo vincula con Elí.</span></div></div>
+        <div class="tree-parent jose-parent"><div class="tree-node key jose-convergence" data-generation="">José<strong class="tree-jose-headline">Une ambos linajes de sangre de David</strong><span class="tree-jose-detail">En este árbol, la rama de Salomón (<a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-6">Mateo 1</a>) y la de Natán (<a href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-31">Lucas 3</a>) confluyen en José. Mateo lo llama hijo de Jacob; Lucas lo vincula con Heli.</span></div></div>
       </div>
       <div class="tree-down"></div>
       <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
+      <div class="tree-kin-row" aria-label="Hermanos nombrados de Jesús"><span class="tree-other-sons-title">Hermanos mencionados · Marcos 6:3</span><div class="tree-other-sons-list"><span>Santiago</span><span>José</span><span>Judas</span><span>Simón</span><span>Hermanas sin nombre</span></div></div>
       <aside class="tree-verse" data-target="Adán"><strong>Adán · tradición apócrifa</strong><q>¡Oh Dios! Perdónanos. Cuando estábamos en el jardín no conocíamos el calor ni el frío, ni sabíamos lo que era el miedo. Pero ahora que hemos salido, tenemos miedo de morir en esta oscuridad y ser devorados por los hombres.</q><a href="pdfs/libro-adan-eva.pdf" target="_blank" rel="noopener">Vida de Adán y Eva</a></aside>
       <aside class="tree-verse" data-target="Enoc"><strong>Enoc · 1 Enoc 12:4–5</strong><q>Enoc, escriba de justicia, ve y di a los Vigilantes del cielo que han abandonado el cielo excelso y se han contaminado con mujeres: habéis causado una gran destrucción sobre la tierra, y no tendréis paz ni perdón de pecados.</q><a href="lectura/?obra=1-enoc-es&amp;capitulo=12#pasaje-12-4">Leer 1 Enoc 12:4–5</a></aside>
       <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:14</strong><q>Hazte un arca de madera de Gopher: harás aposentos en el arca, y la embetunarás con brea por dentro y por fuera.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Leer Génesis 6:14–16</a></aside>
       <aside class="tree-verse" data-target="Abraham"><strong>Abraham · Génesis 12:1–2</strong><q>Vete de tu tierra y de tu parentela, y de la casa de tu padre, á la tierra que te mostraré. Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=12#pasaje-12-1">Leer Génesis 12:1–2</a></aside>
       <aside class="tree-verse" data-target="Isaac"><strong>Isaac · Génesis 35:28–29</strong><q>Fueron los días de Isaac ciento ochenta años. Y exhaló Isaac el espíritu, y murió, y fue reunido a su pueblo, viejo y lleno de días; y lo sepultaron sus hijos Esaú y Jacob.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=35#pasaje-35-28">Leer Génesis 35:28–29</a></aside>
-      <aside class="tree-verse" data-target="David"><strong>David · Salmo 23:1</strong><q>JEHOVÁ es mi pastor; nada me faltará.</q><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=23#pasaje-23-1">Leer Salmo 23:1</a></aside>
       <aside class="tree-verse" data-target="María"><strong>María · Lucas 1:28</strong><q>Dios te salve, María, llena eres de gracia; el Señor es contigo.</q><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-28">Leer Lucas 1:28</a></aside>
       <aside class="tree-verse" data-target="Jesús"><strong>Jesús · Juan 14:6</strong><q>Yo soy el camino, y la verdad, y la vida.</q><a href="lectura/?obra=rvr1909-juan&amp;capitulo=14#pasaje-14-6">Leer Juan 14:6</a></aside>
     </div>
@@ -1764,42 +1759,6 @@
       </article>
     </div>
   </div>
-  <section class="genealogy-sibling-groups" aria-labelledby="genealogy-siblings-title">
-    <h3 id="genealogy-siblings-title">Hermanos y ramas familiares</h3>
-    <p class="genealogy-sibling-intro">Ramas colaterales mencionadas en los textos; se distinguen del linaje principal que conecta con Jesús.</p>
-    <div class="genealogy-sibling-grid">
-      <article class="genealogy-sibling-card">
-        <h4>Caín, Abel y Set</h4>
-        <p>Génesis nombra a Caín y Abel, y luego a Set. Caín mata a Abel; la genealogía que continúa en el árbol sigue la descendencia de Set. El texto también menciona otros hijos e hijas de Adán y Eva sin nombrarlos.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=4#pasaje-4-1">Génesis 4:1–26</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=5#pasaje-5-3">Génesis 5:3–4</a></div>
-      </article>
-      <article class="genealogy-sibling-card">
-        <h4>Ismael e Isaac</h4>
-        <p>Hijos de Abraham con madres distintas: Ismael, hijo de Agar, e Isaac, hijo de Sara. Isaac es la rama que continúa en el tronco genealógico de arriba; Ismael forma otra descendencia.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=16#pasaje-16-15">Génesis 16:15–16</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=21#pasaje-21-1">Génesis 21:1–13</a></div>
-      </article>
-      <article class="genealogy-sibling-card">
-        <h4>Jacob y Esaú</h4>
-        <p>Hijos gemelos de Isaac y Rebeca. Jacob recibe el nombre de Israel y continúa la línea de Judá; Esaú encabeza la rama asociada con Edom.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=25#pasaje-25-24">Génesis 25:24–34</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=36#pasaje-36-1">Génesis 36:1</a></div>
-      </article>
-      <article class="genealogy-sibling-card">
-        <h4>Los hijos de Jacob y Dina</h4>
-        <p>Jacob tuvo doce hijos y una hija nombrada, Dina, con Lea, Raquel, Bilha y Zilpa. Judá es uno de los hermanos y su rama es la que sigue el tronco hasta David. Los hijos: Rubén, Simeón, Leví, Judá, Dan, Neftalí, Gad, Aser, Isacar, Zabulón, José y Benjamín.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=29#pasaje-29-31">Génesis 29:31–30:24</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=35#pasaje-35-16">Génesis 35:16–26</a></div>
-      </article>
-      <article class="genealogy-sibling-card">
-        <h4>Moisés, Aarón y Miriam</h4>
-        <p>Hermanos, hijos de Amram y Jocabed. Aarón y Miriam aparecen junto a Moisés en el relato del Éxodo; son una familia importante, pero no antepasados de Jesús en las genealogías de Mateo y Lucas.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-exodo&amp;capitulo=2#pasaje-2-1">Éxodo 2:1–10</a><a href="lectura/?obra=rvr1909-exodo&amp;capitulo=15#pasaje-15-20">Éxodo 15:20–21</a><a href="lectura/?obra=rvr1909-numeros&amp;capitulo=26#pasaje-26-59">Números 26:59</a></div>
-      </article>
-      <article class="genealogy-sibling-card">
-        <h4>Los hermanos y hermanas de Jesús</h4>
-        <p>Marcos nombra a Santiago, José, Judas y Simón, y menciona hermanas sin dar sus nombres. Los Evangelios los llaman hermanos; las tradiciones cristianas difieren sobre el parentesco exacto, así que aquí no se impone una interpretación única.</p>
-        <div class="genealogy-sibling-refs"><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=6#pasaje-6-3">Marcos 6:3</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=13#pasaje-13-55">Mateo 13:55–56</a></div>
-      </article>
-    </div>
-  </section>
 </section>
 
 <footer>
@@ -3517,8 +3476,15 @@ function setGenealogyRelationships() {
   const textOf = node => node.firstChild.textContent.trim();
   const trunk = Array.from(document.querySelectorAll('.family-tree > .tree-node'));
   const davidIndex = trunk.findIndex(node => textOf(node) === 'David');
+  const familyRelations = {
+    'Adán': 'Padre de Caín, Abel y Set',
+    'Noé': 'Padre de Sem, Cam y Jafet',
+    'Abraham': 'Padre de Isaac e Ismael',
+    'Isaac': 'Padre de Jacob y Esaú',
+    'Jacob': 'Padre de Judá, Leví y José'
+  };
   trunk.slice(0, davidIndex + 1).forEach((node, index, chain) => {
-    node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón y Natán' : textOf(node) === 'Adán' ? 'Padre de Caín, Abel y Set' : textOf(node) === 'Jacob' ? 'Padre de Judá y Leví' : `Padre de ${textOf(chain[index + 1])}`;
+    node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón, Natán y otros hijos' : familyRelations[textOf(node)] || `Padre de ${textOf(chain[index + 1])}`;
   });
   document.querySelectorAll('.tree-branch').forEach(branch => {
     let nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
