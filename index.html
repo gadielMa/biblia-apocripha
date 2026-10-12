@@ -745,7 +745,7 @@
     .timeline-event p { margin: 0; color: var(--text2); font-size: .78rem; line-height: 1.42; }
     .timeline-event a { color: #9b4829; font-size: .72rem; font-weight: 800; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     .timeline-event a:hover { color: #6e2b18; }
-    .timeline-image { width: calc(100% + 1.7rem); height: 150px; margin: -.1rem -.85rem .1rem; object-fit: contain; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+    .timeline-image { display: block; width: calc(100% + 1.7rem); max-width: none; height: 150px; margin: -.1rem -.85rem .1rem; object-fit: contain; border-top-left-radius: 14px; border-top-right-radius: 14px; }
     /* Las ilustraciones verticales necesitan más aire en desktop para conservar su encuadre. */
     .timeline-event.is-portrait { min-width: 250px; min-height: 430px; }
     .timeline-event.is-portrait .timeline-image { height: 290px; }
