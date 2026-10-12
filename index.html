@@ -929,7 +929,7 @@
       .timeline-track { display: flex; flex-direction: column; width: 100%; min-width: 0 !important; padding: 0 0 0 1.25rem; gap: .8rem; box-sizing: border-box; }
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; min-width: 0; width: 100%; box-sizing: border-box; overflow: hidden; }
-      .timeline-image { display: block; width: 100%; max-width: 100%; min-width: 0; height: 170px; aspect-ratio: auto; box-sizing: border-box; margin: 0 0 .65rem; border-radius: 11px; object-fit: cover; object-position: center; }
+      .timeline-image { display: block; width: 100%; max-width: 100%; min-width: 0; height: 220px; aspect-ratio: auto; box-sizing: border-box; margin: 0 0 .65rem; border-radius: 11px; object-fit: contain; object-position: center; background: #eef3f8; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
       .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
       .genealogy-flow { min-width: 0; gap: 1rem; padding-left: 1.25rem; }
@@ -956,7 +956,7 @@
     }
     @media (max-width: 480px) {
       .extinct-grid { grid-template-columns: 1fr; }
-      .timeline-image { height: 150px; }
+      .timeline-image { height: 190px; }
     }
     @media (max-width: 1200px) {
     }
@@ -2503,7 +2503,7 @@ function makeTimelineCard([date, title, description, reference, href, source, im
 }
 if (timelineTrack) {
   // Las fichas breves de promesa ya cuentan Moisés e Isaías; evitamos repetirlos más adelante.
-  ['Moisés y la alianza', 'Isaías y la esperanza'].forEach(title =>
+  ['Moisés y la alianza', 'Isaías y la esperanza', 'El mundo del Segundo Templo'].forEach(title =>
     Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === title)?.remove()
   );
   Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Los libros más antiguos')?.remove();
@@ -2675,7 +2675,7 @@ if (timelineTrack) {
     if (card) { card.querySelector('h3').textContent = newTitle; byTitle.set(newTitle, card); }
   });
   const extra = [
-    ['c. 7 d. C. · según la narración','Simeón carga al niño Jesús','Simeón reconoce al niño como luz para las naciones.','Lucas 2:25–35','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
+    ['año 0 · infancia de Jesús','Simeón carga al niño Jesús','Después del nacimiento, María y José llevan a Jesús al Templo. Simeón lo toma en brazos y lo reconoce como luz para las naciones.','Lucas 2:25–35','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
     ['c. 7 d. C. · tradición apócrifa','Jesús adolescente en el Templo','El relato canónico sitúa a Jesús a los doce años en Jerusalén.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
     ['33 d. C. · tradición posterior','Evangelio de Nicodemo','Un relato apócrifo desarrolla el descenso de Cristo al reino de los muertos.','Evangelio de Nicodemo','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
     ['33 d. C. · tradición posterior','Carino y Leucio, testigos del descenso','El Evangelio de Nicodemo los presenta como testigos de un relato del descenso.','Evangelio de Nicodemo 17–27','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
@@ -2691,6 +2691,15 @@ if (timelineTrack) {
     order.splice(position, 0, ...titles.map(title => requestedTimelineEvents.find(item => item[1] === title)).filter(Boolean));
   };
   insertRequestedBefore('Huida y regreso a Nazaret', ['La Adoración de los Magos']);
+  const moveOrderBefore = (title, anchor) => {
+    const itemIndex = order.findIndex(item => item[1] === title);
+    const anchorIndex = order.findIndex(item => item[1] === anchor);
+    if (itemIndex < 0 || anchorIndex < 0 || itemIndex === anchorIndex) return;
+    const [item] = order.splice(itemIndex, 1);
+    const nextIndex = order.findIndex(entry => entry[1] === anchor);
+    order.splice(nextIndex, 0, item);
+  };
+  moveOrderBefore('Simeón carga al niño Jesús', 'La Adoración de los Magos');
   insertRequestedBefore('Bautismo de Jesús', ['Jesús entre los doctores']);
   insertRequestedBefore('Sermón del Monte y bienaventuranzas', ['El Primer Milagro en Caná','La Pesca Milagrosa','La Sanidad del Leproso','El Paralítico de Cafarnaúm','La Resurrección de la Hija de Jairo','El Discurso del Pan de Vida','Caminando sobre las Aguas']);
   insertRequestedBefore('La última cena y el arresto', ['Jesús y la mujer acusada','El Lavatorio de los Pies','La Traición y el Arresto','Las Negaciones de Pedro','El Camino al Gólgota','El Juicio de Jesús','Jesús es azotado']);
@@ -2729,8 +2738,10 @@ if (timelineTrack) {
     const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title) || requestedTimelineEvents.find(row => row[1] === title);
     return item?.[5] || (title.includes('Noé') ? 'origins' : title.includes('Abraham') || title.includes('Jacob') || title.includes('José') ? 'patriarchs' : title.includes('Moisés') ? 'exodus' : title.includes('Jesús') || title.includes('Pasión') || title.includes('Resurrección') ? 'jesus' : 'church');
   };
+  const hiddenTimelineTitles = new Set(['El mundo del Segundo Templo']);
   const ordered = [];
   order.forEach(item => {
+    if (hiddenTimelineTitles.has(item[1])) return;
     const card = byTitle.get(item[1]);
     if (!card || ordered.includes(card)) return;
     card.dataset.era = eventEra(item[1]);
