@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#8d5f35">
-  <title>Lector · Biblia + Textos Extracanónicos</title>
+  <title>Lector · Biblia Extracanónica</title>
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <style>
     :root { --paper:#fffaf2; --ink:#3d2d22; --soft:#7f6753; --accent:#8d5f35; --border:#dcc6aa; }
@@ -189,7 +189,7 @@
         const sourceTranslator = work.sourceTranslator || (work.language === 'es' ? '' : work.translator);
         window.document.getElementById('meta').textContent = [languageLabel, sourceTranslator, work.publication]
           .filter(Boolean).join(' · ');
-        window.document.title = `${work.title} · Biblia + Textos Extracanónicos`;
+        window.document.title = `${work.title} · Biblia Extracanónica`;
         const externalTextNotice = work.externalTextUrl
           ? `<aside class="external-text ${escapeHtml(work.externalTextKind || 'reference')}" aria-label="Acceso a fuente externa"><strong>${escapeHtml(work.externalTextLabel || 'Fuente externa')}</strong><p>${escapeHtml(work.externalTextNote || '')}</p><a href="${escapeHtml(work.externalTextUrl)}" target="_blank" rel="noopener noreferrer">${work.externalTextKind === 'full' ? `Abrir texto completo (${escapeHtml(work.externalTextLanguage || 'idioma original')})` : 'Abrir recurso externo'} ↗</a></aside>`
           : '';
