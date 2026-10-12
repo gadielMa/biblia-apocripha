@@ -749,6 +749,7 @@
     /* Las ilustraciones verticales necesitan más aire en desktop para conservar su encuadre. */
     .timeline-event.is-portrait { min-width: 250px; min-height: 430px; }
     .timeline-event.is-portrait .timeline-image { height: 290px; }
+    .timeline-event.is-landscape .timeline-image { height: auto; aspect-ratio: auto; object-fit: contain; }
     .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 16 / 10; }
     .timeline-note { margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .69rem !important; line-height: 1.4; }
     .genealogy-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
@@ -938,9 +939,11 @@
       .timeline-event.is-portrait::after { grid-column: 1 / -1; grid-row: 1; position: static; order: initial; margin-bottom: .15rem; }
       .timeline-event.is-portrait .timeline-image { grid-column: 1; grid-row: 2 / span 5; width: 100%; height: 270px; margin: 0; border-radius: 11px; }
       .timeline-event.is-portrait > .source-badge { grid-column: 2; grid-row: 2; width: max-content; }
-      .timeline-event.is-portrait > div { grid-column: 2; grid-row: 3; min-width: 0; }
+      .timeline-event.is-portrait > div:not(.related-links) { grid-column: 2; grid-row: 3; min-width: 0; }
       .timeline-event.is-portrait > p:not(.timeline-date) { grid-column: 2; grid-row: 4; min-width: 0; }
       .timeline-event.is-portrait > a { grid-column: 2; }
+      .timeline-event.is-portrait > .related-links { grid-column: 1 / -1; grid-row: auto; margin-top: .7rem; }
+      .timeline-event.is-landscape .timeline-image { height: auto; aspect-ratio: auto; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
       .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
       .genealogy-flow { min-width: 0; gap: 1rem; padding-left: 1.25rem; }
@@ -2684,7 +2687,6 @@ if (timelineTrack) {
     ['33 d. C. · después de la resurrección','Las Apariciones post-Resurrección','Jesús se manifiesta a los discípulos de Emaús, a los apóstoles y, según Pablo, a más de quinientas personas.','Lucas 24:13–49; 1 Corintios 15:3–8','lectura/?obra=rvr1909-lucas&capitulo=24','canonical','assets/linea-tiempo/apariciones.png'],
     ['33 d. C. · cuarenta días después','La Ascensión','Jesús asciende al cielo desde el Monte de los Olivos y deja a sus discípulos la promesa de su regreso.','Hechos 1:1–12','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-9','canonical','assets/linea-tiempo/ascension.png'],
     ['c. 28–30 d. C.','Jesús y la mujer acusada','Jesús detiene la condena pública y responde: “El que esté libre de pecado, que arroje la primera piedra”. El relato llama a la misericordia y al arrepentimiento.','Juan 8:1–11','lectura/?obra=rvr1909-juan&capitulo=8#pasaje-8-7','canonical','assets/linea-tiempo/mujer-adultera.png'],
-    ['visión apocalíptica','La Deidad en el Trono y el Cordero','Juan contempla un trono de esplendor, el arco iris y al Cordero en pie como inmolado, con siete cuernos y siete ojos, digno de abrir el libro.','Apocalipsis 4:3–6; 5:6–10','lectura/?obra=rvr1909-apocalipsis&capitulo=5#pasaje-5-6','canonical','assets/linea-tiempo/trono-cordero.png'],
     ['visión apocalíptica','La Corte Celestial','Alrededor del trono aparecen veinticuatro ancianos, cuatro seres vivientes cubiertos de ojos y siete lámparas de fuego que representan los siete espíritus de Dios.','Apocalipsis 4:4–8','lectura/?obra=rvr1909-apocalipsis&capitulo=4','canonical','assets/linea-tiempo/corte-celestial.png'],
     ['visión apocalíptica','Ángeles y huestes celestiales','Juan oye la voz de millones de ángeles alrededor del trono; en otra visión, Miguel y sus ángeles combaten contra el dragón.','Apocalipsis 5:11–12; 12:7–9','lectura/?obra=rvr1909-apocalipsis&capitulo=12#pasaje-12-7','canonical','assets/linea-tiempo/angeles-miguel.png'],
     ['visión apocalíptica','La Mujer vestida del sol y el Gran Dragón','Una mujer aparece vestida del sol, con la luna bajo sus pies y doce estrellas; frente a ella surge un dragón escarlata de siete cabezas y diez cuernos.','Apocalipsis 12:1–6','lectura/?obra=rvr1909-apocalipsis&capitulo=12#pasaje-12-1','canonical','assets/linea-tiempo/mujer-sol-dragon.png'],
@@ -2693,7 +2695,7 @@ if (timelineTrack) {
     ['c. 593 a. C. · visión profética','Las ruedas centelleantes de Ezequiel','Junto a cada ser hay una rueda dentro de otra, brillante como crisólito y llena de ojos, que se mueve con ellos en cualquier dirección.','Ezequiel 1:15–21; 10:9–13','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-15','canonical','assets/linea-tiempo/ezequiel-ofanim.png'],
     ['c. 593 a. C. · visión profética','Ezequiel ve la gloria de Dios','Sobre la expansión aparece la semejanza de un trono y, sobre él, una figura con apariencia humana rodeada de resplandor; Ezequiel cae rostro en tierra ante la visión.','Ezequiel 1:26–28','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-26','canonical','assets/linea-tiempo/ezequiel-trono.png'],
     ['siglo 6 a. C. · visión profética','Daniel ve al Anciano de Días','Daniel contempla al Anciano de Días sentado en un trono de fuego y ve venir con las nubes a una figura como hijo de hombre para recibir dominio eterno.','Daniel 7:9–14','lectura/?obra=rvr1909-daniel&capitulo=7#pasaje-7-9','canonical','assets/linea-tiempo/daniel-anciano-dias.png'],
-    ['c. 95 d. C. · visión apocalíptica','Juan ve el trono del Apocalipsis','Juan contempla una puerta abierta en el cielo y un trono rodeado de un arco iris; delante arden lámparas y se escucha la adoración celestial.','Apocalipsis 4:1–6','lectura/?obra=rvr1909-apocalipsis&capitulo=4#pasaje-4-2','canonical','assets/linea-tiempo/trono-cordero.png']
+    ['c. 95 d. C. · datación tradicional del Apocalipsis','Juan ve el trono y al Cordero','Juan contempla una puerta abierta en el cielo, un trono rodeado de un arco iris y al Cordero en pie ante Dios. La fecha indica la datación tradicional del Apocalipsis, no la edad de Juan: el texto no informa su año de nacimiento ni de muerte.','Apocalipsis 4:1–6; 5:6–10','lectura/?obra=rvr1909-apocalipsis&capitulo=4#pasaje-4-2','canonical','assets/linea-tiempo/trono-cordero.png']
   ];
   const existing = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
   const byTitle = new Map(existing);
@@ -2731,10 +2733,11 @@ if (timelineTrack) {
   insertRequestedBefore('Bautismo de Jesús', ['Jesús entre los doctores']);
   insertRequestedBefore('Sermón del Monte y bienaventuranzas', ['El Primer Milagro en Caná','La Pesca Milagrosa','La Sanidad del Leproso','El Paralítico de Cafarnaúm','La Resurrección de la Hija de Jairo','El Discurso del Pan de Vida','Caminando sobre las Aguas']);
   insertRequestedBefore('La última cena y el arresto', ['Jesús y la mujer acusada','El Lavatorio de los Pies','La Traición y el Arresto','Las Negaciones de Pedro','El Camino al Gólgota','El Juicio de Jesús','Jesús es azotado']);
-  insertRequestedBefore('Resurrección de Jesús', ['Las Apariciones post-Resurrección','La Ascensión']);
+  insertRequestedBefore('Resurrección de Jesús', ['Las Apariciones post-Resurrección']);
+  insertRequestedBefore('Pentecostés', ['La Ascensión']);
   insertRequestedBefore('Isaías y Emanuel', ['Isaías ve al Señor en el Templo','Los Querubines de Ezequiel','Las ruedas centelleantes de Ezequiel','Ezequiel ve la gloria de Dios','Daniel ve al Anciano de Días']);
-  insertRequestedBefore('El jinete del caballo blanco', ['Juan ve el trono del Apocalipsis']);
-  insertRequestedBefore('El jinete del caballo blanco', ['La Deidad en el Trono y el Cordero','La Corte Celestial','Ángeles y huestes celestiales','La Mujer vestida del sol y el Gran Dragón']);
+  insertRequestedBefore('El jinete del caballo blanco', ['Juan ve el trono y al Cordero']);
+  insertRequestedBefore('El jinete del caballo blanco', ['La Corte Celestial','Ángeles y huestes celestiales','La Mujer vestida del sol y el Gran Dragón']);
   const timelineImages = {
     'Adán y Eva en el Edén': ['assets/timeline/adan-eva.png', 'Adán y Eva en el jardín del Edén'],
     'La caída y la expulsión del Edén': ['assets/timeline/adan-eva-fruto.jpg', 'Eva prueba el fruto prohibido en el jardín del Edén'],
@@ -2744,13 +2747,13 @@ if (timelineTrack) {
     'Conocimientos prohibidos de los Vigilantes': ['assets/timeline/enoc-conocimientos.png', 'Los Vigilantes transmiten metalurgia, botánica y secretos astrales'],
     'El clamor de la Tierra y los arcángeles': ['assets/timeline/enoc-clamor-arcangeles.png', 'Miguel, Gabriel, Rafael y Uriel presentan el clamor de la Tierra'],
     'El Hijo del Hombre y el Anciano de Días': ['assets/timeline/enoc-hijo-hombre.png', 'El Hijo del Hombre ante el Anciano de Días'],
-    'El diseño exacto del Arca': ['assets/timeline/noe-ingreso-arca.png', 'El Arca de Noé con sus pisos y proporciones descritas en Génesis'],
-    'Décadas de trabajo y advertencia': ['assets/timeline/noe-ingreso-arca.png', 'Noé construye el Arca y advierte a su generación'],
-    'La recolección de las especies': ['assets/timeline/noe-ingreso-arca.png', 'Animales entran en el Arca de Noé'],
-    'El ingreso de la familia de Noé': ['assets/timeline/noe-ingreso-arca.png', 'Noé y su familia ingresan al Arca'],
+    'El diseño exacto del Arca': ['assets/linea-tiempo/noe-planos-arca.png', 'Noé recibe los planos y las medidas exactas del Arca'],
+    'Décadas de trabajo y advertencia': ['assets/linea-tiempo/noe-construccion.png', 'Noé construye el Arca durante décadas'],
+    'La recolección de las especies': ['assets/linea-tiempo/noe-animales.png', 'Parejas de animales se reúnen junto al Arca'],
+    'El ingreso de la familia de Noé': ['assets/linea-tiempo/noe-familia-arca.png', 'La familia de Noé entra en el Arca'],
     'Cuarenta días y cuarenta noches de tormenta': ['assets/timeline/noe-diluvio.png', 'El Arca de Noé flota durante la tormenta del diluvio'],
-    'Ciento cincuenta días de inundación': ['assets/timeline/noe-diluvio.png', 'El Arca permanece sobre las aguas del diluvio'],
-    'El primer altar y el pacto del arcoíris': ['assets/timeline/noe-diluvio.png', 'Noé levanta un altar y recibe la señal del arcoíris'],
+    'Ciento cincuenta días de inundación': ['assets/linea-tiempo/noe-inundacion-total.png', 'El Arca permanece sola sobre las aguas del diluvio'],
+    'El primer altar y el pacto del arcoíris': ['assets/linea-tiempo/noe-altar-arcoiris.png', 'Noé levanta un altar y recibe la señal del arcoíris'],
     'David derrota a Goliat': ['assets/linea-tiempo/david-goliat.jpg', 'David se enfrenta a Goliat en el valle de Ela'],
     'El Primer Templo de Jerusalén': ['assets/linea-tiempo/primer-templo.jpg', 'Reconstrucción artística del Primer Templo de Jerusalén'],
     'Jerusalén cae y el Primer Templo es destruido': ['assets/linea-tiempo/caida-jerusalen.jpg', 'Jerusalén y el Primer Templo en llamas durante la conquista babilónica'],
@@ -2806,7 +2809,10 @@ if (timelineTrack) {
   timelineTrack.style.minWidth = `${ordered.length * 205 + (ordered.length - 1) * 12}px`;
   const markTimelineImageOrientation = image => {
     const applyOrientation = () => {
-      image.closest('.timeline-event')?.classList.toggle('is-portrait', image.naturalHeight > image.naturalWidth * 1.08);
+      const card = image.closest('.timeline-event');
+      const isPortrait = image.naturalHeight > image.naturalWidth * 1.08;
+      card?.classList.toggle('is-portrait', isPortrait);
+      card?.classList.toggle('is-landscape', !isPortrait && image.naturalWidth >= image.naturalHeight);
     };
     if (image.complete && image.naturalWidth) applyOrientation();
     else image.addEventListener('load', applyOrientation, { once: true });
