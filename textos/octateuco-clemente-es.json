@@ -7,6 +7,11 @@
   "publication": "Colección clementina etíope / Constituciones Apostólicas relacionadas",
   "license": "Ficha editorial propia; no sustituye una traducción crítica",
   "sourceUrl": "https://ccel.org/ccel/schaff/anf07/anf07.ix.html",
+  "externalTextUrl": "https://ccel.org/ccel/schaff/anf07/anf07.ix.html",
+  "externalTextKind": "reference",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Constituciones Apostólicas · obra relacionada, no el Octateuco de Clemente",
+  "externalTextNote": "No encontré una edición íntegra, verificable y de libre acceso de esta colección clementina exacta. Este enlace es a las Constituciones Apostólicas, relacionadas históricamente, pero no idénticas.",
   "translationNote": "El Octateuco etíope y las Constituciones Apostólicas comparten tradición y estructura en ocho libros, pero no deben tratarse como textos idénticos. Esta ficha evita inventar el contenido ausente.",
   "chapters": [
     {

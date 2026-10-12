@@ -7,6 +7,11 @@
   "publication": "Ficha bibliográfica del corpus apócrifo",
   "license": "Resumen original; no reproduce una traducción editorial protegida.",
   "sourceUrl": "https://www.earlyjewishwritings.com/pseudophilo.html",
+  "externalTextUrl": "https://sacred-texts.com/bib/bap/index.htm",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Antigüedades bíblicas · M. R. James (1917), texto completo",
+  "externalTextNote": "Edición inglesa de 81 capítulos, identificada por el archivo como de dominio público. El título tradicional atribuye la obra a Filón, pero no se considera suya.",
   "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
   "chapters": [
     {

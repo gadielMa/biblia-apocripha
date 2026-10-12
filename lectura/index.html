@@ -60,6 +60,11 @@
     .language-switch a.active { background:#fff; color:#8f462c; }
     main { width:min(980px,calc(100% - 2rem)); margin:-1.6rem auto 2rem; position:relative; border:1px solid var(--border); border-radius:18px; padding:clamp(1.2rem,5vw,3.5rem); box-shadow:0 20px 55px rgba(26,48,77,.1); }
     .notice { background:#fff4ed; border-left-color:var(--accent); border-radius:10px; color:#6b4a3b; }
+    .external-text { margin:0 0 1.25rem; padding:1rem 1.1rem; border:1px solid #cbd8e7; border-left:4px solid #3f7657; border-radius:12px; background:#f3f8f3; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .external-text.partial, .external-text.reference { border-left-color:#b4532d; background:#fff8f1; }
+    .external-text strong { display:block; margin-bottom:.25rem; color:var(--ink); }
+    .external-text p { margin:0 0 .45rem; color:var(--soft); font-size:.9rem; }
+    .external-text a { color:var(--accent); font-weight:750; }
     .chapter-navigation { display:flex; align-items:center; justify-content:space-between; gap:.75rem; margin:1rem 0 1.5rem; padding:.75rem; border:1px solid var(--border); border-radius:12px; background:#f7f9fc; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
     .chapter-navigation a, .chapter-navigation .chapter-disabled { min-height:40px; display:inline-flex; align-items:center; justify-content:center; padding:.45rem .7rem; border:1px solid var(--border); border-radius:9px; color:var(--accent); background:#fff; font-size:.82rem; font-weight:750; text-decoration:none; }
     .chapter-navigation a:hover, .chapter-navigation a:focus-visible { background:#fff1e8; outline:2px solid #efbd9f; }
@@ -185,7 +190,13 @@
         window.document.getElementById('meta').textContent = [languageLabel, sourceTranslator, work.publication]
           .filter(Boolean).join(' · ');
         window.document.title = `${work.title} · Biblioteca Bíblica Universal`;
-        reader.innerHTML = `<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>` + chapterNavigation + work.chapters.map(chapter => {
+        const externalTextNotice = work.externalTextUrl
+          ? `<aside class="external-text ${escapeHtml(work.externalTextKind || 'reference')}" aria-label="Acceso a fuente externa"><strong>${escapeHtml(work.externalTextLabel || 'Fuente externa')}</strong><p>${escapeHtml(work.externalTextNote || '')}</p><a href="${escapeHtml(work.externalTextUrl)}" target="_blank" rel="noopener noreferrer">${work.externalTextKind === 'full' ? `Abrir texto completo (${escapeHtml(work.externalTextLanguage || 'idioma original')})` : 'Abrir recurso externo'} ↗</a></aside>`
+          : '';
+        const readingNotice = work.externalTextUrl
+          ? '<p class="notice">Esta entrada ofrece un resumen en español; el acceso externo indica el idioma y si se trata del texto íntegro, una selección o una referencia relacionada.</p>'
+          : '<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>';
+        reader.innerHTML = externalTextNotice + readingNotice + chapterNavigation + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));
           return `<section id="capitulo-${chapter.number}"${hidden}><h2>${work.language === 'es' ? 'Capítulo' : 'Chapter'} ${chapter.number}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;

@@ -7,6 +7,11 @@
   "publication": "Biblioteca de Nag Hammadi",
   "license": "Resumen original; el texto completo requiere una edición con licencia compatible.",
   "sourceUrl": "https://www.gnosis.org/naghamm/apocjn-meyer.html",
+  "externalTextUrl": "https://www.gnosis.org/naghamm/apocjn.html",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Apócrifo de Juan · traducción completa de Frederik Wisse",
+  "externalTextNote": "El texto íntegro puede consultarse fuera del sitio. La página indica que Brill reclama derechos sobre esta traducción; por eso no se copia aquí.",
   "notes": "Entrada de orientación: el texto completo tiene varias recensiones y traducciones modernas. Se incorpora un resumen buscable hasta integrar una edición redistribuible.",
   "chapters": [
     {

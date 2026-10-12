@@ -7,6 +7,11 @@
   "publication": "Rollo del Templo, 11Q19 / 11QTempleᵃ",
   "license": "Ficha propia; no redistribuye traducciones modernas",
   "sourceUrl": "https://tianmu.org/good-work-library/judean/dead-sea-scrolls/rewritten-scripture/the-temple-scroll",
+  "externalTextUrl": "https://qumran.dev/non_biblical/11Q19/",
+  "externalTextKind": "full",
+  "externalTextLanguage": "hebreo",
+  "externalTextLabel": "Rollo del Templo 11Q19 · lector digital del texto hebreo",
+  "externalTextNote": "Consulta digital de la transcripción hebrea del manuscrito conservado; no es una traducción al español y el rollo tiene lagunas.",
   "translationNote": "El manuscrito conserva 66 columnas con lagunas. Las traducciones modernas consultadas no tienen una licencia de redistribución clara; por eso se incluye sólo esta ficha y no se copia su texto.",
   "chapters": [
     {
