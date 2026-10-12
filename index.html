@@ -899,6 +899,12 @@
     .tree-node small { display: none; }
     .tree-node[data-generation]::before { content: attr(data-generation); }
     .tree-node.key { border-color: #e4af91; background: #fff3eb; color: #944322; }
+    .tree-adam-children { box-sizing: border-box; }
+    .tree-adam-fork { position: absolute; top: -12px; left: calc(-50% - 20px); right: calc(-50% - 20px); border-top: 3px solid #c46a42; }
+    .tree-adam-sibling { position: absolute; top: 0; box-sizing: border-box; width: 100%; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; }
+    .tree-adam-sibling::before { content: ""; position: absolute; top: -12px; left: 50%; width: 3px; height: 12px; background: #c46a42; transform: translateX(-50%); }
+    .tree-adam-sibling.cain { right: calc(100% + 20px); }
+    .tree-adam-sibling.abel { left: calc(100% + 20px); }
     .tree-collateral { position: absolute; top: 50%; left: calc(100% + 32px); box-sizing: border-box; width: 240px; padding: .65rem .75rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.08); color: #26384d; text-align: left; transform: translateY(-50%); }
     .tree-collateral::before { content: ""; position: absolute; top: 50%; right: 100%; width: 32px; height: 2px; background: #c46a42; }
     .tree-collateral strong { display: block; color: #944322; font-size: .7rem; text-transform: uppercase; }
@@ -1025,6 +1031,11 @@
       .tree-collateral::before { display: none; }
       .tree-collateral-chain { white-space: normal; }
       .tree-node .tree-related { width: min(100%, 250px); }
+      .tree-adam-children { width: 100px; min-width: 100px; }
+      .tree-adam-sibling { width: 78px; padding: .48rem .3rem; font-size: .72rem; }
+      .tree-adam-sibling.cain { right: calc(100% + 8px); }
+      .tree-adam-sibling.abel { left: calc(100% + 8px); }
+      .tree-adam-fork { left: calc(-39% - 8px); right: calc(-39% - 8px); }
       .tree-branches { overflow-x: auto; width: 100%; padding-bottom: .5rem; }
       .tree-siblings { min-width: 570px; padding: 0 .8rem 26px; }
       .tree-parents { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; min-width: 0; gap: .7rem; padding: 28px 0 26px; }
@@ -1041,6 +1052,11 @@
       .extinct-grid { grid-template-columns: 1fr; }
       .timeline-image { height: 190px; }
       .timeline-event.is-portrait .timeline-image { height: 240px; }
+    }
+    @media (max-width: 360px) {
+      .tree-adam-children { width: 84px; min-width: 84px; }
+      .tree-adam-sibling { width: 64px; }
+      .tree-adam-fork { left: calc(-32px - 8px); right: calc(-32px - 8px); }
     }
     @media (max-width: 1200px) {
     }
@@ -1637,8 +1653,8 @@
         <div class="tree-date-mark" data-date-target="Eliaquim" data-date-branch="mateo"><span>c. 400 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="José" data-date-branch="convergence"><span>c. 4 a. C.</span></div>
       </div>
-      <div class="tree-node key">Adán<aside class="tree-related" data-target="Adán" data-branch="trunk"><strong>Familia de Adán</strong><p>Eva; sus hijos Caín y Abel. La línea principal continúa por Set.</p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=4#pasaje-4-1">Génesis 4:1–25</a></aside><small>padre de Set</small></div><div class="tree-down"></div>
-      <div class="tree-node">Set<small>padre de Enós</small></div><div class="tree-down"></div>
+      <div class="tree-node key">Adán<small>padre de Caín, Abel y Set</small></div><div class="tree-down"></div>
+      <div class="tree-node tree-adam-children">Set<span class="tree-adam-fork" aria-hidden="true"></span><span class="tree-adam-sibling cain">Caín</span><span class="tree-adam-sibling abel">Abel</span><small>padre de Enós</small></div><div class="tree-down"></div>
       <div class="tree-node">Enós</div><div class="tree-down"></div>
       <div class="tree-node">Cainán</div><div class="tree-down"></div>
       <div class="tree-node">Mahalaleel</div><div class="tree-down"></div>
@@ -3502,7 +3518,7 @@ function setGenealogyRelationships() {
   const trunk = Array.from(document.querySelectorAll('.family-tree > .tree-node'));
   const davidIndex = trunk.findIndex(node => textOf(node) === 'David');
   trunk.slice(0, davidIndex + 1).forEach((node, index, chain) => {
-    node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón y Natán' : textOf(node) === 'Jacob' ? 'Padre de Judá y Leví' : `Padre de ${textOf(chain[index + 1])}`;
+    node.dataset.relation = index === chain.length - 1 ? 'Padre de Salomón y Natán' : textOf(node) === 'Adán' ? 'Padre de Caín, Abel y Set' : textOf(node) === 'Jacob' ? 'Padre de Judá y Leví' : `Padre de ${textOf(chain[index + 1])}`;
   });
   document.querySelectorAll('.tree-branch').forEach(branch => {
     let nodes = Array.from(branch.querySelectorAll(':scope > .tree-node'));
