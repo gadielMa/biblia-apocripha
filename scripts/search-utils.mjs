@@ -10,5 +10,12 @@ export function searchTermVariants(query) {
 
 export function findTextSearchMatches(index, query) {
   const terms = searchTermVariants(query);
-  return index.filter(item => terms.some(term => normalizeSearchText(item.text).includes(term)));
+  return index
+    .filter(item => terms.some(term => normalizeSearchText(item.text).includes(term)))
+    .map((item, index) => ({ item, index }))
+    .sort((a, b) => {
+      const spanishPriority = Number(normalizeSearchText(b.item.language) === 'es') - Number(normalizeSearchText(a.item.language) === 'es');
+      return spanishPriority || a.index - b.index;
+    })
+    .map(({ item }) => item);
 }
