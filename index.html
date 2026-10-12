@@ -1638,14 +1638,15 @@
 
   <div class="genealogy-scroll" aria-label="Desplazá horizontalmente para recorrer el árbol genealógico">
     <div class="family-tree" aria-label="Árbol vertical de descendencia desde Adán hasta Jesús">
-      <div class="tree-date-rail" aria-label="Fechas históricas aproximadas">
+      <div class="tree-date-rail" aria-label="Origen del árbol y fechas históricas aproximadas">
+        <div class="tree-date-mark" data-date-target="Adán" data-date-branch="trunk"><span>Adán y Eva</span></div>
         <div class="tree-date-mark" data-date-target="Booz" data-date-branch="trunk"><span>c. 1200 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="David" data-date-branch="trunk"><span>c. 1000 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="Jeconías" data-date-branch="mateo"><span>c. 600 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="Eliaquim" data-date-branch="mateo"><span>c. 400 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="José" data-date-branch="convergence"><span>c. 4 a. C.</span></div>
       </div>
-      <div class="tree-node key">Adán<small>padre de Caín, Abel y Set</small></div><div class="tree-down"></div>
+      <div class="tree-node key">Adán <span class="tree-partner">y Eva</span><small>padres de Caín, Abel y Set</small></div><div class="tree-down"></div>
       <div class="tree-node tree-family-children">Set<span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Caín</span><span class="tree-family-sibling right">Abel</span><small>padre de Enós</small></div><div class="tree-down"></div>
       <div class="tree-node">Enós</div><div class="tree-down"></div>
       <div class="tree-node">Cainán</div><div class="tree-down"></div>
@@ -3477,7 +3478,7 @@ function setGenealogyRelationships() {
   const trunk = Array.from(document.querySelectorAll('.family-tree > .tree-node'));
   const davidIndex = trunk.findIndex(node => textOf(node) === 'David');
   const familyRelations = {
-    'Adán': 'Padre de Caín, Abel y Set',
+    'Adán': 'Padres de Caín, Abel y Set',
     'Noé': 'Padre de Sem, Cam y Jafet',
     'Abraham': 'Padre de Isaac e Ismael',
     'Isaac': 'Padre de Jacob y Esaú',
