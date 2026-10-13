@@ -3144,6 +3144,10 @@ if (timelineTrack) {
   moveOrderAfter('Jacobo es curado de una mordedura de víbora', 'Relatos del niño Jesús');
   moveOrderAfter('María Magdalena consuela a los discípulos', 'Elección de Matías');
   moveOrderAfter('La Adoración de los Magos', 'Jesús bebé');
+  moveOrderAfter('El juicio del consejo divino', 'Juicio contra los dioses de Egipto');
+  // Las dos escenas de Lot preceden inmediatamente a la destrucción de Sodoma.
+  moveOrderAfter('Los ángeles ciegan a los hombres de Sodoma', 'Lot recibe a los dos ángeles');
+  moveOrderAfter('Sodoma y Gomorra', 'Los ángeles ciegan a los hombres de Sodoma');
   const timelineImages = {
     'La tierra caótica y el Espíritu sobre las aguas': ['assets/timeline/caos-aguas-genesis-1.jpg', 'Oscuridad sobre las aguas primordiales y una presencia luminosa que se mueve sobre ellas, ilustración de Génesis 1:1–2'],
     'Los hijos de Dios celebran la fundación de la tierra': ['assets/timeline/hijos-dios-fundacion-tierra.jpg', 'Hijos de Dios celebran mientras contemplan la tierra durante su fundación, representación poética de Job 38'],
@@ -3230,6 +3234,15 @@ if (timelineTrack) {
     if (['Multiplicación de los panes','Jesús sana al ciego','Jesús calma la tempestad','Lázaro vuelve a la vida'].includes(item[1])) card.dataset.milagro = 'true';
     const date = card.querySelector('.timeline-date');
     if (date) date.textContent = item[0];
+    if (item[1] === 'Sodoma y Gomorra') {
+      const description = card.querySelector('.timeline-description') || card.querySelector('p');
+      if (description) description.textContent = item[2];
+      const reference = card.querySelector('a');
+      if (reference) {
+        reference.textContent = item[3];
+        reference.href = item[4];
+      }
+    }
     if (item[1] === 'Nacimiento de Daniel') card.querySelector('.source-badge').textContent = 'Representación artística';
     if (item[1] === 'Juicio contra los dioses de Egipto') {
       const description = card.querySelector('.timeline-description');
