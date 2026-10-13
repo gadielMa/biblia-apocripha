@@ -2880,6 +2880,7 @@ if (timelineTrack) {
     ['poema bíblico · fecha debatida','El juicio del consejo divino','El salmo representa a Dios en la asamblea divina y censura a los elohim por no hacer justicia al débil y al huérfano. Anuncia que morirán como humanos y que Dios heredará todas las naciones. Es una imagen poética de juicio; el texto no dice que esos elohim sean Baal, Quemos o Moloc.','Salmo 82:1–8','lectura/?obra=rvr1909-salmos&capitulo=82#pasaje-82-1','canonical','assets/timeline/salmo-82-consejo-divino.jpg'],
     ['lectura cristiana del siglo I · síntesis temática','La cruz, los poderes y Pentecostés','Colosenses interpreta la cruz como triunfo de Cristo sobre principados y potestades. Hechos relata después que, en Pentecostés, visitantes de muchas regiones entienden a los discípulos en sus propias lenguas. Por eso algunas lecturas cristianas ven un contrapunto con Babel; ninguno de estos pasajes identifica explícitamente a esos poderes con los setenta elohim ni describe una guerra literal contra ellos.','Colosenses 2:15','lectura/?obra=rvr1909-colosenses&capitulo=2#pasaje-2-15','context','assets/timeline/cruz-pentecostes-poderes.jpg'],
     ['c. 33 d. C. · antes de Pentecostés','Elección de Matías','Después de la muerte de Judas, los discípulos proponen a José Barsabás y a Matías. Oran y echan suertes para elegir a quien ocupará el puesto apostólico; Matías es incorporado al grupo de los Doce.','Hechos 1:15–26','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-26','canonical','assets/timeline/eleccion-matias.png'],
+    ['c. 33 d. C. · relato apócrifo','María Magdalena consuela a los discípulos','Después de la partida del Salvador, los discípulos quedan afligidos. María Magdalena los anima: «No lloréis. No os aflijáis, porque su gracia estará con vosotros y os protegerá». El episodio pertenece al Evangelio de María, no a los evangelios canónicos.','Evangelio de María 5:2','lectura/?obra=gospel-mary-es&capitulo=3#pasaje-3-1','tradition','assets/timeline/maria-magdalena-consuela-discipulos.png'],
     ['siglo I · tradición transmitida por Papías','José Barsabás sobrevive al veneno','Papías, citado por Eusebio, cuenta que José Barsabás, llamado Justo, bebió un veneno mortal y salió ileso. Hechos 1:23–26 menciona que no fue elegido para reemplazar a Judas, pero no narra el episodio del veneno ni su muerte.','Papías en Eusebio · Historia eclesiástica III, 39','https://www.newadvent.org/fathers/250103.htm','tradition','assets/timeline/jose-barsabas-veneno.jpg'],
     ['antes del diluvio · nacimiento de Enoc','Enoc niño','Jared tenía 162 años cuando nació Enoc. Génesis no describe un prodigio en su nacimiento, pero presenta a este hijo como el hombre que más tarde caminaría con Dios y sería llevado por él.','Génesis 5:18–24','lectura/?obra=rvr1909-genesis&capitulo=5#pasaje-5-18','canonical','assets/timeline/enoc-nino.png'],
     ['fecha de nacimiento desconocida','Nacimiento de Ezequiel','No consta cuándo nació ni cuántos años vivió. El libro lo presenta como sacerdote e hijo de Buzí entre los exiliados.','Ezequiel 1:1–3','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-1','canonical','assets/timeline/nacimiento-ezequiel.png'],
@@ -3049,6 +3050,7 @@ if (timelineTrack) {
   };
   insertApostleFatesBefore('Resurrección de Jesús', ['Muerte de Judas Iscariote']);
   insertRequestedBefore('Resurrección de Jesús', ['Elección de Matías']);
+  insertRequestedBefore('Resurrección de Jesús', ['María Magdalena consuela a los discípulos']);
   insertRequestedBefore('Juan en Patmos y el Apocalipsis', ['José Barsabás sobrevive al veneno']);
   insertApostleFatesBefore('Juan en Patmos y el Apocalipsis', apostleFates.slice(1, -1).map(item => item[1]));
   moveOrderAfter('José Barsabás sobrevive al veneno', 'Muerte de Bartolomé');
@@ -3068,6 +3070,7 @@ if (timelineTrack) {
   moveOrderBefore('La Adoración de los Magos', 'Simeón carga al niño Jesús');
   moveOrderBefore('Simeón carga al niño Jesús', 'Huida y regreso a Nazaret');
   moveOrderAfter('Jacobo es curado de una mordedura de víbora', 'Relatos del niño Jesús');
+  moveOrderAfter('María Magdalena consuela a los discípulos', 'Elección de Matías');
   const timelineImages = {
     'La tierra caótica y el Espíritu sobre las aguas': ['assets/timeline/caos-aguas-genesis-1.jpg', 'Oscuridad sobre las aguas primordiales y una presencia luminosa que se mueve sobre ellas, ilustración de Génesis 1:1–2'],
     'Los hijos de Dios celebran la fundación de la tierra': ['assets/timeline/hijos-dios-fundacion-tierra.jpg', 'Hijos de Dios celebran mientras contemplan la tierra durante su fundación, representación poética de Job 38'],
