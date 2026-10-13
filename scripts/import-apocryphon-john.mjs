@@ -1,16 +1,13 @@
 import fs from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 
 const ROOT = 'https://garovartabedian.com';
 const EDITION = `${ROOT}/early/library/secret-book-john`;
 const OUTPUT = new URL('../textos/apocryphon-juan.es.json', import.meta.url);
-const CACHE = '/private/tmp/apocryphon-john-es-cache.json';
-const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
-let translationCache = {};
-try {
-  translationCache = JSON.parse(await fs.readFile(CACHE, 'utf8'));
-} catch {
-  // La caché es opcional y permite reanudar una importación interrumpida.
-}
+const SOURCE_CACHE = '/private/tmp/apocryphon-john-en.json';
+const TRANSLATION_CACHE = '/private/tmp/apocryphon-john-es.json';
+const run = promisify(execFile);
 
 const decodeHtml = (value) => value
   .replace(/<br\s*\/?>/gi, '\n')
@@ -50,50 +47,16 @@ const chooseCodexIiUrls = (landing) => {
 const extractParagraphs = (html) => [...html.matchAll(/<p id="p\d+-r\d+"[^>]*>([\s\S]*?)<\/p>/g)]
   .map(([, paragraph]) => decodeHtml(paragraph))
   .filter(Boolean)
-  .map((paragraph) => paragraph.replace(/^\d+\.\s*/, ''));
-
-const translateChunk = async (text) => {
-  if (translationCache[text]) return translationCache[text];
-  for (let attempt = 1; attempt <= 6; attempt += 1) {
-    try {
-      const response = await fetch('https://translate.terraprint.co/translate', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ q: text, source: 'en', target: 'es', format: 'text' }),
-        signal: AbortSignal.timeout(45000),
-      });
-      if (response.ok) {
-        const payload = await response.json();
-        const translated = payload.translatedText.replace(/\s+/g, ' ').trim();
-        translationCache[text] = translated;
-        await fs.writeFile(CACHE, JSON.stringify(translationCache));
-        return translated;
-      }
-      if (attempt === 6) throw new Error(`${response.status} al traducir un fragmento`);
-    } catch (error) {
-      if (attempt === 6) throw error;
-    }
-    await delay(attempt * 1500);
-  }
-};
-
-const translate = async (text) => {
-  const sentences = text.match(/[^.!?]+(?:[.!?]+[”’"']?|$)/g) || [text];
-  const chunks = [];
-  for (const sentence of sentences) {
-    const clean = sentence.trim();
-    const previous = chunks.at(-1);
-    if (previous && `${previous} ${clean}`.length <= 750) chunks[chunks.length - 1] = `${previous} ${clean}`;
-    else chunks.push(clean);
-  }
-  const translated = [];
-  for (const chunk of chunks) translated.push(await translateChunk(chunk));
-  return translated.join(' ');
-};
+  .map((paragraph) => paragraph
+    .replace(/^\d+\.\s*/, '')
+    .replace(/⟦page \d+⟧/gi, '')
+    .replace(/[\[\]‹›]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim());
 
 const landing = await fetchText(EDITION);
 const urls = chooseCodexIiUrls(landing);
-const chapters = [];
+const sourceChapters = [];
 
 for (let index = 0; index < urls.length; index += 1) {
   const sourcePath = urls[index];
@@ -101,20 +64,84 @@ for (let index = 0; index < urls.length; index += 1) {
   const sourceParagraphs = extractParagraphs(html);
   if (!sourceParagraphs.length) throw new Error(`El capítulo ${index + 1} quedó vacío`);
 
-  const verses = [];
-  for (let position = 0; position < sourceParagraphs.length; position += 1) {
-    const text = await translate(sourceParagraphs[position]);
-    verses.push({ number: String(position + 1), text, editorialNumber: true });
-  }
-
-  chapters.push({
+  sourceChapters.push({
     number: index + 1,
-    title: `División ${index + 1}`,
     sourceWitness: sourcePath.split('/').at(-1).replace(`chapter-${index + 1}-`, '').replaceAll('-', ' '),
-    verses,
+    paragraphs: sourceParagraphs,
   });
-  console.log(`Capítulo ${index + 1}: ${verses.length} párrafos`);
+  console.log(`Fuente ${index + 1}: ${sourceParagraphs.length} párrafos`);
 }
+
+await fs.writeFile(SOURCE_CACHE, JSON.stringify(sourceChapters));
+const python = process.env.ARGOS_PYTHON || 'python3';
+const translationProgram = [
+  'import json, sys',
+  'from argostranslate import translate',
+  'source=json.load(open(sys.argv[1]))',
+  'for chapter in source:',
+  "    chapter['paragraphs']=[translate.translate(text, 'en', 'es') for text in chapter['paragraphs']]",
+  "json.dump(source, open(sys.argv[2], 'w'), ensure_ascii=False)",
+].join('\n');
+await run(python, ['-c', translationProgram, SOURCE_CACHE, TRANSLATION_CACHE], { maxBuffer: 1024 * 1024 * 4 });
+const translatedChapters = JSON.parse(await fs.readFile(TRANSLATION_CACHE, 'utf8'));
+const polish = (text) => text
+  .replace(/\b[Ss]ophia\b/g, (match) => (match[0] === 'S' ? 'Sofía' : 'sofía'))
+  .replace(/\bmonada\b/gi, 'Mónada')
+  .replace(/\baeon\b/gi, 'eón')
+  .replace(/\bY(?:altabaoth|altabaot|aldabaoth)\b/g, 'Yaldabaot')
+  .replace(/\barción principal\b/gi, 'arconte principal')
+  .replace(/\barción mayor\b/gi, 'arconte principal')
+  .replace(/\barción\b/gi, 'arconte')
+  .replace(/\barcón principal\b/gi, 'arconte principal')
+  .replace(/\barcón\b/gi, 'arconte')
+  .replace(/\barcónicos\b/gi, 'arcontes')
+  .replace(/\bExtolló\b/g, 'Ensalzó')
+  .replace(/\bextolló\b/g, 'ensalzó')
+  .replace(/\bextollándolo\b/g, 'ensalzándolo')
+  .replace(/\bPrimal\b/g, 'primordial')
+  .replace(/\bentraron en ser\b/g, 'llegaron a existir')
+  .replace(/\bentrado en ser\b/g, 'llegado a existir')
+  .replace(/\bemitió\b/g, 'surgió')
+  .replace(/\bemitir\b/g, 'surgir')
+  .replace(/\bconcogió una trama\b/gi, 'tramó una conspiración')
+  .replace(/\bconcogieron una parcela\b/gi, 'tramaron un plan')
+  .replace(/\bincontante\b/gi, 'inconstante')
+  .replace(/\bdurable\b/gi, 'duradera')
+  .replace(/\s+/g, ' ')
+  .trim();
+const chapterTitles = [
+  'Prólogo y pregunta de Juan',
+  'La aparición del Salvador',
+  'La Mónada, Espíritu invisible',
+  'La plenitud incognoscible',
+  'Barbelo, el primer Pensamiento',
+  'El Hijo autogenerado',
+  'Los eones y las luminarias',
+  'El Hombre perfecto y su descendencia',
+  'Sofía y el nacimiento de Yaltabaot',
+  'Yaltabaot crea sus autoridades',
+  'Los gobernantes y sus poderes',
+  'La voz y la imagen celestial',
+  'La formación de Adán',
+  'El cuerpo permanece inmóvil',
+  'El aliento y el despertar de Adán',
+  'La ayuda luminosa y Eva',
+  'El árbol del conocimiento y la expulsión',
+  'El destino de las almas',
+  'El espíritu falso y el diluvio',
+  'El himno de la Providencia',
+  'Encargo final a Juan',
+];
+const chapters = translatedChapters.map((chapter) => ({
+  number: chapter.number,
+  title: chapterTitles[chapter.number - 1],
+  sourceWitness: chapter.sourceWitness,
+  verses: chapter.paragraphs.map((text, index) => ({
+    number: String(index + 1),
+    text: polish(text),
+    editorialNumber: true,
+  })),
+}));
 
 const document = {
   id: 'apocryphon-john-es',
@@ -127,10 +154,11 @@ const document = {
   sourceUrl: 'https://www.luminescence-llc.net/nag-hammadi',
   externalTextUrl: EDITION,
   externalTextKind: 'full',
+  localTextKind: 'full',
   externalTextLanguage: 'inglés',
   externalTextLabel: 'The Secret Book of John · edición y testimonios',
   externalTextNote: 'La página fuente separa los cuatro testimonios manuscritos. Esta edición sigue el Códice II y señala su carácter de traducción de trabajo.',
-  notes: 'Texto completo organizado según las 21 divisiones de lectura de la fuente. Los números de párrafo son editoriales y no forman parte del manuscrito. Los corchetes reflejan lagunas o reconstrucciones de la traducción fuente. No es una edición crítica.',
+  notes: 'Texto completo organizado según las 21 divisiones de lectura de la fuente. Los títulos y números de párrafo son editoriales y no forman parte del manuscrito. Para facilitar la lectura se omitieron las marcas de página y los corchetes de reconstrucción de la traducción fuente. No es una edición crítica.',
   chapters,
 };
 

@@ -2,25 +2,1613 @@
   "id": "apocryphon-john-es",
   "title": "Apócrifo de Juan (Libro Secreto de Juan)",
   "language": "es",
-  "sourceLanguage": "Copto",
-  "translator": "Resumen original en español; no reproduce una traducción editorial protegida",
-  "publication": "Biblioteca de Nag Hammadi",
-  "license": "Resumen original; el texto completo requiere una edición con licencia compatible.",
-  "sourceUrl": "https://www.gnosis.org/naghamm/apocjn-meyer.html",
-  "externalTextUrl": "https://www.gnosis.org/naghamm/apocjn.html",
+  "sourceLanguage": "Copto (traducción de trabajo desde el inglés)",
+  "translator": "Traducción de trabajo al español basada en Samuel Zinner; edición inglesa de Mark M. Mattison",
+  "publication": "Recensión larga del Códice II de Nag Hammadi, con pasajes compartidos II/IV",
+  "license": "La traducción inglesa de Zinner/Mattison fue dedicada al dominio público. Esta traducción de trabajo puede reutilizarse con atribución de la fuente.",
+  "sourceUrl": "https://www.luminescence-llc.net/nag-hammadi",
+  "externalTextUrl": "https://garovartabedian.com/early/library/secret-book-john",
   "externalTextKind": "full",
+  "localTextKind": "full",
   "externalTextLanguage": "inglés",
-  "externalTextLabel": "Apócrifo de Juan · traducción completa de Frederik Wisse",
-  "externalTextNote": "El texto íntegro puede consultarse fuera del sitio. La página indica que Brill reclama derechos sobre esta traducción; por eso no se copia aquí.",
-  "notes": "Entrada de orientación: el texto completo tiene varias recensiones y traducciones modernas. Se incorpora un resumen buscable hasta integrar una edición redistribuible.",
+  "externalTextLabel": "The Secret Book of John · edición y testimonios",
+  "externalTextNote": "La página fuente separa los cuatro testimonios manuscritos. Esta edición sigue el Códice II y señala su carácter de traducción de trabajo.",
+  "notes": "Texto completo organizado según las 21 divisiones de lectura de la fuente. Los títulos y números de párrafo son editoriales y no forman parte del manuscrito. Para facilitar la lectura se omitieron las marcas de página y los corchetes de reconstrucción de la traducción fuente. No es una edición crítica.",
   "chapters": [
     {
       "number": 1,
-      "title": "Resumen de contenido",
+      "title": "Prólogo y pregunta de Juan",
+      "sourceWitness": "codex ii iv",
       "verses": [
         {
           "number": "1",
-          "text": "El Apócrifo de Juan presenta una revelación secreta de Jesús a Juan. Describe al Espíritu invisible, la emanación de Barbelo, el origen de las potencias celestiales y la creación del demiurgo Yaldabaot. Explica cómo la humanidad queda atrapada en la ignorancia y cómo el conocimiento espiritual, la memoria y la revelación permiten regresar a la luz. Las recensiones larga y breve difieren en extensión y orden de algunos pasajes."
+          "text": "La enseñanza del salvador, y la revelación de los misterios, y las palabras ocultas en silencio, incluso estas palabras que él enseñó a Juan, su discípulo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Sin embargo, llegó a pasar un día, cuando Juan, el hermano de Santiago, siendo los hijos de Zebedeo, había subido al templo, que un fariseo llamado Arimanios vino a él y le dijo: \"¿Dónde está tu maestro, a quien estabas siguiendo?\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Y le dijo: «Ha vuelto al lugar del que vino».",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "El fariseo le dijo: “Con engaño este Nazareno os engañó a todos vosotros, y llenó vuestros oídos con mentiras, y selló vuestros corazones, apartándoos de las tradiciones de vuestros padres.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Cuando yo, Juan, había oído estas palabras, me aparté del templo hacia un lugar desierto lleno de montañas, y lamenté mucho en mi corazón, pidiendo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "¿Cómo fue designado el salvador, y por qué fue enviado al mundo por su Padre, y quién es su Padre, quien lo envió, y a qué clase de eón es a lo que iremos?",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Porque, ¿qué quiso decir, diciéndonos: \"Ese eón al que irás es el tipo que es un eón indestructible\"?",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Él, sin embargo, no nos informó de qué tipo es”.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "La aparición del Salvador",
+      "sourceWitness": "codex ii codex iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Inmediatamente, mientras estaba murmurando sobre estos asuntos, he aquí, los cielos fueron abiertos, y toda la creación debajo del cielo resplandeció, y el mundo fue sacudido.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Crecí temeroso, y he visto dentro de la luz a un niño de pie cerca de mí.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Mientras lo miré, se volvió similar a un viejo, y alteró su apariencia, creciendo similar a un hijo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "No era una entidad diversa delante de mí, pero había una apariencia con múltiples formas dentro de la luz, y los parecidos hicieron su aparición entre sí, y la apariencia poseía tres formas.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Me preguntó: “Juan, Juan, ¿por qué te maravillas, y por qué temes?",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "¿Es esta apariencia desconocida para todos ustedes?",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Quiero decir, no seas de corazón débil.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Yo soy el que siempre está con todos ustedes.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Soy el Padre, soy la Madre, soy el Hijo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Soy el no contaminado y no contaminado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "He venido ahora para informarles de lo que es, y lo que fue, y lo que sucederá, para que puedan entender las cosas que no se manifiestan (sí) y las cosas que se manifiestan, y para informarles de la raza inmóvil del Hombre Perfecto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Levanta, pues, tu rostro, para que aceptes las cosas que te diré hoy, y las transmitas a tus espíritus compañeros de la carrera inmóvil del Hombre Perfecto”.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "La Mónada, Espíritu invisible",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "También le pedí que lo entendiera, y me dijo: «La Mónada es una unidad con nada más alto que ella.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Es lo que existe como Dios y como Padre del Todo, el invisible, que es más alto que el Todo, que existe como indestructibilidad, como luz pura, a la que ningún ojo puede mirar.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Él es el Espíritu invisible de quien es impropio pensar como un dios o como algo similar, porque él es más que un dios, dado que nada existe que es más alto que él, porque nadie gobierna sobre él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Esto es porque no existe dentro de algo subordinado a él, dado que todo existe dentro de él, autoestablecido.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Él es eterno, dado que él está en necesidad de nada, porque él es perfección completa.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "No le faltaba nada para que necesitara ser perfeccionado por ello.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "En su lugar, él es para siempre completamente perfecto en la luz.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Él es ilimitado, dado que nadie existe ante él que podría poner límites sobre él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Él es insondable, dado que existe ante él nadie que pudiera engordarle.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Él está más allá de la medición, dado que nadie existió ante el que podía medirlo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Es invisible, dado que nadie lo ha visto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Él es eterno, dado que existe eternamente.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Él es indescriptible, dado que nadie existía que pudiera concebir de él para hablar de él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Él no puede ser nombrado, dado que nadie existió ante él que podía nombrarlo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "Él es luz más allá de la medida, siendo puro, sagrado, sin mancha.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Es indestructible, existente en perfecta indestructibilidad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "(Él existe) no (confinado) dentro de la perfección, ni dentro de la bendición, ni dentro de la divinidad, pero él es altamente exaltado (ambos).",
+          "editorialNumber": true
+        },
+        {
+          "number": "18",
+          "text": "No es somático ni no somático.",
+          "editorialNumber": true
+        },
+        {
+          "number": "19",
+          "text": "No es grande ni pequeño.",
+          "editorialNumber": true
+        },
+        {
+          "number": "20",
+          "text": "Es imposible decir que tiene una cantidad o que tiene una calidad, porque nadie puede entenderlo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "21",
+          "text": "No es un ser entre los seres, sino que es muy exaltado, no como si fuera más alto, sino (él es elevado) en sí mismo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "22",
+          "text": "Él no participa en los eones ni en la temporalidad, porque el que participa en un eón que fue establecido anteriormente ....",
+          "editorialNumber": true
+        },
+        {
+          "number": "23",
+          "text": "No se le asignó una medida temporal, dado que no obtiene nada de otro, porque sería obtenido como un préstamo, dado que el que existe antes de alguien (else) no tiene necesidad de aceptar (algo) de otro.",
+          "editorialNumber": true
+        },
+        {
+          "number": "24",
+          "text": "Esto es porque él es el que mira a sí mismo, esperando, en su luz, dado que el ... es glorioso.",
+          "editorialNumber": true
+        },
+        {
+          "number": "25",
+          "text": "A él pertenece la pureza más allá de la medida.",
+          "editorialNumber": true
+        },
+        {
+          "number": "26",
+          "text": "Es un eón que otorga a los eones.",
+          "editorialNumber": true
+        },
+        {
+          "number": "27",
+          "text": "Es la vida que da vida.",
+          "editorialNumber": true
+        },
+        {
+          "number": "28",
+          "text": "Él es un bendito que otorga la bendición.",
+          "editorialNumber": true
+        },
+        {
+          "number": "29",
+          "text": "Él es el conocimiento que otorga conocimiento.",
+          "editorialNumber": true
+        },
+        {
+          "number": "30",
+          "text": "Él es bondad que otorga bondad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "31",
+          "text": "Él es misericordia y redención que otorgan misericordia.",
+          "editorialNumber": true
+        },
+        {
+          "number": "32",
+          "text": "Él es la gracia que otorga la gracia,",
+          "editorialNumber": true
+        },
+        {
+          "number": "33",
+          "text": "no porque le pertenece, sino porque otorga la luz que está más allá de la medida y la comprensión.",
+          "editorialNumber": true
+        },
+        {
+          "number": "34",
+          "text": "¿Cómo puedo hablar con usted de él, dado que su eón está más allá de la destrucción, en reposo, y permaneciendo en silencio, descansando, existiendo antes de todo, porque él es el líder de todos los eones, y él es el que les otorga fuerza con su bondad?",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "La plenitud incognoscible",
+      "sourceWitness": "codex ii iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Esto es porque no entendemos cosas indescriptibles, y no entendemos lo que no se puede medir, aparte de aquel que se originó de él, es decir, el Padre, porque él solo es el que nos lo explicó, dado que él es el que se estudia dentro de su luz que lo rodea, es decir, el manantial de agua viva, y él es el que abastece cada eón, y en cada dirección (a la vez) observa su imagen de Espíritu.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Él es el que pone su deseo dentro de su luz de agua, que mora en la primavera del agua de luz pura que le rodea, y su pensamiento (potencial) se hizo real, y se acercó, es decir, ella que había aparecido delante de él dentro del resplandor de su luz.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Este es el primer poder, que existía antes del Todo, y que salió de su mente.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Ella es la Providencia del Todo — su luz brilla como su luz— el poder perfecto que es la imagen del Espíritu virgen perfecto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "El primer poder es la gloria de Barbelo, la gloria perfecta dentro de los eones, la gloria de la revelación.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Extolló el Espíritu virginal, y ella es la que lo alababa, porque por él había salido.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Este es el primer pensamiento, su imagen.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Barbelo, el primer Pensamiento",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Ella se convirtió en el vientre universal porque ella es la que existe ante todos ellos, la Madre-Padre, el Hombre primordial, el Espíritu Santo, el triple-hombre, el triple-poderoso, el triple-nombrado andrógina, y el eterno eón entre los invisibles, incluso el primero en surgir.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Ella rogó al Espíritu virgen invisible, es decir, Barbelo, que le otorgara el Precognito, y el Espíritu estuvo de acuerdo,",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "y cuando había acordado, Precognición se acercó y asistió a la Providencia, ella que se origina de la Idea del Espíritu virgen invisible.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Ella lo extolló y su perfecto poder, Barbelo, porque habían venido a ser a causa de ella.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "También se sumó una vez más a conceder su indestructibilidad, y estuvo de acuerdo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Cuando había acordado, la indestructibilidad se acercó y asistió a Idea y Precognición.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Extolló al invisible y a Barbelo, el que por su cuenta había venido a ser.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Barbelo también se animó a conceder su vida eterna, y el Espíritu invisible estuvo de acuerdo, y cuando él había acordado, la Vida Eterna se acercó,",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "y ellos asistieron y extollaron al Espíritu invisible y a Barbelo, por cuya razón habían llegado a existir.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Ella también abogó una vez más para conceder su verdad, y el Espíritu invisible estuvo de acuerdo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "La verdad se acercaba, y ellos asistieron y eximieron al Espíritu no visto, admirable y su Barbelo por su cuenta habían venido a ser.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Este es el pentad aeónico del Padre, que es el Hombre primordial, la imagen del Espíritu invisible.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Esta es la Providencia, es decir, Barbelo, Idea, Precognición, Indestructibilidad, y Vida Eterna y Verdad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Este es el pentad aeónico andrógina, siendo el decad aeónico, que es el Padre.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "El Hijo autogenerado",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "También vio a Barbelo con la luz pura que rodea al Espíritu invisible, y su chispa, y de él concibió.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Engendró un parque de luz por medio de una luz similar a la bendición, pero (este último) no es igual a su grandeza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Tal era un único engendrado de la Madre-Padre que había emitido, él siendo su única descendencia, el único engendrado del Padre, la luz pura.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "El Espíritu virgen invisible también se regocijó por la luz que había venido a ser, que había salido del primer poder de su Providencia —que es Barbelo—",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "y lo ungió con su unción hasta que se hizo perfecto, sin nada de la unción porque le había ungido con la unción del Espíritu invisible, y lo asistió mientras se derramaba sobre él, y tan pronto como él había recibido del Espíritu, extolló el Espíritu Santo y la providencia perfecta en cuyo relato había emitido.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "También se alegró a darle un compañero de trabajo, que es la Mente, y estuvo de acuerdo,",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "y cuando el Espíritu invisible había acordado, la mente se acercó, y él asistió a Cristo (los ungidos), ensalzándolo y Barbelo, y todo esto vino a morar dentro del silencio.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "La mente también quiere hacer algo por medio del Logos del Espíritu invisible, y su (potencial) se volverá real, y se acerca con la mente y la Luz ensalzándolo,",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "y el Logos siguió a Will, porque por medio del Logos, Cristo, el Dios autogenerado, creó el Todo.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Los eones y las luminarias",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La Vida Eterna también con su Voluntad, y la Mente con Precognición, asistió y extolló al Espíritu invisible y a Barbelo, dado que habían venido a ser en su cuenta.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "El Espíritu Santo también completó al Dios autogenerado, su Hijo, junto con Barbelo, para que asistiera al gran e invisible Espíritu virginal del Dios autogenerado, el Cristo, a quien había extolado con voz alta.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Él emitió por medio de la Providencia, y el Espíritu virgen invisible designó al Dios verdaderamente autogenerado sobre el Todo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "También sometió toda autoridad debajo de él, así como la verdad para estar dentro de él, para que conozca al Todo, el que había sido nombrado con un nombre exaltado sobre todo nombre, porque ese nombre será dicho a los que lo merecen,",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "dado que de la Luz, que es Cristo, e Indestructibilidad, por medio del don del Espíritu del Dios autogenerado .... Él esperó para que ellos lo asistieran,",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "hasta los tres: Will, Idea y Vida,",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "incluso los cuatro poderes: Entendimiento, Gracia, Percepción, Discreción.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Por otra parte, la Gracia pertenece al Armozel de luz, que es el primer ángel, y hay tres eones más junto con este eón: Gracia, Verdad, Forma;",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "también la segunda luz, Oriael, que había sido nombrado en el segundo eón.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Además, hay tres eones más junto con él: Reflexión, percepción, memoria.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Además, la tercera luz es Daveithai, que ha sido nombrado sobre el tercer eón, y hay tres eones más junto con él: Comprensión, Amor, Forma Ideal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Además, el cuarto eón fue nombrado sobre la cuarta luz, Eleleth.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Además, hay tres eones más junto con él: Perfección, Paz, Sofía.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Estas son las cuatro luces que asisten al Dios autogenerado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "Estos son los doce eones que asisten al Hijo del Poderoso, el autogenerado, Cristo, por medio de la voluntad y el don del Espíritu invisible, y los doce eones pertenecen al Hijo autogenerado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Además, todo fue establecido por medio de la voluntad del Espíritu Santo, por medio de la autogenerada.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "El Hombre perfecto y su descendencia",
+      "sourceWitness": "codex ii iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Además, de la Precognición de la Mente Perfecta, por medio de la revelación de la voluntad del Espíritu invisible y de la voluntad de la autogenerada, el Hombre Perfecto, la primera revelación, incluso la verdad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Él es el que el Espíritu virginal se llama Pigera-Adama(s), y él lo nombró en el primer eón junto con el Poderoso, el autogenerado, Cristo, por la primera luz, Armozel, escoltado por sus poderes.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Además, el invisible le concedió una fuerza espiritual, invulnerable,",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Y él habló y extolló y elogió al Espíritu invisible, diciendo: ‘En tu cuenta el Todo ha salido en ser, y a ti volverá el Todo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Yo os alabaré y extolveré a vosotros y al autogenerado, y a los tres eones, el Padre, la Madre, el Hijo, el poder perfecto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "También nombró a su hijo Seth sobre el segundo eón, delante de la segunda luz, Oroiel, y dentro del tercer eón la semilla de Seth fue designada sobre la tercera luz, Daveithai, y (dentro de ella) fueron colocados las almas de los santos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Además, dentro del cuarto eón se colocaron las almas de aquellos que no conocen la plenitud, y que no se arrepintieron inmediatamente, pero que en su lugar continuaron (no arrepentido) por algún tiempo, y que se arrepintieron (sólo) después.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Ésta es la cuarta luz, Eleleth.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Estas son criaturas que exaltan el Espíritu invisible.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Sofía y el nacimiento de Yaltabaot",
+      "sourceWitness": "codex ii codex iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Además, siendo un eón, Sofía de Reflexión pensó un pensamiento por su cuenta, junto con la concepción del Espíritu y Precognición invisibles.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Ella quiso sacar una semejanza de sí misma, aparte del acuerdo del Espíritu, que no lo había aceptado, y aparte de su compañero, y aparte de su deliberación, y aunque el rostro de su maldad no había aceptado esto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Además, sacó a pesar de no haber encontrado a su compañero, así como de haber deliberado aparte del acuerdo del Espíritu y del conocimiento de su compañero, y por la fuerza invulnerable que moraba dentro de ella,",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "su pensamiento no permaneció estéril, y ella produjo de sí misma algo que era incompleto y que difería de su propia apariencia, porque ella lo había creado aparte de su compañero, y él difiere de la apariencia de su madre, porque él posee una forma diferente.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Además, cuando vio (el resultado de) su propia voluntad, se transformó en una forma de dragón cara de león,",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "y sus ojos parecían fuegos de rayos que brillaban.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Ella lo apartó de ella, fuera de esos lugares, para que ninguno de los inmortales pudiera verlo, porque ella lo había creado en ignorancia.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Ella también lo rodeó con una nube resplandeciente, y erigió un trono en medio de la nube, para que nadie pudiera verlo, aparte del Espíritu Santo, cuyo nombre es la Madre de los Vivos, y llamó su nombre Yaldabaot.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Este es el arconte principal que adquirió un fuerte poder de su madre,",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "y se apartó de ella, y se apartó de los lugares donde había nacido.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Yaltabaot crea sus autoridades",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cogió otros lugares, y creó para sí un eón de parques de luz, el que ahora existe. Se aparejó con Ignorancia, que mora con él, y engendró a las autoridades que están sujetas a él, los doce ángeles, y un eón para cada uno de ellos, según el patrón de los indestructibles.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Ellos crearon para ellos siete ángeles, y para los ángeles, tres poderes según la apariencia del primer patrón, que existía delante de él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Las autoridades que habían salido del principal-begetter, el principal arco de oscuridad e ignorancia, junto con las autoridades, ignoraban al que los había engendrado, y sus nombres eran éstos:",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "El primero es Haoth;",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "el segundo es Harmas. que es el fuego-eye;",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "el tercero es Galila;",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "el cuarto es Yobel;",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "el quinto es Adonaios;",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "el sexto es Sabaot;",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "el séptimo es Kainan Kasin, que se llama el sol;",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "el octavo es Abiressia;",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "el noveno es Yobel;",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "el décimo es Annoupiael;",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "el undécimo es Adonin;",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "el duodécimo es Belias.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Por un lado, poseen un conjunto de nombres de Lusts y Angers.",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "Para simplificar la situación, todos sus nombres se duplican, porque se les asignan nombres por las glorias en alto,",
+          "editorialNumber": true
+        },
+        {
+          "number": "18",
+          "text": "porque han sido nombrados en verdad, manifiestan su naturaleza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "19",
+          "text": "Saklas también los llamó según sus nombres que se refieren a la ilusión y a sus poderes.",
+          "editorialNumber": true
+        },
+        {
+          "number": "20",
+          "text": "De esta manera, a través de las glorias disminuyen y debilitan; a través de éste se fortalecen y se multiplican.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Los gobernantes y sus poderes",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Luego estableció siete reyes, cada uno de los cuales corresponde a los firmamentos celestiales sobre los siete cielos, y cinco sobre el abismo, para que gobiernan.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "También compartió su fuego con ellos, pero no despachó del poder de la luz que había adquirido de su madre, porque él es oscuridad ignorante, y cuando la luz se había combinado con la oscuridad, hizo brillar la oscuridad, y cuando la oscuridad se había combinado con la luz, oscureció la luz, y no se convirtió en luz ni oscuridad, pero creció sombrío.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Además, el arconte que es débil posee tres nombres, el primer nombre es Yaldabaot, el segundo es Saklas, y el tercero es Samael, y él es malvado en su orgullo que está dentro de él, porque él dijo: \"Yo soy Dios, y no hay otro dios que yo\", porque él no es consciente de su fuerza, el lugar de donde él originó.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Además, los arcones crearon siete poderes para sí mismos, y cada uno de los poderes creados para sí seis ángeles, de modo que contaron 365 ángeles, y estos son los cuerpos que pertenecen a los nombres:",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "El primero es Athoth - él tiene el rostro de una oveja; el segundo es Eloaiou - él tiene el rostro de un burro; el tercero es Astaphaios - él tiene el rostro de una hiena; el cuarto es Yao - él tiene el rostro de un dragón de siete cabezas; el quinto es Sabaot - él tiene el rostro de un dragón; el sexto es Adonin - él tiene el séptimo rostro de un mono;",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Estos son los siete (aspecto) de la semana.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Yaldabaot, sin embargo, poseía una multitud de rostros —más que todos los demás— para que cuando entre los serafos fue capaz de poner en cualquier rostro delante de todos ellos como él deseaba.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Porque compartió su fuego con ellos, se convirtió en su señor.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Por el glorioso poder que poseía debido a la luz de su madre, se llamaba Dios, y era desobediente al lugar donde había originado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Se unió a los siete poderes dentro de su pensamiento junto con las autoridades que estaban con él, y cuando habló, sucedió, y nombró a cada uno de los poderes, comenzando con los más altos:",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "La primera es la Bondad, junto con la primera (autoridad), Athoth; la segunda es la Providencia, junto con la segunda (autoridad), Eloaio; y la tercera es la Divinidad, junto con la tercera (autoridad), Astraphaio; la cuarta es el Señor, junto con la cuarta (autoridad), Yao; la quinta es el Reino, junto con la quinta (autoridad), Sabaot; la séptima es la séptima con Jealuta",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Estos también poseen un firmamento que corresponde a cada eón celestial.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Se les dieron nombres que coinciden con la gloria de las entidades celestiales, para provocar la aniquilación de los poderes, pero el poder habitó en los nombres dados a ellos por su iniciador, pero los nombres que se les dieron de acuerdo con la gloria de las entidades celestiales significarán para ellos la aniquilación y la debilidad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "De esta manera, poseen dos nombres.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "Además, todo lo que organizó de acuerdo con el parecido de los primeros eones que habían llegado a ser, para que pudiera crearlos después de la semejanza de los indestructibles.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "No fue por su ver a las entidades indestructibles, sino por el poder dentro de él, que había adquirido de su madre, que él generó dentro de él la semejanza del mundo, y cuando vio la creación alrededor de él y el ejército de los ángeles alrededor de él, que había emitido de él, les dijo: \"Yo soy un Dios celoso, y no hay otro Dios que yo.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "Al declarar esto, sin embargo, implicó a los ángeles que le asistían que hay otro Dios, porque si no hubiera habido otro, ¿cómo podría estar celoso de otro?",
+          "editorialNumber": true
+        },
+        {
+          "number": "18",
+          "text": "La madre entonces comenzó a ‘volver y salir’, tomando conciencia de la deficiencia a medida que la luminosidad de su luz disminuyó, y se oscureció a causa de su compañero no haber estado de acuerdo con ella.”",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "La voz y la imagen celestial",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Yo, sin embargo, dije: “Señor, ¿qué (es) ‘se movió hacia atrás y hacia adelante’?” y él sonrió, y dijo: “¡No pienses que está de acuerdo con lo que Moisés dijo, ‘abra las aguas’ no!",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "En su lugar, cuando había presenciado el mal que había ocurrido, y el robo que su hijo había cometido, se arrepintió, y fue abrumada por el olvido dentro de la oscuridad de la ignorancia, y comenzó a sentir vergüenza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "El movimiento, sin embargo, es ‘volver y salir’, y el orgulloso adquirió un poder de su madre, porque era ignorante, asumiendo que nadie más que su madre existió.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Sin embargo, cuando vio al ejército de ángeles que había creado, entonces se levantó sobre ellos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Además, cuando la madre se dio cuenta de que la vestimenta de la oscuridad estaba defectuosa, comprendió entonces que su compañero no había acordado junto con ella.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Ella se arrepintió, llorando con cautela, y toda la plenitud escuchó su oración de arrepentimiento, y en su nombre alabaron al Espíritu virgen invisible.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "El Espíritu Santo derramaba sobre ella desde toda su plenitud, porque no era que su compañero se acercara (solo), sino que se acercaba a ella por medio de la plenitud, para que rectificara su deficiencia, y ella fue tomada, no, sin embargo, a su propio eón, sino sobre su hijo, para que ella habitara en el Noveno hasta que ella había rectificado su deficiencia.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Una voz también salió del noble eón celestial: \"El hombre existe, y el Hijo del Hombre\", y el arconte principal, Yaldabaot, escuchó y asumió que la voz había venido de su madre, y no sabía de dónde había llegado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "También les enseñó, es decir, la sagrada y perfecta Madre Padre, la perfecta Providencia, la imagen de la invisible, que es el Padre del Todo, a través de la cual todo vino a ser, el Hombre primordial, porque en forma masculina él hizo manifestar su semejanza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Además, todo el eón del arconte principal se estremeció, y los cimientos del abismo se movieron, y el fondo de las aguas sobre la materia fue iluminado por la apariencia de esta imagen que se había manifestado, y cuando todas las autoridades y el arconte principal miraban, vieron la región entera debajo de ellos iluminada.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "La formación de Adán",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Además, a través de la luz vieron la forma de la imagen dentro del agua, y dijo a las autoridades que le asistían: Ven, creamos un hombre según la imagen de Dios, y según nuestra semejanza, para que su imagen se convierta en una luz para nosotros.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Además, crearon por medio de sus poderes individuales de acuerdo con los atributos asignados, y cada autoridad proporcionó un atributo por medio de la forma de la imagen que había visto en su psíquica (dimensión).",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Él creó una entidad según la semejanza del perfecto Hombre primordial, y dijeron: \"Llamemos a Adán, para que su nombre se convierta en para nosotros un poder de luz\", y los poderes comenzaron:",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "El primero, la bondad, creó un hueso vivo, y el segundo, la Providencia, creó un sínuevo viviente.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "El tercero, Divinidad, creó una carne viva, y el cuarto, Señoría, creó una médula viva.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "El quinto, Reino, creó sangre viva.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "El sexto, celoso, creó una piel viva.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "El séptimo, Entendimiento, creó el pelo vivo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Sin embargo, el anfitrión de los ángeles lo asistió, y obtuvieron de las autoridades las siete sustancias del alma vital para poder crear los tamaños de las extremidades y los tamaños del torso, y el correcto funcionamiento de todas las partes entre sí.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "El primero comenzó a crear la cabeza; Eteraphaope-Abron creó su cabeza; Meniggesstroeth creó el cerebro; Asterechmen, el ojo derecho; Thaspomocham, el ojo izquierdo; Yeronumos, el oído derecho; Bissoum, el oído izquierdo; Akioreim, la nariz; Banen-Ephroum, los labios; Amen, los dientes; Ibikan, el hombro molar Astrops, el pecho derecho; Barroph, el pecho izquierdo; Baoum, el hombro derecho; Ararim, el hombro izquierdo; Areche, el vientre; Phthave, el ombligo; Senaphim, el abdomen; Arachethopi, las costillas derechas; Zabedo, las costillas izquierdas; Barias, el ...; ... la cadera izquierda; Abenlenarchei, la médula; Chnoumeninorin, los huesos; Gesole, el estómago; Agromauma, el corazón; Bano, los pulmones; Sostrapal, el hígado; Anesimabina Roeror, las sinoticias; Taphreo, la columna corporal; Ipouspoboba, las venas; Bineborin, las arterias; Aatoimenpsephei, a ellos pertenecen el aliento en cada miembro; Entholleia, toda la carne; Bedouk, el fondo derecho; Arabeei, el pene izquierdo; Eilo, los testículos; Sorma, los riñones Asaklas, el riñón izquierdo; Ormaot, la pierna derecha; Emenun, la pierna izquierda; Knyx, la columna derecha; Tupelón, la columna izquierda; Achiel, la rodilla derecha; Phneme, la rodilla izquierda; Phiouthrom, el pie derecho; Boabel, sus dedos; Trachoun, el pie izquierdo; Phikna, sus pies; Miamabernio",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Sin embargo, los establecidos sobre todos estos son siete: Athoth, Armas, Kalila, Jabel. Sin embargo, especialmente en el trabajo en las extremidades son estas: La cabeza, Diolimodraza; el cuello, Yammeax; el hombro derecho, Yakoubib; el hombro izquierdo, Yerton; la mano derecha, Oudidi; la mano izquierda (mano), Arbao; los dedos de la mano derecha, Lampno; los dedos izquierdos, Leekaphar; el pecho derecho, Barro; el pecho izquierdo, Imae; el pecho, Pisanoraptes;",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Aquellos que ejercen el poder sobre todos estos son siete, 7: Miguel, Ouriel, Asmenedas, Saphasatoel, Aarmouriam, Richram, Amiorps.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Además, los que controlan los sentidos: Archendekta; y el que controla la percepción: Deitharbathas; y el que controla la imaginación: Oummaa; y el que controla la proporción: Aachiaram; y el que controla todos los impulsos: Riaramnacho.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Sin embargo, el origen de los demonios que habitan en todo el cuerpo se establece en cuatro: calor, frío, humedad y sequedad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "Sin embargo, la madre de todos ellos es materia, pero el que gobierna sobre el calor, Phloxopha; pero el que gobierna sobre el frío, Oroorrothos; pero el que gobierna sobre la sequedad, Erimacho; pero el que gobierna sobre la humedad, Athuro.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Sin embargo, la madre de todos estos, Onorthochras, se encuentra entre ellos, porque ella es la que está sin límite, y se combina con todos ellos, y ella realmente es materia, porque ella los nutre.",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "Los cuatro demonios principales (son): Ephememphi, que pertenece al placer; Yoko, que se refiere a la lujuria; Nenentophni, que se refiere al dolor; Blaomen, que se refiere al miedo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "18",
+          "text": "Sin embargo, la madre de todos ellos (es) Esthensis-Ouch-Epi-Ptoe.",
+          "editorialNumber": true
+        },
+        {
+          "number": "19",
+          "text": "Pasiones emitidas de los cuatro demonios, pero del dolor: envidia, celos, desgracias, problemas, dolor, crueldad, ansiedad, lamentación, etc.",
+          "editorialNumber": true
+        },
+        {
+          "number": "20",
+          "text": "Sin embargo, del placer surgen el mal abundante, y la arrogancia vacual, y similares.",
+          "editorialNumber": true
+        },
+        {
+          "number": "21",
+          "text": "Sin embargo, de la lujuria: ira, furia y amargura, y amarga pasión, y nunca ser satisfecho, y similares.",
+          "editorialNumber": true
+        },
+        {
+          "number": "22",
+          "text": "Sin embargo, por miedo: horror, groveling, miseria y humillación.",
+          "editorialNumber": true
+        },
+        {
+          "number": "23",
+          "text": "Todo esto se asemeja a las cosas virtuosas, pero también las cosas viciosas.",
+          "editorialNumber": true
+        },
+        {
+          "number": "24",
+          "text": "Sin embargo, la visión de su realidad (viene de) Anaro, el jefe del alma hilica, porque pertenece a los siete sentidos, a Ouch-Epi-Ptoe.",
+          "editorialNumber": true
+        },
+        {
+          "number": "25",
+          "text": "Aquí está el número de los ángeles: todos juntos, son 365.",
+          "editorialNumber": true
+        },
+        {
+          "number": "26",
+          "text": "Todos ellos trabajaron en ella, miembro por miembro, hasta que terminaron tanto el psíquico como el cuerpo hylic.",
+          "editorialNumber": true
+        },
+        {
+          "number": "27",
+          "text": "Además, hay otros que controlan las pasiones restantes.",
+          "editorialNumber": true
+        },
+        {
+          "number": "28",
+          "text": "Aunque no los he enumerado para ti, si quieres saber quiénes son, esto está (todo) escrito en el Libro de Zoroaster.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "El cuerpo permanece inmóvil",
+      "sourceWitness": "codex ii iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Sin embargo, todos los ángeles y demonios trabajaban hasta que habían formado el cuerpo psíquico, y su creación era enteramente inerte y sin movimiento por un tiempo prolongado.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Cuando, sin embargo, la madre deseaba recuperar el poder que había concedido al arconte principal, arrastró a la Madre-Padre Misericordioso del Todo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Con el decreto sagrado, despachó las cinco luces hacia el lugar de los ángeles del arconte principal, y le aconsejaron que sacaran el poder de la madre, y le dijeron a Yaldabaot: ‘Debajo de tu Espíritu en su rostro, y su cuerpo se levantará,’ y él voló en su rostro su Espíritu, que es el poder de su madre.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "No era consciente, porque existe en la ignorancia, y el poder de la madre salió de Yaldabaot al cuerpo psíquico que habían formado según la imagen de aquel que es desde el principio.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "El cuerpo se movió y alcanzó la fuerza, y era radiante, y en ese momento el resto de los poderes crecieron envidiosos, porque él había entrado en la existencia a través de todos ellos, y ellos habían otorgado su poder sobre el hombre, y su intelecto superó (el de) a los que lo habían hecho, y el arco principal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Cuando, sin embargo, vieron que estaba radiante, y que podía razonar mejor que ellos, y que no estaba cargado por el mal, lo llevaron y lo empujaron hacia la región más remota de todo asunto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Sin embargo, el Beato, el Padre-Madre, el benéfico y misericordioso, mostró misericordia al poder de la madre que había sido sacado del gobernante principal, porque podían adquirir poder sobre el cuerpo psíquico y sensorial, y a través de su Espíritu benéfico y su gran misericordia envió a Adán un ayudante, Reflexión Radiante que emerge de él, que se llama \"Vida\".",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Ella, sin embargo, ayuda a toda la creación trabajando junto con él, y restableciendo a él su perfección, y instruyéndole acerca del descenso de su semilla, y instruyéndole acerca del camino del ascenso, el camino por el cual descendió.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Además, la Reflexión de la Luz fue ocultada dentro de Adán, para que los arcones no se dieran cuenta, pero que la Reflexión sería una rectificación de la deficiencia de la madre, y el hombre se hizo visible a causa de la sombra de luz dentro de él, y su intelecto superó (el de) a todos los que lo habían hecho.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "El aliento y el despertar de Adán",
+      "sourceWitness": "codex ii codex iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cuando miraron hacia abajo, se dieron cuenta de que su intelecto superó (su propio), y se reunieron en consejo junto con el grupo de arcos y todos los ángeles.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Tomaron fuego y tierra y agua, y los combinaron entre sí con los cuatro vientos ardientes, y los trabajaron juntos e hicieron una fuerte conmoción, y lo llevaron a la sombra de la muerte, para que una vez más lo formaran de la tierra, el agua y el fuego y el viento, el que su origen está en la materia, que es la ignorancia de la oscuridad y la lujuria y su espíritu falso.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Esta es la tumba para el molde del cuerpo que los ladrones usaban para vestir al hombre, la cadena del olvido, y se convirtió en un hombre mortal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Este es el primero que descendió, y la primera división, pero Reflexión de la Luz, que moró dentro de él, se despertó su intelecto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Además, los arcontes lo trajeron y lo pusieron en el paraíso, y le dijeron: “Come,” que significa, ‘en la pereza’, porque su deleite es ciertamente amargo, y su belleza es degenerada, pero su deleite es engañoso, y sus árboles son despiada, y su fruto es un veneno incansable, y su promesa es la mortalidad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Sin embargo, habían colocado su árbol de vida en medio del paraíso, y les enseñaré a todos el misterio de su vida, que es la trama que concogieron juntos, que es la semejanza de su espíritu.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Su raíz es amarga y sus ramas son la mortalidad, su sombra es odio, y el engaño mora dentro de sus hojas, y su flor es la unción del mal, y su fruto es la mortalidad, y la lujuria es su semilla, y brota en la oscuridad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Aquellos que lo saben, su morada es Hades, y la oscuridad es su lugar de reposo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Sin embargo, para que no pudiera mirar hacia su perfección ni darse cuenta de la vergüenza de su nudidad, permanecieron delante de lo que ellos llaman \"el árbol del conocimiento del bien y del mal\", siendo Reflexión de la Luz. Yo era el que, sin embargo, los hizo comer.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "También le pregunté al salvador: “Señor, ¿no era la serpiente la que instruyó a Adán a comer?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "El salvador sonrió y dijo: \"La serpiente les instruyó a comer del mal de la lujuria sexual y la destrucción, para que pudiera explotarlo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Además, era consciente de que era desobediente para él debido a la Reflexión de la Luz que mora en él, que hizo que su intelecto fuera más exacto que el principal arconte, y deseaba extraer el poder que él mismo le había dado, y él causó una \"trance\" para vencer a Adán.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "También le pregunté al salvador: “¿Cuál es la ‘trance’?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Él, sin embargo, dijo: “No es lo que Moisés escribió, ni lo que ustedes han oído, porque él dijo en su primer libro, ‘Él le hizo dormir’; en cambio, (él causó su) percepción (para dormir), porque de hecho él dijo a través del profeta: ‘Yo haré que sus corazones sean pesados, para que no presten atención y no vean.’",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "La ayuda luminosa y Eva",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La Reflexión de la Luz entonces se ocultó dentro de él, y el arconte principal deseaba extraerla de su costilla, pero la Reflexión de la Luz está más allá de comprender.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "A pesar de que la oscuridad la perseguía, no podía atraparla, y le extrajo una parte de su poder, y él hizo otro molde en la forma de una mujer, según la semejanza de la Reflexión, que le había aparecido, y trajo la porción que había extraído del poder del hombre dentro del molde femenino, y no como Moisés dijo, \"su costilla\", y vio a la mujer junto a él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "También en ese momento apareció la Reflexión Radiante, y alzó el velo que había cubierto su mente, y recuperó su sobriedad después de la inebriación de la oscuridad, y reconoció la contraparte de su propia imagen, y dijo: \"Esto es ciertamente hueso de mis huesos, y carne de mi carne.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Por lo tanto, el hombre dejará a su padre y a su madre, y se acostará con su esposa, y ambos se convertirán en una sola carne, porque su compañero será enviado a él, y dejará a su padre y a su madre, incluso a Sofía, nuestra hermana, que descendió en inocencia para rectificar su deficiencia, debido a la cual ella fue llamada \"Vida\", que es \"la madre o la vida\", a través de la Providencia del Cielo y el conocimiento perfecto.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "El árbol del conocimiento y la expulsión",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Yo aparecí en forma de un águila en el árbol del conocimiento, que es Reflexión de la Providencia de la Luz Pura, para que pudiera instruirlos y roírlos de su sueño profundo, porque ambos estaban en una condición caída, y ellos eran conscientes de su nudidad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "La reflexión se les apareció en el modo de luz, y se despertó de su pensamiento, pero cuando Yaldabaot se dio cuenta de que se habían retirado de él, maldijo su tierra.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Se encontró con la mujer cuando se estaba preparando para su marido.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Él era su señor, aunque no sabía el misterio que había pasado por medio del decreto sagrado, y tenían miedo de acusarlo, y mostró a sus ángeles la ignorancia dentro de él, y los expulsó del paraíso, y los vistió en la oscuridad.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "El arconte principal también miró a la virgen que estaba cerca de Adán, y que la Reflexión radiante de la Vida había aparecido dentro de ella, y Yaldabaot estaba llena de ignorancia, y cuando la Providencia del Todo vio esto, ella envió mensajeros, y rápidamente quitaron la Vida de fuera de Eva.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Entonces el arconte principal la contaminaba, y engendró con sus dos hijos, el primero y el segundo: Eloim y Yave.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Eloim tiene la cara de un oso, pero Yave tiene la cara de un gato.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "El es justo, pero el otro es injusto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Yave fue colocado sobre el fuego y el viento, pero Eloim fue colocado sobre el agua y la tierra, pero con intención de engañar los llamó con los nombres de Caín y Abel.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Hasta hoy la relación sexual ha continuado a causa del arconte principal, y fue él quien plantó la lujuria sexual dentro de ella que pertenece a Adán, pero a través del coito hizo copias de los cuerpos, y los inspiró con su espíritu falso.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Sin embargo, puso los dos arcos sobre los principados, para que gobernaran sobre la tumba.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Sin embargo, cuando Adán se dio cuenta de la semejanza de su propia precognición, engendró la semejanza del Hijo del Hombre, a quien llamó a Seth, de acuerdo con la forma en que la raza está entre los eones.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Del mismo modo, la madre también envió su espíritu, que está en su propia semejanza, así como un simulacro del que mora en la plenitud, porque ella preparará un lugar de morada para los eones que descenderán.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "También les hizo beber el agua del olvido del arconte principal, para que no supieran el lugar de su origen.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "De esta manera, la semilla permaneció durante un período de tiempo para ayudar, de modo que cuando el Espíritu se pronuncie de los eones sagrados, lo levantará y lo sanará de su deficiencia, para que toda la plenitud se haga santa y sin falta.”",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "El destino de las almas",
+      "sourceWitness": "codex ii",
+      "verses": [
+        {
+          "number": "1",
+          "text": "También le pregunté al salvador: “Señor, ¿entonces todas las almas serán llevadas con seguridad a la luz pura?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Él respondió y me dijo: “Grandes cosas han surgido en su mente, porque es difícil explicarles a otros, con la excepción de aquellos que son de la raza inmóvil.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Aquellos sobre los cuales el Espíritu de vida se encenderá, y a quienes él empoderará, serán salvos y perfeccionados, y serán merecedores de la Grandeza, y en ese lugar, serán hechos limpios de todo mal, así como participación en el mal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Por lo tanto, porque no tienen ninguna preocupación aparte de la indestructibilidad única, en la que se concentrarán de este tiempo, sin ira, o envidia o celos, o lujuria y codicia por cualquier cosa, no serán molestados por nada excepto la condición de la existencia carnal, con la que se enfrentarán esperando expectantemente por el tiempo en que serán recibidos por los receptores.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Este tipo, entonces, merecen la vida indestructible, eterna, y la elección, porque resisten a todos y soportan todo, para que puedan completar el bien y heredar la vida eterna.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Le pregunté: “Señor, las almas de aquellos que no han realizado estas obras, sobre los cuales descendió el poder y el Espíritu de la vida.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "“Serán salvos a pesar de esto, y reformarán, porque el poder descenderá sobre todas las personas, porque aparte de él nadie puede soportar.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "Sin embargo, después de nacer, entonces, a medida que el Espíritu de vida aumenta, y el poder llega y fortalece ese alma, nadie será capaz de llevarla lejos con malas obras.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Sin embargo, aquellos sobre los cuales el espíritu falso desciende son arrastrados por él, y son llevados extraviados.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Yo, sin embargo, pregunté: “Señor, cuando sus almas se han ido de su carne, ¿a dónde irán?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Él, sin embargo, sonrió y me dijo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "“El alma, en la que el poder crecerá más fuerte que el espíritu vil, porque es fuerte y se aleja del mal, incluso por la intervención del indestructible, será salvada y llevada hasta el reposo de los eones.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Yo, sin embargo, pregunté: “Señor, pero aquellos que no estaban al tanto de aquel a quien pertenecen, ¿dónde habitarán sus almas?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Entonces me dijo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "“En aquellos, cuando el espíritu vil aumentó en fuerza, se despertó; y pesa el alma y lo arrastra a las malas obras, y lo tira al olvido, y después de partir, se entrega a las autoridades que se originaron a través del arco, y lo cortan con cadenas, y lo tiran a la cárcel, y lo acompañan hasta que se pudrin de la manera que se obtiene, y si se salvan,",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Yo, sin embargo, pregunté: “Señor, ¿cómo puede el alma crecer más pequeña y volver al estado natural de su madre o al hombre?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "Luego se regocijó cuando le había preguntado esto, y me dijo: \"Verdaderamente, eres bendecido, porque has llegado a entender que tal alma será hecha para tener éxito otro, en el cual mora el Espíritu de vida.",
+          "editorialNumber": true
+        },
+        {
+          "number": "18",
+          "text": "Será salvado a través de él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "19",
+          "text": "No será arrojado de nuevo a otra carne.”",
+          "editorialNumber": true
+        },
+        {
+          "number": "20",
+          "text": "También pregunté: “Señor, estos que también sabían, pero que se han alejado, ¿dónde irán sus almas?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "21",
+          "text": "Entonces me dijo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "22",
+          "text": "“Ellos serán llevados a ese lugar donde van los ángeles de la indigencia, el lugar sin arrepentimiento, y serán detenidos por el día en que los que han blasfemado el Espíritu serán atormentados, y serán castigados con un castigo de largo plazo.”",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "El espíritu falso y el diluvio",
+      "sourceWitness": "codex ii iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Yo, sin embargo, pregunté: “Señor, ¿dónde se originó el espíritu vil?”",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Entonces me dijo: \"El Padre Madre, que es abundante en misericordia, el Espíritu Santo en cada modo, el que es misericordioso y que muestra compasión por todos vosotros, es decir, Reflexión de la Providencia Radiante, levantó la semilla de la raza perfecta, y su intelecto, y la luz eterna del Hombre.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Cuando el arconte principal se dio cuenta de que eran más altos que él en la altura, y que lo sobrepasaban en el intelecto, entonces deseaba captar su objetivo, sin darse cuenta de que lo sobrepasaban en el intelecto, y que no podía comprenderlos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Él tramó una conspiración con sus autoridades, que son sus poderes, y juntos cometieron adulterio con Sofía; y el destino amargo fue engendrado por ellos, la última criatura inconstante, siendo de un tipo vacilante, y es más duradera y más fuerte que ella con quien los dioses se unieron (en adulterio), y los ángeles, y los demonios, y todas las generaciones hasta el día presente, porque toda la ignorancia abrumadora transfría",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "De esta manera también toda la creación fue cegada, para que no conocieran a Dios que está sobre todos ellos, y a causa de la plaga del olvido sus pecados fueron ocultos, porque están llenos de medidas y tiempos y momentos, dado que es el sobreSeñor universal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Luego se arrepintió de todo lo que había pasado por él.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Esta vez conspiró a inundar las producciones de la humanidad, pero la grandeza de la providencia radiante notificó a Noé, y predicó a toda la simiente de los hijos de la humanidad, pero aquellos que eran extraños a él no le prestaron atención.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "No fue como Moisés dijo: \"Se escondieron en un arca\", pero se escondieron en un lugar, no sólo Noé, sino también muchas otras personas de la raza inmóvil.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Entraron en un lugar y se ocultaron dentro de una nube radiante, y él estaba consciente de su autoridad, y ella que pertenece a la luz le acompañó.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Ella había brillado sobre ellos porque había causado oscuridad para cubrir toda la tierra, y él concogió una parcela junto con sus poderes.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "Él envió a sus ángeles a las hijas de los hombres, para tomar algunos por sí mismos, incluso para levantar la semilla por su placer, y al principio no tuvieron éxito.",
+          "editorialNumber": true
+        },
+        {
+          "number": "12",
+          "text": "Cuando no habían tenido éxito, se reunieron de nuevo y juntos tramaron un plan.",
+          "editorialNumber": true
+        },
+        {
+          "number": "13",
+          "text": "Ellos crearon un espíritu vil que parecía al Espíritu que había descendido, para contaminar a las almas, y los ángeles transformaron su semejanza en la semejanza de sus compañeros, haciéndolos estar llenos del espíritu de las tinieblas, que para ellos habían mezclado con el mal.",
+          "editorialNumber": true
+        },
+        {
+          "number": "14",
+          "text": "Presentaron oro y plata, y un regalo incluso de cobre y hierro, y objetos de todo tipo de metal, y llevaron a la gente que los seguía en grandes problemas al alejarlos con una plétora de trucos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "15",
+          "text": "Crecieron viejos sin disfrutar de ningún placer.",
+          "editorialNumber": true
+        },
+        {
+          "number": "16",
+          "text": "Sin descubrir la verdad, y sin el conocimiento del verdadero Dios, murieron, y de esta manera toda la creación cayó en una esclavitud de una edad, perdurable desde la fundación del mundo hasta ahora.",
+          "editorialNumber": true
+        },
+        {
+          "number": "17",
+          "text": "También seleccionaron mujeres y engendró hijos de la oscuridad, según la semejanza de su espíritu (apropiado), y cerraron sus corazones, y se endurecieron por medio de la dureza del espíritu vil, (incluso) hasta ahora.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "El himno de la Providencia",
+      "sourceWitness": "codex ii codex iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Por lo tanto, yo, la providencia perfecta de todos, me transformé en mi (propiada) semilla, porque fui el primero en existir, viajando por todos los caminos, porque soy la riqueza de la luz.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "Yo soy el recuerdo de la plenitud, pero entré en el reino de las tinieblas, y perseveré hasta que entré en medio de la prisión, y los cimientos del caos temblaron, y me escondí de ellos por su maldad, y no me reconocieron.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Regresé una segunda vez, y viajé por ahí.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "text": "Salí de aquellos que son de la luz, que soy, siendo el recuerdo de la Providencia.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "text": "Entré en medio de la oscuridad y en el interior del Hades, dado que yo estaba cuidando de mi misión, y los cimientos de Caos temblaron, buscando colapsar sobre los que moran en Caos, y destruirlos, y de nuevo me apresuré a mi raíz de luz, para que no fueran destruidos antes del tiempo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "text": "Incluso por tercera vez salí, siendo la luz que está dentro de la luz, yo siendo el recuerdo de la Providencia, para entrar en el medio de la oscuridad y el interior del Hades, y llené mi rostro con la luz de la consumación de su eón, y entré en el centro de su prisión, a saber, la prisión del cuerpo, y dije: \"El que oye, desgarro y lloró.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "text": "Se limpió las lágrimas amargas de sí mismo, y dijo: \"¿Quién llama mi nombre, y de dónde viene esta esperanza a mí, mientras estoy en los grillos de la prisión?\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "text": "También dije: \"Yo soy la Providencia de la luz pura.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "text": "Yo soy el pensamiento del Espíritu virginal que te eleva hasta el lugar digno de alabanza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "text": "Levántate y recuerda que tú eres el que dio atención, y sigue tu raíz, que yo soy, el Misericordioso, y protegete de los ángeles de la miseria y de los demonios de Caos, y de todos los que te atrapan, y cuida el profundo sueño y el confinamiento en el interior de Hades.",
+          "editorialNumber": true
+        },
+        {
+          "number": "11",
+          "text": "También lo alcé y lo sellé con la luz del agua de cinco sellos, de modo que la Muerte no lo superaría de este tiempo en adelante, y he aquí, ahora ascenderé al eón perfecto.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Encargo final a Juan",
+      "sourceWitness": "codex ii codex iv",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En tu audiencia he terminado todo por tu bien, pero te he dicho todo para que los escribas y los distribuyas en secreto a tus espíritus compañeros, porque este es el misterio de la raza inmóvil”.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "text": "El salvador también le encomendó estas palabras para que las escribiera y las guardara encerradas, y le dijo: \"Maldito sea cualquiera que cambie estas palabras por un regalo, ya sea de comida, o de bebida, o de ropa, o de cualquier otra cosa como estas.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "text": "Estos dichos también le fueron confiados en un misterio, y de repente se desvaneció de él, y se fue a sus discípulos compañeros y les informó acerca de lo que el salvador le había dicho. Dios mío. Amén. La escritura secreta según John",
+          "editorialNumber": true
         }
       ]
     }

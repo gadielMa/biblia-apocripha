@@ -193,13 +193,14 @@
         const externalTextNotice = work.externalTextUrl
           ? `<aside class="external-text ${escapeHtml(work.externalTextKind || 'reference')}" aria-label="Acceso a fuente externa"><strong>${escapeHtml(work.externalTextLabel || 'Fuente externa')}</strong><p>${escapeHtml(work.externalTextNote || '')}</p><a href="${escapeHtml(work.externalTextUrl)}" target="_blank" rel="noopener noreferrer">${work.externalTextKind === 'full' ? `Abrir texto completo (${escapeHtml(work.externalTextLanguage || 'idioma original')})` : 'Abrir recurso externo'} ↗</a></aside>`
           : '';
-        const readingNotice = work.externalTextUrl
+        const readingNotice = work.externalTextUrl && work.localTextKind !== 'full'
           ? '<p class="notice">Esta entrada ofrece un resumen en español; el acceso externo indica el idioma y si se trata del texto íntegro, una selección o una referencia relacionada.</p>'
           : '<p class="notice">Los números con letra son divisiones editoriales para facilitar la lectura y búsqueda.</p>';
         reader.innerHTML = externalTextNotice + readingNotice + chapterNavigation + work.chapters.map(chapter => {
           const hidden = requestedChapter && chapter.number !== requestedChapter ? ' hidden' : '';
           const verses = chapter.verses || (chapter.paragraphs || []).map((text, index) => ({ number: index + 1, text }));
-          return `<section id="capitulo-${chapter.number}"${hidden}><h2>${work.language === 'es' ? 'Capítulo' : 'Chapter'} ${chapter.number}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;
+          const chapterTitle = chapter.title ? ` · ${escapeHtml(chapter.title)}` : '';
+          return `<section id="capitulo-${chapter.number}"${hidden}><h2>${work.language === 'es' ? 'Capítulo' : 'Chapter'} ${chapter.number}${chapterTitle}</h2>${verses.map(verse => `<p class="passage" id="pasaje-${chapter.number}-${escapeHtml(verse.number)}"><sup class="verse-number">${chapter.number}:${escapeHtml(verse.number)}</sup>${escapeHtml(verse.text)}</p>`).join('')}</section>`;
         }).join('') + chapterNavigation;
         if (requestedChapter) window.document.getElementById(`capitulo-${requestedChapter}`)?.removeAttribute('hidden');
         readerSearch.addEventListener('input', () => {
