@@ -1108,6 +1108,36 @@
     .view-tabs { position: sticky; z-index: 50; top: .5rem; right: auto; bottom: auto; left: auto; display: flex; width: min(1800px, calc(100vw - 2rem)); max-width: min(1800px, calc(100vw - 2rem)); margin: 1rem auto 0; padding: 0; flex-direction: column; align-items: flex-start; }
     .view-tabs .view-links { width: 100%; }
     .view-tabs.open .view-links { margin: .55rem 0 0; }
+    .jubilee-calendar-view { max-width: 850px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; color: #f5f2eb; }
+    .jubilee-calendar-view[hidden] { display: none; }
+    .jubilee-calendar-shell { padding: 1.5rem; border: 1px solid rgba(201,168,140,.45); border-radius: 22px; background: linear-gradient(145deg,#182e47,#283d51 58%,#624d4b); box-shadow: 0 18px 45px rgba(48,36,27,.15); }
+    .jubilee-calendar-heading { margin: 0 0 1.2rem; }
+    .jubilee-calendar-heading > span,.jubilee-kicker { color: #f3c6a1; font-size: .76rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .jubilee-calendar-heading h2 { margin: .25rem 0; font-size: clamp(1.6rem,4vw,2.2rem); }
+    .jubilee-calendar-heading p,.jubilee-note { color: rgba(255,255,255,.78); }
+    .jubilee-today { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin:1rem 0; padding:1.2rem 1.35rem; border:1px solid rgba(168,230,207,.45); border-radius:16px; background:rgba(20,42,47,.72); }
+    .jubilee-today > div:first-child { display:grid; gap:.3rem; }
+    .jubilee-today-date,.jubilee-today > div:first-child > strong { font-size:clamp(1.4rem,4vw,2rem); }
+    .jubilee-today-meta { color:#c0d0cd; font-size:.9rem; }
+    .jubilee-day-number { flex:none; text-align:center; }
+    .jubilee-day-number strong { display:block; color:#a8e6cf; font-size:2rem; }
+    .jubilee-day-number span,.jubilee-month-head small { display:block; color:#c0c9d1; font-size:.78rem; }
+    .jubilee-month-card { padding:1.2rem; border:1px solid rgba(255,255,255,.2); border-radius:16px; background:rgba(16,25,36,.82); }
+    .jubilee-month-head { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:1rem; }
+    .jubilee-month-head h3 { margin:0; font-size:1.2rem; }
+    .jubilee-nav { display:flex; gap:.4rem; }
+    .jubilee-nav button { min-width:2.6rem; padding:.55rem .7rem; border:1px solid rgba(255,255,255,.2); border-radius:9px; color:#fff; background:rgba(255,255,255,.1); font:inherit; cursor:pointer; }
+    .jubilee-nav button:hover { border-color:#a8e6cf; }
+    .jubilee-week,.jubilee-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.35rem; }
+    .jubilee-week { margin-bottom:.4rem; }
+    .jubilee-week span { padding:.4rem 0; color:#c0c9d1; text-align:center; font-size:.76rem; font-weight:700; }
+    .jubilee-day,.jubilee-blank { aspect-ratio:1; }
+    .jubilee-day { display:grid; place-items:center; border-radius:9px; color:#f5f2eb; }
+    .jubilee-day.is-today { color:#10211c; background:#a8e6cf; font-weight:850; }
+    .jubilee-legend { display:flex; align-items:center; gap:.5rem; margin-top:.9rem; color:#c0c9d1; font-size:.8rem; }
+    .jubilee-legend i { width:11px; height:11px; border-radius:50%; background:#a8e6cf; }
+    .jubilee-note { margin:.9rem .2rem 0; font-size:.8rem; line-height:1.5; }
+    @media (max-width:600px) { .jubilee-calendar-view { padding:0 .75rem; } .jubilee-calendar-shell { padding:1rem; } .jubilee-month-card { padding:.8rem .55rem; } .jubilee-week,.jubilee-grid { gap:.2rem; } }
   </style>
 </head>
 <body>
@@ -1145,8 +1175,33 @@
   <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
   <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
   <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
+  <button class="view-tab" type="button" data-view="jubileesCalendar" aria-selected="false">Calendario Los Jubileos</button>
   </div>
 </nav>
+
+<section class="jubilee-calendar-view" id="jubilees-calendar-view" hidden aria-labelledby="jubilees-calendar-title">
+  <div class="jubilee-calendar-shell">
+    <header class="jubilee-calendar-heading">
+      <span>12 meses · 4 trimestres</span>
+      <h2 id="jubilees-calendar-title">Calendario Los Jubileos</h2>
+      <p>Un año de 364 días, con meses de 30, 30 y 31 días en cada trimestre.</p>
+    </header>
+    <section class="jubilee-today" aria-live="polite" aria-label="Fecha de hoy en el calendario">
+      <div><span class="jubilee-kicker">Hoy en este calendario</span><strong id="jubilee-today-date">—</strong><span class="jubilee-today-meta" id="jubilee-today-meta">—</span></div>
+      <div class="jubilee-day-number"><strong id="jubilee-day-number">—</strong><span>día del año</span></div>
+    </section>
+    <section class="jubilee-month-card" aria-label="Vista mensual">
+      <div class="jubilee-month-head">
+        <h3><span id="jubilee-month-name">—</span><small id="jubilee-year-name">—</small></h3>
+        <div class="jubilee-nav"><button id="jubilee-prev" type="button" aria-label="Mes anterior">←</button><button id="jubilee-today" type="button">Hoy</button><button id="jubilee-next" type="button" aria-label="Mes siguiente">→</button></div>
+      </div>
+      <div class="jubilee-week" aria-hidden="true"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div>
+      <div class="jubilee-grid" id="jubilee-calendar-grid" role="grid" aria-label="Días del mes"></div>
+      <div class="jubilee-legend"><i></i> Hoy</div>
+    </section>
+    <p class="jubilee-note">Referencia de esta conversión: los días se cuentan desde el 1 de enero del año 1 gregoriano, incluyendo ese día como día 1; luego se agrupan en años de 364 días. El calendario se actualiza con la fecha local del dispositivo.</p>
+  </div>
+</section>
 
 <section id="catalog-view">
 <div class="controls">
@@ -3426,8 +3481,63 @@ document.querySelectorAll('#objects-view .extinct-card').forEach(card => {
 const libraryViewRoots = {
   timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
   extinct: '#extinct-view', animals: '#extinct-view', lostPlaces: '#lost-places-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
-  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view'
+  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view',
+  jubileesCalendar: '#jubilees-calendar-view'
 };
+// Calendario de 364 días integrado como sección de la biblioteca.
+const jubileeMonthNames = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+const jubileeMonthLengths = [30,30,31,30,30,31,30,30,31,30,30,31];
+const jubileeWeekNames = ['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+const jubileeToday = new Date();
+const jubileeEpoch = new Date(0);
+jubileeEpoch.setUTCFullYear(1,0,1);
+const jubileeTodayUtc = new Date(0);
+jubileeTodayUtc.setUTCFullYear(jubileeToday.getFullYear(), jubileeToday.getMonth(), jubileeToday.getDate());
+jubileeTodayUtc.setUTCHours(0,0,0,0);
+const jubileeDays = Math.floor((jubileeTodayUtc - jubileeEpoch) / 86400000) + 1;
+const jubileeYear = Math.floor((jubileeDays - 1) / 364) + 1;
+const jubileeDayOfYear = (jubileeDays - 1) % 364 + 1;
+let jubileeRemainder = jubileeDayOfYear;
+let jubileeMonth = 0;
+while (jubileeRemainder > jubileeMonthLengths[jubileeMonth]) jubileeRemainder -= jubileeMonthLengths[jubileeMonth++];
+const jubileeDayOfMonth = jubileeRemainder;
+let jubileeShownMonth = jubileeMonth;
+let jubileeShownYear = jubileeYear;
+let jubileeMonthOffset = jubileeMonthLengths.slice(0, jubileeMonth).reduce((sum, length) => sum + length, 0);
+const jubileeWeekday = (jubileeDayOfYear - 1) % 7;
+document.getElementById('jubilee-today-date').textContent = `${jubileeDayOfMonth} de ${jubileeMonthNames[jubileeMonth]}, año ${jubileeYear}`;
+document.getElementById('jubilee-today-meta').textContent = `${jubileeWeekNames[jubileeWeekday]} · ${jubileeToday.toLocaleDateString('es-AR',{day:'numeric',month:'long',year:'numeric'})} en el calendario actual`;
+document.getElementById('jubilee-day-number').textContent = jubileeDayOfYear;
+function renderJubileeMonth() {
+  document.getElementById('jubilee-month-name').textContent = jubileeMonthNames[jubileeShownMonth];
+  document.getElementById('jubilee-year-name').textContent = `Año ${jubileeShownYear}`;
+  const grid = document.getElementById('jubilee-calendar-grid');
+  grid.replaceChildren();
+  const firstWeekday = jubileeMonthOffset % 7;
+  for (let blank = 0; blank < firstWeekday; blank++) {
+    const spacer = document.createElement('span'); spacer.className = 'jubilee-blank'; spacer.setAttribute('aria-hidden','true'); grid.append(spacer);
+  }
+  for (let day = 1; day <= jubileeMonthLengths[jubileeShownMonth]; day++) {
+    const cell = document.createElement('span');
+    const isToday = jubileeShownYear === jubileeYear && jubileeShownMonth === jubileeMonth && day === jubileeDayOfMonth;
+    cell.className = `jubilee-day${isToday ? ' is-today' : ''}`;
+    cell.setAttribute('role','gridcell');
+    if (isToday) cell.setAttribute('aria-label',`${day}, hoy`);
+    cell.textContent = day;
+    grid.append(cell);
+  }
+}
+function moveJubileeMonth(delta) {
+  jubileeShownMonth += delta;
+  if (jubileeShownMonth < 0) { jubileeShownMonth = 11; jubileeShownYear--; }
+  if (jubileeShownMonth > 11) { jubileeShownMonth = 0; jubileeShownYear++; }
+  jubileeMonthOffset = (jubileeShownMonth === 0 ? 0 : jubileeMonthLengths.slice(0,jubileeShownMonth).reduce((sum,length)=>sum+length,0)) % 7;
+  renderJubileeMonth();
+}
+document.getElementById('jubilee-prev').addEventListener('click',()=>moveJubileeMonth(-1));
+document.getElementById('jubilee-next').addEventListener('click',()=>moveJubileeMonth(1));
+document.getElementById('jubilee-today').addEventListener('click',()=>{jubileeShownMonth=jubileeMonth;jubileeShownYear=jubileeYear;jubileeMonthOffset=jubileeMonthLengths.slice(0,jubileeMonth).reduce((sum,length)=>sum+length,0)%7;renderJubileeMonth();});
+renderJubileeMonth();
 function findLibraryCard(view, title) {
   const root = document.querySelector(libraryViewRoots[view]);
   if (!root) return null;
@@ -3594,6 +3704,7 @@ const shroudView = document.getElementById('shroud-view');
 const faceView = document.getElementById('face-view');
 const kingdomsView = document.getElementById('kingdoms-view');
 const ascendedView = document.getElementById('ascended-view');
+const jubileesCalendarView = document.getElementById('jubilees-calendar-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
@@ -3686,7 +3797,8 @@ function selectView(view, updateHash = true) {
   const isFace = view === 'face';
   const isKingdoms = view === 'kingdoms';
   const isAscended = view === 'ascended';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended;
+  const isJubileesCalendar = view === 'jubileesCalendar';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -3702,7 +3814,8 @@ function selectView(view, updateHash = true) {
   faceView.hidden = !isFace;
   kingdomsView.hidden = !isKingdoms;
   ascendedView.hidden = !isAscended;
-  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView]
+  jubileesCalendarView.hidden = !isJubileesCalendar;
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView]
     .find(section => !section.hidden);
   if (activeSection) {
     activeSection.classList.remove('view-entering');
@@ -3720,7 +3833,7 @@ function selectView(view, updateHash = true) {
   updateViewMenuSize();
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionGenealogyDates);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -3738,6 +3851,7 @@ if (location.hash === '#sabana-santa') selectView('shroud', false);
 if (location.hash === '#la-cara-de-dios') selectView('face', false);
 if (location.hash === '#israel-y-juda') selectView('kingdoms', false);
 if (location.hash === '#ascendidos') selectView('ascended', false);
+if (location.hash === '#calendario-los-jubileos') selectView('jubileesCalendar', false);
 
 function jumpToLibraryItem(view, targetId, title) {
   selectView(view);
