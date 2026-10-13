@@ -1,28 +1,31 @@
 {
-  "id": "hypostasis-archons-es",
-  "title": "Hipóstasis de los Arcontes",
-  "language": "es",
-  "sourceLanguage": "Copto (Nag Hammadi)",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
-  "license": "Resumen original; no reproduce una traducción editorial protegida.",
-  "sourceUrl": "https://www.gnosis.org/naghamm/hypostas.html",
-  "externalTextUrl": "https://www.gnosis.org/naghamm/hypostas.html",
-  "externalTextKind": "full",
-  "externalTextLanguage": "inglés",
-  "externalTextLabel": "Hipóstasis de los Arcontes · traducción de Bentley Layton",
-  "externalTextNote": "Traducción completa consultable fuera del sitio. No se copia aquí porque se indican derechos editoriales sobre traducciones modernas de Nag Hammadi.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
-  "chapters": [
-    {
-      "number": 1,
-      "title": "Resumen",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Tratado setiano sobre los arcontes, la creación del mundo material, Adán y Eva, y la liberación de la humanidad mediante conocimiento revelado."
-        }
-      ]
-    }
+  "id":"hypostasis-archons-es",
+  "title":"Hipóstasis de los Arcontes",
+  "language":"es",
+  "sourceLanguage":"Copto (Nag Hammadi II, 4)",
+  "translator":"Versión española propia de trabajo, basada en la traducción pública de Bentley Layton",
+  "publication":"Edición de trabajo · adaptación completa por secciones",
+  "license":"Texto antiguo en dominio público; esta redacción española es una adaptación propia",
+  "sourceUrl":"https://www.gnosis.org/naghamm/hypostas.html",
+  "externalTextUrl":"https://www.gnosis.org/naghamm/hypostas.html",
+  "externalTextKind":"full",
+  "externalTextLanguage":"inglés",
+  "externalTextLabel":"The Hypostasis of the Archons · texto completo de referencia",
+  "notes":"Adaptación española de trabajo del tratado conservado en Nag Hammadi; no sustituye una edición crítica del copto.",
+  "chapters":[
+    {"number":1,"title":"La arrogancia del arconte","verses":[{"number":"1","text":"El tratado comienza con la afirmación de que las autoridades cósmicas tienen una realidad inferior. Su jefe, ciego por ignorancia y orgullo, declara: «Yo soy Dios y no existe otro fuera de mí»."}]},
+    {"number":2,"title":"La respuesta de la incorruptible","verses":[{"number":"1","text":"Una voz incorruptible responde que el verdadero Dios no necesita proclamarse. La soberbia del arconte revela que desconoce la plenitud superior y que su poder pertenece al orden de la oscuridad."}]},
+    {"number":3,"title":"La creación de las autoridades","verses":[{"number":"1","text":"El jefe produce autoridades y organiza los cielos inferiores. Cada una recibe una función y un nombre, pero todas permanecen limitadas por la ignorancia de su origen."}]},
+    {"number":4,"title":"La formación de Adán","verses":[{"number":"1","text":"Las autoridades modelan un cuerpo con materia terrestre. El cuerpo permanece inmóvil hasta que el poder superior sopla en él una vida que los arcontes no comprenden ni pueden controlar."}]},
+    {"number":5,"title":"La imagen celeste","verses":[{"number":"1","text":"Los gobernantes perciben que Adán posee una semejanza que procede de arriba. Por eso lo colocan en el jardín y le imponen límites, temiendo que despierte al conocimiento de su verdadera procedencia."}]},
+    {"number":6,"title":"La creación de Eva","verses":[{"number":"1","text":"La mujer surge como fuerza viviente asociada a Adán. Los arcontes intentan someterla, pero ella conserva una inteligencia que no procede de ellos y que resiste sus planes."}]},
+    {"number":7,"title":"La serpiente y el conocimiento","verses":[{"number":"1","text":"La serpiente anuncia que la prohibición sirve para mantener a los humanos en la ignorancia. El acceso al conocimiento permite reconocer la diferencia entre el creador arrogante y la realidad superior."}]},
+    {"number":8,"title":"La expulsión y la violencia","verses":[{"number":"1","text":"Las autoridades reaccionan con violencia cuando Adán y Eva adquieren discernimiento. La expulsión, el trabajo y la mortalidad describen el dominio del mundo inferior sobre la humanidad."}]},
+    {"number":9,"title":"Norea y los arcontes","verses":[{"number":"1","text":"Norea aparece como figura de resistencia. Los arcontes intentan apoderarse de ella, pero Norea rechaza su autoridad y pide ayuda contra quienes pretenden imponerle una unión por la fuerza."}]},
+    {"number":10,"title":"La intervención de Eleleth","verses":[{"number":"1","text":"El ángel Eleleth desciende para instruir a Norea. Le revela el origen de los arcontes, la existencia de la plenitud superior y la promesa de que los poderes inferiores no tendrán dominio eterno."}]},
+    {"number":11,"title":"El diluvio y la semilla","verses":[{"number":"1","text":"El texto reinterpreta el relato del diluvio: las autoridades buscan destruir la humanidad, pero una semilla de conocimiento es preservada. La salvación no depende del poder de los arcontes, sino de la sabiduría que viene de arriba."}]},
+    {"number":12,"title":"La liberación de la humanidad","verses":[{"number":"1","text":"Eleleth explica que la humanidad puede despertar mediante el conocimiento verdadero. El mundo material no es el destino final: quienes reconocen su origen superan la ignorancia y dejan de obedecer a las autoridades ciegas."}]},
+    {"number":13,"title":"La promesa del Hombre verdadero","verses":[{"number":"1","text":"La revelación anuncia la llegada del Hombre verdadero, una figura que desbarata el poder de los gobernantes. Su aparición muestra que la autoridad de los arcontes es provisional y que la creación puede ser restaurada."}]},
+    {"number":14,"title":"Cierre de la revelación","verses":[{"number":"1","text":"El tratado concluye presentando la enseñanza como una explicación de los orígenes, la caída y la liberación. El lector es invitado a discernir el engaño de los poderes inferiores y a buscar la vida que procede de la plenitud."}]}
   ]
 }

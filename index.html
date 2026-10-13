@@ -579,6 +579,7 @@
     }
     header h1, header p, .stats { position: relative; z-index: 1; max-width: 1240px; margin-left: auto; margin-right: auto; }
     header h1 { color: #fff; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 750; letter-spacing: -.045em; line-height: 1.05; margin-bottom: .75rem; }
+    header h2 { position: relative; z-index: 1; max-width: 1240px; margin: 0 auto .9rem; color: #fff; font-size: clamp(1.45rem, 2.5vw, 2.2rem); letter-spacing: -.03em; line-height: 1.15; }
     header p { color: #cbd8e7; font-size: 1rem; font-style: normal; }
     header .hero-tagline { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; color: #fff; }
     header .hero-description { max-width: 1240px; margin-top: .8rem; font-size: 1rem; line-height: 1.6; color: #dce7f2; }
@@ -612,6 +613,7 @@
     .text-status.summary { color:#8a5c32; background:#fff4df; }
     .text-status.fragment { color:#7a4d4d; background:#f9eaea; }
     .text-status.structured { color:#5d6270; background:#eef0f5; }
+    .text-status.work { color:#245d63; background:#dff2ef; }
     tbody tr[data-reader-href] { cursor: pointer; }
     tbody tr[data-reader-href]:focus-visible { outline: 3px solid rgba(180,83,45,.35); outline-offset: -3px; }
     .archivo-pdf { background: var(--accent); border-color: var(--accent); border-radius: 9px; }
@@ -726,6 +728,8 @@
     .source-badge { display: inline-flex; align-items: center; width: fit-content; padding: .22rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .03em; }
     .source-badge.canonical { color: #1b4f54; background: #ddefed; }
     .source-badge.apocryphal { color: #8d452b; background: #fbe7d9; }
+    .source-badge.tradition { color: #754c26; background: #f7ead3; }
+    .source-badge.uncertain { color: #455974; background: #e6edf5; }
     .source-badge.context { color: #4e5376; background: #e7e9f7; }
     .timeline-scroll { margin-top: 1rem; padding: .4rem 0 1rem; overflow-x: auto; scrollbar-color: #afbfce transparent; }
     #catalog-view .controls { margin-top: 1rem; }
@@ -754,7 +758,8 @@
     .timeline-event.is-portrait { min-width: 250px; min-height: 430px; }
     .timeline-event.is-portrait .timeline-image { height: 290px; }
     .timeline-event.is-landscape .timeline-image { height: auto; aspect-ratio: auto; object-fit: contain; }
-    .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 16 / 10; }
+    /* Estas ilustraciones son cuadradas: al reservarles un marco apaisado object-fit:contain las encogía dentro de la tarjeta. */
+    .timeline-event[data-milagro] .timeline-image { height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
     .timeline-note { margin-top: auto; padding-top: .55rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .69rem !important; line-height: 1.4; }
     .genealogy-view { max-width: none; margin: 1.25rem auto 2.5rem; padding: 0 2.5rem; }
     .genealogy-view[hidden] { display: none; }
@@ -778,6 +783,24 @@
     .prophecy-note { margin: .55rem 0 0; color: var(--text2); font-size: .84rem; line-height: 1.45; }
     .extinct-view { max-width: 1240px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; }
     .extinct-view[hidden] { display: none; }
+    .face-view { max-width: 1600px; margin: 1.5rem auto 4rem; padding: 0 clamp(1rem, 3vw, 2.5rem); }
+    .face-view[hidden] { display: none; }
+    .face-story { color: #111; }
+    .face-intro { padding: clamp(1rem, 3vw, 2.5rem) 0 2.4rem; }
+    .face-eyebrow, .face-number { color: #a64f2c; font-size: .78rem; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+    .face-intro h2 { margin: .3rem 0 .8rem; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.25; letter-spacing: -.035em; }
+    .face-intro p, .face-evidence p { max-width: 80ch; color: #111; font-size: 1rem; line-height: 1.55; }
+    .face-intro p { max-width: none; }
+    .face-intro p + p { margin-top: 1rem; }
+    .face-story a { color: #a14828; font-weight: 750; text-underline-offset: 3px; }
+    .face-evidence { display: grid; grid-template-columns: minmax(0, 46%) minmax(0, 1fr); align-items: center; gap: clamp(1.5rem, 4vw, 4rem); padding: clamp(2rem, 5vw, 4rem) 0; border-top: 1px solid #cad5df; }
+    .face-evidence:nth-of-type(even) figure { order: 2; }
+    .face-evidence figure { margin: 0; text-align: center; }
+    .face-evidence img { display: block; width: 100%; max-height: 650px; object-fit: contain; }
+    .face-evidence figcaption { margin-top: .7rem; color: #111; font-size: .79rem; line-height: 1.45; }
+    .face-evidence h3 { margin: .45rem 0 1rem; font-size: clamp(1.35rem, 2.2vw, 1.85rem); line-height: 1.2; letter-spacing: -.025em; }
+    .face-evidence .face-source { margin-top: 1.3rem; font-size: .9rem; }
+    @media (max-width: 760px) { .face-evidence { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; } .face-evidence:nth-of-type(even) figure { order: 0; } .face-evidence img { max-height: 540px; } }
     .library-single-body { overflow: hidden; padding: clamp(1rem, 2.2vw, 1.8rem); border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.97); box-shadow: var(--shadow); }
     .library-single-body .extinct-intro { margin: 0 0 1.25rem; padding: 0 0 1rem; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: transparent; box-shadow: none; }
     .library-single-body .extinct-grid { display: block; }
@@ -829,20 +852,24 @@
     .extinct-quote { display: block; color: #594b44 !important; font-style: italic; font-weight: 500 !important; }
     .extinct-note { padding-top: .6rem; border-top: 1px solid var(--border); font-size: .78rem !important; }
     #afterlife-view .extinct-card-body > blockquote { margin: .85rem 0 0; padding: .75rem .9rem; border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; color: var(--text2); background: #f5f7fa; font-size: .9rem; line-height: 1.55; }
+    #afterlife-view .extinct-card h4 { margin: 1rem 0 .35rem; color: #24364b; font-size: .98rem; line-height: 1.35; }
+    #afterlife-view .extinct-card h4 + p { margin-top: .3rem; }
     #extinct-view img[src*="leon-asiatico"] { aspect-ratio: 1.57; object-fit: cover; object-position: center top; }
     .enoch-view { max-width: 1240px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; }
     .enoch-view[hidden] { display: none; }
     .enoch-intro, .enoch-book { margin-bottom: 1rem; padding: 1.25rem 1.35rem; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.96); box-shadow: var(--shadow); }
-    .enoch-intro img { display: block; width: 100%; height: clamp(190px, 25vw, 300px); margin-bottom: 1rem; border-radius: 12px; object-fit: contain; }
+    /* Las ilustraciones de Enoc aprovechan todo el ancho de sus fichas; el
+       texto conserva el acolchado lateral para mantener la lectura cómoda. */
+    .enoch-intro > img { display: block; width: calc(100% + 2.7rem); max-width: none; height: auto; max-height: none; margin: -1.25rem -1.35rem 1rem; border-radius: 12px; object-fit: contain; }
     .enoch-view h2 { margin: 0 0 .5rem; color: #24364b; font-size: clamp(1.4rem, 3vw, 2rem); }
     .enoch-intro p, .enoch-book > p { color: var(--text2); line-height: 1.55; }
     .enoch-book h3 { margin: 0 0 .8rem; color: #24364b; font-size: clamp(1.2rem, 2.5vw, 1.65rem); }
     .enoch-passages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
     .enoch-passages-full { grid-template-columns: 1fr; }
-    .enoch-passage { min-width: 0; padding: .85rem 1rem; border: 1px solid var(--border); border-radius: 13px; background: #fbfcfe; }
+    .enoch-passage { min-width: 0; padding: .85rem 1rem; overflow: hidden; border: 1px solid var(--border); border-radius: 13px; background: #fbfcfe; }
     .enoch-passage h4 { margin: 0 0 .4rem; color: #9b4829; font-size: .95rem; }
     .enoch-reference { display: block; margin-bottom: .2rem; color: var(--text2); font-size: .72rem; font-weight: 750; }
-    .enoch-passage img { display: block; width: 100%; aspect-ratio: 8 / 5; margin: 0 0 .65rem; border-radius: 9px; object-fit: contain; }
+    .enoch-passage > img { display: block; width: calc(100% + 2rem); max-width: none; height: auto; aspect-ratio: auto; margin: -.85rem -1rem .65rem; border-radius: 0; object-fit: contain; }
     .enoch-passage blockquote { margin: 0; color: #46596f; line-height: 1.5; }
     .enoch-passage p { margin: .5rem 0 0; color: var(--text2); font-size: .88rem; line-height: 1.45; }
     .enoch-passage a { display: inline-block; margin-top: .5rem; color: #9b4829; font-weight: 800; text-underline-offset: 3px; }
@@ -888,9 +915,10 @@
     .family-tree { counter-reset: main-generation; }
     .tree-node { position: relative; z-index: 1; min-width: 168px; padding: .48rem .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; box-shadow: 0 5px 15px rgba(26,48,77,.06); color: #26384d; font-size: .83rem; font-weight: 800; text-align: center; }
     .family-tree > .tree-node { counter-increment: main-generation; }
-    .tree-node::before { position: absolute; right: calc(100% + .75rem); top: 50%; color: #9b4829; content: "Gen. " counter(main-generation); font-size: .68rem; font-weight: 900; white-space: nowrap; transform: translateY(-50%); }
+    .tree-node::before { position: absolute; z-index: 4; right: calc(100% + .75rem); top: 50%; padding: .08rem .22rem; border-radius: 4px; background: #fff; color: #9b4829; content: "Gen. " counter(main-generation); font-size: .68rem; font-weight: 900; white-space: nowrap; pointer-events: none; transform: translateY(-50%); }
     .tree-node::after { display: block; margin-top: .14rem; color: #718095; content: attr(data-relation); font-size: .61rem; font-weight: 700; letter-spacing: .035em; line-height: 1.2; }
     .tree-node small { display: none; }
+    .tree-age { display: block; margin-top: .22rem; color: #9b4829; font-size: .62rem; font-weight: 850; letter-spacing: .02em; line-height: 1.2; }
     .tree-node[data-generation]::before { content: attr(data-generation); }
     .tree-node.key { border-color: #e4af91; background: #fff3eb; color: #944322; }
     .tree-family-children, .tree-family-sibling, .tree-has-mother { box-sizing: border-box; padding-top: 1.35rem; }
@@ -910,7 +938,20 @@
     .tree-other-sons-list { position: relative; display: flex; gap: .4rem; overflow-x: auto; padding-bottom: .2rem; scrollbar-width: thin; }
     .tree-other-sons-list span { flex: 0 0 auto; padding: .34rem .6rem; border: 1px solid #d8e2ed; border-radius: 9px; background: #fff; color: #26384d; font-size: .68rem; font-weight: 800; }
     .tree-other-sons-list span[data-mother]::before { display: block; margin-bottom: .12rem; color: #718095; content: "Madre: " attr(data-mother); font-size: .56rem; font-weight: 700; }
-    .tree-jacob-children { position: absolute; z-index: 2; top: 50%; left: calc(100% + 190px); width: min(690px, calc(100vw - 3rem)); margin: 0; transform: translateY(-50%); }
+    .tree-jesus-family { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 388px) minmax(0, 1fr); align-items: center; gap: .7rem; box-sizing: border-box; width: 100%; margin: .3rem 0; }
+    .tree-jesus-family::before { content: ""; position: absolute; top: 50%; right: 12%; left: 12%; height: 3px; background: #c46a42; transform: translateY(-50%); }
+    .tree-jesus-family > .tree-node { box-sizing: border-box; width: 100%; min-width: 0; }
+    .tree-jesus-family > .tree-node::before { top: .3rem; right: .4rem; background: transparent; font-size: .55rem; transform: none; }
+    .tree-jesus-family .tree-node .tree-verse { width: min(360px, 100%); }
+    .tree-jesus-side { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: stretch; gap: .35rem; min-width: 0; padding: .45rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #f8fafc; }
+    .tree-jesus-side-title { color: #914221; font-size: .58rem; font-weight: 900; line-height: 1.25; text-align: center; text-transform: uppercase; }
+    .tree-jesus-relative { padding: .34rem .4rem; border: 1px solid #d8e2ed; border-radius: 9px; background: #fff; color: #26384d; font-size: .68rem; font-weight: 800; text-align: center; }
+    .tree-jacob-disclosure { position: relative; z-index: 2; box-sizing: border-box; width: min(690px, 100%); margin: .2rem 0; }
+    .tree-jacob-disclosure > summary { width: fit-content; max-width: 100%; margin: 0 auto; padding: .45rem .8rem; border: 1px solid #d8e2ed; border-radius: 999px; background: #f8fafc; color: #914221; cursor: pointer; font-size: .73rem; font-weight: 850; text-align: center; list-style: none; }
+    .tree-jacob-disclosure > summary::-webkit-details-marker { display: none; }
+    .tree-jacob-disclosure > summary::after { content: "＋"; display: inline-block; margin-left: .45rem; }
+    .tree-jacob-disclosure[open] > summary::after { content: "−"; }
+    .tree-jacob-disclosure > .tree-jacob-children { position: static; box-sizing: border-box; width: 100%; max-width: 100%; margin: .55rem 0 0; transform: none; }
     .tree-mother-groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .3rem; margin-top: .3rem; }
     .tree-mother-of { display: block; color: #718095; font-size: .57rem; font-weight: 700; line-height: 1.3; }
     .tree-mother-of b { display: block; color: #26384d; font-size: .62rem; }
@@ -1001,15 +1042,11 @@
       .timeline-track::before { left: .42rem; right: auto; top: .4rem; bottom: .4rem; width: 3px; height: auto; background: linear-gradient(#b4532d, #6d8da8); }
       .timeline-event { min-height: 0; min-width: 0; width: 100%; box-sizing: border-box; overflow: hidden; }
       .timeline-image { display: block; width: 100%; max-width: 100%; min-width: 0; height: 220px; aspect-ratio: auto; box-sizing: border-box; margin: 0 0 .65rem; border-radius: 11px; object-fit: contain; object-position: center; background: #eef3f8; }
-      /* En mobile, una imagen vertical comparte la tarjeta con el texto para evitar un bloque enorme. */
-      .timeline-event.is-portrait { display: grid; grid-template-columns: minmax(112px, 42%) minmax(0, 1fr); column-gap: .8rem; align-items: start; min-height: 0; min-width: 0; }
-      .timeline-event.is-portrait::after { grid-column: 1 / -1; grid-row: 1; position: static; order: initial; margin-bottom: .15rem; }
-      .timeline-event.is-portrait .timeline-image { grid-column: 1; grid-row: 2 / span 5; width: 100%; height: 270px; margin: 0; border-radius: 11px; }
-      .timeline-event.is-portrait > .source-badge { grid-column: 2; grid-row: 2; width: max-content; }
-      .timeline-event.is-portrait > div:not(.related-links) { grid-column: 2; grid-row: 3; min-width: 0; }
-      .timeline-event.is-portrait > p:not(.timeline-date) { grid-column: 2; grid-row: 4; min-width: 0; }
-      .timeline-event.is-portrait > a { grid-column: 2; }
-      .timeline-event.is-portrait > .related-links { grid-column: 1 / -1; grid-row: auto; margin-top: .7rem; }
+      /* En mobile las imágenes verticales se leen completas: ocupan todo el
+         ancho de la tarjeta y el texto continúa debajo, como las horizontales. */
+      .timeline-event.is-portrait { display: flex; flex-direction: column; align-items: stretch; min-height: 0; min-width: 0; }
+      .timeline-event.is-portrait .timeline-image { width: 100%; max-width: 100%; height: auto; max-height: none; margin: 0 0 .65rem; border-radius: 11px; object-fit: contain; object-position: center; }
+      .timeline-event.is-portrait > .source-badge { width: max-content; }
       .timeline-event.is-landscape .timeline-image { height: auto; aspect-ratio: auto; }
       .timeline-event::before { top: 1.1rem; left: -1.3rem; }
       .timeline-event::after { position: static; order: -1; width: auto; max-width: none; margin-bottom: .15rem; text-align: left; transform: none; }
@@ -1024,6 +1061,10 @@
       .genealogy-branch-grid { grid-template-columns: 1fr; }
       .family-tree { width: 100%; }
       .family-tree { width: 100%; padding-left: 92px; }
+      .tree-jesus-family { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+      .tree-jesus-family::before { display: none; }
+      .tree-jesus-family > .tree-node { grid-column: 1 / -1; grid-row: 1; }
+      .tree-jesus-side { align-self: start; }
       .tree-date-rail { width: 78px; }
       .tree-date-mark { font-size: .61rem; gap: .25rem; }
       .tree-date-mark::after { width: 7px; }
@@ -1032,7 +1073,7 @@
       .tree-family-children { width: 100px; min-width: 100px; }
       .tree-family-sibling { width: 78px; padding: 1.35rem .3rem .48rem; font-size: .72rem; }
       .tree-family-children, .tree-has-mother { padding-top: 1.35rem; }
-      .tree-jacob-children { left: calc(100% + 100px); width: 600px; }
+      .tree-jacob-disclosure { width: min(690px, 100%); }
       .tree-family-sibling.left { right: calc(100% + 8px); }
       .tree-family-sibling.right { left: calc(100% + 8px); }
       .tree-family-fork { left: calc(-39% - 8px); right: calc(-39% - 8px); }
@@ -1053,7 +1094,7 @@
     @media (max-width: 480px) {
       .extinct-grid { grid-template-columns: 1fr; }
       .timeline-image { height: 190px; }
-      .timeline-event.is-portrait .timeline-image { height: 240px; }
+      .timeline-event.is-portrait .timeline-image { height: auto; }
     }
     @media (max-width: 360px) {
       .tree-family-children { width: 84px; min-width: 84px; }
@@ -1074,7 +1115,7 @@
 <header>
   <h1>Biblia Extracanónica</h1>
   <p class="hero-tagline">La historia completa</p>
-  <p class="hero-description">El canon fue delimitado por personas que podían equivocarse. Por eso reunimos la Biblia y textos extracanonónicos: otras tradiciones sobre la infancia de Jesús, los tres días entre su muerte y resurrección y los cuarenta días posteriores.</p>
+  <p class="hero-description">El canon fue delimitado por personas que podían equivocarse. Por eso reunimos la Biblia y textos extracanónicos: otras tradiciones sobre la infancia de Jesús, los tres días entre su muerte y resurrección y los cuarenta días posteriores.</p>
   <div class="stats">
     <div class="stat" title="Obras visibles en el catálogo; algunas tienen más de una edición para leer o buscar"><span class="n" id="total-count">—</span><span class="l">Obras en catálogo</span></div>
     <div class="stat" title="Archivos PDF distintos enlazados desde el catálogo"><span class="n" id="pdf-count">—</span><span class="l">PDFs enlazados</span></div>
@@ -1102,6 +1143,7 @@
   <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Infiernos</button>
   <button class="view-tab" type="button" data-view="ark" aria-selected="false">Arca de Noé</button>
   <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
+  <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
   <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
   </div>
 </nav>
@@ -1320,6 +1362,7 @@
     <p>Ciudades y regiones que el texto bíblico o la tradición sitúan en el pasado. Las ilustraciones son artísticas; las fichas separan lo que dicen las fuentes de las hipótesis arqueológicas e históricas.</p>
   </div>
   <div class="extinct-grid" id="lost-places-grid">
+    <article class="extinct-card"><img class="extinct-card-image" src="assets/lugares/paraiso-arbol-vida.png" alt="El Paraíso del Edén con el árbol de la vida junto a un río" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato de los orígenes</span><h3>El Paraíso del Edén y el árbol de la vida</h3><p>Génesis describe un jardín plantado por Dios en Edén, regado por un río que se divide en cuatro brazos. En su centro están el árbol de la vida y el árbol del conocimiento del bien y del mal. El relato presenta el lugar como un espacio primordial, pero no permite confirmar una ubicación geográfica actual.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=2#pasaje-2-8">Génesis 2:8–14</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=3#pasaje-3-22">Génesis 3:22–24</a></div><p class="extinct-note">Imagen artística; la ubicación histórica del Edén no está confirmada.</p></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/lugares/enoc-city.jpg" alt="Ilustración artística de un antiguo asentamiento de adobe en una llanura" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato de los orígenes</span><h3>La ciudad de Enoc</h3><p>Génesis 4:17 cuenta que Caín, desterrado tras matar a Abel, construyó una ciudad en la tierra de Nod y la llamó Enoc, como su hijo. Es la primera ciudad mencionada en el relato bíblico; el texto no indica dónde estaba ni qué ocurrió con ella. Asociar su desaparición con el Diluvio es una inferencia posterior, no un dato explícito de Génesis.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=4#pasaje-4-17">Génesis 4:16–17 · Caín y la ciudad de Enoc</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-5">Génesis 6–9 · relato del Diluvio</a></div><p class="extinct-note">Imagen artística; no representa un sitio arqueológico identificado.</p></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/lugares/ofir-port.jpg" alt="Una antigua flota mercante lleva oro y madera desde un puerto de ubicación desconocida" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Región comercial de ubicación discutida</span><h3>Ofir</h3><p>Los relatos de las expediciones de Salomón vinculan Ofir con cargamentos de oro, madera de algum y piedras preciosas. La Biblia la presenta como destino o región de comercio, no permite asegurar que fuera una sola ciudad portuaria. Se han propuesto ubicaciones en África, Arabia e India, sin consenso.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-1-reyes&amp;capitulo=9#pasaje-9-26">1 Reyes 9:26–28</a><a href="lectura/?obra=rvr1909-1-reyes&amp;capitulo=10#pasaje-10-11">1 Reyes 10:11–12 · oro y madera de Ofir</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Ophir" target="_blank" rel="noreferrer">Enciclopedia bíblica · hipótesis sobre Ofir</a></div><p class="extinct-note">La ubicación exacta sigue sin establecerse.</p></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/lugares/ninive.jpg" alt="Reconstrucción artística de las murallas y palacios de la antigua Nínive" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Capital asiria · Irak</span><h3>Nínive</h3><p>Capital del Imperio asirio y escenario del libro de Jonás. En 612 a. C. fue tomada y saqueada por una coalición de medos y babilonios; el libro de Nahúm anuncia su caída desde una perspectiva profética. Sus restos arqueológicos se encuentran junto a la actual Mosul y comenzaron a excavarse sistemáticamente en el siglo XIX.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-jonas&amp;capitulo=1#pasaje-1-2">Jonás 1:2 · Nínive</a><a href="lectura/?obra=rvr1909-nahum&amp;capitulo=3#pasaje-3-7">Nahúm 3 · anuncio de su caída</a><a href="https://www.metmuseum.org/essays/nineveh" target="_blank" rel="noreferrer">The Met · Nínive y su caída en 612 a. C.</a></div><p class="extinct-note">Las ruinas no estuvieron simplemente “bajo la arena” sin interrupción: el sitio tuvo ocupaciones posteriores y fue excavado desde el siglo XIX.</p></div></article>
@@ -1341,7 +1384,7 @@
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/vara-aaron.jpg" alt="Vara de almendro con flores y almendras delante del santuario" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Señal sacerdotal</span><h3>La vara de Aarón</h3><p>La vara de Aarón florece y produce almendras como señal de la elección sacerdotal. Números dice que fue depositada delante del testimonio; Hebreos la recuerda entre los objetos asociados al Arca.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-numeros&amp;capitulo=17#pasaje-17-8">Números 17:1–11</a><a href="lectura/?obra=rvr1909-hebreos&amp;capitulo=9#pasaje-9-4">Hebreos 9:4</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/lanza-longinos.jpg" alt="Lanza romana junto a una cruz al atardecer" loading="lazy"><div class="extinct-card-body"><span class="source-badge apocryphal">Relato y tradición</span><h3>La lanza de Longinos</h3><p>Juan cuenta que un soldado atravesó el costado de Jesús, pero no da el nombre del soldado. “Longinos” y la identificación de una reliquia concreta pertenecen a tradiciones cristianas posteriores.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-34">Juan 19:31–37</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=15#pasaje-15-39">Marcos 15:39</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/vera-cruz.jpg" alt="Cruz de madera vacía sobre una colina al amanecer" loading="lazy"><div class="extinct-card-body"><span class="source-badge apocryphal">Reliquia venerada</span><h3>La Vera Cruz</h3><p>Los evangelios narran la crucifixión; la Vera Cruz es el nombre dado a fragmentos que distintas comunidades veneran como madera de esa cruz. Su procedencia no puede verificarse solo con el relato bíblico.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-17">Juan 19:17–18</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-35">Mateo 27:35</a></div></div></article>
-    <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin.jpg" alt="Lienzo de lino doblado en una tumba de piedra vacía" loading="lazy"><div class="extinct-card-body"><span class="source-badge apocryphal">Identificación discutida</span><h3>El Santo Sudario</h3><p>Los evangelios mencionan lienzos funerarios. La tradición identifica la Sábana Santa de Turín con uno de ellos, pero esa identificación no está demostrada; la datación por radiocarbono publicada en 1989 la situó en 1260–1390 d. C.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-40">Juan 19:40–42</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-59">Mateo 27:59–60</a></div></div></article>
+    <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin-rostro.png" alt="Ilustración de un rostro tenue impreso sobre lino antiguo, inspirada en la Sábana Santa" loading="lazy"><div class="extinct-card-body"><span class="source-badge apocryphal">Identificación discutida</span><h3>El Santo Sudario</h3><p>Los evangelios mencionan lienzos funerarios. La tradición identifica la Sábana Santa de Turín con uno de ellos, pero esa identificación no está demostrada; la datación por radiocarbono publicada en 1989 la situó en 1260–1390 d. C.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-40">Juan 19:40–42</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-59">Mateo 27:59–60</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/demonios.jpg" alt="Multitud simbólica de espíritus que se desvanece ante una luz" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Relatos canónicos y deuterocanónicos</span><h3>Demonios y “Legión”</h3><p>La Biblia no ofrece un censo de demonios. En Marcos, “Legión” expresa que son muchos; el pasaje no fija una cantidad de espíritus ni equivale a contar soldados romanos. Satanás y Beelzebul aparecen entre las figuras principales; Abadón/Apolión es el ángel del abismo y Asmodeo aparece en Tobías. “Lucifer” procede de una traducción latina de Isaías 14:12, interpretada después en relación con Satanás.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=5#pasaje-5-1">Marcos 5:1–13</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=12#pasaje-12-24">Mateo 12:24</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=9#pasaje-9-11">Apocalipsis 9:11</a><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=14#pasaje-14-12">Isaías 14:12</a><span>Tobías 3:8; 6:14–15; 8:2–3</span></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/demiurgo-v2.jpg" alt="Figura simbólica del Demiurgo y esferas cósmicas en una visión gnóstica" loading="lazy"><div class="extinct-card-body"><span class="source-badge apocryphal">Cosmología gnóstica</span><h3>El Demiurgo</h3><p>En ciertos textos gnósticos, como el Apócrifo de Juan, Yaldabaoth es un gobernante creador subordinado que ignora la realidad divina superior. No es un personaje bíblico y no hay un versículo canónico que lo nombre.</p><div class="extinct-refs"><a href="https://www.gnosis.org/naghamm/apocjn-meyer.html" rel="noreferrer">Apócrifo de Juan · Biblioteca de Nag Hammadi</a><a href="lectura/?obra=rvr1909-juan&amp;capitulo=1#pasaje-1-3">Como contraste: Juan 1:3</a></div></div></article>
     <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/baal-toro.jpg" alt="Estatua de toro de bronce que representa la iconografía taurina asociada a Baal" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Iconografía del antiguo Levante</span><h3>Baal, símbolo taurino</h3><p>La Biblia relata el culto a Baal y el desafío de Elías a sus profetas. La figura de Baal como toro refleja iconografía del antiguo Levante; el pasaje bíblico no dice literalmente que Baal fuera un toro.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-1-reyes&amp;capitulo=18#pasaje-18-20">1 Reyes 18:20–40</a><a href="lectura/?obra=rvr1909-oseas&amp;capitulo=13#pasaje-13-1">Oseas 13:1–2</a></div></div></article>
@@ -1382,17 +1425,17 @@
     <h3 id="enoch-two-title">Segundo libro de Enoc - Los secretos de Enoc</h3>
     <p>También llamado 2 Enoc o Enoc eslavo; relata viajes celestes de Enoc y lo que allí contempla.</p>
     <div class="enoch-passages enoch-passages-full">
-      <article class="enoch-passage"><h4>Enoc2 1:2–3</h4><blockquote>“Dijo Enoc: En aquel tiempo, cuando se cumplieron mis 165 años engendre a mi hijo Matusalen. Despues de eso vivi otros 200 años, asi que en total los años de mi vida fueron 365”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=1">Leer 2 Enoc 1</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-1.jpg" alt="Primer cielo: mar celeste, ángeles que gobiernan estrellas y un olivo" loading="lazy"><h4>Enoc2 3:1 · Primer Cielo</h4><blockquote>“...Y me colocaron en el primer Cielo y me mostraron un mar mas grande que el de la Tierra... me mostraron los 200 angeles que gobiernan las estrellas... Me mostraron los almacenes del rocio y un olivo que era semejante al crisma y su tamaño era mucho mayor que cualquier flor terrenal.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=3">Leer 2 Enoc 3</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-2.jpg" alt="Segundo cielo: Enoc ve a los malhechores encadenados en una región oscura" loading="lazy"><h4>Enoc2 7:1 · Segundo Cielo</h4><blockquote>“...y me elevaron al Segundo Cielo. Me mostraron oscuridad mas prfunda que la de la Tierra. Aqui tambien vi malhechores, colgados de cadenas, esperando el juicio eterno... producian un llanto incesante en todo momento”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=7">Leer 2 Enoc 7</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-3.jpg" alt="Tercer cielo: jardín del paraíso con el Árbol de la Vida" loading="lazy"><h4>Enoc2 8:1 · Tercer Cielo</h4><blockquote>“...me llevaron al Tercer Cielo y me pusieron en medio del Paraiso... En medio de ese lugar estaba el Arbol de la Vida, justo en el lugar donde descansa Dios cuando va al Paraiso”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=8">Leer 2 Enoc 8</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-4.jpg" alt="Cuarto cielo: los carros celestes del Sol y la Luna recorren las estrellas" loading="lazy"><h4>Enoc2 11:1 · Cuarto Cielo</h4><blockquote>“...me llevaron hasta el Cuarto Cielo, donde mostraron todos los movimientos, recorridos y todos los rayos de luz del Sol y de la Luna... al lado derecho del carro del Sol vi 4 grandes estrellas, cada una tenia 1000 estrellas subordinadas”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=11">Leer 2 Enoc 11</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-5.jpg" alt="Quinto cielo: Enoc se encuentra con las huestes de los Grigori en el monte Hermón" loading="lazy"><h4>Enoc2 18:1 · Quinto Cielo</h4><blockquote>“...me elevaron en sus alas al Quinto Cielo. Alli vi innumerables soldados llamados Grigori (vigilantes), de apariencia humana. Su inmensidad era tan enorme como la inmensidad de enormes gigantes...200 miríadas de ellos se separaron de Dios con su principe Satanael... Rompieron su pacto con Dios en el Monte Hermón”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=18">Leer 2 Enoc 18</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-6.jpg" alt="Sexto cielo: siete órdenes de ángeles luminosos reunidos en una corte celestial" loading="lazy"><h4>Enoc2 19:1, 3 · Sexto Cielo</h4><blockquote>“...me elevaron al Sexto Cielo. Alli vi siete formaciones de angeles muy brillantes y gloriosos.” 3 “Estos son los arcangeles que estan por encima de los angeles”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=19">Leer 2 Enoc 19</a></article>
-      <article class="enoch-passage"><img src="assets/enoc/cielo-7.jpg" alt="Séptimo cielo: querubines, serafines y ruedas llenas de ojos rodean la luz divina" loading="lazy"><h4>Enoc2 20:1 · Séptimo Cielo</h4><blockquote>“...me elevaron al Septimo Cielo. Alli vi una luz muy grande y tropas ardientes de grandes arcangeles... Querubines y Serafines, tronos y diez escuadrones de los angeles de muchos ojos, asi como el orden brillante de Ofanim.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=20">Leer 2 Enoc 20</a></article>
-      <article class="enoch-passage"><h4>Enoc2 21:4 · Gabriel</h4><blockquote>“Y el Señor envio a uno de sus glorisos, el arcangel Gabriel, y el me dijo: Ten valor Enoc, no temas. Levantate y ven conmigo ante el rostro de Dios para siempre”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=21">Leer 2 Enoc 21</a></article>
-      <article class="enoch-passage"><h4>Enoc2 58:6</h4><blockquote>“Dios no juzgara ni una sola alma animal por causa del hombre; pero a las almas humanas las juzgara por causa de las almas de sus animales.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=58">Leer 2 Enoc 58</a></article>
-      <article class="enoch-passage"><h4>Enoc2 63:1</h4><blockquote>“Cuando una persona viste al desnudo y alimenta al hambriento, encuentra recompensa de Dios”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=63">Leer 2 Enoc 63</a></article>
+      <article class="enoch-passage"><h4>2 Enoc 1:2–3</h4><blockquote>“Dijo Enoc: En aquel tiempo, cuando se cumplieron mis 165 años engendre a mi hijo Matusalen. Despues de eso vivi otros 200 años, asi que en total los años de mi vida fueron 365”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=1">Leer 2 Enoc 1</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-1.jpg" alt="Primer cielo: mar celeste, ángeles que gobiernan estrellas y un olivo" loading="lazy"><h4>2 Enoc 3:1 · Primer Cielo</h4><blockquote>“...Y me colocaron en el primer Cielo y me mostraron un mar mas grande que el de la Tierra... me mostraron los 200 angeles que gobiernan las estrellas... Me mostraron los almacenes del rocio y un olivo que era semejante al crisma y su tamaño era mucho mayor que cualquier flor terrenal.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=3">Leer 2 Enoc 3</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-2.jpg" alt="Segundo cielo: Enoc ve a los malhechores encadenados en una región oscura" loading="lazy"><h4>2 Enoc 7:1 · Segundo Cielo</h4><blockquote>“...y me elevaron al Segundo Cielo. Me mostraron oscuridad mas prfunda que la de la Tierra. Aqui tambien vi malhechores, colgados de cadenas, esperando el juicio eterno... producian un llanto incesante en todo momento”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=7">Leer 2 Enoc 7</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-3.jpg" alt="Tercer cielo: jardín del paraíso con el Árbol de la Vida" loading="lazy"><h4>2 Enoc 8:1 · Tercer Cielo</h4><blockquote>“...me llevaron al Tercer Cielo y me pusieron en medio del Paraiso... En medio de ese lugar estaba el Arbol de la Vida, justo en el lugar donde descansa Dios cuando va al Paraiso”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=8">Leer 2 Enoc 8</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-4.jpg" alt="Cuarto cielo: los carros celestes del Sol y la Luna recorren las estrellas" loading="lazy"><h4>2 Enoc 11:1 · Cuarto Cielo</h4><blockquote>“...me llevaron hasta el Cuarto Cielo, donde mostraron todos los movimientos, recorridos y todos los rayos de luz del Sol y de la Luna... al lado derecho del carro del Sol vi 4 grandes estrellas, cada una tenia 1000 estrellas subordinadas”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=11">Leer 2 Enoc 11</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-5.jpg" alt="Quinto cielo: Enoc se encuentra con las huestes de los Grigori en el monte Hermón" loading="lazy"><h4>2 Enoc 18:1 · Quinto Cielo</h4><blockquote>“...me elevaron en sus alas al Quinto Cielo. Alli vi innumerables soldados llamados Grigori (vigilantes), de apariencia humana. Su inmensidad era tan enorme como la inmensidad de enormes gigantes...200 miríadas de ellos se separaron de Dios con su principe Satanael... Rompieron su pacto con Dios en el Monte Hermón”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=18">Leer 2 Enoc 18</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-6.jpg" alt="Sexto cielo: siete órdenes de ángeles luminosos reunidos en una corte celestial" loading="lazy"><h4>2 Enoc 19:1, 3 · Sexto Cielo</h4><blockquote>“...me elevaron al Sexto Cielo. Alli vi siete formaciones de angeles muy brillantes y gloriosos.” 3 “Estos son los arcangeles que estan por encima de los angeles”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=19">Leer 2 Enoc 19</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/cielo-7.jpg" alt="Séptimo cielo: querubines, serafines y ruedas llenas de ojos rodean la luz divina" loading="lazy"><h4>2 Enoc 20:1 · Séptimo Cielo</h4><blockquote>“...me elevaron al Septimo Cielo. Alli vi una luz muy grande y tropas ardientes de grandes arcangeles... Querubines y Serafines, tronos y diez escuadrones de los angeles de muchos ojos, asi como el orden brillante de Ofanim.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=20">Leer 2 Enoc 20</a></article>
+      <article class="enoch-passage"><h4>2 Enoc 21:4 · Gabriel</h4><blockquote>“Y el Señor envio a uno de sus glorisos, el arcangel Gabriel, y el me dijo: Ten valor Enoc, no temas. Levantate y ven conmigo ante el rostro de Dios para siempre”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=21">Leer 2 Enoc 21</a></article>
+      <article class="enoch-passage"><h4>2 Enoc 58:6</h4><blockquote>“Dios no juzgara ni una sola alma animal por causa del hombre; pero a las almas humanas las juzgara por causa de las almas de sus animales.”</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=58">Leer 2 Enoc 58</a></article>
+      <article class="enoch-passage"><h4>2 Enoc 63:1</h4><blockquote>“Cuando una persona viste al desnudo y alimenta al hambriento, encuentra recompensa de Dios”.</blockquote><a href="lectura/?obra=2-enoc-es&amp;capitulo=63">Leer 2 Enoc 63</a></article>
     </div>
     <p>Enoc relata el ascenso por los siete cielos: allí Uriel y otros ángeles le muestran sus habitantes, órdenes y maravillas.</p>
   </section>
@@ -1401,7 +1444,7 @@
     <h3 id="enoch-three-title">3) Tercer libro de Enoc</h3>
     <p>También conocido como 3 Enoc o Enoc hebreo; presenta a Enoc transformado en Metatrón dentro de una tradición mística judía posterior.</p>
     <div class="enoch-passages">
-      <article class="enoch-passage"><img src="assets/enoc/metatron.jpg" alt="Metatrón como escriba celestial en la corte divina, rodeado de ángeles" loading="lazy"><h4>Enoc3 4:1</h4><blockquote>“Ismael dijo: Le pregunte a Metraton y le dije: Porque eres llamado por el nombre de tu Creador, por setenta nombres? Eres mas grande que todos los principes, mas alto que todos los angeles, mas amado que todos los siervos.... El me respondio: Porque soy Enoc, hijo de Jared”</blockquote><a href="lectura/?obra=3-enoc-es&amp;capitulo=4">Leer 3 Enoc 4</a></article>
+      <article class="enoch-passage"><img src="assets/enoc/metatron.jpg" alt="Metatrón como escriba celestial en la corte divina, rodeado de ángeles" loading="lazy"><h4>3 Enoc 4:1</h4><blockquote>“Ismael dijo: Le pregunte a Metraton y le dije: Porque eres llamado por el nombre de tu Creador, por setenta nombres? Eres mas grande que todos los principes, mas alto que todos los angeles, mas amado que todos los siervos.... El me respondio: Porque soy Enoc, hijo de Jared”</blockquote><a href="lectura/?obra=3-enoc-es&amp;capitulo=4">Leer 3 Enoc 4</a></article>
     </div>
   </section>
 </section>
@@ -1451,8 +1494,9 @@
         <img class="timeline-image" src="assets/timeline/enoc-vision.png" alt="Ilustración de Enoc contemplando una visión celeste">
         <span class="source-badge apocryphal">Canónico y apócrifo</span>
         <div><p class="timeline-date">edad primordial</p><h3>Enoc y los vigilantes</h3></div>
-        <p>Génesis presenta a Enoc como quien «caminó con Dios». El Libro de Enoc amplía esa figura con visiones celestes, vigilantes y un viaje por los cielos.</p>
+        <p>Enoc tenía 65 años cuando nació su hijo Matusalén. Después vivió otros 300 años «caminando con Dios» y alcanzó los 365; entonces, dice Génesis, Dios se lo llevó. Hebreos interpreta que fue trasladado sin pasar por la muerte. La tradición de 1 Enoc amplía su figura con visiones celestes y relatos de los Vigilantes.</p>
         <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=5#pasaje-5-21">Génesis 5:21–24</a>
+        <a href="lectura/?obra=rvr1909-hebreos&amp;capitulo=11#pasaje-11-5">Hebreos 11:5</a>
         <a href="lectura/?obra=rvr1909-judas&amp;capitulo=1#pasaje-1-14">Judas 1:14–15</a>
         <a href="lectura/?obra=1-enoc-es&amp;capitulo=1">1 Enoc 1</a>
         <a href="lectura/?obra=1-enoc-es&amp;capitulo=14">1 Enoc 14</a>
@@ -1600,7 +1644,7 @@
       <article class="timeline-event">
         <span class="source-badge apocryphal">Tradición apócrifa</span>
         <div><p class="timeline-date">tres días entre muerte y resurrección</p><h3>Carino y Leucio, testigos del descenso</h3></div>
-        <p>El Evangelio de Nicodemo relata que, durante los tres días, Jesús desciende al purgatorio y revive a Carino y Leucio. El texto los presenta como hijos de Simeón, el anciano que cargó a Jesús en el Templo; ambos narran lo que vieron.</p>
+        <p>En el relato apócrifo, Carino y Leucio vuelven a la vida después de la resurrección de Jesús y cuentan lo que vieron durante su descenso al Hades. El texto los llama hijos de Simeón, pero no permite identificarlos con certeza con el Simeón que bendijo a Jesús en el Templo.</p>
         <a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · capítulos 17–27</a>
       </article>
 
@@ -1646,13 +1690,16 @@
   <div class="genealogy-intro">
     <h2 id="genealogy-title">Árbol genealógico: de Adán a Jesús</h2>
     <p>Un recorrido visual por las genealogías bíblicas. Desde David, Mateo y Lucas presentan dos trazados distintos hacia Jesús; se muestran en paralelo para respetar cada texto. Los hermanos aparecen horizontalmente junto a su familia.</p>
-    <p class="genealogy-disclaimer"><b>Cómo leerlo:</b> las flechas verticales siguen la descendencia principal; los nodos laterales muestran hermanos de esa línea. Moisés pertenece a la rama de Leví. Elías aparece en la línea de tiempo, no como familiar de Josafat. Desde David, Mateo 1 sigue por Salomón y Lucas 3 por Natán. Las fechas de la izquierda indican períodos aproximados.</p>
   </div>
 
   <div class="genealogy-scroll" aria-label="Desplazá horizontalmente para recorrer el árbol genealógico">
     <div class="family-tree" aria-label="Árbol vertical de descendencia desde Adán hasta Jesús">
       <div class="tree-date-rail" aria-label="Origen del árbol y fechas históricas aproximadas">
-        <div class="tree-date-mark" data-date-target="Adán" data-date-branch="trunk"><span>Adán y Eva</span></div>
+        <div class="tree-date-mark" data-date-target="Adán" data-date-branch="trunk"><span>c. 4000 a. C.</span></div>
+        <div class="tree-date-mark" data-date-target="Noé" data-date-branch="trunk"><span>c. 2950 a. C.</span></div>
+        <div class="tree-date-mark" data-date-target="Abraham" data-date-branch="trunk"><span>c. 2050 a. C.</span></div>
+        <div class="tree-date-mark" data-date-target="Isaac" data-date-branch="trunk"><span>c. 1950 a. C.</span></div>
+        <div class="tree-date-mark" data-date-target="Jacob" data-date-branch="trunk"><span>c. 1900 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="Booz" data-date-branch="trunk"><span>c. 1200 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="David" data-date-branch="trunk"><span>c. 1000 a. C.</span></div>
         <div class="tree-date-mark" data-date-target="Jeconías" data-date-branch="mateo"><span>c. 600 a. C.</span></div>
@@ -1680,19 +1727,20 @@
       <div class="tree-node">Taré</div><div class="tree-down"></div>
       <div class="tree-node key">Abraham<small>padre de Isaac e Ismael</small></div><div class="tree-down"></div>
       <div class="tree-node key tree-family-children only-right">Isaac<span class="tree-mother">Madre: Sara</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling right">Ismael<span class="tree-mother">Madre: Agar</span></span><small>padre de Jacob y Esaú</small></div><div class="tree-down"></div>
-      <div class="tree-node key tree-family-children only-left">Jacob<span class="tree-mother">Madre: Rebeca</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Esaú<span class="tree-mother">Madre: Rebeca</span></span><small>padre de Judá, Leví y José</small><aside class="tree-kin-row tree-jacob-children" aria-label="Hijos de Jacob, hermanos de Judá"><span class="tree-other-sons-title">Otros hijos de Jacob · hermanos de Judá</span><div class="tree-other-sons-list"><span data-mother="Lea">Rubén</span><span data-mother="Lea">Simeón</span><span data-mother="Bilha">Dan</span><span data-mother="Bilha">Neftalí</span><span data-mother="Zilpa">Gad</span><span data-mother="Zilpa">Aser</span><span data-mother="Lea">Isacar</span><span data-mother="Lea">Zabulón</span><span data-mother="Raquel">Benjamín</span><span data-mother="Lea">Dina · hermana</span></div><div class="tree-mother-groups"><span class="tree-mother-of"><b>Lea</b><span>Madre de: Rubén, Simeón, Leví, Judá, Isacar, Zabulón y Dina</span></span><span class="tree-mother-of"><b>Raquel</b><span>Madre de: José y Benjamín</span></span><span class="tree-mother-of"><b>Bilha</b><span>Madre de: Dan y Neftalí</span></span><span class="tree-mother-of"><b>Zilpa</b><span>Madre de: Gad y Aser</span></span></div><div class="tree-kin-row"><span class="tree-other-sons-title">Rama de Leví · Leví → Coat → Amram</span><div class="tree-other-sons-list"><span>Miriam</span><span>Aarón</span><span>Moisés</span></div></div></aside></div><div class="tree-down"></div>
+      <div class="tree-node key tree-family-children only-left">Jacob<span class="tree-mother">Madre: Rebeca</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Esaú<span class="tree-mother">Madre: Rebeca</span></span><small>padre de Judá, Leví y José</small></div>
+      <details class="tree-jacob-disclosure"><summary>Hijos de Jacob y ramas familiares</summary><aside class="tree-kin-row tree-jacob-children" aria-label="Hijos de Jacob, hermanos de Judá"><span class="tree-other-sons-title">Otros hijos de Jacob · hermanos de Judá</span><div class="tree-other-sons-list"><span data-mother="Lea">Rubén</span><span data-mother="Lea">Simeón</span><span data-mother="Bilha">Dan</span><span data-mother="Bilha">Neftalí</span><span data-mother="Zilpa">Gad</span><span data-mother="Zilpa">Aser</span><span data-mother="Lea">Isacar</span><span data-mother="Lea">Zabulón</span><span data-mother="Raquel">Benjamín</span><span data-mother="Lea">Dina · hermana</span></div><div class="tree-mother-groups"><span class="tree-mother-of"><b>Lea</b><span>Madre de: Rubén, Simeón, Leví, Judá, Isacar, Zabulón y Dina</span></span><span class="tree-mother-of"><b>Raquel</b><span>Madre de: José y Benjamín</span></span><span class="tree-mother-of"><b>Bilha</b><span>Madre de: Dan y Neftalí</span></span><span class="tree-mother-of"><b>Zilpa</b><span>Madre de: Gad y Aser</span></span></div><div class="tree-kin-row"><span class="tree-other-sons-title">Rama de Leví · Leví → Coat → Amram</span><div class="tree-other-sons-list"><span>Miriam</span><span>Aarón</span><span>Moisés</span></div></div></aside></details><div class="tree-down"></div>
       <div class="tree-node tree-family-children">Judá<span class="tree-mother">Madre: Lea</span><span class="tree-family-fork" aria-hidden="true"></span><span class="tree-family-sibling left">Leví<span class="tree-mother">Madre: Lea</span></span><span class="tree-family-sibling right">José<span class="tree-mother">Madre: Raquel</span></span></div><div class="tree-down"></div>
       <div class="tree-node tree-has-mother">Fares<span class="tree-mother">Madre: Tamar</span></div><div class="tree-down"></div>
       <div class="tree-node">Esrom</div><div class="tree-down"></div>
       <div class="tree-node">Aram</div><div class="tree-down"></div>
       <div class="tree-node">Aminadab</div><div class="tree-down"></div>
       <div class="tree-node">Naasón</div><div class="tree-down"></div>
-      <div class="tree-node">Salmón<aside class="tree-related" data-target="Salmón" data-branch="trunk"><strong>Rahab · línea de Mateo</strong><p>Madre de Booz, según la genealogía de Mateo.</p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-5">Mateo 1:5</a></aside></div><div class="tree-down"></div>
+      <div class="tree-node">Salmón<aside class="tree-related" data-target="Salmón" data-branch="trunk"><strong>Rahab · madre de Booz</strong><p>Mateo presenta a Rahab como la madre de Booz; Salmón es su padre en la línea genealógica.</p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-5">Mateo 1:5</a></aside></div><div class="tree-down"></div>
       <div class="tree-node key">Booz<aside class="tree-related" data-target="Booz" data-branch="trunk"><strong>Rut · línea de Mateo</strong><p>Madre de Obed; su historia se cuenta en el libro de Rut.</p><a href="lectura/?obra=rvr1909-rut&amp;capitulo=4#pasaje-4-13">Rut 4:13–22</a></aside></div><div class="tree-down"></div>
       <div class="tree-node">Obed</div><div class="tree-down"></div>
       <div class="tree-node">Isaí</div><div class="tree-down"></div>
       <div class="tree-node key">David<small>padre de Salomón, Natán y otros hijos</small></div><div class="tree-down"></div>
-      <div class="tree-other-sons" aria-label="Otros hijos de David"><span class="tree-other-sons-title">Otros hijos de David · 2 Samuel 3 y 5</span><div class="tree-other-sons-list"><span>Amnón</span><span>Quileab</span><span>Absalón</span><span>Adonías</span><span>Sefatías</span><span>Itream</span><span>Samúa</span><span>Sobab</span><span>Ibhar</span><span>Elisúa</span><span>Nefeg</span><span>Jafía</span><span>Elisama</span><span>Eliada</span><span>Elifelet</span></div></div><div class="tree-down"></div>
+      <details class="tree-jacob-disclosure tree-david-disclosure"><summary>Otros hijos de David · 2 Samuel 3 y 5</summary><div class="tree-other-sons" aria-label="Otros hijos de David"><div class="tree-other-sons-list"><span>Amnón</span><span>Quileab</span><span>Absalón</span><span>Adonías</span><span>Sefatías</span><span>Itream</span><span>Samúa</span><span>Sobab</span><span>Ibhar</span><span>Elisúa</span><span>Nefeg</span><span>Jafía</span><span>Elisama</span><span>Eliada</span><span>Elifelet</span></div></div></details><div class="tree-down"></div>
 
       <div class="tree-branches" aria-label="Ramas de David">
         <div class="tree-siblings">
@@ -1712,8 +1760,11 @@
         <div class="tree-parent jose-parent"><div class="tree-node key jose-convergence" data-generation="">José<strong class="tree-jose-headline">Une ambos linajes de sangre de David</strong><span class="tree-jose-detail">En este árbol, la rama de Salomón (<a href="lectura/?obra=rvr1909-mateo&amp;capitulo=1#pasaje-1-6">Mateo 1</a>) y la de Natán (<a href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-31">Lucas 3</a>) confluyen en José. Mateo lo llama hijo de Jacob; Lucas lo vincula con Heli.</span></div></div>
       </div>
       <div class="tree-down"></div>
-      <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
-      <div class="tree-kin-row" aria-label="Hermanos nombrados de Jesús"><span class="tree-other-sons-title">Hermanos mencionados · Marcos 6:3</span><div class="tree-other-sons-list"><span>Santiago</span><span>José</span><span>Judas</span><span>Simón</span><span>Hermanas sin nombre</span></div></div>
+      <div class="tree-jesus-family" aria-label="Jesús y los hermanos mencionados en Marcos 6:3">
+        <div class="tree-jesus-side" aria-label="Santiago y José, hermanos mencionados"><span class="tree-jesus-side-title">Hermanos · Marcos 6:3</span><span class="tree-jesus-relative">Santiago</span><span class="tree-jesus-relative">José</span></div>
+        <div class="tree-node key" data-generation="Gen. 60 / 75" data-relation="Hijo de María · llamado el Cristo">Jesús<small>llamado el Cristo</small></div>
+        <div class="tree-jesus-side" aria-label="Judas, Simón y hermanas sin nombre"><span class="tree-jesus-side-title">Hermanos y hermanas</span><span class="tree-jesus-relative">Judas</span><span class="tree-jesus-relative">Simón</span><span class="tree-jesus-relative">Hermanas sin nombre</span></div>
+      </div>
       <aside class="tree-verse" data-target="Adán"><strong>Adán · tradición apócrifa</strong><q>¡Oh Dios! Perdónanos. Cuando estábamos en el jardín no conocíamos el calor ni el frío, ni sabíamos lo que era el miedo. Pero ahora que hemos salido, tenemos miedo de morir en esta oscuridad y ser devorados por los hombres.</q><a href="pdfs/libro-adan-eva.pdf" target="_blank" rel="noopener">Vida de Adán y Eva</a></aside>
       <aside class="tree-verse" data-target="Enoc"><strong>Enoc · 1 Enoc 12:4–5</strong><q>Enoc, escriba de justicia, ve y di a los Vigilantes del cielo que han abandonado el cielo excelso y se han contaminado con mujeres: habéis causado una gran destrucción sobre la tierra, y no tendréis paz ni perdón de pecados.</q><a href="lectura/?obra=1-enoc-es&amp;capitulo=12#pasaje-12-4">Leer 1 Enoc 12:4–5</a></aside>
       <aside class="tree-verse" data-target="Noé"><strong>Noé · Génesis 6:14</strong><q>Hazte un arca de madera de Gopher: harás aposentos en el arca, y la embetunarás con brea por dentro y por fuera.</q><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Leer Génesis 6:14–16</a></aside>
@@ -1771,6 +1822,38 @@
       </article>
     </div>
   </div>
+</section>
+
+<section class="face-view" id="face-view" hidden aria-labelledby="face-title">
+  <article class="face-story">
+    <div class="face-intro">
+      <span class="face-eyebrow">Fe, historia e imágenes</span>
+      <h2 id="face-title">La cara de Dios</h2>
+      <p><strong>YHWH (יהוה)</strong> es el nombre divino de cuatro letras en la Biblia hebrea; «Yahvé» y «Jehová» son formas de representarlo. Una reconstrucción devocional lo lee <i>Yeshúa HaNotsrí VeMélej HaYehudím</i> («Jesús el Nazareno y rey de los judíos»): sus iniciales forman <strong>Y-H-V-H</strong>. La V es intercambiable con la W.</p>
+      <p>Creemos, desde la fe cristiana, que Jesús es Dios hecho hombre y que en él vemos el rostro de Dios: «el que me ha visto a mí ha visto al Padre» (<a href="lectura/?obra=rvr1909-juan&amp;capitulo=14#pasaje-14-9">Juan 14:9</a>).</p>
+      <p>Estas cuatro imágenes forman parte de la historia de cómo se ha buscado y representado el rostro de Jesús. Su existencia y su veneración están documentadas; ninguna, por sí sola, demuestra cómo era físicamente su rostro.</p>
+    </div>
+
+    <section class="face-evidence" aria-labelledby="face-shroud-title">
+      <figure><img src="assets/cara-de-dios/sabana-turin.jpg" alt="Rostro asociado a la imagen de la Sábana Santa de Turín, en la imagen aportada por el lector" loading="lazy"><figcaption>Imagen aportada para esta sección · rostro asociado a la Sábana de Turín</figcaption></figure>
+      <div><span class="face-number">01 · Turín</span><h3 id="face-shroud-title">La Sábana de Turín</h3><p>El lienzo conserva la imagen tenue de un cuerpo y un rostro que muchos fieles asocian con Jesús. Su presencia histórica segura comienza a mediados del siglo XIV en Lirey, Francia. Su origen anterior y la identidad del hombre representado siguen debatidos.</p><p class="face-source"><a href="https://sindone.org/en/home-english/the-shroud/historical-outline/" target="_blank" rel="noopener noreferrer">Historia documentada · custodios de la Sábana ↗</a></p></div>
+    </section>
+
+    <section class="face-evidence" aria-labelledby="face-manoppello-title">
+      <figure><img src="assets/cara-de-dios/manoppello.jpg" alt="El rostro visible en el velo venerado en el santuario de Manoppello" loading="lazy"><figcaption>Imagen aportada para esta sección · Santo Rostro de Manoppello</figcaption></figure>
+      <div><span class="face-number">02 · Manoppello</span><h3 id="face-manoppello-title">La Santa Faz de Manoppello</h3><p>El santuario italiano custodia un velo con un rostro de ojos abiertos. La tradición local cuenta su llegada a Manoppello a comienzos del siglo XVI y está documentada por escrito desde el siglo XVII. Su identificación con un paño de la época de Jesús es una creencia devocional, no una procedencia histórica establecida.</p><p class="face-source"><a href="https://www.voltosanto.it/volto-santo.html" target="_blank" rel="noopener noreferrer">Historia del velo · santuario de Manoppello ↗</a></p></div>
+    </section>
+
+    <section class="face-evidence" aria-labelledby="face-jaen-title">
+      <figure><img src="assets/cara-de-dios/jaen.jpg" alt="Un custodio sostiene la reliquia del Santo Rostro de la Catedral de Jaén" loading="lazy"><figcaption>Imagen aportada para esta sección · Santo Rostro de Jaén</figcaption></figure>
+      <div><span class="face-number">03 · Jaén</span><h3 id="face-jaen-title">El Santo Rostro de la Catedral de Jaén</h3><p>La catedral conserva un paño venerado tradicionalmente como el rostro que Verónica habría recogido camino del Calvario. La propia catedral sitúa los primeros datos ciertos de su presencia en Jaén en el siglo XIV y reconoce que no hay documentación segura sobre sus orígenes.</p><p class="face-source"><a href="https://catedraldejaen.org/santo-rostro/" target="_blank" rel="noopener noreferrer">Historia de la reliquia · Catedral de Jaén ↗</a></p></div>
+    </section>
+
+    <section class="face-evidence" aria-labelledby="face-solidus-title">
+      <figure><img src="assets/cara-de-dios/justiniano-ii.jpg" alt="Solidus de oro de Justiniano II con la representación de Cristo en el anverso" loading="lazy"><figcaption>Imagen aportada para esta sección · solidus de Justiniano II</figcaption></figure>
+      <div><span class="face-number">04 · Constantinopla, 692–695 d. C.</span><h3 id="face-solidus-title">El solidus de Justiniano II</h3><p>Justiniano II introdujo el rostro de Cristo en la moneda imperial bizantina. Este solidus, fechado entre 692 y 695, es uno de los primeros testimonios numismáticos de esa representación. Documenta cómo se imaginaba a Jesús en el siglo VII, no un retrato hecho durante su vida.</p><p class="face-source"><a href="https://www.metmuseum.org/art/collection/search/463390" target="_blank" rel="noopener noreferrer">Solidus de Justiniano II · Metropolitan Museum of Art ↗</a></p></div>
+    </section>
+  </article>
 </section>
 
 <footer>
@@ -1977,6 +2060,12 @@ function normalizeData() {
       const canonicalName = row['Biblia Católica'] || row.Tanaj || '';
       if (rvrNames[canonicalName]) row._texto = `rvr1909-${rvrNames[canonicalName]}`;
     }
+  });
+
+  // Las primeras adaptaciones españolas de trabajo ya están disponibles en el lector local.
+  DATA.forEach(row => {
+    const name = getBookName(row);
+    if (['José y Asenet', 'Hipóstasis de los Arcontes', 'Sobre el origen del mundo'].includes(name)) row._estado_texto = 'Edición de trabajo';
   });
 
   DATA.forEach(row => {
@@ -2278,8 +2367,9 @@ function renderRow(row) {
   const color = getColor(g);
   const nombre = getBookName(row);
   const estado = row._estado_texto || '';
-  const estadoClass = estado.includes('Fragment') ? 'fragment' : estado.includes('estructurado') ? 'structured' : 'summary';
-  const estadoBadge = estado ? `<span class="text-status ${estadoClass}" title="${escAttr(estado === 'Resumen' ? 'La entrada contiene un resumen en español, no una traducción completa.' : estado === 'Fragmentario' ? 'La obra sólo se conserva en fragmentos.' : 'La entrada contiene un resumen estructurado mientras se prepara una transcripción crítica.')}">${esc(estado)}</span>` : '';
+  const estadoClass = estado.includes('Fragment') ? 'fragment' : estado.includes('estructurado') ? 'structured' : estado.includes('trabajo') ? 'work' : 'summary';
+  const estadoTitle = estado.includes('trabajo') ? 'Adaptación española propia de trabajo; no sustituye una edición crítica.' : estado === 'Resumen' ? 'La entrada contiene un resumen en español, no una traducción completa.' : estado === 'Fragmentario' ? 'La obra sólo se conserva en fragmentos.' : 'La entrada contiene un resumen estructurado mientras se prepara una transcripción crítica.';
+  const estadoBadge = estado ? `<span class="text-status ${estadoClass}" title="${escAttr(estadoTitle)}">${esc(estado)}</span>` : '';
 
   const rowReaderHref = row._texto ? readerHref(row._texto) : '';
   return `<tr${rowReaderHref ? ` data-reader-href="${escAttr(rowReaderHref)}" tabindex="0" role="link" aria-label="Abrir ${escAttr(nombre)}"` : ''}>
@@ -2410,16 +2500,17 @@ function findLibraryMatches(query) {
     'afterlife-view': ['Infiernos', 'afterlife'],
     'ark-view': ['Arca de Noé', 'ark'],
     'shroud-view': ['Sábana Santa', 'shroud'],
+    'face-view': ['La cara de Dios', 'face'],
     'kingdoms-view': ['Israel vs Judá', 'kingdoms']
   };
   const selectors = [
     '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
     '#prophecies-view .prophecies-intro', '#prophecies-view .prophecy-card', '.extinct-view .extinct-intro', '.extinct-view .extinct-card', '#enoch-view .enoch-intro', '#enoch-view .enoch-passage',
-    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card'
+    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence'
   ].join(',');
   const matches = [];
   document.querySelectorAll(selectors).forEach(card => {
-    const section = card.closest('.timeline-view,.genealogy-view,.prophecies-view,.extinct-view,.enoch-view');
+    const section = card.closest('.timeline-view,.genealogy-view,.prophecies-view,.extinct-view,.enoch-view,.face-view');
     const sectionInfo = section && sections[section.id];
     if (!sectionInfo) return;
     const heading = card.querySelector('h3,h4,h2,strong');
@@ -2597,7 +2688,7 @@ const timelineTrack = document.querySelector('.timeline-track');
 const earlyTimelineEvents = [
   ['orígenes','Adán y Eva','Dios crea al primer hombre, Adán, y a Eva; viven en el jardín hasta su expulsión.','Génesis 1–3','lectura/?obra=rvr1909-genesis&capitulo=1','canonical','assets/timeline/adan-eva.png'],
   ['primeras generaciones','Set y Enós','La línea de Set continúa tras Adán; en días de Enós se invoca el nombre del Señor.','Génesis 4:25–26','lectura/?obra=rvr1909-genesis&capitulo=4#pasaje-4-25','canonical'],
-  ['mundo antiguo','Noé y el arca','Noé construye el arca, atraviesa el diluvio con su familia y recibe el arco como señal de alianza.','Génesis 6–9','lectura/?obra=rvr1909-genesis&capitulo=6','canonical','assets/timeline/noe-arca.png'],
+  ['c. 1330 a. C. · cronología tradicional','El nacimiento y rescate de Moisés','Moisés nace durante la opresión en Egipto. Su madre lo esconde en una cesta en el Nilo y la hija del faraón lo cría. Deuteronomio dice que murió a los 120 años.','Éxodo 2:1–10','lectura/?obra=rvr1909-exodo&capitulo=2','canonical','assets/timeline/nacimiento-moises.png'],
   ['patriarcas','Abraham y la promesa','La promesa de una descendencia y bendición para las naciones inicia el ciclo patriarcal.','Génesis 12:1–3','lectura/?obra=rvr1909-genesis&capitulo=12#pasaje-12-1','canonical'],
   ['patriarcas','Jacob y Judá','Jacob bendice a Judá con una imagen real que la tradición cristiana lee mesiánicamente.','Génesis 49:10','lectura/?obra=rvr1909-genesis&capitulo=49#pasaje-49-10','canonical'],
   ['Egipto','José y sus hermanos','José llega a Egipto y su familia se instala allí, preparando el relato del éxodo.','Génesis 37–50','lectura/?obra=rvr1909-genesis&capitulo=37','canonical'],
@@ -2608,7 +2699,7 @@ const earlyTimelineEvents = [
 function makeTimelineCard([date, title, description, reference, href, source, image]) {
   const card = document.createElement('article');
   card.className = 'timeline-event';
-  const sourceLabel = source === 'canonical' ? 'Canónico' : source === 'apocryphal' ? 'Tradición apócrifa' : 'Contexto histórico';
+  const sourceLabel = source === 'canonical' ? 'Canónico' : source === 'apocryphal' ? 'Tradición apócrifa' : source === 'tradition' ? 'Tradición posterior' : source === 'uncertain' ? 'Muerte no documentada' : 'Contexto histórico';
   card.innerHTML = `${image ? `<img class="timeline-image" src="${image}" alt="Ilustración de ${title}">` : ''}<span class="source-badge ${source}">${sourceLabel}</span><div><p class="timeline-date"></p><h3></h3></div><p class="timeline-description"></p><a></a>`;
   card.querySelector('.timeline-date').textContent = date; card.querySelector('h3').textContent = title; card.querySelector('.timeline-description').textContent = description;
   const link = card.querySelector('a'); link.textContent = reference; link.href = href;
@@ -2627,23 +2718,30 @@ if (timelineTrack) {
   earlyTimelineEvents.slice(0, 2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), enocCard));
   const moisesCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Moisés y la alianza');
   earlyTimelineEvents.slice(2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), moisesCard));
+  const mosesBirthCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'El nacimiento y rescate de Moisés');
+  if (mosesBirthCard) {
+    const lifespanLink = document.createElement('a');
+    lifespanLink.href = 'lectura/?obra=rvr1909-deuteronomio&capitulo=34#pasaje-34-7';
+    lifespanLink.textContent = 'Deuteronomio 34:7 · vivió 120 años';
+    mosesBirthCard.append(lifespanLink);
+  }
   extraTimelineEvents.forEach(([date, title, description, reference, href, source]) => {
     if (title !== 'Pentecostés') return;
     timelineTrack.append(makeTimelineCard([date, title, description, reference, href, source]));
   });
   const timelineOrder = [
-    'Adán y Eva','Set y Enós','Enoc y los vigilantes','Noé y el arca','Abraham y la promesa','Jacob y Judá','José y sus hermanos',
+    'Adán y Eva','Set y Enós','Enoc y los vigilantes','Abraham y la promesa','Jacob y Judá','José y sus hermanos','El nacimiento y rescate de Moisés',
     'Moisés abre el mar Rojo','La Roca de Moisés','Moisés anuncia un profeta','Isaías y Emanuel','El mundo del Segundo Templo','Jesús bebé','Simeón carga al niño Jesús',
     'Huida y regreso a Nazaret','Relatos del niño Jesús','Jesús adolescente en el Templo','Ayuno y tentación en el desierto',
     'Jesús adulto','Parábolas, signos y discípulos','La cena y el arresto','Pasión, muerte y sepultura','Evangelio de Nicodemo',
-    'Carino y Leucio, testigos del descenso','Jesús resucitado','El Resucitado en María Magdalena y Nag Hammadi',
+    'Jesús resucitado','Carino y Leucio, testigos del descenso','El Resucitado en María Magdalena y Nag Hammadi',
     'Lo que dijo e hizo resucitado','Pentecostés'
   ];
   const timelineDates = {
     'Adán y Eva':[-4000,'4000 años antes de Cristo (cronología tradicional)'],
     'Set y Enós':[-3900,'3900 años antes de Cristo (aprox.)'],
     'Enoc y los vigilantes':[-3000,'3000 años antes de Cristo (aprox.)'],
-    'Noé y el arca':[-2500,'2500 años antes de Cristo (aprox.)'],
+    'El nacimiento y rescate de Moisés':[-1330,'1330 años antes de Cristo (cronología tradicional)'],
     'Abraham y la promesa':[-2000,'2000 años antes de Cristo (aprox.)'],
     'Jacob y Judá':[-1800,'1800 años antes de Cristo (aprox.)'],
     'José y sus hermanos':[-1700,'1700 años antes de Cristo (aprox.)'],
@@ -2662,8 +2760,8 @@ if (timelineTrack) {
     'Parábolas, signos y discípulos':[31,'31–33 años después de Cristo'],
     'La cena y el arresto':[33,'33 años después de Cristo'],
     'Pasión, muerte y sepultura':[33,'33 años después de Cristo'],
-    'Evangelio de Nicodemo':[33,'33 años después de Cristo (según la narración)'],
-    'Carino y Leucio, testigos del descenso':[33,'33 años después de Cristo (según la narración)'],
+    'Evangelio de Nicodemo':[33,'entre la muerte y la resurrección · relato apócrifo posterior'],
+    'Carino y Leucio, testigos del descenso':[33,'después de la resurrección · relato apócrifo posterior'],
     'Jesús resucitado':[33,'33 años después de Cristo'],
     'El Resucitado en María Magdalena y Nag Hammadi':[33,'33 años después de Cristo (según esos textos)'],
     'Lo que dijo e hizo resucitado':[33,'33 años después de Cristo'],
@@ -2687,16 +2785,16 @@ if (timelineTrack) {
   const milestones = [
     ['cronología tradicional · 4000 a. C.','Creación del mundo y del ser humano','Génesis abre con la creación del mundo y de la humanidad.','Génesis 1–2','lectura/?obra=rvr1909-genesis&capitulo=1','origins'],
     ['cronología tradicional · 4000 a. C.','Adán y Eva en el Edén','El relato presenta a la primera pareja en el jardín antes de su expulsión.','Génesis 2–3','lectura/?obra=rvr1909-genesis&capitulo=2','origins'],
+    ['cronología tradicional · 4000 a. C.','La serpiente habla con Eva','La serpiente cuestiona la prohibición de comer del árbol y Eva le responde.','Génesis 3:1–5','lectura/?obra=rvr1909-genesis&capitulo=3#pasaje-3-1','origins'],
     ['cronología tradicional · 4000 a. C.','La caída y la expulsión del Edén','Eva, incentivada por la serpiente, come del fruto del árbol prohibido; después, la primera pareja sale del jardín de Edén.','Génesis 3','lectura/?obra=rvr1909-genesis&capitulo=3','origins'],
     ['cronología tradicional · 3900 a. C.','Adán, Eva y sus tres hijos','Después de la expulsión, Adán y Eva tienen tres hijos: Caín, Abel y Set.','Génesis 4:1–26','lectura/?obra=rvr1909-genesis&capitulo=4','origins'],
     ['cronología tradicional · 3900 a. C.','Caín y Abel','Caín mata a su hermano Abel, primer homicidio narrado en Génesis.','Génesis 4:1–16','lectura/?obra=rvr1909-genesis&capitulo=4','origins'],
-    ['cronología tradicional · antes del diluvio','Enoc y los vigilantes','Génesis dice que Enoc caminó con Dios; 1 Enoc amplía su figura con relatos de los Vigilantes.','Génesis 5:21–24 · Judas 14–15 · 1 Enoc','lectura/?obra=rvr1909-judas&capitulo=1#pasaje-1-14','origins'],
+    ['cronología tradicional · antes del diluvio','Enoc y los vigilantes','Enoc tenía 65 años cuando nació Matusalén; vivió otros 300 años y sumó 365. Génesis dice que caminó con Dios y que Dios se lo llevó; Hebreos entiende que fue trasladado sin morir. 1 Enoc amplía su figura con relatos de los Vigilantes.','Génesis 5:21–24 · Hebreos 11:5 · Judas 14–15 · 1 Enoc','lectura/?obra=rvr1909-hebreos&capitulo=11#pasaje-11-5','origins'],
     ['tradición de 1 Enoc · antes del diluvio','El pacto del monte Hermón','Doscientos Vigilantes, liderados por Shemihaza, se reúnen en el monte Hermón y juran unirse a mujeres humanas para engendrar descendencia.','1 Enoc 6:1–6','lectura/?obra=1-enoc-es&capitulo=6','origins'],
     ['tradición de 1 Enoc · antes del diluvio','El nacimiento de los Nefilim','De la unión prohibida nacen gigantes que consumen los recursos, devoran a la humanidad y corrompen la creación.','1 Enoc 7:1–6','lectura/?obra=1-enoc-es&capitulo=7','origins'],
     ['tradición de 1 Enoc · antes del diluvio','Conocimientos prohibidos de los Vigilantes','Azazel enseña metalurgia, armas y adornos; Shemihaza, encantamientos y botánica; otros Vigilantes revelan astrología y secretos del Sol y la Luna.','1 Enoc 8:1–3','lectura/?obra=1-enoc-es&capitulo=8','origins'],
     ['tradición de 1 Enoc · antes del diluvio','El clamor de la Tierra y los arcángeles','La violencia de los Nefilim hace gemir a la Tierra. Miguel, Gabriel, Rafael y Uriel oyen el clamor de las víctimas y presentan su causa ante el Trono de Dios.','1 Enoc 9:1–11','lectura/?obra=1-enoc-es&capitulo=9','origins'],
     ['Libro de las Parábolas · tradición de 1 Enoc','El Hijo del Hombre y el Anciano de Días','Enoc contempla al Hijo del Hombre, también llamado el Elegido, preexistente ante el Anciano de Días y destinado a juzgar a los reyes y defender a los oprimidos.','1 Enoc 46:1–6; 48:2–7','lectura/?obra=1-enoc-es&capitulo=46','hope'],
-    ['cronología tradicional · 2500 a. C.','El gran diluvio y el arca','Noé construye el arca y sobrevive al diluvio con su familia.','Génesis 6–9','lectura/?obra=rvr1909-genesis&capitulo=6','origins'],
     ['cronología tradicional · 2500 a. C.','El diseño exacto del Arca','Dios entrega a Noé los planos: madera de gofer, brea por dentro y por fuera, 300 codos de largo, 50 de ancho y 30 de alto, tres pisos, una ventana superior y una puerta lateral.','Génesis 6:14–16','lectura/?obra=rvr1909-genesis&capitulo=6#pasaje-6-14','origins'],
     ['cronología tradicional · antes del diluvio','Décadas de trabajo y advertencia','Noé construye el Arca durante décadas —la tradición estima cerca de cien años— y advierte a sus contemporáneos como predicador de justicia.','Génesis 6:13–22; 2 Pedro 2:5','lectura/?obra=rvr1909-2-pedro&capitulo=2#pasaje-2-5','origins'],
     ['cronología tradicional · antes del diluvio','La recolección de las especies','Dios ordena introducir parejas de animales; Génesis distingue siete parejas de animales limpios, una pareja de no limpios y las aves de los cielos.','Génesis 7:1–9','lectura/?obra=rvr1909-genesis&capitulo=7#pasaje-7-1','origins'],
@@ -2710,7 +2808,7 @@ if (timelineTrack) {
     ['2.º milenio a. C. · fecha tradicional','La prueba de Abraham e Isaac','Abraham lleva a Isaac al monte; el relato termina con la intervención de un mensajero divino.','Génesis 22:1–19','lectura/?obra=rvr1909-genesis&capitulo=22','patriarchs'],
     ['2.º milenio a. C. · fecha tradicional','Jacob lucha y recibe el nombre Israel','Jacob lucha durante la noche y recibe el nombre Israel.','Génesis 32:22–32','lectura/?obra=rvr1909-genesis&capitulo=32','patriarchs'],
     ['2.º milenio a. C. · fecha tradicional','José es vendido y asciende en Egipto','Sus hermanos venden a José; después, el faraón lo pone a cargo de Egipto.','Génesis 37–41','lectura/?obra=rvr1909-genesis&capitulo=37','patriarchs'],
-    ['c. 1330 a. C. · cronología tradicional','El nacimiento y rescate de Moisés','La hija del faraón encuentra al niño en una cesta en el Nilo y lo cría.','Éxodo 2:1–10','lectura/?obra=rvr1909-exodo&capitulo=2','exodus'],
+    ['c. 1330 a. C. · cronología tradicional','El nacimiento y rescate de Moisés','Moisés nace durante la opresión en Egipto. Su madre lo esconde en una cesta en el Nilo y la hija del faraón lo cría. Deuteronomio dice que murió a los 120 años.','Éxodo 2:1–10','lectura/?obra=rvr1909-exodo&capitulo=2','exodus'],
     ['c. 1250 a. C. · cronología tradicional','La zarza ardiente','Dios llama a Moisés desde una zarza que arde sin consumirse.','Éxodo 3:1–15','lectura/?obra=rvr1909-exodo&capitulo=3','exodus'],
     ['c. 1250 a. C. · cronología tradicional','Las diez plagas de Egipto','Éxodo enumera diez plagas: agua convertida en sangre, ranas, piojos, moscas, peste del ganado, úlceras, granizo, langostas, tinieblas y muerte de los primogénitos.','Éxodo 7–12','lectura/?obra=rvr1909-exodo&capitulo=7','exodus'],
     ['c. 1250 a. C. · cronología tradicional','La institución de la Pascua','La cena pascual conmemora la liberación de la esclavitud en Egipto.','Éxodo 12:1–28','lectura/?obra=rvr1909-exodo&capitulo=12','exodus'],
@@ -2731,8 +2829,10 @@ if (timelineTrack) {
     ['siglo 10 a. C. · cronología tradicional','Salomón pide sabiduría','Salomón pide discernimiento para gobernar al pueblo.','1 Reyes 3:3–15','lectura/?obra=rvr1909-1-reyes&capitulo=3','kingdom'],
     ['siglo 10 a. C. · cronología tradicional','El Primer Templo de Jerusalén','Salomón inicia la construcción del templo de Jerusalén.','1 Reyes 6','lectura/?obra=rvr1909-1-reyes&capitulo=6','kingdom'],
     ['siglo 10 a. C. · cronología tradicional','La división del reino','Tras Salomón, el reino se divide en Israel al norte y Judá al sur.','1 Reyes 12','lectura/?obra=rvr1909-1-reyes&capitulo=12','kingdom'],
+    ['fecha de nacimiento desconocida','Nacimiento de Elías','La Biblia no narra su nacimiento ni indica cuántos años vivió. Lo presenta como Elías el tisbita de Galaad ante el rey Acab.','1 Reyes 17:1','lectura/?obra=rvr1909-1-reyes&capitulo=17#pasaje-17-1','kingdom'],
     ['siglo 9 a. C. · cronología tradicional','Elías desafía a los profetas de Baal','Elías confronta a los profetas de Baal en el monte Carmelo.','1 Reyes 18','lectura/?obra=rvr1909-1-reyes&capitulo=18','kingdom'],
     ['siglo 9 a. C. · cronología tradicional','Elías es llevado en un carro de fuego','Un carro y caballos de fuego separan a Elías de Eliseo; Elías asciende al cielo en un torbellino.','2 Reyes 2:1–12','lectura/?obra=rvr1909-2-reyes&capitulo=2','kingdom'],
+    ['fecha de nacimiento desconocida','Nacimiento de Isaías','La Biblia no narra su nacimiento ni indica cuántos años vivió. Lo identifica como hijo de Amoz y sitúa sus visiones en tiempos de los reyes de Judá.','Isaías 1:1','lectura/?obra=rvr1909-isaias&capitulo=1#pasaje-1-1','kingdom'],
     ['siglo 8 a. C.','Isaías y Emanuel','Isaías anuncia: “Una virgen concebirá y dará a luz un hijo, y su nombre será Emanuel”.','Isaías 7:14','lectura/?obra=rvr1909-isaias&capitulo=7#pasaje-7-14','kingdom'],
     ['722 a. C.','Caída del reino del norte ante Asiria','Samaria cae ante Asiria y parte de su población es deportada.','2 Reyes 17:5–23','lectura/?obra=rvr1909-2-reyes&capitulo=17','exile'],
     ['586 a. C.','Jerusalén cae y el Primer Templo es destruido','Las fuerzas de Babilonia toman Jerusalén y destruyen el templo.','2 Reyes 25:1–21','lectura/?obra=rvr1909-2-reyes&capitulo=25','exile'],
@@ -2749,7 +2849,6 @@ if (timelineTrack) {
     ['12 años después de Cristo','Jesús adolescente en el Templo','Jesús dialoga con los maestros y es encontrado por María y José en el Templo.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-41','jesus'],
     ['c. 27–30 d. C.','Bautismo de Jesús','Juan el Bautista bautiza a Jesús en el Jordán y comienza su ministerio público.','Mateo 3:13–17','lectura/?obra=rvr1909-mateo&capitulo=3','jesus'],
     ['c. 30 d. C. · 40 días','Ayuno y tentación en el desierto','Después de ayunar cuarenta días, Jesús es tentado por el diablo antes de predicar públicamente.','Mateo 4:1–11 · Marcos 1:9–13','lectura/?obra=rvr1909-mateo&capitulo=4','jesus'],
-    ['c. 28–30 d. C.','Sermón del Monte y bienaventuranzas','Mateo reúne enseñanzas de Jesús sobre el Reino, la justicia y la vida comunitaria.','Mateo 5–7','lectura/?obra=rvr1909-mateo&capitulo=5','jesus'],
     ['c. 27–30 d. C.','Multiplicación de los panes','Jesús bendice y reparte cinco panes y dos peces; la multitud come y quedan canastas con sobras.','Marcos 6:30–44','lectura/?obra=rvr1909-marcos&capitulo=6','jesus'],
     ['c. 27–30 d. C.','Jesús sana al ciego','Jesús devuelve la vista a un hombre ciego de nacimiento; Juan relata que se lava en el estanque de Siloé.','Juan 9:1–7','lectura/?obra=rvr1909-juan&capitulo=9#pasaje-9-6','jesus'],
     ['c. 27–30 d. C.','Jesús calma la tempestad','Durante la travesía por el lago, Jesús reprende al viento y las aguas se aquietan.','Marcos 4:35–41','lectura/?obra=rvr1909-marcos&capitulo=4','jesus'],
@@ -2757,15 +2856,20 @@ if (timelineTrack) {
     ['33 años después de Cristo · cronología tradicional','La última cena y el arresto','Jesús comparte la cena con sus discípulos y luego es arrestado en Getsemaní.','Mateo 26:17–56','lectura/?obra=rvr1909-mateo&capitulo=26','jesus'],
     ['33 años después de Cristo · cronología tradicional','Crucifixión y muerte de Jesús','Los evangelios narran el juicio, la crucifixión y la sepultura de Jesús.','Lucas 23 · Juan 19','lectura/?obra=rvr1909-lucas&capitulo=23','jesus'],
     ['33 años después de Cristo · al tercer día','Resurrección de Jesús','Los evangelios proclaman que Jesús resucitó y se apareció a sus seguidores.','Mateo 28 · Lucas 24','lectura/?obra=rvr1909-mateo&capitulo=28','jesus'],
-    ['33 años después de Cristo · cronología tradicional','Ascensión de Jesús','Hechos relata que Jesús fue elevado y que sus discípulos recibieron una misión.','Hechos 1:1–11','lectura/?obra=rvr1909-hechos&capitulo=1','church'],
+    ['33 años después de Cristo · cuarenta días después de la resurrección','Ascensión de Jesús','Después de aparecerse a sus discípulos durante cuarenta días, Jesús fue elevado al cielo ante ellos y una nube lo ocultó de su vista.','Hechos 1:3–11','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-3','church'],
     ['33 años después de Cristo · cronología tradicional','Pentecostés','El Espíritu desciende sobre los discípulos y comienza su proclamación pública.','Hechos 2:1–41','lectura/?obra=rvr1909-hechos&capitulo=2','church'],
-    ['c. 95 d. C. · datación tradicional','Juan en Patmos y el Apocalipsis','Apocalipsis se presenta como una visión recibida por Juan en Patmos y dirigida a siete iglesias.','Apocalipsis 1:9–20','lectura/?obra=rvr1909-apocalipsis&capitulo=1','hope'],
+    ['c. 95 d. C. · datación tradicional','Juan en Patmos y el Apocalipsis','Apocalipsis se presenta como una visión recibida por Juan en Patmos y dirigida a siete iglesias. No se sabe cuándo ni cómo murió Juan: una tradición antigua sitúa sus últimos años en Éfeso, pero no prueba el modo de su muerte. Jesús le dijo a Pedro: «Si quiero que él quede hasta que yo venga, ¿qué a ti?»; la frase alimentó la tradición sobre la permanencia de Juan, pero no afirma que fuera inmortal.','Apocalipsis 1:9–20 · Juan 21:20–23 · Eusebio III, 1','lectura/?obra=rvr1909-apocalipsis&capitulo=1','hope'],
     ['visión apocalíptica','El jinete del caballo blanco','El jinete llamado Fiel y Verdadero aparece sobre un caballo blanco; sus ojos son como llama de fuego. El texto no dice que el caballo sea de fuego.','Apocalipsis 19:11–16','lectura/?obra=rvr1909-apocalipsis&capitulo=19','hope'],
     ['visión apocalíptica','Juicio final y nueva creación','Apocalipsis describe la resurrección y el juicio ante el gran trono blanco; después presenta un cielo nuevo y una tierra nueva.','Apocalipsis 20:11–15 · 21:1–5','lectura/?obra=rvr1909-apocalipsis&capitulo=20','hope']
   ];
   // Hitos de la vida pública, pasión y resurrección solicitados para la línea temporal.
   // Cada tarjeta conserva una referencia bíblica y una ilustración independiente.
   const requestedTimelineEvents = [
+    ['c. 33 d. C. · antes de Pentecostés','Elección de Matías','Después de la muerte de Judas, los discípulos proponen a José Barsabás y a Matías. Oran y echan suertes para elegir a quien ocupará el puesto apostólico; Matías es incorporado al grupo de los Doce.','Hechos 1:15–26','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-26','canonical','assets/timeline/eleccion-matias.png'],
+    ['siglo I · tradición transmitida por Papías','José Barsabás sobrevive al veneno','Papías, citado por Eusebio, cuenta que José Barsabás, llamado Justo, bebió un veneno mortal y salió ileso. Hechos 1:23–26 menciona que no fue elegido para reemplazar a Judas, pero no narra el episodio del veneno ni su muerte.','Papías en Eusebio · Historia eclesiástica III, 39','https://www.newadvent.org/fathers/250103.htm','tradition','assets/timeline/jose-barsabas-veneno.jpg'],
+    ['antes del diluvio · nacimiento de Enoc','Enoc niño','Jared tenía 162 años cuando nació Enoc. Génesis no describe un prodigio en su nacimiento, pero presenta a este hijo como el hombre que más tarde caminaría con Dios y sería llevado por él.','Génesis 5:18–24','lectura/?obra=rvr1909-genesis&capitulo=5#pasaje-5-18','canonical','assets/timeline/enoc-nino.png'],
+    ['fecha de nacimiento desconocida','Nacimiento de Ezequiel','No consta cuándo nació ni cuántos años vivió. El libro lo presenta como sacerdote e hijo de Buzí entre los exiliados.','Ezequiel 1:1–3','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-1','canonical','assets/timeline/nacimiento-ezequiel.png'],
+    ['antes del diluvio · cronología tradicional','Nacimiento de Noé','Génesis cuenta que Lamec esperaba que Noé trajera alivio y dice que vivió 950 años. Una tradición distinta, en 1 Enoc 106, describe al recién nacido con el rostro luminoso y los ojos brillantes, hasta iluminar la casa. Ese detalle pertenece a 1 Enoc, no al relato de Génesis.','Génesis 5:28–29','lectura/?obra=rvr1909-genesis&capitulo=5#pasaje-5-28','canonical','assets/timeline/nacimiento-noe.png'],
     ['c. 6–4 a. C.','La Adoración de los Magos','Sabios de Oriente visitan al niño Jesús; Mateo narra después la huida de la familia a Egipto para escapar de Herodes.','Mateo 2:1–18','lectura/?obra=rvr1909-mateo&capitulo=2','canonical','assets/linea-tiempo/adoracion-magos.png'],
     ['12 años después de Cristo','Jesús entre los doctores','Jesús se queda rezagado en el Templo de Jerusalén y asombra a los maestros de la Ley con sus respuestas.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-46','canonical','assets/linea-tiempo/jesus-doctores.png'],
     ['c. 29–30 d. C.','El Discurso del Pan de Vida','En Cafarnaúm, Jesús declara que quien come de su carne y bebe de su sangre tiene vida eterna.','Juan 6:22–59','lectura/?obra=rvr1909-juan&capitulo=6#pasaje-6-35','canonical','assets/linea-tiempo/pan-vida.png'],
@@ -2788,15 +2892,32 @@ if (timelineTrack) {
     ['visión apocalíptica','Ángeles y huestes celestiales','Juan oye la voz de millones de ángeles alrededor del trono; en otra visión, Miguel y sus ángeles combaten contra el dragón.','Apocalipsis 5:11–12; 12:7–9','lectura/?obra=rvr1909-apocalipsis&capitulo=12#pasaje-12-7','canonical','assets/linea-tiempo/angeles-miguel.png'],
     ['visión apocalíptica','La Mujer vestida del sol y el Gran Dragón','Una mujer aparece vestida del sol, con la luna bajo sus pies y doce estrellas; frente a ella surge un dragón escarlata de siete cabezas y diez cuernos.','Apocalipsis 12:1–6','lectura/?obra=rvr1909-apocalipsis&capitulo=12#pasaje-12-1','canonical','assets/linea-tiempo/mujer-sol-dragon.png'],
     ['siglo 8 a. C. · visión profética','Isaías ve al Señor en el Templo','Isaías contempla al Señor sentado sobre un trono alto y sublime; serafines proclaman su santidad y la gloria divina llena el Templo.','Isaías 6:1–8','lectura/?obra=rvr1909-isaias&capitulo=6','canonical','assets/timeline/isaias-vision.png'],
+    ['siglo 6 a. C. · contexto del relato','Nacimiento de Daniel','Daniel 1 lo presenta como un joven llevado a Babilonia a comienzos del siglo VI a. C. La escena de su nacimiento es una representación artística.','Daniel 1:1–6','lectura/?obra=rvr1909-daniel&capitulo=1#pasaje-1-1','exile'],
     ['c. 593 a. C. · visión profética','Los Querubines de Ezequiel','Ezequiel ve cuatro seres vivientes con caras de hombre, león, toro y águila, cuatro alas, pies como de becerro y manos humanas bajo las alas.','Ezequiel 1:4–14; 10:1–20','lectura/?obra=rvr1909-ezequiel&capitulo=1','canonical','assets/linea-tiempo/ezequiel-querubines.png'],
     ['c. 593 a. C. · visión profética','Las ruedas centelleantes de Ezequiel','Junto a cada ser hay una rueda dentro de otra, brillante como crisólito y llena de ojos, que se mueve con ellos en cualquier dirección.','Ezequiel 1:15–21; 10:9–13','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-15','canonical','assets/linea-tiempo/ezequiel-ofanim.png'],
     ['c. 593 a. C. · visión profética','Ezequiel ve la gloria de Dios','Sobre la expansión aparece la semejanza de un trono y, sobre él, una figura con apariencia humana rodeada de resplandor; Ezequiel cae rostro en tierra ante la visión.','Ezequiel 1:26–28','lectura/?obra=rvr1909-ezequiel&capitulo=1#pasaje-1-26','canonical','assets/linea-tiempo/ezequiel-trono.png'],
     ['siglo 6 a. C. · visión profética','Daniel ve al Anciano de Días','Daniel contempla al Anciano de Días sentado en un trono de fuego y ve venir con las nubes a una figura como hijo de hombre para recibir dominio eterno.','Daniel 7:9–14','lectura/?obra=rvr1909-daniel&capitulo=7#pasaje-7-9','canonical','assets/linea-tiempo/daniel-anciano-dias.png'],
-    ['c. 95 d. C. · datación tradicional del Apocalipsis','Juan ve el trono y al Cordero','Juan contempla una puerta abierta en el cielo, un trono rodeado de un arco iris y al Cordero en pie ante Dios. La fecha indica la datación tradicional del Apocalipsis, no la edad de Juan: el texto no informa su año de nacimiento ni de muerte.','Apocalipsis 4:1–6; 5:6–10','lectura/?obra=rvr1909-apocalipsis&capitulo=4#pasaje-4-2','canonical','assets/linea-tiempo/trono-cordero.png']
+    ['c. 95 d. C. · datación tradicional del Apocalipsis','Juan ve el trono y al Cordero','Juan contempla una puerta abierta en el cielo, un trono rodeado de un arco iris y al Cordero en pie ante Dios. La fecha indica la datación tradicional del Apocalipsis, no la edad de Juan. No se sabe cuándo ni cómo murió: una tradición antigua sitúa sus últimos años en Éfeso, pero no prueba el modo de su muerte. Jesús le dijo a Pedro: «Si quiero que él quede hasta que yo venga, ¿qué a ti?»; la frase alimentó la tradición sobre la permanencia de Juan, pero no afirma que fuera inmortal.','Apocalipsis 4:1–6; 5:6–10 · Juan 21:20–23 · Eusebio III, 1','lectura/?obra=rvr1909-apocalipsis&capitulo=4#pasaje-4-2','canonical','assets/linea-tiempo/trono-cordero.png']
+  ];
+  // Doce originales y Matías, elegido en lugar de Judas: trece personas en total.
+  // Solo algunas muertes constan en el Nuevo Testamento; las demás se señalan
+  // como tradición posterior o como desconocidas, sin inventar fechas.
+  const apostleFates = [
+    ['c. 30–33 d. C.','Muerte de Judas Iscariote','Mateo cuenta que, tras devolver las monedas, Judas se quitó la vida ahorcándose. Hechos 1:18 conserva un relato diferente sobre su final.','Mateo 27:3–5','lectura/?obra=rvr1909-mateo&capitulo=27#pasaje-27-3','canonical','assets/timeline/apostol-judas-iscariote.jpg'],
+    ['c. 44 d. C.','Muerte de Santiago, hijo de Zebedeo','Herodes Agripa manda matarlo a espada. Es la muerte de uno de los Doce narrada expresamente en Hechos.','Hechos 12:1–2','lectura/?obra=rvr1909-hechos&capitulo=12#pasaje-12-1','canonical','assets/timeline/apostol-santiago-zebedeo.jpg'],
+    ['c. 64–68 d. C. · tradición','Muerte de Pedro','La tradición antigua sitúa su martirio en Roma bajo Nerón y describe una crucifixión. Eusebio transmite el detalle de la cruz invertida; Hechos no narra su muerte.','Eusebio · Historia eclesiástica III, 1','https://www.newadvent.org/fathers/250103.htm','tradition','assets/timeline/apostol-pedro.jpg'],
+    ['siglo I · fecha incierta','Muerte de Andrés','Los Hechos de Andrés, relato apócrifo posterior, describen su crucifixión en Patras. No es una muerte narrada por el Nuevo Testamento.','Hechos de Andrés · tradición posterior','https://www.newadvent.org/fathers/0819.htm','tradition','assets/timeline/apostol-andres.jpg'],
+    ['c. 80 d. C. · tradición cristiana','Muerte de Felipe','Según la tradición cristiana y relatos apócrifos, Felipe murió como mártir en Hierápolis (la actual Turquía), alrededor del año 80 d. C., a los 87 años. Las fuentes antiguas no permiten verificar con seguridad todos los detalles de su martirio.','Eusebio · Historia eclesiástica V, 24 · tradición posterior','https://www.newadvent.org/fathers/250105.htm','tradition','assets/timeline/apostol-felipe.jpg'],
+    ['siglo I · tradición posterior','Muerte de Bartolomé','Según una tradición posterior, Bartolomé fue desollado vivo y luego decapitado en Albanópolis. El Nuevo Testamento no narra su muerte y las fuentes antiguas difieren sobre el lugar y el modo del martirio.','Mateo 10:2–4 · tradición posterior','lectura/?obra=rvr1909-mateo&capitulo=10#pasaje-10-2','tradition','assets/timeline/apostol-bartolome.jpg'],
+    ['siglo I · fecha incierta','Muerte de Tomás','Un relato apócrifo posterior lo sitúa en la India y dice que murió atravesado por lanzas. El Nuevo Testamento no cuenta su muerte.','Consumación de Tomás · tradición posterior','https://www.newadvent.org/fathers/0824.htm','tradition','assets/timeline/apostol-tomas.jpg'],
+    ['siglo I · tradición cristiana','Muerte de Mateo','Según una tradición cristiana, Mateo murió como mártir en Etiopía. El rey Hirtaco (también llamado Itarco) habría ordenado matarlo porque Mateo se opuso a su matrimonio con Ifigenia, consagrada a la vida religiosa tras escuchar su predicación. El relato dice que un sicario lo atacó con una espada mientras oraba al pie del altar, después de celebrar la misa. El Nuevo Testamento no narra su muerte.','Mateo 10:2–4 · tradición posterior','lectura/?obra=rvr1909-mateo&capitulo=10#pasaje-10-2','tradition','assets/timeline/apostol-mateo.jpg'],
+    ['c. 65 d. C. · tradición cristiana','Muerte de Simón el Zelote','Una tradición cristiana sitúa su martirio en Persia, alrededor del año 65 d. C., junto con Judas Tadeo. El Nuevo Testamento lo incluye entre los apóstoles, pero no relata cómo ni dónde murió.','Hechos 1:13 · lista apostólica · martirio según tradición posterior','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-13','tradition','assets/timeline/apostol-simon-celote.jpg'],
+    ['c. 65 d. C. · tradición cristiana','Muerte de Judas Tadeo','Este apóstol es distinto de Judas Iscariote. Según una tradición cristiana, murió como mártir en Persia, en la ciudad llamada Suamir o Samir, alrededor del año 65 d. C., junto con Simón el Zelote. El Nuevo Testamento no relata su muerte; los detalles proceden de tradiciones posteriores.','Lucas 6:16 · Judas de Jacobo · martirio según tradición posterior','lectura/?obra=rvr1909-lucas&capitulo=6#pasaje-6-16','tradition','assets/timeline/apostol-judas-tadeo.jpg'],
+    ['c. 80 d. C. · tradición cristiana','Muerte de Matías','La tradición cristiana sostiene que Matías murió como mártir en Jerusalén alrededor del año 80 d. C. La versión más extendida cuenta que fue apedreado y luego decapitado con un hacha. Hechos narra su elección para ocupar el puesto de Judas Iscariote, pero no relata su muerte; estos detalles proceden de tradiciones posteriores.','Hechos 1:23–26 · elección de Matías · muerte según tradición posterior','lectura/?obra=rvr1909-hechos&capitulo=1#pasaje-1-23','tradition','assets/timeline/apostol-matias.png'],
   ];
   const existing = new Map(Array.from(timelineTrack.children).map(card => [card.querySelector('h3')?.textContent.trim(), card]));
   const byTitle = new Map(existing);
-  const imageCardAliases = {'El gran diluvio y el arca':'Noé y el arca','La última cena y el arresto':'La cena y el arresto','Crucifixión y muerte de Jesús':'Pasión, muerte y sepultura','Resurrección de Jesús':'Jesús resucitado'};
+  const imageCardAliases = {'La última cena y el arresto':'La cena y el arresto','Crucifixión y muerte de Jesús':'Pasión, muerte y sepultura','Resurrección de Jesús':'Jesús resucitado'};
   Object.entries(imageCardAliases).forEach(([newTitle, oldTitle]) => {
     const card = existing.get(oldTitle);
     if (card) { card.querySelector('h3').textContent = newTitle; byTitle.set(newTitle, card); }
@@ -2804,19 +2925,50 @@ if (timelineTrack) {
   const extra = [
     ['año 0 · infancia de Jesús','Simeón carga al niño Jesús','Después del nacimiento, María y José llevan a Jesús al Templo. Simeón lo toma en brazos y lo reconoce como luz para las naciones.','Lucas 2:25–35','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
     ['c. 7 d. C. · tradición apócrifa','Jesús adolescente en el Templo','El relato canónico sitúa a Jesús a los doce años en Jerusalén.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
-    ['33 d. C. · tradición posterior','Evangelio de Nicodemo','Un relato apócrifo desarrolla el descenso de Cristo al reino de los muertos.','Evangelio de Nicodemo','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
-    ['33 d. C. · tradición posterior','Carino y Leucio, testigos del descenso','El Evangelio de Nicodemo los presenta como testigos de un relato del descenso.','Evangelio de Nicodemo 17–27','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
+    ['entre la muerte y la resurrección · relato apócrifo posterior','Evangelio de Nicodemo','Un relato apócrifo posterior desarrolla el descenso de Cristo al Hades entre la muerte y la resurrección.','Evangelio de Nicodemo','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
+    ['después de la resurrección · tradición posterior','Carino y Leucio, testigos del descenso','En el Evangelio de Nicodemo, dos hombres que vuelven a la vida después de la resurrección cuentan lo que vieron durante el descenso de Cristo al Hades. El texto los llama hijos de Simeón, pero no permite asegurar que sea el mismo Simeón que aparece en Lucas 2.','Evangelio de Nicodemo 17–27','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
     ['33 d. C. · tradición posterior','El Resucitado en María Magdalena y Nag Hammadi','Textos posteriores describen diálogos del Resucitado con sus discípulos.','Evangelio de María · BG 8502, pp. 7–18','pdfs/evangelio-maria-magdalena.pdf','church']
   ];
   extra.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'context'])); });
-  milestones.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'canonical'])); });
-  requestedTimelineEvents.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard(item)); });
-  const order = [...milestones.slice(0,44), extra[0], ...milestones.slice(44,56), extra[2], extra[3], ...milestones.slice(56,57), extra[4], ...milestones.slice(57)];
+  milestones.forEach(item => {
+    if (byTitle.has(item[1])) return;
+    const artisticBirth = ['Nacimiento de Elías', 'Nacimiento de Isaías', 'Nacimiento de Daniel'].includes(item[1]);
+    const card = makeTimelineCard([...item.slice(0,5), artisticBirth ? 'context' : 'canonical']);
+    if (artisticBirth) card.querySelector('.source-badge').textContent = 'Representación artística';
+    byTitle.set(item[1], card);
+  });
+  requestedTimelineEvents.forEach(item => {
+    if (byTitle.has(item[1])) return;
+    const card = makeTimelineCard(item);
+    if (item[1] === 'Nacimiento de Ezequiel') {
+      const badge = card.querySelector('.source-badge');
+      badge.className = 'source-badge context';
+      badge.textContent = 'Representación artística';
+    }
+    if (item[1] === 'Nacimiento de Noé') {
+      const badge = card.querySelector('.source-badge');
+      badge.className = 'source-badge context';
+      badge.textContent = 'Génesis y tradición de 1 Enoc';
+      const enochLink = document.createElement('a');
+      enochLink.href = 'lectura/?obra=1-enoc-es&capitulo=106';
+      enochLink.textContent = '1 Enoc 106 · nacimiento extraordinario';
+      card.append(enochLink);
+    }
+    byTitle.set(item[1], card);
+  });
+  apostleFates.forEach(item => byTitle.set(item[1], makeTimelineCard(item)));
+  // La secuencia base ya está ordenada cronológicamente. Las tarjetas extra se
+  // incorporan aquí y luego se ubican junto a su acontecimiento correspondiente;
+  // cortar el arreglo por índices hacía que eventos del siglo I aparecieran
+  // antes de hitos del siglo VI a. C.
+  const order = [...milestones, ...extra];
   const insertRequestedBefore = (anchor, titles) => {
     const index = order.findIndex(item => item[1] === anchor);
     const position = index < 0 ? order.length : index;
     order.splice(position, 0, ...titles.map(title => requestedTimelineEvents.find(item => item[1] === title)).filter(Boolean));
   };
+  insertRequestedBefore('Enoc y los vigilantes', ['Enoc niño']);
+  insertRequestedBefore('El diseño exacto del Arca', ['Nacimiento de Noé']);
   insertRequestedBefore('Huida y regreso a Nazaret', ['La Adoración de los Magos']);
   const moveOrderBefore = (title, anchor) => {
     const itemIndex = order.findIndex(item => item[1] === title);
@@ -2826,21 +2978,75 @@ if (timelineTrack) {
     const nextIndex = order.findIndex(entry => entry[1] === anchor);
     order.splice(nextIndex, 0, item);
   };
-  moveOrderBefore('Simeón carga al niño Jesús', 'La Adoración de los Magos');
-  insertRequestedBefore('Bautismo de Jesús', ['Jesús entre los doctores']);
-  insertRequestedBefore('Sermón del Monte y bienaventuranzas', ['El Primer Milagro en Caná','La Pesca Milagrosa','La Sanidad del Leproso','El Paralítico de Cafarnaúm','La Resurrección de la Hija de Jairo','El Discurso del Pan de Vida','Caminando sobre las Aguas']);
-  insertRequestedBefore('La última cena y el arresto', ['Jesús y la mujer acusada','El Lavatorio de los Pies','La Traición y el Arresto','Las Negaciones de Pedro','El Camino al Gólgota','El Juicio de Jesús','Jesús es azotado']);
-  insertRequestedBefore('Resurrección de Jesús', ['Las Apariciones post-Resurrección']);
-  insertRequestedBefore('Pentecostés', ['La Ascensión']);
+  const moveOrderAfter = (title, anchor) => {
+    const itemIndex = order.findIndex(item => item[1] === title);
+    const anchorIndex = order.findIndex(item => item[1] === anchor);
+    if (itemIndex < 0 || anchorIndex < 0 || itemIndex === anchorIndex) return;
+    const [item] = order.splice(itemIndex, 1);
+    const nextIndex = order.findIndex(entry => entry[1] === anchor);
+    order.splice(nextIndex + 1, 0, item);
+  };
+  moveOrderBefore('La Adoración de los Magos', 'Simeón carga al niño Jesús');
+  moveOrderBefore('Simeón carga al niño Jesús', 'Relatos del niño Jesús');
+  moveOrderBefore('Evangelio de Nicodemo', 'Jesús resucitado');
+  moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
+  moveOrderBefore('El Resucitado en María Magdalena y Nag Hammadi', 'Pentecostés');
+  // Se omiten estas dos fichas de la línea temporal: el recorrido conserva
+  // los hitos principales y evita duplicar tarjetas sin imagen.
+  insertRequestedBefore('Multiplicación de los panes', ['El Primer Milagro en Caná','La Pesca Milagrosa','La Sanidad del Leproso','El Paralítico de Cafarnaúm','La Resurrección de la Hija de Jairo','El Discurso del Pan de Vida','Caminando sobre las Aguas']);
+  insertRequestedBefore('La última cena y el arresto', ['Jesús y la mujer acusada','El Lavatorio de los Pies','La Traición y el Arresto','Las Negaciones de Pedro','El Juicio de Jesús','Jesús es azotado','El Camino al Gólgota']);
+  // Mantener la secuencia de la pasión legible: primero el lavatorio, luego
+  // la última cena y, después, la traición y el arresto en Getsemaní.
+  moveOrderAfter('La última cena y el arresto', 'El Lavatorio de los Pies');
+  moveOrderAfter('La Traición y el Arresto', 'La última cena y el arresto');
+  insertRequestedBefore('Pentecostés', ['Las Apariciones post-Resurrección']);
+  moveOrderBefore('Las Apariciones post-Resurrección', 'El Resucitado en María Magdalena y Nag Hammadi');
   insertRequestedBefore('Isaías y Emanuel', ['Isaías ve al Señor en el Templo','Los Querubines de Ezequiel','Las ruedas centelleantes de Ezequiel','Ezequiel ve la gloria de Dios','Daniel ve al Anciano de Días']);
-  // Mantener las visiones y la caída de Samaria en orden histórico (a. C.):
-  // 722 → siglo VIII → 593 → siglo VI, en vez de dejarlas al final del bloque.
-  moveOrderBefore('Caída del reino del norte ante Asiria', 'Isaías ve al Señor en el Templo');
+  // Situar las escenas de Isaías antes de la caída de Samaria (722 a. C.)
+  // y las visiones de Ezequiel después, ya en el siglo VI a. C.
+  moveOrderBefore('Nacimiento de Isaías', 'Isaías ve al Señor en el Templo');
   moveOrderBefore('Isaías y Emanuel', 'Los Querubines de Ezequiel');
+  moveOrderBefore('Caída del reino del norte ante Asiria', 'Los Querubines de Ezequiel');
+  insertRequestedBefore('Los Querubines de Ezequiel', ['Nacimiento de Ezequiel']);
+  insertRequestedBefore('Daniel ve al Anciano de Días', ['Nacimiento de Daniel']);
   insertRequestedBefore('El jinete del caballo blanco', ['Juan ve el trono y al Cordero']);
   insertRequestedBefore('El jinete del caballo blanco', ['La Corte Celestial','Ángeles y huestes celestiales','La Mujer vestida del sol y el Gran Dragón']);
+  const insertApostleFatesBefore = (anchor, titles) => {
+    const index = order.findIndex(item => item[1] === anchor);
+    order.splice(index < 0 ? order.length : index, 0, ...titles.map(title => apostleFates.find(item => item[1] === title)).filter(Boolean));
+  };
+  insertApostleFatesBefore('Resurrección de Jesús', ['Muerte de Judas Iscariote']);
+  insertRequestedBefore('Resurrección de Jesús', ['Elección de Matías']);
+  insertRequestedBefore('Juan en Patmos y el Apocalipsis', ['José Barsabás sobrevive al veneno']);
+  insertApostleFatesBefore('Juan en Patmos y el Apocalipsis', apostleFates.slice(1, -1).map(item => item[1]));
+  moveOrderAfter('José Barsabás sobrevive al veneno', 'Muerte de Bartolomé');
+  moveOrderAfter('Ascensión de Jesús', 'Pentecostés');
+  // Normalización final: estas tarjetas pertenecen a tramos históricos distintos.
+  moveOrderBefore('La Adoración de los Magos', 'Huida y regreso a Nazaret');
+  moveOrderBefore('Evangelio de Nicodemo', 'Jesús resucitado');
+  moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
+  moveOrderBefore('Simeón carga al niño Jesús', 'Relatos del niño Jesús');
+  moveOrderAfter('Evangelio de Nicodemo', 'Muerte de Judas Iscariote');
+  moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
+  // Fijar explícitamente el bloque del nacimiento al final de la normalización:
+  // estas escenas no deben quedar detrás de las apariciones pospascuales.
+  moveOrderBefore('La anunciación a María', 'Jesús bebé');
+  moveOrderBefore('Jesús bebé', 'La Adoración de los Magos');
+  moveOrderBefore('La Adoración de los Magos', 'Simeón carga al niño Jesús');
+  moveOrderBefore('Simeón carga al niño Jesús', 'Huida y regreso a Nazaret');
   const timelineImages = {
+    'Pentecostés': ['assets/timeline/pentecostes-espiritu-santo.jpg', 'El Espíritu Santo desciende como lenguas de fuego sobre los discípulos reunidos en Jerusalén'],
+    'Ascensión de Jesús': ['assets/timeline/ascension.png', 'Jesús asciende al cielo ante sus discípulos'],
+    'Muerte de Matías': ['assets/timeline/apostol-matias.png', 'Representación artística del martirio de Matías según la tradición cristiana'],
+    'Juan en Patmos y el Apocalipsis': ['assets/timeline/juan-patmos-feliz.png', 'Juan, anciano y sonriente, escribe en Patmos junto al mar'],
+    'Nacimiento de Daniel': ['assets/timeline/nacimiento-daniel.jpg', 'Representación artística de un recién nacido con su familia en la antigua Judá'],
+    'Nacimiento de Ezequiel': ['assets/timeline/nacimiento-ezequiel.png', 'Representación artística de un recién nacido con su familia en la antigua Judá'],
+    'Nacimiento de Noé': ['assets/timeline/nacimiento-noe.png', 'Ilustración inspirada en 1 Enoc 106: el recién nacido Noé irradia luz y su resplandor ilumina la casa'],
+    'Nacimiento de Elías': ['assets/timeline/nacimiento-elias.png', 'Representación artística de un recién nacido en una casa antigua de Galaad'],
+    'Nacimiento de Isaías': ['assets/timeline/nacimiento-isaias.png', 'Representación artística de una persona que sostiene a un recién nacido en una casa antigua de Judá'],
+    'El nacimiento y rescate de Moisés': ['assets/timeline/nacimiento-moises.png', 'La hija del faraón descubre al bebé Moisés en una cesta entre los juncos del Nilo'],
     'Adán y Eva en el Edén': ['assets/timeline/adan-eva.png', 'Adán y Eva en el jardín del Edén'],
+    'La serpiente habla con Eva': ['assets/timeline/eva-serpiente.png', 'Eva escucha a la serpiente en el jardín del Edén, antes de tomar el fruto'],
     'La caída y la expulsión del Edén': ['assets/timeline/adan-eva-fruto.jpg', 'Eva prueba el fruto prohibido en el jardín del Edén'],
     'Adán, Eva y sus tres hijos': ['assets/timeline/adan-eva-tres-hijos.png', 'Adán y Eva junto a sus hijos Caín, Abel y Set'],
     'El pacto del monte Hermón': ['assets/timeline/enoc-pacto-hermon.png', 'Doscientos Vigilantes se reúnen y juran su pacto en el monte Hermón'],
@@ -2872,6 +3078,7 @@ if (timelineTrack) {
     'Los Diez Mandamientos en el Sinaí': ['assets/timeline/moises-sinai.png', 'Moisés recibe las tablas de la alianza en el monte Sinaí'],
     'La división del reino': ['assets/lugares/siquem.jpg', 'Paisaje de Siquem, asociado al cisma entre Israel y Judá'],
     'Sansón': ['assets/timeline/sanson.jpg', 'Sansón derriba las columnas del templo filisteo'],
+    'Elías desafía a los profetas de Baal': ['assets/timeline/elias-profetas-baal.png', 'Elías desafía a los profetas de Baal en el monte Carmelo'],
     'Elías es llevado en un carro de fuego': ['assets/timeline/elias-carro-fuego.jpg', 'Elías asciende en un carro de fuego mientras Eliseo contempla la escena'],
     'Isaías y Emanuel': ['assets/timeline/isaias-emanuel.jpg', 'Isaías habla ante el rey Acaz mientras una mujer sostiene a su hijo'],
     'Daniel en el foso de los leones': ['assets/timeline/daniel-foso-leones.jpg', 'Daniel permanece a salvo entre los leones en el foso'],
@@ -2881,10 +3088,12 @@ if (timelineTrack) {
   };
   const eras = {origins:'origins',patriarchs:'patriarchs',exodus:'exodus',judges:'judges',kingdom:'kingdom',exile:'exile',jesus:'jesus',church:'church',hope:'hope'};
   const eventEra = title => {
+    if (apostleFates.some(item => item[1] === title)) return 'church';
+    if (title === 'Nacimiento de Noé') return 'origins';
     const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title) || requestedTimelineEvents.find(row => row[1] === title);
     return item?.[5] || (title.includes('Noé') ? 'origins' : title.includes('Abraham') || title.includes('Jacob') || title.includes('José') ? 'patriarchs' : title.includes('Moisés') ? 'exodus' : title.includes('Jesús') || title.includes('Pasión') || title.includes('Resurrección') ? 'jesus' : 'church');
   };
-  const hiddenTimelineTitles = new Set(['El mundo del Segundo Templo']);
+  const hiddenTimelineTitles = new Set(['El mundo del Segundo Templo', 'Jesús adolescente en el Templo']);
   const ordered = [];
   order.forEach(item => {
     if (hiddenTimelineTitles.has(item[1])) return;
@@ -2895,6 +3104,7 @@ if (timelineTrack) {
     if (['Multiplicación de los panes','Jesús sana al ciego','Jesús calma la tempestad','Lázaro vuelve a la vida'].includes(item[1])) card.dataset.milagro = 'true';
     const date = card.querySelector('.timeline-date');
     if (date) date.textContent = item[0];
+    if (item[1] === 'Nacimiento de Daniel') card.querySelector('.source-badge').textContent = 'Representación artística';
     if (timelineImages[item[1]]) {
       const [src, alt] = timelineImages[item[1]];
       let image = card.querySelector('.timeline-image');
@@ -2975,7 +3185,7 @@ const azazelCard = document.getElementById('devils-view');
 azazelCard?.querySelector('.extinct-grid')?.insertAdjacentHTML('beforeend', '<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Rito bíblico y tradición posterior</span><h3>Azazel y el chivo expiatorio</h3><p>En Levítico 16 se echan suertes sobre dos machos cabríos: uno “para el Señor” y otro “para Azazel”, que es enviado vivo al desierto cargando simbólicamente las culpas de Israel. El sentido exacto de Azazel es discutido; 1 Enoc lo presenta después como un Vigilante caído. No puede asegurarse que ambos usos tengan idéntico significado.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-levitico&amp;capitulo=16#pasaje-16-8">Levítico 16:8–10, 20–22, 26</a><a href="lectura/?obra=1-enoc-es&amp;capitulo=10">1 Enoc 10:4–8</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Azazel" target="_blank" rel="noreferrer">Nota enciclopédica sobre Azazel</a></div></div></article><article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Comparación interreligiosa</span><h3>Jibril en el islam</h3><p>En la tradición islámica, Jibril es el ángel que transmite la revelación a Muhammad; el Corán 2:97 lo menciona. No es presentado como demonio por el islam, y no hay base para clasificarlo así: se incluye aquí como comparación de tradiciones, no como figura diabólica.</p><div class="extinct-refs"><a href="https://quran.com/2/97" target="_blank" rel="noreferrer">Corán 2:97</a><a href="https://www.britannica.com/biography/Muhammad" target="_blank" rel="noreferrer">Britannica · revelación a Muhammad</a></div></div></article>');
 const secondEnochSection = document.querySelector('#enoch-view .enoch-book[aria-labelledby="enoch-two-title"]');
 secondEnochSection?.querySelectorAll('.enoch-passage h4').forEach(heading => {
-  const match = heading.textContent.match(/^(Enoc2?\s+[^·]+)·\s*(Primer|Segundo|Tercer|Cuarto|Quinto|Sexto|Séptimo) Cielo$/i);
+  const match = heading.textContent.match(/^(2 Enoc\s+[^·]+)·\s*(Primer|Segundo|Tercer|Cuarto|Quinto|Sexto|Séptimo) Cielo$/i);
   if (!match) return;
   const reference = document.createElement('small');
   reference.className = 'enoch-reference';
@@ -3072,7 +3282,7 @@ afterlifeSection.hidden = true;
 afterlifeSection.setAttribute('aria-labelledby', 'afterlife-title');
 afterlifeSection.innerHTML = `<div class="extinct-intro"><h2 id="afterlife-title">Infiernos, Seol, Hades y las imágenes del juicio</h2><p>Los textos bíblicos usan vocabulario e imágenes de épocas distintas. No son siempre nombres intercambiables ni describen un único mapa detallado de los infiernos; separamos el ámbito de los muertos, las metáforas de juicio y las visiones del final.</p></div><div class="extinct-grid">
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Antiguo Testamento · hebreo / Nuevo Testamento · griego</span><h3>Seol / Hades</h3><p>Seol es el término hebreo para el ámbito de los muertos; Hades es su equivalente griego, usado también en la traducción griega de las Escrituras. Los términos se corresponden en muchos pasajes, aunque el contexto de cada texto determina su sentido. Apocalipsis describe que la Muerte y el Hades entregan a sus muertos antes del juicio final.</p><p><b>Dos cámaras del Seol, según una lectura cristiana de Lucas 16:19–26:</b> Lázaro es llevado al seno de Abraham, lugar de consuelo que la tradición cristiana asocia con el Paraíso y el reposo de los justos antes de la resurrección de Cristo. El rico queda en un lugar de tormento, separado por un gran abismo; según esa lectura, allí esperan los malvados o incrédulos hasta el juicio final. Lucas muestra dos destinos, aunque no los llama literalmente «cámaras del Seol».</p><p><b>Las cuatro cámaras del Sheol:</b> en 1 Enoc, Enoc observa una cámara para los justos, con una fuente de agua clara; otra para los pecadores que murieron sin castigo terrenal; otra para las víctimas de asesinato que claman justicia; y otra para los impíos recalcitrantes, todas a la espera del Gran Juicio.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-salmos&amp;capitulo=6#pasaje-6-6">Salmo 6:5</a><a href="lectura/?obra=rvr1909-job&amp;capitulo=14#pasaje-14-13">Job 14:13</a><a href="lectura/?obra=rvr1909-hechos&amp;capitulo=2#pasaje-2-27">Hechos 2:27–31</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=16#pasaje-16-19">Lucas 16:19–26 · Lázaro y el rico</a><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=23#pasaje-23-43">Lucas 23:43</a><a href="lectura/?obra=rvr1909-2-corintios&amp;capitulo=5#pasaje-5-8">2 Corintios 5:8</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-13">Apocalipsis 20:13–15</a><a href="lectura/?obra=1-enoc-es&amp;capitulo=22">1 Enoc 22:1–14 · las cuatro cámaras</a><a href="lectura/?obra=nicodemus-es&amp;capitulo=17">Evangelio de Nicodemo · descenso al Hades</a></div></div></article>
-<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Evangelios · imagen de juicio</span><h3>Gehena y el valle de Hinom</h3><p>Gehena deriva del nombre del valle de Hinom, al sur de Jerusalén. Jesús la emplea como imagen de juicio (por ejemplo, Mateo 5:22 y Marcos 9:43–48). La explicación popular de que era simplemente el basural permanentemente encendido de Jerusalén no debe presentarse como un hecho seguro.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=5#pasaje-5-22">Mateo 5:22</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=9#pasaje-9-43">Marcos 9:43–48</a><a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Gehenna" target="_blank" rel="noreferrer">Nota bíblica sobre Gehena</a></div></div></article>
+<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Evangelios · juicio final</span><h3>Gehena</h3><p>En los dichos de Jesús, Gehena nombra el destino de juicio, no un sitio geográfico dentro de Jerusalén. El nombre tiene su origen histórico en el valle de Hinom, pero aquí aparece como imagen del castigo final. La tradición cristiana suele entenderla como el infierno definitivo; las interpretaciones sobre la naturaleza de ese castigo varían entre iglesias.</p><h4>Gehena en las advertencias de Jesús</h4><p>Jesús advierte sobre el juicio de Gehena con imágenes de fuego y exclusión de la vida.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=5#pasaje-5-22">Mateo 5:22</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=18#pasaje-18-9">Mateo 18:9</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=9#pasaje-9-43">Marcos 9:43–48</a></div><blockquote>«Pero yo os digo que cualquiera que se enoje contra su hermano, será culpable de juicio... y cualquiera que le diga: Fatuo, quedará expuesto al infierno [Gehena] de fuego» (Mateo 5:22).<br><br>«Y si tu ojo te es ocasión de caer, sácalo y échalo de ti; mejor te es entrar con un solo ojo en la vida, que teniendo dos ojos ser echado en el infierno [Gehena] de fuego» (Mateo 18:9).<br><br>«Si tu mano te fuere ocasión de caer, córtala; mejor te es entrar en la vida manco, que teniendo dos manos ir al infierno [Gehena], al fuego que no puede ser apagado» (Marcos 9:43).</blockquote><h4>Gehena como destrucción de alma y cuerpo</h4><p>Este pasaje es central para quienes entienden Gehena como el veredicto final que afecta a la persona entera después de la resurrección.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=10#pasaje-10-28">Mateo 10:28</a></div><blockquote>«Y no temáis a los que matan el cuerpo, mas el alma no pueden matar; temed más bien a aquel que puede destruir el alma y el cuerpo en el infierno [Gehena]» (Mateo 10:28).</blockquote><h4>Una sentencia tras el juicio</h4><p>Jesús confronta a los líderes religiosos y les advierte que sus acciones los conducen a una condenación de la que no podrán escapar.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=23#pasaje-23-33">Mateo 23:33</a></div><blockquote>«¡Serpientes, generación de víboras! ¿Cómo escaparéis de la condenación del infierno [Gehena]?» (Mateo 23:33).</blockquote><h4>El lago de fuego en Apocalipsis</h4><p>Apocalipsis no usa la palabra Gehena, sino «lago de fuego». Muchos lectores cristianos relacionan ambas imágenes con el destino final, aunque esa equivalencia es una interpretación teológica. El texto distingue el lago de fuego del Hades: la muerte y el Hades son arrojados al lago, llamado «la muerte segunda».</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-14">Apocalipsis 20:14–15</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=21#pasaje-21-8">Apocalipsis 21:8</a></div><blockquote>«Y la muerte y el Hades fueron lanzados al lago de fuego. Esta es la muerte segunda. Y el que no se halló inscrito en el libro de la vida fue lanzado al lago de fuego» (Apocalipsis 20:14–15).</blockquote></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Apocalipsis · juicio final</span><h3>Lago de fuego / fuego eterno</h3><p>Mateo dice que el fuego eterno fue preparado para el diablo y sus ángeles; Apocalipsis lo presenta como destino final de juicio y lo llama “segunda muerte”. No debe confundirse sin más con Seol o Hades, que el propio Apocalipsis muestra entregando a sus muertos antes del juicio.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=25#pasaje-25-41">Mateo 25:41</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-10">Apocalipsis 20:10–15</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=21#pasaje-21-8">Apocalipsis 21:8</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Apocalipsis · visión</span><h3>El Abismo</h3><p>En Apocalipsis 9, una estrella caída abre el abismo y de allí sale una plaga; el rey de esas criaturas es llamado Abaddón en hebreo y Apolión en griego (“Destructor”). El texto no lo identifica allí con Satanás: en Apocalipsis 20, otro ángel encierra a Satanás en el abismo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=9#pasaje-9-1">Apocalipsis 9:1–11</a><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=20#pasaje-20-1">Apocalipsis 20:1–3</a><a href="https://bible.usccb.org/es/bible/revelation/9" target="_blank" rel="noreferrer">Nota USCCB sobre Abaddón</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge apocryphal">2 Enoc · tradición eslava / 2 Pedro</span><h3>El Tártaro / Segundo Cielo</h3><p>En 2 Enoc 7, Enoc ve ángeles rebeldes retenidos en el segundo cielo mientras esperan juicio. Por otra parte, 2 Pedro 2:4 dice que Dios entregó a los ángeles pecadores a cadenas de oscuridad para el juicio; el verbo griego empleado alude al Tártaro. Son imágenes de textos distintos: las fuentes no dicen que el segundo cielo y el Tártaro sean el mismo lugar.</p><div class="extinct-refs"><a href="lectura/?obra=2-enoc-es&amp;capitulo=7">2 Enoc 7:1–3 · ángeles retenidos en el segundo cielo</a><a href="lectura/?obra=rvr1909-2-pedro&amp;capitulo=2#pasaje-2-4">2 Pedro 2:4 · ángeles arrojados al infierno (Tártaro en el griego)</a><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=25#pasaje-25-41">Mateo 25:41</a><a href="https://www.studylight.org/historical-writings/pseudepigrapha/2-enoch.html" target="_blank" rel="noreferrer">Texto de 2 Enoc</a></div><blockquote>«Porque si Dios no perdonó á los ángeles que habían pecado, sino que habiéndolos despeñado en el infierno con cadenas de oscuridad, los entregó para ser reservados al juicio».</blockquote></div></article>
@@ -3112,8 +3322,8 @@ shroudSection.className = 'extinct-view';
 shroudSection.id = 'shroud-view';
 shroudSection.hidden = true;
 shroudSection.setAttribute('aria-labelledby', 'shroud-title');
-shroudSection.innerHTML = `<div class="extinct-intro"><h2 id="shroud-title">La Sábana Santa de Turín</h2><p>Una tela de lino venerada por muchos cristianos como el sudario de Jesús. Esta sección separa lo que cuentan los Evangelios, la historia documentada de la reliquia y los resultados científicos, sin presentar su autenticidad como un hecho demostrado.</p></div><div class="extinct-grid">
-<article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin.jpg" alt="Representación artística de un lienzo de lino funerario junto a una tumba vacía" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Reliquia cristiana · autenticidad debatida</span><h3>Qué dicen los Evangelios</h3><p>Los relatos evangélicos mencionan lienzos funerarios y describen el entierro de Jesús. Juan menciona lienzos y un sudario para la cabeza; ninguno identifica por nombre la tela conservada hoy en Turín ni ofrece una cadena de custodia que la conecte con ella.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-57">Mateo 27:57–61 · sepultura</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=15#pasaje-15-42">Marcos 15:42–47 · lienzo funerario</a><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-38">Juan 19:38–42 y 20:5–7 · lienzos y sudario</a></div></div></article>
+shroudSection.innerHTML = `<div class="extinct-intro"><h2 id="shroud-title">La Sábana Santa de Turín</h2><p>Una tela de lino venerada por muchos cristianos como el sudario de Jesús. La imagen que acompaña esta ficha es una ilustración inspirada en el aspecto del lienzo, no una fotografía ni una reconstrucción auténtica. Esta sección distingue lo que cuentan los Evangelios, la historia documentada de la reliquia y las interpretaciones científicas, sin presentar su autenticidad como un hecho demostrado.</p></div><div class="extinct-grid">
+<article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-turin-rostro.png" alt="Ilustración de una tenue imagen frontal sobre lino tejido, inspirada en la Sábana Santa" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Reliquia cristiana · autenticidad debatida</span><h3>Qué dicen los Evangelios</h3><p>Los relatos evangélicos mencionan lienzos funerarios y describen el entierro de Jesús. Juan menciona lienzos y un sudario para la cabeza; ninguno identifica por nombre la tela conservada hoy en Turín ni ofrece una cadena de custodia que la conecte con ella.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=27#pasaje-27-57">Mateo 27:57–61 · sepultura</a><a href="lectura/?obra=rvr1909-marcos&amp;capitulo=15#pasaje-15-42">Marcos 15:42–47 · lienzo funerario</a><a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-38">Juan 19:38–42 y 20:5–7 · lienzos y sudario</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Historia documentada</span><h3>De Lirey a Turín</h3><p>La historia verificable de la reliquia que hoy se conserva en Turín aparece en la Europa medieval: el lienzo se exhibía en Lirey, Francia, a mediados del siglo XIV. Fue trasladado a Turín en 1578. La tradición devocional puede proponer una historia anterior, pero no se conserva una documentación continua que la confirme.</p><div class="extinct-refs"><a href="https://doi.org/10.1080/03044181.2025.2546884" target="_blank" rel="noopener noreferrer">Journal of Medieval History · nueva fuente medieval sobre la aparición de la reliquia</a><a href="https://sindone.org/en/home-english/the-shroud/historical-outline/" target="_blank" rel="noopener noreferrer">Custodios de la Sábana Santa · reseña histórica (traslado en 1578)</a><a href="https://www.vatican.va/content/john-paul-ii/en/travels/1998/documents/hf_jp-ii_spe_24051998_sindone.html" target="_blank" rel="noopener noreferrer">Juan Pablo II · la Sábana como icono de la Pasión</a></div></div></article>
 <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/sudario-detalle-analisis-2024.png" alt="Detalle compuesto de la imagen frontal y posterior del Sudario de Turín" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">Análisis publicado · interpretación discutida</span><h3>Un estudio de sangre de 2024</h3><p>El ingeniero Giulio Fanti, de la Universidad de Padua, revisó rastros atribuidos a sangre y describió observaciones microscópicas y químicas que, según su interpretación, serían compatibles con los tormentos narrados en los Evangelios. El trabajo no demuestra que la tela envolviera a Jesús ni establece su fecha: compatibilidad interpretativa no equivale a identificación histórica.</p><div class="extinct-refs"><a href="https://doi.org/10.17352/ahcrr.000044" target="_blank" rel="noopener noreferrer">Giulio Fanti (2024) · artículo sobre rastros hemáticos del Sudario</a><a href="https://research.unipd.it/handle/11577/3541882?mode=complete" target="_blank" rel="noopener noreferrer">Universidad de Padua · ficha y resumen del estudio</a></div></div></article>
 <article class="extinct-card"><div class="extinct-card-body"><span class="source-badge context">Estudio experimental · 2020</span><h3>El increible color de la sangre de Jesús</h3><p>Kelly P. Kearse examinó dos explicaciones propuestas para el tono rojizo de las manchas de la Sábana: la hemólisis asociada a la saponina y la presencia de bilirrubina elevada. En sus ensayos sobre textiles, ninguna mantuvo el color rojo con el paso del tiempo. Un efecto rojizo temporal apareció con glicerina, pero no persistió durante varios meses.</p><figure class="bilirubin-figure"><img src="assets/shroud/kearse-figure-12-bilirubin.png" alt="Figura 12 del estudio de Kearse: manchas de control y con bilirrubina al inicio y al mes; ambas se ven pardas después de un mes" loading="lazy"><figcaption>Figura 12 · Sangre con bilirrubina mixta, al inicio y al mes. <a href="https://medcraveonline.com/JHAAS/the-reddish-color-of-bloodstains-on-the-shroud-of-turin-investigation-of-two-hypotheses.html#fig12" target="_blank" rel="noopener noreferrer">Kearse (2020)</a>.</figcaption></figure><p>El trabajo estudia muestras experimentales; no identifica el origen de las manchas del lienzo ni demuestra su autenticidad o antigüedad.</p><div class="extinct-refs"><a href="https://medcraveonline.com/JHAAS/the-reddish-color-of-bloodstains-on-the-shroud-of-turin-investigation-of-two-hypotheses.html" target="_blank" rel="noopener noreferrer">Kelly P. Kearse · artículo completo en Journal of Historical Archaeology &amp; Anthropological Sciences</a><a href="https://doi.org/10.15406/jhaas.2020.05.00223" target="_blank" rel="noopener noreferrer">JHAAS. 2020;5(3):101–107 · DOI: 10.15406/jhaas.2020.05.00223</a></div></div></article>
@@ -3126,12 +3336,12 @@ document.querySelectorAll('#objects-view .extinct-card').forEach(card => {
 const libraryViewRoots = {
   timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
   extinct: '#extinct-view', animals: '#extinct-view', lostPlaces: '#lost-places-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
-  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view'
+  gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view'
 };
 function findLibraryCard(view, title) {
   const root = document.querySelector(libraryViewRoots[view]);
   if (!root) return null;
-  return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage'))
+  return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage,.face-intro,.face-evidence'))
     .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
 }
 const crossConnections = [
@@ -3151,7 +3361,7 @@ const crossConnections = [
   { a: ['timeline', 'El jinete del caballo blanco'], b: ['timeline', 'Juicio final y nueva creación'], why: 'La visión del jinete precede a las escenas de juicio y renovación en Apocalipsis.' },
   { a: ['enoch', 'Enoc 9:4'], b: ['devils', 'Azazel y el chivo expiatorio'], why: '1 Enoc 9 denuncia a Azazel; el capítulo 10 cuenta que Rafael lo ata y lo arroja a la oscuridad.' },
   { a: ['timeline', 'Isaías y Emanuel'], b: ['prophecies', 'Emanuel y el heredero de David'], why: 'La línea de tiempo enlaza el anuncio de Isaías con su lectura dentro de la sección Profecías.' },
-  { a: ['ark', 'El Arca de Noé'], b: ['timeline', 'El gran diluvio y el arca'], why: 'La ficha amplía el mismo relato que la cronología resume.' },
+  { a: ['ark', 'El Arca de Noé'], b: ['timeline', 'El diseño exacto del Arca'], why: 'La línea temporal destaca las medidas y los materiales que Génesis atribuye a la construcción del Arca.' },
   { a: ['ark', 'El Arca de Noé'], b: ['enoch', 'Enoc 10:1'], why: '1 Enoc amplía la tradición del diluvio con el aviso a Noé.' },
   { a: ['ark', 'El Arca de Noé'], b: ['objects', 'El Arca de la Alianza'], why: 'Comparten la palabra “arca”, pero son objetos distintos: una nave y un cofre ritual.' },
   { a: ['shroud', 'Qué dicen los Evangelios'], b: ['timeline', 'Crucifixión y muerte de Jesús'], why: 'Los Evangelios narran la sepultura; la reliquia se vincula a ese episodio por tradición, sin que el texto la identifique.' },
@@ -3162,7 +3372,7 @@ const crossConnections = [
   { a: ['devils', 'Satanás / Satan'], b: ['devils', 'La serpiente / el dragón antiguo'], why: 'Apocalipsis 12:9 y 20:2 identifican explícitamente al dragón antiguo con Satanás y el Diablo.' },
   { a: ['devils', 'El Diablo'], b: ['timeline', 'Ayuno y tentación en el desierto'], why: 'Los Evangelios llaman Diablo al tentador de Jesús en el desierto.' },
   { a: ['afterlife', 'El Abismo'], b: ['devils', 'Abaddón / Apolión'], why: 'Apocalipsis 9:11 nombra a Abaddón/Apolión como rey del abismo.' },
-  { a: ['afterlife', 'Gehena y el valle de Hinom'], b: ['afterlife', 'Lago de fuego / fuego eterno'], why: 'Son imágenes de juicio diferentes; el enlace permite compararlas sin tratarlas como sinónimos automáticos.' },
+  { a: ['afterlife', 'Gehena'], b: ['afterlife', 'Lago de fuego / fuego eterno'], why: 'Muchos lectores cristianos relacionan ambas imágenes con el destino final; la conexión permite compararlas sin presentar la equivalencia como una cita explícita de los textos.' },
   { a: ['devils', 'Baal'], b: ['timeline', 'Elías desafía a los profetas de Baal'], why: 'La cronología sitúa el enfrentamiento de Elías en su contexto narrativo.' },
   { a: ['prophecies', 'Un profeta como Moisés'], b: ['timeline', 'Moisés anuncia un profeta'], why: 'Ambas fichas remiten a Deuteronomio 18 y a su lectura posterior en Hechos.' },
   { a: ['extinct', 'Los gigantes Nefilim'], b: ['enoch', 'Enoc 7:2'], why: 'Génesis menciona a los Nefilim y 1 Enoc desarrolla la tradición de los gigantes.' },
@@ -3244,7 +3454,7 @@ objectsGrid?.querySelectorAll('.extinct-card').forEach(card => {
 });
 const shroudShortcut = document.createElement('article');
 shroudShortcut.className = 'extinct-card shroud-shortcut';
-shroudShortcut.innerHTML = '<a class="shroud-shortcut-link" href="#sabana-santa"><img src="assets/objetos-seres/sudario-turin.jpg" alt="La Sábana Santa de Turín, acceso a su sección independiente" loading="lazy"><strong>Sábana Santa de Turín</strong><span>Ir a su sección independiente ↗</span></a>';
+shroudShortcut.innerHTML = '<a class="shroud-shortcut-link" href="#sabana-santa"><img src="assets/objetos-seres/sudario-turin-rostro.png" alt="Ilustración del rostro tenue sobre lino inspirada en la Sábana Santa" loading="lazy"><strong>Sábana Santa de Turín</strong><span>Historia, Evangelios y estudios · abrir sección ↗</span></a>';
 objectsGrid?.append(shroudShortcut);
 shroudShortcut.querySelector('a').addEventListener('click', event => {
   event.preventDefault();
@@ -3291,6 +3501,7 @@ const gnosticismView = document.getElementById('gnosticism-view');
 const afterlifeView = document.getElementById('afterlife-view');
 const arkView = document.getElementById('ark-view');
 const shroudView = document.getElementById('shroud-view');
+const faceView = document.getElementById('face-view');
 const kingdomsView = document.getElementById('kingdoms-view');
 const ascendedView = document.getElementById('ascended-view');
 const viewTabs = document.querySelectorAll('.view-tab');
@@ -3382,9 +3593,10 @@ function selectView(view, updateHash = true) {
   const isAfterlife = view === 'afterlife';
   const isArk = view === 'ark';
   const isShroud = view === 'shroud';
+  const isFace = view === 'face';
   const isKingdoms = view === 'kingdoms';
   const isAscended = view === 'ascended';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isKingdoms || isAscended;
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -3397,9 +3609,10 @@ function selectView(view, updateHash = true) {
   afterlifeView.hidden = !isAfterlife;
   arkView.hidden = !isArk;
   shroudView.hidden = !isShroud;
+  faceView.hidden = !isFace;
   kingdomsView.hidden = !isKingdoms;
   ascendedView.hidden = !isAscended;
-  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, kingdomsView, ascendedView]
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView]
     .find(section => !section.hidden);
   if (activeSection) {
     activeSection.classList.remove('view-entering');
@@ -3417,7 +3630,7 @@ function selectView(view, updateHash = true) {
   updateViewMenuSize();
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionGenealogyDates);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -3432,6 +3645,7 @@ if (location.hash === '#gnosticismo') selectView('gnosticism', false);
 if (location.hash === '#mas-alla' || location.hash === '#infiernos') selectView('afterlife', false);
 if (location.hash === '#arca-de-noe' || location.hash === '#arca-noe-sabana-santa') selectView('ark', false);
 if (location.hash === '#sabana-santa') selectView('shroud', false);
+if (location.hash === '#la-cara-de-dios') selectView('face', false);
 if (location.hash === '#israel-y-juda') selectView('kingdoms', false);
 if (location.hash === '#ascendidos') selectView('ascended', false);
 
@@ -3519,6 +3733,29 @@ function setGenealogyRelationships() {
   });
 }
 setGenealogyRelationships();
+
+function setGenealogyAges() {
+  const ages = {
+    'Adán': '930 años', 'Set': '912 años', 'Enós': '905 años', 'Cainán': '910 años',
+    'Mahalaleel': '895 años', 'Jared': '962 años', 'Enoc': '365 años',
+    'Matusalén': '969 años', 'Lamec': '777 años', 'Noé': '950 años',
+    'Sem': '600 años', 'Arfaxad': '438 años', 'Sala': '433 años', 'Sélah': '433 años',
+    'Heber': '464 años', 'Eber': '464 años', 'Peleg': '239 años', 'Reu': '239 años',
+    'Serug': '230 años', 'Taré': '205 años', 'Abraham': '175 años', 'Isaac': '180 años',
+    'Jacob': '147 años', 'Leví': '137 años', 'Coat': '133 años', 'Amram': '137 años',
+    'Moisés': '120 años', 'Aarón': '123 años', 'José': '110 años', 'Josué': '110 años'
+  };
+  document.querySelectorAll('.family-tree .tree-node').forEach(node => {
+    const name = node.firstChild?.textContent?.trim();
+    const age = ages[name];
+    if (!age || node.querySelector(':scope > .tree-age')) return;
+    const badge = document.createElement('span');
+    badge.className = 'tree-age';
+    badge.textContent = `vivió ${age}`;
+    node.append(badge);
+  });
+}
+setGenealogyAges();
 
 function arrangeTreeVerses() {
   const tree = document.querySelector('.family-tree');

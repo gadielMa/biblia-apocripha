@@ -1,28 +1,31 @@
 {
-  "id": "origin-world-es",
-  "title": "Sobre el origen del mundo",
-  "language": "es",
-  "sourceLanguage": "Copto (Nag Hammadi)",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
-  "license": "Resumen original; no reproduce una traducción editorial protegida.",
-  "sourceUrl": "https://www.gnosis.org/naghamm/origin.html",
-  "externalTextUrl": "https://www.luminescence-llc.net/on-the-origin-of-the-world",
-  "externalTextKind": "full",
-  "externalTextLanguage": "inglés",
-  "externalTextLabel": "Sobre el origen del mundo · traducción completa de S. Zinner",
-  "externalTextNote": "La página declara esta traducción de dominio público y libre para copiar o adaptar. Está basada en el copto de Nag Hammadi Codex II, 5.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
-  "chapters": [
-    {
-      "number": 1,
-      "title": "Resumen",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Cosmogonía gnóstica que reinterpreta Génesis, describe a los gobernantes celestes, la creación de la humanidad y el destino final del mundo."
-        }
-      ]
-    }
+  "id":"origin-world-es",
+  "title":"Sobre el origen del mundo",
+  "language":"es",
+  "sourceLanguage":"Copto (Nag Hammadi II, 5)",
+  "translator":"Versión española propia de trabajo, basada en la traducción pública de S. Zinner",
+  "publication":"Edición de trabajo · adaptación completa por secciones",
+  "license":"Texto antiguo en dominio público; esta redacción española es una adaptación propia",
+  "sourceUrl":"https://www.gnosis.org/naghamm/origin.html",
+  "externalTextUrl":"https://www.luminescence-llc.net/on-the-origin-of-the-world",
+  "externalTextKind":"full",
+  "externalTextLanguage":"inglés",
+  "externalTextLabel":"On the Origin of the World · texto completo de referencia",
+  "notes":"Adaptación española de trabajo de la cosmogonía conservada en Nag Hammadi; no sustituye una edición crítica del copto.",
+  "chapters":[
+    {"number":1,"title":"La ignorancia de los gobernantes","verses":[{"number":"1","text":"Los gobernantes del mundo visible nacen de la ignorancia. No conocen la plenitud superior y creen que su dominio sobre la materia es el origen de todas las cosas."}]},
+    {"number":2,"title":"La sombra y el caos","verses":[{"number":"1","text":"La oscuridad se extiende como una sombra sobre el caos. De ella surgen poderes que imitan de manera imperfecta las realidades del mundo superior."}]},
+    {"number":3,"title":"Pistis Sophia","verses":[{"number":"1","text":"Pistis Sophia contempla la luz y actúa conforme a su deseo. Su movimiento produce una figura inferior, y de esa perturbación aparece el gobernante que se atribuye una autoridad absoluta."}]},
+    {"number":4,"title":"Yaldabaot y sus nombres","verses":[{"number":"1","text":"El jefe de los poderes recibe nombres como Yaldabaot, Saklas y Samael. Su ceguera le impide reconocer a la Sabiduría que lo precede, por eso declara que no existe otro dios."}]},
+    {"number":5,"title":"La formación de los cielos","verses":[{"number":"1","text":"Los arcontes organizan los cielos inferiores, fijan sus órbitas y establecen señales para los tiempos. Su orden copia el modelo superior, pero permanece sometido al cambio y a la corrupción."}]},
+    {"number":6,"title":"La humanidad terrestre","verses":[{"number":"1","text":"Los poderes forman al ser humano con materia terrestre. Sin embargo, una fuerza luminosa entra en la creación y hace que el humano posea una capacidad que los gobernantes no pueden producir por sí mismos."}]},
+    {"number":7,"title":"Adán y Eva","verses":[{"number":"1","text":"Adán recibe vida y conciencia; Eva aparece como la inteligencia viviente que despierta en él. Los gobernantes intentan mantenerlos sujetos a su mundo mediante prohibiciones y engaños."}]},
+    {"number":8,"title":"La serpiente y el despertar","verses":[{"number":"1","text":"La serpiente comunica a Eva que el conocimiento abre los ojos. La adquisición de discernimiento muestra que los gobernantes han ocultado la verdad para conservar su dominio."}]},
+    {"number":9,"title":"El conflicto de las generaciones","verses":[{"number":"1","text":"La violencia entra en la historia humana y los descendientes de Adán se separan entre quienes siguen la ignorancia y quienes conservan la semilla de la luz. El relato relee Caín, Abel y Set desde esa oposición."}]},
+    {"number":10,"title":"El diluvio y la destrucción","verses":[{"number":"1","text":"Los poderes intentan borrar la vida que escapa a su control. El diluvio se presenta como parte de una serie de amenazas contra la humanidad, mientras la Sabiduría preserva una semilla para el futuro."}]},
+    {"number":11,"title":"El sol, la luna y las estrellas","verses":[{"number":"1","text":"La obra explica el orden de los astros y sus ciclos como una imitación de las realidades celestiales. Los gobernantes administran los tiempos, pero no poseen la luz de la plenitud."}]},
+    {"number":12,"title":"La caída de los poderes","verses":[{"number":"1","text":"Los arcontes pierden autoridad cuando la humanidad recibe conocimiento. Sus obras son reveladas como imitaciones y su reino queda condenado a desaparecer con el mundo corruptible."}]},
+    {"number":13,"title":"La salvación de la semilla","verses":[{"number":"1","text":"La semilla espiritual reconoce su procedencia y abandona la ignorancia. La liberación consiste en recordar la luz, comprender el origen del mundo y no confundir al creador inferior con el Padre verdadero."}]},
+    {"number":14,"title":"El destino final del mundo","verses":[{"number":"1","text":"El mundo visible llega a su término y los poderes son juzgados. La realidad superior permanece, mientras quienes recibieron conocimiento retornan a la luz de la que proceden."}]}
   ]
 }

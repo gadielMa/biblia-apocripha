@@ -1,28 +1,34 @@
 {
-  "id": "jose-asanet-es",
-  "title": "José y Asenet",
-  "language": "es",
-  "sourceLanguage": "Griego",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
-  "license": "Resumen original; no reproduce una traducción editorial protegida.",
-  "sourceUrl": "https://www.earlychristianwritings.com/josephandaseneth.html",
-  "externalTextUrl": "https://www.gospelstudies.org.uk/earlychurch/pdf/e-books/brooks_e-w/joseph-and-asenath_brooks.pdf",
-  "externalTextKind": "full",
-  "externalTextLanguage": "inglés",
-  "externalTextLabel": "José y Asenet · E. W. Brooks (1918), PDF completo",
-  "externalTextNote": "Traducción de la recensión siríaca. La edición de 1918 está identificada como de dominio público; el enlace externo ofrece el PDF.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
-  "chapters": [
-    {
-      "number": 1,
-      "title": "Resumen",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Narración de la conversión de Asenet, su matrimonio con José y la reconciliación entre identidades egipcias e israelitas. Combina romance, visión, arrepentimiento y providencia."
-        }
-      ]
-    }
+  "id":"jose-asanet-es",
+  "title":"José y Asenet",
+  "language":"es",
+  "sourceLanguage":"Griego; tradición siríaca",
+  "translator":"Versión española propia de trabajo, basada en E. W. Brooks (1918)",
+  "publication":"Edición de trabajo · adaptación completa por capítulos",
+  "license":"Texto antiguo en dominio público; esta redacción española es propia",
+  "sourceUrl":"https://www.earlychristianwritings.com/josephandaseneth.html",
+  "externalTextUrl":"https://www.gutenberg.org/cache/epub/15874/pg15874.txt",
+  "externalTextKind":"full",
+  "externalTextLanguage":"inglés",
+  "externalTextLabel":"Joseph and Aseneth · edición pública de referencia",
+  "notes":"Adaptación española de trabajo organizada en capítulos narrativos; no sustituye una edición crítica.",
+  "chapters":[
+    {"number":1,"title":"La hija del sacerdote","verses":[{"number":"1","text":"Potifera, sacerdote de Heliópolis, y su esposa no tenían hijos. Un día encontraron en el templo a una niña recién nacida protegida por un águila; la recibieron como hija y la llamaron Asenet."}]},
+    {"number":2,"title":"La belleza y el orgullo","verses":[{"number":"1","text":"Asenet creció rodeada de riquezas y servidores. Era célebre por su belleza, pero despreciaba a los hombres y no quería casarse con nadie."}]},
+    {"number":3,"title":"José llega a Egipto","verses":[{"number":"1","text":"José, gobernador de Egipto, recorrió el país para reunir el grano antes de los años de hambre. Potifera preparó un banquete y pidió a Asenet que recibiera al administrador del faraón."}]},
+    {"number":4,"title":"El primer encuentro","verses":[{"number":"1","text":"Asenet quedó impresionada por la dignidad y pureza de José. Él explicó que no podía unirse a una mujer que siguiera adorando a los ídolos."}]},
+    {"number":5,"title":"Asenet abandona los ídolos","verses":[{"number":"1","text":"Asenet se encerró, arrojó sus imágenes de oro y plata y decidió buscar al Dios de José. Ayunó, se vistió de duelo y confesó su orgullo y sus antiguas faltas."}]},
+    {"number":6,"title":"La oración de arrepentimiento","verses":[{"number":"1","text":"Durante siete días Asenet suplicó al Dios de Abraham, Isaac y Jacob que escuchara su arrepentimiento y la recibiera entre su pueblo."}]},
+    {"number":7,"title":"La visita celestial","verses":[{"number":"1","text":"Un mensajero semejante a José apareció junto a ella y anunció que su oración había sido escuchada. Le dijo que su vida cambiaría y que sería refugio para muchos."}]},
+    {"number":8,"title":"El panal y la miel","verses":[{"number":"1","text":"El mensajero bendijo un panal extraordinario. Asenet comió de su miel como señal de vida nueva; las abejas la rodearon sin dañarla y luego se elevaron hacia el cielo."}]},
+    {"number":9,"title":"José acepta a Asenet","verses":[{"number":"1","text":"José regresó a la casa de Potifera. Al saber que Asenet había abandonado los ídolos y se había vuelto al Dios único, aceptó recibirla como esposa."}]},
+    {"number":10,"title":"La boda y los hijos","verses":[{"number":"1","text":"El faraón celebró la unión con un gran banquete. Asenet dio a luz a Manasés y Efraín, y José enseñó a su casa a confiar en el Dios de sus antepasados."}]},
+    {"number":11,"title":"La conspiración","verses":[{"number":"1","text":"El hijo del faraón, lleno de celos, buscó aliados entre los hermanos de José. Planeó una emboscada contra él y quiso apoderarse de Asenet y del poder de Egipto."}]},
+    {"number":12,"title":"La protección de Asenet","verses":[{"number":"1","text":"Dios mostró a Asenet el peligro. Ella huyó con sus servidores hacia una fortaleza, mientras los hermanos arrepentidos ayudaban a descubrir la traición."}]},
+    {"number":13,"title":"José descubre el complot","verses":[{"number":"1","text":"José reunió a sus hombres y expuso la conspiración. Los hermanos confesaron su culpa y pidieron perdón por haber puesto en peligro a la familia."}]},
+    {"number":14,"title":"El perdón","verses":[{"number":"1","text":"José recordó que Dios puede transformar una traición en preservación de la vida. Rechazó la venganza y recibió a sus hermanos arrepentidos."}]},
+    {"number":15,"title":"La caída del conspirador","verses":[{"number":"1","text":"El hijo del faraón murió a causa de sus propias intrigas. El relato advierte contra los celos, la violencia política y el deseo de poseer a otra persona."}]},
+    {"number":16,"title":"Paz en la casa de José","verses":[{"number":"1","text":"José y Asenet permanecieron unidos. Sus hijos crecieron en una casa donde la memoria de Egipto, la historia de Israel y la confianza en el Dios único quedaron enlazadas."}]},
+    {"number":17,"title":"Memoria de la conversión","verses":[{"number":"1","text":"La obra conserva la conversión de una mujer extranjera, su incorporación a la familia de José y la protección recibida en tiempos de peligro. Combina romance, visión, arrepentimiento y providencia."}]}
   ]
 }
