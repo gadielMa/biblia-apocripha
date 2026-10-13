@@ -1574,7 +1574,7 @@
         <img class="timeline-image" src="assets/timeline/roca-moises-linea.png" alt="Ilustración generada de la Roca de Moisés en Horeb">
         <span class="source-badge context">Relato bíblico · sitio discutido</span>
         <div><p class="timeline-date">desierto · tradición del Éxodo</p><h3>La Roca de Moisés</h3></div>
-        <p>Éxodo 17 sitúa el agua de la roca después del cruce del mar Rojo y antes de la llegada al Sinaí. Números 20 narra otro episodio, años más tarde, en Meribá de Cades; no conviene confundir ambos relatos. La formación de la imagen es una identificación tradicional discutida, no una ubicación arqueológica confirmada.</p>
+        <p>Éxodo 17 sitúa el agua de la roca después del cruce del mar Rojo y antes de la llegada al Sinaí. Números 20 narra otro episodio, años más tarde, en Meribá de Cades; no conviene confundir ambos relatos.</p>
         <a href="lectura/?obra=rvr1909-exodo&amp;capitulo=17#pasaje-17-1">Éxodo 17:1–7</a>
         <a href="lectura/?obra=rvr1909-numeros&amp;capitulo=20#pasaje-20-1">Números 20:1–13</a>
       </article>
@@ -2865,9 +2865,11 @@ if (timelineTrack) {
     ['cronología tradicional · después del diluvio','El primer altar y el pacto del arcoíris','Noé edifica un altar y ofrece animales limpios. Dios promete no volver a destruir toda vida con un diluvio y establece el arcoíris como señal eterna del pacto.','Génesis 8:20–22; 9:8–17','lectura/?obra=rvr1909-genesis&capitulo=9#pasaje-9-8','origins'],
     ['cronología tradicional · 2300 a. C.','La torre de Babel','Génesis cuenta que Dios confundió las lenguas y dispersó a los pueblos.','Génesis 11:1–9','lectura/?obra=rvr1909-genesis&capitulo=11','origins'],
     ['2.º milenio a. C. · fecha tradicional','El llamado de Abraham','Dios llama a Abraham, promete dar esa tierra a su descendencia y anuncia que por medio de él serán bendecidas todas las familias de la tierra.','Génesis 12:1–9; 13:14–17','lectura/?obra=rvr1909-genesis&capitulo=12','patriarchs'],
-    ['2.º milenio a. C. · fecha tradicional','Sodoma y Gomorra','Génesis relata la destrucción de las ciudades de la llanura.','Génesis 19','lectura/?obra=rvr1909-genesis&capitulo=19','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Lot recibe a los dos ángeles','Dos ángeles llegan a Sodoma al anochecer. Lot los recibe en su casa y les prepara una comida.','Génesis 19:1–3','lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-1','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Los ángeles ciegan a los hombres de Sodoma','Cuando los hombres de la ciudad rodean la casa e intentan entrar, los visitantes los hieren con ceguera para proteger a Lot y a su familia.','Génesis 19:4–11','lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-4','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Sodoma y Gomorra','Los ángeles anuncian que Jehová los envió a destruir la ciudad. Después, Jehová hace llover azufre y fuego sobre Sodoma y Gomorra.','Génesis 19:12–13, 24–28','lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-12','patriarchs'],
     ['2.º milenio a. C. · fecha tradicional','La prueba de Abraham e Isaac','Abraham lleva a Isaac al monte; el relato termina con la intervención de un mensajero divino.','Génesis 22:1–19','lectura/?obra=rvr1909-genesis&capitulo=22','patriarchs'],
-    ['2.º milenio a. C. · fecha tradicional','Jacob lucha y recibe el nombre Israel','Jacob lucha durante la noche y recibe el nombre Israel.','Génesis 32:22–32','lectura/?obra=rvr1909-genesis&capitulo=32','patriarchs'],
+    ['2.º milenio a. C. · fecha tradicional','Jacob lucha y recibe el nombre Israel','Jacob lucha durante la noche con un ángel. Al amanecer, el ángel lo bendice y le da el nombre Israel.','Génesis 32:22–32','lectura/?obra=rvr1909-genesis&capitulo=32#pasaje-32-22','patriarchs'],
     ['2.º milenio a. C. · fecha tradicional','José es vendido y asciende en Egipto','Sus hermanos venden a José; después, el faraón lo pone a cargo de Egipto.','Génesis 37–41','lectura/?obra=rvr1909-genesis&capitulo=37','patriarchs'],
     ['c. 1330 a. C. · cronología tradicional','El nacimiento y rescate de Moisés','Moisés nace durante la opresión en Egipto. Su madre lo esconde en una cesta en el Nilo y la hija del faraón lo cría. Deuteronomio dice que murió a los 120 años.','Éxodo 2:1–10','lectura/?obra=rvr1909-exodo&capitulo=2','exodus'],
     ['c. 1250 a. C. · cronología tradicional','La zarza ardiente','Dios llama a Moisés desde una zarza que arde sin consumirse.','Éxodo 3:1–15','lectura/?obra=rvr1909-exodo&capitulo=3','exodus'],
@@ -3141,6 +3143,7 @@ if (timelineTrack) {
   moveOrderBefore('Simeón carga al niño Jesús', 'Huida y regreso a Nazaret');
   moveOrderAfter('Jacobo es curado de una mordedura de víbora', 'Relatos del niño Jesús');
   moveOrderAfter('María Magdalena consuela a los discípulos', 'Elección de Matías');
+  moveOrderAfter('La Adoración de los Magos', 'Jesús bebé');
   const timelineImages = {
     'La tierra caótica y el Espíritu sobre las aguas': ['assets/timeline/caos-aguas-genesis-1.jpg', 'Oscuridad sobre las aguas primordiales y una presencia luminosa que se mueve sobre ellas, ilustración de Génesis 1:1–2'],
     'Los hijos de Dios celebran la fundación de la tierra': ['assets/timeline/hijos-dios-fundacion-tierra.jpg', 'Hijos de Dios celebran mientras contemplan la tierra durante su fundación, representación poética de Job 38'],
@@ -3168,7 +3171,11 @@ if (timelineTrack) {
     'Conocimientos prohibidos de los Vigilantes': ['assets/timeline/enoc-conocimientos.png', 'Los Vigilantes transmiten metalurgia, botánica y secretos astrales'],
     'El clamor de la Tierra y los arcángeles': ['assets/timeline/enoc-clamor-arcangeles.png', 'Miguel, Gabriel, Rafael y Uriel presentan el clamor de la Tierra'],
     'El Hijo del Hombre y el Anciano de Días': ['assets/timeline/enoc-hijo-hombre.png', 'El Hijo del Hombre ante el Anciano de Días'],
+    'David reina y establece Jerusalén': ['assets/timeline/david-jerusalen-rey.png', 'David entra en Jerusalén acompañado por sus hombres y establece allí su capital'],
+    'Jesús adolescente en el Templo': ['assets/linea-tiempo/jesus-doctores.png', 'Jesús, a los doce años, dialoga con los maestros en el Templo de Jerusalén'],
     'El llamado de Abraham': ['assets/timeline/llamado-abraham.png', 'Abraham emprende su viaje con su familia y animales de carga al amanecer'],
+    'Lot recibe a los dos ángeles': ['assets/timeline/lot-recibe-angeles.png', 'Lot recibe en su casa a los dos ángeles que llegaron a Sodoma'],
+    'Los ángeles ciegan a los hombres de Sodoma': ['assets/timeline/angeles-ciegan-sodoma.png', 'Los ángeles protegen a Lot y ciegan a los hombres que intentan entrar en su casa'],
     'El diseño exacto del Arca': ['assets/linea-tiempo/noe-planos-arca.png', 'Noé recibe los planos y las medidas exactas del Arca'],
     'Décadas de trabajo y advertencia': ['assets/linea-tiempo/noe-construccion.png', 'Noé construye el Arca durante décadas'],
     'La recolección de las especies': ['assets/linea-tiempo/noe-animales.png', 'Parejas de animales se reúnen junto al Arca'],
@@ -3212,7 +3219,7 @@ if (timelineTrack) {
     const item = milestones.find(row => row[1] === title) || extra.find(row => row[1] === title) || requestedTimelineEvents.find(row => row[1] === title);
     return item?.[5] || (title.includes('Noé') ? 'origins' : title.includes('Abraham') || title.includes('Jacob') || title.includes('José') ? 'patriarchs' : title.includes('Moisés') ? 'exodus' : title.includes('Jesús') || title.includes('Pasión') || title.includes('Resurrección') ? 'jesus' : 'church');
   };
-  const hiddenTimelineTitles = new Set(['El mundo del Segundo Templo', 'Jesús adolescente en el Templo']);
+  const hiddenTimelineTitles = new Set(['El mundo del Segundo Templo']);
   const ordered = [];
   order.forEach(item => {
     if (hiddenTimelineTitles.has(item[1])) return;
@@ -3224,6 +3231,20 @@ if (timelineTrack) {
     const date = card.querySelector('.timeline-date');
     if (date) date.textContent = item[0];
     if (item[1] === 'Nacimiento de Daniel') card.querySelector('.source-badge').textContent = 'Representación artística';
+    if (item[1] === 'Juicio contra los dioses de Egipto') {
+      const description = card.querySelector('.timeline-description');
+      const phrase = 'todos los dioses de Egipto';
+      const [before, after = ''] = description.textContent.split(`«${phrase}»`);
+      const emphasizedPhrase = document.createElement('strong');
+      emphasizedPhrase.textContent = phrase;
+      description.replaceChildren(document.createTextNode(`${before}«`), emphasizedPhrase, document.createTextNode(`»${after}`));
+    }
+    if (item[1] === 'Jacob lucha y recibe el nombre Israel') {
+      const angelReference = document.createElement('a');
+      angelReference.href = 'lectura/?obra=rvr1909-oseas&capitulo=12#pasaje-12-4';
+      angelReference.textContent = 'Oseas 12:4 · luchó con el ángel';
+      card.append(angelReference);
+    }
     if (item[1] === 'Se abren las fuentes del gran abismo') {
       const description = card.querySelector('.timeline-description');
       const question = document.createElement('strong');
@@ -3616,7 +3637,6 @@ const crossConnections = [
   { a: ['devils', 'Mastema'], b: ['enoch', 'Enoc 10:1'], why: 'Mastema y 1 Enoc comparten motivos de espíritus adversarios y juicio, pero proceden de obras distintas.' },
   { a: ['timeline', 'Ayuno y tentación en el desierto'], b: ['prophecies', 'El Elegido y el Hijo del Hombre'], why: 'La cronología de Jesús dialoga con imágenes apocalípticas del Hijo del Hombre sin afirmar que ambas obras sean la misma tradición.' },
   { a: ['timeline', 'Jesús resucitado'], b: ['ascended', 'Jesús'], why: 'Ascendidos amplía lo que la línea temporal resume sobre las apariciones y la ascensión de Jesús.' },
-  { a: ['timeline', 'Moisés abre el mar Rojo'], b: ['objects', 'La Roca de Moisés'], why: 'La roca aparece en el trayecto posterior al mar Rojo; Éxodo 17 y Números 20 describen episodios distintos de agua en el desierto.' },
   { a: ['objects', 'La Roca de Moisés'], b: ['timeline', 'La Roca de Moisés'], why: 'Objetos explica la identificación arqueológica discutida; la línea temporal ubica el episodio dentro del camino del Éxodo.' },
   { a: ['devils', 'La serpiente / el dragón antiguo'], b: ['prophecies', 'La descendencia de la mujer'], why: 'Génesis 3 y Apocalipsis se vinculan en la lectura cristiana de la derrota de la serpiente, aunque Génesis no llama Satanás a la serpiente.' },
   { a: ['devils', 'Belcebú o Beelzebul'], b: ['timeline', 'Jesús adulto'], why: 'En los Evangelios, los adversarios acusan a Jesús de expulsar demonios por Beelzebul; la cronología sitúa esas controversias durante su ministerio.' },
