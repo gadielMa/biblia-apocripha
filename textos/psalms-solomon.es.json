@@ -3,7 +3,7 @@
   "title": "Salmos de Salomón",
   "language": "es",
   "sourceLanguage": "Greek (from Hebrew)",
-  "translator": "Traducción de trabajo; puede contener errores y diferencias respecto de otras ediciones",
+  "translator": "Traducción española de trabajo basada en la edición histórica de dominio público; revisada para completar los 18 salmos",
   "publication": "The Forgotten Books of Eden",
   "license": "Public-domain historical translation; verify local status before redistribution.",
   "sourceUrl": "https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Psalms_of_Solomon",
@@ -14,7 +14,35 @@
       "verses": [
         {
           "number": "1",
-          "text": "\"Se hicieron insolentes en su prosperidad...\""
+          "text": "Clamé al Señor cuando estaba angustiado [...], a Dios cuando los pecadores me atacaron."
+        },
+        {
+          "number": "2",
+          "text": "De repente, la alarma de guerra se oyó ante mí; (dije): Él me escuchará, porque estoy lleno de justicia."
+        },
+        {
+          "number": "3",
+          "text": "Pensé en mi corazón que estaba lleno de justicia, porque vivía bien y me había vuelto rico en hijos."
+        },
+        {
+          "number": "4",
+          "text": "Su riqueza se extendió por toda la tierra, y su gloria llegó hasta los confines de la tierra."
+        },
+        {
+          "number": "5",
+          "text": "Fueron exaltados hasta las estrellas; dijeron que nunca caerían."
+        },
+        {
+          "number": "6",
+          "text": "Pero se volvieron insolentes en su prosperidad, y [...]"
+        },
+        {
+          "number": "7",
+          "text": "Sus pecados eran secretos, y ni siquiera yo tenía conocimiento (de ellos)."
+        },
+        {
+          "number": "8",
+          "text": "Sus transgresiones (fueron) más allá de las de los gentiles que los precedieron; profanaron por completo las cosas santas del Señor."
         }
       ]
     },
@@ -24,11 +52,151 @@
       "verses": [
         {
           "number": "1",
-          "text": "La profanación de Jerusalén; cautiverio, asesinato y rapto. Un salmo de desesperación absoluta."
+          "text": "Cuando el pecador se enorgulleció, derribó murallas fortificadas con un ariete. Y Tú no (lo) refrenaste."
         },
         {
           "number": "2",
-          "text": ". . ."
+          "text": "Naciones extranjeras subieron a Tu altar, pisotearon (el altar) con soberbia, llevando puestas sus sandalias;"
+        },
+        {
+          "number": "3",
+          "text": "Porque los hijos de Jerusalén habían contaminado las cosas santas del Señor, habían profanado con iniquidades las ofrendas de Dios."
+        },
+        {
+          "number": "4",
+          "text": "Por eso Él dijo: Arrójenlas lejos de Mí; [...]"
+        },
+        {
+          "number": "5",
+          "text": "Eso fue menospreciado ante Dios, fue deshonrado por completo;"
+        },
+        {
+          "number": "6",
+          "text": "Los hijos y las hijas estaban en penoso cautiverio, sellado (estaba) su cuello, marcado (estaba) entre las naciones."
+        },
+        {
+          "number": "7",
+          "text": "Conforme a sus pecados, Él les hizo esto, pues los dejó en manos de quienes prevalecieron."
+        },
+        {
+          "number": "8",
+          "text": "Él apartó Su rostro para no compadecerse de ellos, jóvenes y ancianos, junto con sus hijos; pues todos, sin excepción, habían hecho el mal al no escuchar."
+        },
+        {
+          "number": "9",
+          "text": "Y los cielos se enojaron, y la tierra los aborreció; pues nadie sobre ella había hecho lo que ellos hicieron,"
+        },
+        {
+          "number": "10",
+          "text": "Y la tierra reconoció todos Tus justos juicios, oh Dios."
+        },
+        {
+          "number": "11",
+          "text": "Expusieron a los hijos de Jerusalén a la burla en retribución por (las) prostitutas que había en ella; todo caminante entraba a plena luz del día."
+        },
+        {
+          "number": "12",
+          "text": "Se burlaron con sus transgresiones, como ellos mismos solían hacer; a plena luz del día revelaron sus iniquidades."
+        },
+        {
+          "number": "13",
+          "text": "Y las hijas de Jerusalén fueron contaminadas conforme a Tu juicio, porque se habían contaminado a sí mismas con relaciones contra la naturaleza."
+        },
+        {
+          "number": "14",
+          "text": "Siento dolor en mis entrañas y en mi interior por estas cosas."
+        },
+        {
+          "number": "15",
+          "text": "(Y aun así) te justificaré, oh Dios, con rectitud de corazón, pues en Tus juicios está Tu justicia (manifestada), oh Dios."
+        },
+        {
+          "number": "16",
+          "text": "Pues has retribuido a los pecadores conforme a sus obras, sí, conforme a sus pecados, que eran muy perversos."
+        },
+        {
+          "number": "17",
+          "text": "Has descubierto sus pecados, para que Tu juicio se manifestara; has borrado de la tierra su memoria."
+        },
+        {
+          "number": "18",
+          "text": "Dios es un juez justo y no hace acepción de personas."
+        },
+        {
+          "number": "19",
+          "text": "Pues las naciones insultaron a Jerusalén, pisoteándola; su belleza fue arrastrada hacia abajo desde el trono de gloria."
+        },
+        {
+          "number": "20",
+          "text": "Ella se ciñó de cilicio en lugar de hermosas vestiduras; una cuerda (estaba) alrededor de su cabeza en lugar de una corona."
+        },
+        {
+          "number": "21",
+          "text": "Se quitó la gloriosa diadema que Dios había puesto sobre ella; su belleza fue arrojada al suelo con deshonra."
+        },
+        {
+          "number": "22",
+          "text": "Y vi, supliqué al Señor y dije: Ya basta, oh Señor, Tu mano ha pesado sobre Israel al traer las naciones sobre (ellos)."
+        },
+        {
+          "number": "23",
+          "text": "Pues se burlaron sin medida, con ira y furor intenso; y provocarán una destrucción completa, a menos que Tú, oh Señor, los reprendas en Tu ira."
+        },
+        {
+          "number": "24",
+          "text": "Pues no lo hicieron por celo, sino por deseo del alma, derramando su ira sobre nosotros con intención de saquear."
+        },
+        {
+          "number": "25",
+          "text": "No tardes, oh Dios, en hacer caer sobre (sus) cabezas la retribución, en convertir en deshonra el orgullo del dragón."
+        },
+        {
+          "number": "26",
+          "text": "Y no tuve que esperar mucho para que Dios me mostrara al insolente muerto en las montañas de Egipto, considerado de menor importancia que el más insignificante, en tierra y mar;"
+        },
+        {
+          "number": "27",
+          "text": "Su cuerpo (, también,) llevado de acá para allá por las olas con mucha insolencia, sin nadie que lo sepultara, porque Él lo había rechazado con deshonra."
+        },
+        {
+          "number": "28",
+          "text": "No reflexionó que era hombre, ni reflexionó sobre el fin;"
+        },
+        {
+          "number": "29",
+          "text": "Dijo: Seré señor de la tierra y del mar; y no reconoció que es Dios quien es grande, poderoso en Su gran fuerza."
+        },
+        {
+          "number": "30",
+          "text": "Él es rey sobre los cielos y juzga a reyes y reinos."
+        },
+        {
+          "number": "31",
+          "text": "(Es Él) quien me exalta en gloria y derriba a los orgullosos para destrucción eterna en deshonra, porque no lo conocieron."
+        },
+        {
+          "number": "32",
+          "text": "Y ahora miren, príncipes de la tierra, el juicio del Señor, pues gran rey y justo (es Él), que juzga (todo) lo que está bajo el cielo."
+        },
+        {
+          "number": "33",
+          "text": "Bendigan a Dios, ustedes que temen al Señor con sabiduría, pues la misericordia del Señor estará sobre quienes lo temen, en el Juicio;"
+        },
+        {
+          "number": "34",
+          "text": "Para que Él distinga entre el justo y el pecador, (y) recompense a los pecadores para siempre conforme a sus obras;"
+        },
+        {
+          "number": "35",
+          "text": "Y tenga misericordia del justo, (librándolo) de la aflicción causada por el pecador; y recompense al pecador por lo que le ha hecho al justo."
+        },
+        {
+          "number": "36",
+          "text": "Pues el Señor es bueno con quienes lo invocan con paciencia, actuando conforme a Su misericordia con Sus piadosos, estableciendo (a los piadosos) en todo tiempo delante de Él con fortaleza."
+        },
+        {
+          "number": "37",
+          "text": "Bendito sea el Señor para siempre delante de Sus siervos."
         }
       ]
     },
@@ -38,7 +206,51 @@
       "verses": [
         {
           "number": "1",
-          "text": "La justicia contra el pecado."
+          "text": "¿Por qué duermes, alma mía, y no bendices al Señor?"
+        },
+        {
+          "number": "2",
+          "text": "Canta un cántico nuevo a Dios, que es digno de alabanza. Canta y mantente vigilante ante su despertar, porque bueno es un salmo (cantado) a Dios desde un corazón alegre."
+        },
+        {
+          "number": "3",
+          "text": "El justo recuerda al Señor en todo momento, con acción de gracias y declaración de la justicia de los juicios del Señor."
+        },
+        {
+          "number": "4",
+          "text": "El justo no desprecia la disciplina del Señor; su voluntad está siempre delante del Señor."
+        },
+        {
+          "number": "5",
+          "text": "El justo tropieza y reconoce que el Señor es justo: cae y espera para ver qué hará Dios con él; busca de dónde vendrá su liberación."
+        },
+        {
+          "number": "6",
+          "text": "La firmeza del justo viene de Dios, su libertador; no se aloja pecado sobre pecado en la casa del justo."
+        },
+        {
+          "number": "7",
+          "text": "El justo examina continuamente su casa para eliminar por completo (toda) iniquidad (cometida) por él por error."
+        },
+        {
+          "number": "8",
+          "text": "Hace expiación por (pecados de) ignorancia mediante el ayuno y la aflicción de su alma, y el Señor declara sin culpa a todo hombre piadoso y a su casa."
+        },
+        {
+          "number": "9",
+          "text": "El pecador tropieza y maldice su vida, el día en que fue engendrado y el parto de su madre."
+        },
+        {
+          "number": "10",
+          "text": "Añade pecado a pecado mientras vive; cae, verdaderamente grave es su caída, y no vuelve a levantarse."
+        },
+        {
+          "number": "11",
+          "text": "La destrucción del pecador es para siempre, y no será recordado cuando el justo sea visitado."
+        },
+        {
+          "number": "12",
+          "text": "Esta es la porción de los pecadores para siempre. Pero los que temen al Señor resucitarán a la vida eterna, y su vida (estará) en la luz del Señor y no llegará nunca a su fin."
         }
       ]
     },
@@ -48,7 +260,103 @@
       "verses": [
         {
           "number": "1",
-          "text": "Una conversación de Salomón con los hombres."
+          "text": "¿Por qué te sientas, oh (hombre) profano, en el consejo de los piadosos, puesto que tu corazón está lejos del Señor, provocando con transgresiones al Dios de Israel?"
+        },
+        {
+          "number": "2",
+          "text": "Excesivo en sus palabras, excesivo en su apariencia exterior más que todos (los hombres), así es quien habla con severidad al condenar a pecadores en juicio."
+        },
+        {
+          "number": "3",
+          "text": "Y su mano es la primera en alzarse contra él, como (si actuara) con celo, y (sin embargo) él mismo es culpable de muchos pecados y de desenfreno."
+        },
+        {
+          "number": "4",
+          "text": "Sus ojos están sobre toda mujer, sin distinción; su lengua miente cuando celebra un acuerdo bajo juramento."
+        },
+        {
+          "number": "5",
+          "text": "De noche y en secreto, peca como si nadie lo viera; con los ojos, habla a toda mujer de pactos malignos. Se apresura a entrar en toda casa con alegría, como si no tuviera malicia."
+        },
+        {
+          "number": "6",
+          "text": "Que Dios quite a los que viven en hipocresía en compañía de los piadosos, (incluso) la vida de tal hombre, con la corrupción de su carne y la pobreza."
+        },
+        {
+          "number": "7",
+          "text": "Que Dios revele los actos de quienes agradan a los hombres, los actos de tal hombre, con risa y escarnio;"
+        },
+        {
+          "number": "8",
+          "text": "Para que los piadosos consideren justo el juicio de su Dios, cuando los pecadores sean apartados de la presencia de los justos, (sí) el que agrada a los hombres y proclama la ley de manera engañosa."
+        },
+        {
+          "number": "9",
+          "text": "Y los ojos de ellos (están fijos) en la casa de cualquier hombre que (aún) esté segura, para que puedan, como la Serpiente, destruir la sabiduría de [...] con palabras de transgresores."
+        },
+        {
+          "number": "10",
+          "text": "Sus palabras son engañosas para que (él) cumpla (su) deseo perverso. Nunca deja de dispersar (familias) como si (fueran) huérfanas,"
+        },
+        {
+          "number": "11",
+          "text": "Sí, devasta una casa a causa de (su) deseo ilícito. Engaña con palabras, (diciendo:) No hay quien vea ni juzgue."
+        },
+        {
+          "number": "12",
+          "text": "Llena una (casa) de iniquidad, y (entonces) sus ojos (se fijan) en la casa siguiente, para destruirla con palabras que dan alas al (deseo)."
+        },
+        {
+          "number": "13",
+          "text": "(Sin embargo), aun con todo esto, su alma, como el Seol, no se sacia."
+        },
+        {
+          "number": "14",
+          "text": "Que su porción, oh Señor, sea deshonrada ante ti; que salga gimiendo y vuelva a casa maldito."
+        },
+        {
+          "number": "15",
+          "text": "Que su vida sea (pasada) en angustia, pobreza y necesidad, oh Señor; que su sueño esté (rodeado) de dolores y su despertar, de perplejidades."
+        },
+        {
+          "number": "16",
+          "text": "Que el sueño sea retirado de sus párpados durante la noche; que fracase deshonrosamente en toda obra de sus manos."
+        },
+        {
+          "number": "17",
+          "text": "Que vuelva con las manos vacías a su casa, y que su casa quede sin nada con que pueda saciar su apetito."
+        },
+        {
+          "number": "18",
+          "text": "(Que) su vejez (transcurra) en soledad y sin hijos, hasta que sea llevado (por la muerte)."
+        },
+        {
+          "number": "19",
+          "text": "Que la carne de quienes agradan a los hombres sea desgarrada por bestias salvajes, y (que) los huesos de los inicuos (queden) deshonrados a la vista del sol."
+        },
+        {
+          "number": "20",
+          "text": "Que los cuervos arranquen los ojos de los hipócritas. Pues han devastado muchas casas de hombres, en deshonra, y los dispersaron en (su) lujuria;"
+        },
+        {
+          "number": "21",
+          "text": "Y no se acordaron de Dios, ni temieron a Dios en todas estas cosas; sino que provocaron la ira de Dios y lo irritaron."
+        },
+        {
+          "number": "22",
+          "text": "Que Él los quite de la faz de la tierra, porque con engaño sedujeron las almas de los íntegros."
+        },
+        {
+          "number": "23",
+          "text": "Bienaventurados los que temen al Señor en su integridad; el Señor los librará de hombres engañosos y pecadores, y nos librará de todo obstáculo de los (hombres) inicuos."
+        },
+        {
+          "number": "24",
+          "text": "Que Dios destruya a quienes obran insolentemente toda injusticia. Pues grande y poderoso juez es el Señor, nuestro Dios, en justicia."
+        },
+        {
+          "number": "25",
+          "text": "Que tu misericordia, oh Señor, esté sobre todos los que te aman."
         }
       ]
     },
@@ -58,7 +366,75 @@
       "verses": [
         {
           "number": "1",
-          "text": "Una declaración de la filosofía de la indestructibilidad de la materia. Uno de los principios de la física moderna."
+          "text": "Oh Señor Dios, alabaré tu nombre con alegría, En medio de los que conocen tus justos juicios."
+        },
+        {
+          "number": "2",
+          "text": "Porque eres bueno y misericordioso, refugio del pobre; Cuando clame a ti, no me ignores en silencio."
+        },
+        {
+          "number": "3",
+          "text": "Porque nadie toma botín de un hombre poderoso; ¿Quién, entonces, puede tomar algo de todo lo que has hecho, a menos que tú mismo lo des?"
+        },
+        {
+          "number": "4",
+          "text": "Porque el hombre y su porción (están) ante ti en la balanza; Él no puede añadir, para aumentar, lo que tú has prescrito."
+        },
+        {
+          "number": "5",
+          "text": "Oh Dios, cuando estamos afligidos clamamos a ti por ayuda, Y tú no rechazas nuestra petición, porque eres nuestro Dios."
+        },
+        {
+          "number": "6",
+          "text": "No hagas que tu mano pese sobre nosotros, Para que no pequemos por necesidad."
+        },
+        {
+          "number": "7",
+          "text": "Aunque no nos restaures, no nos alejaremos; Pero a ti iremos."
+        },
+        {
+          "number": "8",
+          "text": "Porque si tengo hambre, a ti clamaré, oh Dios; Y tú me darás."
+        },
+        {
+          "number": "9",
+          "text": "Tú alimentas a las aves y a los peces, Al dar lluvia a las estepas para que brote la hierba verde,"
+        },
+        {
+          "number": "10",
+          "text": "(Así) para preparar forraje en la estepa para todo ser viviente; Y si tienen hambre, levantan el rostro hacia ti."
+        },
+        {
+          "number": "11",
+          "text": "Tú alimentas a reyes, gobernantes y pueblos, oh Dios; ¿Y quién es la ayuda del pobre y del necesitado, sino tú, oh Señor?"
+        },
+        {
+          "number": "12",
+          "text": "Y tú escucharás, porque ¿quién es bueno y amable sino tú? Alegrando el alma del humilde al abrir tu mano con misericordia."
+        },
+        {
+          "number": "13",
+          "text": "La bondad del hombre es (concedida) de mala gana y [...], Y si repite (eso) sin murmurar, incluso eso es admirable."
+        },
+        {
+          "number": "14",
+          "text": "Pero tu don es grande en bondad y riqueza, Y aquel cuya esperanza está (puesta) en ti no carecerá de dones."
+        },
+        {
+          "number": "15",
+          "text": "Sobre toda la tierra está tu misericordia, oh Señor, en bondad."
+        },
+        {
+          "number": "16",
+          "text": "Dichoso aquel de quien Dios se acuerda al (concederle) una suficiencia adecuada; Si un hombre tiene abundancia excesiva, peca."
+        },
+        {
+          "number": "17",
+          "text": "Suficientes son los recursos moderados con justicia, Y así la bendición del Señor (se convierte) en abundancia con justicia."
+        },
+        {
+          "number": "18",
+          "text": "Los que temen al Señor se alegran con los buenos (dones), Y tu bondad está sobre Israel en tu reino. Bendita es la gloria del Señor, porque él es nuestro rey."
         }
       ]
     },
@@ -68,7 +444,27 @@
       "verses": [
         {
           "number": "1",
-          "text": "Una canción de esperanza y desesperanza y paz."
+          "text": "Dichoso el hombre cuyo corazón está firme en invocar el nombre del Señor; cuando recuerda el nombre del Señor, será salvo."
+        },
+        {
+          "number": "2",
+          "text": "Sus caminos son allanados por el Señor, y las obras de sus manos son preservadas por el Señor, su Dios."
+        },
+        {
+          "number": "3",
+          "text": "Ante lo que ve en sus malos sueños, su alma no se turbará; cuando atraviese ríos y la agitación de los mares, no se consternará."
+        },
+        {
+          "number": "4",
+          "text": "Se levanta de su sueño y bendice el nombre del Señor: cuando su corazón está en paz, canta al nombre de su Dios,"
+        },
+        {
+          "number": "5",
+          "text": "y suplica al Señor por toda su casa. Y el Señor escucha la oración de todo el que teme a Dios,"
+        },
+        {
+          "number": "6",
+          "text": "y el Señor cumple toda petición del alma que espera en él. Bendito es el Señor, que muestra misericordia a quienes lo aman con sinceridad."
         }
       ]
     },
@@ -78,7 +474,43 @@
       "verses": [
         {
           "number": "1",
-          "text": "La bella vieja doctrina: ¡Tú eres nuestro escudo!"
+          "text": "No mantengas tu morada lejos de nosotros, oh Dios; Para que no nos ataquen los que nos odian sin causa."
+        },
+        {
+          "number": "2",
+          "text": "Pues tú los has rechazado, oh Dios; No permitas que sus pies pisoteen tu santa herencia."
+        },
+        {
+          "number": "3",
+          "text": "Castíganos tú mismo según tu beneplácito; Pero no nos entregues a las naciones;"
+        },
+        {
+          "number": "4",
+          "text": "Pues, si envías pestilencia, tú mismo le das órdenes acerca de nosotros;"
+        },
+        {
+          "number": "5",
+          "text": "Pues tú eres misericordioso y no te enojarás hasta el punto de consumirnos."
+        },
+        {
+          "number": "6",
+          "text": "Mientras tu nombre habite en medio de nosotros, hallaremos misericordia; Y las naciones no prevalecerán contra nosotros."
+        },
+        {
+          "number": "7",
+          "text": "Pues tú eres nuestro escudo; Y cuando clamamos a ti, tú nos escuchas;"
+        },
+        {
+          "number": "8",
+          "text": "Pues te apiadarás de la descendencia de Israel para siempre Y no rechazarás (a ellos):"
+        },
+        {
+          "number": "9",
+          "text": "Pero nosotros (estaremos) bajo tu yugo para siempre, Y (bajo) la vara de tu disciplina."
+        },
+        {
+          "number": "10",
+          "text": "Tú nos establecerás en el tiempo en que nos ayudes, mostrando misericordia a la casa de Jacob el día en que prometiste (ayudarlos)."
         }
       ]
     },
@@ -88,7 +520,139 @@
       "verses": [
         {
           "number": "1",
-          "text": "Algunos similes notables de guerra se arrastran sobre Jerusalén. Una encuesta de los pecados que trajo todo este problema."
+          "text": "La angustia y el sonido de la guerra han llegado a mis oídos, El sonido de una trompeta que anuncia matanza y calamidad,"
+        },
+        {
+          "number": "2",
+          "text": "El sonido de una gran multitud, como el de un viento sumamente fuerte, Como una tempestad con fuego poderoso que barre el Négueb."
+        },
+        {
+          "number": "3",
+          "text": "Y dije en mi corazón: Ciertamente Dios nos juzga;"
+        },
+        {
+          "number": "4",
+          "text": "Oigo un sonido (que avanza) hacia Jerusalén, la ciudad santa. Mis lomos se quebrantaron por lo que oí,"
+        },
+        {
+          "number": "5",
+          "text": "mis rodillas vacilaron; Mi corazón tuvo miedo, mis huesos se estremecieron como el lino."
+        },
+        {
+          "number": "6",
+          "text": "Dije: Ellos establecen sus caminos con justicia."
+        },
+        {
+          "number": "7",
+          "text": "Pensé en los juicios de Dios desde la creación del cielo y de la tierra; Consideré justo a Dios en sus juicios, que existen desde antiguo."
+        },
+        {
+          "number": "8",
+          "text": "Dios expuso los pecados de ellos a plena luz del día; Toda la tierra llegó a conocer los justos juicios de Dios."
+        },
+        {
+          "number": "9",
+          "text": "En lugares secretos bajo tierra, sus iniquidades (eran cometidas) para provocar (a Dios) a ira; Sembraron confusión, hijo con madre y padre con hija;"
+        },
+        {
+          "number": "10",
+          "text": "Cometieron adulterio, cada hombre con la esposa de su prójimo. Hicieron pactos unos con otros, bajo juramento, acerca de estas cosas;"
+        },
+        {
+          "number": "11",
+          "text": "Saquearon el santuario de Dios, como si no hubiera vengador."
+        },
+        {
+          "number": "12",
+          "text": "Pisaron el altar del Señor, (viniendo directamente) de toda clase de impureza; Y con sangre menstrual profanaron los sacrificios, como (si estos fueran) carne común."
+        },
+        {
+          "number": "13",
+          "text": "No dejaron pecado alguno sin cometer, y en todos superaron a los paganos."
+        },
+        {
+          "number": "14",
+          "text": "Por eso Dios mezcló para ellos un espíritu de extravío; Y les dio a beber una copa de vino sin diluir, para que se embriagaran."
+        },
+        {
+          "number": "15",
+          "text": "Trajo al que viene del extremo de la tierra, que golpea con fuerza; Decretó la guerra contra Jerusalén y contra la tierra de ella."
+        },
+        {
+          "number": "16",
+          "text": "Los príncipes de la tierra fueron a recibirlo con alegría: le dijeron: ¡Bendito sea tu camino! Vengan, entren en paz."
+        },
+        {
+          "number": "17",
+          "text": "Allanaron los caminos escabrosos antes de su entrada; Abrieron las puertas hacia Jerusalén, coronaron sus muros."
+        },
+        {
+          "number": "18",
+          "text": "Como un padre (entra) en la casa de sus hijos, (así) él entró (en Jerusalén) en paz; Afirmó sus pies (allí) con gran seguridad."
+        },
+        {
+          "number": "19",
+          "text": "Capturó sus fortalezas y el muro de Jerusalén; Pues Dios mismo lo condujo con seguridad, mientras ellos vagaban."
+        },
+        {
+          "number": "20",
+          "text": "Destruyó a sus príncipes y a cada sabio en consejo; Derramó la sangre de los habitantes de Jerusalén como agua de impureza."
+        },
+        {
+          "number": "21",
+          "text": "Se llevó a sus hijos e hijas, a quienes habían engendrado en profanación."
+        },
+        {
+          "number": "22",
+          "text": "Actuaron según su impureza, tal como sus padres (habían hecho): Profanaron Jerusalén y las cosas que habían sido consagradas al nombre de Dios."
+        },
+        {
+          "number": "23",
+          "text": "(Pero) Dios se ha mostrado justo en sus juicios sobre las naciones de la tierra; Y los piadosos (siervos) de Dios son como corderos inocentes en medio de ellas."
+        },
+        {
+          "number": "24",
+          "text": "Digno de alabanza es el Señor, que juzga toda la tierra con su justicia."
+        },
+        {
+          "number": "25",
+          "text": "Mira, ahora, oh Dios, nos has mostrado tu juicio con tu justicia; Nuestros ojos han visto tus juicios, oh Dios."
+        },
+        {
+          "number": "26",
+          "text": "Hemos justificado tu nombre, honrado para siempre; Porque tú eres el Dios de justicia, que juzga a Israel con disciplina."
+        },
+        {
+          "number": "27",
+          "text": "Vuelve, oh Dios, tu misericordia hacia nosotros y ten compasión de nosotros;"
+        },
+        {
+          "number": "28",
+          "text": "Reúne a los dispersos de Israel con misericordia y bondad; Porque tu fidelidad está con nosotros."
+        },
+        {
+          "number": "29",
+          "text": "Y (aunque) hemos endurecido nuestra cerviz, tú nos disciplinas;"
+        },
+        {
+          "number": "30",
+          "text": "No nos ignores, oh Dios nuestro, para que las naciones no nos devoren, como si no hubiera quien nos librara."
+        },
+        {
+          "number": "31",
+          "text": "Pero tú eres nuestro Dios desde el principio, Y en ti está (puesta) nuestra esperanza, oh Señor;"
+        },
+        {
+          "number": "32",
+          "text": "Y no nos apartaremos de ti, Porque buenos son tus juicios sobre nosotros."
+        },
+        {
+          "number": "33",
+          "text": "Que tu favor pertenezca a nosotros y a nuestros hijos para siempre: Oh Señor, Salvador nuestro, nunca más seremos sacudidos."
+        },
+        {
+          "number": "34",
+          "text": "El Señor es digno de ser alabado por sus juicios con la boca de sus piadosos; Y bendito sea Israel del Señor para siempre."
         }
       ]
     },
@@ -98,7 +662,43 @@
       "verses": [
         {
           "number": "1",
-          "text": "El exilio de las tribus de Israel. Una referencia al pacto que Dios hizo con Adán. (Véase el Primer Libro de Adán y Eva, cap. III, Verso 7)."
+          "text": "Cuando Israel fue llevado cautivo a una tierra extranjera, Cuando ellos se apartaron del Señor que los redimió, Fueron expulsados de la herencia que el Señor les había dado."
+        },
+        {
+          "number": "2",
+          "text": "Entre todas las naciones (estaban) los dispersos de Israel, conforme a la palabra de Dios, Para que fueras reconocido como justo, oh Dios, en tu justicia, a causa de nuestras transgresiones: Pues eres un juez justo sobre todos los pueblos de la tierra."
+        },
+        {
+          "number": "3",
+          "text": "Pues de tu conocimiento no se oculta nadie que practica la injusticia, Y las obras justas de tus fieles (están) delante de ti, oh Señor; ¿Dónde, entonces, puede alguien esconderse de tu conocimiento, oh Dios?"
+        },
+        {
+          "number": "4",
+          "text": "Nuestras obras están sujetas a nuestra propia elección y poder Para hacer lo correcto o lo incorrecto en las obras de nuestras manos; Y en tu justicia visitas a los hijos de los hombres."
+        },
+        {
+          "number": "5",
+          "text": "El que practica la justicia acumula para sí la vida junto al Señor; Y el que practica el mal pierde su vida para la destrucción; Pues los juicios del Señor son (dados) con justicia a (cada) hombre y a (su) casa."
+        },
+        {
+          "number": "6",
+          "text": "¿A quién haces el bien, oh Dios, sino a los que invocan al Señor? Él purifica de los pecados al alma cuando los confiesa, cuando los reconoce; Pues la vergüenza está sobre nosotros y sobre nuestros rostros a causa de todas estas cosas."
+        },
+        {
+          "number": "7",
+          "text": "¿Y a quién perdona él los pecados, sino a los que han pecado? Tú bendices a los justos y no los reprendes por los pecados que han cometido; Y tu bondad está sobre los que pecan, cuando se arrepienten."
+        },
+        {
+          "number": "8",
+          "text": "Y ahora tú eres nuestro Dios, y nosotros somos el pueblo que has amado: Mira y muestra compasión, oh Dios de Israel, pues somos tuyos; Y no retires de nosotros tu misericordia, para que no nos ataquen."
+        },
+        {
+          "number": "9",
+          "text": "Pues escogiste la descendencia de Abraham antes de todas las naciones, Y pusiste tu nombre sobre nosotros, oh Señor, Y no nos rechazarás para siempre. Hiciste un pacto con nuestros padres acerca de nosotros;"
+        },
+        {
+          "number": "10",
+          "text": "Y esperamos en ti, cuando nuestra alma se vuelve (hacia ti). Que la misericordia del Señor esté sobre la casa de Israel por los siglos de los siglos."
         }
       ]
     },
@@ -108,7 +708,31 @@
       "verses": [
         {
           "number": "1",
-          "text": "Un himno glorioso. Más referencia al pacto eterno entre Dios y el Hombre."
+          "text": "Feliz es el hombre de quien el Señor se acuerda al reprenderlo, y a quien aparta del camino del mal con golpes, para que sea purificado del pecado y este no se multiplique."
+        },
+        {
+          "number": "2",
+          "text": "El que prepara su espalda para los golpes será purificado, porque el Señor es bueno con quienes soportan la disciplina."
+        },
+        {
+          "number": "3",
+          "text": "Porque él endereza los caminos de los justos y no (los) desvía mediante su disciplina. Y la misericordia del Señor (está) sobre quienes lo aman en verdad,"
+        },
+        {
+          "number": "4",
+          "text": "Y el Señor se acuerda de sus siervos con misericordia. Porque el testimonio (está) en la ley del pacto eterno, el testimonio del Señor (está) en los caminos de los hombres, en su visitación."
+        },
+        {
+          "number": "5",
+          "text": "Justo y bondadoso es nuestro Señor en sus juicios para siempre, e Israel alabará el nombre del Señor con alegría."
+        },
+        {
+          "number": "6",
+          "text": "Y los piadosos darán gracias en la asamblea del pueblo; y Dios tendrá misericordia de los pobres en la alegría de Israel;"
+        },
+        {
+          "number": "7",
+          "text": "Porque Dios es bueno y misericordioso para siempre, y las asambleas de Israel glorificarán el nombre del Señor. ¡Que la salvación del Señor esté sobre la casa de Israel para una alegría eterna!"
         }
       ]
     },
@@ -118,7 +742,39 @@
       "verses": [
         {
           "number": "1",
-          "text": "Jerusalén escucha una trompeta y se pone de puntilla para ver a sus hijos que regresan del Norte, del Este y del Oeste."
+          "text": "Toquen la trompeta en Sion para convocar a (los) santos; hagan oír en Jerusalén la voz del que trae buenas nuevas; pues Dios tuvo compasión de Israel al visitarlo."
+        },
+        {
+          "number": "2",
+          "text": "Ponte en lo alto, oh Jerusalén, y contempla a tus hijos, venidos de Oriente y Occidente, reunidos por el Señor."
+        },
+        {
+          "number": "3",
+          "text": "Del Norte vienen en la alegría de su Dios; desde las islas lejanas Dios los ha reunido."
+        },
+        {
+          "number": "4",
+          "text": "Él ha rebajado las altas montañas, convirtiéndolas en una llanura para ellos; las colinas huyeron a su entrada."
+        },
+        {
+          "number": "5",
+          "text": "Los bosques les dieron refugio mientras pasaban; Dios hizo brotar para ellos todo árbol de dulce aroma."
+        },
+        {
+          "number": "6",
+          "text": "Para que Israel pasara cuando la gloria de su Dios lo visitara."
+        },
+        {
+          "number": "7",
+          "text": "Ponte, oh Jerusalén, tus vestiduras gloriosas; prepara tu manto santo; pues Dios ha hablado cosas buenas acerca de Israel, por los siglos de los siglos."
+        },
+        {
+          "number": "8",
+          "text": "Que el Señor haga lo que ha dicho acerca de Israel y Jerusalén; que el Señor levante a Israel por su nombre glorioso."
+        },
+        {
+          "number": "9",
+          "text": "Que la misericordia del Señor esté sobre Israel por los siglos de los siglos."
         }
       ]
     },
@@ -128,7 +784,27 @@
       "verses": [
         {
           "number": "1",
-          "text": "Un llamamiento para la tranquilidad familiar y la paz y tranquilidad en casa."
+          "text": "Oh Señor, libra mi alma del hombre transgresor y perverso, de la lengua transgresora y calumniosa, que profiere mentiras y engaño."
+        },
+        {
+          "number": "2",
+          "text": "Las palabras de la lengua del hombre perverso están retorcidas de muchas maneras, como [...] un fuego que consume [...]."
+        },
+        {
+          "number": "3",
+          "text": "[...] para llenar casas con una lengua mentirosa, para derribar los árboles de la alegría [...]."
+        },
+        {
+          "number": "4",
+          "text": "Para envolver familias en guerra por medio de labios calumniosos. ¡Que Dios aleje de los inocentes los labios de los transgresores, llevándolos a la miseria, y que los huesos de los calumniadores sean esparcidos lejos de quienes temen al Señor! ¡Que la lengua calumniosa perezca en fuego ardiente, lejos de los piadosos!"
+        },
+        {
+          "number": "5",
+          "text": "Que el Señor preserve el alma serena que odia al injusto, y que el Señor afiance al hombre que busca la paz en su hogar."
+        },
+        {
+          "number": "6",
+          "text": "Que la salvación del Señor esté sobre Israel, su siervo, para siempre; que los pecadores perezcan juntos ante la presencia del Señor, pero que los piadosos del Señor hereden las promesas del Señor."
         }
       ]
     },
@@ -138,7 +814,51 @@
       "verses": [
         {
           "number": "1",
-          "text": "De Salomón. Un salmo. Confort para los justos."
+          "text": "La mano derecha del Señor me cubrió; la mano derecha del Señor nos preservó."
+        },
+        {
+          "number": "2",
+          "text": "El brazo del Señor nos salvó de la espada que atravesó la tierra, del hambre y de la muerte de los pecadores."
+        },
+        {
+          "number": "3",
+          "text": "Animales feroces se lanzaron contra ellos: con los dientes les desgarraron la carne, y con los molares les trituraron los huesos."
+        },
+        {
+          "number": "4",
+          "text": "Pero de todas estas cosas el Señor nos libró."
+        },
+        {
+          "number": "5",
+          "text": "El justo se angustió a causa de sus errores, temiendo ser llevado junto con los pecadores;"
+        },
+        {
+          "number": "6",
+          "text": "porque terrible es la ruina del pecador; pero ninguna de estas cosas alcanza al justo."
+        },
+        {
+          "number": "7",
+          "text": "Porque la disciplina del justo (por pecados cometidos en ignorancia) no es igual a la ruina de los pecadores."
+        },
+        {
+          "number": "8",
+          "text": "El justo es disciplinado en secreto, para que el pecador no se alegre a costa del justo."
+        },
+        {
+          "number": "9",
+          "text": "Porque Él corrige al justo como a un hijo amado, y su castigo es como el de un primogénito."
+        },
+        {
+          "number": "10",
+          "text": "Porque el Señor preserva a sus fieles y borra sus errores mediante su disciplina."
+        },
+        {
+          "number": "11",
+          "text": "Porque la vida del justo será para siempre; pero los pecadores serán llevados a la destrucción, y su memoria no volverá a encontrarse."
+        },
+        {
+          "number": "12",
+          "text": "Pero sobre los piadosos está la misericordia del Señor, y sobre quienes lo temen, su misericordia."
         }
       ]
     },
@@ -148,7 +868,43 @@
       "verses": [
         {
           "number": "1",
-          "text": "Los pecadores “amanezcan el breve día pasado en compañía con su pecado”. Sabiduría profunda, bellamente expresada."
+          "text": "Fiel es el Señor con quienes lo aman de verdad, con quienes soportan su disciplina."
+        },
+        {
+          "number": "2",
+          "text": "Con quienes caminan en la justicia de sus mandamientos, en la ley que él nos ordenó para que viviéramos."
+        },
+        {
+          "number": "3",
+          "text": "Los piadosos del Señor vivirán por ella para siempre; el Paraíso del Señor, los árboles de la vida, son sus piadosos."
+        },
+        {
+          "number": "4",
+          "text": "La plantación de ellos está arraigada para siempre; no serán arrancados mientras exista el cielo:"
+        },
+        {
+          "number": "5",
+          "text": "Porque Israel es la porción y la herencia de Dios."
+        },
+        {
+          "number": "6",
+          "text": "Pero no son así los pecadores y transgresores, que aman el breve día pasado en compañía de su pecado;"
+        },
+        {
+          "number": "7",
+          "text": "Su deleite está en la corrupción pasajera, y no se acuerdan de Dios."
+        },
+        {
+          "number": "8",
+          "text": "Pues los caminos de los hombres son conocidos ante él en todo momento, y él conoce los secretos del corazón antes de que ocurran."
+        },
+        {
+          "number": "9",
+          "text": "Por eso, su herencia es el Seol, las tinieblas y la destrucción, y no serán hallados el día en que los justos alcancen misericordia;"
+        },
+        {
+          "number": "10",
+          "text": "Pero los piadosos del Señor heredarán la vida con alegría."
         }
       ]
     },
@@ -158,7 +914,55 @@
       "verses": [
         {
           "number": "1",
-          "text": "El salmista reafirma la gran filosofía de la derecha y del mal."
+          "text": "Cuando estaba angustiado invoqué el nombre del Señor, esperé la ayuda del Dios de Jacob y fui salvo; porque tú, oh Dios, eres la esperanza y el refugio del pobre."
+        },
+        {
+          "number": "2",
+          "text": "Pues ¿quién, oh Dios, es fuerte sino para darte gracias en verdad? ¿Y en qué es poderoso un hombre sino en dar gracias a tu nombre?"
+        },
+        {
+          "number": "3",
+          "text": "Un salmo nuevo con canto en la alegría del corazón, el fruto de los labios con el instrumento bien afinado de la lengua. Las primicias de los labios de un corazón piadoso y justo."
+        },
+        {
+          "number": "4",
+          "text": "Quien ofrece estas cosas jamás será sacudido por el mal; la llama de fuego y la ira contra los injustos no lo tocarán,"
+        },
+        {
+          "number": "5",
+          "text": "cuando esta salga del rostro del Señor contra los pecadores, para destruir todos los bienes de los pecadores,"
+        },
+        {
+          "number": "6",
+          "text": "pues la marca de Dios está sobre los justos, para que sean salvados."
+        },
+        {
+          "number": "7",
+          "text": "El hambre, la espada y la peste (estarán) lejos de los justos, pues huirán de los piadosos como hombres perseguidos en la guerra;"
+        },
+        {
+          "number": "8",
+          "text": "pero perseguirán a los pecadores y (los) alcanzarán, y los que cometen iniquidad no escaparán del juicio de Dios;"
+        },
+        {
+          "number": "9",
+          "text": "como por enemigos experimentados (en la guerra), serán alcanzados, pues la marca de la destrucción está sobre su frente."
+        },
+        {
+          "number": "10",
+          "text": "Y la herencia de los pecadores es destrucción y tinieblas, y sus iniquidades los perseguirán hasta el Seol, en lo profundo."
+        },
+        {
+          "number": "11",
+          "text": "Su herencia no será hallada por sus hijos, pues los pecados asolarán las casas de los pecadores."
+        },
+        {
+          "number": "12",
+          "text": "Y los pecadores perecerán para siempre en el día del juicio del Señor, cuando Dios visite la tierra con su juicio."
+        },
+        {
+          "number": "13",
+          "text": "Pero los que temen al Señor hallarán misericordia en ese día y vivirán por la compasión de su Dios; pero los pecadores perecerán para siempre."
         }
       ]
     },
@@ -168,7 +972,63 @@
       "verses": [
         {
           "number": "1",
-          "text": "El salmista expresa una vez más profunda verdad: “Porque si no da fuerza, ¿quién puede soportar el castigo?”"
+          "text": "Cuando mi alma dormitaba (estando lejos) del Señor, estuve a punto de deslizarme hacia la fosa, cuando (yo estaba) lejos de Dios,"
+        },
+        {
+          "number": "2",
+          "text": "mi alma casi se había derramado hasta la muerte; (yo había estado) cerca de las puertas del Seol con el pecador,"
+        },
+        {
+          "number": "3",
+          "text": "cuando mi alma se apartó del Señor Dios de Israel, si el Señor no me hubiera ayudado con su misericordia eterna."
+        },
+        {
+          "number": "4",
+          "text": "Él me aguijoneó, como se aguijonea a un caballo, para que yo lo sirviera; mi salvador y auxiliador en todo momento me salvó."
+        },
+        {
+          "number": "5",
+          "text": "Te daré gracias, oh Dios, porque me has ayudado para (mi) salvación y no me has contado entre los pecadores para (mi) destrucción."
+        },
+        {
+          "number": "6",
+          "text": "No apartes de mí tu misericordia, oh Dios, ni tu recuerdo de mi corazón hasta que muera."
+        },
+        {
+          "number": "7",
+          "text": "Gobiérname, oh Dios, (apartándome) del pecado perverso y de toda mujer perversa que hace tropezar al ingenuo."
+        },
+        {
+          "number": "8",
+          "text": "Y no dejes que la belleza de una mujer transgresora me engañe, ni nadie que esté sujeto a pecado inútil."
+        },
+        {
+          "number": "9",
+          "text": "Establece las obras de mis manos delante de ti y preserva mis pasos en el recuerdo de ti."
+        },
+        {
+          "number": "10",
+          "text": "Protege mi lengua y mis labios con palabras de verdad; aparta de mí la ira y la cólera irracional."
+        },
+        {
+          "number": "11",
+          "text": "Aleja de mí la murmuración y la impaciencia en la aflicción; si peco, castígame para que vuelva (a ti)."
+        },
+        {
+          "number": "12",
+          "text": "Pero sostén mi alma con buena voluntad y alegría; cuando fortaleces mi alma, lo que se da (a mí) será suficiente para mí."
+        },
+        {
+          "number": "13",
+          "text": "Pues, si no das fuerza, ¿quién puede soportar el castigo junto con la pobreza?"
+        },
+        {
+          "number": "14",
+          "text": "Cuando un hombre es reprendido por medio de su corrupción, la prueba a la que lo sometes está en su carne y en la aflicción de la pobreza."
+        },
+        {
+          "number": "15",
+          "text": "Si el justo persevera en todas estas (pruebas), recibirá misericordia del Señor."
         }
       ]
     },
@@ -178,95 +1038,95 @@
       "verses": [
         {
           "number": "1",
-          "text": "Señor, tú eres nuestro Rey por los siglos de los siglos, porque en ti, oh Dios, se gloría nuestra alma."
+          "text": "Oh Señor, Tú eres nuestro Rey por los siglos de los siglos, pues en Ti, oh Dios, se gloría nuestra alma."
         },
         {
           "number": "2",
-          "text": "¿Cuánto duran los días de la vida del hombre sobre la tierra? Como son sus días, así es la esperanza puesta en él."
+          "text": "¿Cuánto duran los días de la vida del hombre sobre la tierra? Como son sus días, así es la esperanza (puesta) en él."
         },
         {
           "number": "3",
-          "text": "Pero nosotros esperamos en Dios, nuestro libertador, porque el poder de nuestro Dios permanece para siempre con misericordia, y el reino de nuestro Dios permanece para siempre sobre las naciones en juicio."
+          "text": "Pero nosotros esperamos en Dios, nuestro libertador, pues el poder de nuestro Dios permanece para siempre con misericordia, y el reino de nuestro Dios permanece para siempre sobre las naciones en juicio."
         },
         {
           "number": "4",
-          "text": "Tú, Señor, elegiste a David como rey sobre Israel y le juraste acerca de su descendencia que su reino nunca faltaría delante de ti."
+          "text": "Tú, oh Señor, escogiste a David (para ser) rey sobre Israel y le juraste acerca de su descendencia que su reino nunca faltaría delante de Ti."
         },
         {
           "number": "5",
-          "text": "Pero por nuestros pecados se levantaron pecadores contra nosotros; nos atacaron y nos expulsaron. Lo que no les habías prometido, nos lo arrebataron con violencia, y no glorificaron tu nombre honorable."
+          "text": "Pero, por nuestros pecados, unos pecadores se levantaron contra nosotros; nos atacaron y nos expulsaron; aquello que Tú no les habías prometido, lo tomaron (de nosotros) con violencia."
         },
         {
           "number": "6",
-          "text": "Establecieron una monarquía mundana en lugar de su antigua grandeza; devastaron el trono de David con arrogancia tumultuosa."
+          "text": "De ningún modo glorificaron Tu nombre honorable; establecieron una monarquía (mundana) en lugar (de aquello que era) su excelencia; devastaron el trono de David con arrogancia tumultuosa."
         },
         {
           "number": "7",
-          "text": "Pero tú, oh Dios, los derribaste y quitaste su descendencia de la tierra, levantando contra ellos a un hombre extraño a nuestra raza."
+          "text": "Pero Tú, oh Dios, los derribaste y quitaste de la tierra su descendencia, pues se levantó contra ellos un hombre ajeno a nuestra raza."
         },
         {
           "number": "8",
-          "text": "Conforme a sus pecados les pagaste, oh Dios, para que les sucediera según sus obras."
+          "text": "Conforme a sus pecados les retribuiste, oh Dios, de modo que les sucedió según sus obras."
         },
         {
           "number": "9",
-          "text": "Dios no tuvo compasión de ellos; buscó su descendencia y no dejó escapar a ninguno."
+          "text": "Dios no tuvo piedad de ellos; buscó su descendencia y no dejó libre a ninguno."
         },
         {
           "number": "10",
-          "text": "Fiel es el Señor en todos los juicios que ejecuta sobre la tierra."
+          "text": "Fiel es el Señor en todos Sus juicios que ejecuta sobre la tierra."
         },
         {
           "number": "11",
-          "text": "El impío devastó nuestra tierra hasta dejarla deshabitada; destruyeron juntos a jóvenes, ancianos y niños."
+          "text": "El inicuo devastó nuestra tierra, de modo que nadie la habitaba. Destruyeron a jóvenes y ancianos, y también a sus hijos."
         },
         {
           "number": "12",
-          "text": "En el ardor de su ira los envió hasta occidente y expuso sin piedad a los gobernantes de la tierra al escarnio."
+          "text": "En el ardor de Su ira, Él los envió hasta el occidente y (expuso) a los gobernantes de la tierra, sin perdonarlos, al escarnio."
         },
         {
           "number": "13",
-          "text": "Siendo extranjero, el enemigo actuó con soberbia, y su corazón era extraño a nuestro Dios."
+          "text": "Siendo extranjero, el enemigo actuó con orgullo, y su corazón era ajeno a nuestro Dios."
         },
         {
           "number": "14",
-          "text": "Todo cuanto hizo en Jerusalén fue como lo que hacen las naciones en sus ciudades a sus dioses."
+          "text": "Y todo [...] Jerusalén, así también las naciones [...]."
         },
         {
           "number": "15",
-          "text": "Los hijos del pacto, mezclados entre los pueblos, los superaron en maldad; no había entre ellos quien practicara misericordia y verdad en Jerusalén."
+          "text": "Y los hijos de la alianza en medio de los pueblos mezclados [...]. No había entre ellos nadie que practicara misericordia y verdad en medio de Jerusalén."
         },
         {
           "number": "16",
-          "text": "Los que amaban las asambleas de los piadosos huyeron de ellos; volaron como gorriones lejos de su nido."
+          "text": "Los que amaban las sinagogas de los piadosos huyeron de ellos, como gorriones que vuelan de su nido."
         },
         {
           "number": "17",
-          "text": "Vagaron por los desiertos para salvar sus vidas del mal, y preciosa era ante los expatriados cualquier vida que hubiese escapado de ellos."
+          "text": "Vagaron por los desiertos para que sus vidas fueran salvadas del peligro, y precioso a los ojos de quienes vivían en el extranjero era cualquiera que escapara vivo de ellos."
         },
         {
           "number": "18",
-          "text": "Por toda la tierra fueron dispersados por hombres impíos, porque el cielo retuvo la lluvia y no la dejó caer sobre la tierra."
+          "text": "Por toda la tierra fueron dispersados por hombres inicuos."
         },
         {
           "number": "19",
-          "text": "Se detuvieron las fuentes perennes que brotaban de los abismos y descendían de altas montañas, porque no había entre ellos quien practicara justicia y juicio."
+          "text": "Pues los cielos impidieron que la lluvia cayera sobre la tierra, y las fuentes fueron detenidas, las que brotaban perennemente de las profundidades y descendían de las montañas elevadas."
         },
         {
           "number": "20",
-          "text": "Desde su gobernante hasta el menor del pueblo, todos estaban en pecado: el rey en transgresión, el juez en desobediencia y el pueblo en pecado."
+          "text": "Pues no había entre ellos nadie que practicara rectitud y justicia; desde el jefe de ellos hasta el menor (de ellos), todos eran pecadores; el rey era transgresor, el juez desobediente y el pueblo pecador."
         },
         {
           "number": "21",
-          "text": "Mira, Señor, y levanta para ellos a su rey, el hijo de David, en el tiempo que tú elijas, oh Dios, para que reine sobre Israel, tu siervo."
+          "text": "Mira, oh Señor, y levanta para ellos a su rey, el hijo de David, en el tiempo en que Tú veas, oh Dios, para que reine sobre Israel, Tu siervo."
         },
         {
           "number": "22",
-          "text": "Cíñelo de fuerza para quebrantar a los gobernantes injustos y purificar Jerusalén de las naciones que la pisotean para destruirla."
+          "text": "Cíñelo de fuerza, para que despedace a gobernantes injustos y purifique a Jerusalén de las naciones que la pisotean hasta la destrucción."
         },
         {
           "number": "23",
-          "text": "Con sabiduría y justicia expulsará a los pecadores de la heredad y quebrará la soberbia del pecador como vaso de alfarero."
+          "text": "Con sabiduría y justicia, expulsará a los pecadores de la herencia; destruirá el orgullo del pecador como una vasija de alfarero."
         },
         {
           "number": "24",
@@ -274,19 +1134,19 @@
         },
         {
           "number": "25",
-          "text": "Ante su amenaza las naciones huirán de su presencia, y reprenderá a los pecadores por los pensamientos de su corazón."
+          "text": "Ante su reprensión, las naciones huirán de él, y reprenderá a los pecadores por los pensamientos de su corazón."
         },
         {
           "number": "26",
-          "text": "Reunirá un pueblo santo al que conducirá con justicia, y juzgará a las tribus del pueblo santificado por el Señor su Dios."
+          "text": "Reunirá a un pueblo santo, al que conducirá en justicia. Y juzgará a las tribus del pueblo que ha sido santificado por el Señor, su Dios."
         },
         {
           "number": "27",
-          "text": "No permitirá que la injusticia habite otra vez en medio de ellos, ni morará con ellos hombre alguno que conozca la maldad, porque sabrá que todos son hijos de su Dios."
+          "text": "No permitirá más que la injusticia habite en medio de ellos, ni morará con ellos hombre alguno que conozca la maldad, pues él los conocerá y sabrá que todos son hijos del Dios de ellos."
         },
         {
           "number": "28",
-          "text": "Los distribuirá por sus tribus sobre la tierra, y ni extranjero ni forastero volverá a habitar entre ellos."
+          "text": "Los dividirá según sus tribus sobre la tierra, y ni forastero ni extranjero volverá a residir con ellos."
         },
         {
           "number": "29",
@@ -294,71 +1154,59 @@
         },
         {
           "number": "30",
-          "text": "Tendrá a los pueblos de las naciones sirviéndole bajo su yugo; glorificará al Señor a la vista de toda la tierra y purificará Jerusalén, santificándola como al principio."
+          "text": "Hará que las naciones paganas lo sirvan bajo su yugo; glorificará al Señor en un lugar visible para toda la tierra; y purificará a Jerusalén, haciéndola santa como en tiempos antiguos."
         },
         {
           "number": "31",
-          "text": "Vendrán naciones desde los confines de la tierra para ver su gloria, trayendo como dones a los hijos de Jerusalén que habían desfallecido, y para contemplar la gloria del Señor con que Dios la glorificó."
+          "text": "Así, las naciones vendrán desde los confines de la tierra para ver su gloria, trayendo como regalos a los hijos de ella que habían desfallecido y para ver la gloria del Señor, con la cual Dios la glorificó."
         },
         {
           "number": "32",
-          "text": "Será sobre ellos un rey justo, instruido por Dios; no habrá injusticia en sus días en medio de ellos, porque todos serán santos y su rey será el ungido del Señor."
+          "text": "Él (será) un rey justo, instruido por Dios, sobre ellos, y no habrá injusticia en sus días en medio de ellos, pues todos serán santos, y el rey de ellos será el ungido del Señor."
         },
         {
           "number": "33",
-          "text": "No confiará en caballo, jinete ni arco; no multiplicará para sí oro y plata para la guerra, ni reunirá su esperanza en una multitud para el día de la batalla."
+          "text": "Pues no confiará en caballo, jinete y arco, ni multiplicará para sí oro y plata para la guerra, ni buscará confianza en una multitud para el día de la batalla."
         },
         {
           "number": "34",
-          "text": "El Señor mismo es su rey, la esperanza del poderoso cuya esperanza está en Dios; todas las naciones estarán con temor delante de él."
+          "text": "El Señor mismo es su rey, la esperanza del que es poderoso por medio de (su) esperanza en Dios. [...] Todas las naciones (estarán) con temor delante de él."
         },
         {
           "number": "35",
-          "text": "Herirá la tierra para siempre con la palabra de su boca y bendecirá al pueblo del Señor con sabiduría y alegría."
+          "text": "Pues herirá la tierra para siempre con la palabra de su boca. Bendecirá al pueblo del Señor con sabiduría y alegría."
         },
         {
           "number": "36",
-          "text": "Él mismo será puro de pecado para gobernar a un gran pueblo; reprenderá a los gobernantes y apartará a los pecadores con el poder de su palabra."
+          "text": "Y él mismo (será) puro de pecado, para gobernar a un gran pueblo. Reprenderá a gobernantes y quitará a pecadores por el poder de su palabra."
         },
         {
           "number": "37",
-          "text": "Apoyado en su Dios, no desfallecerá durante sus días, porque Dios lo hará poderoso por medio de su espíritu santo, sabio por el espíritu de entendimiento, con fuerza y justicia."
+          "text": "Y (apoyándose) en su Dios, no tropezará a lo largo de sus días; pues Dios lo hará poderoso por medio de (Su) espíritu santo y sabio por medio del espíritu de entendimiento, con fuerza y justicia."
         },
         {
           "number": "38",
-          "text": "La bendición del Señor estará con él en poder, y no desfallecerá."
+          "text": "Y la bendición del Señor (estará) con él: será fuerte y no tropezará."
         },
         {
           "number": "39",
-          "text": "Su esperanza estará en el Señor; ¿quién podrá prevalecer contra él?"
+          "text": "Su esperanza (estará) en el Señor: ¿quién, entonces, podrá prevalecer contra él?"
         },
         {
           "number": "40",
-          "text": "Será poderoso en sus obras y fuerte en el temor de Dios; pastoreará el rebaño del Señor con fidelidad y justicia, y no permitirá que ninguno desfallezca en su pastura."
+          "text": "(Él será) poderoso en sus obras y fuerte en el temor de Dios, (él estará) apacentando el rebaño del Señor con fidelidad y justicia y no permitirá que ninguno de ellos tropiece en su pastizal."
         },
         {
           "number": "41",
-          "text": "Los conducirá a todos con igualdad, y no habrá entre ellos soberbia para que ninguno sea oprimido."
+          "text": "Los conducirá a todos rectamente, y no habrá orgullo entre ellos que haga que alguno de ellos sea oprimido."
         },
         {
           "number": "42",
-          "text": "Esta será la majestad del rey de Israel, a quien Dios conoce y levantará sobre la casa de Israel para corregirla."
+          "text": "Esta (será) la majestad del rey de Israel a quien Dios conoce; Él lo levantará sobre la casa de Israel para corregirlo."
         },
         {
           "number": "43",
-          "text": "Sus palabras serán más refinadas que el oro más precioso; en las asambleas juzgará a los pueblos, a las tribus santificadas. Sus palabras serán como palabras de santos en medio de pueblos santificados."
-        },
-        {
-          "number": "44",
-          "text": "Bienaventurados los que vivan en aquellos días y vean la dicha de Israel que Dios realizará al reunir a las tribus."
-        },
-        {
-          "number": "45",
-          "text": "¡Que Dios apresure su misericordia sobre Israel y nos libre de la impureza de enemigos profanos!"
-        },
-        {
-          "number": "46",
-          "text": "El Señor mismo es nuestro Rey por los siglos de los siglos."
+          "text": "Sus palabras (serán) más refinadas que el oro precioso, el más excelente; en las asambleas, juzgará a los pueblos, las tribus de los santificados. Sus palabras (serán) como las palabras de los santos en medio de pueblos santificados. Benditos sean los que estén en aquellos días, pues verán la buena fortuna de Israel que Dios realizará en la reunión de las tribus. ¡Que el Señor apresure Su misericordia sobre Israel! ¡Que Él nos libre de la impureza de enemigos profanos! El Señor mismo es nuestro rey por los siglos de los siglos."
         }
       ]
     },
@@ -368,7 +1216,51 @@
       "verses": [
         {
           "number": "1",
-          "text": "Con este salmo terminan las Canciones de Salomón."
+          "text": "Señor, tu misericordia está sobre las obras de tus manos para siempre; tu bondad está sobre Israel con un don abundante."
+        },
+        {
+          "number": "2",
+          "text": "Tus ojos los miran, para que ninguno de ellos pase necesidad; tus oídos escuchan la oración esperanzada del pobre."
+        },
+        {
+          "number": "3",
+          "text": "Tus juicios (son ejecutados) sobre toda la tierra con misericordia; y tu amor (es) hacia la descendencia de Abraham, los hijos de Israel."
+        },
+        {
+          "number": "4",
+          "text": "Tu disciplina está sobre nosotros como (sobre) un hijo primogénito y unigénito, para hacer volver al alma obediente de la insensatez (que se obra) en la ignorancia."
+        },
+        {
+          "number": "5",
+          "text": "Que Dios purifique a Israel para el día de la misericordia y la bendición, para el día de la elección, cuando haga volver a su ungido."
+        },
+        {
+          "number": "6",
+          "text": "Benditos serán los que estén en aquellos días, pues verán la bondad del Señor que él realizará para la generación venidera,"
+        },
+        {
+          "number": "7",
+          "text": "Bajo la vara disciplinaria del ungido del Señor, en el temor de su Dios, en el espíritu de sabiduría, justicia y fuerza;"
+        },
+        {
+          "number": "8",
+          "text": "Para que dirija a (cada) hombre en las obras de justicia mediante el temor de Dios, para que los establezca a todos delante del Señor,"
+        },
+        {
+          "number": "9",
+          "text": "Una generación buena (que vive) en el temor de Dios en los días de misericordia. Selah."
+        },
+        {
+          "number": "10",
+          "text": "Grande y glorioso es nuestro Dios, que habita en lo más alto. (Él es) quien estableció en (sus) cursos las luces (del cielo) para determinar las estaciones de año en año, y no se han apartado del camino que él les señaló."
+        },
+        {
+          "number": "11",
+          "text": "En el temor de Dios (siguen) su camino todos los días, desde el día en que Dios las creó y para siempre."
+        },
+        {
+          "number": "12",
+          "text": "Y no han errado desde el día en que él las creó. Desde las generaciones antiguas no se han apartado de su camino, a menos que Dios les ordenara (hacerlo) por mandato de sus siervos."
         }
       ]
     }
@@ -377,5 +1269,6 @@
   "translationProgress": {
     "completedThroughChapter": 18,
     "totalChapters": 18
-  }
+  },
+  "translationSourceUrl": "https://www.bibliacomapocrifos.com/es/apocrifos/salmos-de-salomon/"
 }
