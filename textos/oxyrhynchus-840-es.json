@@ -1,0 +1,59 @@
+{
+  "id": "oxyrhynchus-840-es",
+  "title": "Evangelio de Oxirrinco 840",
+  "language": "es",
+  "sourceLanguage": "Griego (traducción de trabajo desde H. B. Swete, inglés)",
+  "translator": "Traducción de trabajo al español basada en H. B. Swete (1908)",
+  "publication": "Papiro Oxirrinco 840, un folio griego conservado de un evangelio desconocido",
+  "license": "Texto base: traducción histórica publicada en 1908, de dominio público; versión española de trabajo.",
+  "sourceUrl": "https://doi.org/10.1515/9783112515389",
+  "externalTextUrl": "https://www.earlychristianwritings.com/text/poxy840.html",
+  "externalTextKind": "full",
+  "localTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Papyrus Oxyrhynchus 840 · transcripción y traducción",
+  "externalTextNote": "El papiro conserva solo una hoja; las lagunas se marcan con puntos suspensivos y corchetes.",
+  "notes": "Traducción de trabajo del texto reconstruido publicado por H. B. Swete en 1908. Se conserva una hoja con pasajes de advertencia y una disputa sobre la pureza ritual en el templo; no es un evangelio completo. La datación de origen propuesta para la obra suele situarse en el siglo II, aunque el manuscrito conservado es posterior.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Advertencia y entrada al templo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "[…] antes de obrar mal, lo calcula todo con astucia. Cuidaos de no sufrir vosotros también lo mismo que ellos: los malhechores no reciben su castigo solo entre los vivos, sino que además les esperan pena y mucho tormento."
+        },
+        {
+          "number": "2",
+          "text": "Y, llevándolos consigo, los condujo al lugar mismo de purificación y caminaba por el templo."
+        },
+        {
+          "number": "3",
+          "text": "Un fariseo, un sumo sacerdote llamado Leví, se encontró con ellos y dijo al Salvador: «¿Quién te dio permiso para andar por este lugar de purificación y contemplar estos vasos sagrados, si tú no te has lavado ni tus discípulos se han lavado los pies? Has profanado este templo: es un lugar puro, y nadie puede andar aquí sin haberse lavado y cambiado de ropa; ni siquiera entonces se atreve a mirar estos vasos sagrados»."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "La pureza verdadera",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Salvador se detuvo junto a sus discípulos y le respondió: «Ya que también estás aquí en el templo, ¿estás limpio?»"
+        },
+        {
+          "number": "2",
+          "text": "Él contestó: «Estoy limpio. Me lavé en la piscina de David: bajé por una escalera y subí por otra. Me puse ropa blanca y limpia; después vine a mirar estos vasos sagrados»"
+        },
+        {
+          "number": "3",
+          "text": "El Salvador le respondió: «¡Ay de vosotros, ciegos que no veis! Te lavaste en estas aguas corrientes donde arrojan perros y cerdos noche y día. Al lavarte, frotaste la piel exterior, que también las prostitutas y las flautistas perfuman, lavan, frotan y adornan para despertar el deseo de los hombres; pero por dentro están llenas de escorpiones y de toda maldad."
+        },
+        {
+          "number": "4",
+          "text": "»En cambio, yo y mis discípulos —de quienes dices que no se han lavado— nos hemos sumergido en las aguas de la vida eterna que vienen de […] ¡Pero ay de aquellos […]!»"
+        }
+      ]
+    }
+  ]
+}

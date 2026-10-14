@@ -2,25 +2,96 @@
   "id": "acts-john-es",
   "title": "Hechos de Juan",
   "language": "es",
-  "sourceLanguage": "Griego",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "sourceLanguage": "Griego; algunos episodios sobreviven solo en versiones latinas",
+  "translator": "Resumen ampliado en español basado en la edición de M. R. James (1924)",
+  "publication": "Guía narrativa; no es una traducción íntegra",
   "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
   "sourceUrl": "https://www.earlychristianwritings.com/actsjohn.html",
   "externalTextUrl": "https://www.earlychristianwritings.com/text/actsjohn.html",
   "externalTextKind": "full",
   "externalTextLanguage": "inglés",
-  "externalTextLabel": "Hechos de Juan · traducción de M. R. James",
-  "externalTextNote": "Texto completo en inglés en Early Christian Writings; la obra antigua presenta variantes y lagunas según los manuscritos.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "externalTextLabel": "The Acts of John · traducción de M. R. James (1924)",
+  "externalTextNote": "Texto extenso en inglés. La obra se conserva de forma incompleta y compuesta: la edición reúne pasajes griegos y episodios conocidos solo por versiones latinas.",
+  "notes": "Resumen orientativo de los episodios conservados, no reconstrucción de una narración original continua. El comienzo de la obra se ha perdido; el texto mezcla secciones griegas con episodios transmitidos solo en latín. Los relatos de la persecución de Domiciano y de Patmos que algunas tradiciones agregan son posteriores y no deben confundirse con el núcleo aquí resumido. La cristología visionaria del escrito es característica de esta obra y no representa por sí sola una doctrina cristiana universal.",
   "chapters": [
     {
       "number": 1,
-      "title": "Resumen",
+      "title": "Juan llega a Éfeso: Cleopatra y Licomedes",
       "verses": [
         {
           "number": "1",
-          "text": "Relatos de viajes, milagros y discursos del apóstol Juan, con episodios de conversión, himnos y una cristología diversa."
+          "text": "El relato conservado presenta a Juan llegando a Éfeso y encontrándose con Licomedes, un funcionario cuya esposa Cleopatra ha muerto. Juan ora y ella vuelve a la vida; después, ambos esposos reciben enseñanza y se incorporan a la comunidad cristiana. Licomedes encarga un retrato de Juan, pero el apóstol lo reprende por intentar representar su aspecto físico. Le enseña que la verdadera imagen que debe pintar es interior: abandonar la ira, la avaricia, el temor y los deseos desordenados, y cultivar virtudes. El episodio convierte un milagro de resurrección en una lección sobre la transformación moral."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "El templo de Ártemis",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En Éfeso, Juan sana a mujeres ancianas que sufren en el teatro y luego se enfrenta a quienes veneran a Ártemis. Desafía al sacerdote y a la multitud a comprobar a quién pertenece el poder verdadero. Tras su oración, el altar y la imagen del templo se derrumban; el sacerdote muere y muchos habitantes quedan conmocionados. Juan ora también por él y lo devuelve a la vida. La escena culmina con conversiones y bautismos. El texto presenta el derrumbe como una demostración narrativa del poder del Dios cristiano frente al culto cívico efesio."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Un padre asesinado y la conversión de su hijo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Juan encuentra a un joven angustiado que, dominado por el deseo y los celos, ha matado a su propio padre y teme seguir pecando. El apóstol devuelve la vida al padre y confronta al hijo con la gravedad de sus actos. El joven se hiere intentando arrancar de sí la causa de su pasión; Juan le explica que la disciplina no consiste en mutilar el cuerpo, sino en corregir las inclinaciones y cambiar de conducta. Padre e hijo reciben una oportunidad de reconciliación. El episodio combina milagro, exhortación contra la violencia y llamado al arrepentimiento."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Las chinches obedecen a Juan",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Durante un viaje, Juan busca descansar en una posada infestada de chinches. Para no ser molestado, les ordena que salgan y esperen fuera de la habitación. Al regresar, las encuentra reunidas junto a la puerta y les permite volver a su sitio. Los compañeros que presencian la escena se sorprenden, y el relato la cuenta con un tono ligero, como una anécdota sobre la autoridad de Juan incluso frente a criaturas diminutas. El episodio breve subraya la serenidad del apóstol y ofrece un contraste humorístico con los milagros dramáticos que rodean su misión."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Drusiana, Calímaco y la tumba",
+      "verses": [
+        {
+          "number": "1",
+          "text": "De regreso en Éfeso, Juan encuentra a Drusiana, una creyente casada que ha rechazado a Calímaco, quien la desea. Afligida por la persecución, Drusiana muere. Calímaco, junto con Fortunato, entra en su sepulcro con intención de profanar su cuerpo; una serpiente ataca a Fortunato y lo deja muerto. Juan llega a la tumba y, mediante su oración, Drusiana y Calímaco vuelven a la vida. Fortunato, en cambio, rechaza la ayuda y muere. El episodio enfrenta deseo coercitivo, profanación, juicio y misericordia, aunque sus detalles pertenecen a una narración antigua de carácter legendario."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "El himno y la visión de Jesús",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Antes de su arresto, Juan y sus compañeros forman un círculo y cantan un himno mientras danzan. La escena incluye respuestas breves y una interpretación simbólica de la danza. Después Juan relata visiones en las que Jesús se manifiesta de maneras distintas: a veces parece sólido, otras incorpóreo; en ocasiones deja huellas y en otras no. También cuenta una visión de una cruz luminosa, acompañada por una voz que distingue el misterio espiritual de la cruz del instrumento material de ejecución. Esta presentación refleja una cristología particular del escrito, que interpreta el sufrimiento de Jesús de modo distinto al de los relatos canónicos."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Episodios preservados en la tradición latina",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La compilación de M. R. James incluye además episodios transmitidos en latín que no forman parte de una secuencia griega continua. En uno, Cratón desafía a Juan a demostrar su fe restaurando unas piedras preciosas que habían sido destrozadas; el apóstol las recompone y el episodio conduce a nuevas conversiones. En otro, Aristodemo propone una prueba con veneno: dos condenados lo beben y mueren, pero Juan sobrevive y los devuelve a la vida. Estas historias amplían la memoria legendaria de los milagros del apóstol, pero conviene identificarlas como material de transmisión latina y no mezclarlas sin aviso con los pasajes griegos."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "La muerte de Juan",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Al final de la narración, Juan se despide de sus compañeros, ora y desciende a una fosa que él mismo ha dispuesto. Allí encomienda su espíritu a Dios y muere, según la forma del relato. Las versiones no coinciden en todos los detalles: algunas cuentan que su cuerpo desapareció y que de la tumba surgía un polvo o maná; otras transmiten variantes sobre su sepultura. La conclusión presenta a Juan como alguien cuya partida no se describe mediante un martirio violento, sino como una muerte serena rodeada de señales extraordinarias. Las historias populares de su arresto por Domiciano y su estancia en Patmos corresponden a tradiciones distintas y posteriores."
         }
       ]
     }

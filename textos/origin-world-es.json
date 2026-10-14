@@ -1,31 +1,159 @@
 {
-  "id":"origin-world-es",
-  "title":"Sobre el origen del mundo",
-  "language":"es",
-  "sourceLanguage":"Copto (Nag Hammadi II, 5)",
-  "translator":"Versión española propia de trabajo, basada en la traducción pública de S. Zinner",
-  "publication":"Edición de trabajo · adaptación completa por secciones",
-  "license":"Texto antiguo en dominio público; esta redacción española es una adaptación propia",
-  "sourceUrl":"https://www.gnosis.org/naghamm/origin.html",
-  "externalTextUrl":"https://www.luminescence-llc.net/on-the-origin-of-the-world",
-  "externalTextKind":"full",
-  "externalTextLanguage":"inglés",
-  "externalTextLabel":"On the Origin of the World · texto completo de referencia",
-  "notes":"Adaptación española de trabajo de la cosmogonía conservada en Nag Hammadi; no sustituye una edición crítica del copto.",
-  "chapters":[
-    {"number":1,"title":"La ignorancia de los gobernantes","verses":[{"number":"1","text":"Los gobernantes del mundo visible nacen de la ignorancia. No conocen la plenitud superior y creen que su dominio sobre la materia es el origen de todas las cosas."}]},
-    {"number":2,"title":"La sombra y el caos","verses":[{"number":"1","text":"La oscuridad se extiende como una sombra sobre el caos. De ella surgen poderes que imitan de manera imperfecta las realidades del mundo superior."}]},
-    {"number":3,"title":"Pistis Sophia","verses":[{"number":"1","text":"Pistis Sophia contempla la luz y actúa conforme a su deseo. Su movimiento produce una figura inferior, y de esa perturbación aparece el gobernante que se atribuye una autoridad absoluta."}]},
-    {"number":4,"title":"Yaldabaot y sus nombres","verses":[{"number":"1","text":"El jefe de los poderes recibe nombres como Yaldabaot, Saklas y Samael. Su ceguera le impide reconocer a la Sabiduría que lo precede, por eso declara que no existe otro dios."}]},
-    {"number":5,"title":"La formación de los cielos","verses":[{"number":"1","text":"Los arcontes organizan los cielos inferiores, fijan sus órbitas y establecen señales para los tiempos. Su orden copia el modelo superior, pero permanece sometido al cambio y a la corrupción."}]},
-    {"number":6,"title":"La humanidad terrestre","verses":[{"number":"1","text":"Los poderes forman al ser humano con materia terrestre. Sin embargo, una fuerza luminosa entra en la creación y hace que el humano posea una capacidad que los gobernantes no pueden producir por sí mismos."}]},
-    {"number":7,"title":"Adán y Eva","verses":[{"number":"1","text":"Adán recibe vida y conciencia; Eva aparece como la inteligencia viviente que despierta en él. Los gobernantes intentan mantenerlos sujetos a su mundo mediante prohibiciones y engaños."}]},
-    {"number":8,"title":"La serpiente y el despertar","verses":[{"number":"1","text":"La serpiente comunica a Eva que el conocimiento abre los ojos. La adquisición de discernimiento muestra que los gobernantes han ocultado la verdad para conservar su dominio."}]},
-    {"number":9,"title":"El conflicto de las generaciones","verses":[{"number":"1","text":"La violencia entra en la historia humana y los descendientes de Adán se separan entre quienes siguen la ignorancia y quienes conservan la semilla de la luz. El relato relee Caín, Abel y Set desde esa oposición."}]},
-    {"number":10,"title":"El diluvio y la destrucción","verses":[{"number":"1","text":"Los poderes intentan borrar la vida que escapa a su control. El diluvio se presenta como parte de una serie de amenazas contra la humanidad, mientras la Sabiduría preserva una semilla para el futuro."}]},
-    {"number":11,"title":"El sol, la luna y las estrellas","verses":[{"number":"1","text":"La obra explica el orden de los astros y sus ciclos como una imitación de las realidades celestiales. Los gobernantes administran los tiempos, pero no poseen la luz de la plenitud."}]},
-    {"number":12,"title":"La caída de los poderes","verses":[{"number":"1","text":"Los arcontes pierden autoridad cuando la humanidad recibe conocimiento. Sus obras son reveladas como imitaciones y su reino queda condenado a desaparecer con el mundo corruptible."}]},
-    {"number":13,"title":"La salvación de la semilla","verses":[{"number":"1","text":"La semilla espiritual reconoce su procedencia y abandona la ignorancia. La liberación consiste en recordar la luz, comprender el origen del mundo y no confundir al creador inferior con el Padre verdadero."}]},
-    {"number":14,"title":"El destino final del mundo","verses":[{"number":"1","text":"El mundo visible llega a su término y los poderes son juzgados. La realidad superior permanece, mientras quienes recibieron conocimiento retornan a la luz de la que proceden."}]}
+  "id": "origin-world-es",
+  "title": "Sobre el origen del mundo",
+  "language": "es",
+  "sourceLanguage": "Copto (Nag Hammadi II, 5; traducción de un original griego)",
+  "translator": "Resumen ampliado en español basado en las traducciones de H.-G. Bethge y Bentley Layton",
+  "publication": "Guía narrativa; no es una traducción íntegra",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://www.earlychristianwritings.com/origin.html",
+  "externalTextUrl": "https://www.earlychristianwritings.com/text/originworld.html",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "On the Origin of the World · traducción de H.-G. Bethge y Bentley Layton",
+  "externalTextNote": "Texto completo en inglés del tratado de Nag Hammadi Codex II, tratado 5. El mismo escrito también cuenta con un testimonio fragmentario en Codex XIII; el resumen español de esta ficha no es una traducción íntegra.",
+  "notes": "El título Sobre el origen del mundo es editorial: el tratado se conserva sin título propio en copto, principalmente en Nag Hammadi Codex II, páginas 97–127, y en un fragmento breve de Codex XIII. Es una cosmogonía gnóstica extensa que combina especulación sobre el caos, reinterpretaciones de Génesis, figuras de la tradición judía, cristianismo y motivos helenísticos. Comparte nombres y escenas con Hipóstasis de los Arcontes, pero no es el mismo relato; aquí aparecen, entre otros episodios, Eros y Psique, el Fénix, la clasificación de las generaciones y un desenlace cósmico. Las identificaciones de algunos personajes y pasajes varían entre traducciones.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "El caos no es el principio absoluto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El narrador discute con quienes afirman que antes del caos no existía nada. Sostiene que el caos no es el primer principio: proviene de una sombra, y la sombra es posterior a una realidad anterior. Así, el tratado empieza como una explicación del origen de la materia y no como una repetición directa de Génesis. Propone un universo escalonado, con una región luminosa e incorruptible y, debajo, una zona de sombra, agua y carencia. El mundo material tendrá origen y término; no es la totalidad de lo real."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Pistis, Sophia y el nacimiento de la sombra",
+      "verses": [
+        {
+          "number": "1",
+          "text": "De la realidad inmortal procede una imagen vinculada con Pistis (Fe), llamada Sophia (Sabiduría). Su voluntad establece una inmensa región que funciona como velo entre lo de arriba y lo que aparecerá después. Fuera de la luz surge la sombra; esta se vuelve caos y materia en el abismo. La narración describe el proceso con imágenes de gestación y nacimiento, y personifica la envidia y la carencia como fuerzas que emergen en esa región. No presenta la materia como algo eterno: insiste en que es secundaria y procede de una ruptura o deficiencia."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Aparece Yaldabaot",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Pistis contempla el caos y sopla sobre una figura sin espíritu que se agita en las aguas. Aparece un gobernante de aspecto leonino, andrógino y poderoso, ignorante de su propio origen. Pistis lo llama Yaldabaot; el nombre se relaciona en el relato con una frase que ella le dirige, aunque las explicaciones varían según la traducción. Al mirar solo las aguas y la oscuridad, el gobernante cree ser el único existente. Desde esa ignorancia separa las aguas, establece lo seco y fabrica un cielo y una tierra inferiores. El tratado contrapone su arrogancia con la realidad luminosa que desconoce."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Los siete cielos del caos",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Yaldabaot engendra hijos y organiza siete poderes andróginos asociados con los siete cielos del caos. El texto conserva listas de nombres masculinos y femeninos, entre ellos Yao, Sabaot, Adonaios, Elaios, Oraios y Astafaios. El gobernante construye para sus descendientes cielos con tronos, templos, moradas y ejércitos de seres celestes. Este orden imita las realidades superiores, pero sigue siendo limitado y dependiente. Los nombres y las listas pertenecen a la cosmología propia del tratado; no son un catálogo bíblico de ángeles ni deben equipararse automáticamente con los Elohim de otros pasajes."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Samael se jacta y Sabaot se arrepiente",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cuando su dominio queda organizado, Yaldabaot afirma que no necesita a nadie y que no existe otro dios fuera de él. Pistis lo denuncia como Samael, «dios ciego», y anuncia que un Hombre inmortal de luz lo vencerá y que la deficiencia acabará por desaparecer. Sabaot, hijo del gobernante, escucha la voz, se vuelve hacia Pistis y la alaba. Ella lo ilumina y lo eleva por encima de los poderes del caos; recibe un reino y a Zoe (Vida) como instructora. El episodio recuerda motivos de Hipóstasis de los Arcontes, pero aquí se inserta en una cosmogonía más amplia y con detalles propios."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "El Hombre de Luz y el origen de Eros",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Una figura luminosa aparece ante los poderes y deja una huella de luz sobre la tierra. El tratado la llama Adamás u Hombre de Luz y asocia su aparición con la purificación de la tierra y las aguas por la sangre de una virgen. De esa primera sangre nace Eros, una figura andrógina cuya presencia despierta deseo entre los seres del caos. El texto enlaza el amor, la sexualidad, la generación y la mortalidad en una secuencia mítica. Estos pasajes no son una historia literal de la creación según Génesis: son especulaciones propias de la obra sobre cómo surgieron las fuerzas que mueven el mundo."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "El Paraíso, sus árboles y Psique",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El tratado describe un Paraíso situado en una región celeste y enumera sus árboles. El árbol de la Vida ofrece inmortalidad a las almas puras; el árbol del Conocimiento despierta a quienes están adormecidos por los demonios y los capacita para juzgar a las autoridades. También aparecen una vid y otros árboles, cuyas semillas se asocian con los poderes. En otro episodio, Psique ama a Eros y su sangre hace brotar la primera rosa; luego nacen flores y plantas. El relato combina vocabulario de Génesis con imágenes helenísticas y alegorías sobre deseo, conocimiento y vida."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Astros, Adamas y los mundos intermedios",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Sophia dispone los grandes luminares y las estrellas para marcar días, noches, estaciones y años. El Hombre de Luz, impedido de regresar plenamente a su región por la pobreza mezclada con su luz, establece a su vez un dominio extenso con seis ámbitos. El tratado imagina así varios niveles entre el octavo cielo y el caos: unos pertenecen a la luz y otros a la carencia. No ofrece una astronomía científica, sino un mapa simbólico que explica por qué el cosmos visible refleja realidades superiores sin confundirse con ellas."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Eve de Vida instruye a Adán",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Temiendo al Hombre de Luz, los gobernantes deciden crear un ser terrestre que lo imite y les sirva. Sophia Zoe se anticipa: de una gota de luz produce un instructor andrógino, llamado por los griegos Hermafrodita y por los hebreos Eve de Vida. Los arcontes lo apodan «Bestia», pero el propio texto explica que ese nombre significa instructor y destaca su sabiduría. Después, los gobernantes modelan a Adán con materia y lo dejan inerte. Zoe le insufla vida y envía a su hija Eve para que lo despierte. Esta versión presenta varias figuras y niveles de Adán y Eva, no una pareja simple y uniforme."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "La prohibición y el conocimiento",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los arcontes colocan a Adán y a Eve en el Paraíso y les prohíben comer del árbol del conocimiento, amenazándolos con la muerte. El instructor, llamado Bestia, explica a Eve que el fruto abrirá su entendimiento y que la prohibición nace de los celos de los gobernantes. Eve come y comparte el fruto con Adán; la luz del conocimiento los hace conscientes de su desnudez espiritual y les permite reconocer la naturaleza limitada de quienes los formaron. En esta relectura gnóstica, comer del árbol es un despertar, a diferencia de la interpretación cristiana tradicional que suele verlo como desobediencia y caída."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Expulsión y maldición de los gobernantes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los gobernantes interrogan a la pareja, maldicen a Eve, a su descendencia, a Adán, a la tierra y a sus frutos. Aun así, no pueden someter al instructor, cuya presencia los confunde. Cuando Adán demuestra discernimiento al nombrar a los animales, los arcontes temen que también alcance el árbol de la Vida y se vuelva inmortal; lo expulsan y protegen el árbol con querubines y una espada de fuego. El tratado incluso explica la longevidad de Adán mediante una cuenta mítica de mil años reducidos por los poderes. La escena transforma la expulsión en un intento de limitar el acceso a la inmortalidad."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "El Fénix y las tres clases humanas",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Indignada por la maldición contra sus seres afines, Sophia Zoe expulsa a los gobernantes de sus cielos y los arroja a la tierra como espíritus malignos. Envía un Fénix que muere y renace como señal de juicio contra ellos. El tratado compara tres tipos de seres humanos —espirituales, psíquicos y terrenos— con tres Fénix y también con tres bautismos: espiritual, por fuego y por agua. Añade símbolos vinculados con Egipto, como animales acuáticos y dos toros asociados al sol y la luna. Son correspondencias cosmológicas y rituales que el texto presenta como claves de su visión del mundo."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Los poderes enseñan error y el Salvador revela",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Tras caer a la tierra, los gobernantes producen huestes de demonios. El texto los acusa de enseñar magia, adivinación, idolatría, sacrificios y culto a los espíritus, mientras el destino o Fate participa en el orden del mundo. La humanidad queda atrapada en ignorancia hasta la aparición del Hombre verdadero. Entonces el Salvador y el Logos revelan lo oculto y despiertan a seres espirituales que viven dentro de formas modeladas por los poderes. El tratado habla de cuatro generaciones o razas, una de ellas «sin rey», perfecta y destinada a entrar en el lugar santo del Padre; la terminología y el número se refieren a este sistema particular, no a una clasificación universal."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "El fin del caos y el retorno de la luz",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Antes del final, los cielos tiemblan, los astros pierden sus recorridos y los poderes del caos se enfrentan entre sí. Sophia los arroja al abismo; sus dominios caen y el jefe termina destruyéndose a sí mismo. La oscuridad desaparece como si nunca hubiera existido y la luz regresa a su raíz, mientras la gloria del No Engendrado llena los ámbitos eternos. Los seres no comparten todos el mismo destino: cada uno recibe una morada de acuerdo con su naturaleza, sus obras y su conocimiento; no todos entran en el reino «sin rey». Así concluye la extensa explicación mítica sobre el origen, la administración y el destino del mundo."
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "id": "egerton-gospel-es",
+  "title": "Evangelio desconocido (Papiro Egerton 2)",
+  "language": "es",
+  "sourceLanguage": "Griego (traducción de trabajo desde el inglés)",
+  "translator": "Traducción de trabajo al español basada en Mark M. Mattison",
+  "publication": "Papiro Egerton 2 y Papiro de Colonia 255, fragmento 1",
+  "license": "La traducción inglesa de Mark M. Mattison fue dedicada al dominio público; versión española de trabajo.",
+  "sourceUrl": "https://thegnosticgospels.org/gospels/egerton-papyrus-2/",
+  "externalTextUrl": "https://thegnosticgospels.org/gospels/egerton-papyrus-2/",
+  "externalTextKind": "full",
+  "localTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "The Unknown Gospel · Papiro Egerton 2",
+  "externalTextNote": "Se conserva solo en fragmentos; esta lectura reúne todo el texto transmitido y señala las lagunas del papiro.",
+  "notes": "Evangelio anónimo conocido por fragmentos griegos de Egerton 2 y un fragmento de Colonia 255. La disposición de los restos se presenta por cara del papiro; los corchetes indican reconstrucciones o pérdidas. No se conserva la obra completa.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fragmento 1, reverso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "[…] [Y Jesús dijo] a los maestros de la ley: «[Castigad] a todo malhechor y transgresor, y no a mí; […] ¿cómo lo hace?»"
+        },
+        {
+          "number": "2",
+          "text": "Luego se volvió hacia los gobernantes del pueblo y dijo: «Examinad las Escrituras; [creéis] tener vida en ellas. Ellas dan testimonio de mí. No [penséis] que he venido a acusaros ante mi Padre. [Quien os acusa] es Moisés, en quien habéis puesto vuestra esperanza»."
+        },
+        {
+          "number": "3",
+          "text": "Ellos dijeron: «Sabemos [bien] que Dios [habló] a Moisés, pero de ti no sabemos [de dónde vienes]». Jesús respondió: «Ahora quedáis acusados por no creer a quienes [fueron aprobados] por él; porque si [creyerais a Moisés], me creeríais a mí, pues él escribió acerca de mí para vuestros antepasados […]»."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Fragmento 1, anverso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "[…] aconsejaron a la multitud [que juntara] piedras para apedrearlo. Los gobernantes intentaron echarle mano para arrestarlo y [entregarlo] a la multitud, pero no pudieron, porque aún no había llegado la hora de su entrega. El Señor salió de en medio de ellos y se alejó."
+        },
+        {
+          "number": "2",
+          "text": "Un leproso se acercó y le dijo: «Maestro Jesús, mientras viajaba con otros leprosos y comía con ellos en la posada, también yo contraje lepra. Si quieres, puedes limpiarme». El Señor le respondió: «Quiero; queda limpio». Y enseguida desapareció la lepra. [El Señor le dijo:] «Ve [a presentarte] a los [sacerdotes] […]»"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Fragmento 2, anverso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "[…] se acercaron para ponerlo a prueba y le dijeron: «Maestro Jesús, sabemos que has venido de Dios, porque tus obras dan testimonio de ti por encima de todos los profetas. Dinos, pues: ¿es lícito [entregar] a los reyes lo que les corresponde? ¿Se lo daremos o no?»"
+        },
+        {
+          "number": "2",
+          "text": "Jesús, que conocía sus pensamientos, los reprendió y les preguntó: «¿Por qué me llamáis Maestro con la boca, pero no escucháis lo que digo? Isaías profetizó bien acerca de vosotros: “Este pueblo me honra con los labios, pero su corazón está lejos de mí. En vano me rinden culto, [enseñando como doctrinas] preceptos [humanos] […]”»."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Fragmento 2, reverso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "[…] encerrado […] en un lugar […] su peso sin medir […]. Mientras se desconcertaban por su pregunta extraña, Jesús caminó hasta detenerse a la orilla del río Jordán. Extendió la mano derecha […] y esparció [algo] sobre […] Entonces […] el agua rociada […] ante ellos produjo fruto […]»."
+        }
+      ]
+    }
+  ]
+}

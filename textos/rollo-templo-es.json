@@ -1,676 +1,88 @@
 {
   "id": "rollo-templo-es",
-  "title": "Rollo del Templo (11QT) — ficha de trabajo",
+  "title": "Rollo del Templo (11Q19 / 11QT)",
   "language": "es",
   "sourceLanguage": "Hebreo",
-  "translator": "Ficha española editorial; no es una traducción del manuscrito",
-  "publication": "Rollo del Templo, 11Q19 / 11QTempleᵃ",
-  "license": "Ficha propia; no redistribuye traducciones modernas",
-  "sourceUrl": "https://tianmu.org/good-work-library/judean/dead-sea-scrolls/rewritten-scripture/the-temple-scroll",
+  "translator": "Resumen ampliado en español; no es una traducción del manuscrito",
+  "publication": "Guía temática de 11Q19 / 11QTempleᵃ",
+  "license": "Resumen original; no reproduce traducciones editoriales protegidas.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://isac.uchicago.edu/publications/critical-study-temple-scroll-qumran-cave-11",
   "externalTextUrl": "https://qumran.dev/non_biblical/11Q19/",
   "externalTextKind": "full",
   "externalTextLanguage": "hebreo",
-  "externalTextLabel": "Rollo del Templo 11Q19 · lector digital del texto hebreo",
-  "externalTextNote": "Consulta digital de la transcripción hebrea del manuscrito conservado; no es una traducción al español y el rollo tiene lagunas.",
-  "translationNote": "El manuscrito conserva 66 columnas con lagunas. Las traducciones modernas consultadas no tienen una licencia de redistribución clara; por eso se incluye sólo esta ficha y no se copia su texto.",
+  "externalTextLabel": "Rollo del Templo 11Q19 · transcripción hebrea",
+  "externalTextNote": "Lector digital de la transcripción hebrea. No es una traducción al español; las lagunas y reconstrucciones editoriales del manuscrito deben tenerse en cuenta.",
+  "translationNote": "El manuscrito conserva unas 66–67 columnas con lagunas, y las primeras columnas están especialmente dañadas. Esta guía resume sus grandes bloques temáticos; no sustituye una edición ni una traducción íntegra.",
+  "notes": "El Rollo del Templo, hallado en la cueva 11 de Qumrán y conocido como 11Q19 o 11QT, es un texto hebreo que reescribe y organiza leyes de Éxodo, Levítico y Deuteronomio como discurso divino a Moisés. Presenta un santuario ideal, un calendario de sacrificios y festividades, normas de pureza y leyes sobre el rey y la vida social. La composición y sus fuentes son materia de debate académico; el resumen evita atribuirlo sin matices a una comunidad o autor concreto. La transcripción hebrea enlazada permite consultar el testimonio manuscrito, pero no ofrece aquí una versión española íntegra.",
   "chapters": [
     {
       "number": 1,
-      "title": "Columna 1",
+      "title": "Alianza, obediencia y santuario",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "Las columnas iniciales conservan una exhortación contra la idolatría y los pactos con los pueblos de la tierra, en lenguaje cercano a Éxodo. El discurso presenta a Dios hablando directamente a Moisés y enlaza la fidelidad a la alianza con la construcción de una casa para su nombre. El comienzo del rollo está incompleto, por lo que parte de la secuencia solo puede reconstruirse con cautela. Desde el inicio, el santuario no es únicamente un edificio: organiza la relación entre Israel, la ley y la presencia divina."
         }
       ]
     },
     {
       "number": 2,
-      "title": "Columna 2",
+      "title": "El plano del Templo ideal",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "Las columnas arquitectónicas describen un Templo monumental, sus espacios, dimensiones, puertas, cámaras y objetos de culto. El santuario, el Santo de los Santos, el altar, la mesa, la menorá, los utensilios y las cortinas forman parte de un diseño atribuido a la revelación divina a Moisés. Buena parte de las primeras especificaciones está dañada y algunas cifras se conservan solo parcialmente o dependen de reconstrucciones editoriales. Por eso, la guía resume el propósito del bloque —imaginar un santuario perfecto y ordenado— sin presentar como seguros todos sus detalles arquitectónicos."
         }
       ]
     },
     {
       "number": 3,
-      "title": "Columna 3",
+      "title": "Sacrificios diarios y calendario festivo",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "El rollo detalla ofrendas cotidianas, sabáticas, mensuales y festivas, con animales, harina, aceite y vino asignados a cada ocasión. Reordena materiales bíblicos y desarrolla un calendario anual en el que las celebraciones se suceden de forma estructurada. Incluye fiestas conocidas, como Pascua y Tabernáculos, y conmemoraciones adicionales, entre ellas las primicias del vino y del aceite y la ofrenda de leña. El calendario subraya la participación de las tribus y el servicio de sacerdotes y levitas; las cantidades y los ritos dependen de la lectura de cada pasaje conservado."
         }
       ]
     },
     {
       "number": 4,
-      "title": "Columna 4",
+      "title": "Fiestas, ofrendas y servicio sacerdotal",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "Entre las normas festivas destaca una celebración de la ofrenda de leña: las tribus aportan madera para el altar según un turno de varios días. Otras prescripciones distribuyen productos y porciones entre sacerdotes, levitas, dirigentes y el pueblo, y regulan cómo se presentan y consumen las ofrendas. El conjunto revela una visión en la que el calendario no es solo una lista de fechas: coordina el culto, la economía de los bienes sagrados y la organización colectiva de Israel. Algunos detalles se leen dentro de secciones deterioradas y deben conservar su carácter tentativo."
         }
       ]
     },
     {
       "number": 5,
-      "title": "Columna 5",
+      "title": "Patios, cámaras y pureza del recinto",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "Las secciones posteriores amplían el plano con patios, puertas, cámaras para las tribus y dependencias para el agua, el aceite y los utensilios. También establecen límites de acceso: quién puede entrar en cada espacio, qué vestiduras se requieren y cómo se mantiene la santidad del recinto. Las reglas de contaminación incluyen medidas para limpiar una casa después de una muerte y para impedir que aves consideradas impuras se posen en el santuario. El texto extiende la preocupación por la pureza desde el altar a la ciudad que rodea el Templo, concebida como parte de un espacio sagrado."
         }
       ]
     },
     {
       "number": 6,
-      "title": "Columna 6",
+      "title": "La ley del rey y la defensa del pueblo",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "El bloque conocido como la Ley del Rey define límites y deberes para el monarca. El rey debe gobernar conforme a la Torá, evitar el orgullo, la riqueza desmedida y la injusticia, y no aprovecharse del pueblo. El rollo describe también su consejo, la organización de tropas y la consulta sacerdotal antes de la guerra. La victoria no autoriza el saqueo irrestricto: los bienes se distribuyen entre quienes combatieron, quienes quedaron en sus ciudades y el personal del Templo. La fidelidad del rey afecta a la continuidad de su dinastía; su desobediencia puede llevar a la pérdida del trono."
         }
       ]
     },
     {
       "number": 7,
-      "title": "Columna 7",
+      "title": "Justicia, familia y leyes civiles",
       "verses": [
         {
           "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 8,
-      "title": "Columna 8",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 9,
-      "title": "Columna 9",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 10,
-      "title": "Columna 10",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 11,
-      "title": "Columna 11",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 12,
-      "title": "Columna 12",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 13,
-      "title": "Columna 13",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 14,
-      "title": "Columna 14",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 15,
-      "title": "Columna 15",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 16,
-      "title": "Columna 16",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 17,
-      "title": "Columna 17",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 18,
-      "title": "Columna 18",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 19,
-      "title": "Columna 19",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 20,
-      "title": "Columna 20",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 21,
-      "title": "Columna 21",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 22,
-      "title": "Columna 22",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 23,
-      "title": "Columna 23",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 24,
-      "title": "Columna 24",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 25,
-      "title": "Columna 25",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 26,
-      "title": "Columna 26",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 27,
-      "title": "Columna 27",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 28,
-      "title": "Columna 28",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 29,
-      "title": "Columna 29",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 30,
-      "title": "Columna 30",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 31,
-      "title": "Columna 31",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 32,
-      "title": "Columna 32",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 33,
-      "title": "Columna 33",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 34,
-      "title": "Columna 34",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 35,
-      "title": "Columna 35",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 36,
-      "title": "Columna 36",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 37,
-      "title": "Columna 37",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 38,
-      "title": "Columna 38",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 39,
-      "title": "Columna 39",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 40,
-      "title": "Columna 40",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 41,
-      "title": "Columna 41",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 42,
-      "title": "Columna 42",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 43,
-      "title": "Columna 43",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 44,
-      "title": "Columna 44",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 45,
-      "title": "Columna 45",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 46,
-      "title": "Columna 46",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 47,
-      "title": "Columna 47",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 48,
-      "title": "Columna 48",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 49,
-      "title": "Columna 49",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 50,
-      "title": "Columna 50",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 51,
-      "title": "Columna 51",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 52,
-      "title": "Columna 52",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 53,
-      "title": "Columna 53",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 54,
-      "title": "Columna 54",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 55,
-      "title": "Columna 55",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 56,
-      "title": "Columna 56",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 57,
-      "title": "Columna 57",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 58,
-      "title": "Columna 58",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 59,
-      "title": "Columna 59",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 60,
-      "title": "Columna 60",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 61,
-      "title": "Columna 61",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 62,
-      "title": "Columna 62",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 63,
-      "title": "Columna 63",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 64,
-      "title": "Columna 64",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 65,
-      "title": "Columna 65",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
-        }
-      ]
-    },
-    {
-      "number": 66,
-      "title": "Columna 66",
-      "verses": [
-        {
-          "number": "1",
-          "text": "Columna del Rollo del Templo (11Q19/11QT). Texto completo pendiente de una traducción con licencia de redistribución; esta ficha no reproduce la traducción moderna."
+          "text": "En las columnas finales, el discurso reúne leyes sobre jueces, testigos, delitos, sexualidad, matrimonio y relaciones familiares, con paralelos claros en Deuteronomio y otros textos legales. Se regulan, entre otros asuntos, la idolatría, la responsabilidad de los testigos, los límites de las uniones familiares y la diferencia entre violación y relaciones consentidas. En algunos casos la sección conservada termina de manera abrupta. El manuscrito no concluye con una narración de la construcción del Templo: su testimonio se interrumpe durante una serie de normas, por lo que el final original no se conserva."
         }
       ]
     }

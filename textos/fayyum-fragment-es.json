@@ -1,0 +1,29 @@
+{
+  "id": "fayyum-fragment-es",
+  "title": "Fragmento del Evangelio de Fayum",
+  "language": "es",
+  "sourceLanguage": "Griego (traducción de trabajo desde M. R. James, inglés)",
+  "translator": "Traducción de trabajo al español basada en M. R. James (1924)",
+  "publication": "Fragmento de papiro griego, publicado por primera vez en 1885; atribución evangélica discutida",
+  "license": "Texto base: traducción de M. R. James publicada en 1924, de dominio público; versión española de trabajo.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Gospels/The_Fayoum_Gospel-Fragment",
+  "externalTextUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Gospels/The_Fayoum_Gospel-Fragment",
+  "externalTextKind": "full",
+  "localTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "The Fayoum Gospel-Fragment · M. R. James (1924)",
+  "externalTextNote": "La traducción conserva las lagunas y advierte que no es seguro que el papiro perteneciera a un evangelio.",
+  "notes": "El papiro, conservado en la colección Rainer de Viena y fechado tentativamente en el siglo III, contiene unas pocas líneas con un paralelo a Marcos 14:27–30 sobre la dispersión de las ovejas y la negación de Pedro. Su identificación como fragmento de un evangelio es discutida: también podría ser una cita abreviada de un predicador o comentarista. Se presenta aquí solo el texto conservado en la traducción histórica, con sus lagunas; no es una obra completa.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "La dispersión de las ovejas y la negación de Pedro",
+      "verses": [
+        { "number": "1", "text": "[…] todos vosotros en esta […]" },
+        { "number": "2", "text": "[…] esta noche os escandalizaréis, según la Escritura: «Heriré al pastor, y las ovejas serán dispersadas»." },
+        { "number": "3", "text": "Y cuando Pedro dijo: «Aunque todos, yo no», el Señor […]" },
+        { "number": "4", "text": "[…] dijo: «El gallo cantará dos veces y hoy, antes de que el gallo cante dos veces, me negarás tres veces» […]" }
+      ]
+    }
+  ]
+}

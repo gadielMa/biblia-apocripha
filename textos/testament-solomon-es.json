@@ -2,25 +2,887 @@
   "id": "testament-solomon-es",
   "title": "Testamento de Salomón",
   "language": "es",
-  "sourceLanguage": "Griego",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
-  "license": "Resumen original; no reproduce una traducción editorial protegida.",
-  "sourceUrl": "https://www.earlychristianwritings.com/testamentsolomon.html",
+  "sourceLanguage": "Griego (traducción de trabajo desde el inglés)",
+  "translator": "Traducción de trabajo al español basada en F. C. Conybeare (1898)",
+  "publication": "Texto completo según la traducción inglesa histórica de Conybeare, §§ 1–130",
+  "license": "La traducción inglesa de 1898 es de dominio público en Estados Unidos; esta es una traducción de trabajo al español.",
+  "sourceUrl": "https://en.wikisource.org/wiki/The_Testament_of_Solomon",
   "externalTextUrl": "https://www2.esotericarchives.com/solomon/testamen.htm",
   "externalTextKind": "full",
+  "localTextKind": "full",
   "externalTextLanguage": "inglés",
-  "externalTextLabel": "Testamento de Salomón · F. C. Conybeare (1898), texto completo",
-  "externalTextNote": "Transcripción de la traducción publicada en 1898. Se consulta en el sitio que la aloja; no se reproduce aquí.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "externalTextLabel": "Testamento de Salomón · F. C. Conybeare (1898)",
+  "externalTextNote": "La edición fuente presenta una traducción histórica del griego; esta versión española es de trabajo y no reemplaza una edición crítica.",
+  "notes": "Texto completo dividido en 130 secciones numeradas por Conybeare. Para facilitar la navegación, se agrupan aquí en 13 capítulos editoriales de diez secciones. Los títulos y agrupaciones son editoriales; no pertenecen al manuscrito. Se omiten notas al pie del traductor y aparato erudito.",
   "chapters": [
     {
       "number": 1,
-      "title": "Resumen",
+      "title": "El anillo y Ornias",
+      "sourceSectionRange": "§§ 1–10",
       "verses": [
         {
           "number": "1",
-          "text": "Diálogo de Salomón con demonios y ángeles durante la construcción del templo; incluye nombres, funciones, enfermedades y medios de sometimiento espiritual."
+          "sourceSection": 1,
+          "text": "El testamento de Salomón, hijo de David, que era rey en Jerusalén, y dominaba y controlaba todos los espíritus del aire, sobre la tierra y debajo de la tierra. Por medio de ellos también él hizo todas las obras trascendentales del Templo. Decir también de las autoridades que ellos ejercen contra los hombres, y por lo que los ángeles estos demonios son llevados a la nada.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 2,
+          "text": "Y he aquí, cuando el Templo de la ciudad de Jerusalén estaba siendo edificado, y los artífices estaban trabajando en él, Ornias el demonio vino entre ellos hacia el atardecer; y él quitó la mitad de la paga del niño del jefe de gobernador, así como la mitad de su comida. También continuó chupando el pulgar de su mano derecha cada día. Y el niño creció delgado aunque era muy amado por el rey.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 3,
+          "text": "Entonces el rey Salomón llamó al niño un día, y le preguntó, diciendo: \"¿No te amo más que todos los artesanos que trabajan en el Templo de Dios? ¿No te doy doble salario y doble provisión de comida? ¿Cómo es que ese día por día y hora creces más?\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 4,
+          "text": "Pero el niño le dijo al rey: \"Te ruego, oh rey. Escucha lo que ha acontecido todo lo que tu hijo tiene. Después de que todos seamos liberados de nuestra obra en el Templo de Dios, después del atardecer, cuando me acuesto para descansar, uno de los demonios malvados viene y me quita la mitad de mi salario y la mitad de mi comida. Entonces también toma posesión de mi mano derecha y chupa mi pulgar.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 5,
+          "text": "Y cuando Salomón oyó esto, entré en el Templo de Dios, y oré con toda mi alma, de noche y de día, para que el demonio sea entregado en mis manos, y para que yo pueda ganar autoridad sobre él. Y a través de mi oración se me dio gracia del Señor Sabaôt por Miguel su arcángel. [Él me trajo] un pequeño anillo, teniendo un sello compuesto de una piedra grabada, y me dijo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 6,
+          "text": "Y yo Salomón me alegré, y alababa y glorificaba al Dios del cielo y de la tierra. Y al día siguiente llamé al niño, y le di el anillo, y le dije: \"Toma esto, y a la hora en que el demonio venga a ti, lanza este anillo al pecho del demonio, y dile: \"En el nombre de Dios, el rey Salomón te llama a ti.\" Y entonces tú vienes a mí con respeto.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 7,
+          "text": "Entonces el niño tomó el anillo, y se fue; y he aquí, en la hora consuetudinaria Ornias, el demonio feroz, vino como un fuego ardiente para tomar el pago del niño. Pero el niño, según las instrucciones recibidas del rey, tiró el anillo al pecho del demonio, y dijo: \"Reyó Salomón te llama.\" Y luego se fue a una carrera al rey. Pero el demonio gritó en voz alta, diciendo:",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 8,
+          "text": "Pero el niño le dijo al demonio: \"Como el Señor Dios de Israel vive, no te aventaré. Así que ven aquí.\" Y el niño vino a correr, regocijarse, al rey, y dijo: \"He traído al demonio, oh rey, como tú me mandaste, oh mi señor. Y he aquí, él está delante de las puertas de la corte de tu palacio, clamando, y suplicando con gran oro.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 9,
+          "text": "Y cuando Salomón oyó esto, se levantó de su trono, y salió al vestíbulo del atrio de su palacio; y allí vio al demonio, estremeciendo y temblando. Y él le dijo: ¿Quién eres tú? Y el demonio respondió: Yo soy llamado Ornias.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 10,
+          "text": "Y Salomón le dijo: \"Dime, oh demonio, a lo que signo zodiacal eres sujeto.\" Y él respondió: \"Al agua-polar. Y a los que están consumidos con deseo de las vírgenes nobles sobre la tierra ..., éstos me estrangulo. Pero en caso de que no hay disposición para dormir, yo soy cambiado en tres formas. Cada vez que los hombres vienen a ser arraigados de las mujeres, me mandé a mí mismo en una mujer.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Belcebú y los primeros espíritus",
+      "sourceSectionRange": "§§ 11–20",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 11,
+          "text": "Yo Salomón, habiendo oído el nombre del arcángel, oré y glorificaba a Dios, al Señor del cielo y a la tierra. Y sellé al demonio y le puse a trabajar a cortacésped, para que cortara las piedras en el Templo, que, acostado a lo largo de la costa, había sido traído por el Mar de Arabia. Pero él, temeroso del hierro, continuó y me dijo: \"Te ruego, rey Salomón, que vaya libre.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 12,
+          "text": "Y el ángel dijo que las ballenas del mar salían del abismo. Y echó su destino sobre el suelo, y que [el destino] hizo sujeto al gran demonio. Y mandó al gran demonio y audaz, Ornias, que cortara piedras en el Templo. Y en consecuencia Salomón glorificó al Dios del cielo y al Hacedor de la tierra. Y él ordenó a Ornias venir con su destino, y le di a todos los demonios",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 13,
+          "text": "Entonces Ornias tomó el anillo de los dedos, y se fue a Beelzeboul, que tiene rey sobre los demonios. Y él le dijo: \"¡Hola! Salomón te llama.\" Pero Beelzeboul, habiendo oído, le dijo: \"Dime, ¿quién es este Salomón de quien me hablas?\" Entonces Ornias tiró el anillo al pecho de Beelzeboul, diciendo: \"El rey Salomón llama a Beelbo",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 14,
+          "text": "Y cuando vi al príncipe de los demonios, glorifiqué al Señor Dios, Hacedor del cielo y de la tierra, y dije: \"Bienaventurado eres, Señor Dios Todopoderoso, que ha dado a Salomón tu sabiduría siervo, el consejero de los sabios, y me ha sometido todo el poder del diablo.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 15,
+          "text": "Y yo le pregunté, y le dije: ¿Quién eres tú? Y el demonio respondió: Yo soy Beelzeboul, el exarca de los demonios. Y todos los demonios tienen sus principales asientos cerca de mí. Y yo soy el que manifiesta la aparición de cada demonio. Y él prometió traerme en los lazos a todos los espíritus inmundos. Y yo nuevamente glorificaba al Dios del cielo y de la tierra, como siempre doy gracias.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 16,
+          "text": "Entonces pregunté al demonio si había hembras entre ellas. Y cuando me dijo que había, dije que deseaba verlas. Entonces Beelzeboul se fue a alta velocidad, y me trajo Onoskelis, que tenía una forma muy bonita, y la piel de una mujer de buen corazón; y ella tiró su cabeza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 17,
+          "text": "Y cuando ella vino, yo le dije: \"Dime, ¿quién eres tú?\" Pero ella me dijo: \"Me llaman Onoskelis, un espíritu hecho ..., acechando sobre la tierra. Hay una cueva de oro donde yo miente. Pero tengo un lugar que siempre cambia. En un momento estrangulo hombres con un águila; en otro, me arrastran de la naturaleza a los brazos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 18,
+          "text": "Y yo Salomón la cuestioné sobre su nacimiento, y ella respondió: \"Nací de una voz intemporalmente, el llamado eco del ordure de un hombre cayó en un bosque.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 19,
+          "text": "Y yo le dije: \"¿Abajo qué estrella pasas?\" Y ella me respondió: \"Abajo la estrella de la luna llena, por la razón de que la luna viaja sobre la mayoría de las cosas.\" Entonces le dije: \"¿Y qué ángel te frustra?\" Y ella me dijo: \"El que en ti está reinando.\" Y pensé que ella me mojó, y le dijo a un soldado que la golpeó.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 20,
+          "text": "Así que le mandé que hiciese el cáñamo por las cuerdas utilizadas en el edificio de la casa de Dios; y por lo tanto, cuando la sellé y la atado, ella fue tan vencida y llevada a la nada como para estar de noche y día dando vueltas al cáñamo.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Onosquelis y los demonios de las pasiones",
+      "sourceSectionRange": "§§ 21–30",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 21,
+          "text": "Y yo, de pronto, le dije a otro demonio que fuera llevado a mí; y al instante se acercó al demonio Asmodeus, atado, y le pregunté: \"¿Quién eres tú?\" Pero él me disparó una mirada de ira y rabia, y dijo: \"¿Y quién eres tú?\" Y le dije: \"Tanto castigado como tú me respondes?\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 22,
+          "text": "Y yo Salomón, al oír esto, lo ató con más cuidado, y le pedí que fuera azotado con tangas de bueyes, y que me dijera humildemente cuál era su nombre y cuál era su negocio. Y él me respondió así: \"Me llamo Asmodeus entre los mortales, y mi negocio es conspirar contra los recién casados, para que no se conozcan unos a otros. Y los extraño completamente por muchas calamidades,",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 23,
+          "text": "Y yo le dije: ¿Es esto tu único negocio? Y él me respondió: \"Yo transporte a los hombres en forma de locura y deseo, cuando tienen mujeres propias, para que los dejen, y salgan de noche y de día a otros que pertenecen a otros hombres; con el resultado de que cometen pecado, y caigan en hechos asesinos.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 24,
+          "text": "Y yo le juré por el nombre del Señor Sabaôt, diciendo: \"Parece Dios, Asmodeus, y dime por qué ángel estás frustrado.\" Pero él dijo: \"Por Rafael, el arcángel que está delante del trono de Dios. Pero el hígado y la gaviota de un pez me pusieron a volar, cuando fumaba sobre las cenizas del río.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 25,
+          "text": "Y yo le dije: \"No tienes nada más sobre ti, Asmodeus?\" Y él respondió: \"El poder de Dios lo sabe, que me ha atado con los lazos indisolubles de allá, que todo lo que te he dicho es verdad. Te ruego, rey Salomón, que no me condenes en agua.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 26,
+          "text": "Y convoqué otra vez para estar delante de mí Beelzeboul, el príncipe de los demonios, y lo senté en un asiento elevado de honor, y le dije: \"¿Por qué estás solo, príncipe de los demonios?\" Y él me dijo: \"Porque yo solo soy dejado de los ángeles del cielo que descendieron. Porque yo era el primer ángel en el primer cielo, con el título de Beelzeboul. Y ahora yo controlo a todos los que están atados en el mar.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 27,
+          "text": "Y Salomón le dijo: \"Beelzeboul, ¿cuál es tu empleo?\" Y él me respondió: \"Yo destruyo a los reyes. Yo me aliaré con los tiranos extranjeros. Y mis propios demonios me puse a los hombres, para que éstos puedan creer en ellos y ser perdidos. Y los siervos escogidos de Dios, sacerdotes y hombres fieles, excito a los deseos de pecados impíos, y herejías malvadas, y sin ley ellos me quieren.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 28,
+          "text": "Así que le dije: \"Trae a mí tu hijo, que es, como dices, en el Mar Rojo.\" Pero él me dijo: \"No te lo traeré a ti. Pero vendrá a mí otro demonio llamado Ephippas. Él me ataré, y él lo traerá de lo profundo a mí.\" Y yo le dije: \"¿Cómo viene tu hijo a estar en lo más profundo del mar, y él me dirá su nombre?",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 29,
+          "text": "Le dije: \"Dime por qué ángel estás frustrado.\" Y él respondió: \"Por el santo y precioso nombre del Dios Todopoderoso, llamado por los hebreos por una fila de números, de los cuales la suma es 644, y entre los griegos es Emmanuel. Y si uno de los romanos me insulta por el gran nombre del poder Eleêth, desaparezco inmediatamente.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 30,
+          "text": "Yo Salomón estaba asombrado cuando oí esto; y le ordené que viese mármoles de Theban. Y cuando comenzó a ver los mármoles, los otros demonios clamaron con voz alta, aullando por su rey Beelzeboul.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Asmodeo y los espíritus de enfermedad",
+      "sourceSectionRange": "§§ 31–40",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 31,
+          "text": "Pero yo Salomón le pregunté, diciendo: \"Si quieres ganar un respiro, discúlpame sobre las cosas en el cielo.\" Y Beelzeboul dijo: \"Oye, oh rey, si quemas goma, y incienso, y bulbos del mar, con nardo y azafrán, y alumbrarás siete lámparas en un terremoto, fijarás firmemente tu casa. Y si, siendo puro, los iluminarás a la luz del sol celestial",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 32,
+          "text": "Entonces Salomón, habiendo oído esto, le reprendió, y dijo: \"Silencio para este presente, y siga viendo los mármoles como yo te lo mandé.\" Y yo Salomón alababa a Dios, y mandé a otro demonio que se presentara a mí. Y uno vino delante de mí que llevó su rostro en alto en el aire, pero el resto del espíritu se curó como un caracol.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 33,
+          "text": "Y me dijo: \"Yo soy el espíritu de las cenizas (Tephras).\" Y le dije: \"¿Cuál es tu búsqueda?\" Y él dijo: \"Yo pongo las tinieblas a los hombres, y pongo fuego a los campos; y yo pongo las casas a las piedras. Pero la más ocupada estoy en verano.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 34,
+          "text": "Y yo glorifiqué a Dios otra vez que me dio esta autoridad, y ordenó a otro demonio que viniera delante de mí. Y vinieron siete espíritus, mujeres, unidos y tejidos, justos en apariencia y alegres. Y yo Salomón, viéndolos, los cuestionó y dijo: \"¿Quiénes son ustedes?\" Pero ellos, con un acuerdo, dijeron con una sola voz: \"Somos de los treinta y tres elementos del humilde reinado de la oscuridad.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 35,
+          "text": "Así que Salomón los cuestioné uno por uno, comenzando por el primero, y descendiendo hasta el séptimo. El primero dijo: \"Yo soy Decepción, engaño y teje trampas aquí y allá. Yo golpeo y excito herejías. Pero tengo un ángel que me frustra, Lamecalal.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 36,
+          "text": "También el segundo dijo: \"Yo soy Strife, lucha de luchas. Traigo maderas, piedras, colgadores, mis armas en el lugar. Pero tengo un ángel que me frustra, Baruchiachêl.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 37,
+          "text": "También el tercero dijo: \"Yo soy llamado Klothod, que es la batalla, y yo hago que los bien hechos se dispersan y caigan en la neblina de uno de los otros. ¿Y por qué digo tanto? Tengo un ángel que me frustra, Marmarath.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 38,
+          "text": "También el cuarto dijo: \"Yo hago que los hombres se olviden de su sobriedad y moderación. Los parto y los divido en fiestas; porque Strife me sigue de la mano. Rendo al marido del accionador de su cama, y los hijos de padres, y hermanos de hermanas. Pero, ¿por qué decir tanto a mi pesar? Tengo un ángel que me frustra, el gran Balthial.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 39,
+          "text": "Del mismo modo, el quinto dijo: \"Yo soy el Poder. Por el poder levanto tiranos y derribo reyes. A todos los rebeldes les doy poder. Tengo un ángel que me frustra, Asteraonth.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 40,
+          "text": "También el sexto dijo: \"Yo soy Error, Rey Salomón. Y yo te haré errar, como antes te he hecho errar, cuando te he hecho matar a tu propio hermano. Yo te llevaré a cometer errores, para entrometerte en tumbas; y les enseño que cavan, y yo llevo almas errantes lejos de toda piedad, y muchos otros rasgos malignos son míos. Pero tengo un ángel Uriel que me frustra,",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Los demonios y sus operaciones",
+      "sourceSectionRange": "§§ 41–50",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 41,
+          "text": "También el séptimo dijo: \"Yo soy el peor, y te pongo peor de lo que eras; porque yo impondrá los lazos de Artemis. Pero la langosta me liberará, porque por medio de ella está engordada que alcanzarás mi deseo... Porque si uno fuera sabio, no daría sus pasos hacia mí.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 42,
+          "text": "Así que yo Salomón, habiendo oído y me he preguntado, los sellé con mi anillo; y como eran tan considerables, les advierto que cavaran los cimientos del Templo de Dios. Por la longitud de éste eran 250 codos. Y les advierto que sean industriosos, y con un murmullo de protesta conjunta comenzaron a realizar las tareas encomendadas.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 43,
+          "text": "Pero yo Salomón glorificaba al Señor, y le dije a otro demonio que viniera delante de mí. Y me trajo un demonio que tenía todas las extremidades de un hombre, pero sin cabeza. Y yo, al verlo, le dije: \"Dime, ¿quién eres tú?\" Y él respondió: \"Yo soy un demonio.\" Entonces le dije: \"¿Qué?\" Y él me respondió: \"Yo soy llamado envidia.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 44,
+          "text": "Yo, al oír esto, lo sellé, extendiendo mi mano contra su pecho. Y el demonio saltó, y se tiró hacia abajo, y dio un gemido, diciendo: \"¿Quién es yo? ¿A dónde vengo? O traidor Ornias, no puedo ver!\" Así que le dije: \"Yo soy Salomón. Dime entonces cómo te las arreglas para ver.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 45,
+          "text": "Y yo Salomón, al oír esto, le dije: ¿Dime cómo despertaste el fuego? ¿De qué fuentes lo emites? Y el espíritu me dijo: \"De la estrella del día. Porque aquí no se ha encontrado todavía que Elburón, a quien los hombres ofrecen oraciones y encender las luces. Y su nombre es invocado por los siete demonios delante de mí. Y él los aprecia.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 46,
+          "text": "Pero yo le dije: \"Dime su nombre.\" Pero él respondió: \"No puedo decírtelo. Porque si digo su nombre, me pongo incurable. Pero él vendrá en respuesta a su nombre.\" Y al oír esto, yo Salomón le dije: \"Dime entonces, ¿por qué ángel estás frustrado?\" Y él respondió: \"Por el ardiente resplandor de relámpago.\" Y me incliné ante el Señor Dios de Israel permaneceré",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 47,
+          "text": "Entonces ordené a otro demonio que viniera delante de mí, y vino a mi presencia un sabueso, teniendo una forma muy grande, y habló con una voz fuerte, y dijo: \"¡Hail, Señor, rey Salomón!\" Y yo Salomón estaba asombrado. Yo le dije: \"¿Quién eres tú, oh sabueso?\" Y respondió: \"De verdad te parezco a ser un sabueso, pero antes de que fueras, oh rey Salomón, yo era un hombre",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 48,
+          "text": "Y yo Salomón le dije: \"¿Cuál es tu nombre?\" Y él respondió: \"Staff\" (Rabdos). Y yo le dije: \"¿Qué es tu empleo? ¿Y qué resultados puedes lograr?\" Y él respondió: \"Dame tu hombre, y yo lo llevaré a un lugar montañoso, y le mostraré una piedra verde, lanzada y con la que adornas el Templo del Señor Dios.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 49,
+          "text": "Y yo Salomón, al oír esto, ordenó a mi siervo que se fuera con él, y que tomara el anillo de dedos que llevaba el sello de Dios con él. Y yo le dije: \"El que te muestre la piedra verde, sellale con este anillo de dedo. Y marca el lugar con cuidado, y tráeme el demonio de aquí. Y el demonio le mostró la piedra verde, y lo selló, y me trajo el demonio grande.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 50,
+          "text": "Y tomé Salomón de la mina de esa piedra 200 siclos por los soportes de la mesa del incienso, que era similar en apariencia. Y yo Salomón glorifiqué al Señor Dios, y luego cerré alrededor del tesoro de esa piedra. Y pedí de nuevo a los demonios que cortaran mármol para la construcción de la casa de Dios. Y yo Salomón oré al Señor, y pregunté al sabueso, diciendo: \"¿Por qué ángel estás frustrado?",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Los ángeles que los frustran",
+      "sourceSectionRange": "§§ 51–60",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 51,
+          "text": "Y alababa al Señor Dios del cielo y de la tierra, y me decía que otro demonio se acercaba a mí, y que había venido en forma de león rugiendo. Y él se puso de pie y me contestó, diciendo: \"Oh rey, en la forma que tengo, soy un espíritu bastante incapaz de ser percibido. Sobre todos los hombres que mienten postrados con enfermedad, viniendo sigilosamente a lo largo demonio,",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 52,
+          "text": "Así le dije: \"Te ajuro en el nombre del Dios Sabaôt, que me diga por qué nombre estás frustrado junto con tu ejército.\" Y el espíritu me respondió: \"El grande entre los hombres, que es sufrir muchas cosas en manos de los hombres, cuyo nombre es la figura 644, que es Emmanuel; él es el que nos ha atado, y que entonces vendrá y nos derriba tres letras debajo del agua empinada.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 53,
+          "text": "Y yo Salomón, al oír esto, glorifiqué a Dios, y condenó su legión para llevar madera de la espesura. Y condenó al león en forma de él para ver la madera pequeña con sus dientes, para quemar en el horno inquebrantable para el Templo de Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 54,
+          "text": "Y he adorado al Señor Dios de Israel, y he dicho que otro demonio viene hacia adelante. Y vino delante de mí un dragón, tres cabezas, de tono temeroso. Y le pregunté: \"¿Quién eres tú?\" Y él me respondió: \"Yo soy un espíritu de calumnia, cuya actividad está en tres líneas. Pero yo cego a los niños en los vientres de las mujeres, y sus oídos alrededor.",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 55,
+          "text": "\"Pero en el lugar donde te sientas, oh rey Salomón, está una columna en el aire, de púrpura. ... El demonio llamado Ephippas lo ha traído desde el Mar Rojo, desde el interior de Arabia. Él es el que será cerrado en un hervidor de piel y traído ante ti. Pero a la entrada del Templo, que has comenzado a construir, oh rey Salomón, se guarda mucho oro, que cavaste y llevo fuera a Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 56,
+          "text": "Y yo le dije: ¿Qué has llamado? Y el demonio dijo: Yo soy la cresta de los dragones. Y yo le dije que hiciera ladrillos en el Templo. Tenía manos humanas.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 57,
+          "text": "Y yo adoraba al Señor Dios de Israel, y le dije a otro demonio que se presentase. Y vino delante de mí un espíritu en forma de mujer, que tenía una cabeza sin extremidades, y su pelo estaba desdichado. Y yo le dije: \"¿Quién eres tú?\" Pero ella respondió: \"No, ¿quién eres tú? ¿Y por qué quieres oír de mí? Pero, como aprenderás, aquí estoy atado delante de tu rey.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 58,
+          "text": "Y yo hice como ella me juntó, y me refrené por la sabiduría que moraba en mí; para que yo pudiera oír de sus obras, y reprenderlas, y manifestarlas a los hombres. Y me senté, y le dije al demonio: \"¿Quién eres tú?\" Y ella dijo: \"Yo soy llamado entre los hombres Obizuth; y por la noche no duermo, pero voy a arruinar mis rondas por todo el mundo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 59,
+          "text": "Cuando Salomón oyó esto, me maravillé de su apariencia, porque miré todo su cuerpo para estar en la oscuridad. Pero su mirada fue totalmente brillante y verde, y su pelo fue arrojado salvajemente como un dragón; y todo su cuerpo fue invisible. Y su voz fue muy clara como vino a mí. Y yo le dije: \"Dime por qué ángel estás frustrado, oh espíritu malo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 60,
+          "text": "Y otra vez pedí a otro demonio que viniera delante de mí. Y vino, rodándose uno en apariencia como a un dragón, pero teniendo la cara y las manos de un hombre. Y todas sus extremidades, excepto sus pies, eran las de un dragón; y tenía alas en su espalda. Y cuando lo vi, estaba asombrado, y dijo: \"¿Quién eres tú, demonio, y qué llamas? ¿Y de dónde vienes?",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Los espíritus sometidos al rey",
+      "sourceSectionRange": "§§ 61–70",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 61,
+          "text": "Y el espíritu respondió y dijo: \"Esta es la primera vez que he estado delante de ti, oh rey Salomón. Soy un espíritu hecho en un dios entre los hombres, pero ahora traído a la nada por el anillo y la sabiduría vouchsafed a ti por Dios. Ahora soy el llamado dragón alado, y no cámara con muchas mujeres, pero sólo con unos pocos que son de forma justa, que poseen el nombre de xuli, de ellos enteros.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 62,
+          "text": "Y como el demonio dijo esto, vi el espíritu saliendo de su boca, y consumió la madera del árbol de incienso, y quemó todos los troncos que habíamos puesto en el Templo de Dios. Y yo Salomón vi lo que el espíritu había hecho, y me maravillé.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 63,
+          "text": "Y habiendo glorificado a Dios, pregunté al demonio en forma de dragón, y dije: \"Dime, ¿por qué ángel estás frustrado?\" Y él respondió: \"Por el gran ángel que tiene su asiento en el segundo cielo, el cual es llamado en hebreo Bazazat. Y yo Salomón, habiendo oído esto, y habiendo invocado a su ángel, lo condenó a ver mármoles para la construcción del Templo de Dios; y yo le encomendé a Dios, y a Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 64,
+          "text": "Y vino delante de mi rostro otro espíritu, como era una mujer en la forma que tenía. Pero sobre sus hombros ella tenía otras dos cabezas con las manos. Y yo le pregunté, y le dije: \"Dime, ¿quién eres tú?\" Y ella me dijo: \"Yo soy Enêpsigos, que también tienes un nombre milenario.\" Y yo le dije: \"¿Por qué ángel estás frustrado?\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 65,
+          "text": "Por lo tanto, Salomón oró a mi Dios, y yo invoqué al ángel de quien Enépsigos me habló, y usé mi sello. Y la sellé con una cadena triple, y debajo de ella el ayuno de la cadena. Yo usé el sello de Dios, y el espíritu profetizó a mí, diciendo: \"Esto es lo que tú, rey Salomón, nos hace.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 66,
+          "text": "Y yo Salomón, habiendo oído esto, glorificaba a Dios. Y aunque me maravillaba con la disculpa de los demonios, no lo acredité hasta que se hiciera realidad. Y no creí sus palabras; pero cuando se dieron cuenta, entonces entendí, y a mi muerte escribí este Testamento a los hijos de Israel, y se lo di a ellos, para que ellos pudieran conocer los poderes de los demonios y sus formas, y los nombres de sus ángeles atados por Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 67,
+          "text": "Y habiendo alabado a Dios, mandé a otro espíritu que viniera delante de mí; y vino delante de mi rostro otro demonio, teniendo delante la forma de un caballo, pero detrás de un pez. Y él tenía una voz poderosa, y me dijo: \"Oh rey Salomón, soy un espíritu feroz del mar, y yo soy codicioso de oro y plata.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 68,
+          "text": "\"Pero yo también tengo otro carácter y renombre. Me metamorfose a mí mismo en olas, y suba del mar. Y me muestro a los hombres, para que los que están en la tierra me llamen Kuno[s]paston, porque yo asumo la forma humana. Y mi nombre es verdadero. Porque por mi pasaje en los hombres, envié una cierta náusea.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 69,
+          "text": "Y yo le dije: \"Dime por qué ángel estás mal tratado.\" Y él respondió: \"Por Iameth.\" Y yo glorifiqué a Dios. Le mandé al espíritu que fuera arrojado en un feal junto con diez jarras de agua de mar de dos medidas cada uno. Y los sellé alrededor de arriba con mármoles y asfalto y tono en la boca del vaso. Y después de sellarlo con mi anillo, pedí que fuera depositado el espíritu.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 70,
+          "text": "Y vino delante de mi rostro otro espíritu esclavizado, teniendo oscuramente la forma de un hombre, con ojos brillantes, y llevando en su mano una espada. Y pregunté: \"¿Quién eres tú?\" Pero él respondió: \"Soy un espíritu lascivioso, engendrado de un hombre gigante que murió en la masacre en el tiempo de los gigantes.\" Le dije: \"Dime lo que estás empleando en la tierra.\"",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Los obreros del templo",
+      "sourceSectionRange": "§§ 71–80",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 71,
+          "text": "Y él dijo: \"Mi morada está en lugares fructíferos, pero mi procedimiento es éste. Me siento a mi lado de los hombres que pasan entre las tumbas, y en tiempo intemporal asumo la forma de los muertos; y si cojo a alguno, lo destruiré inmediatamente con mi espada. Pero si no puedo destruirlo, lo haré poseído con un demonio, y devoraré su propia carne, y el pelo serará un hombre",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 72,
+          "text": "Y mandé a otro demonio que viniera delante de mí. Y vinieron delante de mi rostro treinta y seis espíritus, sus cabezas sin forma como perros, pero en sí mismos eran humanos en forma; con rostros de asnos, rostros de bueyes, y rostros de pájaros. Y yo Salomón, al oírlos y verlos, se preguntó, y les dije: ¿Quién eres? Pero ellos, de un acuerdo con una sola voz, dijeron:",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 73,
+          "text": "Entonces Salomón invocó el nombre del Señor Sabaôth, y cuestioné a cada uno a su vez en cuanto a cuál era su carácter. Y yo le dije a cada uno que venga y diga de sus acciones. Entonces el primero vino adelante, y dijo: \"Yo soy el primer decanso del círculo zodiacal, y yo soy llamado el carnero, y conmigo son estos dos.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 74,
+          "text": "Y el segundo dijo: \"Me llaman Barsafael, y hago que los que están sujetos a mi hora sientan el dolor de la migraña. Si sólo escucho las palabras, Gabriel, encarcelar a Barsafael, inmediatamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 75,
+          "text": "El tercero dijo: \"Yo soy llamado Arôtosael. Hago daño a los ojos, y los hiero gravemente. Sólo permítanme escuchar las palabras, Uriel, encarcelar a Aratosael (sic), inmediatamente me retiro ...\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 76,
+          "text": "El quinto dijo: \"Me llaman Iudal, y traigo un bloque en los oídos y la sordera de la audición. Si escucho, Uruel Iudal, me retiro inmediatamente.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 77,
+          "text": "El sexto dijo: \"Me llaman Sphendonaêl. Yo hago tumores de la glándula parotídica, y las inflamaciones de las amígdalas, y la recurvación tetánica. Si escucho, Sabrael, encarcelar a Sphendonaêl, inmediatamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 78,
+          "text": "Y el séptimo dijo: \"Yo soy llamado Sphandôr, y debilito la fuerza de los hombros, y los hago temblar; y paralizo los nervios de las manos, y rompo y agudizo los huesos del cuello. Y yo, a chupar la médula. Pero si escucho las palabras, Araêl, encarcelado Sphandôr, ' Yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 79,
+          "text": "Y el octavo dijo: \"Me llamo Belbel. Deformo los corazones y las mentes de los hombres. Si escucho las palabras, Araêl, encarcelada Belbel, me retiro inmediatamente.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 80,
+          "text": "Y el noveno dijo: \"Me llaman Kurtaêl. Envio colics en los intestinos. Induciré dolores. Si escucho las palabras, Iaôth, encarcelar a Kurtaêl, me retiro inmediatamente.\"",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "El altar y los siete cielos",
+      "sourceSectionRange": "§§ 81–90",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 81,
+          "text": "El décimo dijo: \"Me llaman Metathiax. Hago que las riendas se despierten. Si escucho las palabras, Adônaêl, encarcelando a Metathiax, me retiro inmediatamente.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 82,
+          "text": "El undécimo dijo: \"Yo soy llamado Katanikotaêl. Yo creo estribos y males en las casas de los hombres, y enviar sobre ellos el temperamento duro. Si alguno estuviera en paz en su casa, que escriba en siete hojas de laurel los nombres del ángel que me frustra, junto con estos nombres: Iae, Ieô, hijos de Sabaôth, en el nombre del gran Dios le dejaría cerrar el agua.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 83,
+          "text": "El duodécimo dijo: \"Yo soy llamado Saphathoraêl, e inspirando partisanship en los hombres, y deleite en causarles tropezar. Si alguno escribe en papel estos nombres de los ángeles, Iaeô, Iealô, Iôelet, Sabaôth, Ithoth, Bae, y habiéndolo doblado, úsela alrededor de su cuello o contra su oído, en seguidamente me emborracho.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 84,
+          "text": "El decimotercero dijo: \"Me llaman Bobêl (sic), y causaré una enfermedad nerviosa por mis ataques. Si escucho el nombre del gran Adonaêl, encarcelando a Bothothêl, me retiro inmediatamente.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 85,
+          "text": "El decimocuarto dijo: \"Me llaman Kumeatêl, e inflijo calzoncillos y torpor. Si tan sólo escucho las palabras: Zôrôêl, encarcelada Kumentaêl, yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 86,
+          "text": "La quincena dijo: \"Me llamo Roêlêd. Yo hago frío, helada y dolor en el estómago. Solo oiga las palabras: Iax, no seáis calentados, porque Salomón es más justo que once padres, 'Yo en retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 87,
+          "text": "El decimosexto dijo: \"Yo soy llamado Atrax. Yo infligo a los hombres fiebres, irremediable y dañino. Si usted me envenenara, cortar el cilantro y frotarlo en los labios, recitando el siguiente encanto: 'La fiebre que es de la suciedad. Te exorcio por el trono del Dios más alto, retiro de la suciedad y retiro de la criatura modelada por Dios.'",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 88,
+          "text": "El decimoséptimo dijo: \"Me llaman Ieropaêl. En el estómago de los hombres me siento, y causa convulsiones en el baño y en el camino; y dondequiera que se encuentre, o encuentre un hombre, lo derribo. Pero si alguno le dice a los afligidos en su oído estos nombres, tres veces más, en el oído derecho: Iudarizê, Sabunê, Denôê,' en seguida retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 89,
+          "text": "El dieciocho dijo: \"Yo soy llamado Buldumêch. Yo separado esposa del marido y traer un rencor entre ellos. Si alguno escribe los nombres de tus sires, Salomón, en papel y lo coloca en la ante-camber de su casa, yo retiro de allí. Y la leyenda escrita será como sigue: 'El Dios de Abram, y el Dios de Isaac, y el Dios de Jacob te ordena una vez paz'.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 90,
+          "text": "El diecinueve dijo: \"Yo soy llamado Naôth, y yo tomo mi asiento sobre las rodillas de los hombres. Si alguno escribe en papel: Phnunohoêol, sal de Nathath, y no toques el cuello\", yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "El príncipe de los demonios y los astros",
+      "sourceSectionRange": "§§ 91–100",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 91,
+          "text": "El veinte dijo: \"Me llaman Marderô. Envio a los hombres fiebre incurable. Si alguien escribe en la hoja de un libro: Sphênêr, Rafael, retirarme, no me arrastres, no me mates, y lo ataré alrededor de su cuello, \"de inmediato retiro\".",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 92,
+          "text": "El vigésimo primero dijo: \"Yo soy llamado Alath, y yo hago tos y dura respiración en los niños. Si alguien escribe en el papel: Rorêx, persigues a Alath, y ayunas alrededor de su cuello, yo inmediatamente me retiro...\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 93,
+          "text": "El vigésimo tercer dijo: \"Yo soy llamado Nefthada. Yo hago que las riendas se despierten, y yo hago tesorería. Si alguien escribe en un plato de estaño las palabras: Iathôth, Uruêl, Nephthada, y ayuna alrededor de los lomos, yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 94,
+          "text": "El vigésimo cuarto dijo: \"Me llaman Akton. Me duelen las costillas y los músculos lúgubres. Si uno engrave sobre el material de cobre, tomado de un barco que ha perdido su anclaje, esto: Marmaraôth, Sabaôth, perseguir Akton, y abrocharlo alrededor del lomo, yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 95,
+          "text": "El veinticinco dijo: \"Me llaman Anatreth, y envío quemaduras y fiebres en las entrañas. Pero si escucho: Arara, Charara, instantáneamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 96,
+          "text": "El vigésimo sexto dijo: \"Yo soy llamado Enenuth. Yo robo las mentes de los hombres, y cambio sus corazones, y hago un hombre sin dientes (?). Si uno escribe: Allazoôl, persiga Enenuth, y ataré el papel alrededor de él, yo inmediatamente retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 97,
+          "text": "El vigésimo séptimo dijo: \"Me llamo Phêth. Hago hombres consumidos y causa hemorrhagia. Si uno me exorcise en el vino, dulce venta y sin mezcla por el undécimo aeon, y digo: \"Te exorcio por el undécimo aeon para parar, yo exijo, Phêth (Axiôphêth),\" entonces dáselo al paciente para beber una vez.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 98,
+          "text": "El vigésimo octavo dijo: \"Yo soy llamado Harpax, y envío insomnio a los hombres. Si uno escribe Kokphnêdismos, y lo une alrededor de los templos, yo inmediatamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 99,
+          "text": "El vigésimo noveno dijo: \"Me llaman Anostêr. Yo engendro manía uterina y dolores en la vejiga. Si un polvo en aceite puro tres semillas de laurel y la froto en, diciendo: 'Te exorcio, Anostêr. Stop by Marmaraô,' inmediatamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 100,
+          "text": "El trigésimo dijo: \"Me llaman Alleborith. Si al comer pescado uno se ha tragado un hueso, entonces debe tomar un hueso del pescado y la tos, y a la vez me retiro.\"",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Los espíritus del viento y del zodíaco",
+      "sourceSectionRange": "§§ 101–110",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 101,
+          "text": "El trigésimo primero dijo: \"Yo soy llamado Hêphêsikireth, y causa enfermedad persistente. Si usted tira sal, frota en la mano, en aceite y la frota sobre el paciente, diciendo: Serafines, Cherubim, ayúdame!' Yo inmediatamente me retiro.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 102,
+          "text": "El trigésimo segundo dijo: \"Me llaman Ichthion. Yo paralizo los músculos y los contuso. Si escucho: Adonaêth, ¡ayúdame!\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 103,
+          "text": "El trigésimo tercero dijo: \"Me llamo Agchoniôn. Me acuesto entre los vestidos y en el precipicio. Y si alguien escribe en las higueras Lycurgos,' quitando una carta a la vez, y escríbala, revirtiendo las letras, me retiro inmediatamente. Lycurgos, ycurgos, kurgos, yrgos, gos, os.'\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 104,
+          "text": "El trigésimo cuarto dijo: \"Me llaman Autothith. Yo hago rencores y peleas. Por lo tanto estoy frustrado por Alpha y Omega, si está escrito.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 105,
+          "text": "El trigésimo quinto dijo: \"Yo soy llamado Phthenoth. Eché un ojo malo a cada hombre. Por lo tanto, el ojo mucho sufrimiento, si se dibuja, me frustra.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 106,
+          "text": "El 36o dijo: \"Me llaman Bianakith. Tengo un rencor contra el cuerpo. Yo pongo casas de desperdicios, yo hago carne para desintegrar, y todo lo que es similar. Si un hombre escribe en la puerta principal de su casa: Mêltô, Ardu, Anaath, ' huyo de ese lugar.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 107,
+          "text": "Y yo Salomón, cuando oí esto, glorificaba al Dios del cielo y de la tierra. Y les mandé que buscaran agua en el Templo de Dios. Y además oré al Señor Dios para hacer que los demonios sin, que entorpecen a la humanidad, estén atados y hechos para acercarse al Templo de Dios. Algunos de estos demonios condenaron a hacer la pesada obra de la construcción del Templo de Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 108,
+          "text": "Y yo Salomón tenía mucho silencio en toda la tierra, y pasé mi vida en paz profunda, honrada por todos los hombres y por todos debajo del cielo. Y yo construí todo el Templo del Señor Dios. Y mi reino era próspero, y mi ejército estaba conmigo. Y por el resto la ciudad de Jerusalén había reposado, regocijo y encantado. Y todos los reyes de la tierra vinieron a mí desde los confines de la tierra a ver el Templo que Dios",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 109,
+          "text": "Y entre ellos también la reina del sur, siendo bruja, vino con gran preocupación y se inclinó bajo delante de mí a la tierra. Y habiendo oído mi sabiduría, glorificaba al Dios de Israel, y ella hizo prueba formal de toda mi sabiduría, de todo el amor en que yo le instruí, según la sabiduría que me impartía. Y todos los hijos de Israel glorificaban a Dios.",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 110,
+          "text": "Y he aquí, en aquellos días uno de los obreros, de edad madura, se arrojó delante de mí, y dijo: \"Rey á Salomón, ten piedad de mí, porque soy viejo.\" Así que le dije que se levantara, y dijo: \"Dime, viejo, todo lo que quieras.\" Y él respondió: \"Yo te ruego, rey, que tengo un hijo primogénito, y él me insulte y me golpea abiertamente, y me arezca la muerte.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "El templo concluido",
+      "sourceSectionRange": "§§ 111–120",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 111,
+          "text": "Y yo, al oír esto, sentí compunción mientras miraba a su vejez; y le dije al niño que fuera llevado a mí. Y cuando él fue llevado le pregunté si era verdad. Y el joven dijo: \"No estaba tan lleno de locura como para golpear a mi padre con mi mano. Sé amable conmigo, oh rey. Porque no me he atrevido a cometer tal impiedad, pobre desgraciado que soy.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 112,
+          "text": "Pero yo Salomón, habiendo oído esto, le dije al demonio: \"¿Es verdad que hablas?\" Y él respondió: \"Es verdad, oh rey.\" Y yo, al oír eso, les dije que quitaran el demonio, y que de nuevo me trajeran al viejo con su hijo. Yo les dije que se hicieran amigos unos con otros, y les proveí comida. Y luego le dije al viejo después de tres días que me llevara a su hijo de nuevo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 113,
+          "text": "Y cuando se fueron, ordené a Ornias que se presentaran, y le dije: \"Dime cómo lo sabes\" y él respondió: \"Nosotros los demonios subimos al firmamento del cielo, y volamos entre las estrellas. Y escuchamos las oraciones que salen sobre las almas de los hombres, y luego venimos, y si por la fuerza de influencia, o por fuego, o por espada, o por algún accidente, morimos por la naturaleza.",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 114,
+          "text": "Por lo tanto, habiendo oído esto, glorificamos al Señor Dios, y otra vez cuestionamos al demonio, diciendo: \"Dime cómo podéis ascender al cielo, siendo demonios, y en medio de las estrellas y los santos ángeles intermingle.\" Y él respondió: \"Así como las cosas se cumplen en el cielo, así también en la tierra (se cumplen) los tipos de todos ellos. Porque hay principados, autoridades, seres del mundo que vuelan",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 115,
+          "text": "Y yo Salomón, habiendo oído esto, ordené al demonio que fuera guardado por cinco días. Y después de los cinco días recordé al anciano, y estaba a punto de interrogarlo. Pero él vino a mí con dolor y rostro negro. Y le dije: \"Dime, anciano, ¿dónde está tu hijo? Y él respondió: \"Yo estoy sin hijos, y estoy sentado por la tumba de mi hijo en la desesperación.",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 116,
+          "text": "Y la reina del sur vio todo esto, y maravilló, glorificando al Dios de Israel; y ella miró el Templo del Señor siendo edificado. Y ella dio un siklos de oro y cien millares de plata y bronce de elección, y ella entró en el Templo. Y (miraba) el altar de incienso y los soportes de bronce (contenido",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 117,
+          "text": "Y aconteció que mientras estaba en mi reino, el rey de los arabes, Adares, me envió una carta, y la escritura de la carta fue escrita como sigue: — ¡Al rey Salomón, todo aclamado! He aquí, hemos oído, y ha sido oído a todos los confines de la tierra, sobre la sabiduría vouchsafed en ti, y que eres un hombre humilde de la tierra.",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 118,
+          "text": "Y yo Salomón leí esta epístola; y la doblé y se la di a mi pueblo, y les dije: \"Después de siete días me recordarás esta epístola. Y Jerusalén fue edificada, y el Templo estaba siendo completado. Y había una piedra, la piedra final del que estaba allí, grande, escogido, uno que yo deseaba poner en la cabeza del rincón de la terminación del Templo, y todo el lugar de trabajo",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 119,
+          "text": "Y después de siete días, recordando la epístola de Adares, rey de Arabia, llamé a mi siervo y le dije: \"Ordena tu camello y toma para ti mismo un frasco de cuero, y toma también este sello. Y vete a Arabia al lugar en el que el espíritu malo sopla; y toma el frasco, y el anillo de señal en frente de la boca del frasco, y",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 120,
+          "text": "Entonces los jóvenes lo hicieron como se le había ordenado. Y ordenó su camello, y puso sobre él un frasco, y se puso en Arabia. Y los hombres de esa región no creerían que él sería capaz de coger el espíritu malo. Y cuando era el amanecer, el siervo se puso delante de la explosión del espíritu, y puso el frasco en el suelo, y el anillo de los dedos en la boca del frasco.",
+          "editorialNumber": true
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "La caída de Salomón y su arrepentimiento",
+      "sourceSectionRange": "§§ 121–130",
+      "verses": [
+        {
+          "number": "1",
+          "sourceSection": 121,
+          "text": "Entonces el joven ayunó el frasco en el camello, y los árabes lo enviaron en su camino con mucho honor y dones preciosos, alabando y magnificando al Dios de Israel. Pero el joven trajo la bolsa y la puso en medio del Templo. Y al día siguiente, el rey Salomón, entró en el Templo de Dios y se sentó en profunda angustia acerca de la piedra del extremo del ángulo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "2",
+          "sourceSection": 122,
+          "text": "Y yo le dije: \"¿Por qué eres frustrado?\" Y él respondió: \"Por Dios único, que tiene autoridad sobre mí para ser oído. El que ha de nacer de una virgen y crucificado por los judíos en una cruz. ¿Quiénes son los ángeles y los arcángeles adoran? Él me frustra, y me encomienda de mi gran fuerza, que me ha sido dado por mi padre el diablo.",
+          "editorialNumber": true
+        },
+        {
+          "number": "3",
+          "sourceSection": 123,
+          "text": "diciendo esto, yo le puse el estrés, y el frasco se convirtió en como si estuviera lleno de aire. Y lo puse debajo de la piedra, y (el espíritu) se giró hacia arriba, y lo alzó arriba del frasco. Y el frasco subió los pasos, llevando la piedra, y lo puso al final de la entrada del Templo. Y yo Salomón, viendo la piedra levantada arriba abajo y puesto en un fundamento",
+          "editorialNumber": true
+        },
+        {
+          "number": "4",
+          "sourceSection": 124,
+          "text": "Y Ephippas guió al demonio del Mar Rojo con la columna. Y ambos tomaron la columna y la alzaron de la tierra. Y obtuve estos dos espíritus, para que no pudieran sacudir toda la tierra en un momento de tiempo. Y entonces sellé alrededor con mi anillo en este lado y que, y dijo: \"Aguarda.\" Y los espíritus han permanecido sosteniéndolo hasta este día, para la prueba de la sabiduría vouchable",
+          "editorialNumber": true
+        },
+        {
+          "number": "5",
+          "sourceSection": 125,
+          "text": "Y Salomón cuestionó al otro espíritu, que subió con el pilar de la profundidad del Mar Rojo. Y le dije: \"¿Quién eres tú, y qué te llama? ¿Y cuál es tu negocio? Porque yo escucho muchas cosas sobre ti.\" Y el demonio respondió: \"Yo, oh rey Salomón, soy llamado Abezithibod. Soy descendiente del arcángel. Una vez como me senté en el primer cielo, de la cual Moisés es fuerte el nombre",
+          "editorialNumber": true
+        },
+        {
+          "number": "6",
+          "sourceSection": 126,
+          "text": "Y le dije: ¿Cómo has sido hallado en el Mar Rojo? Y él respondió: En el éxodo de los hijos de Israel he endurecido el corazón de Faraón. Y yo excité su corazón y el de sus ministros. Y los hice perseguir después de los hijos de Israel. Y Faraón siguió con (yo) y todos los egipcios. Y allí estaba presente, y seguimos juntos.",
+          "editorialNumber": true
+        },
+        {
+          "number": "7",
+          "sourceSection": 127,
+          "text": "Yo, pues, Salomón, habiendo oído esto, glorifiqué a Dios y juró a los demonios que no me desobedecieran, sino que permanecieran apoyando el pilar. Y ambos juraron, diciendo: \"El Señor tu Dios vive, no dejaremos ir este pilar hasta el fin del mundo. Pero en cualquier día que caiga esta piedra, entonces será el fin del mundo.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "8",
+          "sourceSection": 128,
+          "text": "Y yo, Salomón, glorificaba a Dios, y adornaba el Templo del Señor con toda justicia. Y me alegraba en espíritu en mi reino, y había paz en mis días. Y tomé esposas mías de todas las tierras, que eran innumerables. Y marché contra los Jebuseos, y allí vi a un Jebuseo, hija de un hombre, y caí violentamente en amor con ella, y querías llevarla.",
+          "editorialNumber": true
+        },
+        {
+          "number": "9",
+          "sourceSection": 129,
+          "text": "Y cuando respondí que no iba a adorar a dioses extraños, le dijeron a la doncella que no durmiera conmigo hasta que cumpliera y sacrificara a los dioses. Luego me moví, pero Eros astutos traídos y puestos por ella para mí cinco saltamontes, diciendo: \"Toma a estos saltamontes, y los trituraré en el nombre del dios Moloch; y entonces dormiré contigo.\"",
+          "editorialNumber": true
+        },
+        {
+          "number": "10",
+          "sourceSection": 130,
+          "text": "Entonces yo, miserable que soy, seguí su consejo, y la gloria de Dios se apartó bastante de mí; y mi espíritu se oscureció, y me convertí en el deporte de ídolos y demonios. Por lo tanto, escribí este Testamento, para que vosotros que tenéis posesión de él oréis, y asistáis a las últimas cosas, y no a las primeras. Para que halléis gracia para siempre y para siempre. Amén.",
+          "editorialNumber": true
         }
       ]
     }

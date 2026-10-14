@@ -1,96 +1,98 @@
 {
   "id": "octateuco-clemente-es",
-  "title": "Octateuco de Clemente (edición relacionada)",
+  "title": "Octateuco clementino (guía de lectura)",
   "language": "es",
-  "sourceLanguage": "Griego/Siríaco/Ge'ez",
-  "translator": "Ficha española de trabajo; texto completo pendiente de una edición pública verificable",
-  "publication": "Colección clementina etíope / Constituciones Apostólicas relacionadas",
-  "license": "Ficha editorial propia; no sustituye una traducción crítica",
-  "sourceUrl": "https://ccel.org/ccel/schaff/anf07/anf07.ix.html",
+  "sourceLanguage": "Griego, siríaco, copto y árabe, según la recensión",
+  "translator": "Resumen editorial en español; no es traducción del texto antiguo",
+  "publication": "Guía comparativa de las recensiones del Octateuco clementino",
+  "license": "Ficha editorial propia; no sustituye una edición crítica",
+  "sourceUrl": "https://ccdl.claremont.edu/digital/api/collection/cce/id/1465/download",
   "externalTextUrl": "https://ccel.org/ccel/schaff/anf07/anf07.ix.html",
   "externalTextKind": "reference",
   "externalTextLanguage": "inglés",
-  "externalTextLabel": "Constituciones Apostólicas · obra relacionada, no el Octateuco de Clemente",
-  "externalTextNote": "No encontré una edición íntegra, verificable y de libre acceso de esta colección clementina exacta. Este enlace es a las Constituciones Apostólicas, relacionadas históricamente, pero no idénticas.",
-  "translationNote": "El Octateuco etíope y las Constituciones Apostólicas comparten tradición y estructura en ocho libros, pero no deben tratarse como textos idénticos. Esta ficha evita inventar el contenido ausente.",
+  "externalTextLabel": "Constituciones Apostólicas · paralelo relacionado, no el Octateuco clementino",
+  "externalTextNote": "El enlace abre las Constituciones Apostólicas, obra relacionada pero no idéntica. La entrada enciclopédica de Claremont describe la recensión copto-árabe del Octateuco y sus variantes; no se presenta aquí como texto íntegro.",
+  "localTextKind": "summary",
+  "translationNote": "«Octateuco» significa colección de ocho libros, pero el nombre puede confundirse con el Orit etíope, los ocho libros bíblicos desde Génesis hasta Rut. Esta ficha trata el Octateuco clementino, una colección de antiguos órdenes eclesiásticos atribuida a Clemente. Sus recensiones siríaca, copta y árabe no tienen contenido idéntico; los apartados siguientes son una guía temática y comparativa, no una transcripción ni un índice universal.",
+  "notes": "La atribución a Clemente es pseudónima: la autoría real es desconocida. La recensión copto-árabe descrita por Claremont pone el Testamentum Domini en el libro I y distribuye cánones apostólicos en los libros II–VIII; la colección de Macario se acerca más a los libros II–VIII de las Constituciones Apostólicas. La tradición etíope tiene además compilaciones propias llamadas Didascalia y Sinodos: no deben identificarse automáticamente con el Octateuco clementino.",
   "chapters": [
     {
       "number": 1,
-      "title": "Libro I",
+      "title": "Qué significa «Octateuco clementino»",
       "verses": [
         {
           "number": "1",
-          "text": "Normas morales y deberes de los laicos. Texto completo pendiente de una edición española verificable."
+          "text": "El nombre describe una colección organizada en ocho libros y atribuida en la tradición a Clemente de Roma, quien supuestamente la habría recibido del apóstol Pedro. La investigación no conoce al autor real y considera la atribución pseudónima. No es 1 Clemente, la carta antigua a los corintios; tampoco es el Orit etíope, nombre de los ocho primeros libros bíblicos, desde Génesis hasta Rut. «Octateuco» es aquí el título de una colección de normas y escritos de orden eclesiástico."
         }
       ]
     },
     {
       "number": 2,
-      "title": "Libro II",
+      "title": "Una colección, varias formas",
       "verses": [
         {
           "number": "1",
-          "text": "Organización de la comunidad y ministerios. Texto completo pendiente de una edición española verificable."
+          "text": "No existe una única forma textual que represente sin matices todo lo llamado Octateuco de Clemente. Se conocen recensiones siríacas, coptas y árabes, con diferencias en selección, orden y contenido. Los órdenes eclesiásticos antiguos se copiaban, traducían y combinaban con materiales afines; por eso los títulos de ocho libros no garantizan que cada manuscrito contenga exactamente las mismas obras. La guía presenta temas y relaciones documentadas, no una reconstrucción de un manuscrito perdido. La descripción de Claremont distingue dos formas de transmisión copto-árabe con arreglos cronológicos de cánones: una asociada a un manuscrito de Berlín y otra a Macario del monasterio de Dayr Anba Maqar. La propia entrada señala que la colección de Macario sigue más de cerca los libros II–VIII de las Constituciones Apostólicas. Es una muestra concreta de por qué conviene hablar de «recensiones» y no de un solo índice fijo."
         }
       ]
     },
     {
       "number": 3,
-      "title": "Libro III",
+      "title": "Libro I en la recensión copto-árabe: Testamentum Domini",
       "verses": [
         {
           "number": "1",
-          "text": "Obispos, presbíteros, diáconos y viudas. Texto completo pendiente de una edición española verificable."
+          "text": "En la descripción de la recensión copto-árabe de Claremont, el primer libro es el Testamentum Domini («Testamento del Señor»), una obra de orden eclesiástico que presenta instrucciones para la comunidad cristiana bajo la forma literaria de disposiciones transmitidas por Jesús a los apóstoles. El Testamentum Domini también circuló en recensiones propias y no debe confundirse con los demás libros del Octateuco ni con las Constituciones Apostólicas completas. La relación exacta entre sus versiones requiere atender al manuscrito y a la edición utilizada."
         }
       ]
     },
     {
       "number": 4,
-      "title": "Libro IV",
+      "title": "Libros II–III: serie de cánones apostólicos",
       "verses": [
         {
           "number": "1",
-          "text": "Ayuda a huérfanos, pobres y perseguidos. Texto completo pendiente de una edición española verificable."
+          "text": "En la misma recensión, los libros II y III reúnen tramos de una colección de 127 cánones apostólicos: los cánones 1–20 aparecen en el libro II, y el libro III continúa con varios grupos hasta el canon 47. Estos cánones son reglas atribuidas a los apóstoles, no actas redactadas por ellos en el siglo I. Su forma conservada refleja la historia posterior de la disciplina eclesiástica. La numeración puede variar entre ediciones y manuscritos, así que aquí se ofrece la estructura reportada por la enciclopedia de Claremont, no una numeración crítica propia."
         }
       ]
     },
     {
       "number": 5,
-      "title": "Libro V",
+      "title": "Libros IV–VII: continuación y reordenamiento de cánones",
       "verses": [
         {
           "number": "1",
-          "text": "Disciplina, ayuno, fiestas y conducta cristiana. Texto completo pendiente de una edición española verificable."
+          "text": "Los libros IV–VII continúan con selecciones de los cánones apostólicos. La distribución copto-árabe descrita por Claremont no sigue una secuencia temática sencilla: algunos números se agrupan en un libro, otros aparecen reordenados o con subdivisiones señaladas por letras, y hay saltos entre bloques. Esto advierte contra resumir cada volumen como si fuera un tratado continuo sobre un solo asunto. En conjunto, la colección transmite disposiciones para regular la vida y el orden de las iglesias; el sentido de cada canon debe comprobarse en la recensión concreta."
         }
       ]
     },
     {
       "number": 6,
-      "title": "Libro VI",
+      "title": "Libro VIII: otro conjunto de cánones",
       "verses": [
         {
           "number": "1",
-          "text": "Tradiciones apostólicas y advertencias contra herejías. Texto completo pendiente de una edición española verificable."
+          "text": "El libro VIII de la recensión copto-árabe contiene, según la descripción enciclopédica, 56 cánones tomados del segundo libro de la colección de 127. La forma y el lugar de estos cánones no son idénticos en todas las colecciones relacionadas. En las Constituciones Apostólicas griegas, por su parte, el libro VIII es una extensa sección sobre organización, ministerios y prácticas litúrgicas, seguida por los llamados Cánones de los Apóstoles. La coincidencia de ocho libros y la relación histórica no autorizan a tratar ambos conjuntos como si fueran el mismo texto."
         }
       ]
     },
     {
       "number": 7,
-      "title": "Libro VII",
+      "title": "Temas de los órdenes eclesiásticos relacionados",
       "verses": [
         {
           "number": "1",
-          "text": "Oraciones, bautismo, eucaristía y calendario litúrgico. Texto completo pendiente de una edición española verificable."
+          "text": "Los textos afines que circularon junto a estas colecciones se ocupan de la vida comunitaria: conducta moral, deberes de ministros y fieles, viudas y personas necesitadas, oración, ayuno, bautismo, calendario festivo y disciplina. La Didascalia etíope, por ejemplo, es descrita por la Iglesia Ortodoxa Tewahedo como un discurso sobre la vida eclesial y social; sus versiones difieren y la forma etíope se relaciona con los primeros siete libros de las Constituciones Apostólicas. La fuente eclesial enumera, entre otros asuntos, la instrucción bíblica, los deberes mutuos de esposos, la función de ministros, el trato a mártires y difuntos, y las fiestas de Navidad, Epifanía y Pascua. Esos datos permiten percibir la amplitud de los manuales de orden eclesiástico, pero pertenecen a la descripción de la Didascalia etíope; no deben asignarse sin prueba a un libro concreto de toda recensión del Octateuco. La tradición etíope también conserva compilaciones llamadas Sinodos y Didascalia, nombres que no convierten automáticamente esas obras en copias de esta colección clementina."
         }
       ]
     },
     {
       "number": 8,
-      "title": "Libro VIII",
+      "title": "Cómo leerlo y qué no afirmar",
       "verses": [
         {
           "number": "1",
-          "text": "Ordenación, liturgia y cánones eclesiales. Texto completo pendiente de una edición española verificable."
+          "text": "El Octateuco es valioso como testimonio de cómo comunidades cristianas antiguas y medievales formularon autoridad, culto y disciplina bajo nombres apostólicos. No es un evangelio narrativo ni un registro directo de decisiones tomadas por los Doce. Tampoco hay base para presentar el enlace a las Constituciones Apostólicas como si ofreciera el Octateuco íntegro. La ficha disponible es deliberadamente una guía: distingue el título, las recensiones y las obras relacionadas, y evita rellenar con texto supuesto las partes para las que no se ha verificado una edición española completa."
         }
       ]
     }

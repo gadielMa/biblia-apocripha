@@ -1,8 +1,22 @@
 export function getAdjacentChapterTargets({ bookId, chapterIndex, chapters, orderedBooks, previousBookLastChapter = null }) {
   const bookIndex = orderedBooks.findIndex(book => book.id === bookId);
   const book = orderedBooks[bookIndex];
-  if (!book || chapterIndex < 0 || chapterIndex >= chapters.length) {
+  if (chapterIndex < 0 || chapterIndex >= chapters.length) {
     return { previous: null, next: null };
+  }
+
+  // Only the Gospels and Acts have cross-book continuation. Any other work
+  // still needs ordinary previous/next chapter navigation within itself.
+  if (!book) {
+    const localBook = { id: bookId };
+    return {
+      previous: chapterIndex > 0
+        ? { book: localBook, chapter: Number(chapters[chapterIndex - 1].number) }
+        : null,
+      next: chapterIndex < chapters.length - 1
+        ? { book: localBook, chapter: Number(chapters[chapterIndex + 1].number) }
+        : null
+    };
   }
 
   const previous = chapterIndex > 0

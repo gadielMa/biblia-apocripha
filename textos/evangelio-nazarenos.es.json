@@ -1,21 +1,88 @@
 {
   "id": "gospel-nazarenes-es",
-  "title": "Evangelio de los Nazarenos (fragmentos)",
+  "title": "Evangelio de los Nazarenos (guía ampliada de fragmentos)",
   "language": "es",
-  "sourceLanguage": "Arameo/Hebreo (fragmentario)",
-  "translator": "Resumen original en español; fragmentos en revisión",
-  "publication": "The Apocryphal New Testament (1924)",
-  "license": "Resumen original y referencias a fragmentos de dominio público.",
-  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
-  "notes": "No se conserva un manuscrito continuo; los testimonios proceden principalmente de citas de autores antiguos. No debe confundirse automáticamente con el Evangelio de los Hebreos ni con el de los Ebionitas.",
+  "sourceLanguage": "Tradición aramea propuesta; citas transmitidas principalmente en griego y latín",
+  "translator": "Resumen editorial ampliado en español; no es reconstrucción ni traducción íntegra",
+  "publication": "Guía temática de testimonios atribuidos a los Nazarenos",
+  "license": "Resumen editorial propio; referencias a testimonios antiguos y ediciones de dominio público",
+  "sourceUrl": "https://earlychristianwritings.com/text/gospelhebrews-mrjames.html",
+  "externalTextUrl": "https://earlychristianwritings.com/text/gospelhebrews-mrjames.html",
+  "externalTextKind": "partial",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "M. R. James · citas y lecturas variantes atribuidas, no texto continuo",
+  "externalTextNote": "M. R. James reúne citas patrísticas bajo los Evangelios de los Hebreos y de los Nazarenos. La separación entre estas obras y la atribución de ciertos fragmentos siguen debatidas; el enlace no ofrece un manuscrito íntegro del Evangelio de los Nazarenos.",
+  "localTextKind": "summary",
+  "translationNote": "«Evangelio de los Nazarenos» es una etiqueta académica basada sobre todo en testimonios posteriores; no se conserva un códice con ese título. Esta ficha resume variantes que algunas investigaciones atribuyen a una tradición evangélica semítica utilizada por cristianos nazarenos, sin fingir que pueda restituirse el texto completo.",
+  "notes": "El Oxford Handbook señala que el título solo aparece en fuentes medievales, que Jerónimo mezcla testimonios de los Nazarenos con el Evangelio de los Hebreos y con el supuesto Mateo hebreo, y que algunos estudios rechazan incluso separar ambas obras. Los fragmentos abajo se describen como atribuciones tradicionales o posibles, nunca como un inventario seguro. Los dichos de Oxirrinco que autores antiguos vincularon a veces con esta tradición se identifican hoy con el Evangelio de Tomás.",
   "chapters": [
     {
       "number": 1,
-      "title": "Fragmentos conservados",
+      "title": "Una obra reconstruida a partir de testimonios",
       "verses": [
         {
           "number": "1",
-          "text": "El Evangelio de los Nazarenos fue utilizado por comunidades judeocristianas de lengua aramea. Las citas antiguas presentan variantes de relatos evangélicos, dichos y escenas de la pasión, y muestran una relación compleja con las tradiciones atribuidas a Mateo. El texto completo se perdió y los fragmentos no permiten reconstruir una narración continua."
+          "text": "No sobrevive un manuscrito continuo del llamado Evangelio de los Nazarenos. El título es moderno en su uso académico y se aplica a citas y variantes que escritores cristianos posteriores relacionaron con los nazarenos o nazoreos, una comunidad judeocristiana. El Oxford Handbook observa que el título mismo solo aparece en fuentes medievales; esto no significa que la comunidad sea inventada, sino que el nombre del libro como entidad separada no está atestiguado claramente en los primeros testimonios. Jerónimo es el testigo más visible: en distintos pasajes habla de un evangelio usado por los Nazarenos, pero también lo llama Evangelio según los Hebreos o lo asocia con Mateo en lengua hebrea. Eusebio podría conservar referencias a una obra afín. La identidad, lengua y extensión del texto no pueden establecerse con la misma certeza que la de una obra conservada en códice."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "La relación discutida con Mateo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Las variantes atribuidas a este evangelio suelen parecerse a pasajes de Mateo, a veces con una explicación o un detalle adicional. Jerónimo afirmó haber conocido un evangelio en caracteres hebreos y describió lecturas que, para él, se vinculaban con Mateo. También dijo haberlo traducido al griego y al latín; los estudiosos han cuestionado cuán literalmente debe tomarse esa afirmación, pues pudo trabajar con citas, notas o material mediado por otros autores. Eso no demuestra que el Mateo canónico se tradujera de un original arameo, ni que todas las citas procedan de un solo libro. La investigación suele considerar que la tradición nazarena dependía de Mateo en alguna forma y que lo modificaba o interpretaba; sigue abierto cuánto de lo citado pertenecía a un evangelio autónomo y cuánto era una variante marginal, traducción o recuerdo de lectura."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "El hombre de la mano seca: un trabajador pide poder ganarse la vida",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jerónimo conserva una variante del relato del hombre con la mano seca. En ella, el hombre es presentado como albañil o trabajador manual y pide a Jesús recuperar la salud para no verse obligado a mendigar su sustento. La escena cambia el foco hacia el trabajo y la dignidad de quien depende de sus manos. Es uno de los fragmentos más citados como nazareno, aunque Jerónimo en ese mismo contexto agrupa nombres de comunidades y fuentes de manera poco precisa. Conviene tratarlo como una lectura atribuida por Jerónimo, no como una cita cuya pertenencia al evangelio independiente esté demostrada."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "El dintel del Templo y otras lecturas de la pasión",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Otra variante atribuida por Jerónimo reemplaza el rasgamiento del velo del Templo por la caída o fractura de un dintel monumental. La imagen intensifica el signo de la muerte de Jesús, pero no conocemos el marco narrativo donde aparecía ni podemos afirmar que todos los manuscritos nazarenos tuvieran esa lectura. Los testimonios de Jerónimo ofrecen también variantes menores en versículos de Mateo y en la identificación de personajes. No son capítulos recuperados: son notas dispersas, a veces lecturas de una copia semítica, otras veces comentarios del propio Jerónimo o de autores que él cita."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Bautismo, familia y Espíritu Santo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jerónimo transmite una escena en la que la madre y los hermanos de Jesús lo animan a acudir al bautismo de Juan. En otra formulación vinculada al bautismo, el Espíritu desciende sobre Jesús como fuente plena y habla de hallar reposo en él. En testimonios cercanos aparece la expresión «mi madre, el Espíritu Santo», que algunos investigadores ubican en el Evangelio de los Hebreos, no necesariamente en una obra nazarena distinta. Estas imágenes han atraído interés por su lenguaje y su relación con el mundo semítico, pero la atribución precisa de cada una depende de cómo Jerónimo identificaba sus fuentes."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Dichos sobre el pan, la riqueza y la vida comunitaria",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Entre las lecturas que la tradición editorial relacionó con un evangelio nazareno figuran una petición del Padrenuestro entendida como «el pan de mañana», interpretaciones de palabras de Jesús y una versión ampliada de la enseñanza al hombre rico que enfatiza la responsabilidad hacia los pobres. Algunas fuentes antiguas describen a un rico cuya abundancia contrasta con la necesidad de sus hermanos. El tema de la limosna resulta coherente con una lectura ética de Mateo, pero ciertos pasajes fueron transmitidos bajo rótulos intercambiables y no deben agruparse con seguridad en un mismo texto. Las antiguas ediciones también asociaban dichos de Oxirrinco a estos evangelios; actualmente esos fragmentos se asignan al Evangelio de Tomás."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Qué puede reconstruirse y qué permanece incierto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Si los fragmentos tradicionalmente asociados se reunieran, podrían sugerir un relato evangélico con episodios de la vida pública, el bautismo y la pasión de Jesús. Esa secuencia es una inferencia moderna, no el orden de un manuscrito conocido. El Oxford Handbook advierte que el título aparece en fuentes medievales, que Jerónimo confundía o combinaba las tradiciones nazarena y hebrea, y que algunos estudiosos rechazan distinguir el Evangelio de los Nazarenos del Evangelio de los Hebreos. En las reconstrucciones que sí los separan, varias lecturas de Mateo —el hombre de la mano seca identificado como trabajador, el dintel del Templo que cae, o el pan pedido como alimento del día futuro— se atribuyen a la tradición nazarena, pero la seguridad de cada asignación varía. Tampoco todo lo que Jerónimo llama «hebreo» tiene que ser arameo: «hebreo» puede describir la escritura o el grupo lector, y sus citas a veces vienen de comentarios previos. Por eso esta ficha conserva los episodios como testimonios atribuidos, informa dónde la clasificación es insegura y no presenta una reconstrucción continua ni una supuesta versión original de Mateo."
         }
       ]
     }

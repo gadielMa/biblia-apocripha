@@ -1,31 +1,139 @@
 {
-  "id":"hypostasis-archons-es",
-  "title":"Hipóstasis de los Arcontes",
-  "language":"es",
-  "sourceLanguage":"Copto (Nag Hammadi II, 4)",
-  "translator":"Versión española propia de trabajo, basada en la traducción pública de Bentley Layton",
-  "publication":"Edición de trabajo · adaptación completa por secciones",
-  "license":"Texto antiguo en dominio público; esta redacción española es una adaptación propia",
-  "sourceUrl":"https://www.gnosis.org/naghamm/hypostas.html",
-  "externalTextUrl":"https://www.gnosis.org/naghamm/hypostas.html",
-  "externalTextKind":"full",
-  "externalTextLanguage":"inglés",
-  "externalTextLabel":"The Hypostasis of the Archons · texto completo de referencia",
-  "notes":"Adaptación española de trabajo del tratado conservado en Nag Hammadi; no sustituye una edición crítica del copto.",
-  "chapters":[
-    {"number":1,"title":"La arrogancia del arconte","verses":[{"number":"1","text":"El tratado comienza con la afirmación de que las autoridades cósmicas tienen una realidad inferior. Su jefe, ciego por ignorancia y orgullo, declara: «Yo soy Dios y no existe otro fuera de mí»."}]},
-    {"number":2,"title":"La respuesta de la incorruptible","verses":[{"number":"1","text":"Una voz incorruptible responde que el verdadero Dios no necesita proclamarse. La soberbia del arconte revela que desconoce la plenitud superior y que su poder pertenece al orden de la oscuridad."}]},
-    {"number":3,"title":"La creación de las autoridades","verses":[{"number":"1","text":"El jefe produce autoridades y organiza los cielos inferiores. Cada una recibe una función y un nombre, pero todas permanecen limitadas por la ignorancia de su origen."}]},
-    {"number":4,"title":"La formación de Adán","verses":[{"number":"1","text":"Las autoridades modelan un cuerpo con materia terrestre. El cuerpo permanece inmóvil hasta que el poder superior sopla en él una vida que los arcontes no comprenden ni pueden controlar."}]},
-    {"number":5,"title":"La imagen celeste","verses":[{"number":"1","text":"Los gobernantes perciben que Adán posee una semejanza que procede de arriba. Por eso lo colocan en el jardín y le imponen límites, temiendo que despierte al conocimiento de su verdadera procedencia."}]},
-    {"number":6,"title":"La creación de Eva","verses":[{"number":"1","text":"La mujer surge como fuerza viviente asociada a Adán. Los arcontes intentan someterla, pero ella conserva una inteligencia que no procede de ellos y que resiste sus planes."}]},
-    {"number":7,"title":"La serpiente y el conocimiento","verses":[{"number":"1","text":"La serpiente anuncia que la prohibición sirve para mantener a los humanos en la ignorancia. El acceso al conocimiento permite reconocer la diferencia entre el creador arrogante y la realidad superior."}]},
-    {"number":8,"title":"La expulsión y la violencia","verses":[{"number":"1","text":"Las autoridades reaccionan con violencia cuando Adán y Eva adquieren discernimiento. La expulsión, el trabajo y la mortalidad describen el dominio del mundo inferior sobre la humanidad."}]},
-    {"number":9,"title":"Norea y los arcontes","verses":[{"number":"1","text":"Norea aparece como figura de resistencia. Los arcontes intentan apoderarse de ella, pero Norea rechaza su autoridad y pide ayuda contra quienes pretenden imponerle una unión por la fuerza."}]},
-    {"number":10,"title":"La intervención de Eleleth","verses":[{"number":"1","text":"El ángel Eleleth desciende para instruir a Norea. Le revela el origen de los arcontes, la existencia de la plenitud superior y la promesa de que los poderes inferiores no tendrán dominio eterno."}]},
-    {"number":11,"title":"El diluvio y la semilla","verses":[{"number":"1","text":"El texto reinterpreta el relato del diluvio: las autoridades buscan destruir la humanidad, pero una semilla de conocimiento es preservada. La salvación no depende del poder de los arcontes, sino de la sabiduría que viene de arriba."}]},
-    {"number":12,"title":"La liberación de la humanidad","verses":[{"number":"1","text":"Eleleth explica que la humanidad puede despertar mediante el conocimiento verdadero. El mundo material no es el destino final: quienes reconocen su origen superan la ignorancia y dejan de obedecer a las autoridades ciegas."}]},
-    {"number":13,"title":"La promesa del Hombre verdadero","verses":[{"number":"1","text":"La revelación anuncia la llegada del Hombre verdadero, una figura que desbarata el poder de los gobernantes. Su aparición muestra que la autoridad de los arcontes es provisional y que la creación puede ser restaurada."}]},
-    {"number":14,"title":"Cierre de la revelación","verses":[{"number":"1","text":"El tratado concluye presentando la enseñanza como una explicación de los orígenes, la caída y la liberación. El lector es invitado a discernir el engaño de los poderes inferiores y a buscar la vida que procede de la plenitud."}]}
+  "id": "hypostasis-archons-es",
+  "title": "Hipóstasis de los Arcontes",
+  "language": "es",
+  "sourceLanguage": "Copto (Nag Hammadi II, 4; traducción de un original griego)",
+  "translator": "Resumen ampliado en español basado en la traducción de Bentley Layton",
+  "publication": "Guía narrativa; no es una traducción íntegra",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://ccdl.claremont.edu/digital/collection/cce/id/1001/",
+  "externalTextUrl": "https://www.gnosis.org/naghamm/hypostas.html",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "The Hypostasis of the Archons · traducción de Bentley Layton",
+  "externalTextNote": "Texto completo en inglés de un tratado conservado en copto en un solo manuscrito de Nag Hammadi (Codex II, tratado 4). La redacción española de esta ficha es un resumen, no una traducción completa.",
+  "notes": "Este resumen describe las ideas de un tratado gnóstico antiguo, no la narración de Génesis ni una doctrina compartida por todas las comunidades cristianas. El escrito se conserva en copto en Nag Hammadi Codex II, páginas 86–97, y probablemente fue compuesto originalmente en griego. Su mito tiene paralelos cercanos en Sobre el origen del mundo, pero aquí se resumen solo los episodios propios de Hipóstasis de los Arcontes. La interpretación de algunos pasajes y nombres es discutida.",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Quiénes son los gobernantes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El tratado abre con una alusión a la lucha contra los gobernantes y poderes espirituales del mal. Explica que las autoridades cósmicas nacieron de la ignorancia y que su jefe se atribuye una soberanía absoluta. La narración los llama arcontes —gobernantes— y presenta su dominio como inferior al reino incorruptible. No es un relato neutral sobre ángeles: ofrece una interpretación polémica de los poderes del mundo y de la creación, como parte de una enseñanza revelada a quienes buscan comprender su origen."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Pistis Sophia y el origen de Samael",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Pistis Sophia, una figura celestial incorruptible, produce por sí sola un ser que queda en los dominios inferiores, bajo el velo que separa la realidad de arriba de la materia sombría de abajo. El ser adopta forma leonina y, al contemplar la materia, proclama: «Yo soy Dios y no hay otro fuera de mí». Una voz superior lo corrige y lo llama Samael, nombre que el tratado interpreta como «dios de los ciegos». La escena explica su ceguera como ignorancia espiritual, no como una incapacidad física."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Los arcontes y la caída de Yaldabaot",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El jefe crea siete descendientes andróginos y organiza un dominio celeste inferior. Zoe, hija de Pistis Sophia, denuncia la jactancia del gobernante, también llamado Sakla o Yaldabaot. Su aliento se convierte en un ángel de fuego que lo ata y lo arroja al Tártaro, bajo el abismo. Cuando Sabaot, uno de sus hijos, contempla ese poder, se arrepiente, rechaza a su padre y al mundo material, y alaba a Sophia y a Zoe. Ellas lo elevan y le confían el séptimo cielo. El mito no equipara sin más a Sabaot con el Dios supremo: lo presenta como un gobernante inferior que se vuelve hacia lo alto."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "El orgullo de Yaldabaot engendra la muerte",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Sabaot recibe un carro de querubines y servidores celestes, mientras su padre se consume de envidia. De esa envidia surge la muerte, que se convierte en autoridad sobre los dominios inferiores. El tratado enumera poderes vinculados con la muerte y el mundo material, y narra cómo esta jerarquía intenta imitar el orden de arriba sin poseer su plenitud. El episodio presenta la violencia y la mortalidad como frutos del orgullo y la rivalidad entre los gobernantes, dentro de la cosmología particular del escrito."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Los gobernantes forman a Adán",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Al ver una imagen divina reflejada en las aguas, los arcontes deciden modelar un ser humano a su semejanza. Forman a Adán con tierra, pero no consiguen ponerlo de pie ni darle vida. Entonces el Espíritu —la Mujer espiritual en la narración— desciende y entra en él; Adán se anima y ella lo llama «ser viviente». Los gobernantes no comprenden que la vida procede de un poder superior a ellos. El relato reelabora Génesis para contraponer el cuerpo material hecho por los arcontes con el principio espiritual que no controlan."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "La Mujer espiritual y la mujer carnal",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los arcontes intentan separar de Adán y someter a la Mujer espiritual. Ella escapa transformándose en un árbol y deja ante ellos una imagen o reflejo que los gobernantes ultrajan, creyendo que es ella. El texto distingue así a la presencia espiritual de la mujer carnal que queda en la escena; no se limita a repetir que Eva nace sencillamente de una costilla. Después, la Mujer espiritual vuelve a acercarse a Adán y este la reconoce como quien le dio vida y como madre de los vivientes. La identidad exacta de las figuras femeninas y la relación entre ellas son asuntos discutidos por los intérpretes."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "La serpiente instructora y el árbol del conocimiento",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los arcontes prohíben comer del árbol del conocimiento, aunque el propio tratado dice que no entienden plenamente el alcance de sus palabras. La Mujer espiritual entra en la serpiente, presentada como instructora, y pregunta a la mujer qué les habían ordenado los gobernantes. La instruye sobre el fruto y el conocimiento del bien y del mal. La mujer come y comparte el fruto con Adán. Al adquirir discernimiento, reconocen que carecen del elemento espiritual y se cubren. En esta relectura gnóstica, la serpiente no cumple el papel del tentador maligno de la lectura cristiana tradicional: sirve de vehículo a una enseñanza liberadora."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "La expulsión y las generaciones de Adán",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los gobernantes interrogan a Adán y a la mujer, los maldicen y los expulsan del jardín. La narración continúa con Caín y Abel y la muerte de Abel; luego presenta el nacimiento de Set y de Norea, a quien llama virgen y ayuda para muchas generaciones. Estas escenas incorporan y reinterpretan materiales de Génesis, con atención especial a la descendencia que conserva una relación con lo espiritual. No conviene trasladar automáticamente estas genealogías o su sentido a otros textos gnósticos: cada obra de Nag Hammadi tiene su propia versión."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Norea rechaza a los gobernantes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cuando los gobernantes intentan dominar a Norea, ella se resiste y pide auxilio al Dios de la totalidad. Un gran ángel llamado Eleleth desciende para responderle. Norea pregunta por el origen de las autoridades, por qué ejercen violencia y cuál será el destino de quienes se libran de ellas. El cambio de foco es importante: la obra pasa de la historia primordial a una revelación directa dirigida a una mujer que no acepta la autoridad de los arcontes."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Eleleth revela el origen de los poderes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Eleleth explica a Norea cómo surgieron Pistis Sophia, el gobernante ignorante y sus descendientes, y cómo Zoe y Sabaot alteraron la jerarquía inicial. También le habla de la separación entre el reino incorruptible y la región de caos, y de los límites del poder de los arcontes. Su enseñanza no borra el sufrimiento que estos causan, pero afirma que no son soberanos últimos: existe una realidad superior que conoce sus obras y puede poner fin a su dominio."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "El diluvio y la negativa de Norea",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los gobernantes deciden enviar un diluvio para destruir a los seres vivos. El relato cuenta que el gobernante de las fuerzas avisa a Noé y le ordena construir un arca. Norea intenta subir, pero Noé se lo impide; ella sopla sobre la embarcación y esta se consume por el fuego, por lo que él debe construir otra. Este episodio extraño reescribe la tradición del diluvio y pone en primer plano la independencia de Norea. El texto no ofrece aquí la secuencia habitual y completa de Génesis, ni debe confundirse con otras versiones de la historia presentes en escritos cercanos."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "La promesa de liberación",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La revelación de Eleleth culmina con una promesa: quienes pertenecen a la generación espiritual no serán finalmente vencidos por los poderes inferiores. El tratado anuncia que las autoridades serán contenidas y que la raíz de la verdad prevalecerá. Esta esperanza se formula mediante el lenguaje propio del escrito —conocimiento, espíritu y liberación—, no como una exposición sistemática de doctrinas cristianas posteriores. La conclusión invita a reconocer los límites de los arcontes y a no confundir su pretensión de dominio con la realidad suprema."
+        }
+      ]
+    }
   ]
 }

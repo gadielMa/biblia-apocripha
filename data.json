@@ -972,14 +972,14 @@
     "_tipo": null
   },
   {
-    "Grupo": "Nuevo Testamento Etíope",
+    "Grupo": "Órdenes eclesiásticos antiguos",
     "Tanaj": "",
     "Biblia Católica": "",
-    "Biblia Etíope": "Octateuco de Clemente",
-    "BIBLIOTECA": "",
-    "Fecha aproximada": "siglo IV d.C.",
-    "Idioma original": "Griego (trad. al Ge'ez)",
-    "Resumen": "Compilación de ocho libros con enseñanzas apostólicas, liturgia y disciplina.",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Octateuco de Clemente",
+    "Fecha aproximada": "siglo IV–VII d.C.",
+    "Idioma original": "Siríaco/Copto/Árabe",
+    "Resumen": "Colección pseudónima de órdenes eclesiásticos; las recensiones siríaca, copta y árabe difieren en contenido y organización.",
     "_archivo": null,
     "_tipo": null
   },
@@ -1522,10 +1522,10 @@
     "BIBLIOTECA": "Rollo del Templo (11QT)",
     "Fecha aproximada": "siglo II a.C.",
     "Idioma original": "Hebreo",
-    "Resumen": "Descripción ideal del Templo y leyes",
+    "Resumen": "Reescritura legal atribuida a la voz de Dios a Moisés: plano de un Templo ideal, sacrificios y fiestas, pureza, gobierno del rey y leyes civiles; el manuscrito está fragmentado.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen estructurado"
+    "_estado_texto": "Resumen ampliado · transcripción hebrea enlazada"
   },
   {
     "Grupo": "Textos de Qumrán / Rollos del Mar Muerto",
@@ -1655,9 +1655,10 @@
     "BIBLIOTECA": "Testamento de Isaac",
     "Fecha aproximada": "siglo II–IV d.C.",
     "Idioma original": "Copto",
-    "Resumen": "Relato de la muerte de Isaac, sus exhortaciones y su ascensión; forma parte de la literatura testamentaria patriarcal.",
+    "Resumen": "Guía ampliada del relato: anuncio de la muerte de Isaac, exhortaciones a Jacob, viaje celestial, visión de los castigos y encuentro con Abraham; culmina en la ascensión del patriarca. La entrada combina resumen editorial con un fragmento final y no contiene el texto íntegro.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen ampliado · fragmentario"
   },
   {
     "Grupo": "Pseudoepígrafos del Segundo Templo",
@@ -1677,11 +1678,12 @@
     "Biblia Católica": "",
     "Biblia Etíope": "",
     "BIBLIOTECA": "Testamento de Jacob",
-    "Fecha aproximada": "siglo II–V d.C.",
-    "Idioma original": "Copto/Oriental",
-    "Resumen": "Obra patriarcal conservada en fragmentos y testimonios orientales; relacionada con las tradiciones de Isaac y Abraham.",
+    "Fecha aproximada": "Antigüedad tardía (fecha discutida)",
+    "Idioma original": "Copto; también hay versiones árabes y etíopes",
+    "Resumen": "Jacob recibe el anuncio de su muerte, bendice a sus hijos, contempla el juicio y el reposo de los justos, y es llevado junto a Abraham e Isaac. La guía resume la versión copta y distingue una noticia bibliográfica incierta de M. R. James.",
     "_archivo": null,
-    "_tipo": null
+    "_tipo": null,
+    "_estado_texto": "Resumen ampliado (no es traducción completa)"
   },
   {
     "Grupo": "Evangelios Gnósticos / Nag Hammadi",
@@ -1703,8 +1705,8 @@
     "Biblia Etíope": "",
     "BIBLIOTECA": "Evangelio de los Hebreos",
     "Fecha aproximada": "siglo I–II d.C.",
-    "Idioma original": "Hebreo/Arameo",
-    "Resumen": "Evangelio perdido conocido por fragmentos citados por autores cristianos; vinculado a comunidades judeocristianas.",
+    "Idioma original": "Griego en varias citas; tradición lingüística discutida",
+    "Resumen": "Evangelio judeocristiano perdido, conocido por citas antiguas. Conserva tradiciones sobre el Espíritu, el bautismo y una aparición a Santiago; la asignación de fragmentos y su relación con otros evangelios judeocristianos son discutidas.",
     "_archivo": null,
     "_tipo": null,
     "_estado_texto": "Fragmentario"
@@ -1715,9 +1717,9 @@
     "Biblia Católica": "",
     "Biblia Etíope": "",
     "BIBLIOTECA": "Evangelio de los Nazarenos",
-    "Fecha aproximada": "siglo I–II d.C.",
-    "Idioma original": "Arameo/Hebreo",
-    "Resumen": "Evangelio judeocristiano perdido, conocido por citas y variantes de relatos evangélicos conservadas por autores antiguos.",
+    "Fecha aproximada": "Composición incierta; testimonios antiguos y título académico tardío",
+    "Idioma original": "Tradición aramea propuesta; citas en griego y latín",
+    "Resumen": "Evangelio perdido atribuido a comunidades nazarenas a partir de citas tardías y variantes, sobre todo de Mateo. Jerónimo confunde fuentes y títulos; la separación del Evangelio de los Hebreos y la asignación de fragmentos siguen debatidas.",
     "_archivo": null,
     "_tipo": null,
     "_estado_texto": "Fragmentario"
@@ -1728,12 +1730,51 @@
     "Biblia Católica": "",
     "Biblia Etíope": "",
     "BIBLIOTECA": "Evangelio de los Ebionitas",
-    "Fecha aproximada": "siglo II d.C.",
-    "Idioma original": "Griego",
-    "Resumen": "Evangelio perdido conocido por fragmentos de una comunidad judeocristiana asociada a los ebionitas.",
+    "Fecha aproximada": "Fecha incierta; atestiguado por Epifanio en el siglo IV",
+    "Idioma original": "Griego probable, según juegos de palabras conservados",
+    "Resumen": "Evangelio perdido conocido por siete fragmentos citados por Epifanio. Incluye versiones propias del bautismo de Jesús, una crítica a los sacrificios y una posible alusión a no comer carne en Pascua; la interpretación del obispo es polémica y el grupo descrito puede no representar a todos los ebionitas.",
     "_archivo": null,
     "_tipo": null,
     "_estado_texto": "Fragmentario"
+  },
+  {
+    "Grupo": "Evangelios apócrifos y fragmentarios",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Evangelio desconocido (Papiro Egerton 2)",
+    "Fecha aproximada": "siglo II d.C.",
+    "Idioma original": "Griego",
+    "Resumen": "Cuatro fragmentos de un evangelio desconocido: disputas con las autoridades, la curación de un leproso y enseñanzas de Jesús.",
+    "_archivo": null,
+    "_tipo": null,
+    "_estado_texto": "Fragmentos conservados · traducción de trabajo"
+  },
+  {
+    "Grupo": "Evangelios apócrifos y fragmentarios",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Evangelio de Oxirrinco 840",
+    "Fecha aproximada": "siglo II d.C. (composición propuesta)",
+    "Idioma original": "Griego",
+    "Resumen": "Una hoja de un evangelio desconocido conserva una advertencia y un diálogo sobre la pureza ritual en el templo.",
+    "_archivo": null,
+    "_tipo": null,
+    "_estado_texto": "Fragmento conservado · traducción de trabajo"
+  },
+  {
+    "Grupo": "Evangelios apócrifos y fragmentarios",
+    "Tanaj": "",
+    "Biblia Católica": "",
+    "Biblia Etíope": "",
+    "BIBLIOTECA": "Fragmento del Evangelio de Fayum",
+    "Fecha aproximada": "siglo III d.C. (papiro; identificación discutida)",
+    "Idioma original": "Griego",
+    "Resumen": "Unas pocas líneas sobre la dispersión de las ovejas y la negación de Pedro; quizá sea una cita abreviada y no un fragmento de evangelio.",
+    "_archivo": null,
+    "_tipo": null,
+    "_estado_texto": "Fragmento conservado · atribución evangélica discutida"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1746,7 +1787,7 @@
     "Resumen": "Narración de la conversión de Asenet, su matrimonio con José y la reconciliación entre identidades egipcias e israelitas. Combina romance, visión, arrepentimiento y providencia.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Resumen ampliado · traducción íntegra enlazada"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1759,7 +1800,7 @@
     "Resumen": "Reescritura de la historia bíblica desde Adán hasta Saúl, con ampliaciones legendarias, discursos y tradiciones que no aparecen en el texto canónico.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Resumen ampliado · texto íntegro enlazado"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1772,7 +1813,7 @@
     "Resumen": "Diálogo de Salomón con demonios y ángeles durante la construcción del templo; incluye nombres, funciones, enfermedades y medios de sometimiento espiritual.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Texto completo · traducción de trabajo"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1782,10 +1823,10 @@
     "BIBLIOTECA": "Hechos de Juan",
     "Fecha aproximada": "siglo II d.C.",
     "Idioma original": "Griego",
-    "Resumen": "Relatos de viajes, milagros y discursos del apóstol Juan, con episodios de conversión, himnos y una cristología diversa.",
+    "Resumen": "Relatos de Juan en Éfeso: resurrecciones, conversión frente al culto de Ártemis, la historia de Drusiana, el himno y la visión de Jesús; la transmisión es fragmentaria y compuesta.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Resumen ampliado · texto inglés enlazado"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1795,10 +1836,10 @@
     "BIBLIOTECA": "Hechos de Felipe",
     "Fecha aproximada": "siglo IV–V d.C.",
     "Idioma original": "Griego",
-    "Resumen": "Tradiciones sobre la misión de Felipe en Asia Menor, confrontaciones con autoridades y poderes paganos, conversiones y martirio.",
+    "Resumen": "Tradiciones sobre la misión de Felipe: milagros, conversiones, animales parlantes y martirio en Hierápolis; la obra se conserva de forma fragmentaria y en varias lenguas.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Resumen ampliado · selección en inglés enlazada"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1808,10 +1849,10 @@
     "BIBLIOTECA": "Hipóstasis de los Arcontes",
     "Fecha aproximada": "siglo III–IV d.C.",
     "Idioma original": "Copto (Nag Hammadi)",
-    "Resumen": "Tratado setiano sobre los arcontes, la creación del mundo material, Adán y Eva, y la liberación de la humanidad mediante conocimiento revelado.",
+    "Resumen": "Relectura gnóstica de Génesis: los arcontes, la Mujer espiritual, la serpiente instructora, Norea y la revelación de Eleleth; se conserva en copto en Nag Hammadi II,4.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
+    "_estado_texto": "Resumen ampliado · texto inglés enlazado"
   },
   {
     "Grupo": "Apócrifos y pseudoepígrafos",
@@ -1821,23 +1862,10 @@
     "BIBLIOTECA": "Sobre el origen del mundo",
     "Fecha aproximada": "siglo III–IV d.C.",
     "Idioma original": "Copto (Nag Hammadi)",
-    "Resumen": "Cosmogonía gnóstica que reinterpreta Génesis, describe a los gobernantes celestes, la creación de la humanidad y el destino final del mundo.",
+    "Resumen": "Cosmogonía gnóstica que enlaza el origen del caos, Yaldabaot, Eros, Adán y Eve de Vida, el Fénix y el retorno final de la luz; conserva motivos propios distintos de Hipóstasis de los Arcontes.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Resumen"
-  },
-  {
-    "Grupo": "Textos de Qumrán / Tradiciones eclesiales",
-    "Tanaj": "",
-    "Biblia Católica": "",
-    "Biblia Etíope": "",
-    "BIBLIOTECA": "Octateuco de Clemente",
-    "Fecha aproximada": "siglo IV–VII d.C.",
-    "Idioma original": "Ge’ez/Griego",
-    "Resumen": "Colección etíope de cánones, reglas y disposiciones eclesiales atribuida a Clemente. Reúne materiales normativos y litúrgicos, no un relato evangélico continuo.",
-    "_archivo": null,
-    "_tipo": null,
-    "_estado_texto": "Resumen estructurado"
+    "_estado_texto": "Resumen ampliado · texto inglés enlazado"
   },
   {
     "Grupo": "Deuterocanónicos / Antiguo Testamento",

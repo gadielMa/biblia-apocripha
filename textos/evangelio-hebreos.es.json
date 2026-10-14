@@ -1,21 +1,88 @@
 {
   "id": "gospel-hebrews-es",
-  "title": "Evangelio de los Hebreos (fragmentos)",
+  "title": "Evangelio de los Hebreos (guía ampliada de fragmentos)",
   "language": "es",
-  "sourceLanguage": "Hebreo/Arameo (fragmentario)",
-  "translator": "Resumen original en español; fragmentos en revisión",
-  "publication": "The Apocryphal New Testament (1924)",
-  "license": "Resumen original y referencias a fragmentos de dominio público.",
-  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
-  "notes": "El evangelio original se perdió; esta entrada no reconstruye un texto continuo. Reúne una descripción y referencias a testimonios conservados por Clemente, Orígenes, Jerónimo, Eusebio y otros autores.",
+  "sourceLanguage": "Griego en varias citas antiguas; tradición lingüística discutida",
+  "translator": "Resumen editorial ampliado en español; no es una reconstrucción ni traducción íntegra",
+  "publication": "Guía temática de testimonios patrísticos y fragmentos atribuidos",
+  "license": "Resumen editorial propio; referencias a fuentes antiguas y ediciones de dominio público",
+  "sourceUrl": "https://earlychristianwritings.com/text/gospelhebrews-mrjames.html",
+  "externalTextUrl": "https://earlychristianwritings.com/text/gospelhebrews-mrjames.html",
+  "externalTextKind": "partial",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "M. R. James · colección de citas y testimonios, no texto continuo",
+  "externalTextNote": "La página reúne citas atribuidas al Evangelio de los Hebreos según M. R. James (1924). La identificación de algunos fragmentos y su separación de los Evangelios de los Nazarenos y de los Ebionitas siguen discutidas.",
+  "localTextKind": "summary",
+  "translationNote": "No se conserva manuscrito continuo. Los apartados resumen testimonios antiguos; no reconstruyen el orden, extensión ni redacción del evangelio perdido.",
+  "notes": "Los autores antiguos no siempre usan los títulos de manera consistente. Estudios modernos suelen distinguir al menos tres tradiciones judeocristianas —Hebreos, Ebionitas y Nazarenos—, pero discrepan en la asignación de algunas citas. Las palabras «hebreo» o «en caracteres hebreos» tampoco prueban por sí solas el idioma de cada pasaje. Los dichos de Oxirrinco citados en ediciones antiguas se identifican hoy con el Evangelio de Tomás, no con este evangelio.",
   "chapters": [
     {
       "number": 1,
-      "title": "Fragmentos conservados",
+      "title": "Un evangelio perdido conocido por citas",
       "verses": [
         {
           "number": "1",
-          "text": "El Evangelio de los Hebreos fue utilizado por comunidades judeocristianas y probablemente circuló en hebreo o arameo. Los fragmentos transmitidos aluden al bautismo de Jesús, al Espíritu Santo como figura materna, a apariciones posteriores a la resurrección, a Santiago y a enseñanzas éticas. Las citas no forman una narración continua y no permiten reconstruir con seguridad el texto original."
+          "text": "El Evangelio de los Hebreos no ha llegado en un códice propio. Se conoce por alusiones y citas incorporadas en obras de autores cristianos antiguos, entre ellos Clemente de Alejandría, Orígenes, Eusebio y Jerónimo; también se transmite una referencia vinculada a Cirilo de Jerusalén, cuya fuente y contexto exigen cautela. Eusebio lo incluye entre los escritos discutidos y señala que algunos cristianos de origen judío lo estimaban especialmente. Estas citas conservan escenas y dichos, no una narración completa. Por ello no es posible establecer con certeza cuántos capítulos tuvo, cuál era su título original, ni en qué orden aparecían los episodios."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Dichos sobre búsqueda, asombro y descanso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Clemente transmite un dicho atribuido al evangelio: quien se asombra llega a reinar, y quien reina alcanza el descanso. La secuencia enlaza búsqueda, hallazgo, asombro, autoridad y reposo en otras formulaciones que los autores antiguos relacionaron con el mismo motivo. El fragmento sugiere una enseñanza sapiencial sobre comprender y alcanzar una condición plena, pero su contexto se perdió. No debe reconstruirse como una doctrina sistemática ni confundirse con los paralelos del Evangelio de Tomás: la semejanza de un dicho no demuestra que una obra dependa de la otra."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "El bautismo y el Espíritu que busca reposo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Una cita conservada por Jerónimo presenta el bautismo de Jesús con una imagen singular: el Espíritu desciende sobre él y expresa que había esperado a que llegara para reposar en él. La formulación amplía el motivo evangélico del Espíritu que desciende sobre Jesús y lo declara Hijo. La fuente no permite saber cuánto más narraba el episodio ni si el pasaje pertenecía a una secuencia bautismal extensa. Algunos estudios consideran este fragmento parte del Evangelio de los Hebreos; otros advierten que los títulos aplicados por los autores antiguos pueden mezclar tradiciones."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "El Espíritu como madre y la montaña",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Orígenes cita a Jesús llamando «madre» al Espíritu Santo, quien lo toma por un cabello y lo lleva al monte Tabor. La imagen combina una forma maternal de hablar del Espíritu con una escena de traslado o revelación. Orígenes la menciona al discutir una interpretación que podía desconcertar a sus lectores; no proporciona el episodio entero. Jerónimo conserva una formulación relacionada. La feminidad gramatical de «espíritu» en hebreo se ha propuesto como trasfondo de la expresión, pero eso es una explicación posible, no una certeza sobre el significado original del pasaje."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "La aparición del Resucitado a Santiago",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jerónimo atribuye al Evangelio de los Hebreos un relato en el que Jesús resucitado se aparece a Santiago, su hermano. La narración vincula la aparición con el compromiso de Santiago de no comer hasta ver al Señor resucitado; luego Jesús comparte pan con él. El episodio destaca a Santiago y ofrece una versión propia de las tradiciones de apariciones. Su atribución exacta no es segura: parte de la investigación ha relacionado este material con otro evangelio judeocristiano, a menudo llamado Evangelio de los Nazarenos. Conviene presentarlo como un fragmento transmitido bajo ese título por Jerónimo, no como prueba definitiva de una obra identificable sin dudas."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "La mujer acusada y otras tradiciones posibles",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Eusebio dice que Papías contó una historia de una mujer acusada ante Jesús y añade que el Evangelio de los Hebreos también la contenía. Desde antiguo se ha relacionado el testimonio con la mujer acusada de adulterio, pero no puede asegurarse que la escena fuera idéntica al pasaje hoy situado en Juan 7:53–8:11. Otros testimonios antiguos asocian con este evangelio variantes sobre la oración, la riqueza, el perdón y la conducta hacia el prójimo. Cada caso depende de cómo el autor cita su fuente y de las decisiones de los editores modernos; no todos los fragmentos atribuidos tradicionalmente pertenecen necesariamente a la misma obra."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Relación con Mateo y límites de la reconstrucción",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Algunos escritores antiguos asociaron el evangelio con Mateo o lo consideraron una versión hebrea de ese relato. La investigación actual no lo toma como el original hebreo de Mateo: la relación exacta entre ambos textos es difícil de reconstruir a partir de citas aisladas. Además, Jerónimo emplea títulos variables y parece acercar tradiciones distintas. Por eso los estudios suelen diferenciar el Evangelio de los Hebreos del Evangelio de los Ebionitas —conocido sobre todo por Epifanio— y de las tradiciones llamadas nazarenas, aunque la asignación de varios fragmentos continúa en debate. Las menciones al Espíritu maternal, a Santiago o a una lectura variante son valiosas precisamente como testimonios parciales, no como una edición recuperada. Si se reúnen los fragmentos que muchos especialistas atribuyen al Evangelio de los Hebreos, se perfila —como inferencia, no como texto conservado— una obra narrativa que pudo recorrer desde el bautismo y la actividad de Jesús hasta la pasión y la resurrección. Sus citas incluirían material compartido con los evangelios canónicos, pero también formulaciones y episodios propios. La imagen del Espíritu como madre y la atención a la aparición a Santiago pueden reflejar intereses de ciertos círculos judeocristianos, quizá egipcios; la evidencia, sin embargo, no permite generalizar esas ideas a todos los grupos judíos cristianos. La pérdida del manuscrito nos deja una historia discontinua: los autores citantes seleccionaron los pasajes que les servían, y sus etiquetas no son siempre uniformes."
         }
       ]
     }

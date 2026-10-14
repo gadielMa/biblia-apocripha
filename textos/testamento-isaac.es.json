@@ -1,21 +1,228 @@
 {
   "id": "testament-isaac-es",
-  "title": "Testamento de Isaac",
+  "title": "Testamento de Isaac · guía ampliada y fragmento",
   "language": "es",
-  "sourceLanguage": "Inglés",
-  "translator": "Traducción de trabajo al español; puede contener errores y diferencias respecto de otras ediciones",
-  "publication": "Sahidic version, translation by K. H. Kuhn (1967)",
-  "license": "Public-domain historical translation; verify local status before redistribution.",
-  "sourceUrl": "https://realityroars.com/theology/writings/ot-apocrypha/ota-testament-of-isaac.html",
-  "notes": "La fuente conserva el texto en una sección extensa; se mantiene como una unidad para no inventar divisiones editoriales.",
+  "sourceLanguage": "Copto (testimonios también en árabe y etíope)",
+  "translator": "Guía de lectura en español; el pasaje final es una traducción de trabajo desde el inglés",
+  "publication": "Síntesis editorial basada en la versión sahídica y estudios de referencia; fragmento final según K. H. Kuhn",
+  "license": "La guía es texto editorial original. El fragmento conserva su atribución y aviso de traducción de trabajo.",
+  "sourceUrl": "https://www.gospelstudies.org.uk/earlychurch/pdf/e-books/box_g-h/testament-of-abraham_box.pdf",
+  "bibliographyUrl": "https://www.earlyjewishwritings.com/testisaac.html",
+  "externalTextUrl": "https://www.gospelstudies.org.uk/earlychurch/pdf/e-books/box_g-h/testament-of-abraham_box.pdf",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Testament of Isaac · traducción histórica de S. Gaselee (1927)",
+  "localTextKind": "summary",
+  "textCompleteness": "partial",
+  "notes": "La obra antigua no está transcrita íntegramente en esta entrada. Los capítulos 1–8 son una guía editorial, no una traducción ni una reconstrucción del original. El capítulo 9 preserva únicamente el pasaje final que estaba incluido en la edición local. El Testamento de Isaac se conserva en recensiones coptas, árabes y etíopes; la datación, las relaciones entre versiones y la historia de su composición siguen discutidas.",
   "chapters": [
     {
       "number": 1,
-      "title": "Testamento de Isaac",
+      "title": "Una obra sobre la muerte del patriarca",
       "verses": [
         {
           "number": "1",
-          "text": "13. Esta es la salida del cuerpo de nuestro padre Isaac, el patriarca, el día veinticuatro del mes Mesore. Y el día en que su padre Abraham lo ofreció en sacrificio es el dieciocho de Mechir. (12 de febrero) Los cielos y la tierra se llenaron del olor reconfortante de nuestro padre Isaac, como de plata escogida: este es el sacrificio de nuestro padre Isaac el patriarca. Cuando Abraham lo ofreció como sacrificio a Dios, el olor reconfortante del sacrificio de Isaac subió a los cielos. Bienaventurado todo hombre que realiza un acto de misericordia en nombre de estos patriarcas, porque ellos serán sus hijos en el reino de los cielos. Porque nuestro Señor ha hecho con ellos pacto para siempre, que todo el que haga un acto de misericordia en el día de su conmemoración les será dado como hijo en el reino de los cielos para siempre. Y llegarán a la primera hora de los mil años, conforme a la promesa de nuestro Señor, nuestro Dios y Salvador Jesucristo, por quien toda gloria es debida a él y a su buen Padre y al Espíritu Santo, dador de vida a toda la creación y uno en ser con el Padre y el Hijo, ahora y siempre, por los siglos de los siglos. Amén\""
+          "text": "El Testamento de Isaac pertenece a la literatura que imagina las últimas palabras de figuras bíblicas. No es un escrito del Isaac histórico ni un libro bíblico canónico: es una composición pseudónima que pone en boca del patriarca enseñanzas sobre la conducta, la muerte y el destino después de ella. Suele circular junto con los Testamentos de Abraham y Jacob, formando una trilogía patriarcal en algunas tradiciones manuscritas. La obra no aparece con claridad en las antiguas listas de libros apócrifos, y su fecha exacta no puede fijarse con seguridad. Se conservan versiones coptas —sahídica y bohaírica— además de testimonios árabes y etíopes. Los estudiosos discrepan sobre la lengua de composición, las relaciones entre esas versiones y cuánto material anterior pudo incorporarse a la forma cristiana conservada. Esta guía resume el relato conocido por esas versiones; no sustituye sus textos ni resuelve esas discusiones."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "El anuncio de la muerte y la despedida",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La narración se sitúa cuando Isaac ya es anciano y se acerca al final de su vida. Un mensajero celestial, descrito en la tradición como el ángel de Abraham o con apariencia semejante a él, le comunica que su muerte está próxima. El anuncio convierte la casa patriarcal en el escenario de una despedida: Isaac debe prepararse, llamar a los suyos y dejar instrucciones. Como en otros testamentos antiguos, saber que la muerte llega permite al protagonista hablar con autoridad y ordenar los asuntos de la familia. Pero el relato no se limita a consejos domésticos. Anticipa que la muerte abrirá una experiencia visionaria: Isaac verá realidades invisibles a los vivos y aprenderá cómo se relacionan las obras humanas, el juicio y la misericordia divina. La escena enlaza así el duelo familiar con una enseñanza religiosa dirigida también a quienes escuchaban o leían la obra en comunidades posteriores."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Las exhortaciones a Jacob y a la comunidad",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Antes de morir, Isaac exhorta a su hijo Jacob y a quienes se reúnen en torno a él. Las instrucciones insisten en la piedad, la rectitud y la responsabilidad hacia otras personas. No son únicamente una bendición privada para el heredero: presentan la vida virtuosa como preparación para comparecer ante Dios. La tradición del texto relaciona la observancia, la oración y las obras de misericordia con la esperanza de recibir favor en el mundo venidero. En algunos pasajes Isaac anima a sostener prácticas religiosas y a recordar a los patriarcas; el énfasis litúrgico de la recensión copta sugiere que el relato también servía a una comunidad que conmemoraba a Abraham e Isaac. Es importante no atribuir automáticamente todos estos detalles a una forma original única: las versiones transmitidas no son idénticas y los estudiosos han señalado posibles añadidos cristianos dentro del texto. La guía resume sus motivos principales, no una secuencia crítica reconstruida."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "La separación del alma y el viaje celestial",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Al llegar el momento de la muerte, el relato desplaza la atención del cuerpo a la suerte del alma. Isaac es acompañado por seres celestiales y contempla ámbitos que normalmente permanecen ocultos. El viaje visionario proporciona la estructura para mostrar que la muerte no es, en esta obra, una desaparición sin juicio: la persona se encamina hacia una evaluación de su vida. Ángeles actúan como guías e interlocutores, explican lo que Isaac ve y lo conducen por distintos espacios. El protagonista no aparece como un observador indiferente; su condición de patriarca le da acceso a la visión, pero la experiencia también lo conmueve. La visita al más allá amplía la escena familiar del lecho de muerte hasta convertirla en una revelación sobre el orden moral del universo. El texto combina el lenguaje de los testamentos patriarcales con rasgos de la literatura apocalíptica, aunque su forma general sigue siendo la de una despedida y exhortación."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Castigos, justicia y responsabilidad",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Durante la visión, Isaac ve castigos destinados a quienes han obrado mal. Las versiones describen tormentos y figuras encargadas de administrarlos; en la tradición sahídica se menciona a Abdemerouchos como responsable de los castigos. Una imagen destacada es la del río de fuego, que participa en la distinción entre justos e injustos. Estos cuadros no deben leerse como un mapa uniforme de todas las doctrinas cristianas antiguas: pertenecen a la imaginación particular de esta obra y a la transmisión de sus recensiones. Su función narrativa es hacer visible que las decisiones de la vida tienen consecuencias y que la justicia divina alcanza aquello que permanece oculto en el mundo. Al mismo tiempo, el relato no presenta la visión solo para aterrorizar. Isaac pregunta, observa y aprende; la revelación le permite volver a exhortar a los vivos. La advertencia sobre el juicio forma parte de una llamada a la conducta responsable, no de una descripción sistemática del más allá."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Abraham, la misericordia y las obras de compasión",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En una región más elevada, Isaac se encuentra con Abraham. La visión coloca a los dos patriarcas dentro de una relación familiar que continúa más allá de la muerte y conecta su memoria con la esperanza de salvación. Abraham recibe del Señor condiciones relacionadas con la recepción de Isaac en el reino: aparecen el cuidado del testamento y las obras compasivas. La tradición transmitida también concede un lugar especial a la misericordia hacia los necesitados y a las acciones realizadas en memoria de los patriarcas. No obstante, el pasaje introduce excepciones por la bondad y el amor de Dios para quienes no pudieron cumplir plenamente esas condiciones. La súplica, la conmemoración y la compasión se presentan como expresiones de una comunidad que no abandona a sus miembros. Así, el texto mantiene juntas dos ideas: las acciones humanas importan, pero la salvación no se reduce a una contabilidad mecánica de méritos. La piedad patriarcal queda enmarcada por la misericordia divina."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "La asamblea celestial y el destino de Isaac",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La visión culmina cuando el Señor ordena a Miguel reunir a ángeles y santos ante Isaac. El patriarca es conducido a una escena de presencia y adoración celestial. Jacob vuelve a aparecer, abraza a su padre y recibe una bendición; la familia terrenal queda incorporada a la liturgia del cielo. Finalmente, Dios toma el alma de Isaac y la eleva en su carro hacia las alturas. El desenlace enlaza la despedida inicial con una llegada: la muerte separa el alma del cuerpo, pero el relato la representa como tránsito hacia Dios y reencuentro con los antepasados. El texto concluye además con una exhortación a conmemorar a Isaac. En la versión que sirve de base al fragmento local, esa conclusión asocia la memoria de los patriarcas con actos de misericordia y con la esperanza de ser recibidos como hijos en el reino de los cielos. La conmemoración es, por tanto, tanto recuerdo litúrgico como invitación ética."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Transmisión, fecha y lectura crítica",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La historia textual aconseja prudencia. La versión copta sahídica es una fuente principal, pero existen también recensiones bohaírica, árabe y etíope, y no siempre es posible reconstruir cómo se relacionan. Algunos investigadores han propuesto una composición cristiana egipcia y han observado pasajes cristianos que parecen añadidos o que interrumpen la continuidad; otros han considerado la posibilidad de tradiciones judías anteriores. No hay consenso suficiente para fijar una fecha estrecha ni para afirmar con certeza una lengua original. La obra parece depender literariamente del Testamento de Abraham, aunque el grado y la dirección de esa dependencia se discuten. Al leerla conviene separar tres niveles: el relato atribuido a Isaac, las formas concretas que transmiten los manuscritos y las hipótesis modernas sobre su composición. Esta entrada ofrece una orientación temática basada en descripciones académicas, no una traducción completa ni una edición crítica. El pasaje que sigue es solo el breve cierre traducido conservado previamente en el proyecto."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Jacob recibe el anuncio y la promesa patriarcal",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Cuando Jacob se acerca al lecho, el ángel ha hecho que no oiga la conversación celestial. Isaac le revela, sin embargo, que su partida está próxima. La reacción del hijo es de duelo profundo: se abraza a su padre y le ruega que no lo deje. Isaac comparte el dolor, pero también le pide aceptar el orden de la vida y recuerda que ni siquiera él pudo detener la muerte de Abraham. En vez de convertir el momento en desesperanza, el patriarca consuela a Jacob con la continuidad de la familia y de la promesa. La visión del ángel había asegurado que la bendición pronunciada sobre Jacob no sería anulada por fuerzas humanas: de él procederían un pueblo poderoso y doce tribus. La obra interpreta así la historia familiar en clave providencial. La bendición que en Génesis se obtiene en un episodio de conflicto aparece aquí confirmada por una asamblea celestial. No se presenta como una licencia para la violencia ni como garantía de que Jacob no sufrirá; funciona como certeza de que su linaje conserva un lugar dentro del plan divino. Isaac le pide además que transmita sus enseñanzas, pues el testamento debe servir a generaciones que todavía no han nacido. El duelo privado se convierte en un acto de transmisión: Jacob no puede acompañar a su padre en la muerte, pero puede preservar sus palabras y enseñarlas a sus descendientes."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "La genealogía y la esperanza mesiánica",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Para consolar a Jacob, Isaac recorre la memoria de los antepasados: desde Adán y Eva, pasando por Abel, Set, Enós, los patriarcas antediluvianos, Noé y sus hijos, hasta Abraham y Lot. La lista sitúa a Isaac dentro de una cadena de generaciones que conocieron la muerte y deja a Enoc como excepción, pues fue llevado al cielo. Esta evocación bíblica no es una genealogía neutral; sirve de puente desde los orígenes de la humanidad hasta el futuro de Israel. El relato anuncia que de Jacob surgirán doce generaciones o tribus y vincula ese linaje con Jesús, nacido de María. Esa referencia explícitamente cristiana pertenece a la forma transmitida de la obra, pero no permite fechar con exactitud cada estrato ni reconstruir con certeza un supuesto original judío. La escena muestra cómo un texto cristiano tardío relee las promesas patriarcales como parte de una historia que culmina en Cristo. Al mismo tiempo, el anuncio mesiánico no desplaza el centro inmediato del pasaje: consolar al hijo que teme quedarse huérfano y afirmar que la familia continuará. La memoria ancestral da escala a la pérdida personal. Isaac muere, pero la historia no acaba con él: continúa en Jacob, en sus descendientes y, según la interpretación de esta versión, en la expectativa cristiana."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "El Isaac asceta y la curación de sus ojos",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Después del anuncio, la narración presenta a Isaac como ejemplo de disciplina religiosa. Se le atribuye una vida de ayuno, oración y sacrificio; en una de las descripciones, ayuna durante el día, dedica tiempo a prácticas ascéticas y pasa parte de la noche en oración. También se mencionan periodos prolongados de abstinencia. Estos detalles no son una biografía histórica independiente, sino un retrato edificante de cómo la obra entiende la piedad del patriarca. El relato conecta su vida virtuosa con un episodio algo abrupto: Isaac, anciano y con la vista debilitada, recupera la capacidad de ver. La multitud acude desde distintos lugares para escuchar sus instrucciones y pregunta por esa restauración. Isaac la interpreta como consuelo concedido por Dios al acercarse a la muerte. El pasaje contiene una irregularidad textual que ya señalaron editores antiguos: la curación de la ceguera parece mencionarse sin que el relato la haya preparado de manera completa. Ese salto es una advertencia para lectores modernos: el manuscrito transmitido conserva desajustes, cambios de tema y posibles lagunas. No conviene armonizarlo silenciosamente ni inventar un episodio perdido. La recuperación de la vista cumple, aun así, una función simbólica en el relato: el patriarca recibe claridad física y espiritual justo cuando se dispone a partir, y esa claridad le permite hablar públicamente como maestro."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "La enseñanza al sacerdote: pureza, justicia y oración",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Entre quienes buscan consejo aparece un sacerdote, introducido con poca explicación en la versión copta. Su pregunta da ocasión a una extensa exhortación sobre la vida religiosa. Isaac describe el cuerpo como lugar consagrado a Dios y llama a custodiarlo; junto a esa dimensión corporal enumera hábitos cotidianos: controlar la ira, evitar la calumnia y la vanagloria, no tomar lo ajeno, mantener la paz y no pronunciar palabras inútiles. La piedad no se limita a ceremonias: incluye la manera de hablar, los deseos y las relaciones con otras personas. Cuando el fiel se acerca al altar, debe hacerlo con preparación y conciencia de su propia fragilidad. Isaac propone una confesión que reconoce la impureza humana y pide limpieza y perdón. El énfasis no está en que la persona pueda purificarse por sí sola, sino en la misericordia de Dios. La oración se une a la reconciliación: no se debe llevar al culto una disputa sin resolver ni tratar el sacrificio como un gesto automático. La escena refleja preocupaciones de una comunidad para la cual sacerdocio, liturgia y disciplina moral estaban estrechamente relacionados. Pero no debe usarse como descripción directa de todas las prácticas de la época; es la visión normativa y homilética que ofrece este escrito, transmitida en una recensión con indicios cristianos."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "La disciplina del clero y el llamado al arrepentimiento",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La exhortación se extiende a sacerdotes, monjes y creyentes de distintas condiciones. Isaac recomienda vigilancia, oración y moderación, y advierte contra convertir las preocupaciones del mundo en el centro de la vida. El lenguaje de renuncia y retiro expresa un ideal ascético: apartarse de aquello que distrae de Dios para vivir con pureza y atención. La obra relaciona el servicio terrenal con el culto celestial; la vida de quienes oran y sirven debe reflejar, de manera imperfecta, la actividad de los ángeles. Sin embargo, el sermón no enseña que solo los ascetas puedan alcanzar la salvación. La exhortación se dirige a todos y afirma que Dios mira la conducta de cada persona. La lista de faltas incluye tanto actos evidentes como daños que se realizan con la lengua o el pensamiento: violencia, deseo desordenado, envidia, ira persistente, orgullo, blasfemia y alegría ante la caída del prójimo. Frente a esas faltas aparece la posibilidad del arrepentimiento. La audiencia responde que las palabras son verdaderas, y el relato hace una pausa: Isaac se cubre y reposa, mientras la multitud guarda silencio. Ese momento enlaza el discurso con la segunda visión. El protagonista acaba de enseñar cómo debe vivirse; ahora verá, mediante escenas dramáticas, qué consecuencias atribuye el texto a ciertos comportamientos. La enseñanza ética prepara la visión, y la visión vuelve a dar peso a la enseñanza."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "La visión aterradora de los tormentos",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El ángel de Abraham regresa y conduce a Isaac al cielo. Allí contempla multitudes separadas y figuras de aspecto animal, una escenografía que señala que ha entrado en una región de juicio, no en el mundo cotidiano. El primer caso que observa es el de una persona sometida repetidamente a ataques de animales monstruosos. Isaac pregunta qué falta explica semejante castigo. El ángel le responde que el hombre había mantenido enemistad con su vecino durante varias horas y murió sin reconciliarse; la duración del castigo se representa con una proporción extraordinaria entre cada hora de discordia y un año de sufrimiento. Luego el guía amplía la advertencia: la enemistad no es un asunto trivial porque destruye la paz entre seres humanos creados por Dios. Este episodio dramatiza una ética de reconciliación y da forma narrativa a la instrucción pronunciada ante la multitud. Las cifras y criaturas pertenecen al imaginario visionario del escrito; no deben tomarse como una tabla doctrinal universal ni como información comprobable sobre el más allá. El relato usa la desmesura para que Isaac —y el público de la homilía— sienta la gravedad de una ruptura aparentemente breve. La reacción del patriarca también importa: pregunta, no celebra el castigo. Su inquietud abre espacio a una explicación más amplia y deja ver que la visión no es una exhibición fría de tortura, sino una lección moral que interpela al testigo."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "El río de fuego y la pregunta por la misericordia",
+      "verses": [
+        {
+          "number": "1",
+          "text": "A continuación, Isaac ve diversas formas de sufrimiento: un río de fuego, un abismo humeante, una región de frío asociada con la maldad de Sodoma, pozos llenos de criaturas y otros lugares de castigo. El guardián de los tormentos aparece como una figura ígnea que domina a los ejecutores. La acumulación de imágenes no construye una geografía coherente en sentido moderno; reúne motivos apocalípticos para hacer perceptible la gravedad del juicio. Isaac se siente sobrepasado por lo que ve y pregunta cuánto durará el tormento. La respuesta, decisiva para el tono de la obra, lo vincula con la compasión de Dios: el castigo continúa hasta que el Dios misericordioso tenga piedad. El pasaje no ofrece una doctrina sistemática sobre si todos serán finalmente salvados, ni permite reducir el texto a una afirmación universalista simple. Sí introduce explícitamente la misericordia dentro de una visión terrible y evita que el juicio quede presentado como una maquinaria completamente autónoma. La pregunta de Isaac actúa como intercesión: el patriarca no solo quiere saber cómo funciona el castigo, sino cuánto puede durar el dolor de quienes lo sufren. En esa tensión entre justicia y compasión se encuentra uno de los temas más llamativos de la obra. La imagen del fuego advierte; la pregunta y la respuesta impiden olvidar que el relato también se interesa por la piedad divina."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Abraham intercede y se establece la conmemoración",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Tras la visión de los castigos, el ángel conduce a Isaac a una asamblea celestial donde lo recibe Abraham junto con los santos. La escena cambia radicalmente de registro: de los gritos y el temor se pasa a la bienvenida, la adoración y el himno. Isaac y Abraham comparecen ante Dios, y Abraham intercede por quienes recordarán a su hijo. El Señor promete bendecir a quienes honren la memoria de Isaac, transmitan su testamento o practiquen misericordia en su nombre. Las condiciones se adaptan a las posibilidades de las personas: alimentar al hambriento, ofrecer ayuda, recordar o escuchar el relato, orar, ayunar o realizar una ofrenda aparecen como caminos de participación. Abraham pregunta qué ocurrirá con quienes sean pobres, débiles o incapaces de cumplir alguna práctica, y la respuesta vuelve a invocar la compasión divina. La conmemoración queda así unida a obras concretas: la devoción a los patriarcas debe expresarse en cuidado del necesitado. Las promesas de recompensa y la referencia a un periodo de mil años reflejan el lenguaje escatológico de la recensión. Este pasaje ayuda a entender por qué la obra se relaciona con la memoria litúrgica copta de los patriarcas. También aclara que el texto no es únicamente una narración sobre un personaje antiguo: pudo funcionar como lectura para una comunidad que celebraba una fecha, compartía una tradición y recibía exhortaciones sobre generosidad."
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "El último consejo a Jacob y la ascensión",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La asamblea alcanza su punto culminante cuando Dios ordena reunir a los ángeles y a los santos. Jacob vuelve al lecho, besa a Isaac y llora; el patriarca le hace señas para que guarde silencio mientras la escena celestial se desarrolla. Abraham e Isaac piden a Dios que recuerde a Jacob, y reciben la promesa de que estará acompañado y será glorificado. Isaac le entrega entonces un último mandato que resume la ética del escrito: no dañar la imagen de Dios en otra persona, pues la manera de tratar al prójimo tendrá consecuencias cuando uno comparezca ante Dios. La idea reúne la exhortación anterior contra la violencia, la calumnia y la enemistad. Después de esa despedida, Dios toma el alma de Isaac y la coloca en un carro para llevarla al cielo, mientras los seres celestiales preceden la procesión. La narración presenta la muerte como separación del cuerpo y tránsito honorable, no como una desaparición sin continuidad. La imagen del carro y el acompañamiento angélico recuerda otros relatos de ascensión y apocalipsis, aunque aquí se inserta en un testamento patriarcal. Isaac deja de hablar como padre, pero la palabra que lega a Jacob permanece como guía para la familia y para el público lector. El viaje final confirma narrativamente la esperanza anunciada al comienzo: el patriarca es recibido junto a Abraham y los santos."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "La reconciliación como clave de la visión",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La escena más extensa del juicio no presenta primero a un gran tirano o a un perseguidor, sino a una persona que muere enemistada con su vecino. Esa elección vuelve concreta la enseñanza moral: una relación cotidiana rota puede tener peso escatológico. El castigo se expresa mediante una correspondencia desproporcionada entre horas de conflicto y años de tormento, un recurso retórico frecuente en relatos de juicio que busca producir asombro y memoria. La imagen no funciona como cálculo cronológico para aplicar literalmente, sino como dramatización del daño que la ira prolongada hace a la comunidad. Isaac pregunta por la razón del sufrimiento, y el ángel la explica para que el testigo entienda el vínculo entre conducta y consecuencia. Más adelante, cuando la visión muestra diferentes regiones de castigo, la pregunta por su duración transforma el recorrido en una reflexión sobre el límite y la compasión. La respuesta —que el tormento continúa hasta que Dios tenga misericordia— no borra la seriedad de las faltas, pero tampoco deja que la justicia se convierta en venganza sin término definida por los ejecutores. La figura de Isaac cumple un papel de lector dentro del relato: su curiosidad y su preocupación conducen al guía a interpretar lo visto. De esa manera, la visión enseña a evaluar no solo la culpa, sino también la respuesta que merece quien sufre. Leída junto con el mandato final de no dañar la imagen de Dios en el prójimo, la secuencia hace de la reconciliación el puente entre ética diaria y destino último."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Lo que el testamento afirma y lo que no demuestra",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El Testamento de Isaac permite estudiar cómo lectores cristianos de Egipto imaginaron al patriarca, la memoria de los muertos y el juicio; no sirve por sí solo para probar que Isaac pronunciara estas palabras ni que todos los cristianos compartieran las mismas ideas. Su retrato de ayunos, sacrificios y conmemoraciones refleja una tradición literaria particular. Tampoco ofrece una descripción uniforme de la doctrina del infierno: las imágenes pertenecen a una visión narrativa, conviven con la esperanza de misericordia y aparecen en manuscritos con diferencias. Las referencias a Jesús y a la Trinidad identifican rasgos cristianos de la forma conservada, aunque algunos estudiosos han propuesto que partes de la exhortación preserven materiales anteriores. La hipótesis de una fuente judía subyacente es una posibilidad crítica, no un hecho comprobado. Algo semejante vale para la fecha: las propuestas van desde una composición relativamente temprana hasta varios siglos después, y las pruebas no permiten una datación precisa. Conviene, por tanto, leer la obra como testimonio de recepción y desarrollo religioso. Su importancia está en cómo transforma la despedida de un patriarca en catequesis sobre reconciliación, oración, cuidado de los pobres y esperanza ante la muerte."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "El cierre litúrgico y las variantes de transmisión",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El cierre vuelve a la conmemoración de Isaac y formula bendiciones para quienes practiquen actos de misericordia en el día dedicado a los patriarcas. La recompensa se expresa en términos de pertenencia familiar: los benefactores serán recibidos como hijos en el reino. El lenguaje une memoria, beneficencia y esperanza futura, y culmina con una alabanza cristiana a Dios, a Jesucristo y al Espíritu Santo. Este final es coherente con el uso devocional de la obra en contextos cristianos egipcios, pero la transmisión presenta variantes: las versiones no coinciden siempre en fecha, formulación o extensión, y algunas incluyen alusiones que los investigadores juzgan añadidas o desplazadas. La propia edición antigua advierte que hay saltos narrativos; por ejemplo, se alude a la curación de la vista antes de que el manuscrito la haya explicado, y aparece un sacerdote sin presentación suficiente. Por eso el resumen no fuerza una continuidad inexistente. También difieren las fechas del calendario egipcio en el encabezamiento y el final: el fragmento local previo da una fecha distinta de la traducción copta publicada por Gaselee. Se conserva aquí la redacción local sin corregirla silenciosamente. Para una edición completa haría falta elegir una recensión, documentar las variantes y traducir directamente desde una edición crítica; esta guía solo orienta sobre los temas y episodios principales."
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Fragmento final conservado en esta edición local",
+      "verses": [
+        {
+          "number": "1",
+          "text": "13. Esta es la salida del cuerpo de nuestro padre Isaac, el patriarca, el día veinticuatro del mes Mesore. Y el día en que su padre Abraham lo ofreció en sacrificio es el dieciocho de Mechir. (12 de febrero) Los cielos y la tierra se llenaron del olor reconfortante de nuestro padre Isaac, como de plata escogida: este es el sacrificio de nuestro padre Isaac el patriarca. Cuando Abraham lo ofreció como sacrificio a Dios, el olor reconfortante del sacrificio de Isaac subió a los cielos. Bienaventurado todo hombre que realiza un acto de misericordia en nombre de estos patriarcas, porque ellos serán sus hijos en el reino de los cielos. Porque nuestro Señor ha hecho con ellos pacto para siempre, que todo el que haga un acto de misericordia en el día de su conmemoración les será dado como hijo en el reino de los cielos para siempre. Y llegarán a la primera hora de los mil años, conforme a la promesa de nuestro Señor, nuestro Dios y Salvador Jesucristo, por quien toda gloria es debida a él y a su buen Padre y al Espíritu Santo, dador de vida a toda la creación y uno en ser con el Padre y el Hijo, ahora y siempre, por los siglos de los siglos. Amén"
         }
       ]
     }

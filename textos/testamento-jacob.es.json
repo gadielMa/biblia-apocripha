@@ -1,21 +1,108 @@
 {
   "id": "testament-jacob-es",
-  "title": "Testamento de Jacob (fragmento)",
+  "title": "Testamento de Jacob · guía ampliada",
   "language": "es",
-  "sourceLanguage": "Inglés",
-  "translator": "Traducción de trabajo al español; puede contener errores y diferencias respecto de otras ediciones",
-  "publication": "The Lost Apocrypha of the Old Testament (M. R. James)",
-  "license": "Public-domain historical translation; verify local status before redistribution.",
-  "sourceUrl": "https://en.wikisource.org/wiki/The_Lost_Apocrypha_of_the_Old_Testament/Jacob",
-  "notes": "La obra se conserva de manera fragmentaria; esta entrada contiene el testimonio citado por M. R. James, no una reconstrucción completa.",
+  "sourceLanguage": "Copto (hay versiones árabes y etíopes)",
+  "translator": "Guía de lectura en español; no es una traducción del texto antiguo",
+  "publication": "Síntesis editorial basada en la traducción copta de S. Gaselee (1927) y la nota de M. R. James",
+  "license": "Guía editorial original. El testimonio histórico citado se conserva como traducción de trabajo; verificar las condiciones locales antes de redistribuir.",
+  "sourceUrl": "https://www.gospelstudies.org.uk/earlychurch/pdf/e-books/box_g-h/testament-of-abraham_box.pdf",
+  "bibliographyUrl": "https://earlychurch.gospelstudies.org.uk/pdf/e-books/james_m-r/lost-apocrypha-of-the-ot_translations-of-early-document_james.pdf",
+  "externalTextUrl": "https://www.gospelstudies.org.uk/earlychurch/pdf/e-books/box_g-h/testament-of-abraham_box.pdf",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Testament of Jacob · traducción copta de S. Gaselee (1927)",
+  "localTextKind": "summary",
+  "textCompleteness": "partial",
+  "notes": "El Testamento de Jacob sí se conserva en una versión copta (traducida por S. Gaselee en 1927) y en tradiciones árabes y etíopes. Esta entrada ofrece una guía de lectura, no una traducción completa. La cita final de M. R. James trata una noticia distinta: un supuesto Testamento de Jacob impreso en Italia en el siglo XVI, cuya identificación él consideraba incierta y posiblemente debida a una lectura errónea por Testamento de Job. No debe confundirse esa nota con la obra copta resumida aquí, ni asumirse que los Testamentos de Abraham, Isaac y Jacob circularon siempre como una sola composición.",
   "chapters": [
     {
       "number": 1,
-      "title": "Testimonio fragmentario",
+      "title": "El patriarca ante la muerte",
       "verses": [
         {
           "number": "1",
-          "text": "\"Existe actualmente impreso un Testamento del patriarca Jacob que Gelasio en la Distinción 29 (del Decretum de Graciano) cuenta entre los libros de carácter apócrifo\". Aquí se refiere al Decreto Gelasiano, donde en muchas copias se lee erróneamente Testamentum Jacobi para Test. Jobí. No he podido determinar con certeza qué pudo haber sido este Testamento impreso de Jacob, corriente en Italia en el siglo XVI. Sólo existe la posibilidad de que, así como la Visión de Isaías fue impresa en latín más de una vez y completamente olvidada, alguna obra realmente apócrifa haya tenido una vida breve; pero es mucho más probable que se refiera a algún réchauffé de las Bendiciones de Jacob, que circuló con los Testamentos de los Doce Patriarcas. De hecho, tal cosa está antepuesta a algunas de las antiguas traducciones de estos Testamentos, e. gramo. el inglés impreso por Richard Day."
+          "text": "El Testamento de Jacob imagina las últimas horas del patriarca en Egipto y transforma la escena de despedida familiar en una enseñanza para su descendencia. Al comienzo, el arcángel Miguel anuncia que ha llegado el momento de dejar el cuerpo y reunirse con Isaac y Abraham. Jacob acepta la voluntad divina y se retira para orar. Este marco pertenece al género de los testamentos: una figura bíblica, al final de su vida, deja instrucciones y recuerda las promesas recibidas. La obra se conserva en una versión copta traducida por S. Gaselee en 1927, junto con tradiciones árabes y etíopes. No hay que confundir esa composición con otra noticia bibliográfica, transmitida por M. R. James, sobre un supuesto libro impreso en Italia en el siglo XVI. La identidad de aquel impreso era incierta y James sospechaba una confusión con el Testamento de Job."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Miguel recuerda la vida de Jacob",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El mensajero celestial, que aparece con el rostro de Isaac, consuela a Jacob y repasa episodios de su vida como señales de protección divina: su salida de los peligros asociados con Labán y Esaú, su crecimiento familiar y su llegada a Egipto. También recuerda la visión de la escalera que unía tierra y cielo, con ángeles y la presencia de Dios. La retrospectiva no reproduce sencillamente Génesis; reúne tradiciones bíblicas para presentar a Jacob como alguien acompañado por Dios desde su juventud. El relato elogia a Abraham por su hospitalidad, a Isaac por su entrega y a Jacob por su encuentro con lo divino. Así, la autoridad del patriarca descansa tanto en su linaje como en una vida marcada por pruebas y auxilio. La visión le permite interpretar el pasado desde el umbral de la muerte y asegurar a sus hijos que la providencia no termina con su propia generación."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "La promesa para la familia en Egipto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Después de que el ángel se marcha, Jacob reúne a sus hijos, que temen quedar desamparados en una tierra extranjera. Él los anima recordándoles la promesa que Dios le hizo: acompañarlo al bajar a Egipto, multiplicar allí a su descendencia y, en el futuro, hacerla regresar a la tierra prometida. La estancia egipcia se presenta como una etapa de protección y crecimiento, no como la cancelación de la alianza. Este episodio enlaza la historia familiar de Génesis con el éxodo que vendrá después, aunque el texto no relata todavía la esclavitud ni la liberación. La confianza de Jacob se basa en palabras divinas recibidas durante su vida y transmitidas ahora a sus hijos. Como en otros testamentos patriarcales, el padre moribundo convierte la memoria de una promesa en consuelo colectivo: la generación presente debe soportar la incertidumbre porque el futuro del pueblo no depende solo de su fuerza política."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "José, Efraín y Manasés reciben la bendición",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jacob pide a José que jure sepultarlo junto a sus antepasados en Canaán. La solicitud expresa que Egipto es hogar provisional y que la familia sigue vinculada a la tierra de sus padres. Antes de morir, Jacob bendice a Efraín y Manasés. Aunque sus ojos están debilitados por la vejez, cruza las manos y coloca la derecha sobre Efraín, el menor, como en la conocida escena de Génesis 48. La guía copta conserva la inversión y la interpreta como una bendición para ambos nietos, que llegarán a ser un pueblo numeroso. Luego Jacob reúne a todos sus hijos para anunciar el destino de las tribus. El texto resume esas palabras como una bendición celestial, sin conservar en la forma traducida por Gaselee el largo desarrollo poético de Génesis 49. El interés está en la transmisión del legado familiar: la promesa pasa del patriarca a sus hijos y nietos, mientras la orden funeraria mantiene la orientación hacia Canaán."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Una visión de juicio y de reposo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Tras pronunciar sus bendiciones, Jacob es llevado en visión por espacios del más allá. Primero ve tormentos preparados para quienes cometen diversas faltas: violencia, idolatría, engaño, difamación y transgresiones sexuales, entre otras. El catálogo responde al lenguaje moral de la comunidad que transmitió la obra y no debe tomarse como una clasificación universal de todos los grupos cristianos antiguos. La escena advierte que la conducta cotidiana tiene consecuencias ante el juicio divino. Después, el guía muestra una región luminosa donde Abraham, Isaac y los justos viven con alegría. El contraste entre castigo y reposo forma parte de una revelación que busca orientar a los vivos, no solo satisfacer curiosidad sobre el cielo. En la narración, Jacob ve ambos destinos antes de morir y puede así exhortar a su familia con una urgencia que proviene de su experiencia visionaria. La obra integra materiales apocalípticos —viaje celestial, seres angélicos, visión del destino de los muertos— dentro de un testamento familiar."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "La muerte, el entierro y el duelo público",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jacob pide que su cuerpo descanse en la tumba ancestral de Hebrón. Muere a los ciento cuarenta y siete años, edad que también da Génesis 47:28. Dios, Miguel y Gabriel reciben su alma y la llevan a un lugar de luz junto a Abraham e Isaac. En la tierra, José abraza y llora a su padre, manda embalsamarlo según la costumbre egipcia y solicita permiso al faraón para cumplir el juramento. El cortejo que acompaña el cuerpo incluye a la familia, dignatarios egipcios y servidores reales; la escala del duelo muestra el honor de Jacob también ante los egipcios. En la era de Atad, al otro lado del Jordán, la comitiva guarda siete días de luto. El relato vincula esa tradición con el nombre del lugar, llamado “Duelo de los egipcios” en la narración bíblica. Finalmente entierran a Israel en la cueva comprada por Abraham y José vuelve a Egipto. La escena amplía el relato de Génesis con detalles ceremoniales y una procesión que hace visible el lugar del patriarca entre dos pueblos."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "La exhortación del narrador a sus oyentes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Después de cerrar la narración de la muerte y el entierro, la voz del texto se dirige directamente a su público. Invita a leer Génesis para reconocer que las promesas y encuentros relatados tienen raíces en las Escrituras, y llama a imitar a los patriarcas en el amor a Dios, la hospitalidad y la compasión hacia las personas. La enseñanza incluye oración y ayuno, pero subraya también la ayuda material: alimentar al pobre, vestir al desnudo, recibir al extranjero y cuidar al necesitado. La misericordia se presenta como superior al juicio severo y como camino de esperanza ante los castigos descritos en la visión. Esta conclusión revela el propósito pastoral de la obra: no pretende reemplazar Génesis, sino expandir su memoria para instruir a una comunidad religiosa. Las referencias a santos que interceden, al libro de la vida y al reino celestial muestran el horizonte cristiano de la forma copta conservada. Esas características describen esta transmisión concreta; por sí solas no demuestran que cada pasaje perteneciera a una hipotética versión más antigua."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Manuscritos, composición y límites de la reconstrucción",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La versión copta forma parte de un manuscrito que contiene también los Testamentos de Abraham e Isaac; S. Gaselee publicó una traducción inglesa de estos textos en 1927. Hay además tradiciones árabes y etíopes, cuyas relaciones y diferencias requieren comparación especializada. Que algunas copias los reúnan no prueba que las tres obras se compusieran originalmente como un único libro: pueden haber circulado juntas por su género y sus protagonistas patriarcales. La narración combina reescritura de Génesis, exhortación moral, visión del más allá y conmemoración litúrgica. Su forma conservada tiene un marco cristiano explícito, pero los estudiosos han debatido la presencia de materiales anteriores y el proceso de redacción; no es posible asignar con seguridad cada motivo a una etapa determinada. Además, el manuscrito contiene transiciones abruptas y variantes, por lo que una guía debe evitar armonizar todo como relato perfectamente uniforme. Esta entrada ofrece un resumen de la versión copta conocida por la traducción histórica, no una edición crítica ni el texto íntegro. La nota final de James se conserva para documentar la confusión bibliográfica sobre otro supuesto impreso."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Nota de M. R. James sobre un supuesto impreso",
+      "verses": [
+        {
+          "number": "1",
+          "text": "James escribió que una noticia del siglo XVI mencionaba un Testamento de Jacob impreso en Italia, pero no pudo identificar la obra. Consideró posible que hubiera existido un apócrifo hoy perdido, aunque juzgó más probable que el título proviniera de una confusión textual con el Testamento de Job o de una versión de las bendiciones de Jacob que circulaba junto a los Testamentos de los Doce Patriarcas. Esta observación bibliográfica no describe la versión copta resumida en los capítulos anteriores."
         }
       ]
     }

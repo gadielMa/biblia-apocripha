@@ -1,21 +1,98 @@
 {
   "id": "gospel-ebionites-es",
-  "title": "Evangelio de los Ebionitas (fragmentos)",
+  "title": "Evangelio de los Ebionitas (guía ampliada de fragmentos)",
   "language": "es",
-  "sourceLanguage": "Griego (fragmentario)",
-  "translator": "Resumen original en español; fragmentos en revisión",
-  "publication": "The Apocryphal New Testament (1924)",
-  "license": "Resumen original y referencias a fragmentos de dominio público.",
-  "sourceUrl": "https://en.wikisource.org/wiki/The_Apocryphal_New_Testament_(1924)/Fragments_of_Early_Gospels",
-  "notes": "Obra perdida conocida por citas de Epifanio y otros autores. Los fragmentos reflejan una tradición judeocristiana que enfatiza la continuidad con la Ley y presenta variantes propias de los relatos evangélicos.",
+  "sourceLanguage": "Griego, según las pistas internas de los fragmentos",
+  "translator": "Resumen editorial ampliado en español; no es traducción íntegra",
+  "publication": "Guía de los fragmentos citados en Epifanio, Panarion 30",
+  "license": "Resumen editorial propio; referencias al testimonio patrístico y ediciones de dominio público",
+  "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/gospel-of-the-ebionites/",
+  "externalTextUrl": "https://www.earlychristianwritings.com/text/gospelebionites-panarion.html",
+  "externalTextKind": "partial",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Epifanio, Panarion 30 · siete fragmentos, no texto continuo",
+  "externalTextNote": "El evangelio solo se conoce por fragmentos citados por Epifanio en Panarion 30. La página enlazada reúne esos extractos en inglés; no existe allí una edición manuscrita completa.",
+  "localTextKind": "summary",
+  "translationNote": "«Evangelio de los Ebionitas» es un título moderno para una obra perdida que Epifanio llama Evangelio según Mateo o Evangelio según los Hebreos. La guía resume los siete fragmentos que suelen asignársele y separa el contenido citado de la interpretación polémica de Epifanio.",
+  "notes": "Epifanio, obispo del siglo IV, es el único testigo de los fragmentos de esta obra. Su Panarion es una refutación heresiológica, no una descripción neutral, y no sabemos si el grupo que él presenta se identificaba a sí mismo como ebionita. La evidencia apunta a una composición griega relacionada con los evangelios sinópticos; se debate si era una armonía de ellos o un relato propio. No debe confundirse con los Evangelios de los Hebreos o de los Nazarenos.",
   "chapters": [
     {
       "number": 1,
-      "title": "Fragmentos conservados",
+      "title": "Una obra perdida citada por Epifanio",
       "verses": [
         {
           "number": "1",
-          "text": "El Evangelio de los Ebionitas fue utilizado por comunidades judeocristianas asociadas por los autores antiguos con los ebionitas. Las citas preservan variantes sobre Juan el Bautista, el bautismo de Jesús, la elección de los discípulos y la misión a Israel. No se conserva un manuscrito continuo, por lo que los fragmentos no permiten reconstruir con seguridad la extensión ni el orden original."
+          "text": "El llamado Evangelio de los Ebionitas se reconstruye a partir de siete fragmentos que Epifanio incorporó en el capítulo 30 de su Panarion, escrito en el siglo IV. No poseemos manuscrito independiente ni otro testigo que permita cotejar su versión. Epifanio se refiere al libro como un Mateo incompleto o como Evangelio según los Hebreos y lo acusa de haber sido alterado. «Evangelio de los Ebionitas» es, por tanto, una etiqueta académica moderna para ordenar las citas que los estudiosos asocian con el grupo descrito por Epifanio. Su relato sobre los ebionitas está escrito para refutarlos y debe leerse teniendo presente ese propósito polémico."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Jesús elige a los Doce y llama a Mateo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "El fragmento inicial presenta a Jesús con unos treinta años y sitúa una escena en Capernaúm, en la casa de Simón Pedro. Jesús recuerda a los apóstoles cómo los eligió junto al lago de Tiberíades, incluyendo a los hijos de Zebedeo, Simón, Andrés, Tadeo y otros. Llama a Mateo cuando este está sentado en el puesto de cobro y encomienda al grupo dar testimonio a Israel. El pasaje usa una voz en primera persona plural en una parte de la memoria apostólica y solo enumera ocho nombres, detalles que han alimentado discusiones sobre la forma y el género del evangelio. No basta por sí solo para recuperar una lista completa ni el inicio original de la obra."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Juan el Bautista: linaje sacerdotal y alimento de miel",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los fragmentos siguientes presentan a Juan, hijo de Zacarías e Isabel, como descendiente de Aarón y sacerdote. Su predicación ocurre durante el gobierno de Herodes y el sacerdocio de Caifás, y acude a él una multitud para bautizarse. El retrato conserva la vestimenta de pelo de camello y el cinturón de cuero, pero describe su alimento como una torta de miel silvestre, con sabor parecido al maná. Epifanio objeta que así se sustituye la langosta mencionada en Mateo. En griego, las palabras para «langosta» y «torta» son muy parecidas; esa pista hace probable que la copia usada por Epifanio estuviera en griego, aunque el detalle también podía ser parte de una edición o comentario polémico."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "El bautismo de Jesús y la voz del cielo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En la escena bautismal, Jesús sale del agua, los cielos se abren y el Espíritu Santo desciende en forma de paloma y entra en él. Una gran luz rodea el lugar y una voz celestial lo llama Hijo; la proclamación se repite en el relato. Juan, impresionado, pide ser bautizado por Jesús, quien le responde que deben cumplir lo dispuesto. La combinación de la entrada del Espíritu en Jesús con la voz que lo reconoce como Hijo difiere de la narración canónica y ocupa un lugar central en la lectura que Epifanio hace de la cristología ebionita. Pero solo conocemos la escena a través de un adversario que la cita para argumentar contra el grupo; por eso conviene separar el texto preservado de la explicación doctrinal que Epifanio le impone."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "La familia de Jesús redefinida como comunidad de discípulos",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Otro fragmento reelabora la escena en que informan a Jesús que su madre y sus hermanos lo esperan. En lugar de limitar la respuesta a una pregunta, Jesús extiende la mano hacia sus discípulos y los identifica como hermanos, hermanas y madre: su familia queda definida por quienes cumplen la voluntad del Padre. Epifanio usa el pasaje dentro de su argumento sobre las creencias del grupo. El fragmento también forma parte de la reelaboración de materiales sinópticos que varios investigadores observan en el evangelio. Por sí solo, no aclara cómo entendían sus lectores la familia biológica de Jesús ni permite derivar una doctrina general de todos los judeocristianos."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "El rechazo de los sacrificios y la cena de Pascua",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Un dicho atribuido a Jesús declara que ha venido a poner fin a los sacrificios y advierte que la ira divina continuará mientras se mantengan. El pasaje ofrece una crítica explícita del culto sacrificial del Templo, aunque solo lo conocemos en el fragmento transmitido por Epifanio. En otra cita, cuando los discípulos preguntan dónde preparar la Pascua, Jesús pregunta si desea comer carne con ellos en esa celebración. Epifanio presenta la frase como una manipulación del relato; algunos estudios la consideran indicio de una práctica vegetariana. La cita se refiere a la comida pascual en particular y no demuestra por sí sola qué dieta seguían todos los integrantes del grupo."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "¿Armonía sinóptica o evangelio independiente?",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los fragmentos reúnen detalles que recuerdan a Mateo, Marcos y Lucas, además de formulaciones propias. Por eso se debate si la obra era una armonía de los evangelios sinópticos, una narración independiente que los utilizó o una etapa de su transmisión. El juego griego entre «langosta» y «torta de miel» refuerza la hipótesis de que la forma conocida por Epifanio fue escrita en griego; no prueba dónde ni cuándo se compuso. La mención de la ausencia de genealogía y las lecturas sobre bautismo y sacrificio son interpretadas por Epifanio como huellas de creencias del grupo, pero ese testimonio tardío no permite asegurar que los ebionitas de otras épocas compartieran exactamente esas posiciones."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Límites de lo que sabemos sobre los Ebionitas",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los autores cristianos anteriores a Epifanio ya hablaban de grupos llamados ebionitas y de su uso de Mateo o de un Evangelio según los Hebreos, pero sus descripciones no coinciden automáticamente con la comunidad que Epifanio conoció en Chipre siglos después. La propia investigación advierte que no está claro si el grupo retratado por él se identificaba como ebionita ni qué relación mantenía con los grupos descritos por Ireneo u Orígenes. Tampoco conviene fusionar esta obra con los Evangelios de los Hebreos y de los Nazarenos: las fuentes antiguas a veces usan esos nombres de modo confuso, mientras que la distinción moderna es una herramienta de trabajo debatida. La ficha, por tanto, resume el material de Panarion 30 sin reconstruir capítulos perdidos ni presentar la caricatura polémica de Epifanio como descripción neutral de todo un movimiento."
         }
       ]
     }

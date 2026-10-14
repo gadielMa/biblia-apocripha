@@ -2,25 +2,116 @@
   "id": "acts-philip-es",
   "title": "Hechos de Felipe",
   "language": "es",
-  "sourceLanguage": "Griego",
-  "translator": "Resumen en español; no se incluye una traducción completa",
-  "publication": "Ficha bibliográfica del corpus apócrifo",
+  "sourceLanguage": "Griego; un episodio adicional se conserva en siríaco",
+  "translator": "Resumen ampliado en español basado en M. R. James (1924)",
+  "publication": "Guía narrativa; no es una traducción íntegra",
   "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
   "sourceUrl": "https://www.earlychristianwritings.com/actsphilip.html",
   "externalTextUrl": "https://wesley.nnu.edu/sermons-essays-books/noncanonical-literature/noncanonical-literature-nt-acts/acts-of-philip/",
   "externalTextKind": "partial",
   "externalTextLanguage": "inglés",
-  "externalTextLabel": "Hechos de Felipe · selección de M. R. James (1924)",
-  "externalTextNote": "La propia edición advierte que ofrece análisis y traducciones de pasajes interesantes, no una traducción íntegra de todos los Hechos.",
-  "notes": "Esta entrada incorpora la obra al catálogo y buscador con un resumen fiable. El texto completo requiere una edición cuya licencia permita redistribución.",
+  "externalTextLabel": "Acts of Philip · selección y análisis de M. R. James (1924)",
+  "externalTextNote": "La edición ofrece traducciones de pasajes seleccionados y un análisis, no una traducción íntegra. La obra anuncia quince Hechos, pero el material conservado es discontinuo e incluye un episodio siríaco difícil de ubicar.",
+  "notes": "Resumen de los episodios conservados, no una reconstrucción completa. Los manuscritos mencionan quince Hechos: sobreviven los Hechos I–IX y desde el XV hasta el martirio; la transmisión tiene lagunas y saltos narrativos. Además, un episodio se conserva solo en siríaco y no encaja con certeza en la secuencia griega. La historia del martirio en Hierápolis es una leyenda hagiográfica tardía, no un informe histórico contemporáneo.",
   "chapters": [
     {
       "number": 1,
-      "title": "Resumen",
+      "title": "Felipe resucita al hijo de una viuda",
       "verses": [
         {
           "number": "1",
-          "text": "Tradiciones sobre la misión de Felipe en Asia Menor, confrontaciones con autoridades y poderes paganos, conversiones y martirio."
+          "text": "Al salir de Galilea, Felipe encuentra a una viuda que lleva a enterrar a su único hijo. Ella cuenta que había pedido ayuda a varios dioses sin resultado. Felipe le anuncia que Jesús puede devolverle la vida y ora por el joven, quien se incorpora y relata una visión del más allá. La madre, su hijo y quienes presencian el milagro se bautizan, y el joven acompaña al apóstol. El episodio introduce uno de los temas recurrentes de la obra: la misión cristiana se acredita mediante curaciones y resurrecciones, y conduce a comunidades convertidas."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "El desafío de Felipe en Atenas",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En Atenas, trescientos filósofos piden escuchar la enseñanza nueva que Felipe anuncia. El sumo sacerdote Ananías llega con hombres armados para detenerlo y lo acusa de engaño. Cuando intenta golpearlo, queda ciego y sus acompañantes también pierden la vista; Felipe ora y ellos recobran la visión, aunque Ananías sigue resistiéndose. En una visión, Jesús aparece glorioso y los ídolos de la ciudad caen. La multitud se convierte, pero Ananías interpreta cada señal como magia. Tras una confrontación extrema, la tierra lo traga; Felipe devuelve la vida al hijo de un ciudadano y funda allí una iglesia. El relato es una narración milagrosa, no un registro histórico verificable."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "La travesía hacia Azoto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Después de permanecer dos años en Atenas, Felipe parte hacia Partia y encuentra a Pedro y Juan, que lo animan a continuar la predicación. En una travesía marítima hacia Azoto, una tormenta amenaza la nave. Felipe tranquiliza a los pasajeros y ordena al mar calmarse en nombre de Jesucristo. El viento cesa; los marineros creen y son bautizados. La escena enlaza el viaje apostólico con milagros sobre la naturaleza y muestra cómo, en estos Hechos, los desplazamientos de Felipe se convierten en oportunidades de evangelización."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Caritina y la misión en Azoto",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En Azoto, Felipe sana a Caritina, hija de Nicocleides, que padece una enfermedad en un ojo. Ella y su padre se hacen cristianos, junto con algunos servidores, y Caritina decide seguir al apóstol, adoptando ropa masculina según el relato. La fama de las curaciones atrae a muchos, pero también provoca acusaciones: algunos llaman a Felipe hechicero y temen que su enseñanza altere los matrimonios. El episodio refleja el ideal ascético de esta literatura, que valora la continencia y la renuncia a los bienes, un énfasis propio de la narración y no una descripción neutral de la vida cristiana antigua."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Ireo y su familia reciben a Felipe",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En Nicátera, Ireo protege a Felipe cuando otros habitantes quieren expulsarlo. Felipe lo exhorta a abandonar la injusticia y a vivir con sencillez; su esposa Nercela se resiste al principio, preocupada por la pérdida de riqueza y posición. La hija Artemela escucha y desea compartir la nueva vida. Finalmente, la familia recibe a Felipe, escucha su enseñanza y es bautizada. El relato cuenta que, al verlo, perciben en él una luz extraordinaria. La conversión familiar desencadena hostilidad de las autoridades y prepara el conflicto que sigue."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "La disputa pública y la resurrección de Teófilo",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Los opositores intentan llevarse a Felipe y castigarlo. Ireo lo defiende, mientras Aristarcho, uno de los dirigentes, lo desafía a discutir sobre las Escrituras. Felipe responde con pasajes proféticos interpretados como anuncio de Jesús. Luego llevan ante ellos el cuerpo de Teófilo, hijo único de un hombre rico; la multitud condiciona su conversión a que Felipe lo resucite. Felipe ora, el joven vuelve a la vida y los servidores que iban a ser sacrificados con el funeral quedan liberados. La escena combina controversia religiosa, milagro y crítica a una práctica violenta descrita por el relato."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "El leopardo y el cabrito parlantes",
+      "verses": [
+        {
+          "number": "1",
+          "text": "En el viaje por la tierra de los ofitas, acompañan a Felipe su hermana Mariamne y Bartolomé. Un leopardo ha herido a un cabrito, pero ambos animales hablan: el cabrito persuade al leopardo de que abandone su ferocidad. Felipe ora y, en la historia, los animales reciben habla y una naturaleza pacífica; desde entonces acompañan a los misioneros. Más adelante, estos se enfrentan a un gran dragón y a sus crías, que son destruidos por un destello después de una oración. Son episodios fantásticos y simbólicos que representan la conversión de la violencia y la derrota del mal, no relatos zoológicos."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "El martirio de Felipe en Hierápolis",
+      "verses": [
+        {
+          "number": "1",
+          "text": "La sección final sitúa a Felipe, Bartolomé y Mariamne en Hierápolis, donde la población venera a una serpiente. Tras conversiones y curaciones, el procónsul ordena arrestar a los misioneros. Felipe y Bartolomé son torturados y colgados; Mariamne aparece rodeada de luz. Encolerizado por la violencia, Felipe pide que se abra la tierra y, según el relato, miles caen en el abismo. Jesús lo reprende por no haber mostrado misericordia y anuncia que los muertos serán devueltos; el propio Felipe deberá esperar antes de entrar al paraíso. La narración no oculta la tensión entre la ira del apóstol y el perdón que Jesús exige."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "La muerte, el regreso de los caídos y la misión continúa",
+      "verses": [
+        {
+          "number": "1",
+          "text": "Jesús traza una cruz luminosa que desciende al abismo y llama a quienes fueron tragados; estos regresan y se arrepienten. Felipe, todavía colgado, exhorta a los presentes y muere. Sus compañeros lo entierran conforme a sus instrucciones; el relato añade señales prodigiosas y la construcción de una iglesia en el lugar. Cuarenta días después, Jesús comunica que Felipe ha entrado en el paraíso. Bartolomé parte hacia Licaonia y Mariamne hacia el Jordán. El desenlace combina martirio, castigo, restauración y misión. En otros manuscritos y tradiciones hay diferencias, de modo que no todos los detalles forman una versión única y uniforme."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Un episodio paralelo conservado en siríaco",
+      "verses": [
+        {
+          "number": "1",
+          "text": "M. R. James resume además una historia que sobrevive únicamente en siríaco: Jesús envía a Felipe a una ciudad llamada Cartago, asociada en ese texto con Azoto. Durante el viaje, Ananías es asesinado por sus adversarios, pero Felipe consigue que vuelva a la vida y denuncia el crimen. El episodio no se integra con seguridad en la secuencia griega de los Hechos de Felipe; debe leerse como una tradición paralela, no como continuación cierta de los capítulos anteriores."
         }
       ]
     }
