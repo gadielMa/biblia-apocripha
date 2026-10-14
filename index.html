@@ -3035,6 +3035,12 @@ if (timelineTrack) {
   // Hitos de la vida pública, pasión y resurrección solicitados para la línea temporal.
   // Cada tarjeta conserva una referencia bíblica y una ilustración independiente.
   const requestedTimelineEvents = [
+    ['durante la huida a Egipto · Pseudo-Mateo','Los leones guían a la Sagrada Familia','Durante la huida por el desierto, leones y leopardos acompañan a María, José y Jesús niño, y les muestran el camino. Un episodio maravilloso del Evangelio del Pseudo-Mateo.','Pseudo-Mateo 19','lectura/?obra=pseudo-mateo-es&capitulo=19','apocryphal'],
+    ['durante la huida a Egipto · Pseudo-Mateo','La palmera ofrece sus frutos a la Sagrada Familia','Agotada por el calor, María descansa bajo una palmera. Jesús hace que el árbol se incline para que ella recoja sus dátiles; luego brota agua de sus raíces.','Pseudo-Mateo 20–21','lectura/?obra=pseudo-mateo-es&capitulo=20','apocryphal'],
+    ['infancia de Jesús · Evangelio árabe','Las figuras de barro cobran vida','Jesús niño modela animales y pájaros de barro; al darles una orden, las figuras se mueven, vuelan, comen y beben.','Evangelio árabe de la Infancia 36:1–2','lectura/?obra=arabic-infancy-es&capitulo=36','apocryphal'],
+    ['infancia de Jesús · Evangelio árabe','Jesús devuelve sus colores a las túnicas','En el taller de un tintorero, Jesús saca de la tina cada prenda teñida y la devuelve con el color que su dueño había pedido.','Evangelio árabe de la Infancia 37:1–2','lectura/?obra=arabic-infancy-es&capitulo=37','apocryphal'],
+    ['a los cinco años · Infancia de Tomás','Jesús cura al joven leñador','Un joven se hiere el pie con un hacha y pierde mucha sangre. Jesús toca la herida y el muchacho queda sano.','Infancia de Tomás, redacción griega A 10:1–2','lectura/?obra=infancy-thomas-es&capitulo=10','apocryphal'],
+    ['a los ocho años · Infancia de Tomás','Jesús multiplica el trigo y lo comparte','De un solo grano sembrado, Jesús obtiene una cosecha abundante y la reparte entre las familias pobres de la aldea.','Infancia de Tomás, redacción griega A 12:1–2','lectura/?obra=infancy-thomas-es&capitulo=12','apocryphal'],
     ['marco narrativo · Génesis 10, antes de Babel','Las naciones y los hijos de Dios','Deuteronomio dice que el Altísimo fijó los límites de los pueblos y que la porción de Yahvé fue Jacob. Qumrán y la Septuaginta leen “hijos de Dios” o “ángeles de Dios” en 32:8; el texto masorético dice “hijos de Israel”. Se coloca junto a Génesis 10–11 por su relación temática, no como fecha de composición del poema. Una interpretación relaciona el pasaje con las naciones de Génesis 10, pero aquí no se enumeran setenta seres ni se los identifica con dioses paganos.','Deuteronomio 32:8–9','lectura/?obra=rvr1909-deuteronomio&capitulo=32#pasaje-32-8','canonical','assets/timeline/deuteronomio-naciones-elohim.jpg'],
     ['poema bíblico · fecha debatida','El juicio del consejo divino','El salmo representa a Dios en la asamblea divina y censura a los elohim por no hacer justicia al débil y al huérfano. Anuncia que morirán como humanos y que Dios heredará todas las naciones. Es una imagen poética de juicio; el texto no dice que esos elohim sean Baal, Quemos o Moloc.','Salmo 82:1–8','lectura/?obra=rvr1909-salmos&capitulo=82#pasaje-82-1','canonical','assets/timeline/salmo-82-consejo-divino.jpg'],
     ['lectura cristiana del siglo I · síntesis temática','La cruz, los poderes y Pentecostés','Colosenses interpreta la cruz como triunfo de Cristo sobre principados y potestades. Hechos relata después que, en Pentecostés, visitantes de muchas regiones entienden a los discípulos en sus propias lenguas. Por eso algunas lecturas cristianas ven un contrapunto con Babel; ninguno de estos pasajes identifica explícitamente a esos poderes con los setenta elohim ni describe una guerra literal contra ellos.','Colosenses 2:15','lectura/?obra=rvr1909-colosenses&capitulo=2#pasaje-2-15','context','assets/timeline/cruz-pentecostes-poderes.jpg'],
@@ -3249,8 +3255,12 @@ if (timelineTrack) {
   moveOrderAfter('El juicio del consejo divino', 'Juicio contra los dioses de Egipto');
   // Las dos escenas de Lot preceden inmediatamente a la destrucción de Sodoma.
   moveOrderAfter('Los ángeles ciegan a los hombres de Sodoma', 'Lot recibe a los dos ángeles');
+  insertRequestedBefore('Relatos del niño Jesús', ['Los leones guían a la Sagrada Familia','La palmera ofrece sus frutos a la Sagrada Familia']);
+  insertRequestedBefore('Jesús adolescente en el Templo', ['Las figuras de barro cobran vida','Jesús devuelve sus colores a las túnicas','Jesús cura al joven leñador','Jesús multiplica el trigo y lo comparte']);
   moveOrderAfter('Sodoma y Gomorra', 'Los ángeles ciegan a los hombres de Sodoma');
   const timelineImages = {
+    'La vid del Edén según 3 Baruc': ['assets/timeline/3-baruc-vid-edén.png', 'Samael planta una vid en el jardín del Edén, según la tradición apócrifa de 3 Baruc'],
+    'Lamec consulta a Enoc por el nacimiento de Noé': ['assets/timeline/rollo-lamec-enoc.png', 'Lamec y Bathenosh contemplan al recién nacido Noé mientras Enoc aparece al fondo, según el Génesis Apócrifo'],
     'La tierra caótica y el Espíritu sobre las aguas': ['assets/timeline/caos-aguas-genesis-1.jpg', 'Oscuridad sobre las aguas primordiales y una presencia luminosa que se mueve sobre ellas, ilustración de Génesis 1:1–2'],
     'Los hijos de Dios celebran la fundación de la tierra': ['assets/timeline/hijos-dios-fundacion-tierra.jpg', 'Hijos de Dios celebran mientras contemplan la tierra durante su fundación, representación poética de Job 38'],
     'Creación del mundo y del ser humano': ['assets/timeline/creacion-tierra.jpg', 'La tierra recién formada emerge bajo una luz dorada, representación artística de Génesis 1'],
@@ -3327,6 +3337,12 @@ if (timelineTrack) {
     'Daniel en el foso de los leones': ['assets/timeline/daniel-foso-leones.jpg', 'Daniel permanece a salvo entre los leones en el foso'],
     'La caída de Jericó': ['assets/extintos/muros-jerico-v2.jpg', 'Las murallas de Jericó se derrumban ante el pueblo de Israel'],
     'La anunciación a María': ['assets/timeline/anunciacion-maria.jpg', 'El ángel Gabriel anuncia a María el nacimiento de Jesús'],
+    'Los leones guían a la Sagrada Familia': ['assets/timeline/infancia-pseudomateo-leones.png', 'Leones y un leopardo acompañan a María, José y Jesús niño durante la huida por el desierto'],
+    'La palmera ofrece sus frutos a la Sagrada Familia': ['assets/timeline/infancia-pseudomateo-palmera.png', 'La Sagrada Familia recoge dátiles durante su viaje por el desierto'],
+    'Las figuras de barro cobran vida': ['assets/timeline/infancia-arabe-figuras-vivas.png', 'Jesús niño da vida a figuras de animales y pájaros hechas de barro'],
+    'Jesús devuelve sus colores a las túnicas': ['assets/timeline/infancia-arabe-tunicas.png', 'Jesús niño devuelve a cada túnica el color solicitado en el taller del tintorero'],
+    'Jesús cura al joven leñador': ['assets/timeline/infancia-tomas-leñador.png', 'Jesús niño cura el pie herido de un joven leñador mientras la familia observa'],
+    'Jesús multiplica el trigo y lo comparte': ['assets/timeline/infancia-tomas-trigo.png', 'Jesús y José reparten una cosecha abundante de trigo entre familias pobres'],
     'Jacobo es curado de una mordedura de víbora': ['assets/timeline/infancia-tomas-jacobo-vibora.png', 'Jesús niño sopla sobre la mordedura de víbora de Jacobo, quien recogía leña'],
     'El jinete del caballo blanco': ['assets/timeline/jinete-caballo-blanco.jpg', 'El jinete del Apocalipsis sobre un caballo blanco'],
     'Caín y Abel': ['assets/timeline/cain-abel.jpg', 'Caín contempla a Abel caído en el campo, en una representación sobria de Génesis 4'],
