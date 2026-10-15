@@ -3112,9 +3112,36 @@ if (timelineTrack) {
     ['c. 7 d. C. · tradición apócrifa','Jesús adolescente en el Templo','El relato canónico sitúa a Jesús a los doce años en Jerusalén.','Lucas 2:41–52','lectura/?obra=rvr1909-lucas&capitulo=2','jesus'],
     ['entre la muerte y la resurrección · relato apócrifo posterior','Evangelio de Nicodemo','Un relato apócrifo posterior desarrolla el descenso de Cristo al Hades entre la muerte y la resurrección.','Evangelio de Nicodemo','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
     ['después de la resurrección · tradición posterior','Carino y Leucio, testigos del descenso','En el Evangelio de Nicodemo, dos hombres que vuelven a la vida después de la resurrección cuentan lo que vieron durante el descenso de Cristo al Hades. El texto los llama hijos de Simeón, pero no permite asegurar que sea el mismo Simeón que aparece en Lucas 2.','Evangelio de Nicodemo 17–27','lectura/?obra=nicodemus-es&capitulo=17','jesus'],
+    ['Pascua · relato apócrifo','Ángeles abren el sepulcro','El Evangelio de Pedro cuenta que dos seres luminosos descienden y que la piedra «rodó por sí misma y volvió al costado». Es una escena propia de este relato apócrifo.','Evangelio de Pedro · fragmento I, sección 9 (35–38)','lectura/?obra=gospel-peter-es&capitulo=9','jesus'],
+    ['Pascua · relato apócrifo','Los guardias quedan aterrados','En el Evangelio de Pedro, los soldados corren a informar a Pilato «y estaban en gran agonía, diciendo: De verdad era el Hijo de Dios». El Evangelio de Nicodemo también cuenta que vieron un terremoto y a un ángel mover la piedra.','Evangelio de Pedro · fragmento I, sección 11 (43–49)','lectura/?obra=gospel-peter-es&capitulo=11','jesus'],
+    ['Pascua · dos tradiciones apócrifas','Jesús sale del sepulcro sostenido por dos seres celestiales','El Evangelio de Pedro describe a tres figuras saliendo: «dos de ellos sosteniendo al otro», y añade que Jesús «superó los cielos». No identifica a los dos acompañantes como muertos resucitados; en otra escena, el Evangelio de Nicodemo dice que Cristo salió del Hades llevando a Adán y seguido por los santos.','Evangelio de Pedro · fragmento I, sección 9 (39–42)','lectura/?obra=gospel-peter-es&capitulo=9','jesus'],
+    ['Pascua · relato apócrifo','Los hijos de Simeón ven la luz en el Hades','En su testimonio, Carino y Leucio recuerdan: «apareció el color del sol como oro, y una luz de color púrpura iluminó el lugar». El relato los presenta como hijos de Simeón y sitúa la visión entre los muertos.','Evangelio de Nicodemo · relato de Carino y Leucio, sección 13','lectura/?obra=nicodemus-es&capitulo=13','jesus'],
+    ['Después de la resurrección · diálogo apócrifo','Los discípulos tocan a Jesús para comprobar que no es un fantasma','La Epístola de los Apóstoles cuenta que los discípulos pensaron que era un fantasma y que Jesús pidió a Andrés mirar si sus pies «presionan la tierra», pues «un fantasma de un diablo no hace huella en la tierra»; luego «le tocamos» para comprobar que había resucitado en la carne.','Epístola de los Apóstoles · secciones 11–12','lectura/?obra=epistle-apostles-es&capitulo=11','jesus'],
     ['33 d. C. · tradición posterior','El Resucitado en María Magdalena y Nag Hammadi','Textos posteriores describen diálogos del Resucitado con sus discípulos.','Evangelio de María · BG 8502, pp. 7–18','pdfs/evangelio-maria-magdalena.pdf','church']
   ];
-  extra.forEach(item => { if (!byTitle.has(item[1])) byTitle.set(item[1], makeTimelineCard([...item.slice(0,5),'context'])); });
+  extra.forEach(item => {
+    if (byTitle.has(item[1])) return;
+    const card = makeTimelineCard([...item.slice(0,5),'context']);
+    const apocryphalTitle = ['Ángeles abren el sepulcro','Los guardias quedan aterrados','Jesús sale del sepulcro sostenido por dos seres celestiales','Los hijos de Simeón ven la luz en el Hades','Los discípulos tocan a Jesús para comprobar que no es un fantasma'].includes(item[1]);
+    if (apocryphalTitle) {
+      const badge = card.querySelector('.source-badge');
+      badge.className = 'source-badge apocryphal';
+      badge.textContent = 'Relato apócrifo';
+    }
+    if (item[1] === 'Jesús sale del sepulcro sostenido por dos seres celestiales') {
+      const link = document.createElement('a');
+      link.href = 'lectura/?obra=nicodemus-es&capitulo=19';
+      link.textContent = 'Evangelio de Nicodemo 19 · Cristo conduce a Adán y a los santos';
+      card.append(link);
+    }
+    if (item[1] === 'Los guardias quedan aterrados') {
+      const link = document.createElement('a');
+      link.href = 'lectura/?obra=nicodemus-es&capitulo=10';
+      link.textContent = 'Evangelio de Nicodemo 10 · testimonio de los guardias';
+      card.append(link);
+    }
+    byTitle.set(item[1], card);
+  });
   milestones.forEach(item => {
     if (byTitle.has(item[1])) return;
     const artisticBirth = ['Nacimiento de Elías', 'Nacimiento de Isaías', 'Nacimiento de Daniel'].includes(item[1]);
@@ -3244,6 +3271,11 @@ if (timelineTrack) {
   moveOrderAfter('La violencia se extiende por la tierra', 'Dios ordena capturar a Shemihaza');
   moveOrderBefore('Evangelio de Nicodemo', 'Jesús resucitado');
   moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
+  moveOrderAfter('Ángeles abren el sepulcro', 'Carino y Leucio, testigos del descenso');
+  moveOrderAfter('Los guardias quedan aterrados', 'Ángeles abren el sepulcro');
+  moveOrderAfter('Jesús sale del sepulcro sostenido por dos seres celestiales', 'Los guardias quedan aterrados');
+  moveOrderAfter('Los hijos de Simeón ven la luz en el Hades', 'Jesús sale del sepulcro sostenido por dos seres celestiales');
+  moveOrderAfter('Los discípulos tocan a Jesús para comprobar que no es un fantasma', 'Los hijos de Simeón ven la luz en el Hades');
   moveOrderBefore('Simeón carga al niño Jesús', 'Relatos del niño Jesús');
   moveOrderAfter('Evangelio de Nicodemo', 'Muerte de Judas Iscariote');
   moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
@@ -3319,6 +3351,11 @@ if (timelineTrack) {
     'Lázaro vuelve a la vida': ['assets/linea-tiempo/lazaro.jpg', 'Lázaro sale de su sepulcro al llamado de Jesús'],
     'La última cena y el arresto': ['assets/linea-tiempo/ultima-cena.jpg', 'Jesús comparte la última cena con sus discípulos'],
     'Carino y Leucio, testigos del descenso': ['assets/linea-tiempo/carino-leucio.jpg', 'Carino y Leucio, dos jóvenes testigos según el Evangelio de Nicodemo'],
+    'Ángeles abren el sepulcro': ['assets/timeline/resurreccion-angeles-sepulcro.png', 'Dos seres luminosos descienden junto a la tumba y la piedra se mueve, según el Evangelio de Pedro'],
+    'Los guardias quedan aterrados': ['assets/timeline/resurreccion-guardias-asustados.png', 'Guardias romanos aterrados ante la tumba abierta y el ángel, según relatos apócrifos'],
+    'Jesús sale del sepulcro sostenido por dos seres celestiales': ['assets/timeline/resurreccion-jesus-con-dos-seres.png', 'Tres figuras salen del sepulcro: dos sostienen a Jesús, según el Evangelio de Pedro'],
+    'Los hijos de Simeón ven la luz en el Hades': ['assets/timeline/resurreccion-luz-hades.png', 'Carino y Leucio contemplan la luz de Cristo en el Hades, según el Evangelio de Nicodemo'],
+    'Los discípulos tocan a Jesús para comprobar que no es un fantasma': ['assets/timeline/resurreccion-tocan-jesus.png', 'Los discípulos tocan a Jesús resucitado para comprobar que está presente corporalmente, según la Epístola de los Apóstoles'],
     'La torre de Babel': ['assets/extintos/torre-babel-v2.jpg', 'La torre de Babel elevándose sobre la antigua ciudad'],
     'Sodoma y Gomorra': ['assets/extintos/sodoma-gomorra.jpg', 'La destrucción de Sodoma y Gomorra en una llanura antigua'],
     'Las diez plagas de Egipto': ['assets/timeline/plagas-egipto.png', 'El Nilo teñido de rojo y las ranas entre las plagas de Egipto'],
