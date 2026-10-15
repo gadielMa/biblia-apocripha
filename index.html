@@ -3294,6 +3294,13 @@ if (timelineTrack) {
   insertRequestedBefore('Relatos del niño Jesús', ['Los leones guían a la Sagrada Familia','La palmera ofrece sus frutos a la Sagrada Familia']);
   insertRequestedBefore('Jesús adolescente en el Templo', ['Las figuras de barro cobran vida','Jesús devuelve sus colores a las túnicas','Jesús cura al joven leñador','Jesús multiplica el trigo y lo comparte']);
   moveOrderAfter('Sodoma y Gomorra', 'Los ángeles ciegan a los hombres de Sodoma');
+  // Las cuatro escenas del sepulcro van después de la muerte de Judas;
+  // la prueba física de los discípulos sigue a las apariciones del Resucitado.
+  moveOrderAfter('Ángeles abren el sepulcro', 'Muerte de Judas Iscariote');
+  moveOrderAfter('Los guardias quedan aterrados', 'Ángeles abren el sepulcro');
+  moveOrderAfter('Jesús sale del sepulcro sostenido por dos seres celestiales', 'Los guardias quedan aterrados');
+  moveOrderAfter('Los hijos de Simeón ven la luz en el Hades', 'Jesús sale del sepulcro sostenido por dos seres celestiales');
+  moveOrderAfter('Los discípulos tocan a Jesús para comprobar que no es un fantasma', 'Las Apariciones post-Resurrección');
   const timelineImages = {
     'La vid del Edén según 3 Baruc': ['assets/timeline/3-baruc-vid-edén.png', 'Samael planta una vid en el jardín del Edén, según la tradición apócrifa de 3 Baruc'],
     'Lamec consulta a Enoc por el nacimiento de Noé': ['assets/timeline/rollo-lamec-enoc.png', 'Lamec y Bathenosh contemplan al recién nacido Noé mientras Enoc aparece al fondo, según el Génesis Apócrifo'],
