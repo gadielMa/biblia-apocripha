@@ -792,6 +792,18 @@
     .prayers-body h3:first-child { margin-top: 0; }
     .prayers-body p { margin: .45rem 0; }
     .prayers-body a { color: var(--accent); font-weight: 800; text-underline-offset: 3px; }
+    .judea-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; margin: 1.2rem 0; }
+    .judea-figures figure { margin: 0; padding: .75rem; border: 1px solid var(--border); border-radius: 14px; background: rgba(255,255,255,.78); }
+    .judea-figures img { display: block; width: 100%; max-height: 360px; object-fit: contain; border-radius: 8px; }
+    .judea-figures figcaption { margin-top: .55rem; font-size: .85rem; line-height: 1.5; }
+    .judea-flag-pair img { max-height: 190px; }
+    .messiah-book-art { display: grid; grid-template-columns: 104px 1fr; align-items: center; gap: .8rem; max-width: 480px; margin: .8rem 0 1.1rem; padding: .55rem; border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,.8); }
+    .messiah-book-art img { display: block; width: 104px; height: 142px; object-fit: cover; border-radius: 7px; box-shadow: 0 3px 10px rgba(24,42,61,.16); }
+    .messiah-book-art figcaption { font-size: .84rem; line-height: 1.45; }
+    .messiah-book-art figcaption strong { display: block; color: var(--text); }
+    .messiah-book-art figcaption span { display: block; margin-top: .25rem; font-size: .75rem; }
+    #shroud-view .extinct-image-pair img { height: 320px; }
+    @media (max-width: 620px) { #shroud-view .extinct-image-pair img { height: 240px; } }
     .prayers-note { margin-top: 1.5rem !important; padding-top: 1rem; border-top: 1px solid var(--border); font-size: .92rem; }
     .extinct-view { max-width: 1240px; margin: 1.25rem auto 2.5rem; padding: 0 1rem; }
     .extinct-view[hidden] { display: none; }
@@ -1210,9 +1222,11 @@
   <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
   <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
   <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
+  <button class="view-tab" type="button" data-view="judea" aria-selected="false">Judea</button>
   <button class="view-tab" type="button" data-view="jubileesCalendar" aria-selected="false">Calendario Los Jubileos</button>
   <button class="view-tab" type="button" data-view="prayers" aria-selected="false">Oraciones</button>
   <button class="view-tab" type="button" data-view="messiah" aria-selected="false">El Mesías</button>
+  <button class="view-tab" type="button" data-view="parallels" aria-selected="false">Biblia y Grecia</button>
   </div>
 </nav>
 
@@ -1269,6 +1283,7 @@
     <div class="prayers-body">
       <h3>1. Islam · el Mesías Jesús, hijo de María</h3>
       <p>El Corán llama a Jesús <em>al-Masīḥ</em> (el Mesías), hijo de María, y lo presenta como profeta y mensajero de Dios. El islam no lo considera Dios ni hijo divino. Las citas siguientes son traducciones españolas de los pasajes; la redacción puede variar entre ediciones.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/quran-cover-reference.png" alt="Cubierta verde y dorada de una edición del Corán" loading="lazy"><figcaption><strong>El Corán</strong><span>Edición contemporánea · imagen aportada. La traducción española puede variar según la edición.</span></figcaption></figure>
       <h3>Nacimiento virginal</h3>
       <p>Gabriel anuncia a María un hijo puro; ella pregunta cómo tendrá un hijo sin que la haya tocado un hombre y recibe como respuesta que para Dios es fácil y que el niño será una señal para la humanidad.</p>
       <p><a href="https://quran.com/19/19-21" target="_blank" rel="noopener noreferrer">Corán, sura 19 (Maryam), 19–21</a> · «Soy solo un mensajero de tu Señor para concederte un hijo puro» (19:19).</p>
@@ -1284,32 +1299,128 @@
       <h3>El Mesías y el fin de los tiempos</h3>
       <p>La segunda venida de Jesús aparece en hadices, no en una narración explícita del Corán. En una tradición recogida por al-Bujari, Mahoma dice que el hijo de María descenderá y juzgará con justicia. La numeración antigua y moderna del hadiz varía.</p>
       <p><a href="https://sunnah.com/bukhari:3448" target="_blank" rel="noopener noreferrer">Sahih al-Bujari 3448 (numeración USC-MSA antigua: vol. 4, libro 55, hadiz 656)</a>. También <a href="https://quran.com/3/45" target="_blank" rel="noopener noreferrer">Corán 3:45</a> lo llama «el Mesías, Jesús, hijo de María» y «eminente en este mundo y en el Más Allá»; <a href="https://quran.com/5/72" target="_blank" rel="noopener noreferrer">5:72</a> rechaza identificar al Mesías con Dios.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/bukhari-ai.png" alt="Ilustración generada por IA de un manuscrito islámico abierto en un atril" loading="lazy"><figcaption><strong>Sahih al-Bujari</strong><span>Recreación artística generada con IA; no es una cubierta ni manuscrito auténtico.</span></figcaption></figure>
 
       <h3>Fe bahá’í</h3>
       <p>Bahá’u’lláh considera a Jesús una Manifestación de Dios: una figura divina que revela los atributos y la palabra de Dios, sin que ello equivalga a la formulación cristiana de la Trinidad. En <em>Pasajes de los escritos de Bahá’u’lláh</em>, sección XXXVI, se lee: «Por medio de Él, el leproso se recuperó de la lepra de la perversidad y la ignorancia».</p>
       <p><a href="https://www.bahai.org/library/authoritative-texts/bahaullah/gleanings-writings-bahaullah/" target="_blank" rel="noopener noreferrer">Bahá’u’lláh, <em>Pasajes de los escritos de Bahá’u’lláh</em>, XXXVI</a>.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/bahai-writings-ai.png" alt="Ilustración generada por IA de un libro ornamental abierto ante un jardín persa" loading="lazy"><figcaption><strong>Pasajes de los escritos de Bahá’u’lláh</strong><span>Recreación artística generada con IA; no representa un ejemplar histórico.</span></figcaption></figure>
 
       <h3>Evangelio de Tomás y corrientes cristianas antiguas</h3>
       <p>El dicho 3 del <em>Evangelio de Tomás</em> pone en boca de Jesús una enseñanza sobre el Reino: «está dentro de vosotros y fuera de vosotros». El texto se conserva en copto entre los códices de Nag Hammadi. Llamarlo simplemente “el evangelio de los gnósticos” simplifica un debate académico: su relación con el gnosticismo es discutida y las corrientes cristianas antiguas eran diversas.</p>
       <p><a href="lectura/?obra=gospel-thomas-es&amp;capitulo=1">Evangelio de Tomás, dicho 3</a> · <a href="https://research.rug.nl/en/publications/the-hidden-meaning-of-the-kingdom-inside-you-and-outside-you-in-t/" target="_blank" rel="noopener noreferrer">estudio sobre el dicho y sus variantes</a>.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/gospel-thomas-ai.png" alt="Ilustración generada por IA de un códice antiguo abierto junto a un paisaje egipcio" loading="lazy"><figcaption><strong>Evangelio de Tomás</strong><span>Recreación artística generada con IA; no es una imagen del códice de Nag Hammadi.</span></figcaption></figure>
 
       <h3>Maniqueísmo</h3>
       <p>En la religión fundada por Mani (siglo III), Jesús ocupa un lugar central como figura de luz y revelación —entre otras figuras llamadas “Jesús” en su cosmología—, dentro de una visión dualista de Luz y Oscuridad. Los Salmos maniqueos contienen himnos devocionales, pero la frase «Jesús, mi Luz, ven a mí…» circula en versiones sin una referencia textual suficientemente precisa; no la presentamos como cita literal.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/manichaean-psalms-ai.png" alt="Ilustración generada por IA de un libro iluminado con motivos de sol y luna" loading="lazy"><figcaption><strong>Salmos maniqueos</strong><span>Recreación artística generada con IA; evoca el simbolismo de luz y oscuridad, no un códice específico.</span></figcaption></figure>
 
       <h3>Comunidad ahmadía</h3>
       <p>Mirza Ghulam Ahmad sostuvo que Jesús sobrevivió a la crucifixión, viajó hacia Cachemira y murió en Srinagar. Es una creencia distintiva ahmadía, no la posición del islam mayoritario ni un hecho histórico establecido. Su libro <em>Jesús en la India</em> expone esa tesis; la frase extensa atribuida en algunas páginas web no se reproduce aquí como cita porque su literalidad y traducción requieren cotejo con una edición concreta.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/jesus-in-india-ai.png" alt="Ilustración generada por IA de un libro abierto frente a un valle de Cachemira" loading="lazy"><figcaption><strong>Jesús en la India</strong><span>Recreación artística generada con IA para representar el libro; no respalda la tesis como hecho histórico.</span></figcaption></figure>
 
       <h3>Mandeísmo</h3>
       <p>Los mandeos veneran especialmente a Juan el Bautista y algunos de sus textos polemizan contra Jesús, al que describen con términos como “falso mesías”. Es una perspectiva religiosa propia y contraria a la cristiana; la frase atribuida al <em>Ginza Rabba</em> sobre curaciones “por astucia y magia” no se puede confirmar como cita literal en esa forma.</p>
       <p><a href="https://www.mdpi.com/2077-1444/16/1/14" target="_blank" rel="noopener noreferrer">Estudio sobre las relaciones entre mandeos, cristianos y maniqueos</a>.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/ginza-rabba-ai.png" alt="Ilustración generada por IA de un libro y un rollo junto a un río" loading="lazy"><figcaption><strong>Ginza Rabba</strong><span>Recreación artística generada con IA; no representa un manuscrito mandeo concreto.</span></figcaption></figure>
 
       <h3>Otras recepciones posteriores</h3>
       <p><strong>Libro de Mormón.</strong> En 3 Nefi 11:7–10, Jesús resucitado se aparece a los habitantes de las Américas y se identifica como Jesucristo. Es escritura de un movimiento restauracionista cristiano (Iglesia de Jesucristo de los Santos de los Últimos Días), no un testimonio antiguo independiente de su existencia histórica.</p>
       <p><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=spa">3 Nefi 11:7–10</a>.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/book-of-mormon-ai.png" alt="Ilustración generada por IA de una plaza mesoamericana al amanecer con un libro abierto" loading="lazy"><figcaption><strong>El Libro de Mormón · 3 Nefi</strong><span>Recreación artística generada con IA; escena simbólica del relato, no evidencia arqueológica.</span></figcaption></figure>
       <p><strong>Bhavishya Purana.</strong> Un pasaje de la sección <em>Pratisarga Parvan</em> se interpreta a veces como un encuentro del rey Shalivahana con Jesús. Su autenticidad, fecha y lectura son muy discutidas; no debe presentarse como una profecía hindú antigua indiscutida ni como evidencia histórica de Jesús en India.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/bhavishya-purana-ai.png" alt="Ilustración generada por IA de un manuscrito de hojas de palma en un pabellón indio" loading="lazy"><figcaption><strong>Bhavishya Purana</strong><span>Recreación artística generada con IA; no representa un manuscrito específico ni resuelve la fecha del pasaje.</span></figcaption></figure>
       <p><strong>Ramakrishna.</strong> En relatos biográficos de este maestro hindú del siglo XIX, Jesús aparece en una experiencia mística y es reconocido como una encarnación divina (<em>avatāra</em>) dentro de la comprensión plural de Ramakrishna. No es un testimonio de los textos hindúes antiguos.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/ramakrishna-gospel-ai.png" alt="Ilustración generada por IA de un libro devocional bengalí abierto junto a un jardín" loading="lazy"><figcaption><strong>El Evangelio de Sri Ramakrishna</strong><span>Recreación artística generada con IA; evoca una biografía espiritual bengalí, no una edición concreta.</span></figcaption></figure>
       <p><strong><em>Pistis Sophia</em>.</strong> Diálogo cristiano esotérico de la Antigüedad tardía en el que Jesús resucitado instruye a sus discípulos sobre el mundo celeste. Las frases sobre “polvo” y el “Reino de la Luz Infinita” compartidas en algunas recopilaciones no se identifican aquí como cita comprobada.</p>
+      <figure class="messiah-book-art"><img src="assets/messiah/pistis-sophia-ai.png" alt="Ilustración generada por IA de un códice antiguo bajo imágenes simbólicas de cielos estrellados" loading="lazy"><figcaption><strong><em>Pistis Sophia</em></strong><span>Recreación artística generada con IA; no representa el manuscrito Coptic British Museum Add. 5114.</span></figcaption></figure>
       <p class="prayers-note"><strong>Nota sobre Taoísmo y budismo Zen:</strong> sus textos fundacionales no presentan a Jesús como el Tao ni como Buda. Las comparaciones entre Jesús, el Camino y la iluminación son lecturas modernas, no citas de escrituras antiguas de esas tradiciones. En todos los casos, estas fuentes documentan cómo comunidades distintas interpretaron a Jesús; por sí solas no demuestran ni refutan la cuestión histórica de su existencia.</p>
+    </div>
+  </article>
+</section>
+
+<section class="prayers-view" id="parallels-view" hidden aria-labelledby="parallels-title">
+  <article class="prayers-panel">
+    <span class="prayers-eyebrow">Comparación de mitos, textos e imágenes</span>
+    <h2 id="parallels-title">Paralelismos entre la Biblia y los dioses griegos</h2>
+    <p class="prayers-lead">Estas semejanzas sirven para comparar motivos —luz, caos, monstruos, mensajeros e imágenes—, pero no prueban que una figura bíblica sea el mismo dios griego ni que una tradición derive directamente de la otra. En cada caso distinguimos el texto antiguo de las lecturas posteriores.</p>
+    <div class="prayers-body">
+      <h3>Lucifer y Fósforo (Eósforo) · el lucero de la mañana</h3>
+      <p>El latín <em>lucifer</em> y el griego <em>phōsphoros</em> significan “portador de luz” y ambos podían nombrar al lucero de la mañana (Venus). En Isaías 14, sin embargo, el poema se burla del rey de Babilonia; la identificación de “Lucifer” como nombre propio de Satanás antes de su caída pertenece a una interpretación cristiana posterior, no al sentido directo del pasaje hebreo.</p>
+      <p><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=14#pasaje-14-12">Isaías 14:4–15, especialmente 14:12</a>.</p>
+
+      <h3>Satanás y Tifón · oposición al orden divino</h3>
+      <p>Se puede comparar a Satanás, adversario y acusador en distintas capas de la tradición bíblica, con Tifón, monstruoso rival de Zeus en la mitología griega. Ambos pueden representar una amenaza al orden, pero sus relatos y funciones son diferentes; la Biblia no llama Tifón a Satanás.</p>
+      <p><a href="lectura/?obra=rvr1909-job&amp;capitulo=1#pasaje-1-6">Job 1:6–12</a> · <a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=12#pasaje-12-7">Apocalipsis 12:7–9</a>.</p>
+
+      <h3>Abadón / Apolión y Apolo · un posible juego de nombres</h3>
+      <p>Apocalipsis 9:11 da al ángel del abismo un nombre hebreo, Abadón (“destrucción”), y uno griego, Apolión (“destructor”). <em>Apollyōn</em> suena parecido a <em>Apollōn</em> (Apolo), y se ha propuesto una alusión polémica, quizá reforzada por la asociación de Apolo con la peste en la literatura griega. El texto explica el nombre como “Destructor”; no afirma que Apolo y Apolión sean el mismo ser.</p>
+      <p><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=9#pasaje-9-11">Apocalipsis 9:1–11</a>.</p>
+
+      <h3>Leviatán y Ceto o la Hidra · monstruos del agua</h3>
+      <p>Leviatán comparte con monstruos griegos como Ceto o la Hidra el motivo del ser temible ligado a las aguas y vencido por una fuerza heroica o divina. La comparación es temática: Ceto y la Hidra no son versiones griegas de Leviatán, y sus historias no coinciden en detalle.</p>
+      <p><a href="lectura/?obra=rvr1909-job&amp;capitulo=41#pasaje-41-1">Job 41</a> · <a href="lectura/?obra=rvr1909-isaias&amp;capitulo=27#pasaje-27-1">Isaías 27:1</a>.</p>
+
+      <h3>Lilith y Hécate · noche y márgenes del mundo</h3>
+      <p>La asociación de Lilith con la noche y la de Hécate con la noche, la magia y los cruces permiten una comparación de figuras liminales. Pero Lilith no es “la primera mujer” en la Biblia: Isaías 34:14 contiene un término hebreo oscuro que algunas traducciones entienden como criatura nocturna; su historia como primera esposa de Adán surge en folclore judío posterior. Tampoco es preciso atribuir a Hécate, en general, el motivo de devorar niños: ese rasgo se acerca más a figuras como Lamia.</p>
+      <p><a href="lectura/?obra=rvr1909-isaias&amp;capitulo=34#pasaje-34-14">Isaías 34:14</a>.</p>
+
+      <h3>Vigilantes / Nephilim y Titanes / Gigantes · seres rebeldes confinados</h3>
+      <p>Algunas versiones de la tradición de los Vigilantes cuentan que seres celestiales transgreden límites, se relacionan con mujeres humanas y son encarcelados; la mitología griega cuenta que los Titanes se enfrentan a Zeus y son confinados bajo tierra. Se parecen como relatos de rebelión y castigo, pero Nephilim, Vigilantes, Titanes y Gigantes no son categorías intercambiables. Génesis tampoco dice que los Nephilim fueran ángeles caídos.</p>
+      <p><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-1">Génesis 6:1–4</a> · <a href="lectura/?obra=1-enoc-es&amp;capitulo=6">1 Enoc 6–10</a>.</p>
+
+      <h3>Pan y la iconografía del Diablo · influencia visual, no identidad</h3>
+      <p>La apariencia caprina de Pan y de los sátiros ofrece un paralelo visual con algunas imágenes medievales del Diablo: cuernos, patas y rasgos animales. La iconografía cristiana, sin embargo, se formó gradualmente con varias fuentes —incluidas criaturas bíblicas, tradiciones judías y motivos grecorromanos—, no mediante una adopción completa de Pan por una Iglesia unificada.</p>
+
+      <h3>Asmodeo y Eros / Dioniso · deseo, matrimonio y exceso</h3>
+      <p>En Tobías, Asmodeo impide las bodas de Sara y mata a sus esposos; la narración lo expulsa mediante el humo de un pez y la oración. Puede compararse con representaciones griegas del deseo personificado en Eros o del exceso asociado a Dioniso, pero no es simplemente “la versión pervertida” de ninguno de los dos.</p>
+      <p><a href="lectura/?obra=deutero-tobias&amp;capitulo=3">Tobías 3:7–17</a> · <a href="lectura/?obra=deutero-tobias&amp;capitulo=8">Tobías 8:1–3</a>.</p>
+
+      <h3>Baal Zebub / Belcebú, Moloch y Cronos · nombres distintos, motivos distintos</h3>
+      <p>Baal Zebub aparece como dios de Ecrón en 2 Reyes; en los Evangelios, “Beelzebul” es un título asociado al príncipe de los demonios. Moloch es otro nombre, relacionado en la Biblia con prácticas de sacrificio infantil. Cronos, por su parte, devora a sus propios hijos en el mito griego. Comparar estos motivos puede ser sugerente, pero no hay base para afirmar que Belcebú o Moloch sean Cronos ni que el judaísmo los transformara conjuntamente en él.</p>
+      <p><a href="lectura/?obra=rvr1909-2-reyes&amp;capitulo=1#pasaje-1-2">2 Reyes 1:2–6</a> · <a href="lectura/?obra=rvr1909-levitico&amp;capitulo=18#pasaje-18-21">Levítico 18:21</a> · <a href="lectura/?obra=rvr1909-marcos&amp;capitulo=3#pasaje-3-22">Marcos 3:22</a>.</p>
+
+      <h3>Gabriel y Hermes · mensajeros entre ámbitos</h3>
+      <p>Gabriel transmite anuncios divinos, entre ellos los nacimientos de Juan y Jesús en Lucas. Hermes lleva mensajes de los dioses en muchos mitos griegos y también guía viajeros y almas. Ambos son mensajeros, aunque sus papeles religiosos no son equivalentes.</p>
+      <p><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-11">Lucas 1:11–20, 26–38</a>.</p>
+
+      <h3>Miguel y Ares / Atenea · combate y defensa del orden</h3>
+      <p>Apocalipsis presenta a Miguel encabezando la lucha celestial contra el dragón. Ares y Atenea encarnan aspectos diferentes de la guerra griega: fuerza combativa y estrategia/defensa. La comparación ayuda a contrastar imaginarios bélicos, pero Miguel es un arcángel al servicio de Dios, no un dios de la guerra.</p>
+      <p><a href="lectura/?obra=rvr1909-apocalipsis&amp;capitulo=12#pasaje-12-7">Apocalipsis 12:7–9</a> · <a href="lectura/?obra=rvr1909-daniel&amp;capitulo=10#pasaje-10-13">Daniel 10:13, 21; 12:1</a>.</p>
+
+      <p class="prayers-note">En síntesis: hay motivos comparables y, en algunos casos, posibles juegos lingüísticos o influencias visuales. Eso no demuestra una equivalencia directa ni una línea simple de préstamo entre las religiones.</p>
+    </div>
+  </article>
+</section>
+
+<section class="prayers-view" id="judea-view" hidden aria-labelledby="judea-title">
+  <article class="prayers-panel">
+    <span class="prayers-eyebrow">Textos bíblicos · símbolos e recepción</span>
+    <h2 id="judea-title">Judea</h2>
+    <p class="prayers-lead">Amós y Hechos relacionan la idolatría con imágenes de culto astral y el exilio. Las diferencias entre ambos pasajes reflejan su transmisión textual; no son una descripción de todos los judíos ni de una identidad judía atemporal.</p>
+    <div class="prayers-body">
+      <h3>Amós y Hechos: Moloc, Quiún y Renfán</h3>
+      <p>En Amós, la Reina-Valera 1960 habla de Moloc y Quiún y anuncia el destierro “más allá de Damasco”. En Hechos 7:42–43, Esteban cita el pasaje según una forma griega de la Escritura: aparece “Renfán” y el destino es “más allá de Babilonia”. “Renfán” corresponde a una variante griega del nombre que otras tradiciones textuales relacionan con Quiún; su identificación precisa es discutida, aunque suele entenderse como una deidad astral.</p>
+      <p><strong>Hechos 7:43 · Reina-Valera 1960:</strong> «Antes bien, llevasteis el tabernáculo de Moloc, y la estrella de vuestro dios Renfán, figuras que os hicisteis para adorarlas. Os transportaré, pues, más allá de Babilonia.»</p>
+      <p><a href="https://www.biblegateway.com/passage/?search=Hechos%207%3A43&amp;version=RVR1960" target="_blank" rel="noopener noreferrer">Consultar Hechos 7:43 · RVR1960</a></p>
+      <div class="judea-figures">
+        <figure><img src="assets/judea/menorah-bandera-moderna.png" alt="Diseño moderno de franjas azules y blancas con una menorá azul al centro" loading="lazy"><figcaption>Diseño moderno compartido con una menorá. La menorá es un símbolo judío antiguo, pero esta imagen no es una bandera histórica documentada del reino de Judá.</figcaption></figure>
+        <figure><img src="assets/judea/rebis-alquimico.png" alt="Grabado alquímico de un Rebis, figura de dos naturalezas dentro de un medallón" loading="lazy"><figcaption>La imagen titulada “Renfan” es en realidad un Rebis alquímico de una tradición posterior; no hay base para presentarlo como retrato o símbolo antiguo de Renfán.</figcaption></figure>
+        <figure><img src="assets/judea/saturno-vision-ai.png" alt="Ilustración generada por IA de Saturno sobre un paisaje antiguo del Levante" loading="lazy"><figcaption>Visualización artística generada con IA de Saturno. Quiún/Renfán se ha relacionado con Saturno en algunas interpretaciones; la identificación no es segura.</figcaption></figure>
+      </div>
+      <p><strong>Amós 5:26–27 · Reina-Valera 1960:</strong> «Antes bien, llevabais el tabernáculo de vuestro Moloc y Quiún, ídolos vuestros, la estrella de vuestros dioses que os hicisteis. Os haré, pues, transportar más allá de Damasco, dice Jehová, cuyo nombre es Dios de los ejércitos.»</p>
+      <p><a href="https://www.biblegateway.com/passage/?search=Am%C3%B3s%205%3A26-27&amp;version=RVR1960" target="_blank" rel="noopener noreferrer">Consultar Amós 5:26–27 · RVR1960</a> · <a href="https://intertextual.bible/text/amos-5.26/lxx-amos-5.26/acts-7.43" target="_blank" rel="noopener noreferrer">Comparación textual entre Amós, la Septuaginta y Hechos</a></p>
+      <h3>Juan 8:42–44 · una confrontación en el relato evangélico</h3>
+      <p>En este diálogo, Jesús discute con algunos de sus interlocutores y emplea una acusación muy dura. El pasaje pertenece a una confrontación narrativa concreta; no debe usarse para atribuir culpa colectiva a los judíos, entonces o ahora.</p>
+      <blockquote>«Jesús les dijo: Si vuestro padre fuese Dios, ciertamente me amaríais; porque yo de Dios he salido, y he venido; pues no he venido de mí mismo, sino que él me envió. ¿Por qué no entendéis mi lenguaje? Porque no podéis escuchar mi palabra. Vosotros sois de vuestro padre el diablo, y los deseos de vuestro padre queréis hacer.»</blockquote>
+      <p><a href="https://www.biblegateway.com/passage/?search=Juan%208%3A42-44&amp;version=RVR1960" target="_blank" rel="noopener noreferrer">Juan 8:42–44 · Reina-Valera 1960</a></p>
+      <p class="prayers-note">La menorá aparece como emblema judío desde la Antigüedad, pero eso no convierte el diseño moderno mostrado aquí en una bandera histórica de Judea. La pregunta sobre emblemas nacionales es contemporánea y cívica, no una conclusión que impongan estos versículos. <a href="https://resources.metmuseum.org/resources/metpublications/pdf/Age_of_Transition_Byzantine_Culture_in_the_Islamic_World.pdf" target="_blank" rel="noopener noreferrer">The Metropolitan Museum of Art · la menorá en la cultura judía antigua</a>.</p>
+      <h3>Una pregunta sobre las banderas</h3>
+      <div class="judea-figures judea-flag-pair">
+        <figure><img src="assets/judea/bandera-israel.png" alt="Bandera nacional de Israel: dos franjas azules y una estrella de David" loading="lazy"><figcaption>Bandera actual de Israel · imagen compartida.</figcaption></figure>
+        <figure><img src="assets/judea/menorah-bandera-moderna.png" alt="Propuesta moderna de bandera blanca y azul con una menorá" loading="lazy"><figcaption>Diseño moderno con menorá; no una bandera antigua reconstruida con certeza.</figcaption></figure>
+      </div>
+      <p><strong>¿Israel debería cambiar su bandera actual por una bandera inspirada en la Judea antigua, como este diseño con la menorá?</strong></p>
     </div>
   </article>
 </section>
@@ -2712,12 +2823,14 @@ function findLibraryMatches(query) {
     'face-view': ['La cara de Dios', 'face'],
     'kingdoms-view': ['Israel vs Judá', 'kingdoms'],
     'prayers-view': ['Oraciones cristianas', 'prayers'],
-    'messiah-view': ['El Mesías', 'messiah']
+    'messiah-view': ['El Mesías', 'messiah'],
+    'parallels-view': ['Biblia y Grecia', 'parallels'],
+    'judea-view': ['Judea', 'judea']
   };
   const selectors = [
     '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
     '#prophecies-view .prophecies-intro', '#prophecies-view .prophecy-card', '.extinct-view .extinct-intro', '.extinct-view .extinct-card', '#enoch-view .enoch-intro', '#enoch-view .enoch-passage',
-    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#messiah-view .prayers-panel'
+    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#messiah-view .prayers-panel', '#parallels-view .prayers-panel', '#judea-view .prayers-panel'
   ].join(',');
   const matches = [];
   document.querySelectorAll(selectors).forEach(card => {
@@ -3709,16 +3822,19 @@ const addedDevilCards = [
   ['amon', 'Amon / Aamon', 'Ars Goetia · demonología posterior', 'La descripción de Aamon como criatura con forma de lobo y cola de serpiente procede de la Ars Goetia, un grimorio moderno temprano, no de la Biblia. La fuente lo presenta como marqués infernal; no lo define de manera uniforme como “demonio de la ira”.', 'Ars Goetia, espíritu VII · fuente demonológica posterior', 'La imagen representa esa descripción del grimorio, no una criatura bíblica.'],
   ['belfegor', 'Belfegor / Belphegor', 'Demonología cristiana posterior', 'La asociación de Belphegor con la pereza y su lugar entre los “príncipes del infierno” proceden de clasificaciones demonológicas tardías, especialmente la de Peter Binsfeld (1589), no de una lista bíblica de siete príncipes.', 'Números 25:3 · Baal-peor (contexto bíblico distinto)|Peter Binsfeld, clasificación de 1589', 'No confundir el topónimo/culto Baal-peor del texto bíblico con el personaje de la demonología posterior.'],
   ['la-furia', 'La Furia', 'Evangelio de Nicodemo · personificación apócrifa', 'En el capítulo XXI, Satanás se dirige a la Furia y le dice que se prepare para recibir a Jesús. El pasaje la presenta como interlocutora en el diálogo del inframundo; no es una figura de los evangelios canónicos.', 'Evangelio de Nicodemo, Descenso al Hades, capítulo XXI (la numeración varía)', 'La imagen es una representación artística de la personificación del texto, no un retrato histórico.'],
+  ['buer', 'Buer', 'Ars Goetia · demonología moderna temprana', 'La Ars Goetia lo enumera como el décimo espíritu y lo describe como presidente. En la edición de S. L. MacGregor Mathers se le atribuye enseñar filosofía natural y moral, lógica y las virtudes de hierbas y plantas. No es una figura bíblica.', 'Ars Goetia, espíritu X · edición de S. L. MacGregor Mathers', 'Ilustración de Louis Le Breton para el Dictionnaire Infernal (1863), grabada por Jarrault; la imagen no procede de la edición Mathers.'],
 ];
 for (const [slug, title, badge, description, refs, note] of addedDevilCards) {
-  const imageSrc = slug === 'la-furia' ? 'assets/diablos/la-furia-v2.jpg' : `assets/diablos/${slug}.jpg`;
-  const imageAlt = ({lucifer:'Lucifer como lucero al caer del cielo', mamon:'Mamón personificado junto al oro y las riquezas', asmodeo:'Asmodeo retrocede ante el humo del pez en el relato de Tobit', amon:'Aamon como lobo con cola de serpiente, según un grimorio posterior', belfegor:'Belphegor personificado como figura de la pereza en un grabado alegórico', 'la-furia':'Representación artística de La Furia, interlocutora de Satanás en el Evangelio de Nicodemo'})[slug];
+  const imageSrc = slug === 'la-furia' ? 'assets/diablos/la-furia-v2.jpg' : slug === 'buer' ? 'assets/diablos/buer-louis-le-breton.jpg' : `assets/diablos/${slug}.jpg`;
+  const imageAlt = ({lucifer:'Lucifer como lucero al caer del cielo', mamon:'Mamón personificado junto al oro y las riquezas', asmodeo:'Asmodeo retrocede ante el humo del pez en el relato de Tobit', amon:'Aamon como lobo con cola de serpiente, según un grimorio posterior', belfegor:'Belphegor personificado como figura de la pereza en un grabado alegórico', 'la-furia':'Representación artística de La Furia, interlocutora de Satanás en el Evangelio de Nicodemo', buer:'Grabado de Buer, figura demonológica con patas múltiples y cabeza de animal, por Louis Le Breton'})[slug];
   const links = refs.split('|').map(ref => `<span>${ref}</span>`).join('');
   devilGrid.insertAdjacentHTML('beforeend', `<article class="extinct-card" id="diablos-${slug}"><img class="extinct-card-image" src="${imageSrc}" alt="${imageAlt}" loading="lazy"><div class="extinct-card-body"><span class="source-badge context">${badge}</span><h3>${title}</h3><p>${description}</p><div class="extinct-refs">${links}</div><p class="extinct-note">${note}</p></div></article>`);
 }
 document.querySelector('#diablos-mamon .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Mammon" target="_blank" rel="noreferrer">Nota enciclopédica: sentido de “Mamón”</a>');
 document.querySelector('#diablos-asmodeo .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://bible.usccb.org/bible/tobit/3" target="_blank" rel="noreferrer">Tobit 3 · Biblia de la USCCB</a>');
 document.querySelector('#diablos-amon .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://original.sacred-texts.com/grim/lks/lks05.htm" target="_blank" rel="noreferrer">Ars Goetia · texto de Amon</a>');
+document.querySelector('#diablos-buer .extinct-refs')?.insertAdjacentHTML('beforeend', '<a href="https://commons.wikimedia.org/wiki/File:Ill_dict_infernal_p0139-123_buer.jpg" target="_blank" rel="noopener noreferrer">Louis Le Breton, Dictionnaire Infernal · imagen y atribución</a>');
+document.querySelector('#diablos-buer .extinct-refs')?.insertAdjacentHTML('beforeend', '<a href="https://lo2.org/pdf/celepha%C3%AFs/mathers/Mathers-and-Crowley.Goetia.pdf" target="_blank" rel="noopener noreferrer">Mathers y Crowley · texto de la Goetia</a>');
 document.querySelector('#diablos-lucifer .extinct-refs').insertAdjacentHTML('beforeend', '<a href="https://vulgata.linguasacra.org/bible/isaiah/14/" target="_blank" rel="noreferrer">Isaías 14 · Vulgata y contexto del rey de Babilonia</a>');
 const satanCard = document.getElementById('diablos-satanas');
 satanCard?.querySelector('.extinct-card-body').insertAdjacentHTML('beforeend', '<p class="extinct-note">Conexión explícita: Apocalipsis 12:9 identifica al gran dragón y la serpiente antigua como “el Diablo y Satanás”. Ver también <a href="#diablos-dragon">la ficha del dragón antiguo</a>. En Apocalipsis 12:7–9 Miguel y sus ángeles combaten al dragón y lo expulsan; la escena no dice que Miguel necesitara “ayuda” de Dios, aunque la victoria se enmarca en la autoridad divina.</p>');
@@ -3906,7 +4022,7 @@ shroudSection.className = 'extinct-view';
 shroudSection.id = 'shroud-view';
 shroudSection.hidden = true;
 shroudSection.setAttribute('aria-labelledby', 'shroud-title');
-shroudSection.innerHTML = `<div class="extinct-intro"><h2 id="shroud-title">La Sábana Santa de Turín</h2><p>Una tela de lino venerada por muchos cristianos como el sudario de Jesús. Su autenticidad y su posible origen antiguo son debatidos; aquí se distinguen el relato evangélico, la historia documentada de la reliquia y los estudios científicos sin tratarlos como una misma clase de evidencia.</p></div><div class="extinct-grid"><article class="extinct-card"><div class="extinct-card-body">
+shroudSection.innerHTML = `<div class="extinct-intro"><h2 id="shroud-title">La Sábana Santa de Turín</h2><p>Una tela de lino venerada por muchos cristianos como el sudario de Jesús. Su autenticidad y su posible origen antiguo son debatidos; aquí se distinguen el relato evangélico, la historia documentada de la reliquia y los estudios científicos sin tratarlos como una misma clase de evidencia.</p></div><div class="extinct-grid"><article class="extinct-card"><div class="extinct-image-pair"><figure><img src="assets/shroud/shroud-full-length.png" alt="Imagen completa de la Sábana Santa, con las vistas frontal y dorsal de la figura humana" loading="lazy"><figcaption>Vista completa de la tela · imagen aportada</figcaption></figure><figure><img src="assets/shroud/shroud-face-negative.png" alt="Detalle fotográfico negativo del rostro atribuido a la imagen de la Sábana Santa" loading="lazy"><figcaption>Detalle del rostro en negativo · imagen aportada</figcaption></figure></div><div class="extinct-card-body">
 <p>Los Evangelios narran que Jesús fue envuelto en lienzos para su sepultura. Juan menciona además un sudario para la cabeza, pero ninguno identifica por nombre la tela conservada hoy en Turín ni ofrece una cadena de custodia que la conecte con ella.</p>
 <p>La historia documentada de esta reliquia aparece en la Europa medieval: se exhibía en Lirey, Francia, a mediados del siglo XIV, y fue trasladada a Turín en 1578. La tradición devocional propone que su historia se remonta a la época de Jesús, pero no se conserva documentación continua que confirme ese recorrido.</p>
 <p>Los estudios científicos tampoco han zanjado la cuestión. En 2024, Giulio Fanti, de la Universidad de Padua, publicó observaciones microscópicas y químicas sobre rastros atribuidos a sangre, que interpretó como compatibles con los tormentos descritos en los Evangelios. Esa interpretación no demuestra que la tela envolviera a Jesús ni establece su fecha.</p>
@@ -3923,7 +4039,7 @@ const libraryViewRoots = {
   timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
   extinct: '#extinct-view', animals: '#extinct-view', lostPlaces: '#lost-places-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
   gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view',
-  jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', messiah: '#messiah-view'
+  jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', messiah: '#messiah-view', parallels: '#parallels-view', judea: '#judea-view'
 };
 // Calendario de 364 días integrado como sección de la biblioteca.
 const jubileeMonthNames = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -4151,6 +4267,8 @@ const ascendedView = document.getElementById('ascended-view');
 const jubileesCalendarView = document.getElementById('jubilees-calendar-view');
 const prayersView = document.getElementById('prayers-view');
 const messiahView = document.getElementById('messiah-view');
+const parallelsView = document.getElementById('parallels-view');
+const judeaView = document.getElementById('judea-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
@@ -4246,7 +4364,9 @@ function selectView(view, updateHash = true) {
   const isJubileesCalendar = view === 'jubileesCalendar';
   const isPrayers = view === 'prayers';
   const isMessiah = view === 'messiah';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isMessiah;
+  const isParallels = view === 'parallels';
+  const isJudea = view === 'judea';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isMessiah || isParallels || isJudea;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -4265,7 +4385,9 @@ function selectView(view, updateHash = true) {
   jubileesCalendarView.hidden = !isJubileesCalendar;
   prayersView.hidden = !isPrayers;
   messiahView.hidden = !isMessiah;
-  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, messiahView]
+  parallelsView.hidden = !isParallels;
+  judeaView.hidden = !isJudea;
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, messiahView, parallelsView, judeaView]
     .find(section => !section.hidden);
   if (activeSection) {
     activeSection.classList.remove('view-entering');
@@ -4283,7 +4405,7 @@ function selectView(view, updateHash = true) {
   updateViewMenuSize();
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionGenealogyDates);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isMessiah ? '#el-mesias' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isMessiah ? '#el-mesias' : isParallels ? '#paralelismos' : isJudea ? '#judea' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -4304,6 +4426,8 @@ if (location.hash === '#ascendidos') selectView('ascended', false);
 if (location.hash === '#calendario-los-jubileos') selectView('jubileesCalendar', false);
 if (location.hash === '#oraciones') selectView('prayers', false);
 if (location.hash === '#el-mesias') selectView('messiah', false);
+if (location.hash === '#paralelismos') selectView('parallels', false);
+if (location.hash === '#judea') selectView('judea', false);
 
 function jumpToLibraryItem(view, targetId, title) {
   selectView(view);
