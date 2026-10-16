@@ -1,0 +1,25 @@
+{
+  "id": "oraculos-sibilinos-es",
+  "title": "Oráculos sibilinos",
+  "language": "es",
+  "sourceLanguage": "Griego",
+  "translator": "Resumen introductorio original en español",
+  "publication": "Guía de una colección de oráculos judíos y cristianos; no es una traducción íntegra",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://www.nasscal.com/e-clavis-christian-apocrypha/sibylline-oracles/",
+  "externalTextUrl": "https://sacred-texts.com/cla/sib/",
+  "externalTextKind": "full",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "The Sibylline Oracles · traducción de Milton S. Terry (1899)",
+  "externalTextNote": "Traducción histórica de dominio público. La colección reúne libros de épocas y procedencias distintas; no constituye una obra unitaria ni una traducción crítica moderna.",
+  "notes": "Colección de poemas proféticos en griego atribuidos a una Sibila. Algunos libros contienen materiales judíos, otros cristianos, y varios combinan capas o fueron editados posteriormente. La composición abarca siglos —aproximadamente del II a. C. al VII d. C.—, de modo que los libros no deben fecharse todos juntos; la colección se transmitió en manuscritos medievales, no fue un único hallazgo moderno. Esta guía presenta temas y rasgos de la colección, no pretende reemplazar el texto ni asignar una sola autoría o teología a todos sus pasajes.",
+  "chapters": [
+    {"number":1,"title":"Una colección, no un solo libro","verses":[{"number":"1","text":"Los Oráculos sibilinos son poemas en hexámetros griegos que ponen profecías en boca de la Sibila, figura profética conocida en el mundo grecorromano. Autores judíos y cristianos adoptaron esa voz prestigiosa para hablar a lectores de cultura griega. La colección conservada reúne composiciones y revisiones de distintas épocas."}]},
+    {"number":2,"title":"Monoteísmo y crítica de la idolatría","verses":[{"number":"1","text":"En varios pasajes, la voz sibilina proclama a un único Dios creador y critica los ídolos y las prácticas injustas. El lenguaje combina imágenes de la tradición profética judía con formas poéticas griegas; esa mezcla permite que la exhortación religiosa se presente como profecía dirigida también a pueblos no judíos."}]},
+    {"number":3,"title":"Historia narrada como profecía","verses":[{"number":"1","text":"Los poemas recorren edades y reinos como si anunciaran por adelantado acontecimientos conocidos por quien compuso el texto. Esta técnica, habitual en la literatura apocalíptica, da autoridad profética a una lectura moral y política de la historia. Por eso algunas alusiones pueden ayudar a fechar capas concretas, pero no toda la colección."}]},
+    {"number":4,"title":"Juicio de imperios y gobernantes","verses":[{"number":"1","text":"Roma y otros poderes aparecen bajo juicio cuando practican violencia, arrogancia o impiedad. El destino de los imperios se presenta como parte de una justicia divina que alcanza a gobernantes y pueblos. Los pasajes reflejan circunstancias distintas según el libro y no expresan una postura política uniforme."}]},
+    {"number":5,"title":"Esperanza de renovación","verses":[{"number":"1","text":"Junto a las calamidades, los oráculos anuncian restauración, paz y una vida renovada para quienes obedecen a Dios. En las capas cristianas aparecen interpretaciones de Jesús y expectativas propias de comunidades cristianas; esas secciones deben distinguirse de los materiales judíos más antiguos."}]},
+    {"number":6,"title":"Cómo acercarse a los libros","verses":[{"number":"1","text":"Los libros conservados difieren en fecha, contexto y contenido, y la numeración moderna no equivale a una secuencia cronológica. La traducción enlazada es una versión inglesa histórica de 1899; resulta útil para lectura inicial, pero debe identificarse como tal y contrastarse con estudios y ediciones críticas actuales."}]}
+  ]
+}

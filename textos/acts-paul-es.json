@@ -1,0 +1,25 @@
+{
+  "id": "acts-paul-es",
+  "title": "Hechos de Pablo",
+  "language": "es",
+  "sourceLanguage": "Griego; se conservan también testimonios en copto, latín y otras lenguas",
+  "translator": "Resumen ampliado original en español, basado en la edición de M. R. James (1924)",
+  "publication": "Guía de las secciones conservadas; no es una traducción íntegra",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://earlychristianwritings.com/actspaul.html",
+  "externalTextUrl": "https://www.earlychristianwritings.com/text/actspaul.html",
+  "externalTextKind": "partial",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "The Acts of Paul · traducción de M. R. James (1924)",
+  "externalTextNote": "La obra sobrevive de modo fragmentario. La traducción enlazada reúne secciones transmitidas separadamente, entre ellas los Hechos de Pablo y Tecla, la correspondencia con los corintios y el martirio.",
+  "notes": "Obra cristiana anónima compuesta en griego en el siglo II d. C., probablemente hacia mediados o la segunda mitad de ese siglo; Tertuliano ya la conocía hacia fines del siglo II. Esta guía ofrece una orientación narrativa, no reconstruye un relato continuo a partir de los fragmentos. Los Hechos de Pablo y Tecla ya tienen una ficha propia en esta biblioteca: aquí se los sitúa dentro de la obra mayor y se evita duplicar su texto. La correspondencia apócrifa entre Pablo y los corintios tampoco debe confundirse con las cartas canónicas. La tradición manuscrita está incompleta y sus secciones circularon de forma independiente.",
+  "chapters": [
+    {"number":1,"title":"Una obra en varias secciones","verses":[{"number":"1","text":"Los Hechos de Pablo narran viajes, predicación, controversias y milagros atribuidos al apóstol. No se conserva un ejemplar completo: manuscritos y citas permiten reconocer varias unidades que circularon separadamente. La composición suele situarse en el siglo II; Tertuliano ya menciona la obra hacia fines de ese siglo."}]},
+    {"number":2,"title":"Pablo y Tecla","verses":[{"number":"1","text":"En Iconio, Tecla escucha desde una ventana la predicación de Pablo sobre la continencia. Rompe su compromiso matrimonial, afronta la condena pública y sobrevive a varios intentos de ejecución. El relato la muestra bautizándose por iniciativa propia y predicando después; su historia se desarrolla en detalle en la ficha independiente de los Hechos de Pablo y Tecla."}]},
+    {"number":3,"title":"Pablo continúa su misión","verses":[{"number":"1","text":"Los fragmentos restantes presentan a Pablo viajando entre comunidades, instruyendo a nuevos creyentes y enfrentando autoridades y adversarios. Los milagros y liberaciones funcionan como recursos narrativos para representar la protección divina y el crecimiento de la comunidad, no como datos comprobables de una biografía contemporánea."}]},
+    {"number":4,"title":"Correspondencia con los corintios","verses":[{"number":"1","text":"Una sección apócrifa incorpora una carta de los corintios a Pablo y la respuesta del apóstol. La comunidad consulta sobre maestros que niegan la resurrección y cuestionan la creación; la respuesta combate esas ideas en nombre de Pablo. Esta correspondencia es distinta de 1 y 2 Corintios del Nuevo Testamento y refleja debates cristianos posteriores."}]},
+    {"number":5,"title":"El martirio de Pablo","verses":[{"number":"1","text":"La sección final cuenta la detención y ejecución de Pablo en Roma bajo Nerón. Antes de morir, el apóstol se despide de los creyentes y anuncia su esperanza; la narración agrega apariciones y prodigios vinculados a su muerte. Es una conclusión hagiográfica, no un testimonio judicial independiente."}]},
+    {"number":6,"title":"Cómo leer los fragmentos","verses":[{"number":"1","text":"La secuencia de esta ficha es temática y no pretende establecer el orden original de cada fragmento. La inclusión de Tecla, la carta corintia y el martirio en una obra mayor está respaldada por la transmisión antigua, pero cada unidad tuvo una historia propia. Las lagunas impiden reconstruir con certeza todo el contenido perdido."}]}
+  ]
+}

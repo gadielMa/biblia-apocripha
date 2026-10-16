@@ -1134,12 +1134,6 @@
     "file": "etiope/libro-alianza-i.es.json"
   },
   {
-    "id": "etiope-libro-alianza-ii",
-    "title": "Libro de la Alianza II",
-    "language": "es",
-    "file": "etiope/libro-alianza-ii.es.json"
-  },
-  {
     "id": "etiope-constituciones-apostolicas",
     "title": "Constituciones Apostólicas (edición relacionada)",
     "language": "es",
@@ -1168,5 +1162,23 @@
     "title": "Testamento de los 12 Patriarcas",
     "language": "es",
     "file": "testamento-12-patriarcas-es.json"
+  },
+  {
+    "id": "acts-paul-es",
+    "title": "Hechos de Pablo (guía de los fragmentos conservados)",
+    "language": "es",
+    "file": "acts-paul-es.json"
+  },
+  {
+    "id": "apocalypse-elijah-es",
+    "title": "Apocalipsis de Elías (guía de la versión copta)",
+    "language": "es",
+    "file": "apocalypse-elijah-es.json"
+  },
+  {
+    "id": "oraculos-sibilinos-es",
+    "title": "Oráculos sibilinos (guía de la colección)",
+    "language": "es",
+    "file": "oraculos-sibilinos-es.json"
   }
 ]

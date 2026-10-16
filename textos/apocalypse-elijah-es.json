@@ -1,0 +1,25 @@
+{
+  "id": "apocalypse-elijah-es",
+  "title": "Apocalipsis de Elías",
+  "language": "es",
+  "sourceLanguage": "Copto sahídico y ajmínico; se conoce un pequeño fragmento griego",
+  "translator": "Resumen ampliado original en español",
+  "publication": "Guía narrativa de la versión copta conservada; no es una traducción íntegra",
+  "license": "Resumen original; no reproduce una traducción editorial protegida.",
+  "localTextKind": "summary",
+  "sourceUrl": "https://ccdl.claremont.edu/digital/api/collection/cce/id/165/download",
+  "externalTextUrl": "https://www.earlychristianwritings.com/copticelijah.html",
+  "externalTextKind": "partial",
+  "externalTextLanguage": "inglés",
+  "externalTextLabel": "Coptic Apocalypse of Elijah · introducción y fragmentos",
+  "externalTextNote": "La obra se conserva principalmente en copto en manuscritos de los siglos IV y V; la página ofrece información y fragmentos, no una edición completa en inglés.",
+  "notes": "No debe confundirse con otros escritos antiguos o medievales atribuidos a Elías. La composición de la forma conservada suele situarse entre los siglos III y IV d. C., aunque la fecha y las posibles capas judías y cristianas son discutidas. Los manuscritos coptos conservados datan de los siglos IV–V; el copto es la lengua de los testigos principales y se conoce además un pequeño fragmento griego. La versión combina exhortación ascética y expectativa apocalíptica. La presente guía resume la forma copta y señala sus límites; no presenta como segura la existencia de un original judío independiente.",
+  "chapters": [
+    {"number":1,"title":"Ayuno, oración y vida fiel","verses":[{"number":"1","text":"La obra comienza exhortando a practicar el ayuno, la oración y la limosna, y a perseverar ante la injusticia. Estas instrucciones sitúan la visión del futuro en la conducta presente: la comunidad debe prepararse mediante disciplina y fidelidad, no mediante cálculos de fechas."}]},
+    {"number":2,"title":"Conflictos y aflicción en Egipto","verses":[{"number":"1","text":"El texto anuncia tiempos de violencia y desorden que afectan a Egipto y a sus gobernantes. La geografía egipcia y la memoria de conflictos locales han llevado a relacionar la obra con su contexto de transmisión en Egipto, aunque no permiten identificar sin discusión un único acontecimiento histórico."}]},
+    {"number":3,"title":"El adversario final","verses":[{"number":"1","text":"La visión describe la aparición de un falso mesías o adversario que engaña a muchos y persigue a los fieles. La figura concentra temores apocalípticos sobre el poder político y religioso; no es un retrato verificable de una persona histórica específica."}]},
+    {"number":4,"title":"Elías, Enoc y los testigos","verses":[{"number":"1","text":"Elías y Enoc aparecen como testigos que confrontan al adversario y llaman al pueblo a reconocer la verdad. La pareja retoma la expectativa de que antiguos justos vuelvan antes del desenlace, enlazando la profecía bíblica de Elías con tradiciones sobre Enoc."}]},
+    {"number":5,"title":"Juicio y victoria final","verses":[{"number":"1","text":"Tras el enfrentamiento, el impostor es derrotado y la intervención de Cristo inaugura la vindicación de los justos. La conclusión responde a la amenaza descrita al comienzo: la opresión no tiene la última palabra. El desenlace refleja la esperanza cristiana de la versión conservada."}]},
+    {"number":6,"title":"Manuscritos y cautelas","verses":[{"number":"1","text":"La versión copta se conserva en manuscritos de los siglos IV y V, con una pequeña evidencia fragmentaria en griego. La fecha de composición y la relación entre posibles capas judías y cristianas siguen debatidas; por eso esta sinopsis describe la versión copta, no una hipotética forma original reconstruida."}]}
+  ]
+}

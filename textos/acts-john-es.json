@@ -13,7 +13,7 @@
   "externalTextLanguage": "inglés",
   "externalTextLabel": "The Acts of John · traducción de M. R. James (1924)",
   "externalTextNote": "Texto extenso en inglés. La obra se conserva de forma incompleta y compuesta: la edición reúne pasajes griegos y episodios conocidos solo por versiones latinas.",
-  "notes": "Resumen orientativo de los episodios conservados, no reconstrucción de una narración original continua. El comienzo de la obra se ha perdido; el texto mezcla secciones griegas con episodios transmitidos solo en latín. Los relatos de la persecución de Domiciano y de Patmos que algunas tradiciones agregan son posteriores y no deben confundirse con el núcleo aquí resumido. La cristología visionaria del escrito es característica de esta obra y no representa por sí sola una doctrina cristiana universal.",
+  "notes": "Resumen orientativo de los episodios conservados, no reconstrucción de una narración original continua. El comienzo de la obra se ha perdido; el texto mezcla secciones griegas con episodios transmitidos solo en latín, y el orden de algunos materiales es editorial. La guía amplía cuatro ejes del relato: los milagros públicos en Éfeso, la conversión moral representada por el retrato interior, la renuncia sexual y el himno-danza con la visión de Jesús. El pasaje de la danza es una escena litúrgica y teológica literaria, no una descripción suficiente de las prácticas de todas las comunidades cristianas. La cristología visionaria del escrito —que subraya la apariencia cambiante de Jesús y su sufrimiento— es característica de esta obra y no representa por sí sola una doctrina cristiana universal. Los relatos de la persecución de Domiciano y de Patmos que algunas tradiciones agregan son posteriores y no deben confundirse con el núcleo aquí resumido.",
   "chapters": [
     {
       "number": 1,
@@ -71,7 +71,7 @@
       "verses": [
         {
           "number": "1",
-          "text": "Antes de su arresto, Juan y sus compañeros forman un círculo y cantan un himno mientras danzan. La escena incluye respuestas breves y una interpretación simbólica de la danza. Después Juan relata visiones en las que Jesús se manifiesta de maneras distintas: a veces parece sólido, otras incorpóreo; en ocasiones deja huellas y en otras no. También cuenta una visión de una cruz luminosa, acompañada por una voz que distingue el misterio espiritual de la cruz del instrumento material de ejecución. Esta presentación refleja una cristología particular del escrito, que interpreta el sufrimiento de Jesús de modo distinto al de los relatos canónicos."
+          "text": "Antes de su arresto, Juan y sus compañeros forman un círculo y cantan un himno mientras danzan. La escena incluye respuestas breves y una interpretación simbólica de la danza. Después Juan relata visiones en las que Jesús se manifiesta de maneras distintas: a veces parece sólido, otras incorpóreo; en ocasiones deja huellas y en otras no. También cuenta una visión de una cruz luminosa, acompañada por una voz que distingue el misterio espiritual de la cruz del instrumento material de ejecución. Esta presentación refleja una cristología particular del escrito, que interpreta el sufrimiento de Jesús de modo distinto al de los relatos canónicos. El conjunto no es un credo sistemático: son discursos visionarios puestos en una escena narrativa de despedida, y su lectura debe atender a esa forma literaria."
         }
       ]
     },
@@ -91,7 +91,7 @@
       "verses": [
         {
           "number": "1",
-          "text": "Al final de la narración, Juan se despide de sus compañeros, ora y desciende a una fosa que él mismo ha dispuesto. Allí encomienda su espíritu a Dios y muere, según la forma del relato. Las versiones no coinciden en todos los detalles: algunas cuentan que su cuerpo desapareció y que de la tumba surgía un polvo o maná; otras transmiten variantes sobre su sepultura. La conclusión presenta a Juan como alguien cuya partida no se describe mediante un martirio violento, sino como una muerte serena rodeada de señales extraordinarias. Las historias populares de su arresto por Domiciano y su estancia en Patmos corresponden a tradiciones distintas y posteriores."
+          "text": "Al final de la narración, Juan se despide de sus compañeros, ora y desciende a una fosa que él mismo ha dispuesto. Allí encomienda su espíritu a Dios y muere, según la forma del relato. Las versiones no coinciden en todos los detalles: algunas cuentan que su cuerpo desapareció y que de la tumba surgía un polvo o maná; otras transmiten variantes sobre su sepultura. La conclusión presenta a Juan como alguien cuya partida no se describe mediante un martirio violento, sino como una muerte serena rodeada de señales extraordinarias. Las historias populares de su arresto por Domiciano y su estancia en Patmos corresponden a tradiciones distintas y posteriores. Así, el texto construye una forma de muerte apostólica distinta del martirio, aunque la transmisión posterior mezcló ambas memorias."
         }
       ]
     }

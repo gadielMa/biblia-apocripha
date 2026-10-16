@@ -8,6 +8,9 @@ const aliasesByBook = {
 };
 
 const summariesByBook = {
+  'acts-paul': 'Narración apócrifa del siglo II sobre la misión y el martirio de Pablo. Se conserva fragmentariamente en varias unidades, entre ellas los Hechos de Pablo y Tecla y una correspondencia apócrifa con los corintios; esta guía las sitúa dentro de la obra sin confundirlas con el canon.',
+  'apocalypse-elijah': 'Apocalipsis cristiano conservado principalmente en copto. Combina exhortaciones a la oración y el ayuno con una visión de persecución, el adversario final y la intervención de Elías, Enoc y Cristo. La fecha y las posibles capas judías y cristianas son discutidas.',
+  'oraculos-sibilinos': 'Colección de poemas proféticos griegos de composición judía y cristiana en distintas épocas. Sus oráculos reinterpretan la historia, critican la idolatría y anuncian juicio y renovación; no forman un libro unitario ni comparten una sola fecha o autoría.',
   'documento-damasco': 'El Documento de Damasco combina una exhortación histórica sobre la infidelidad de Israel con normas para una comunidad que se considera fiel a la alianza. Regula la vida común, el sábado, la pureza y la interpretación de la Ley.',
   'himnos-accion-gracias': 'Colección de plegarias poéticas de Qumrán que alaban a Dios por su conocimiento, su protección y la revelación concedida al orante. Los himnos expresan también fragilidad humana y oposición entre fidelidad y maldad.',
   'rvr1909-abdias': 'Abdías anuncia juicio contra Edom por su violencia contra Judá y presenta la restauración de Sion, donde el pueblo volverá a habitar su tierra.',
