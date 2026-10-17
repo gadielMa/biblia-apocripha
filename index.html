@@ -792,6 +792,11 @@
     .prayers-body h3:first-child { margin-top: 0; }
     .prayers-body p { margin: .45rem 0; }
     .prayers-body a { color: var(--accent); font-weight: 800; text-underline-offset: 3px; }
+    .adam-compare-wrap { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--border); border-radius: 14px; }
+    .adam-compare { width: 100%; border-collapse: collapse; min-width: 560px; font-size: .94em; line-height: 1.55; }
+    .adam-compare th, .adam-compare td { padding: .8rem 1rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+    .adam-compare th { color: var(--text); background: rgba(42, 111, 147, .08); }
+    .adam-compare tr:last-child td { border-bottom: 0; }
     .judea-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; margin: 1.2rem 0; }
     .judea-figures figure { margin: 0; padding: .75rem; border: 1px solid var(--border); border-radius: 14px; background: rgba(255,255,255,.78); }
     .judea-figures img { display: block; width: 100%; max-height: 360px; object-fit: contain; border-radius: 8px; }
@@ -1067,6 +1072,7 @@
       .view-tabs { margin-top: .7rem; padding: 0 .75rem; }
       .view-links { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .view-tab { min-width: 0; font-size: .84rem; }
+      .view-tab[data-view="jubileesCalendar"] { font-size: .74rem; }
       .view-menu-current { max-width: 42vw; }
       .timeline-view { margin-top: .8rem; padding: 0 .75rem; }
       .genealogy-view { margin-top: .8rem; padding: 0 .75rem; }
@@ -1223,6 +1229,8 @@
   <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
   <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
   <button class="view-tab" type="button" data-view="judea" aria-selected="false">Judea</button>
+  <button class="view-tab" type="button" data-view="abrahamJesus" aria-selected="false">Abraham y Jesús</button>
+  <button class="view-tab" type="button" data-view="adamJesus" aria-selected="false">Adán y Jesús</button>
   <button class="view-tab" type="button" data-view="jubileesCalendar" aria-selected="false">Calendario Los Jubileos</button>
   <button class="view-tab" type="button" data-view="prayers" aria-selected="false">Oraciones</button>
   <button class="view-tab" type="button" data-view="messiah" aria-selected="false">El Mesías</button>
@@ -1421,6 +1429,53 @@
         <figure><img src="assets/judea/menorah-bandera-moderna.png" alt="Propuesta moderna de bandera blanca y azul con una menorá" loading="lazy"><figcaption>Diseño moderno con menorá; no una bandera antigua reconstruida con certeza.</figcaption></figure>
       </div>
       <p><strong>¿Israel debería cambiar su bandera actual por una bandera inspirada en la Judea antigua, como este diseño con la menorá?</strong></p>
+    </div>
+  </article>
+</section>
+
+<section class="prayers-view" id="abraham-jesus-view" hidden aria-labelledby="abraham-jesus-title">
+  <article class="prayers-panel">
+    <span class="prayers-eyebrow">Génesis · lectura cristiana</span>
+    <h2 id="abraham-jesus-title">Abraham y Jesús</h2>
+    <p class="prayers-lead">La atadura de Isaac —la <em>Akedá</em> en la tradición judía— se ha leído en el cristianismo en diálogo con la pasión de Jesús. Para apreciar esa conexión, conviene separar lo que cuenta Génesis de la interpretación posterior.</p>
+    <div class="prayers-body">
+      <p><strong>El acto más cruel de Dios</strong></p>
+      <p>Génesis presenta el episodio como una prueba: Abraham viaja con Isaac al lugar indicado por Dios. Isaac carga la leña del holocausto; Abraham lleva el fuego y el cuchillo. El relato no dice que fueran descalzos. Cuando Abraham está a punto de sacrificar a su hijo, el ángel del Señor lo detiene. Abraham ve entonces un carnero trabado por los cuernos en un zarzal y lo ofrece en lugar de Isaac: el animal no es llevado por el ángel, y el texto lo llama carnero, no cordero.</p>
+      <p>El zarzal permite una comparación visual con la corona de espinas de Jesús, pero Génesis no establece esa conexión ni dice que el carnero llevara espinas como una corona. Es una asociación simbólica cristiana, no un detalle explícito del episodio.</p>
+      <h3>De Isaac al Cordero de Dios</h3>
+      <p>En la lectura cristiana, Isaac —el hijo amado que lleva la madera y es devuelto con vida— puede evocar a Jesús. El Nuevo Testamento desarrolla por su cuenta las imágenes del sacrificio y del cordero: Juan el Bautista llama a Jesús «el Cordero de Dios, que quita el pecado del mundo», y Pablo dice que Dios «no escatimó ni a su propio Hijo, sino que lo entregó por todos nosotros».</p>
+      <p>La comparación puede expresarse así: en Génesis, Dios detiene la muerte de Isaac y provee un carnero como sustituto; en la teología cristiana, Dios entrega a Jesús y entiende su muerte como salvación para todos. Pero Génesis no dice que Isaac muriera por los pecados de Abraham, ni afirma literalmente que Dios eligiera sacrificar a Jesús en vez de Isaac. Hebreos interpreta que Abraham confió en que Dios podía incluso levantar a Isaac de entre los muertos; no convierte a Isaac en quien expía el pecado.</p>
+      <p>Por eso, «El acto más cruel de Dios» funciona como una pregunta provocadora sobre la tensión del relato, no como una conclusión compartida por todas las tradiciones. La moraleja cristiana no es que Abraham hubiera salvado a su hijo mediante un sacrificio consumado: el sacrificio de Isaac se interrumpe, y la asociación con Jesús pertenece a una lectura teológica posterior.</p>
+      <p class="prayers-note"><strong>Pasajes para comparar:</strong> <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=22#pasaje-22-1">Génesis 22:1–14</a> · <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=15#pasaje-15-6">Génesis 15:6</a> · <a href="lectura/?obra=rvr1909-juan&amp;capitulo=1#pasaje-1-29">Juan 1:29</a> · <a href="lectura/?obra=rvr1909-romanos&amp;capitulo=8#pasaje-8-32">Romanos 8:32</a> · <a href="lectura/?obra=rvr1909-hebreos&amp;capitulo=11#pasaje-11-17">Hebreos 11:17–19</a>.</p>
+    </div>
+  </article>
+</section>
+
+<section class="prayers-view" id="adam-jesus-view" hidden aria-labelledby="adam-jesus-title">
+  <article class="prayers-panel">
+    <span class="prayers-eyebrow">Pablo · tipología del primer y último Adán</span>
+    <h2 id="adam-jesus-title">Adán y Jesús</h2>
+    <p class="prayers-lead">El Nuevo Testamento traza explícitamente este contraste: Pablo llama a Adán «figura del que había de venir» y presenta a Cristo como el «postrer Adán». La comparación central no es una lista de detalles idénticos, sino el efecto opuesto de sus actos sobre la humanidad.</p>
+    <div class="prayers-body">
+      <h3>El primer Adán y el último Adán</h3>
+      <p>En Génesis, el ser humano es formado del polvo y puesto en el jardín de Edén; desobedece el mandato y el relato vincula esa ruptura con la mortalidad y el sufrimiento. Pablo resume teológicamente esa historia: por la transgresión de un hombre entran el pecado y la muerte. Frente a ello, la obediencia de Jesucristo abre, según Pablo, el camino de la gracia, la justificación y la vida.</p>
+      <div class="adam-compare-wrap" role="region" aria-label="Comparación entre Adán y Jesús" tabindex="0">
+        <table class="adam-compare">
+          <thead><tr><th scope="col">El primer Adán</th><th scope="col">Jesús, el último Adán</th></tr></thead>
+          <tbody>
+            <tr><td>Procede del polvo de la tierra; Génesis lo sitúa en Edén.</td><td>Pablo lo contrapone como «del cielo» y lo llama «espíritu vivificante» en su enseñanza sobre la resurrección.</td></tr>
+            <tr><td>Su transgresión representa, en Romanos, desobediencia, condenación y muerte.</td><td>La obediencia de Cristo se asocia con gracia, justificación y vida.</td></tr>
+            <tr><td>La tierra queda bajo maldición y produce espinos y cardos después de la transgresión.</td><td>Los evangelios narran que Jesús recibe una corona de espinas durante la pasión; el vínculo con Génesis es una lectura simbólica cristiana, no una explicación explícita del pasaje.</td></tr>
+            <tr><td>En Adán, dice Pablo, todos mueren.</td><td>En Cristo, dice Pablo, los muertos serán vivificados; el argumento culmina en la esperanza de la resurrección.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Qué dice Pablo y qué es una asociación simbólica</h3>
+      <p>En Romanos 5:12–21, Pablo desarrolla la oposición entre una transgresión y la obediencia de Cristo: condenación frente a justificación, y muerte frente a vida. En 1 Corintios 15:21–49 vuelve sobre Adán y Cristo para hablar de la resurrección: el primero es «ser viviente» y el último, «espíritu vivificante»; contrapone lo terrenal y lo celestial. Esos son los cimientos directos del paralelismo.</p>
+      <p>Otros contrastes —Edén y Getsemaní, la desnudez de Adán y el despojo de Jesús, o la costilla de la que se forma Eva frente al costado traspasado de Jesús— pueden funcionar como meditaciones teológicas. Sin embargo, Pablo no los formula como parte de su comparación. Génesis relata la formación de Eva del costado de Adán y Juan relata que del costado de Jesús salió sangre y agua; la idea de que de allí «nace la Iglesia» es una interpretación cristiana tradicional, no una frase literal de esos pasajes.</p>
+      <p>También conviene matizar la tentación: Génesis cuenta que la serpiente tienta a Eva y que Adán come del fruto; no dice literalmente que Adán quisiera convertirse en Dios. Los evangelios cuentan que Jesús fue tentado en el desierto, pero no presentan en una frase directa ese episodio como «la repetición» de Edén. La comparación ayuda a leer ambos relatos en conjunto, siempre que se distinga la conexión teológica del detalle textual.</p>
+      <p>Lucas lleva la genealogía de Jesús hasta Adán, ampliando el horizonte narrativo más allá de Abraham e Israel. Esto permite una lectura de Jesús en relación con toda la humanidad, aunque la genealogía no enuncia por sí sola la tipología paulina.</p>
+      <p class="prayers-note"><strong>Pasajes para comparar:</strong> <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=2#pasaje-2-7">Génesis 2:7, 15–17, 21–23</a> · <a href="lectura/?obra=rvr1909-genesis&amp;capitulo=3#pasaje-3-1">Génesis 3:1–19</a> · <a href="lectura/?obra=rvr1909-romanos&amp;capitulo=5#pasaje-5-12">Romanos 5:12–21</a> · <a href="lectura/?obra=rvr1909-1-corintios&amp;capitulo=15#pasaje-15-21">1 Corintios 15:21–49</a> · <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=3#pasaje-3-23">Lucas 3:23–38</a> · <a href="lectura/?obra=rvr1909-mateo&amp;capitulo=4#pasaje-4-1">Mateo 4:1–11</a> · <a href="lectura/?obra=rvr1909-juan&amp;capitulo=19#pasaje-19-31">Juan 19:31–37</a>.</p>
     </div>
   </article>
 </section>
@@ -2825,12 +2880,14 @@ function findLibraryMatches(query) {
     'prayers-view': ['Oraciones cristianas', 'prayers'],
     'messiah-view': ['El Mesías', 'messiah'],
     'parallels-view': ['Biblia y Grecia', 'parallels'],
-    'judea-view': ['Judea', 'judea']
+    'judea-view': ['Judea', 'judea'],
+    'abraham-jesus-view': ['Abraham y Jesús', 'abrahamJesus'],
+    'adam-jesus-view': ['Adán y Jesús', 'adamJesus']
   };
   const selectors = [
     '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
     '#prophecies-view .prophecies-intro', '#prophecies-view .prophecy-card', '.extinct-view .extinct-intro', '.extinct-view .extinct-card', '#enoch-view .enoch-intro', '#enoch-view .enoch-passage',
-    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#messiah-view .prayers-panel', '#parallels-view .prayers-panel', '#judea-view .prayers-panel'
+    '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#messiah-view .prayers-panel', '#parallels-view .prayers-panel', '#judea-view .prayers-panel', '#abraham-jesus-view .prayers-panel', '#adam-jesus-view .prayers-panel'
   ].join(',');
   const matches = [];
   document.querySelectorAll(selectors).forEach(card => {
@@ -4039,7 +4096,7 @@ const libraryViewRoots = {
   timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
   extinct: '#extinct-view', animals: '#extinct-view', lostPlaces: '#lost-places-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
   gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view',
-  jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', messiah: '#messiah-view', parallels: '#parallels-view', judea: '#judea-view'
+  jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', messiah: '#messiah-view', parallels: '#parallels-view', judea: '#judea-view', abrahamJesus: '#abraham-jesus-view', adamJesus: '#adam-jesus-view'
 };
 // Calendario de 364 días integrado como sección de la biblioteca.
 const jubileeMonthNames = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -4269,6 +4326,8 @@ const prayersView = document.getElementById('prayers-view');
 const messiahView = document.getElementById('messiah-view');
 const parallelsView = document.getElementById('parallels-view');
 const judeaView = document.getElementById('judea-view');
+const abrahamJesusView = document.getElementById('abraham-jesus-view');
+const adamJesusView = document.getElementById('adam-jesus-view');
 const viewTabs = document.querySelectorAll('.view-tab');
 const viewNavigation = document.getElementById('view-navigation');
 const viewMenuToggle = document.getElementById('view-menu-toggle');
@@ -4366,7 +4425,9 @@ function selectView(view, updateHash = true) {
   const isMessiah = view === 'messiah';
   const isParallels = view === 'parallels';
   const isJudea = view === 'judea';
-  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isMessiah || isParallels || isJudea;
+  const isAbrahamJesus = view === 'abrahamJesus';
+  const isAdamJesus = view === 'adamJesus';
+  catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isMessiah || isParallels || isJudea || isAbrahamJesus || isAdamJesus;
   timelineView.hidden = !isTimeline;
   genealogyView.hidden = !isGenealogy;
   propheciesView.hidden = !isProphecies;
@@ -4387,7 +4448,9 @@ function selectView(view, updateHash = true) {
   messiahView.hidden = !isMessiah;
   parallelsView.hidden = !isParallels;
   judeaView.hidden = !isJudea;
-  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, messiahView, parallelsView, judeaView]
+  abrahamJesusView.hidden = !isAbrahamJesus;
+  adamJesusView.hidden = !isAdamJesus;
+  const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, messiahView, parallelsView, judeaView, abrahamJesusView, adamJesusView]
     .find(section => !section.hidden);
   if (activeSection) {
     activeSection.classList.remove('view-entering');
@@ -4405,7 +4468,7 @@ function selectView(view, updateHash = true) {
   updateViewMenuSize();
   renderCrossNavigation(view);
   if (isGenealogy) requestAnimationFrame(positionGenealogyDates);
-  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isMessiah ? '#el-mesias' : isParallels ? '#paralelismos' : isJudea ? '#judea' : location.pathname + location.search);
+  if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isMessiah ? '#el-mesias' : isParallels ? '#paralelismos' : isJudea ? '#judea' : isAbrahamJesus ? '#abraham-y-jesus' : isAdamJesus ? '#adan-y-jesus' : location.pathname + location.search);
 }
 viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
 if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -4428,6 +4491,8 @@ if (location.hash === '#oraciones') selectView('prayers', false);
 if (location.hash === '#el-mesias') selectView('messiah', false);
 if (location.hash === '#paralelismos') selectView('parallels', false);
 if (location.hash === '#judea') selectView('judea', false);
+if (location.hash === '#abraham-y-jesus') selectView('abrahamJesus', false);
+if (location.hash === '#adan-y-jesus') selectView('adamJesus', false);
 
 function jumpToLibraryItem(view, targetId, title) {
   selectView(view);
