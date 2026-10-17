@@ -657,6 +657,7 @@
       margin-top: 0;
       padding: 0 .75rem;
       grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-auto-rows: 82px;
       gap: .5rem;
       border: 1px solid rgba(255,230,207,.34);
       border-radius: 18px;
@@ -675,8 +676,13 @@
       border: 1px solid rgba(255,230,207,.36);
       border-radius: 12px;
       padding: .72rem .85rem;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
       text-align: left;
-      min-height: 44px;
+      min-height: 0;
+      height: 100%;
       color: #fff8f1;
       background: rgba(255,248,239,.075);
       font: inherit;
@@ -792,6 +798,8 @@
     .prayers-body h3:first-child { margin-top: 0; }
     .prayers-body p { margin: .45rem 0; }
     .prayers-body a { color: var(--accent); font-weight: 800; text-underline-offset: 3px; }
+    .prayer-scripture { margin: .9rem 0 1rem; padding: .85rem 1.15rem; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; color: var(--text); background: rgba(255,255,255,.78); line-height: 1.75; }
+    .prayer-scripture p { margin: .25rem 0; }
     .prayers-illustration { max-width: 900px; margin: 1.2rem auto 1.6rem; }
     .prayers-illustration img { display: block; width: 100%; max-height: 560px; aspect-ratio: 3 / 2; object-fit: contain; border: 1px solid var(--border); border-radius: 16px; }
     .prayers-illustration figcaption { margin-top: .5rem; color: var(--text2); font-size: .84rem; line-height: 1.5; }
@@ -1080,7 +1088,6 @@
       .view-tabs { margin-top: .7rem; padding: 0 .75rem; }
       .view-links { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .view-tab { min-width: 0; font-size: .84rem; }
-      .view-tab[data-view="jubileesCalendar"] { padding: .56rem .62rem; font-size: .62rem; line-height: 1.2; }
       .view-menu-current { max-width: 42vw; }
       .timeline-view { margin-top: .8rem; padding: 0 .75rem; }
       .genealogy-view { margin-top: .8rem; padding: 0 .75rem; }
@@ -1220,30 +1227,30 @@
     <span class="view-menu-icon" aria-hidden="true">☰</span><span>Secciones</span><span class="view-menu-current" id="view-menu-current">· Catálogo</span>
   </button>
   <div class="view-links" id="view-links">
-  <button class="view-tab active" type="button" data-view="catalog" aria-selected="true">Catálogo</button>
-  <button class="view-tab" type="button" data-view="timeline" aria-selected="false">Línea de tiempo</button>
-  <button class="view-tab" type="button" data-view="ascended" aria-selected="false">Ascendidos</button>
-  <button class="view-tab" type="button" data-view="genealogy" aria-selected="false">Árbol genealógico</button>
-  <button class="view-tab" type="button" data-view="prophecies" aria-selected="false">Profecías</button>
-  <button class="view-tab" type="button" data-view="animals" aria-selected="false">Animales extintos</button>
-  <button class="view-tab" type="button" data-view="lostPlaces" aria-selected="false">Lugares perdidos</button>
-  <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos</button>
-  <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
-  <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
-  <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
-  <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Infiernos</button>
-  <button class="view-tab" type="button" data-view="ark" aria-selected="false">Arca de Noé</button>
-  <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
-  <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
-  <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
-  <button class="view-tab" type="button" data-view="judea" aria-selected="false">Judea</button>
   <button class="view-tab" type="button" data-view="abrahamJesus" aria-selected="false">Abraham y Jesús</button>
   <button class="view-tab" type="button" data-view="adamJesus" aria-selected="false">Adán y Jesús</button>
-  <button class="view-tab" type="button" data-view="jubileesCalendar" aria-selected="false">Calendario Los Jubileos</button>
-  <button class="view-tab" type="button" data-view="prayers" aria-selected="false">Oraciones</button>
-  <button class="view-tab" type="button" data-view="messiah" aria-selected="false">El Mesías</button>
+  <button class="view-tab" type="button" data-view="animals" aria-selected="false">Animales extintos</button>
+  <button class="view-tab" type="button" data-view="genealogy" aria-selected="false">Árbol genealógico</button>
+  <button class="view-tab" type="button" data-view="ark" aria-selected="false">Arca de Noé</button>
+  <button class="view-tab" type="button" data-view="ascended" aria-selected="false">Ascendidos</button>
   <button class="view-tab" type="button" data-view="parallels" aria-selected="false">Biblia y Grecia</button>
+  <button class="view-tab" type="button" data-view="jubileesCalendar" aria-selected="false">Calendario Los Jubileos</button>
+  <button class="view-tab active" type="button" data-view="catalog" aria-selected="true">Catálogo</button>
+  <button class="view-tab" type="button" data-view="devils" aria-selected="false">Diablos</button>
+  <button class="view-tab" type="button" data-view="messiah" aria-selected="false">El Mesías</button>
+  <button class="view-tab" type="button" data-view="enoch" aria-selected="false">Enoc</button>
+  <button class="view-tab" type="button" data-view="gnosticism" aria-selected="false">Gnosticismo</button>
+  <button class="view-tab" type="button" data-view="afterlife" aria-selected="false">Infiernos</button>
   <button class="view-tab" type="button" data-view="frankfurtAmulet" aria-selected="false">Inscripción de Frankfurt</button>
+  <button class="view-tab" type="button" data-view="kingdoms" aria-selected="false">Israel vs Judá</button>
+  <button class="view-tab" type="button" data-view="judea" aria-selected="false">Judea</button>
+  <button class="view-tab" type="button" data-view="face" aria-selected="false">La cara de Dios</button>
+  <button class="view-tab" type="button" data-view="timeline" aria-selected="false">Línea de tiempo</button>
+  <button class="view-tab" type="button" data-view="lostPlaces" aria-selected="false">Lugares perdidos</button>
+  <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos</button>
+  <button class="view-tab" type="button" data-view="prayers" aria-selected="false">Oraciones</button>
+  <button class="view-tab" type="button" data-view="prophecies" aria-selected="false">Profecías</button>
+  <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
   </div>
 </nav>
 
@@ -1278,12 +1285,23 @@
     <p class="prayers-lead">Dos de las oraciones cristianas más conocidas reúnen palabras de la Biblia, aunque no nacieron del mismo modo ni cada frase de sus formas tradicionales aparece literalmente en las Escrituras.</p>
     <div class="prayers-body">
       <h3>El Padre nuestro</h3>
-      <p>Jesús enseñó esta oración a sus discípulos como modelo para dirigirse a Dios. Mateo la sitúa en el Sermón del monte; Lucas conserva una versión más breve, después de que uno de los discípulos le pide que les enseñe a orar. Por eso las formulaciones bíblicas no son idénticas en todos sus detalles.</p>
-      <p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=6#pasaje-6-9">Mateo 6:9–13</a> · <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=11#pasaje-11-2">Lucas 11:2–4</a></p>
+      <p>Jesús la enseñó como modelo de oración en el Sermón del monte. Esta es la forma de Mateo, transcrita de la Reina-Valera 1909, como la oración de Enoc que aparece más abajo:</p>
+      <blockquote class="prayer-scripture">
+        <p>«Padre nuestro que estás en los cielos, santificado sea tu nombre.</p>
+        <p>Venga tu reino. Sea hecha tu voluntad, como en el cielo, así también en la tierra.</p>
+        <p>Danos hoy nuestro pan cotidiano.</p>
+        <p>Y perdónanos nuestras deudas, como también nosotros perdonamos á nuestros deudores.</p>
+        <p>Y no nos metas en tentación, mas líbranos del mal: porque tuyo es el reino, y el poder, y la gloria, por todos los siglos. Amén.»</p>
+      </blockquote>
+      <p class="prayers-note">La Reina-Valera 1909 incluye la doxología final («porque tuyo es el reino…»); algunas ediciones críticas modernas la señalan como variante textual. <a href="https://journals.sagepub.com/doi/pdf/10.1177/00346373221102910">Estudio sobre la variante en Mateo 6:13</a>.</p>
+      <p><a href="lectura/?obra=rvr1909-mateo&amp;capitulo=6#pasaje-6-9">Mateo 6:9–13</a></p>
       <h3>El Ave María</h3>
-      <p>Su primera parte enlaza dos saludos del Evangelio de Lucas: el del ángel Gabriel a María durante la anunciación y el de Isabel cuando María la visita. La oración tradicional retoma así expresiones bíblicas, pero no aparece completa como una sola oración en la Biblia.</p>
+      <p>Los Evangelios no presentan una oración única llamada «Ave María»: la forma breve que sigue reúne literalmente el saludo del ángel y el de Isabel en Lucas. Se omite la súplica posterior («Santa María… ruega por nosotros…»), que pertenece a la tradición cristiana y no es un versículo bíblico.</p>
+      <blockquote class="prayer-scripture">
+        <p>«¡Salve, muy favorecida! el Señor es contigo.</p>
+        <p>Bendita tú entre las mujeres, y bendito el fruto de tu vientre.»</p>
+      </blockquote>
       <p><a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-28">Lucas 1:28</a> · <a href="lectura/?obra=rvr1909-lucas&amp;capitulo=1#pasaje-1-42">Lucas 1:42</a></p>
-      <p>La segunda parte —«Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte»— pertenece a la tradición de oración de la Iglesia; no es una cita bíblica.</p>
       <h3>La oración de Enoc</h3>
       <p>En <em>1 Enoc</em>, Enoc alza sus manos y bendice al Dios grande; luego le ruega que escuche su súplica y preserve una descendencia justa. Lo que sigue es una versión española de trabajo de <a href="lectura/?obra=1-enoc-es&amp;capitulo=84">1 Enoc 84:1–6</a>, no una fórmula litúrgica fija:</p>
       <p>«Bendito seas, Señor, Rey grande y poderoso, Dios de toda la creación. Tu poder y tu reino permanecen por todas las generaciones. Nada se oculta a tu mirada. Escucha mi oración: no abandones la tierra ni permitas que desaparezca toda descendencia justa; haz que permanezca una semilla recta y no apartes tu rostro de quien te suplica».</p>
