@@ -2964,7 +2964,7 @@
 
     #kingdoms-view .kingdoms-banner img {
       max-height: none;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     #kingdoms-view .extinct-grid {
@@ -7494,7 +7494,7 @@
     function findLibraryCard(view, title) {
       const root = document.querySelector(libraryViewRoots[view]);
       if (!root) return null;
-      return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.enoch-intro,.enoch-passage,.face-intro,.face-evidence,.prayers-panel'))
+      return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.extinct-card-body,.enoch-intro,.enoch-passage,.face-intro,.face-evidence,.prayers-panel'))
         .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
     }
     const crossConnections = [
