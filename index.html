@@ -8801,6 +8801,7 @@
       });
       const extra = [
         ['año 0 · infancia de Jesús', 'Simeón carga al niño Jesús', 'Después del nacimiento, María y José llevan a Jesús al Templo. Simeón lo toma en brazos y lo reconoce como luz para las naciones.', 'Lucas 2:25–35', 'lectura/?obra=rvr1909-lucas&capitulo=2', 'jesus'],
+        ['infancia de Jesús · relato coránico', 'Jesús habla desde la cuna', 'El Corán narra que Jesús, aún en la cuna, se declara siervo de Dios y profeta, y bendice el día de su nacimiento, su muerte y su resurrección. Este episodio pertenece a la tradición coránica y no aparece en los evangelios canónicos.', 'Corán 19:30–33', 'https://quran.com/19/30-33', 'quran'],
         ['c. 7 d. C. · tradición apócrifa', 'Jesús adolescente en el Templo', 'El relato canónico sitúa a Jesús a los doce años en Jerusalén.', 'Lucas 2:41–52', 'lectura/?obra=rvr1909-lucas&capitulo=2', 'jesus'],
         ['entre la muerte y la resurrección · relato apócrifo posterior', 'Evangelio de Nicodemo', 'Un relato apócrifo posterior desarrolla el descenso de Cristo al Hades entre la muerte y la resurrección.', 'Evangelio de Nicodemo', 'lectura/?obra=nicodemus-es&capitulo=17', 'jesus'],
         ['después de la resurrección · tradición posterior', 'Carino y Leucio, testigos del descenso', 'En el Evangelio de Nicodemo, dos hombres que vuelven a la vida después de la resurrección cuentan lo que vieron durante el descenso de Cristo al Hades. El texto los llama hijos de Simeón, pero no permite asegurar que sea el mismo Simeón que aparece en Lucas 2.', 'Evangelio de Nicodemo 17–27', 'lectura/?obra=nicodemus-es&capitulo=17', 'jesus'],
@@ -8819,6 +8820,11 @@
           const badge = card.querySelector('.source-badge');
           badge.className = 'source-badge apocryphal';
           badge.textContent = 'Relato apócrifo';
+        }
+        if (item[1] === 'Jesús habla desde la cuna') {
+          const badge = card.querySelector('.source-badge');
+          badge.className = 'source-badge tradition';
+          badge.textContent = 'Relato coránico';
         }
         if (item[1] === 'Jesús sale del sepulcro sostenido por dos seres celestiales') {
           const link = document.createElement('a');
@@ -8918,6 +8924,8 @@
       moveOrderBefore('Juicio contra los dioses de Egipto', 'La institución de la Pascua');
       moveOrderBefore('La Adoración de los Magos', 'Simeón carga al niño Jesús');
       moveOrderBefore('Simeón carga al niño Jesús', 'Relatos del niño Jesús');
+      moveOrderAfter('Jesús habla desde la cuna', 'Simeón carga al niño Jesús');
+      moveOrderBefore('Relatos del niño Jesús', 'Jesús habla desde la cuna');
       moveOrderBefore('Evangelio de Nicodemo', 'Jesús resucitado');
       moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
       moveOrderBefore('El Resucitado en María Magdalena y Nag Hammadi', 'Pentecostés');
@@ -8981,6 +8989,8 @@
       moveOrderAfter('Jacobo es curado de una mordedura de víbora', 'Relatos del niño Jesús');
       moveOrderAfter('María Magdalena consuela a los discípulos', 'Elección de Matías');
       moveOrderAfter('La Adoración de los Magos', 'Jesús bebé');
+      moveOrderAfter('Jesús habla desde la cuna', 'Simeón carga al niño Jesús');
+      moveOrderBefore('Relatos del niño Jesús', 'Jesús habla desde la cuna');
       moveOrderAfter('El juicio del consejo divino', 'Juicio contra los dioses de Egipto');
       // Las dos escenas de Lot preceden inmediatamente a la destrucción de Sodoma.
       moveOrderAfter('Los ángeles ciegan a los hombres de Sodoma', 'Lot recibe a los dos ángeles');
@@ -9104,6 +9114,7 @@
         'Sadrac, Mesac y Abed-nego en el horno': ['assets/timeline/tres-jovenes-horno.jpg', 'Los tres jóvenes hebreos permanecen a salvo en el horno ardiente'],
         'El mundo del Segundo Templo': ['assets/linea-tiempo/segundo-templo.jpg', 'El Segundo Templo de Jerusalén en el período del judaísmo antiguo'],
         'Jesús bebé': ['assets/timeline/infancia-jesus.png', 'María y José cuidan al niño Jesús'],
+        'Jesús habla desde la cuna': ['assets/timeline/jesus-habla-desde-la-cuna.png', 'Jesús niño habla desde una cuna, con María y oyentes presentes, en una ilustración del relato coránico'],
         'Huida y regreso a Nazaret': ['assets/timeline/huida-egipto.jpg', 'María, José y el niño Jesús huyen hacia Egipto al anochecer'],
         'Relatos del niño Jesús': ['assets/timeline/jesus-nino.png', 'Jesús durante su infancia, según relatos posteriores'],
         'Ayuno y tentación en el desierto': ['assets/timeline/jesus-ayuno-desierto.png', 'Jesús ayuna en el desierto antes de comenzar su ministerio'],
