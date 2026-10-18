@@ -21,6 +21,27 @@
   <link rel="manifest" href="manifest.webmanifest">
   <title>Biblia Extracanónica</title>
   <style>
+    /* Keep inactive views hidden even when section-specific display rules exist. */
+    [hidden] {
+      display: none !important;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url("assets/fonts/inter-roman-latin.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-family: "Inter";
+      font-style: italic;
+      font-weight: 400 800;
+      font-display: swap;
+      src: url("assets/fonts/inter-italic-latin.woff2") format("woff2");
+    }
+
     :root {
       --bg: #f5eadb;
       --bg2: #ead8bf;
@@ -57,6 +78,10 @@
         repeating-linear-gradient(90deg, rgba(57, 91, 125, .035) 0 1px, transparent 1px 18px);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-kerning: normal;
+      font-optical-sizing: auto;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
       min-height: 100vh;
       line-height: 1.5;
     }
@@ -2025,6 +2050,50 @@
       margin: .45rem 0;
     }
 
+    #abraham-jesus-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #adam-jesus-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #ark-view .extinct-intro > p,
+    #ark-view .extinct-card-body > p {
+      text-indent: 1.25em;
+    }
+
+    #parallels-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #bells-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #messiah-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #birth-view .prayers-body {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    #birth-view .prayers-body > p {
+      text-indent: 1.25em;
+    }
+
+    #frankfurt-amulet-view .prayers-body > p:not(.prayers-note) {
+      text-indent: 1.25em;
+    }
+
+    #kingdoms-view .extinct-intro > p,
+    #kingdoms-view .extinct-card-body > p {
+      text-indent: 1.25em;
+    }
+
     .prayers-body a {
       color: var(--accent);
       font-weight: 800;
@@ -2270,6 +2339,25 @@
       max-height: 142px;
     }
 
+    #bells-view .messiah-book-art {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+      max-width: 920px;
+      padding: .8rem;
+    }
+
+    #bells-view .messiah-book-art img {
+      width: 100%;
+      height: clamp(320px, 44vw, 520px);
+      object-fit: contain;
+      background: rgba(30, 45, 60, .04);
+    }
+
+    #bells-view .messiah-book-art figcaption {
+      padding: .65rem .2rem .1rem;
+      font-size: .92rem;
+    }
+
     @media (max-width: 620px) {
       #birth-view .messiah-book-art {
         grid-template-columns: 1fr;
@@ -2279,15 +2367,48 @@
         width: min(100%, 320px);
         max-height: none;
       }
+
+      #bells-view .messiah-book-art img {
+        height: min(92vw, 400px);
+      }
     }
 
-    #shroud-view .extinct-image-pair img {
-      height: 320px;
+    #shroud-view .shroud-image-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    #shroud-view .shroud-image-pair figure {
+      min-width: 0;
+      margin: 0;
+    }
+
+    #shroud-view .shroud-image-pair img {
+      display: block;
+      width: 100%;
+      height: min(68vh, 680px);
+      object-fit: contain;
+      background: rgba(30, 45, 60, .035);
+      border-radius: 12px;
+    }
+
+    #shroud-view .shroud-image-pair figcaption {
+      margin-top: .55rem;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.5;
     }
 
     @media (max-width: 620px) {
-      #shroud-view .extinct-image-pair img {
-        height: 240px;
+      #shroud-view .shroud-image-pair {
+        grid-template-columns: 1fr;
+      }
+
+      #shroud-view .shroud-image-pair img {
+        height: min(72vh, 560px);
       }
     }
 
@@ -2677,7 +2798,7 @@
     .extinct-image-pair img {
       display: block;
       width: 100%;
-      height: 190px;
+      height: clamp(230px, 24vw, 290px);
       object-fit: contain;
     }
 
@@ -2812,6 +2933,11 @@
 
     #kingdoms-view .extinct-intro p,
     #kingdoms-view .extinct-card-body > p {
+      text-indent: clamp(1.25rem, 3vw, 2rem);
+    }
+
+    #shroud-view .extinct-intro p,
+    #shroud-view .extinct-card-body > p {
       text-indent: clamp(1.25rem, 3vw, 2rem);
     }
 
@@ -4888,6 +5014,140 @@
         gap: .2rem;
       }
     }
+
+    /* Plantillas compartidas: artículo editorial o contenido estructurado. */
+    .view-template {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .view-template--editorial {
+      max-width: 1480px;
+      margin: 1.25rem auto 2.5rem;
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .96);
+      box-shadow: var(--shadow);
+      color: var(--text);
+    }
+
+    .view-template--structured {
+      max-width: 1480px;
+      margin: 1.25rem auto 2.5rem;
+      padding: 0 clamp(.75rem, 2vw, 1.25rem);
+    }
+
+    .view-template--editorial > .prayers-panel {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .view-template--editorial > .library-single-body {
+      overflow: visible;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .view-template--editorial .prayers-body {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .view-template--editorial .prayers-body > p,
+    .view-template--editorial .extinct-card-body > p {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .view-template--editorial > .extinct-intro {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    /* Ningún componente interior crea una segunda tarjeta dentro de la
+       superficie común de la sección. */
+    .view-template--editorial :is(.prayers-panel, .extinct-intro, .extinct-card, .extinct-card-body) {
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      padding-inline: 0;
+    }
+
+    .view-template--editorial > .extinct-intro {
+      padding-block: 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    #ark-view.view-template--editorial > .extinct-intro,
+    #shroud-view.view-template--editorial > .extinct-intro,
+    #kingdoms-view.view-template--editorial > .extinct-intro {
+      padding: 0 0 1.5rem;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    /* Una sola escala tipográfica y de color para el contenido editorial,
+       aunque cada sección tenga una estructura HTML distinta. */
+    .view-template--editorial > .prayers-panel h2,
+    .view-template--editorial > .extinct-intro h2,
+    .view-template--editorial > h2 {
+      margin: .35rem 0 .7rem;
+      color: var(--text);
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+
+    .view-template--editorial > .prayers-panel .prayers-lead,
+    .view-template--editorial > .extinct-intro > p {
+      max-width: 82ch;
+      margin: 0;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .view-template--editorial > .prayers-panel .prayers-body {
+      max-width: none;
+      margin: 1.5rem 0 0;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .view-template--editorial .prayers-body > p,
+    .view-template--editorial > p,
+    .view-template--editorial .library-single-body > p,
+    .view-template--editorial .extinct-intro > p,
+    .view-template--editorial .extinct-card-body > p {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+      text-indent: 1.25em;
+    }
+
+    .view-template--editorial .prayers-body h3,
+    .view-template--editorial .extinct-card h3 {
+      color: var(--text);
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -4944,6 +5204,7 @@
       <button class="view-tab" type="button" data-view="lostPlaces" aria-selected="false">Lugares perdidos</button>
       <button class="view-tab" type="button" data-view="objects" aria-selected="false">Objetos</button>
       <button class="view-tab" type="button" data-view="prayers" aria-selected="false">Oraciones</button>
+      <button class="view-tab" type="button" data-view="peterTraitor" aria-selected="false">Pedro traidor</button>
       <button class="view-tab" type="button" data-view="prophecies" aria-selected="false">Profecías</button>
       <button class="view-tab" type="button" data-view="shroud" aria-selected="false">Sábana Santa</button>
     </div>
@@ -4959,6 +5220,9 @@
   </section>
 
   <section class="prayers-view" id="messiah-view" hidden aria-labelledby="messiah-title">
+  </section>
+
+  <section class="prayers-view" id="peter-traitor-view" hidden aria-labelledby="peter-traitor-title">
   </section>
 
   <section class="prayers-view" id="bells-view" hidden aria-labelledby="bells-title">
@@ -5045,6 +5309,7 @@
       'prayers-view': 'oraciones.html',
       'birth-view': 'nacimiento-jesus.html',
       'messiah-view': 'mesias.html',
+      'peter-traitor-view': 'pedro-traidor.html',
       'bells-view': 'campanas.html',
       'parallels-view': 'biblia-grecia.html',
       'judea-view': 'judea.html',
@@ -5747,6 +6012,7 @@
         'prayers-view': ['Oraciones cristianas', 'prayers'],
         'birth-view': ['El nacimiento de Jesús', 'birth'],
         'messiah-view': ['El Mesías', 'messiah'],
+        'peter-traitor-view': ['Pedro traidor', 'peterTraitor'],
         'parallels-view': ['Biblia y Grecia', 'parallels'],
         'judea-view': ['Judea', 'judea'],
         'abraham-jesus-view': ['Abraham y Jesús', 'abrahamJesus'],
@@ -5757,7 +6023,7 @@
       const selectors = [
         '#timeline-view .timeline-intro', '#timeline-view .timeline-event', '#genealogy-view .genealogy-intro', '#genealogy-view .tree-node', '#genealogy-view .tree-verse',
         '#prophecies-view .prophecies-intro', '#prophecies-view .prophecy-card', '.extinct-view .extinct-intro', '.extinct-view .extinct-card', '#enoch-view .enoch-intro', '#enoch-view .enoch-passage',
-        '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#birth-view .prayers-panel', '#messiah-view .prayers-panel', '#parallels-view .prayers-panel', '#judea-view .prayers-panel', '#abraham-jesus-view .prayers-panel', '#adam-jesus-view .prayers-panel', '#frankfurt-amulet-view .prayers-panel', '#bells-view .prayers-panel'
+        '#devils-view .extinct-intro', '#devils-view .extinct-card', '#gnosticism-view .extinct-intro', '#gnosticism-view .enoch-passage', '#kingdoms-view .extinct-intro', '#kingdoms-view .extinct-card', '#face-view .face-intro', '#face-view .face-evidence', '#prayers-view .prayers-panel', '#birth-view .prayers-panel', '#messiah-view .prayers-panel', '#peter-traitor-view .prayers-panel', '#parallels-view .prayers-panel', '#judea-view .prayers-panel', '#abraham-jesus-view .prayers-panel', '#adam-jesus-view .prayers-panel', '#frankfurt-amulet-view .prayers-panel', '#bells-view .prayers-panel'
       ].join(',');
       const matches = [];
       document.querySelectorAll(selectors).forEach(card => {
@@ -6942,8 +7208,19 @@
       timeline: '#timeline-view', genealogy: '#genealogy-view', prophecies: '#prophecies-view',
       extinct: '#extinct-view', animals: '#extinct-view', lostPlaces: '#lost-places-view', objects: '#objects-view', enoch: '#enoch-view', devils: '#devils-view',
       gnosticism: '#gnosticism-view', afterlife: '#afterlife-view', ark: '#ark-view', shroud: '#shroud-view', face: '#face-view', kingdoms: '#kingdoms-view', ascended: '#ascended-view',
-      jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', birth: '#birth-view', messiah: '#messiah-view', parallels: '#parallels-view', judea: '#judea-view', abrahamJesus: '#abraham-jesus-view', adamJesus: '#adam-jesus-view', frankfurtAmulet: '#frankfurt-amulet-view', bells: '#bells-view'
+      jubileesCalendar: '#jubilees-calendar-view', prayers: '#prayers-view', birth: '#birth-view', messiah: '#messiah-view', peterTraitor: '#peter-traitor-view', parallels: '#parallels-view', judea: '#judea-view', abrahamJesus: '#abraham-jesus-view', adamJesus: '#adam-jesus-view', frankfurtAmulet: '#frankfurt-amulet-view', bells: '#bells-view'
     };
+    const VIEW_TEMPLATE_GROUPS = {
+      editorial: ['prayers', 'birth', 'messiah', 'peterTraitor', 'parallels', 'judea', 'abrahamJesus', 'adamJesus', 'frankfurtAmulet', 'bells', 'ark', 'shroud', 'kingdoms'],
+      structured: ['timeline', 'genealogy', 'prophecies', 'extinct', 'lostPlaces', 'objects', 'enoch', 'devils', 'gnosticism', 'afterlife', 'face', 'ascended', 'jubileesCalendar']
+    };
+    Object.entries(VIEW_TEMPLATE_GROUPS).forEach(([template, views]) => {
+      views.forEach(view => {
+        const root = document.querySelector(libraryViewRoots[view]);
+        root?.classList.add('view-template', `view-template--${template}`);
+      });
+    });
+    document.getElementById('catalog-view')?.classList.add('view-template', 'view-template--structured');
     // Calendario de 364 días integrado como sección de la biblioteca.
     const jubileeMonthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
     const jubileeMonthLengths = [30, 30, 31, 30, 30, 31, 30, 30, 31, 30, 30, 31];
@@ -7065,7 +7342,6 @@
       addCrossConnection(b, a, why);
     });
     connectionIndex.forEach(({ card, items }) => {
-      const body = card.querySelector('.extinct-card-body') || card;
       const links = document.createElement('div');
       links.className = 'related-links';
       links.setAttribute('aria-label', 'Navegación cruzada');
@@ -7090,7 +7366,8 @@
         list.append(button);
       });
       links.append(label, list);
-      body.append(links);
+      const section = card.closest('section[id]');
+      (section || card).append(links);
     });
 
     // Estas secciones se presentan como un único cuerpo editorial, no como tarjetas independientes.
@@ -7171,6 +7448,7 @@
     const prayersView = document.getElementById('prayers-view');
     const birthView = document.getElementById('birth-view');
     const messiahView = document.getElementById('messiah-view');
+    const peterTraitorView = document.getElementById('peter-traitor-view');
     const parallelsView = document.getElementById('parallels-view');
     const judeaView = document.getElementById('judea-view');
     const abrahamJesusView = document.getElementById('abraham-jesus-view');
@@ -7273,13 +7551,14 @@
       const isPrayers = view === 'prayers';
       const isBirth = view === 'birth';
       const isMessiah = view === 'messiah';
+      const isPeterTraitor = view === 'peterTraitor';
       const isParallels = view === 'parallels';
       const isJudea = view === 'judea';
       const isAbrahamJesus = view === 'abrahamJesus';
       const isAdamJesus = view === 'adamJesus';
       const isFrankfurtAmulet = view === 'frankfurtAmulet';
       const isBells = view === 'bells';
-      catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isBirth || isMessiah || isParallels || isJudea || isAbrahamJesus || isAdamJesus || isFrankfurtAmulet || isBells;
+      catalogView.hidden = isTimeline || isGenealogy || isProphecies || isAnimals || isLostPlaces || isObjects || isEnoch || isDevils || isGnosticism || isAfterlife || isArk || isShroud || isFace || isKingdoms || isAscended || isJubileesCalendar || isPrayers || isBirth || isMessiah || isPeterTraitor || isParallels || isJudea || isAbrahamJesus || isAdamJesus || isFrankfurtAmulet || isBells;
       timelineView.hidden = !isTimeline;
       genealogyView.hidden = !isGenealogy;
       propheciesView.hidden = !isProphecies;
@@ -7299,13 +7578,14 @@
       prayersView.hidden = !isPrayers;
       birthView.hidden = !isBirth;
       messiahView.hidden = !isMessiah;
+      peterTraitorView.hidden = !isPeterTraitor;
       parallelsView.hidden = !isParallels;
       judeaView.hidden = !isJudea;
       abrahamJesusView.hidden = !isAbrahamJesus;
       adamJesusView.hidden = !isAdamJesus;
       frankfurtAmuletView.hidden = !isFrankfurtAmulet;
       bellsView.hidden = !isBells;
-      const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, birthView, messiahView, parallelsView, judeaView, abrahamJesusView, adamJesusView, frankfurtAmuletView, bellsView]
+      const activeSection = [catalogView, timelineView, genealogyView, propheciesView, extinctView, lostPlacesView, objectsView, enochView, devilsView, gnosticismView, afterlifeView, arkView, shroudView, faceView, kingdomsView, ascendedView, jubileesCalendarView, prayersView, birthView, messiahView, peterTraitorView, parallelsView, judeaView, abrahamJesusView, adamJesusView, frankfurtAmuletView, bellsView]
         .find(section => !section.hidden);
       if (activeSection) {
         activeSection.classList.remove('view-entering');
@@ -7323,7 +7603,7 @@
       updateViewMenuSize();
       renderCrossNavigation(view);
       if (isGenealogy) requestAnimationFrame(positionGenealogyDates);
-      if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isBirth ? '#nacimiento-de-jesus' : isMessiah ? '#el-mesias' : isParallels ? '#paralelismos' : isJudea ? '#judea' : isAbrahamJesus ? '#abraham-y-jesus' : isAdamJesus ? '#adan-y-jesus' : isFrankfurtAmulet ? '#amuleto-frankfurt' : isBells ? '#campanas' : location.pathname + location.search);
+      if (updateHash) history.replaceState(null, '', isTimeline ? '#linea-de-tiempo' : isAscended ? '#ascendidos' : isGenealogy ? '#arbol-genealogico' : isProphecies ? '#profecias' : isAnimals ? '#animales-extintos' : isLostPlaces ? '#lugares-perdidos' : isObjects ? '#objetos' : isEnoch ? '#enoc' : isDevils ? '#diablos' : isGnosticism ? '#gnosticismo' : isAfterlife ? '#infiernos' : isArk ? '#arca-de-noe' : isShroud ? '#sabana-santa' : isFace ? '#la-cara-de-dios' : isKingdoms ? '#israel-y-juda' : isJubileesCalendar ? '#calendario-los-jubileos' : isPrayers ? '#oraciones' : isBirth ? '#nacimiento-de-jesus' : isMessiah ? '#el-mesias' : isPeterTraitor ? '#pedro-traidor' : isParallels ? '#paralelismos' : isJudea ? '#judea' : isAbrahamJesus ? '#abraham-y-jesus' : isAdamJesus ? '#adan-y-jesus' : isFrankfurtAmulet ? '#amuleto-frankfurt' : isBells ? '#campanas' : location.pathname + location.search);
     }
     viewTabs.forEach(tab => tab.addEventListener('click', () => { clearCrossNavigation(); selectView(tab.dataset.view); closeViewMenu(); }));
     if (location.hash === '#linea-de-tiempo') selectView('timeline', false);
@@ -7345,6 +7625,7 @@
     if (location.hash === '#oraciones') selectView('prayers', false);
     if (location.hash === '#nacimiento-de-jesus') selectView('birth', false);
     if (location.hash === '#el-mesias') selectView('messiah', false);
+    if (location.hash === '#pedro-traidor') selectView('peterTraitor', false);
     if (location.hash === '#paralelismos') selectView('parallels', false);
     if (location.hash === '#judea') selectView('judea', false);
     if (location.hash === '#abraham-y-jesus') selectView('abrahamJesus', false);

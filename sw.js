@@ -1,9 +1,11 @@
-const CACHE = 'biblia-universal-v26';
+const CACHE = 'biblia-universal-v32';
 const APP_SHELL = [
   './',
   './index.html',
   './icon.svg',
   './manifest.webmanifest',
+  './assets/fonts/inter-roman-latin.woff2',
+  './assets/fonts/inter-italic-latin.woff2',
   './assets/israel-juda/reino-dividido.png',
   './secciones/abraham-jesus.html',
   './secciones/adan-jesus.html',
@@ -26,6 +28,7 @@ const APP_SHELL = [
   './secciones/linea-tiempo.html',
   './secciones/lugares-perdidos.html',
   './secciones/mesias.html',
+  './secciones/pedro-traidor.html',
   './secciones/nacimiento-jesus.html',
   './secciones/objetos.html',
   './secciones/oraciones.html',
