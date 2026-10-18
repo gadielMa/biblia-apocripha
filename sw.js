@@ -1,5 +1,37 @@
-const CACHE = 'biblia-universal-v24';
-const APP_SHELL = ['./', './index.html', './icon.svg', './manifest.webmanifest', './secciones/arca-noe.html'];
+const CACHE = 'biblia-universal-v26';
+const APP_SHELL = [
+  './',
+  './index.html',
+  './icon.svg',
+  './manifest.webmanifest',
+  './assets/israel-juda/reino-dividido.png',
+  './secciones/abraham-jesus.html',
+  './secciones/adan-jesus.html',
+  './secciones/animales-extintos.html',
+  './secciones/arbol-genealogico.html',
+  './secciones/arca-noe.html',
+  './secciones/ascendidos.html',
+  './secciones/biblia-grecia.html',
+  './secciones/calendario-jubileos.html',
+  './secciones/campanas.html',
+  './secciones/cara-de-dios.html',
+  './secciones/catalogo.html',
+  './secciones/diablos.html',
+  './secciones/enoc.html',
+  './secciones/gnosticismo.html',
+  './secciones/infiernos.html',
+  './secciones/inscripcion-frankfurt.html',
+  './secciones/israel-juda.html',
+  './secciones/judea.html',
+  './secciones/linea-tiempo.html',
+  './secciones/lugares-perdidos.html',
+  './secciones/mesias.html',
+  './secciones/nacimiento-jesus.html',
+  './secciones/objetos.html',
+  './secciones/oraciones.html',
+  './secciones/profecias.html',
+  './secciones/sabana-santa.html'
+];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(APP_SHELL)));
