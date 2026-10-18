@@ -5256,7 +5256,7 @@
       border-width: 2px;
       font-weight: 850;
       box-shadow: 0 5px 14px rgba(16, 29, 43, .22);
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      transition: box-shadow .18s ease, background .18s ease;
     }
 
     .view-tabs .view-tab[data-view="timeline"] {
@@ -5269,22 +5269,10 @@
       background: linear-gradient(135deg, rgba(63, 119, 103, .58), rgba(189, 222, 181, .2));
     }
 
-    .view-tabs .view-tab[data-view="timeline"]::before,
-    .view-tabs .view-tab[data-view="genealogy"]::before {
-      display: block;
-      margin-bottom: .1rem;
-      font-size: 1.05rem;
-      line-height: 1;
-    }
-
-    .view-tabs .view-tab[data-view="timeline"]::before { content: "◷"; color: #ffd09d; }
-    .view-tabs .view-tab[data-view="genealogy"]::before { content: "🌳"; color: #c4e6c2; }
-
     .view-tabs .view-tab[data-view="timeline"]:hover,
     .view-tabs .view-tab[data-view="genealogy"]:hover,
     .view-tabs .view-tab[data-view="timeline"]:focus-visible,
     .view-tabs .view-tab[data-view="genealogy"]:focus-visible {
-      transform: translateY(-2px);
       box-shadow: 0 9px 20px rgba(16, 29, 43, .32);
     }
 
@@ -5295,8 +5283,6 @@
       background: linear-gradient(120deg, rgba(255, 238, 216, .99), rgba(224, 163, 125, .98));
     }
 
-    .view-tabs .view-tab[data-view="timeline"].active::before,
-    .view-tabs .view-tab[data-view="genealogy"].active::before { color: #8b482f; }
   </style>
 </head>
 
@@ -7494,7 +7480,9 @@
     function findLibraryCard(view, title) {
       const root = document.querySelector(libraryViewRoots[view]);
       if (!root) return null;
-      return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.extinct-card-body,.enoch-intro,.enoch-passage,.face-intro,.face-evidence,.prayers-panel'))
+      const sectionHeading = root.querySelector(':scope > h2');
+      if (sectionHeading && normalizeSearchText(sectionHeading.textContent).trim() === normalizeSearchText(title).trim()) return root;
+      return Array.from(root.querySelectorAll('.timeline-intro,.timeline-event,.genealogy-intro,.tree-node,.tree-verse,.prophecies-intro,.prophecy-card,.extinct-intro,.extinct-card,.extinct-card-body,.library-single-body,.enoch-intro,.enoch-passage,.face-intro,.face-evidence,.prayers-panel'))
         .find(card => normalizeSearchText(card.querySelector('h3,h4,h2,strong')?.textContent).trim() === normalizeSearchText(title).trim());
     }
     const crossConnections = [
