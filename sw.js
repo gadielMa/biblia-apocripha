@@ -1,5 +1,5 @@
-const CACHE = 'biblia-universal-v23';
-const APP_SHELL = ['./', './index.html', './icon.svg', './manifest.webmanifest'];
+const CACHE = 'biblia-universal-v24';
+const APP_SHELL = ['./', './index.html', './icon.svg', './manifest.webmanifest', './secciones/arca-noe.html'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(APP_SHELL)));

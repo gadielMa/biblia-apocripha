@@ -56,7 +56,7 @@
         linear-gradient(180deg, #edf4fb 0%, #dfe9f3 100%),
         repeating-linear-gradient(90deg, rgba(57, 91, 125, .035) 0 1px, transparent 1px 18px);
       color: var(--text);
-      font-family: 'Georgia', serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       min-height: 100vh;
       line-height: 1.5;
     }
@@ -656,7 +656,7 @@
       border-top: 1px solid var(--border);
       background: #f5f8f7;
       color: #526575;
-      font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+      font-family: inherit;
     }
 
     .footer-flex {
@@ -2065,6 +2065,36 @@
       color: var(--text2);
       font-size: .84rem;
       line-height: 1.5;
+    }
+
+    #parallels-view .parallel-image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: .85rem;
+      margin: 1.25rem auto 1.8rem;
+      max-width: 980px;
+    }
+
+    #parallels-view .parallel-image-gallery figure {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .78);
+    }
+
+    #parallels-view .parallel-image-gallery img {
+      display: block;
+      width: 100%;
+      height: 145px;
+      object-fit: cover;
+    }
+
+    #parallels-view .parallel-image-gallery figcaption {
+      padding: .6rem .7rem;
+      color: var(--text2);
+      font-size: .78rem;
+      line-height: 1.4;
     }
 
     .frankfurt-figures {
@@ -4577,7 +4607,16 @@
     }
 
     .view-tabs .view-links {
-      width: 100%;
+      width: min(1120px, calc(100vw - 2rem));
+      max-width: min(1120px, calc(100vw - 2rem));
+      grid-auto-rows: 56px;
+      gap: .4rem;
+      max-height: min(64vh, 380px);
+    }
+
+    .view-tab {
+      padding: .5rem .65rem;
+      font-size: .92rem;
     }
 
     .view-tabs.open .view-links {
@@ -4801,7 +4840,8 @@
       resurrección y los cuarenta días posteriores.</p>
     <div class="stats">
       <div class="stat" title="Obras visibles en el catálogo; algunas tienen más de una edición para leer o buscar">
-        <span class="n" id="total-count">—</span><span class="l">Obras en catálogo</span></div>
+        <span class="n" id="total-count">—</span><span class="l">Obras en catálogo</span>
+      </div>
       <div class="stat" title="Archivos PDF distintos enlazados desde el catálogo"><span class="n"
           id="pdf-count">—</span><span class="l">PDFs enlazados</span></div>
       <div class="stat" title="Tanaj, Biblia católica y Biblia etíope"><span class="n">3</span><span class="l">Cánones
@@ -5099,6 +5139,26 @@
         <figcaption>Ilustración generada con IA para evocar la comparación entre dos imaginarios religiosos; no
           representa un objeto arqueológico ni afirma que sus figuras sean equivalentes.</figcaption>
       </figure>
+      <div class="parallel-image-gallery" aria-label="Ilustraciones de algunos motivos comparados">
+        <figure><img src="assets/diablos/lucifer.jpg" alt="Representación artística de Lucifer como figura luminosa que cae del cielo" loading="lazy">
+          <figcaption>Lucifer · lectura cristiana posterior</figcaption>
+        </figure>
+        <figure><img src="assets/diablos/abaddon.jpg" alt="Representación artística de Abadón, figura del abismo en Apocalipsis" loading="lazy">
+          <figcaption>Abadón · el ángel del abismo</figcaption>
+        </figure>
+        <figure><img src="assets/extintos/leviatan-v2.jpg" alt="Monstruo marino que emerge entre olas, como representación de Leviatán" loading="lazy">
+          <figcaption>Leviatán · monstruo de las aguas</figcaption>
+        </figure>
+        <figure><img src="assets/diablos/lilith.png" alt="Representación artística de Lilith en un paisaje nocturno" loading="lazy">
+          <figcaption>Lilith · figura del folclore posterior</figcaption>
+        </figure>
+        <figure><img src="assets/enoc/vigilantes.jpg" alt="Vigilantes caídos encadenados en un paisaje desértico" loading="lazy">
+          <figcaption>Vigilantes · tradición de 1 Enoc</figcaption>
+        </figure>
+        <figure><img src="assets/linea-tiempo/angeles-miguel.png" alt="Arcángel Miguel y sus huestes en una escena celestial" loading="lazy">
+          <figcaption>Miguel · combate celestial</figcaption>
+        </figure>
+      </div>
       <div class="prayers-body">
         <h3>Lucifer y Fósforo (Eósforo) · el lucero de la mañana</h3>
         <p>El latín <em>lucifer</em> y el griego <em>phōsphoros</em> significan “portador de luz” y ambos podían nombrar
@@ -5286,10 +5346,12 @@
           entonces un carnero trabado por los cuernos en un zarzal y lo ofrece en sacrificio.</p>
         <p>Abraham sería Dios Padre y Issac sería el Hijo del Hombre. Las leñas que lleva Isaac en su espalda serían la
           Cruz que cargó Jesús.
-          El zarzal en el cual se le trabo la cabeza al carnero, es la corona de espinas que tuvo el Mesias en la cabeza.
+          El zarzal en el cual se le trabo la cabeza al carnero, es la corona de espinas que tuvo el Mesias en la
+          cabeza.
           Pero la biblia no dice que se haya sacrificado finalmente al carnero. Dios eligió sacrificar a su propio
           hijo Jesús, en lugar de al hijo de Abraham, el Cordero de Dios fue sacrificado en lugar del Carnero.</p>
-         <p>Juan el Bautista llama a Jesús «el Cordero de Dios, que quita el pecado del mundo», y Pablo dice que Dios «no escatimó
+        <p>Juan el Bautista llama a Jesús «el Cordero de Dios, que quita el pecado del mundo», y Pablo dice que Dios «no
+          escatimó
           ni a su propio Hijo, sino que lo entregó por todos nosotros».</p>
         <p>Por eso, «El acto más cruel de Dios» funciona como una pregunta provocadora sobre la tensión del relato, no
           como una conclusión compartida por todas las tradiciones.</p>
@@ -5356,15 +5418,10 @@
           forma Eva frente al costado traspasado de Jesús— pueden funcionar como meditaciones teológicas. Sin embargo,
           Pablo no los formula como parte de su comparación. Génesis relata la formación de Eva del costado de Adán y
           Juan relata que del costado de Jesús salió sangre y agua; la idea de que de allí «nace la Iglesia» es una
-          interpretación cristiana tradicional, no una frase literal de esos pasajes.</p>
+          interpretación cristiana tradicional.</p>
         <p>También conviene matizar la tentación: Génesis cuenta que la serpiente tienta a Eva y que Adán come del
-          fruto; no dice literalmente que Adán quisiera convertirse en Dios. Los evangelios cuentan que Jesús fue
-          tentado en el desierto, pero no presentan en una frase directa ese episodio como «la repetición» de Edén. La
-          comparación ayuda a leer ambos relatos en conjunto, siempre que se distinga la conexión teológica del detalle
-          textual.</p>
-        <p>Lucas lleva la genealogía de Jesús hasta Adán, ampliando el horizonte narrativo más allá de Abraham e Israel.
-          Esto permite una lectura de Jesús en relación con toda la humanidad, aunque la genealogía no enuncia por sí
-          sola la tipología paulina.</p>
+          fruto; no dice literalmente que Adán quisiera convertirse en Dios. Jesús fue
+          tentado en el desierto por el diablo.</p>
         <p class="prayers-note"><strong>Pasajes para comparar:</strong> <a
             href="lectura/?obra=rvr1909-genesis&amp;capitulo=2#pasaje-2-7">Génesis 2:7, 15–17, 21–23</a> · <a
             href="lectura/?obra=rvr1909-genesis&amp;capitulo=3#pasaje-3-1">Génesis 3:1–19</a> · <a
@@ -6125,6 +6182,24 @@
         pasaje relacionado; cuando un nombre o una identificación viene de una tradición posterior, lo aclaramos.</p>
     </div>
     <div class="extinct-grid">
+      <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/santa-casa-loreto.png"
+          alt="Interior de la Basílica de la Santa Casa de Loreto, Italia" loading="lazy" width="600" height="300">
+        <div class="extinct-card-body"><span class="source-badge apocryphal">Reliquia y tradición mariana</span>
+          <h3>La Santa Casa de Loreto</h3>
+          <p>En Loreto, Italia, se venera una pequeña construcción de piedra que la tradición identifica con la casa de
+            María en Nazaret, donde habría ocurrido la Anunciación. La leyenda cuenta que fue trasladada milagrosamente
+            a finales del siglo XIII, primero a Tersatto y luego a Loreto.</p>
+          <p>Ese traslado sobrenatural pertenece a la tradición devocional y no está demostrado como hecho histórico.
+            Una explicación recogida por el santuario propone que las piedras llegaron por mar, impulsadas por una
+            familia gobernante de Epiro. La historia del edificio y su procedencia siguen tratándose mediante
+            interpretaciones históricas y arqueológicas; la imagen de la casa llevada por ángeles expresa la lectura
+            religiosa del relato.</p>
+          <div class="extinct-refs"><a
+              href="https://es.aleteia.org/2018/07/09/como-llego-la-casa-de-la-virgen-a-loreto-algunas-dudas/"
+              target="_blank" rel="noopener noreferrer">Aleteia · historia, leyenda e hipótesis sobre la Santa Casa</a>
+          </div>
+        </div>
+      </article>
       <article class="extinct-card"><img class="extinct-card-image" src="assets/objetos-seres/santo-grial.jpg"
           alt="Cáliz medieval en una capilla iluminada por velas" loading="lazy">
         <div class="extinct-card-body"><span class="source-badge apocryphal">Leyenda medieval</span>
@@ -9455,12 +9530,10 @@
     arkSection.id = 'ark-view';
     arkSection.hidden = true;
     arkSection.setAttribute('aria-labelledby', 'ark-title');
-    arkSection.innerHTML = `<div class="extinct-intro"><h2 id="ark-title">El Arca de Noé</h2><p>La nave que protagoniza el relato del diluvio en Génesis: refugio para Noé, su familia y los animales, y punto de partida para la alianza narrada después de las aguas. La presentamos como tradición bíblica; no como un hallazgo arqueológico confirmado.</p></div><div class="extinct-grid">
-<article class="extinct-card"><img class="extinct-card-image" src="assets/timeline/noe-arca.png" alt="Representación artística del arca de Noé sobre las aguas del diluvio" loading="lazy"><div class="extinct-card-body"><span class="source-badge canonical">Génesis · relato del diluvio</span><h3>La construcción y sus dimensiones</h3><p>Génesis indica madera, compartimentos y recubrimiento de brea por dentro y por fuera. Da medidas de 300 codos de largo, 50 de ancho y 30 de alto, con una puerta lateral, una abertura superior y tres niveles. La equivalencia en metros depende de cuánto midiera el codo antiguo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-14">Génesis 6:14–16 · materiales y medidas</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=6#pasaje-6-17">Génesis 6:17–22 · propósito y animales</a><a href="https://www.biblegateway.com/passage/?search=Genesis+6%3A14-16&amp;version=NET" target="_blank" rel="noopener noreferrer">Comparar traducciones y notas sobre Génesis 6</a></div></div></article>
-<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Génesis 7–8</span><h3>El diluvio y el fin de las aguas</h3><p>Noé entra con su familia y los animales; el texto cuenta la lluvia, la subida de las aguas y el descenso posterior. Cuando el arca se posa “sobre los montes de Ararat”, Noé envía primero un cuervo y luego palomas para saber si la tierra está seca.</p><p>El relato usa distintos intervalos —cuarenta días de lluvia y ciento cincuenta días en que prevalecieron las aguas—; son medidas del relato y no una cronología histórica independiente.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=7#pasaje-7-1">Génesis 7:1–24 · entrada y diluvio</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-1">Génesis 8:1–12 · cuervo y paloma</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-4">Génesis 8:4 · montes de Ararat</a></div></div></article>
-<article class="extinct-card"><div class="extinct-card-body"><span class="source-badge canonical">Génesis 8–9</span><h3>Alianza y arco en las nubes</h3><p>Al salir del arca, Noé ofrece un sacrificio. Génesis presenta el arco en las nubes como señal de la alianza de Dios con Noé, sus descendientes y los seres vivos: el texto promete que las aguas no volverán a destruir toda vida de ese modo.</p><div class="extinct-refs"><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=8#pasaje-8-20">Génesis 8:20–22 · ofrenda y promesa</a><a href="lectura/?obra=rvr1909-genesis&amp;capitulo=9#pasaje-9-8">Génesis 9:8–17 · alianza y arco</a><a href="https://www.vatican.va/archive/bible/genesis/documents/bible_genesis_en.html" target="_blank" rel="noopener noreferrer">Génesis completo · Biblioteca del Vaticano</a></div></div></article>
-<article class="extinct-card"><div class="extinct-image-pair"><figure><img src="assets/arca-noe/durupinar-1961.png" alt="Vista histórica en blanco y negro de la formación Durupınar, rotulada 1961" loading="lazy"><figcaption>Vista histórica · 1961</figcaption></figure><figure><img src="assets/arca-noe/durupinar-2019.png" alt="Vista aérea en color de la formación Durupınar, rotulada 2019" loading="lazy"><figcaption>Vista aérea · 2019</figcaption></figure></div><div class="extinct-card-body"><span class="source-badge context">Hallazgo reportado · interpretación discutida</span><h3>Durupınar: ¿formación geológica o arca?</h3><p>Una nota de LA NACION de febrero de 2026 informó sobre muestras de suelo y materiales descritos como marinos en Durupınar, Turquía, y sobre una posible actividad humana calcolítica. La formación mide cerca de 150 metros y su contorno recuerda a un barco; esos datos han reavivado la hipótesis, pero no prueban que allí esté el Arca ni que las muestras daten una embarcación.</p><p>La identificación sigue sin confirmación arqueológica. Un análisis geológico publicado en 1996 concluyó que la estructura y varios rasgos atribuidos a un barco podían explicarse por procesos naturales. Por eso, los resultados recientes deben leerse como preliminares y debatidos.</p><div class="extinct-refs"><a href="https://www.lanacion.com.ar/lifestyle/en-las-redes/el-hallazgo-de-5000-anos-que-podria-ser-la-verdadera-arca-de-noe-nid23022026/" target="_blank" rel="noopener noreferrer">LA NACION · reporte sobre las muestras de Durupınar (2026)</a><a href="https://doi.org/10.5408/1089-9995-44.4.439" target="_blank" rel="noopener noreferrer">Collins y Fasold · artículo geológico sobre la formación (1996)</a></div></div></article>
-</div>`;
+    arkSection.innerHTML = await fetch("secciones/arca-noe.html").then(response => {
+      if (!response.ok) throw new Error("No se pudo cargar secciones/arca-noe.html");
+      return response.text();
+    });
 
     const shroudSection = document.createElement('section');
     shroudSection.className = 'extinct-view';
