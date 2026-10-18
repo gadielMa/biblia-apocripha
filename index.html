@@ -4811,7 +4811,7 @@
     }
 
     .jubilee-calendar-view {
-      max-width: 850px;
+      max-width: 1120px;
       margin: 1.25rem auto 2.5rem;
       padding: 0 1rem;
       color: #f5f2eb;
@@ -4827,6 +4827,103 @@
       border-radius: 22px;
       background: linear-gradient(145deg, #182e47, #283d51 58%, #624d4b);
       box-shadow: 0 18px 45px rgba(48, 36, 27, .15);
+    }
+
+    .jubilee-calendar-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      align-items: start;
+      gap: 1rem;
+    }
+
+    .jubilee-calendar-main {
+      min-width: 0;
+    }
+
+    .nativity-proposal {
+      padding: 1.1rem;
+      border: 1px solid rgba(243, 198, 161, .4);
+      border-radius: 16px;
+      background: rgba(16, 25, 36, .72);
+    }
+
+    .nativity-proposal h3 {
+      margin: .35rem 0 .55rem;
+      color: #fff8f1;
+      font-size: 1.15rem;
+      line-height: 1.3;
+    }
+
+    .nativity-proposal > p {
+      margin: 0 0 .85rem;
+      color: rgba(255, 255, 255, .78);
+      font-size: .86rem;
+      line-height: 1.5;
+    }
+
+    .nativity-month {
+      padding: .8rem;
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 13px;
+      background: rgba(255, 255, 255, .07);
+    }
+
+    .nativity-month-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .5rem;
+      margin: 0 0 .6rem;
+      color: #fff8f1;
+      font-size: 1rem;
+    }
+
+    .nativity-month-title span {
+      color: #f3c6a1;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .nativity-week,
+    .nativity-days {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: .2rem;
+      text-align: center;
+    }
+
+    .nativity-week {
+      margin-bottom: .25rem;
+      color: #c0c9d1;
+      font-size: .66rem;
+      font-weight: 700;
+    }
+
+    .nativity-days span {
+      display: grid;
+      min-height: 2rem;
+      place-items: center;
+      border-radius: 8px;
+      color: #f5f2eb;
+      font-size: .78rem;
+    }
+
+    .nativity-days .is-proposed-date {
+      color: #302116;
+      background: #f3c6a1;
+      font-weight: 900;
+      box-shadow: 0 0 0 2px rgba(243, 198, 161, .24);
+    }
+
+    .nativity-caveat {
+      margin: .7rem 0 0 !important;
+      font-size: .72rem !important;
+    }
+
+    .nativity-sources a {
+      color: #ffd0ab;
+      font-weight: 750;
+      text-underline-offset: 2px;
     }
 
     .jubilee-calendar-heading {
@@ -5005,6 +5102,10 @@
         padding: 1rem;
       }
 
+      .jubilee-calendar-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
       .jubilee-month-card {
         padding: .8rem .55rem;
       }
@@ -5148,6 +5249,54 @@
       color: var(--text);
       text-align: left;
     }
+
+    .view-tabs .view-tab[data-view="timeline"],
+    .view-tabs .view-tab[data-view="genealogy"] {
+      position: relative;
+      border-width: 2px;
+      font-weight: 850;
+      box-shadow: 0 5px 14px rgba(16, 29, 43, .22);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .view-tabs .view-tab[data-view="timeline"] {
+      border-color: rgba(255, 205, 151, .88);
+      background: linear-gradient(135deg, rgba(171, 91, 50, .52), rgba(255, 206, 157, .22));
+    }
+
+    .view-tabs .view-tab[data-view="genealogy"] {
+      border-color: rgba(179, 222, 184, .88);
+      background: linear-gradient(135deg, rgba(63, 119, 103, .58), rgba(189, 222, 181, .2));
+    }
+
+    .view-tabs .view-tab[data-view="timeline"]::before,
+    .view-tabs .view-tab[data-view="genealogy"]::before {
+      display: block;
+      margin-bottom: .1rem;
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+
+    .view-tabs .view-tab[data-view="timeline"]::before { content: "◷"; color: #ffd09d; }
+    .view-tabs .view-tab[data-view="genealogy"]::before { content: "🌳"; color: #c4e6c2; }
+
+    .view-tabs .view-tab[data-view="timeline"]:hover,
+    .view-tabs .view-tab[data-view="genealogy"]:hover,
+    .view-tabs .view-tab[data-view="timeline"]:focus-visible,
+    .view-tabs .view-tab[data-view="genealogy"]:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 9px 20px rgba(16, 29, 43, .32);
+    }
+
+    .view-tabs .view-tab[data-view="timeline"].active,
+    .view-tabs .view-tab[data-view="genealogy"].active {
+      color: #38271f;
+      border-color: rgba(255, 242, 225, .98);
+      background: linear-gradient(120deg, rgba(255, 238, 216, .99), rgba(224, 163, 125, .98));
+    }
+
+    .view-tabs .view-tab[data-view="timeline"].active::before,
+    .view-tabs .view-tab[data-view="genealogy"].active::before { color: #8b482f; }
   </style>
 </head>
 
@@ -6325,11 +6474,12 @@
         ['cronología tradicional · 2500 a. C.', 'Cuarenta días y cuarenta noches de tormenta', 'La lluvia cae durante cuarenta días y cuarenta noches; las aguas suben y el Arca se eleva sobre la Tierra.', 'Génesis 7:11–24', 'lectura/?obra=rvr1909-genesis&capitulo=7#pasaje-7-11', 'origins'],
         ['cronología tradicional · 2500 a. C.', 'Ciento cincuenta días de inundación', 'Las aguas prevalecen con fuerza sobre la Tierra durante ciento cincuenta días, mientras el Arca flota sobre el océano global del relato.', 'Génesis 7:17–24; 8:1–5', 'lectura/?obra=rvr1909-genesis&capitulo=8#pasaje-8-1', 'origins'],
         ['cronología tradicional · después del diluvio', 'El primer altar y el pacto del arcoíris', 'Noé edifica un altar y ofrece animales limpios. Dios promete no volver a destruir toda vida con un diluvio y establece el arcoíris como señal eterna del pacto.', 'Génesis 8:20–22; 9:8–17', 'lectura/?obra=rvr1909-genesis&capitulo=9#pasaje-9-8', 'origins'],
+        ['tradición apocalíptica posterior · 1 Enoc 15', 'Los espíritus de los gigantes salen de las aguas', 'Enoc explica que los gigantes nacidos de espíritus y seres humanos serían llamados espíritus malignos y permanecerían en la tierra: «Y ahora, los gigantes que han sido engendrados de los espíritus y de la carne, serán llamados espíritus malignos en la tierra, y su morada estará sobre la tierra... Los espíritus de los gigantes oprimen, corrompen, atacan, pelean y causan destrucción en la tierra...» (1 Enoc 15:8–11). Génesis 6:4 dice: «Había gigantes en la tierra en aquellos días, y también después que se llegaron los hijos de Dios a las hijas de los hombres...»', '1 Enoc 15:8–11 · Génesis 6:4', 'lectura/?obra=1-enoc-es&capitulo=15', 'apocryphal'],
         ['cronología tradicional · 2300 a. C.', 'La torre de Babel', 'Génesis cuenta que Dios confundió las lenguas y dispersó a los pueblos.', 'Génesis 11:1–9', 'lectura/?obra=rvr1909-genesis&capitulo=11', 'origins'],
         ['2.º milenio a. C. · fecha tradicional', 'El llamado de Abraham', 'Dios llama a Abraham, promete dar esa tierra a su descendencia y anuncia que por medio de él serán bendecidas todas las familias de la tierra.', 'Génesis 12:1–9; 13:14–17', 'lectura/?obra=rvr1909-genesis&capitulo=12', 'patriarchs'],
         ['2.º milenio a. C. · fecha tradicional', 'Lot recibe a los dos ángeles', 'Dos ángeles llegan a Sodoma al anochecer. Lot los recibe en su casa y les prepara una comida.', 'Génesis 19:1–3', 'lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-1', 'patriarchs'],
         ['2.º milenio a. C. · fecha tradicional', 'Los ángeles ciegan a los hombres de Sodoma', 'Cuando los hombres de la ciudad rodean la casa e intentan entrar, los visitantes los hieren con ceguera para proteger a Lot y a su familia.', 'Génesis 19:4–11', 'lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-4', 'patriarchs'],
-        ['2.º milenio a. C. · fecha tradicional', 'Sodoma y Gomorra', 'Los ángeles anuncian que Jehová los envió a destruir la ciudad. Después, Jehová hace llover azufre y fuego sobre Sodoma y Gomorra.', 'Génesis 19:12–13, 24–28', 'lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-12', 'patriarchs'],
+        ['2.º milenio a. C. · fecha tradicional', 'Sodoma y Gomorra', 'Los ángeles anuncian el juicio y Génesis dice que Jehová hizo llover sobre Sodoma y Gomorra azufre y fuego desde los cielos (Génesis 19:24). En la región del mar Muerto se han estudiado nódulos de azufre y un estudio analizó muestras de azufre cerca de Masada.', 'Génesis 19:12–13, 24–28', 'lectura/?obra=rvr1909-genesis&capitulo=19#pasaje-19-12', 'patriarchs'],
         ['2.º milenio a. C. · fecha tradicional', 'La prueba de Abraham e Isaac', 'Dios pone a prueba la fe de Abraham y le pide ofrecer a Isaac en el monte Moriah. Cuando Abraham está a punto de obedecer, un ángel lo detiene y Dios provee un carnero para el sacrificio.', 'Génesis 22:1–19', 'lectura/?obra=rvr1909-genesis&capitulo=22', 'patriarchs'],
         ['2.º milenio a. C. · fecha tradicional', 'Isaac y Rebeca tienen a Jacob y Esaú', 'Isaac y Rebeca tienen gemelos: Jacob y Esaú rivalizan desde el vientre.', 'Génesis 25:19–26', 'lectura/?obra=rvr1909-genesis&capitulo=25#pasaje-25-19', 'patriarchs'],
         ['2.º milenio a. C. · fecha tradicional', 'Jacob lucha y recibe el nombre Israel', 'En Peniel, Jacob pelea con un ángel. Al amanecer, el ángel lo bendice y le da el nombre Israel.', 'Génesis 32:22–32', 'lectura/?obra=rvr1909-genesis&capitulo=32#pasaje-32-22', 'patriarchs'],
@@ -6402,6 +6552,8 @@
       // Hitos de la vida pública, pasión y resurrección solicitados para la línea temporal.
       // Cada tarjeta conserva una referencia bíblica y una ilustración independiente.
       const requestedTimelineEvents = [
+        ['tradición textual posterior · Evangelio de Felipe', 'El beso de María Magdalena a Jesús según el Evangelio de Felipe', 'El Evangelio de Felipe llama a María Magdalena «compañera» del Salvador y conserva un pasaje fragmentario que dice que él la amaba más que a los discípulos y la besaba. El manuscrito está dañado en ese punto; «en la boca» es una reconstrucción editorial de algunas traducciones. La imagen es una recreación artística del pasaje, no evidencia histórica de una relación.', 'Evangelio de Felipe 12 · pasaje fragmentario', 'lectura/?obra=gospel-philip-es&capitulo=12', 'apocryphal'],
+        ['33 d. C. · escena de la crucifixión', 'María Magdalena, María y Juan junto a la cruz', 'Los evangelios sitúan a María Magdalena entre quienes observan la crucifixión; Juan menciona a María, madre de Jesús, y al discípulo amado junto a la cruz. Esta recreación muestra el duelo en el suelo mientras se alza la cruz; Juan dice que estaban de pie, así que la postura de la imagen es dramatización artística, no una descripción literal.', 'Juan 19:25–27 · Mateo 27:55–56 · Marcos 15:40–41', 'lectura/?obra=rvr1909-juan&capitulo=19#pasaje-19-25', 'canonical'],
         ['durante la huida a Egipto · Pseudo-Mateo', 'Los leones guían a la Sagrada Familia', 'Durante la huida por el desierto, leones y leopardos acompañan a María, José y Jesús niño, y les muestran el camino. Un episodio maravilloso del Evangelio del Pseudo-Mateo.', 'Pseudo-Mateo 19', 'lectura/?obra=pseudo-mateo-es&capitulo=19', 'apocryphal'],
         ['durante la huida a Egipto · Pseudo-Mateo', 'La palmera ofrece sus frutos a la Sagrada Familia', 'Agotada por el calor, María descansa bajo una palmera. Jesús hace que el árbol se incline para que ella recoja sus dátiles; luego brota agua de sus raíces.', 'Pseudo-Mateo 20–21', 'lectura/?obra=pseudo-mateo-es&capitulo=20', 'apocryphal'],
         ['infancia de Jesús · Evangelio árabe', 'Las figuras de barro cobran vida', 'Jesús niño modela animales y pájaros de barro; al darles una orden, las figuras se mueven, vuelan, comen y beben.', 'Evangelio árabe de la Infancia 36:1–2', 'lectura/?obra=arabic-infancy-es&capitulo=36', 'apocryphal'],
@@ -6518,6 +6670,17 @@
         const artisticBirth = ['Nacimiento de Elías', 'Nacimiento de Isaías', 'Nacimiento de Daniel'].includes(item[1]);
         const card = makeTimelineCard([...item.slice(0, 5), artisticBirth ? 'context' : 'canonical']);
         if (artisticBirth) card.querySelector('.source-badge').textContent = 'Representación artística';
+        if (item[1] === 'La tierra caótica y el Espíritu sobre las aguas') {
+          const note = document.createElement('p');
+          note.className = 'timeline-description';
+          const emphasis = document.createElement('strong');
+          emphasis.textContent = 'Dios creó el mundo en 7 días, pero 2 Pedro 3:8 dice: «para el Señor, un día es como mil años».';
+          const reference = document.createElement('a');
+          reference.href = 'lectura/?obra=rvr1909-2-pedro&capitulo=3#pasaje-3-8';
+          reference.textContent = '2 Pedro 3:8';
+          note.append(emphasis, document.createElement('br'), reference);
+          card.append(note);
+        }
         if (item[1] === 'Caín teme ser hallado') {
           const secondReference = document.createElement('a');
           secondReference.href = 'lectura/?obra=rvr1909-genesis&capitulo=5#pasaje-5-4';
@@ -6611,6 +6774,8 @@
       moveOrderAfter('La última cena y el arresto', 'El Lavatorio de los Pies');
       moveOrderAfter('La Traición y el Arresto', 'La última cena y el arresto');
       insertRequestedBefore('La Traición y el Arresto', ['Jesús revela a Judas su papel']);
+      insertRequestedBefore('Crucifixión y muerte de Jesús', ['María Magdalena, María y Juan junto a la cruz']);
+      insertRequestedBefore('Pentecostés', ['El beso de María Magdalena a Jesús según el Evangelio de Felipe']);
       insertRequestedBefore('Pentecostés', ['Las Apariciones post-Resurrección']);
       moveOrderBefore('Las Apariciones post-Resurrección', 'El Resucitado en María Magdalena y Nag Hammadi');
       insertRequestedBefore('Isaías y Emanuel', ['Isaías ve al Señor en el Templo', 'Los Querubines de Ezequiel', 'Las ruedas centelleantes de Ezequiel', 'Ezequiel ve la gloria de Dios', 'Daniel ve al Anciano de Días']);
@@ -6650,6 +6815,7 @@
       moveOrderAfter('Jesús sale del sepulcro sostenido por dos seres celestiales', 'Los guardias quedan aterrados');
       moveOrderAfter('Los hijos de Simeón ven la luz en el Hades', 'Jesús sale del sepulcro sostenido por dos seres celestiales');
       moveOrderAfter('Los discípulos tocan a Jesús para comprobar que no es un fantasma', 'Los hijos de Simeón ven la luz en el Hades');
+      moveOrderAfter('El beso de María Magdalena a Jesús según el Evangelio de Felipe', 'El Resucitado en María Magdalena y Nag Hammadi');
       moveOrderBefore('Simeón carga al niño Jesús', 'Relatos del niño Jesús');
       moveOrderAfter('Evangelio de Nicodemo', 'Muerte de Judas Iscariote');
       moveOrderAfter('Carino y Leucio, testigos del descenso', 'Evangelio de Nicodemo');
@@ -6724,6 +6890,9 @@
         'Se abren las fuentes del gran abismo': ['assets/timeline/fuentes-abismo-compuertas-cielo.jpg', 'Las fuentes del abismo irrumpen desde la tierra mientras se abren las compuertas del cielo, ilustración de Génesis 7:11'],
         'Ciento cincuenta días de inundación': ['assets/linea-tiempo/noe-inundacion-total.png', 'El Arca permanece sola sobre las aguas del diluvio'],
         'El primer altar y el pacto del arcoíris': ['assets/linea-tiempo/noe-altar-arcoiris.png', 'Noé levanta un altar y recibe la señal del arcoíris'],
+        'Los espíritus de los gigantes salen de las aguas': ['assets/linea-tiempo/espiritus-gigantes-1-enoc.png', 'Representación artística de espíritus malignos asociados a los gigantes de 1 Enoc, emergiendo de las aguas; no es una escena descrita literalmente por el texto'],
+        'El beso de María Magdalena a Jesús según el Evangelio de Felipe': ['assets/linea-tiempo/maria-magdalena-besa-jesus.png', 'Recreación artística del pasaje fragmentario del Evangelio de Felipe que menciona un beso entre Jesús y María Magdalena'],
+        'María Magdalena, María y Juan junto a la cruz': ['assets/linea-tiempo/marias-juan-cruz.png', 'Recreación artística del duelo de María Magdalena, María y Juan junto a Jesús crucificado; la postura en el suelo no está especificada en los Evangelios'],
         'El Primer Templo de Jerusalén': ['assets/linea-tiempo/primer-templo.jpg', 'Reconstrucción artística del Primer Templo de Jerusalén'],
         'Jerusalén cae y el Primer Templo es destruido': ['assets/linea-tiempo/caida-jerusalen.jpg', 'Jerusalén y el Primer Templo en llamas durante la conquista babilónica'],
         'Reconstrucción del Segundo Templo': ['assets/linea-tiempo/segundo-templo.jpg', 'La comunidad reconstruye el Segundo Templo de Jerusalén'],
@@ -6929,6 +7098,12 @@
             reference.textContent = item[3];
             reference.href = item[4];
           }
+          const geologyReference = document.createElement('a');
+          geologyReference.href = 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075883';
+          geologyReference.target = '_blank';
+          geologyReference.rel = 'noopener noreferrer';
+          geologyReference.textContent = 'Estudio geológico: nódulos naturales de azufre en la formación Lisan';
+          card.append(geologyReference);
         }
         if (item[1] === 'Nacimiento de Daniel') card.querySelector('.source-badge').textContent = 'Representación artística';
         if (item[1] === 'Juicio contra los dioses de Egipto') {
@@ -7275,6 +7450,47 @@
     document.getElementById('jubilee-next').addEventListener('click', () => moveJubileeMonth(1));
     document.getElementById('jubilee-today').addEventListener('click', () => { jubileeShownMonth = jubileeMonth; jubileeShownYear = jubileeYear; jubileeMonthOffset = jubileeMonthLengths.slice(0, jubileeMonth).reduce((sum, length) => sum + length, 0) % 7; renderJubileeMonth(); });
     renderJubileeMonth();
+
+    // Modelo contrafáctico: el 11/9/3 a. C. inicia el año 1 de 364 días.
+    // En JavaScript, el año astronómico -2 corresponde a 3 a. C. (no hubo año cero).
+    const nativityEpoch = new Date(0);
+    nativityEpoch.setUTCFullYear(-2, 8, 11);
+    nativityEpoch.setUTCHours(0, 0, 0, 0);
+    const nativityWeekNames = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+    const nativityElapsedDays = Math.floor((jubileeTodayUtc - nativityEpoch) / 86400000) + 1;
+    const nativityYear = Math.floor((nativityElapsedDays - 1) / 364) + 1;
+    const nativityDayOfYear = (nativityElapsedDays - 1) % 364 + 1;
+    let nativityMonthIndex = 0;
+    let nativityDayRemainder = nativityDayOfYear;
+    while (nativityDayRemainder > jubileeMonthLengths[nativityMonthIndex]) {
+      nativityDayRemainder -= jubileeMonthLengths[nativityMonthIndex++];
+    }
+    const nativityDayOfMonth = nativityDayRemainder;
+    const nativityMonthOffset = jubileeMonthLengths.slice(0, nativityMonthIndex).reduce((sum, length) => sum + length, 0);
+    const nativityWeekday = (nativityElapsedDays - 1) % 7;
+    document.getElementById('nativity-today-date').textContent = `${nativityDayOfMonth} de ${jubileeMonthNames[nativityMonthIndex]} de ${nativityYear}`;
+    document.getElementById('nativity-today-meta').textContent = `${nativityWeekNames[nativityWeekday]} · hoy es ${jubileeToday.toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' })} en el calendario actual`;
+    document.getElementById('nativity-day-number').textContent = nativityDayOfYear;
+    document.getElementById('nativity-month-name').textContent = jubileeMonthNames[nativityMonthIndex];
+    document.getElementById('nativity-year-name').textContent = `año ${nativityYear} del ciclo`;
+    const nativityGrid = document.getElementById('nativity-calendar-grid');
+    nativityGrid.replaceChildren();
+    for (let blank = 0; blank < nativityMonthOffset % 7; blank++) {
+      const spacer = document.createElement('span');
+      spacer.className = 'jubilee-blank';
+      spacer.setAttribute('aria-hidden', 'true');
+      nativityGrid.append(spacer);
+    }
+    for (let day = 1; day <= jubileeMonthLengths[nativityMonthIndex]; day++) {
+      const cell = document.createElement('span');
+      const isToday = day === nativityDayOfMonth;
+      cell.className = `jubilee-day${isToday ? ' is-today' : ''}`;
+      cell.setAttribute('role', 'gridcell');
+      if (isToday) cell.setAttribute('aria-label', `${day}, hoy en el calendario hipotético`);
+      cell.textContent = day;
+      nativityGrid.append(cell);
+    }
+
     function findLibraryCard(view, title) {
       const root = document.querySelector(libraryViewRoots[view]);
       if (!root) return null;
@@ -7367,7 +7583,10 @@
       });
       links.append(label, list);
       const section = card.closest('section[id]');
-      (section || card).append(links);
+      // En la línea de tiempo, cada conexión pertenece a un hito concreto:
+      // dejarla al final de toda la sección las separa de su tarjeta de origen.
+      const connectionHost = card.matches('.timeline-intro,.timeline-event') ? card : (section || card);
+      connectionHost.append(links);
     });
 
     // Estas secciones se presentan como un único cuerpo editorial, no como tarjetas independientes.

@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v32';
+const CACHE = 'biblia-universal-v40';
 const APP_SHELL = [
   './',
   './index.html',
@@ -7,6 +7,12 @@ const APP_SHELL = [
   './assets/fonts/inter-roman-latin.woff2',
   './assets/fonts/inter-italic-latin.woff2',
   './assets/israel-juda/reino-dividido.png',
+  './assets/linea-tiempo/negaciones-pedro.png',
+  './assets/linea-tiempo/espiritus-gigantes-1-enoc.png',
+  './assets/linea-tiempo/maria-magdalena-besa-jesus.png',
+  './assets/linea-tiempo/marias-juan-cruz.png',
+  './assets/linea-tiempo/maria-magdalena-besa-jesus.png',
+  './assets/linea-tiempo/marias-juan-cruz.png',
   './secciones/abraham-jesus.html',
   './secciones/adan-jesus.html',
   './secciones/animales-extintos.html',
