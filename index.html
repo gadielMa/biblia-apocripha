@@ -5269,15 +5269,40 @@
       background: linear-gradient(135deg, rgba(63, 119, 103, .58), rgba(189, 222, 181, .2));
     }
 
+    .view-tabs .view-tab[data-view="catalog"],
+    .view-tabs .view-tab[data-view="jubileesCalendar"] {
+      position: relative;
+      border-width: 2px;
+      font-weight: 850;
+      box-shadow: 0 5px 14px rgba(16, 29, 43, .22);
+      transition: box-shadow .18s ease, background .18s ease;
+    }
+
+    .view-tabs .view-tab[data-view="catalog"] {
+      border-color: rgba(255, 190, 132, .92);
+      background: linear-gradient(135deg, rgba(160, 75, 42, .62), rgba(255, 188, 126, .3));
+    }
+
+    .view-tabs .view-tab[data-view="jubileesCalendar"] {
+      border-color: rgba(152, 220, 205, .92);
+      background: linear-gradient(135deg, rgba(36, 113, 111, .62), rgba(157, 222, 195, .28));
+    }
+
     .view-tabs .view-tab[data-view="timeline"]:hover,
     .view-tabs .view-tab[data-view="genealogy"]:hover,
+    .view-tabs .view-tab[data-view="catalog"]:hover,
+    .view-tabs .view-tab[data-view="jubileesCalendar"]:hover,
     .view-tabs .view-tab[data-view="timeline"]:focus-visible,
-    .view-tabs .view-tab[data-view="genealogy"]:focus-visible {
+    .view-tabs .view-tab[data-view="genealogy"]:focus-visible,
+    .view-tabs .view-tab[data-view="catalog"]:focus-visible,
+    .view-tabs .view-tab[data-view="jubileesCalendar"]:focus-visible {
       box-shadow: 0 9px 20px rgba(16, 29, 43, .32);
     }
 
     .view-tabs .view-tab[data-view="timeline"].active,
-    .view-tabs .view-tab[data-view="genealogy"].active {
+    .view-tabs .view-tab[data-view="genealogy"].active,
+    .view-tabs .view-tab[data-view="catalog"].active,
+    .view-tabs .view-tab[data-view="jubileesCalendar"].active {
       color: #38271f;
       border-color: rgba(255, 242, 225, .98);
       background: linear-gradient(120deg, rgba(255, 238, 216, .99), rgba(224, 163, 125, .98));
