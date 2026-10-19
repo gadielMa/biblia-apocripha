@@ -5936,6 +5936,8 @@
     let sortAsc = true;
     let textSearchIndex = [];
     let textSearchLoaded = false;
+    let textSearchRequested = false;
+    let textSearchLoadPromise = null;
 
     function esc(s) {
       return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -6144,7 +6146,7 @@
       <span class="text-result-meta">${esc(item.title)} · ${esc(item.section)}</span>
       <span class="text-result-excerpt">${esc(item.excerpt)}</span>
     </a>`).join('')}</div>` : '';
-      const loadingNote = textSearchLoaded ? '' : '<p class="text-search-note">Cargando el índice de textos bíblicos…</p>';
+      const loadingNote = textSearchRequested && !textSearchLoaded ? '<p class="text-search-note">Cargando el índice de textos bíblicos…</p>' : '';
       const emptyNote = !results.length && !libraryResults.length && textSearchLoaded
         ? '<p class="text-search-note">No encontramos coincidencias en libros, textos ni secciones.</p>' : '';
       const count = results.length + libraryResults.length;
@@ -6205,17 +6207,22 @@
       return matches;
     }
 
-    async function loadTextSearchIndex() {
-      try {
-        const response = await fetch('textos/search-index.json');
-        if (!response.ok) throw new Error('Índice no disponible');
-        textSearchIndex = await response.json();
-      } catch (error) {
-        textSearchIndex = [];
-      } finally {
-        textSearchLoaded = true;
-        renderTextResults();
-      }
+    function loadTextSearchIndex() {
+      if (textSearchLoadPromise) return textSearchLoadPromise;
+      textSearchRequested = true;
+      textSearchLoadPromise = (async () => {
+        try {
+          const response = await fetch('textos/search-index.json');
+          if (!response.ok) throw new Error('Índice no disponible');
+          textSearchIndex = await response.json();
+        } catch (error) {
+          textSearchIndex = [];
+        } finally {
+          textSearchLoaded = true;
+          renderTextResults();
+        }
+      })();
+      return textSearchLoadPromise;
     }
 
     function render() {
@@ -6267,6 +6274,7 @@
     // ── Events ─────────────────────────────────────────────────────────────────
     document.getElementById('search').addEventListener('input', e => {
       searchTerm = e.target.value.trim();
+      if (normalizeSearchText(searchTerm).length >= 3 && !textSearchRequested) loadTextSearchIndex();
       render();
     });
 
@@ -8012,8 +8020,6 @@
     window.addEventListener('load', positionGenealogyDates);
 
     render();
-    loadTextSearchIndex();
-
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
