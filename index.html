@@ -6549,6 +6549,7 @@
         ['c. 1250 a. C. · cronología tradicional', 'El informe de los diez espías', 'Diez espías, entre ellos Gadiel y Ammiel, traen un informe pesimista que atemoriza al pueblo; solo Josué y Caleb confían en Dios. Según Números, los diez que difundieron el mal informe mueren por una plaga.', 'Números 13:1–14:38', 'lectura/?obra=rvr1909-numeros&capitulo=13', 'exodus'],
         ['c. 1250 a. C. · cuarenta años en el desierto', 'Israel vaga por el desierto', 'Por su incredulidad y rechazo a entrar en la tierra, Dios sentencia a esa generación adulta a vagar cuarenta años por el desierto, hasta que muera; Josué y Caleb sí entrarán.', 'Números 14:26–35', 'lectura/?obra=rvr1909-numeros&capitulo=14', 'exodus'],
         ['c. 1230 a. C. · desierto de Zin', 'Moisés golpea la roca en Meribá', 'El pueblo vuelve a quejarse por falta de agua. Dios le ordena a Moisés hablarle a la roca, pero él, frustrado y enojado, la golpea dos veces con su vara. Brota agua en abundancia; Dios comunica a Moisés y Aarón que no conducirán al pueblo a la Tierra Prometida.', 'Números 20:1–13', 'lectura/?obra=rvr1909-numeros&capitulo=20', 'exodus'],
+        ['c. 1208 a. C. · año 5 de Merneptah', 'Israel aparece en la estela de Merneptah', 'La estela, erigida en Egipto durante el reinado de Merneptah, menciona a Israel en el contexto de una campaña en Canaán. No documenta una visita de Israel a Egipto en 1208 a. C.; es la referencia extrabíblica más antigua conocida al nombre Israel y suele fecharse en torno a ese año.', 'Estela de Merneptah · texto y contexto', 'https://www.posenlibrary.com/entry/stela-merneptah', 'context'],
         ['c. 1200 a. C. · muerte de Moisés', 'Moisés contempla la Tierra Prometida y muere', 'Dios le muestra a Moisés la Tierra Prometida desde lejos. Moisés muere a los 120 años, y Dios mismo guarda su cuerpo en un lugar secreto; nadie conoce su sepultura.', 'Deuteronomio 34:1–7', 'lectura/?obra=rvr1909-deuteronomio&capitulo=34', 'judges'],
         ['c. 1200 a. C. · cronología tradicional', 'El cruce del río Jordán', 'Tras la muerte de Moisés, Josué asume el liderazgo de Israel. Las aguas del Jordán se detienen cuando los sacerdotes que cargan el Arca del Pacto entran en el río, y el pueblo cruza hacia la Tierra Prometida.', 'Josué 3–4', 'lectura/?obra=rvr1909-josue&capitulo=3', 'judges'],
         ['c. 1200 a. C. · cronología tradicional', 'La caída de Jericó', 'Israel marcha alrededor de Jericó y hace sonar las trompetas; según el relato, las murallas de la ciudad caen.', 'Josué 6', 'lectura/?obra=rvr1909-josue&capitulo=6', 'judges'],
@@ -6721,6 +6722,11 @@
         const artisticBirth = ['Nacimiento de Elías', 'Nacimiento de Isaías', 'Nacimiento de Daniel'].includes(item[1]);
         const card = makeTimelineCard([...item.slice(0, 5), artisticBirth ? 'context' : 'canonical']);
         if (artisticBirth) card.querySelector('.source-badge').textContent = 'Representación artística';
+        if (item[1] === 'Israel aparece en la estela de Merneptah') {
+          const badge = card.querySelector('.source-badge');
+          badge.className = 'source-badge context';
+          badge.textContent = 'Contexto histórico';
+        }
         if (item[1] === 'La tierra caótica y el Espíritu sobre las aguas') {
           const note = document.createElement('p');
           note.className = 'timeline-description';
@@ -7793,7 +7799,8 @@
       trail.append(path, back);
       section.prepend(trail);
     }
-    viewMenuToggle.addEventListener('click', () => {
+    viewMenuToggle.addEventListener('click', event => {
+      event.stopPropagation();
       const open = viewMenuToggle.getAttribute('aria-expanded') !== 'true';
       viewNavigation.classList.toggle('open', open);
       viewMenuToggle.setAttribute('aria-expanded', String(open));
