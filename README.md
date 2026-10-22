@@ -13,9 +13,7 @@ git push origin main
 
 # 2. Actualizar el submódulo y subir el nuevo puntero
 cd /Users/gadiel/gadielMa/induliru
-git -C biblia fetch origin
-git -C biblia checkout main
-git -C biblia pull --ff-only origin main
+git -C biblia fetch origin; git -C biblia checkout main; git -C biblia pull --ff-only origin main
 git add biblia
 git commit -m "."
 git push origin master
