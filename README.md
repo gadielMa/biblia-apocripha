@@ -4,6 +4,22 @@ Tabla interactiva de cánones bíblicos y textos apócrifos con acceso directo a
 
 La aplicación funciona como PWA instalable y adapta el catálogo a tarjetas en pantalla móvil. Los enlaces externos a BibleGateway se retiraron porque no representan de forma fiable todos los cánones del catálogo.
 
+# Subida a Github
+
+cd /Users/gadiel/gadielMa/biblia-apocripha
+git add .
+git commit -m "."
+git push origin main
+
+# 2. Actualizar el submódulo y subir el nuevo puntero
+cd /Users/gadiel/gadielMa/induliru
+git -C biblia fetch origin
+git -C biblia checkout main
+git -C biblia pull --ff-only origin main
+git add biblia
+git commit -m "Actualiza submódulo Biblia"
+git push origin master
+
 ## Contenido
 
 - **59 archivos PDF** en el repositorio (51 archivos distintos enlazados desde el catálogo)
