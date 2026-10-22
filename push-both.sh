@@ -74,7 +74,7 @@ fi
 git -C "$BIBLE_SUBMODULE" fetch origin "$BIBLE_BRANCH"
 git -C "$BIBLE_SUBMODULE" pull --ff-only origin "$BIBLE_BRANCH"
 
-git -C "$INDULIRU_ROOT" add biblia
+git -C "$INDULIRU_ROOT" add biblia tests/e2e/library.spec.mjs
 if ! git -C "$INDULIRU_ROOT" diff --cached --quiet -- biblia; then
   git -C "$INDULIRU_ROOT" commit -m "Update Biblia submodule"
 else

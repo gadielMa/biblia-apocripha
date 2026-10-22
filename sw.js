@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v42';
+const CACHE = 'biblia-universal-v43';
 const APP_SHELL = [
   './',
   './index.html',
@@ -40,6 +40,9 @@ self.addEventListener('fetch', event => {
     url.pathname.includes('/secciones/') ||
     url.pathname.endsWith('/timeline-page.mjs') ||
     url.pathname.endsWith('/catalog-page.mjs') ||
+    url.pathname.endsWith('/dragones-page.mjs') ||
+    url.pathname.endsWith('/Bel-y-el-Dragon.txt') ||
+    url.pathname.endsWith('/daniel-mata-dragon.jpg') ||
     url.pathname.endsWith('/data.json')
   );
   if (isSectionResource) {

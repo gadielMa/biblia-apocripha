@@ -256,6 +256,7 @@ if (timelineTrack) {
   // Hitos de la vida pública, pasión y resurrección solicitados para la línea temporal.
   // Cada tarjeta conserva una referencia bíblica y una ilustración independiente.
   const requestedTimelineEvents = [
+    ['relato situado en tiempos de Ciro · composición griega posterior', 'Daniel y el dragón en el relato griego', 'En la adición griega a Daniel, el rey Ciro desafía a Daniel a venerar un gran dragón adorado en Babilonia. Daniel lo mata sin espada y el relato continúa con su estancia en el foso de los leones. La escena pertenece a una narración religiosa posterior, no es evidencia histórica de la existencia de dragones.', 'Bel y el Dragón 23–32 · adición griega a Daniel', 'seccion.html?tema=dragones', 'apocryphal', 'assets/linea-tiempo/daniel-mata-dragon.jpg'],
     ['tradición textual posterior · Evangelio de Felipe', 'El beso de María Magdalena a Jesús según el Evangelio de Felipe', 'El Evangelio de Felipe llama a María Magdalena «compañera» del Salvador y conserva un pasaje fragmentario que dice que él la amaba más que a los discípulos y la besaba. El manuscrito está dañado en ese punto; «en la boca» es una reconstrucción editorial de algunas traducciones. La imagen es una recreación artística del pasaje, no evidencia histórica de una relación.', 'Evangelio de Felipe 12 · pasaje fragmentario', 'lectura/?obra=gospel-philip-es&capitulo=12', 'apocryphal'],
     ['33 d. C. · escena de la crucifixión', 'María Magdalena, María y Juan junto a la cruz', 'Los evangelios sitúan a María Magdalena entre quienes observan la crucifixión; Juan menciona a María, madre de Jesús, y al discípulo amado junto a la cruz. Esta recreación muestra el duelo en el suelo mientras se alza la cruz; Juan dice que estaban de pie, así que la postura de la imagen es dramatización artística, no una descripción literal.', 'Juan 19:25–27 · Mateo 27:55–56 · Marcos 15:40–41', 'lectura/?obra=rvr1909-juan&capitulo=19#pasaje-19-25', 'canonical'],
     ['durante la huida a Egipto · Pseudo-Mateo', 'Los leones guían a la Sagrada Familia', 'Durante la huida por el desierto, leones y leopardos acompañan a María, José y Jesús niño, y les muestran el camino. Un episodio maravilloso del Evangelio del Pseudo-Mateo.', 'Pseudo-Mateo 19', 'lectura/?obra=pseudo-mateo-es&capitulo=19', 'apocryphal'],
@@ -499,6 +500,7 @@ if (timelineTrack) {
   moveOrderBefore('Caída del reino del norte ante Asiria', 'Los Querubines de Ezequiel');
   insertRequestedBefore('Los Querubines de Ezequiel', ['Nacimiento de Ezequiel']);
   insertRequestedBefore('Daniel ve al Anciano de Días', ['Nacimiento de Daniel']);
+  insertRequestedBefore('Ciro conquista Babilonia', ['Daniel y el dragón en el relato griego']);
   insertRequestedBefore('El jinete del caballo blanco', ['Juan ve el trono y al Cordero']);
   insertRequestedBefore('El jinete del caballo blanco', ['La Corte Celestial', 'Ángeles y huestes celestiales', 'La Mujer vestida del sol y el Gran Dragón']);
   const insertApostleFatesBefore = (anchor, titles) => {
@@ -705,6 +707,7 @@ if (timelineTrack) {
     'Las ruedas centelleantes de Ezequiel': ['assets/linea-tiempo/ezequiel-ofanim.png', 'Las ruedas centelleantes de la visión de Ezequiel'],
     'Ezequiel ve la gloria de Dios': ['assets/linea-tiempo/ezequiel-trono.png', 'Ezequiel contempla la gloria de Dios sobre el trono'],
     'Daniel ve al Anciano de Días': ['assets/linea-tiempo/daniel-anciano-dias.png', 'Daniel contempla al Anciano de Días en visión'],
+    'Daniel y el dragón en el relato griego': ['assets/linea-tiempo/daniel-mata-dragon.jpg', 'Ilustración artística de Daniel enfrentando al dragón del relato griego de Bel y el Dragón'],
     'Juan ve el trono y al Cordero': ['assets/linea-tiempo/trono-cordero.png', 'Juan contempla el trono celestial y al Cordero'],
     'Dios ordena capturar a Shemihaza': ['assets/enoc/vigilantes.jpg', 'El arcángel Miguel encadena a Shemihaza y a los Vigilantes según 1 Enoc'],
     'La violencia se extiende por la tierra': ['assets/timeline/generacion-violencia.png', 'La violencia se extiende entre los seres humanos antes del diluvio'],

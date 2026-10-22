@@ -10,6 +10,7 @@ const sections = [
   ['campanas', 'Campanas', 'campanas.html', 'prayers-view', 'La historia, los símbolos y las tradiciones vinculadas con las campanas.'],
   ['catalogo', 'Catálogo', 'catalogo.html', 'catalog-view', 'Obras bíblicas y extracanónicas reunidas en el catálogo.'],
   ['diablos', 'Diablos', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
+  ['dragones', 'Dragones', 'dragones.html', 'dragon-view', 'Dragones y criaturas monstruosas en Daniel, la Biblia y los textos extracanónicos.'],
   ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Comparación de textos y creencias sobre Jesús en distintas tradiciones.'],
   ['nacimiento-de-jesus', 'El nacimiento de Jesús', 'nacimiento-jesus.html', 'prayers-view', 'Relatos y cronologías propuestos para el nacimiento y la muerte de Jesús.'],
   ['enoc', 'Enoc', 'enoc.html', 'enoch-view', 'Lectura y contexto de las tradiciones de Enoc.'],
@@ -59,6 +60,7 @@ if (!section) {
     if (section.id === 'catalogo') await import('./catalog-page.mjs');
     if (section.id === 'calendario-jubileos') initializeCalendar();
     if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs');
+    if (section.id === 'dragones') await import('./dragones-page.mjs');
   } catch (error) {
     content.innerHTML = '<p class="loading-message">No se pudo cargar esta sección. Probá actualizar la página.</p>';
     console.error(error);
