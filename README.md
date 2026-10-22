@@ -1,8 +1,10 @@
 # Biblia Extracanónica
 
-Tabla interactiva de cánones bíblicos y textos apócrifos con acceso directo a PDFs locales.
+Biblioteca de cánones bíblicos y textos extracanónicos organizada en secciones independientes.
 
-La aplicación funciona como PWA instalable y adapta el catálogo a tarjetas en pantalla móvil. Los enlaces externos a BibleGateway se retiraron porque no representan de forma fiable todos los cánones del catálogo.
+`index.html` es una portada ligera con el texto introductorio y enlaces a las secciones. Cada enlace abre `seccion.html?tema=…`, que solicita únicamente el fragmento de esa sección; el catálogo, la línea de tiempo y el calendario inicializan sus propios módulos sólo al abrirlos. Así las imágenes y el código de una sección no se descargan al entrar a la portada ni al visitar otra sección.
+
+La aplicación funciona como PWA instalable. El catálogo carga sus datos sólo cuando se abre, y las imágenes de las páginas se cargan de forma diferida. Los enlaces externos a BibleGateway se retiraron porque no representan de forma fiable todos los cánones del catálogo.
 
 # Subida a Github
 
@@ -29,17 +31,9 @@ mantienen en [AUDITORIA_PDFS.md](AUDITORIA_PDFS.md).
 Las ausencias relevantes y el alcance respecto del Tanaj y el Corán se documentan
 en [LACUNAS_CATALOGO.md](LACUNAS_CATALOGO.md).
 
-## Textos buscables
+## Lecturas disponibles
 
-El inicio también busca dentro de los textos que ya fueron importados a HTML/JSON.
-Por ahora incluye **1 Enoc** (108 capítulos), **2 Enoc** (73 capítulos) y **3 Enoc**
-(48 capítulos con sub-secciones tradicionales) en inglés,
-con lector propio y referencias por
-capítulo:versículo. Cuando una fuente no trae versificación, el proyecto asigna
-divisiones editoriales; se distinguen con letras, por ejemplo `3a`.
-Cada obra futura debe conservar la estructura de `textos/1-enoc.en.json` y figurar en
-`textos/catalog.json`; luego ejecutar `node scripts/build-search-index.mjs` para que
-la búsqueda global la incorpore.
+Las obras importadas se abren desde el catálogo y usan lectores propios; la portada ya no carga ni indexa esos textos.
 
 2 Enoc también tiene una edición española automática de 73 capítulos, señalada
 como pendiente de revisión; los capítulos 1–22 cuentan además con un borrador de

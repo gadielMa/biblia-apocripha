@@ -1,45 +1,12 @@
-const CACHE = 'biblia-universal-v40';
+const CACHE = 'biblia-universal-v42';
 const APP_SHELL = [
   './',
   './index.html',
+  './seccion.html',
+  './section-page.css',
+  './scripts/section-page.mjs',
   './icon.svg',
-  './manifest.webmanifest',
-  './assets/fonts/inter-roman-latin.woff2',
-  './assets/fonts/inter-italic-latin.woff2',
-  './assets/israel-juda/reino-dividido.png',
-  './assets/linea-tiempo/negaciones-pedro.png',
-  './assets/linea-tiempo/espiritus-gigantes-1-enoc.png',
-  './assets/linea-tiempo/maria-magdalena-besa-jesus.png',
-  './assets/linea-tiempo/marias-juan-cruz.png',
-  './assets/linea-tiempo/maria-magdalena-besa-jesus.png',
-  './assets/linea-tiempo/marias-juan-cruz.png',
-  './secciones/abraham-jesus.html',
-  './secciones/adan-jesus.html',
-  './secciones/animales-extintos.html',
-  './secciones/arbol-genealogico.html',
-  './secciones/arca-noe.html',
-  './secciones/ascendidos.html',
-  './secciones/biblia-grecia.html',
-  './secciones/calendario-jubileos.html',
-  './secciones/campanas.html',
-  './secciones/cara-de-dios.html',
-  './secciones/catalogo.html',
-  './secciones/diablos.html',
-  './secciones/enoc.html',
-  './secciones/gnosticismo.html',
-  './secciones/infiernos.html',
-  './secciones/inscripcion-frankfurt.html',
-  './secciones/israel-juda.html',
-  './secciones/judea.html',
-  './secciones/linea-tiempo.html',
-  './secciones/lugares-perdidos.html',
-  './secciones/mesias.html',
-  './secciones/pedro-traidor.html',
-  './secciones/nacimiento-jesus.html',
-  './secciones/objetos.html',
-  './secciones/oraciones.html',
-  './secciones/profecias.html',
-  './secciones/sabana-santa.html'
+  './manifest.webmanifest'
 ];
 
 self.addEventListener('install', event => {
@@ -62,10 +29,28 @@ self.addEventListener('fetch', event => {
       fetch(event.request).then(async response => {
         if (response.ok) {
           const cache = await caches.open(CACHE);
-          cache.put('./index.html', response.clone());
+          cache.put(event.request, response.clone());
         }
         return response;
       }).catch(() => caches.match(event.request).then(hit => hit || caches.match('./index.html')))
+    );
+    return;
+  }
+  const isSectionResource = url.origin === self.location.origin && (
+    url.pathname.includes('/secciones/') ||
+    url.pathname.endsWith('/timeline-page.mjs') ||
+    url.pathname.endsWith('/catalog-page.mjs') ||
+    url.pathname.endsWith('/data.json')
+  );
+  if (isSectionResource) {
+    event.respondWith(
+      fetch(event.request).then(async response => {
+        if (response.ok) {
+          const cache = await caches.open(CACHE);
+          cache.put(event.request, response.clone());
+        }
+        return response;
+      }).catch(() => caches.match(event.request))
     );
     return;
   }
