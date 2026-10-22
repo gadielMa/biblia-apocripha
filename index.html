@@ -5402,6 +5402,59 @@
       return response.text();
     }
 
+    // Keep the section menu interactive while the larger section fragments load.
+    // The module awaits all those fetches below; wiring the control afterwards
+    // leaves a window where the page is visible but the button has no listener.
+    const viewNavigation = document.getElementById('view-navigation');
+    const viewMenuToggle = document.getElementById('view-menu-toggle');
+    function closeViewMenu() {
+      viewNavigation.classList.remove('open');
+      viewMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+    viewMenuToggle.addEventListener('click', event => {
+      event.stopPropagation();
+      const open = viewMenuToggle.getAttribute('aria-expanded') !== 'true';
+      viewNavigation.classList.toggle('open', open);
+      viewMenuToggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeViewMenu();
+    });
+    document.addEventListener('click', event => {
+      if (!viewNavigation.contains(event.target)) closeViewMenu();
+    });
+
+    function measureCompactMenuWidth() {
+      const measure = viewMenuToggle.cloneNode(true);
+      measure.removeAttribute('id');
+      measure.removeAttribute('aria-controls');
+      Object.assign(measure.style, { position: 'fixed', left: '-10000px', top: '0', width: 'max-content', maxWidth: 'calc(100vw - 2rem)', visibility: 'hidden', pointerEvents: 'none' });
+      document.body.append(measure);
+      const width = measure.getBoundingClientRect().width;
+      measure.remove();
+      return width;
+    }
+    let compactMenuWidth = measureCompactMenuWidth();
+    const updateViewMenuSize = () => {
+      const desktop = window.innerWidth >= 768;
+      const compactAfter = desktop ? 220 : 48;
+      const shrinkDuration = desktop ? 520 : 180;
+      const progress = Math.max(0, Math.min(1, (window.scrollY - compactAfter) / shrinkDuration));
+      const eased = progress * progress * (3 - 2 * progress);
+      const expandedWidth = viewNavigation.getBoundingClientRect().width;
+      const availableWidth = viewNavigation.getBoundingClientRect().width;
+      const compactWidth = Math.min(compactMenuWidth, availableWidth);
+      const width = Math.max(0, expandedWidth - (expandedWidth - compactWidth) * eased);
+      viewNavigation.classList.toggle('is-scrolled', progress > 0);
+      viewMenuToggle.style.width = `${Math.round(width)}px`;
+    };
+    window.addEventListener('scroll', updateViewMenuSize, { passive: true });
+    window.addEventListener('resize', () => {
+      compactMenuWidth = measureCompactMenuWidth();
+      updateViewMenuSize();
+    });
+    updateViewMenuSize();
+
     const SECTION_PARTIALS = {
       'jubilees-calendar-view': 'calendario-jubileos.html',
       'prayers-view': 'oraciones.html',
@@ -7599,45 +7652,9 @@
     const frankfurtAmuletView = document.getElementById('frankfurt-amulet-view');
     const bellsView = document.getElementById('bells-view');
     const viewTabs = document.querySelectorAll('.view-tab');
-    const viewNavigation = document.getElementById('view-navigation');
-    const viewMenuToggle = document.getElementById('view-menu-toggle');
     const currentViewLabel = document.getElementById('view-menu-current');
-    function measureCompactMenuWidth() {
-      const measure = viewMenuToggle.cloneNode(true);
-      measure.removeAttribute('id');
-      measure.removeAttribute('aria-controls');
-      Object.assign(measure.style, { position: 'fixed', left: '-10000px', top: '0', width: 'max-content', maxWidth: 'calc(100vw - 2rem)', visibility: 'hidden', pointerEvents: 'none' });
-      document.body.append(measure);
-      const width = measure.getBoundingClientRect().width;
-      measure.remove();
-      return width;
-    }
-    let compactMenuWidth = measureCompactMenuWidth();
-    const updateViewMenuSize = () => {
-      const desktop = window.innerWidth >= 768;
-      const compactAfter = desktop ? 220 : 48;
-      const shrinkDuration = desktop ? 520 : 180;
-      const progress = Math.max(0, Math.min(1, (window.scrollY - compactAfter) / shrinkDuration));
-      const eased = progress * progress * (3 - 2 * progress);
-      const expandedWidth = viewNavigation.getBoundingClientRect().width;
-      const availableWidth = viewNavigation.getBoundingClientRect().width;
-      const compactWidth = Math.min(compactMenuWidth, availableWidth);
-      const width = Math.max(0, expandedWidth - (expandedWidth - compactWidth) * eased);
-      viewNavigation.classList.toggle('is-scrolled', progress > 0);
-      viewMenuToggle.style.width = `${Math.round(width)}px`;
-    };
-    window.addEventListener('scroll', updateViewMenuSize, { passive: true });
-    window.addEventListener('resize', () => {
-      compactMenuWidth = measureCompactMenuWidth();
-      updateViewMenuSize();
-    });
-    updateViewMenuSize();
     let activeLibraryView = 'catalog';
     const crossNavigationStack = [];
-    function closeViewMenu() {
-      viewNavigation.classList.remove('open');
-      viewMenuToggle.setAttribute('aria-expanded', 'false');
-    }
     function clearCrossNavigation() {
       crossNavigationStack.length = 0;
       document.querySelectorAll('.cross-nav-trail').forEach(trail => trail.remove());
@@ -7664,18 +7681,6 @@
       trail.append(path, back);
       section.prepend(trail);
     }
-    viewMenuToggle.addEventListener('click', event => {
-      event.stopPropagation();
-      const open = viewMenuToggle.getAttribute('aria-expanded') !== 'true';
-      viewNavigation.classList.toggle('open', open);
-      viewMenuToggle.setAttribute('aria-expanded', String(open));
-    });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') closeViewMenu();
-    });
-    document.addEventListener('click', event => {
-      if (!viewNavigation.contains(event.target)) closeViewMenu();
-    });
     function selectView(view, updateHash = true) {
       activeLibraryView = view;
       const isTimeline = view === 'timeline';
