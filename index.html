@@ -4941,6 +4941,8 @@
     }
 
     .jubilee-month-card {
+      box-sizing: border-box;
+      max-width: 760px;
       padding: 1.2rem;
       border: 1px solid rgba(255, 255, 255, .2);
       border-radius: 16px;
@@ -5001,7 +5003,7 @@
 
     .jubilee-day,
     .jubilee-blank {
-      aspect-ratio: 1;
+      min-height: 3rem;
     }
 
     .jubilee-day {
@@ -6803,6 +6805,7 @@
       moveOrderAfter('Los hijos de Simeón ven la luz en el Hades', 'Jesús sale del sepulcro sostenido por dos seres celestiales');
       moveOrderAfter('Los discípulos tocan a Jesús para comprobar que no es un fantasma', 'Las Apariciones post-Resurrección');
       const timelineImages = {
+        'Israel aparece en la estela de Merneptah': ['assets/timeline/estela-merneptah-museo.png', 'Estela de Merneptah de granito oscuro con jeroglíficos, expuesta en una sala de museo'],
         'La vid del Edén según 3 Baruc': ['assets/timeline/3-baruc-vid-edén.png', 'Samael planta una vid en el jardín del Edén, según la tradición apócrifa de 3 Baruc'],
         'Lamec consulta a Enoc por el nacimiento de Noé': ['assets/timeline/rollo-lamec-enoc.png', 'Lamec y Bathenosh contemplan al recién nacido Noé mientras Enoc aparece al fondo, según el Génesis Apócrifo'],
         'La tierra caótica y el Espíritu sobre las aguas': ['assets/timeline/caos-aguas-genesis-1.jpg', 'Oscuridad sobre las aguas primordiales y una presencia luminosa que se mueve sobre ellas, ilustración de Génesis 1:1–2'],

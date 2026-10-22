@@ -17,7 +17,7 @@ git -C biblia fetch origin
 git -C biblia checkout main
 git -C biblia pull --ff-only origin main
 git add biblia
-git commit -m "Actualiza submódulo Biblia"
+git commit -m "."
 git push origin master
 
 ## Contenido
