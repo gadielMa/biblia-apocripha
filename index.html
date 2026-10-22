@@ -5351,16 +5351,6 @@
     <p class="hero-description">El canon fue delimitado por personas que podían equivocarse. Por eso reunimos la Biblia
       y textos extracanónicos: otras tradiciones sobre la infancia de Jesús, los tres días entre su muerte y
       resurrección y los cuarenta días posteriores.</p>
-    <div class="stats">
-      <div class="stat" title="Obras visibles en el catálogo; algunas tienen más de una edición para leer o buscar">
-        <span class="n" id="total-count">—</span><span class="l">Obras en catálogo</span>
-      </div>
-      <div class="stat" title="Archivos PDF distintos enlazados desde el catálogo"><span class="n"
-          id="pdf-count">—</span><span class="l">PDFs enlazados</span></div>
-      <div class="stat" title="Tanaj, Biblia católica y Biblia etíope"><span class="n">3</span><span class="l">Cánones
-          comparados</span></div>
-      <div class="stat"><span class="n">+2500</span><span class="l">Años de historia</span></div>
-    </div>
   </header>
 
   <nav class="view-tabs" id="view-navigation" aria-label="Secciones de la biblioteca">
@@ -6296,10 +6286,7 @@
       tbody.innerHTML = renderRows(filtered);
       empty.style.display = filtered.length ? 'none' : 'block';
       const visibleTotal = DATA.filter(row => !row._hidden).length;
-      const localPdfs = new Set(DATA.filter(row => row._tipo === 'pdf').map(row => row._archivo)).size;
       countEl.textContent = `Mostrando ${filtered.length} de ${visibleTotal} textos`;
-      document.getElementById('total-count').textContent = visibleTotal;
-      document.getElementById('pdf-count').textContent = localPdfs;
       renderTextResults();
     }
 
