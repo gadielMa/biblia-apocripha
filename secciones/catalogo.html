@@ -1,13 +1,6 @@
 <div class="controls">
   <input class="search-box" id="search" type="search" placeholder="Buscar en libros, textos y todas las secciones…"
     aria-label="Buscar en libros, textos y secciones de la biblioteca">
-  <div class="filters" id="filters">
-    <button class="filter-btn active" data-group="">Todos</button>
-  </div>
-  <select class="show-select" id="show-select" aria-label="Cambiar vista">
-    <option value="all">Todas las columnas</option>
-    <option value="compact">Vista compacta</option>
-  </select>
 </div>
 
 <section class="text-results" id="text-results" hidden aria-live="polite">
@@ -15,27 +8,15 @@
   <div id="text-results-content"></div>
 </section>
 
-<div class="row-count" id="row-count"></div>
-
-<aside class="catalog-date-key" aria-label="Escala temporal orientativa de composición">
-  <strong>Escala temporal de composición</strong>
-  <span class="catalog-date-gradient" aria-hidden="true"></span>
-  <span>más antiguo, desde ~500 a. C. (verde) → más reciente, hasta ~2000 d. C. (rojo)</span>
-  <p>La escala usa fechas aproximadas de composición y sirve sólo como orientación cronológica; no demuestra por sí
-    sola la fidelidad ni la autenticidad de un texto.</p>
-</aside>
-
 <div class="table-wrap">
   <table id="main-table">
     <thead>
       <tr>
         <th data-col="Nombre">Nombre <span class="sort-arrow">↕</span></th>
         <th data-col="Resumen">Resumen <span class="sort-arrow">↕</span></th>
-        <th>Archivo</th>
         <th data-col="Grupo">Grupo <span class="sort-arrow">↕</span></th>
         <th data-col="Fecha aproximada">Fecha <span class="sort-arrow">↕</span></th>
         <th data-col="Idioma original">Idioma <span class="sort-arrow">↕</span></th>
-        <th data-col="Tipo de entrada">Tipo de entrada <span class="sort-arrow">↕</span></th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>

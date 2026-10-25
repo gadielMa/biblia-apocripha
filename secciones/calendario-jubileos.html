@@ -1,10 +1,12 @@
 <div class="jubilee-calendar-shell">
   <header class="jubilee-calendar-heading">
-    <span>12 meses · 4 trimestres</span>
+    <span>Dos calendarios · 364 días</span>
     <h2 id="jubilees-calendar-title">Calendario Los Jubileos</h2>
-    <p>Un año de 364 días, con meses de 30, 30 y 31 días en cada trimestre.</p>
+    <p>Comparación entre el calendario de Los Jubileos y una propuesta de 13 meses de 28 días.</p>
   </header>
   <div class="jubilee-calendar-layout">
+    <section class="jubilee-system jubilee-system-standard" aria-labelledby="jubilee-standard-title">
+      <h3 class="jubilee-system-title" id="jubilee-standard-title">Los Jubileos · 12 meses</h3>
       <section class="jubilee-today" aria-live="polite" aria-label="Fecha de hoy en el calendario">
         <div><span class="jubilee-kicker">Hoy en este calendario</span><strong id="jubilee-today-date">—</strong><span
             class="jubilee-today-meta" id="jubilee-today-meta">—</span></div>
@@ -23,8 +25,29 @@
         <div class="jubilee-grid" id="jubilee-calendar-grid" role="grid" aria-label="Días del mes"></div>
         <div class="jubilee-legend"><i></i> Hoy</div>
       </section>
+    </section>
+    <section class="jubilee-system jubilee-system-adaru" aria-labelledby="adaru-calendar-title">
+      <h3 class="jubilee-system-title" id="adaru-calendar-title">Calendario de 13 meses · 28 días</h3>
+      <section class="jubilee-today" aria-live="polite" aria-label="Fecha de hoy en el calendario de 13 meses">
+        <div><span class="jubilee-kicker">Hoy en el calendario de 13 meses</span><strong id="adaru-today-date">—</strong><span
+            class="jubilee-today-meta" id="adaru-today-meta">—</span></div>
+        <div class="jubilee-day-number"><strong id="adaru-day-number">—</strong><span>día del año</span></div>
+      </section>
+      <section class="jubilee-month-card" aria-label="Vista mensual del calendario de 13 meses">
+        <div class="jubilee-month-head">
+          <h3><span id="adaru-month-name">—</span><small id="adaru-year-name">—</small></h3>
+          <div class="jubilee-nav"><button id="adaru-prev" type="button" aria-label="Mes anterior">←</button><button
+              id="adaru-today" type="button">Hoy</button><button id="adaru-next" type="button"
+              aria-label="Mes siguiente">→</button></div>
+        </div>
+        <div class="jubilee-week" aria-hidden="true">
+          <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+        </div>
+        <div class="jubilee-grid" id="adaru-calendar-grid" role="grid" aria-label="Días del mes"></div>
+        <div class="jubilee-legend"><i></i> Hoy</div>
+      </section>
+      <p class="jubilee-name-note"><b>Adaru</b> es el nombre del mes añadido en esta propuesta. En el calendario babilónico histórico, Addaru era el mes XII; algunos años se intercalaba un segundo Addaru.</p>
+    </section>
   </div>
-  <p class="jubilee-note">Referencia de esta conversión: los días se cuentan desde el 1 de enero del año 1
-    gregoriano, incluyendo ese día como día 1; luego se agrupan en años de 364 días. El calendario se actualiza con
-    la fecha local del dispositivo.</p>
+  <p class="jubilee-note">Ambos calendarios usan la misma referencia de conversión: los días se cuentan desde el 1 de enero del año 1 gregoriano, incluyendo ese día como día 1; luego se agrupan en años de 364 días. La fecha de hoy se toma del dispositivo. El nombre Adaru se usa aquí por propuesta, aunque históricamente designa el mes XII y su intercalación ocasional.</p>
 </div>
