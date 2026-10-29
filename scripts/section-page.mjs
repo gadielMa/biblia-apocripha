@@ -11,6 +11,7 @@ const sections = [
   ['catalogo', 'Catálogo', 'catalogo.html', 'catalog-view', 'Obras bíblicas y extracanónicas reunidas en el catálogo.'],
   ['diablos', 'Diablos [31]', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
   ['dragones', 'Dragones', 'dragones.html', 'dragon-view', 'Dragones y criaturas monstruosas en Daniel, la Biblia y los textos extracanónicos.'],
+  ['el-pan-de-vida', 'El pan de vida', 'el-pan-de-vida.html', 'prayers-view', 'La cita de Juan 6:35 y el pan descrito en Ezequiel 4:9.'],
   ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Yashua (ye-shú-a) es la forma hebrea del nombre de Jesús; Yahushúa (ya-hu-shú-a) es su forma plena relacionada. Los antiguos escribas quisieron llamar a Yashua como Yeshúa o Yehoshúa para ocultar que Yahweh (YHWH) es Yashúa, entonces cambiaron la fonética de la palabra. El griego Iēsous pasó al latín Iesus y de allí al español Jesús. Usar Yashua o Yahushúa resalta sus raíces lingüísticas semíticas.'],
   ['nacimiento-de-jesus', 'El nacimiento de Yashua', 'nacimiento-jesus.html', 'prayers-view', 'Relatos y cronologías propuestos para el nacimiento y la muerte de Yashua.'],
   ['enoc', 'Enoc', 'enoc.html', 'enoch-view', 'Lectura y contexto de las tradiciones de Enoc.'],
