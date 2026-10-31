@@ -81,7 +81,7 @@ if (timelineTrack) {
   );
   Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Los libros más antiguos')?.remove();
   const simeonCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Simeón carga al niño Jesús');
-  const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida y regreso a Nazaret');
+  const flightCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Huida a Egipto');
   if (simeonCard && flightCard) timelineTrack.insertBefore(simeonCard, flightCard);
   const enocCard = Array.from(timelineTrack.children).find(card => card.querySelector('h3')?.textContent === 'Enoc y los vigilantes');
   earlyTimelineEvents.slice(0, 2).forEach(event => timelineTrack.insertBefore(makeTimelineCard(event), enocCard));
@@ -101,7 +101,7 @@ if (timelineTrack) {
   const timelineOrder = [
     'Adán y Eva', 'Set y Enós', 'Enoc y los vigilantes', 'Abraham y la promesa', 'Jacob y Judá', 'José y sus hermanos', 'El nacimiento y rescate de Moisés',
     'Moisés abre el mar Rojo', 'La Roca de Moisés', 'Moisés anuncia un profeta', 'Isaías y Emanuel', 'El mundo del Segundo Templo', 'Jesús bebé', 'Simeón carga al niño Jesús',
-    'Huida y regreso a Nazaret', 'Relatos del niño Jesús', 'Jesús adolescente en el Templo', 'Ayuno y tentación en el desierto',
+    'Huida a Egipto', 'Relatos del niño Jesús', 'Jesús adolescente en el Templo', 'Ayuno y tentación en el desierto',
     'Jesús adulto', 'Parábolas, signos y discípulos', 'La cena y el arresto', 'Pasión, muerte y sepultura', 'Evangelio de Nicodemo',
     'Jesús resucitado', 'Carino y Leucio, testigos del descenso', 'El Resucitado en María Magdalena y Nag Hammadi',
     'Lo que dijo e hizo resucitado', 'Pentecostés'
@@ -121,7 +121,7 @@ if (timelineTrack) {
     'La Roca de Moisés': [-1300, 'después del mar Rojo · antes del Sinaí (Éxodo 17)'],
     'Jesús bebé': [-1, '11 de septiembre de 1 a. C. · hipótesis'],
     'Simeón carga al niño Jesús': [-1, '1 a. C.'],
-    'Huida y regreso a Nazaret': [-1, 'infancia de Jesús · relato de Mateo'],
+    'Huida a Egipto': [-1, 'infancia de Jesús · relato de Mateo'],
     'Relatos del niño Jesús': [6, 'infancia de Jesús · relato apócrifo'],
     'Jesús adolescente en el Templo': [12, '12 años después de Cristo'],
     'Ayuno y tentación en el desierto': [30, '30 años después de Cristo (aprox.)'],
@@ -235,7 +235,9 @@ if (timelineTrack) {
     ['entre los siglos 6 y 5 a. C.', 'El mundo del Segundo Templo', 'Judea vive bajo imperios sucesivos; se desarrollan distintas corrientes y textos judíos.', 'Daniel 7 · contexto histórico', 'lectura/?obra=rvr1909-daniel&capitulo=7', 'exile'],
     ['c. 1 a. C. · fecha aproximada', 'La anunciación a María', 'Gabriel anuncia a María el nacimiento de Jesús. 1 Enoc presenta al Hijo del Hombre en una visión anterior: es un paralelo temático, no el relato de la anunciación.', 'Lucas 1:26–38 · paralelo temático: 1 Enoc 48:2–7', 'lectura/?obra=rvr1909-lucas&capitulo=1', 'jesus'],
     ['11 de septiembre de 1 a. C. · hipótesis', 'Jesús bebé', 'Mateo y Lucas sitúan el nacimiento de Jesús en Belén y narran sus primeros años. La fecha exacta es una hipótesis, no una fecha establecida por los Evangelios.', 'Lucas 2:1–20 · Mateo 1:18–25', 'lectura/?obra=rvr1909-lucas&capitulo=2', 'jesus'],
-    ['infancia de Jesús · relato de Mateo', 'Huida y regreso a Nazaret', 'Mateo cuenta la huida de la familia a Egipto y el regreso posterior a Nazaret; no precisa el año.', 'Mateo 2:13–23', 'lectura/?obra=rvr1909-mateo&capitulo=2', 'jesus'],
+    ['infancia de Jesús · relato de Mateo', 'Huida a Egipto', 'Un ángel advierte a José en sueños que Herodes buscará al niño para matarlo. José sale de noche con María y Jesús rumbo a Egipto.', 'Mateo 2:13–15', 'lectura/?obra=rvr1909-mateo&capitulo=2#pasaje-2-13', 'jesus'],
+    ['después de la huida · relato de Mateo', 'La matanza de los niños de Belén', 'Mateo cuenta que Herodes, al ver que los magos no regresaban, ordenó matar en Belén a los niños de dos años o menos, según el tiempo que había averiguado. El relato sitúa la huida de la familia antes de la matanza.', 'Mateo 2:16–18', 'lectura/?obra=rvr1909-mateo&capitulo=2#pasaje-2-16', 'jesus'],
+    ['después de la muerte de Herodes · relato de Mateo', 'Regreso a Nazaret', 'Después de la muerte de Herodes, un ángel indica a José que vuelva con María y Jesús. Por temor a Arquelao, la familia se establece en Nazaret, en Galilea.', 'Mateo 2:19–23', 'lectura/?obra=rvr1909-mateo&capitulo=2#pasaje-2-19', 'jesus'],
     ['infancia de Jesús · relato apócrifo', 'Relatos del niño Jesús', 'En el cap. 4 un niño muere al chocar con Jesús; en el cap. 9 Jesús revive a Zeno tras una caída. Son episodios distintos del Evangelio de la Infancia de Tomás.', 'Infancia de Tomás 4 y 9', 'lectura/?obra=infancy-thomas-es&capitulo=4', 'jesus'],
     ['infancia de Jesús · relato apócrifo', 'Jacobo es curado de una mordedura de víbora', 'El Evangelio de la infancia de Tomás cuenta que José envió a su hijo Jacobo a recoger leña. Una víbora lo mordió; Jesús sopló sobre la herida, el dolor cesó y Jacobo quedó sano. Es un episodio apócrifo, no narrado en los evangelios canónicos.', 'Evangelio de la infancia de Tomás 16:1–2', 'lectura/?obra=infancy-thomas-es&capitulo=16', 'jesus'],
     ['12 años después de Cristo', 'Jesús adolescente en el Templo', 'Jesús dialoga con los maestros y es encontrado por María y José en el Templo.', 'Lucas 2:41–52', 'lectura/?obra=rvr1909-lucas&capitulo=2#pasaje-2-41', 'jesus'],
@@ -451,7 +453,7 @@ if (timelineTrack) {
   };
   insertRequestedBefore('Enoc y los vigilantes', ['Enoc niño']);
   insertRequestedBefore('El diseño exacto del Arca', ['Nacimiento de Noé']);
-  insertRequestedBefore('Huida y regreso a Nazaret', ['La Adoración de los Magos']);
+  insertRequestedBefore('Huida a Egipto', ['La Adoración de los Magos']);
   const moveOrderBefore = (title, anchor) => {
     const itemIndex = order.findIndex(item => item[1] === title);
     const anchorIndex = order.findIndex(item => item[1] === anchor);
@@ -519,7 +521,7 @@ if (timelineTrack) {
   moveOrderAfter('Ascensión de Jesús', 'Pentecostés');
   moveOrderAfter('La cruz, los poderes y Pentecostés', 'Pentecostés');
   // Normalización final: estas tarjetas pertenecen a tramos históricos distintos.
-  moveOrderBefore('La Adoración de los Magos', 'Huida y regreso a Nazaret');
+  moveOrderBefore('La Adoración de los Magos', 'Huida a Egipto');
   insertRequestedBefore('El Hijo del Hombre y el Anciano de Días', ['Dios ordena capturar a Shemihaza', 'La violencia se extiende por la tierra']);
   moveOrderAfter('Dios ordena capturar a Shemihaza', 'El Hijo del Hombre y el Anciano de Días');
   moveOrderAfter('La violencia se extiende por la tierra', 'Dios ordena capturar a Shemihaza');
@@ -539,7 +541,9 @@ if (timelineTrack) {
   moveOrderBefore('La anunciación a María', 'Jesús bebé');
   moveOrderBefore('Jesús bebé', 'La Adoración de los Magos');
   moveOrderBefore('La Adoración de los Magos', 'Simeón carga al niño Jesús');
-  moveOrderBefore('Simeón carga al niño Jesús', 'Huida y regreso a Nazaret');
+  moveOrderBefore('Simeón carga al niño Jesús', 'Huida a Egipto');
+  moveOrderBefore('Huida a Egipto', 'La matanza de los niños de Belén');
+  moveOrderBefore('La matanza de los niños de Belén', 'Regreso a Nazaret');
   moveOrderAfter('Jacobo es curado de una mordedura de víbora', 'Relatos del niño Jesús');
   moveOrderAfter('María Magdalena consuela a los discípulos', 'Elección de Matías');
   moveOrderAfter('La Adoración de los Magos', 'Jesús bebé');
@@ -675,8 +679,10 @@ if (timelineTrack) {
     'Sadrac, Mesac y Abed-nego en el horno': ['assets/timeline/tres-jovenes-horno.jpg', 'Los tres jóvenes hebreos permanecen a salvo en el horno ardiente'],
     'El mundo del Segundo Templo': ['assets/linea-tiempo/segundo-templo.jpg', 'El Segundo Templo de Jerusalén en el período del judaísmo antiguo'],
     'Jesús bebé': ['assets/timeline/infancia-jesus.png', 'María y José cuidan al niño Jesús'],
+    'La matanza de los niños de Belén': ['assets/timeline/herodes-orden-belen.jpg', 'María protege a su bebé mientras José vigila la calle de Belén y se ven guardias a lo lejos, sin violencia gráfica'],
     'Jesús habla desde la cuna': ['assets/timeline/jesus-habla-desde-la-cuna.png', 'Jesús niño habla desde una cuna, con María y oyentes presentes, en una ilustración del relato coránico'],
-    'Huida y regreso a Nazaret': ['assets/timeline/huida-egipto.jpg', 'María, José y el niño Jesús huyen hacia Egipto al anochecer'],
+    'Huida a Egipto': ['assets/timeline/huida-egipto.jpg', 'María, José y el niño Jesús huyen hacia Egipto al anochecer'],
+    'Regreso a Nazaret': ['assets/timeline/infancia-jesus.png', 'María, José y Jesús niño durante su regreso y establecimiento en Nazaret'],
     'Relatos del niño Jesús': ['assets/timeline/jesus-nino.png', 'Jesús durante su infancia, según relatos posteriores'],
     'Ayuno y tentación en el desierto': ['assets/timeline/jesus-ayuno-desierto.png', 'Jesús ayuna en el desierto antes de comenzar su ministerio'],
     'Crucifixión y muerte de Jesús': ['assets/timeline/jesus-cruz.png', 'Jesús en la cruz, escena de la Pasión'],

@@ -67,7 +67,7 @@ if (!section) {
     });
     if (section.id === 'catalogo') await import('./catalog-page.mjs?v=71');
     if (section.id === 'calendario-jubileos') initializeCalendar();
-    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=76');
+    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=77');
     if (section.id === 'arbol-genealogico') await import('./genealogy-page.mjs?v=71');
     if (section.id === 'dragones') await import('./dragones-page.mjs');
   } catch (error) {
