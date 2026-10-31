@@ -29,6 +29,7 @@ const sections = [
   ['lugares-perdidos', 'Lugares perdidos [12]', 'lugares-perdidos.html', 'extinct-view', 'Lugares antiguos, tradiciones y sitios cuya identificación se discute.'],
   ['moises-y-yeshua', 'Moisés y Yashua', 'moises-yeshua.html', 'prayers-view', 'El gesto de Séfora en Éxodo 4 y el lavatorio de pies realizado por Yashua en Juan 13.'],
   ['objetos', 'Objetos [9]', 'objetos.html', 'extinct-view', 'Objetos, reliquias y elementos materiales de las tradiciones bíblicas.'],
+  ['objetos-de-jesus', 'Objetos de Jesús', 'objetos-jesus.html', 'extinct-view', 'El sudario, las sandalias y la túnica en los evangelios y las tradiciones sobre Jesús.'],
   ['oraciones', 'Oraciones [3]', 'oraciones.html', 'prayers-view', 'Oraciones cristianas y sus textos de origen.'],
   ['pedro-traidor', 'Pedro traidor', 'pedro-traidor.html', 'prayers-view', 'Pedro, Judas y María Magdalena: relatos canónicos y extracanónicos.'],
   ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', 'Las piedras grabadas de Ica, las interpretaciones sobre sus imágenes y el contexto arqueológico.'],
