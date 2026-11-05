@@ -382,3 +382,8 @@ td:nth-child(2) { min-width: 280px; }
 @media (max-width: 950px) {
   .jubilee-calendar-layout { grid-template-columns: 1fr; }
 }
+
+/* Manifestaciones: conservar completas las imágenes verticales aportadas. */
+.manifestations-view .manifestation-image-link { display: block; background: #eef1f4; }
+.manifestations-view .extinct-card-image { height: 380px; max-height: none; object-fit: contain; }
+.manifestations-view .manifestation-image-link:focus-visible { outline: 3px solid #205b59; outline-offset: -3px; }

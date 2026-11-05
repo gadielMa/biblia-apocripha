@@ -1,0 +1,54 @@
+{
+  "tool": "image_gen (built-in)",
+  "note": "Ilustraciones artísticas generadas; las imágenes se optimizaron a JPEG para la web.",
+  "images": [
+    {
+      "file": "uriel.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Uriel, angel holding a flame and an open scroll, starry heavens. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "rafael.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Raphael, winged angel accompanying young Tobias by a river, a fish and travel staff. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "raguel.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Raguel, angel of celestial justice and harmony, holding balanced scales among orderly stars. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "sariel.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Sariel, solemn watchful angel observing earth from the moonlit heavens. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "remiel.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Remiel, angel of hope watching luminous human souls rising toward dawn. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "elementales.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Symbolic spirits of four elements, ethereal beings of earth water air and fire in a harmonious natural landscape. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "dominaciones.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Majestic order of winged angels holding luminous sceptres in a serene celestial court. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "principados.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Winged celestial guardians overlooking an ancient city from the clouds. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "potestades-virtudes.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Two symbolic angelic orders, one holding a shield of light and the other radiating steadfast luminous strength. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "fenix.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: A magnificent phoenix with twelve luminous wings, rising beside the celestial sun in ancient apocryphal cosmology. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "calcedris.jpg",
+      "prompt": "Use case: historical-scene. Asset type: illustration for Spanish encyclopedia of celestial beings. Subject: Chalkydri of Second Enoch, fantastical celestial solar being with twelve wings, lion feet and crocodile-like head, purple gold light. Style: painterly biblical epic illustration, detailed natural textures, soft atmospheric light, coherent anatomy, landscape composition. No text, no letters, no watermark. A symbolic artistic interpretation, not a diagram."
+    },
+    {
+      "file": "sandalfon.jpg",
+      "prompt": "Use case: historical-scene. Asset type: landscape illustration for an encyclopedia of celestial beings. Subject: Sandalphon, a towering angel of Jewish mystical tradition, standing behind the luminous divine chariot, gently weaving a radiant golden crown with both hands. Style: painterly biblical epic illustration, detailed natural textures, flowing ivory robes, feathered wings, soft atmospheric golden light and deep blue celestial clouds, coherent anatomy. Composition: landscape, the angel and crown clearly visible. A symbolic artistic interpretation. No depiction of God as a person, no text, no letters, no watermark."
+    }
+  ]
+}
