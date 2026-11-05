@@ -1,0 +1,62 @@
+{
+  "tool": "image_gen.imagegen (integrado)",
+  "purpose": "Ilustraciones artísticas para Gigantes Nefilim; no reconstrucciones arqueológicas.",
+  "images": [
+    {
+      "path": "assets/nefilim/gilgamesh.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Gilgamesh, immense bearded Mesopotamian king, ancient Uruk walls, bronze age tunic, cedar mountains. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/atambish.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Atambish, imagined giant of fragmentary ancient literature, weathered bearded traveler on flood-darkened Mesopotamian plain. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/redotiya.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Redotiya, imagined giant whose appearance is unknown, solitary immense human silhouette amid ancient desert ruins. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/ohyah.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Ohyah, giant son of Shemihazah waking from an ominous dream, uprooted garden visible through doorway. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/hahyah.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Hahyah, giant brother of Ohyah, watching a symbolic dream of a flooded garden and storm clouds. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/mahway.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Mahway the giant messenger seeking Enoch, traveling across a vast desert toward a distant sage. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/hobabish.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Hobabish inspired by Humbaba, immense wild bearded guardian in a cedar forest, mythic ancient Near East. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/ahiram.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Ahiram, imagined figure of fragmentary giant traditions, towering ancient robed man among broken stones. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/egipcio-benaias.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Tall ancient Egyptian warrior with a huge spear facing smaller Benaiah, ancient desert battlefield, no violence occurring. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/arba.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Arba, towering ancient patriarch of Hebron, standing before bronze age hill city. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/alcioneo.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Alcyoneus, Greek mythological giant warrior on rocky Phlegra plain, ancient Greek bronze armor. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/porfirion.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Porphyrion, king of Greek giants challenging distant stormy Olympus, monumental human warrior. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/atlas.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Atlas the Greek Titan bearing a celestial sphere, ancient rocky landscape, painterly mythology. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    },
+    {
+      "path": "assets/nefilim/prometeo.jpg",
+      "prompt": "Use case: historical-scene. Asset type: square illustrated card for a Spanish ancient-texts library. Subject: Prometheus the Greek Titan carrying a small flame toward ancient humans, mountains at dawn. Style: detailed painterly historical fantasy, earth and bronze tones, natural cinematic light, legible centered figure, landscape scale cues. This is an artistic interpretation of mythology, not archaeological evidence. No words, labels, watermarks, gore, modern objects. Save final asset and report its local file path."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ const body = root.querySelector('#tbody');
 const empty = root.querySelector('#empty');
 const textResults = root.querySelector('#text-results');
 const textResultsContent = root.querySelector('#text-results-content');
-const [dataResponse, worksResponse] = await Promise.all([fetch('data.json?v=53'), fetch('textos/catalog.json?v=53')]);
+const [dataResponse, worksResponse] = await Promise.all([fetch('data.json?v=54'), fetch('textos/catalog.json?v=54')]);
 if (!dataResponse.ok || !worksResponse.ok) throw new Error('No se pudo cargar el catálogo');
 const rows = await dataResponse.json();
 const works = await worksResponse.json();

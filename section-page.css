@@ -180,6 +180,13 @@ figure.messiah-book-art.birth-feature-art > img { display: block; width: 100%; m
 .tree-node[data-generation]::before { content: attr(data-generation); }
 .tree-node::after { display: block; margin-top: .14rem; color: #718095; content: attr(data-relation); font-size: .61rem; font-weight: 700; line-height: 1.2; }
 .tree-node small { display: none; }
+.tree-source { display: block; margin-top: .3rem; font-size: .65rem; font-weight: 600; line-height: 1.4; white-space: normal; }
+.tree-relative-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .65rem; margin: .65rem 0; }
+.tree-relative-card { min-width: 0; padding: .8rem; border: 1px solid #d8e2ed; border-radius: 11px; background: #fff; text-align: center; }
+.tree-relative-card > strong, .tree-relative-card > span { display: block; }
+.tree-relative-card > span { margin-top: .4rem; font-size: .78rem; line-height: 1.5; }
+.tree-comparison-path { padding: .7rem; border-left: 3px solid #c46a42; background: #fff; }
+.tree-comparison-path > strong, .tree-comparison-path > span { display: block; }
 .tree-node.key { border-color: #e4af91; background: #fff3eb; color: #944322; }
 .tree-age { display: block; margin-top: .2rem; color: #9b4829; font-size: .62rem; font-weight: 850; }
 .tree-down { position: relative; width: 3px; height: 24px; margin: 0 auto; background: #c46a42; }
@@ -281,7 +288,7 @@ figure.messiah-book-art.birth-feature-art > img { display: block; width: 100%; m
 .nephilim-submitted-image figcaption { color: var(--muted); font-size: .9rem; }
 .nephilim-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: stretch; gap: 1rem; }
 .nephilim-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: white; }
-.nephilim-card img { display: block; width: 100%; height: 230px; object-fit: cover; }
+.nephilim-card img { display: block; width: 100%; height: 230px; object-fit: contain; object-position: center; background: #ede8df; }
 .nephilim-card-body { padding: 1rem; }
 .nephilim-card h3 { margin-top: 0; }
 .nephilim-passages article h2, .nephilim-passages article h3 { margin-top: 0; }

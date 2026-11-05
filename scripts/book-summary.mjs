@@ -1,4 +1,5 @@
 const aliasesByBook = {
+  'apocryphon-john': ['El Libro Secreto de Juan (Apócrifo de Juan)', 'Apócrifo de Juan'],
   'proto-james': ['Proto-evangelio de Santiago'],
   barnabas: ['Carta de Bernabé'],
   'apocalypse-moses': ['Libro de Adán y Eva (Vida de Adán y Eva)'],

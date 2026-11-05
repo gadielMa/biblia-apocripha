@@ -1690,13 +1690,14 @@
     "Tanaj": "",
     "Biblia Católica": "",
     "Biblia Etíope": "",
-    "BIBLIOTECA": "Apócrifo de Juan",
+    "BIBLIOTECA": "El Libro Secreto de Juan (Apócrifo de Juan)",
     "Fecha aproximada": "siglo II d.C.",
     "Idioma original": "Copto (orig. griego)",
-    "Resumen": "Revelación secreta sobre el Espíritu invisible, Barbelo, Yaldabaot, la creación y el despertar mediante conocimiento espiritual.",
+    "Resumen": "Revelación gnóstica del Salvador a Juan sobre Barbelo, Yaldabaot y el despertar espiritual. En la edición local, 15:9 afirma que el Salvador los hizo comer del árbol; 17:1 presenta su aparición como un águila para instruir y despertar a Adán y Eva. Es una reinterpretación gnóstica del Edén, distinta de Génesis.",
     "_archivo": null,
     "_tipo": null,
-    "_estado_texto": "Texto completo · traducción de trabajo"
+    "_estado_texto": "Texto completo · traducción de trabajo",
+    "_texto": "apocryphon-john-es"
   },
   {
     "Grupo": "Evangelios judeocristianos",

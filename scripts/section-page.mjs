@@ -5,18 +5,21 @@ const sections = [
   ['arbol-genealogico', 'Árbol genealógico', 'arbol-genealogico.html', 'genealogy-view', 'Genealogías bíblicas y las dos líneas que Mateo y Lucas trazan hasta Jesús.'],
   ['arca-de-noe', 'Arca de Noé', 'arca-noe.html', 'extinct-view', 'El relato del diluvio, el Arca y sus tradiciones relacionadas.'],
   ['ascendidos', 'Ascendidos', 'ascendidos.html', 'extinct-view', 'Personajes que los textos describen como llevados al cielo o trasladados.'],
-  ['biblia-y-grecia', 'Biblia y Grecia', 'biblia-grecia.html', 'prayers-view', 'Cruces y diferencias entre las tradiciones bíblicas y el mundo griego.'],
+  ['biblia-y-grecia', 'Dioses y paralelismos', 'biblia-grecia.html', 'prayers-view', 'Comparaciones entre figuras bíblicas y divinidades fenicias, griegas y romanas.'],
+  ['biblia-manipulada', 'Biblia manipulada', 'biblia-manipulada.html', 'prayers-view', 'Fuentes, editores, relatos paralelos y diferencias internas en la composición de los libros bíblicos.'],
   ['calendario-jubileos', 'Calendario Los Jubileos', 'calendario-jubileos.html', 'jubilee-calendar-view', 'Calendario de 364 días presentado en el Libro de los Jubileos.'],
   ['campanas', 'Campanas', 'campanas.html', 'prayers-view', 'La historia, los símbolos y las tradiciones vinculadas con las campanas.'],
   ['catalogo', 'Catálogo', 'catalogo.html', 'catalog-view', 'Obras bíblicas y extracanónicas reunidas en el catálogo.'],
-  ['diablos', 'Diablos [31]', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
+  ['diablos', 'Diablos [33]', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
+  ['dioses-de-pueblos', 'Dioses de pueblos', 'dioses-de-pueblos.html', 'extinct-view', 'Divinidades de Canaán, Filistea, Fenicia y Moab, y sus relaciones con otras tradiciones.'],
+  ['dioses-hindues', 'Dioses hindúes', 'dioses-hindues.html', 'prayers-view', 'Horus y Garuda, Amón y Vishnu, Ptah y Brahma: comparación de animales, atributos e imágenes.'],
   ['dragones', 'Dragones', 'dragones.html', 'dragon-view', 'Dragones y criaturas monstruosas en Daniel, la Biblia y los textos extracanónicos.'],
   ['el-pan-de-vida', 'El pan de vida', 'el-pan-de-vida.html', 'prayers-view', 'La cita de Juan 6:35 y el pan descrito en Ezequiel 4:9.'],
   ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Yashua (ye-shú-a) es la forma hebrea del nombre de Jesús; Yahushúa (ya-hu-shú-a) es su forma plena relacionada. Los antiguos escribas quisieron llamar a Yashua como Yeshúa o Yehoshúa para ocultar que Yahweh (YHWH) es Yashúa, entonces cambiaron la fonética de la palabra. El griego Iēsous pasó al latín Iesus y de allí al español Jesús. Usar Yashua o Yahushúa resalta sus raíces lingüísticas semíticas.'],
   ['nacimiento-de-jesus', 'El nacimiento de Yashua', 'nacimiento-jesus.html', 'prayers-view', 'Relatos y cronologías propuestos para el nacimiento y la muerte de Yashua.'],
   ['enoc', 'Enoc', 'enoc.html', 'enoch-view', 'Lectura y contexto de las tradiciones de Enoc.'],
   ['gnosticismo', 'Gnosticismo', 'gnosticismo.html', 'extinct-view', 'Textos gnósticos, sus figuras y sus propias visiones del mundo.'],
-  ['gigantes-nefilim', 'Gigantes Nefilim', 'gigantes-nefilim.html', 'nephilim-view', 'Goliat, los hijos de Anac, Og de Basán y otros gigantes mencionados en la Biblia y en Enoc.'],
+  ['gigantes-nefilim', 'Gigantes Nefilim', 'gigantes-nefilim.html', 'nephilim-view', 'Gigantes bíblicos, nombres del Libro de los Gigantes, Vigilantes y paralelos con la mitología griega.'],
   ['infiernos', 'Infiernos [5]', 'infiernos.html', 'extinct-view', 'Imágenes del mundo de los muertos y del juicio en distintas obras.'],
   ['inscripcion-frankfurt', 'Inscripción de Frankfurt', 'inscripcion-frankfurt.html', 'prayers-view', 'El amuleto de plata de Frankfurt y la inscripción que conserva.'],
   ['israel-vs-juda', 'Israel vs Judá', 'israel-juda.html', 'extinct-view', 'La historia de los reinos de Israel y Judá y sus tradiciones.'],
@@ -34,7 +37,8 @@ const sections = [
   ['pedro-traidor', 'Pedro traidor', 'pedro-traidor.html', 'prayers-view', 'Pedro, Judas y María Magdalena: relatos canónicos y extracanónicos.'],
   ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', 'Las piedras grabadas de Ica, las interpretaciones sobre sus imágenes y el contexto arqueológico.'],
   ['profecias', 'Profecías', 'profecias.html', 'prophecies-view', 'Textos proféticos y sus interpretaciones posteriores.'],
-  ['sabana-santa', 'Sábana Santa', 'sabana-santa.html', 'extinct-view', 'La reliquia de Turín, su historia documentada y los estudios sobre ella.']
+  ['sabana-santa', 'Sábana Santa', 'sabana-santa.html', 'extinct-view', 'La reliquia de Turín, su historia documentada y los estudios sobre ella.'],
+  ['simbologia', 'Simbología', 'simbologia.html', 'prayers-view', 'El pez cristiano, las letras ΙΧΘΥΣ y su significado en la tradición cristiana.']
 ].map(([id, title, file, className, description]) => ({ id, title, file, className, description }));
 
 const params = new URLSearchParams(location.search);
@@ -61,14 +65,15 @@ if (!section) {
     const response = await fetch(`secciones/${section.file}`);
     if (!response.ok) throw new Error(`No se pudo cargar ${section.file}`);
     content.innerHTML = await response.text();
+    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
     content.querySelectorAll('img').forEach(image => {
       if (!image.hasAttribute('loading')) image.loading = 'lazy';
       if (!image.hasAttribute('decoding')) image.decoding = 'async';
     });
-    if (section.id === 'catalogo') await import('./catalog-page.mjs?v=71');
+    if (section.id === 'catalogo') await import('./catalog-page.mjs?v=72');
     if (section.id === 'calendario-jubileos') initializeCalendar();
-    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=77');
-    if (section.id === 'arbol-genealogico') await import('./genealogy-page.mjs?v=71');
+    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=78');
+    if (section.id === 'arbol-genealogico') await import('./genealogy-page.mjs?v=73');
     if (section.id === 'dragones') await import('./dragones-page.mjs');
   } catch (error) {
     content.innerHTML = '<p class="loading-message">No se pudo cargar esta sección. Probá actualizar la página.</p>';
