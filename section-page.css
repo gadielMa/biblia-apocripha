@@ -65,6 +65,45 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .prayers-panel h2, .prayers-panel h3 { margin-top: 0; }
 .prayers-body h3 { margin-top: 1.5rem; }
 .prayers-body h3:first-child { margin-top: 0; }
+.comparisons-page { --comparison-paper: #faf8f3; }
+.comparisons-page .prayers-lead { margin: 0 auto 1.25rem; font-size: 1.05rem; line-height: 1.75; }
+.comparisons-page > .prayers-illustration { max-width: 760px; }
+.comparisons-page > .prayers-illustration img { width: 100%; height: auto; }
+.comparisons-page > .prayers-illustration figcaption, .comparison-art-note { margin: .6rem auto 1rem; color: var(--muted); font-size: .82rem; line-height: 1.55; }
+.comparison-nav { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0; }
+.comparison-nav a { padding: .55rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--comparison-paper); font-size: .85rem; text-decoration: none; }
+.comparison-section { margin: 2.5rem 0; scroll-margin-top: 1rem; }
+.comparison-section > header { margin-bottom: 1.25rem; padding-bottom: .8rem; border-bottom: 2px solid #d8c7af; }
+.comparison-section > header h2 { margin: 0 0 .5rem; }
+.comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.comparison-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.comparison-section > .comparison-card { margin-top: 1.5rem; }
+.comparison-media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; padding: .75rem; background: var(--comparison-paper); }
+.comparison-media-single { grid-template-columns: minmax(0, 1fr); }
+.comparison-media figure { min-width: 0; margin: 0; }
+.comparison-media figure a { display: block; }
+.comparison-media img { display: block; width: 100%; height: 185px; object-fit: contain; border-radius: 9px; }
+.comparison-media-single img { height: auto; }
+.comparison-media figcaption { padding: .5rem .2rem .15rem; color: #555044; font-size: .78rem; line-height: 1.4; text-align: center; }
+.comparison-copy { padding: 1.3rem 1.4rem; }
+.comparison-copy h3 { margin: 0 0 1rem; color: var(--blue); line-height: 1.3; text-wrap: balance; }
+.comparison-copy p, .comparison-copy li { font-size: .96rem; line-height: 1.75; }
+.comparison-copy p { margin: .85rem 0; }
+.comparison-copy p:last-child { margin-bottom: 0; }
+.comparison-copy strong { font-weight: 650; }
+.comparison-copy blockquote { margin: 1rem 0; padding: .2rem 1rem; border-left: 3px solid #b2895c; background: var(--comparison-paper); }
+.comparison-sources { padding: 1rem 1.4rem; border-top: 1px solid var(--line); background: #f7f9fa; overflow-wrap: anywhere; }
+.comparison-sources > span { display: block; margin-bottom: .4rem; color: var(--muted); font-size: .7rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.comparison-sources p { margin: .35rem 0; font-size: .8rem; line-height: 1.65; }
+.comparison-copy .greek-image-gallery { margin: 1rem 0; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+.comparison-copy .greek-image-gallery figcaption, .comparison-copy .greek-single-image figcaption { padding: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.4; }
+.comparison-copy .greek-single-image { max-width: 300px; margin-inline: auto; }
+@media (max-width: 800px) {
+  .comparison-grid { grid-template-columns: minmax(0, 1fr); }
+  .comparison-copy, .comparison-sources { padding: 1rem; }
+  .comparison-media img { height: clamp(120px, 27vw, 200px); }
+  .comparison-media-single img { height: auto; }
+}
 .joseph-parallel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
 .joseph-parallel-card { position: relative; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; background: white; }
 .joseph-parallel-card h3 { margin: 0 0 .65rem; padding-right: 2.2rem; }

@@ -1,0 +1,83 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "id": "melkart-heracles",
+      "prompt": "Use case: illustration-story. A single landscape 3:2 comparative encyclopedia illustration showing two labeled-free figures in equal adjacent architectural niches: Melqart of Tyre as a bearded Phoenician god with royal conical headdress and ancient robes; Heracles as bearded Greek hero wearing lion skin and holding lowered wooden club. Distinct figures, ancient Mediterranean background, do not merge them. Refined painterly archaeological fantasy, neutral warm stone setting, muted bronze gold and deep blue, evenly balanced composition, full head and attributes visible, no text or lettering or watermark. Each figure is an artistic interpretation, not a claimed archaeological object. Calm respectful pose, clarity at thumbnail size.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-6cded986-fe24-4b00-ad78-d58b7e809563.png",
+      "destination": "assets/paralelismos/melkart-heracles-v1.png"
+    },
+    {
+      "id": "astarte-afrodita",
+      "prompt": "Use case: illustration-story. A single landscape 3:2 comparative encyclopedia illustration showing two dignified fully clothed ancient goddesses in equal adjacent niches: Astarte in ornate Phoenician ceremonial dress and headdress; Aphrodite/Venus in elegant classical Greek draped robes holding a rose. No nudity. Distinct figures, no merger. Refined painterly archaeological fantasy, neutral warm stone setting, muted bronze gold and deep blue, evenly balanced composition, full head and attributes visible, no text or lettering or watermark. Each figure is an artistic interpretation, not a claimed archaeological object. Calm respectful pose, clarity at thumbnail size.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-fa4c3d68-071c-4162-958e-35cab4dea973.png",
+      "destination": "assets/paralelismos/astarte-afrodita-v1.png"
+    },
+    {
+      "id": "baal-hammon-cronos",
+      "prompt": "Use case: illustration-story. A single landscape 3:2 comparative encyclopedia illustration showing two bearded seated ancient deities in equal adjacent niches: Baal Hammon with North African Punic ceremonial robes and horned headdress; Cronus/Saturn with Greek robe and a small lowered agricultural sickle. No children, no violence. Distinct figures. Refined painterly archaeological fantasy, neutral warm stone setting, muted bronze gold and deep blue, evenly balanced composition, full head and attributes visible, no text or lettering or watermark. Each figure is an artistic interpretation, not a claimed archaeological object. Calm respectful pose, clarity at thumbnail size.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-f76ed701-c0b7-4baf-bb0a-44f2d9c958a5.png",
+      "destination": "assets/paralelismos/baal-hammon-cronos-v1.png"
+    },
+    {
+      "id": "reshef-apolo",
+      "prompt": "Use case: illustration-story. A single landscape 3:2 comparative encyclopedia illustration showing two standing deities in equal adjacent niches: Resheph as a Levantine warrior god with tall ancient headdress, bronze spear lowered, shield; Apollo as youthful classical Greek god with laurel wreath and bow held down. No modern armor. Distinct figures. Refined painterly archaeological fantasy, neutral warm stone setting, muted bronze gold and deep blue, evenly balanced composition, full head and attributes visible, no text or lettering or watermark. Each figure is an artistic interpretation, not a claimed archaeological object. Calm respectful pose, clarity at thumbnail size.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-a39adf0d-06eb-41ce-939e-2553b959e98c.png",
+      "destination": "assets/paralelismos/reshef-apolo-v1.png"
+    },
+    {
+      "id": "baal-shamin-zeus",
+      "prompt": "Use case: illustration-story. Landscape 3:2 encyclopedia illustration: two distinct gods in equal side-by-side niches: Baal Shamin as ancient Levantine sky deity with tall royal headdress and staff; Zeus/Jupiter as Greek bearded mature god in blue robes holding a small stylized lightning bolt. Calm, no combat. Consistent refined painterly classical Mediterranean art, warm stone and muted antique gold/deep blue palette, clear silhouette and recognizable attributes, generous margins, full subject in frame, dignified rather than cartoon. No text, labels, watermark or borders. Artistic interpretation.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-2e582228-1e92-4572-9198-349e66317962.png",
+      "destination": "assets/paralelismos/baal-shamin-zeus-v1.png"
+    },
+    {
+      "id": "el-urano",
+      "prompt": "Use case: illustration-story. Landscape 3:2 encyclopedia illustration: comparative artistic board, two distinct elderly celestial figures: El as bearded Levantine patriarch deity seated in ornate ancient robe; Uranus/Caelus as classical Greek sky personification with starry mantle. A visible stone column separates them, no suggestion that they are literally one figure. Consistent refined painterly classical Mediterranean art, warm stone and muted antique gold/deep blue palette, clear silhouette and recognizable attributes, generous margins, full subject in frame, dignified rather than cartoon. No text, labels, watermark or borders. Artistic interpretation.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-4f79dbf3-230d-442d-8248-102c1df4c0ac.png",
+      "destination": "assets/paralelismos/el-urano-v1.png"
+    },
+    {
+      "id": "fosforo",
+      "prompt": "Use case: illustration-story. Landscape 3:2 encyclopedia illustration: one classical Greek personification Phosphoros / Eosphoros, young fully clothed man holding a torch toward a small bright morning star, rose-blue dawn sky above Mediterranean horizon, simple landscape, no wings, no devil, no solar globe. Consistent refined painterly classical Mediterranean art, warm stone and muted antique gold/deep blue palette, clear silhouette and recognizable attributes, generous margins, full subject in frame, dignified rather than cartoon. No text, labels, watermark or borders. Artistic interpretation.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-74952e4b-d720-4eaf-8aa7-aaf4627be6fe.png",
+      "destination": "assets/paralelismos/fosforo-v1.png"
+    },
+    {
+      "id": "hidra",
+      "prompt": "Use case: illustration-story. Landscape 3:2 encyclopedia illustration: the Lernaean Hydra as a huge sinuous many-headed water serpent emerging from a reed-filled ancient Greek marsh below rocky hills, formidable but no victims, rich blue green and bronze painterly realism, no human figures. Consistent refined painterly classical Mediterranean art, warm stone and muted antique gold/deep blue palette, clear silhouette and recognizable attributes, generous margins, full subject in frame, dignified rather than cartoon. No text, labels, watermark or borders. Artistic interpretation.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-e542d518-3b00-4014-b37d-c22f18367ff5.png",
+      "destination": "assets/paralelismos/hidra-v1.png"
+    },
+    {
+      "id": "hecate",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 comparative encyclopedia asset: Hecate, fully clothed classical Greek goddess in dark blue robes holding two upright torches at an ancient three-way crossroads at night, single woman, moonlit cypress trees, calm dignified face, no babies or violence. Refined painterly realism, antique stone and warm gold / deep blue palette matching a classical mythology atlas, detailed fabric and recognizable attributes, complete main subject with generous margins, readable at thumbnail size. No text, labels, watermark, border or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-d9da020c-3371-46ad-a922-55a58726b0de.png",
+      "destination": "assets/paralelismos/hecate-v1.png"
+    },
+    {
+      "id": "pan",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 comparative encyclopedia asset: Pan, classical Greek rustic god, adult bearded male with small goat horns and goat legs, modestly clothed at hips in woven rustic fabric, sitting on a rock playing reed pipes in an Arcadian grove. Friendly contemplative rather than demonic, no devil wings or fire. Refined painterly realism, antique stone and warm gold / deep blue palette matching a classical mythology atlas, detailed fabric and recognizable attributes, complete main subject with generous margins, readable at thumbnail size. No text, labels, watermark, border or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-1c59259c-9906-4ddc-88b3-e458df96da45.png",
+      "destination": "assets/paralelismos/pan-v1.png"
+    },
+    {
+      "id": "dioniso",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 comparative encyclopedia asset: Dionysus, fully clothed youthful adult Greek god wearing ivy wreath and rich burgundy robe, holding a shallow wine cup and a thyrsus staff topped with pinecone, grape vines in ancient courtyard, calm dignified, no intoxication or orgy. Refined painterly realism, antique stone and warm gold / deep blue palette matching a classical mythology atlas, detailed fabric and recognizable attributes, complete main subject with generous margins, readable at thumbnail size. No text, labels, watermark, border or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-fb74167a-c483-4a1f-bd99-ad8144153f7d.png",
+      "destination": "assets/paralelismos/dioniso-v1.png"
+    },
+    {
+      "id": "hermes",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 comparative encyclopedia asset: Hermes as classical Greek messenger, fully clothed young adult male in short traveler tunic and cloak, petasos travel hat with subtle small wings, holding a herald staff, standing at a sunlit ancient crossroads, clear readable attributes, no modern clothing. Refined painterly realism, antique stone and warm gold / deep blue palette matching a classical mythology atlas, detailed fabric and recognizable attributes, complete main subject with generous margins, readable at thumbnail size. No text, labels, watermark, border or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-092d6667-b200-40be-b62f-ed921adb9e17.png",
+      "destination": "assets/paralelismos/hermes-v1.png"
+    },
+    {
+      "id": "ares-atenea",
+      "prompt": "Use case: illustration-story. Single landscape 3:2 comparative encyclopedia asset: Ares and Athena as TWO separate dignified fully clothed Greek figures standing side by side in adjacent niches: Ares in bronze helmet and cuirass with lowered spear; Athena in crested helmet and ivory robe with round shield and owl nearby. No combat or victims. Refined painterly realism, antique stone and warm gold / deep blue palette matching a classical mythology atlas, detailed fabric and recognizable attributes, complete main subject with generous margins, readable at thumbnail size. No text, labels, watermark, border or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-40070df9-c89d-4bd2-b70e-1da98d73606b.png",
+      "destination": "assets/paralelismos/ares-atenea-v1.png"
+    }
+  ]
+}
