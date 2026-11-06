@@ -1,0 +1,53 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "id": "armaros",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Armaros, a fallen Watcher of 1 Enoch, solemn dark-haired winged angel in weathered bronze robes carefully untying luminous knotted cords above an ancient stone tablet, symbolizing the undoing of enchantments; stormy Mount Hermon landscape at dusk, contemplative not demonic, no horns. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue lighting. One individual only, face and identifying objects unobstructed, full wings within generous frame margins, medium-wide composition readable on mobile. Interpretation artistique, not documentary. No typography, no letters, no watermark, no collage. Save as a local image and report the file path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-4b75578c-4cc1-440b-af04-c9d96717f1d8.png",
+      "destination": "assets/celestiales/armaros-v1.png"
+    },
+    {
+      "id": "shamsiel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Shamsiel, a Watcher of 1 Enoch teaching signs of the sun: copper-winged angel in ochre robes holding an unlettered circular solar instrument, observing a bright low sun above ancient mountain ridges, scholarly and solemn. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue lighting. One individual only, face and identifying objects unobstructed, full wings within generous frame margins, medium-wide composition readable on mobile. Interpretation artistique, not documentary. No typography, no letters, no watermark, no collage. Save as a local image and report the file path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-227bed48-9dd2-4768-9b8f-4132cd3c8c90.png",
+      "destination": "assets/celestiales/shamsiel-v1.png"
+    },
+    {
+      "id": "raziel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Raziel, angel of divine secrets in Jewish mystical tradition, majestic winged figure in sapphire and ivory robes holding a closed radiant ancient book close to his heart, stars and subtle geometric light in an ancient stone study; no readable writing. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue lighting. One individual only, face and identifying objects unobstructed, full wings within generous frame margins, medium-wide composition readable on mobile. Interpretation artistique, not documentary. No typography, no letters, no watermark, no collage. Save as a local image and report the file path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-a8d6b5cc-1672-4311-aabb-6e490dfcdaf9.png",
+      "destination": "assets/celestiales/raziel-v1.png"
+    },
+    {
+      "id": "jofiel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Jophiel / Jofiel, archangel of wisdom and beauty in later angelology, luminous androgynous winged figure in gold and ivory, holding an open unlettered book and a small warm lamp, tranquil celestial garden, distinct gentle face. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue lighting. One individual only, face and identifying objects unobstructed, full wings within generous frame margins, medium-wide composition readable on mobile. Interpretation artistique, not documentary. No typography, no letters, no watermark, no collage. Save as a local image and report the file path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-8a4252a7-b6f2-4802-bf5a-b68ac8acc573.png",
+      "destination": "assets/celestiales/jofiel-v1.png"
+    },
+    {
+      "id": "zadkiel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Zadkiel, archangel of mercy in later mystical angelology, mature dark-skinned winged figure in violet and ivory robes, extending a welcoming open hand, holding a small luminous violet chalice in the other, dawn above a tranquil stone courtyard. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue shadows. One individual only, face and identifying objects unobstructed, generous frame margins, medium-wide composition readable on mobile. Artistic interpretation. No typography, letters, watermark, collage. Save as a local image and report path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-a509a459-053e-4bb4-834c-90d1fc9c4162.png",
+      "destination": "assets/celestiales/zadkiel-v1.png"
+    },
+    {
+      "id": "chamuel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Chamuel, archangel associated with love and peace in modern esoteric devotion, serene winged figure with dark curly hair in soft rose and gold robes, holding a pink rose at the chest and offering an olive branch, warm light in a quiet garden. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue shadows. One individual only, face and identifying objects unobstructed, generous frame margins, medium-wide composition readable on mobile. Artistic interpretation. No typography, letters, watermark, collage. Save as a local image and report path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-c602146e-a10c-4f30-a43b-39b8532044ef.png",
+      "destination": "assets/celestiales/chamuel-v1.png"
+    },
+    {
+      "id": "barachiel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Barachiel, archangel of blessings in Orthodox iconographic tradition, solemn winged figure with auburn hair in ivory and emerald robes, a WHITE ROSE visibly placed at the breast, hands gently extended in a gesture of blessing, luminous clouds. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue shadows. One individual only, face and identifying objects unobstructed, generous frame margins, medium-wide composition readable on mobile. Artistic interpretation. No typography, letters, watermark, collage. Save as a local image and report path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-9df37817-b6bd-448f-8f6a-d217ea32c7e5.png",
+      "destination": "assets/celestiales/barachiel-v1.png"
+    },
+    {
+      "id": "jehudiel",
+      "prompt": "Use case: stylized-concept. Individual landscape 3:2 sacred encyclopedia card illustration. Subject: Jehudiel, archangel in Orthodox iconographic tradition, regal winged figure in burgundy and gold robes holding a small GOLDEN CROWN in the right hand and a discreet whip of THREE RED THONGS hanging loosely in the left, calm nonviolent pose before golden celestial architecture. Painterly cinematic realism, detailed feathers and fabric, antique gold and deep blue shadows. One individual only, face and identifying objects unobstructed, generous frame margins, medium-wide composition readable on mobile. Artistic interpretation. No typography, letters, watermark, collage. Save as a local image and report path.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-68dd2f99-5c40-4a21-8d85-5d7d9317670f.png",
+      "destination": "assets/celestiales/jehudiel-v1.png"
+    }
+  ]
+}

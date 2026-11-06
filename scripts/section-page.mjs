@@ -1,46 +1,46 @@
 const sections = [
-  ['abraham-y-jesus', 'Abraham y Yashua', 'abraham-jesus.html', 'prayers-view', 'Paralelismos entre los relatos de Abraham e Isaac y las lecturas cristianas sobre Yashua.'],
-  ['adan-y-jesus', 'Adán y Yashua', 'adan-jesus.html', 'prayers-view', 'Comparación de Adán y Yashua en textos bíblicos y lecturas posteriores.'],
-  ['animales-extintos', 'Animales extintos', 'animales-extintos.html', 'extinct-view', 'Animales y criaturas de textos antiguos, con identificación y contexto.'],
-  ['arbol-genealogico', 'Árbol genealógico', 'arbol-genealogico.html', 'genealogy-view', 'Genealogías bíblicas y las dos líneas que Mateo y Lucas trazan hasta Jesús.'],
-  ['arca-de-noe', 'Arca de Noé', 'arca-noe.html', 'extinct-view', 'El relato del diluvio, el Arca y sus tradiciones relacionadas.'],
-  ['ascendidos', 'Ascendidos', 'ascendidos.html', 'extinct-view', 'Personajes que los textos describen como llevados al cielo o trasladados.'],
-  ['biblia-y-grecia', 'Dioses y paralelismos', 'biblia-grecia.html', 'prayers-view', 'Comparaciones entre figuras bíblicas y divinidades fenicias, griegas y romanas.'],
+  ['abraham-y-jesus', 'Abraham y Yashua', 'abraham-jesus.html', 'prayers-view', ''],
+  ['adan-y-jesus', 'Adán y Yashua', 'adan-jesus.html', 'prayers-view', ''],
+  ['animales-extintos', 'Animales Perdidos [7]', 'animales-extintos.html', 'extinct-view', 'Animales y criaturas de textos antiguos, con identificación y contexto.'],
+  ['arbol-genealogico', 'Árbol genealógico', 'arbol-genealogico.html', 'genealogy-view', ''],
+  ['arca-de-noe', 'Arca de Noé', 'arca-noe.html', 'extinct-view', ''],
+  ['ascendidos', 'Ascendidos', 'ascendidos.html', 'extinct-view', ''],
+  ['biblia-y-grecia', 'Dioses y paralelismos', 'biblia-grecia.html', 'prayers-view', ''],
   ['biblia-manipulada', 'Biblia manipulada', 'biblia-manipulada.html', 'prayers-view', 'Fuentes, editores, relatos paralelos y diferencias internas en la composición de los libros bíblicos.'],
-  ['calendario-jubileos', 'Calendario Los Jubileos', 'calendario-jubileos.html', 'jubilee-calendar-view', 'Calendario de 364 días presentado en el Libro de los Jubileos.'],
+  ['calendario-jubileos', 'Calendario Los Jubileos', 'calendario-jubileos.html', 'jubilee-calendar-view', ''],
   ['campanas', 'Campanas', 'campanas.html', 'prayers-view', 'La historia, los símbolos y las tradiciones vinculadas con las campanas.'],
   ['catalogo', 'Catálogo', 'catalogo.html', 'catalog-view', 'Obras bíblicas y extracanónicas reunidas en el catálogo.'],
-  ['celestiales', 'Celestiales', 'celestiales.html', 'extinct-view', 'Ángeles, órdenes y criaturas celestiales, con sus fuentes y tradiciones.'],
+  ['celestiales', 'Celestiales', 'celestiales.html', 'extinct-view', ''],
   ['diablos', 'Diablos [33]', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
   ['dioses-de-pueblos', 'Dioses de pueblos', 'dioses-de-pueblos.html', 'extinct-view', 'Divinidades de Canaán, Filistea, Fenicia y Moab, y sus relaciones con otras tradiciones.'],
   ['dioses-hindues', 'Dioses hindúes', 'dioses-hindues.html', 'prayers-view', 'Horus y Garuda, Amón y Vishnu, Ptah y Brahma: comparación de animales, atributos e imágenes.'],
-  ['dragones', 'Dragones', 'dragones.html', 'dragon-view', 'Dragones y criaturas monstruosas en Daniel, la Biblia y los textos extracanónicos.'],
-  ['el-pan-de-vida', 'El pan de vida', 'el-pan-de-vida.html', 'prayers-view', 'La cita de Juan 6:35 y el pan descrito en Ezequiel 4:9.'],
-  ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Yashua (ye-shú-a) es la forma hebrea del nombre de Jesús; Yahushúa (ya-hu-shú-a) es su forma plena relacionada. Los antiguos escribas quisieron llamar a Yashua como Yeshúa o Yehoshúa para ocultar que Yahweh (YHWH) es Yashúa, entonces cambiaron la fonética de la palabra. El griego Iēsous pasó al latín Iesus y de allí al español Jesús. Usar Yashua o Yahushúa resalta sus raíces lingüísticas semíticas.'],
-  ['nacimiento-de-jesus', 'El nacimiento de Yashua', 'nacimiento-jesus.html', 'prayers-view', 'Relatos y cronologías propuestos para el nacimiento y la muerte de Yashua.'],
+  ['dragones', 'Dragones', 'dragones.html', 'dragon-view', ''],
+  ['el-pan-de-vida', 'El pan de vida', 'el-pan-de-vida.html', 'prayers-view', ''],
+  ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Yashua (ya-shú-a) es la forma hebrea del nombre de Jesús; Yahushúa (ya-hu-shú-a) es su forma plena. Los antiguos escribas quisieron llamar a Yashua como Yeshúa o Yehoshúa para ocultar que Yahweh (YHWH) es Yashúa, entonces cambiaron la fonética de la palabra de Ya Ye. El griego Iēsous pasó al latín Iesus y de allí al español Jesús. Usar Yashua o Yahushúa resalta sus raíces lingüísticas semíticas.'],
+  ['nacimiento-de-jesus', 'El nacimiento de Yashua', 'nacimiento-jesus.html', 'prayers-view', ''],
   ['enoc', 'Enoc', 'enoc.html', 'enoch-view', 'Lectura y contexto de las tradiciones de Enoc.'],
   ['gnosticismo', 'Gnosticismo', 'gnosticismo.html', 'extinct-view', 'Textos gnósticos, sus figuras y sus propias visiones del mundo.'],
   ['gigantes-nefilim', 'Gigantes Nefilim', 'gigantes-nefilim.html', 'nephilim-view', 'Gigantes bíblicos, nombres del Libro de los Gigantes, Vigilantes y paralelos con la mitología griega.'],
   ['infiernos', 'Infiernos [5]', 'infiernos.html', 'extinct-view', 'Imágenes del mundo de los muertos y del juicio en distintas obras.'],
   ['inscripcion-frankfurt', 'Inscripción de Frankfurt', 'inscripcion-frankfurt.html', 'prayers-view', 'El amuleto de plata de Frankfurt y la inscripción que conserva.'],
-  ['israel-vs-juda', 'Israel vs Judá', 'israel-juda.html', 'extinct-view', 'La historia de los reinos de Israel y Judá y sus tradiciones.'],
-  ['joseph-y-yeshua', 'Joseph y Yashua', 'joseph-yeshua.html', 'prayers-view', 'Paralelismos entre José de Egipto y Jesús en la lectura tipológica cristiana.'],
+  ['israel-vs-juda', 'Israel vs Judá', 'israel-juda.html', 'extinct-view', ''],
+  ['joseph-y-yeshua', 'Joseph y Yashua', 'joseph-yeshua.html', 'prayers-view', ''],
   ['judea', 'Judea', 'judea.html', 'prayers-view', 'Lugares, acontecimientos y contexto histórico de Judea.'],
-  ['cara-de-dios', 'La cara de Elah', 'cara-de-dios.html', 'face-view', 'Textos y representaciones sobre cómo se describe la presencia divina.'],
+  ['cara-de-dios', 'La cara de Elaha', 'cara-de-dios.html', 'face-view', 'Textos y representaciones sobre cómo se describe la presencia divina.'],
   ['linea-de-tiempo', 'Línea de tiempo', 'linea-tiempo.html', 'timeline-view', 'Recorrido cronológico por relatos bíblicos, textos extracanónicos y contexto histórico.'],
   ['lamec-y-yeshua', 'Lamec y Yashúa', 'lamec-yeshua.html', 'prayers-view', 'El contraste entre la venganza de Lamec y el perdón que enseña Yashúa.'],
   ['los-13-discipulos', 'Los 13 discípulos', 'los-13-discipulos.html', 'prayers-view', 'María Magdalena, los Doce apóstoles y el simbolismo del número trece.'],
   ['lugares-perdidos', 'Lugares perdidos [12]', 'lugares-perdidos.html', 'extinct-view', 'Lugares antiguos, tradiciones y sitios cuya identificación se discute.'],
   ['manifestaciones', 'Manifestaciones', 'manifestaciones.html', 'manifestations-view', 'Nuestra Señora del Pilar, Guadalupe y Coromoto: relatos de manifestaciones marianas y sus objetos de devoción.'],
   ['moises-y-yeshua', 'Moisés y Yashua', 'moises-yeshua.html', 'prayers-view', 'El gesto de Séfora en Éxodo 4 y el lavatorio de pies realizado por Yashua en Juan 13.'],
-  ['objetos', 'Objetos [9]', 'objetos.html', 'extinct-view', 'Objetos, reliquias y elementos materiales de las tradiciones bíblicas.'],
-  ['objetos-de-jesus', 'Objetos de Jesús', 'objetos-jesus.html', 'extinct-view', 'El sudario, las sandalias y la túnica en los evangelios y las tradiciones sobre Jesús.'],
+  ['objetos', 'Objetos [8]', 'objetos.html', 'extinct-view', 'Objetos, reliquias y elementos materiales de las tradiciones bíblicas.'],
+  ['objetos-de-jesus', 'Objetos de Jesús [4]', 'objetos-jesus.html', 'extinct-view', 'El sudario, las sandalias, la túnica y la Sábana Santa de Turín en los evangelios y las tradiciones sobre Jesús.'],
   ['oraciones', 'Oraciones [3]', 'oraciones.html', 'prayers-view', 'Oraciones cristianas y sus textos de origen.'],
-  ['pedro-traidor', 'Pedro traidor', 'pedro-traidor.html', 'prayers-view', 'Pedro, Judas y María Magdalena: relatos canónicos y extracanónicos.'],
-  ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', 'Las piedras grabadas de Ica, las interpretaciones sobre sus imágenes y el contexto arqueológico.'],
+  ['pedro-traidor', 'Pedro traidor', 'pedro-traidor.html', 'prayers-view', ''],
+  ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', ''],
   ['profecias', 'Profecías', 'profecias.html', 'prophecies-view', 'Textos proféticos y sus interpretaciones posteriores.'],
   ['sabana-santa', 'Sábana Santa', 'sabana-santa.html', 'extinct-view', 'La reliquia de Turín, su historia documentada y los estudios sobre ella.'],
-  ['simbologia', 'Simbología', 'simbologia.html', 'prayers-view', 'El pez cristiano, las letras ΙΧΘΥΣ y su significado en la tradición cristiana.']
+  ['simbologia', 'Simbología', 'simbologia.html', 'prayers-view', '']
 ].map(([id, title, file, className, description]) => ({ id, title, file, className, description }));
 
 const params = new URLSearchParams(location.search);
@@ -124,7 +124,6 @@ function initializeCalendar() {
     };
 
     document.getElementById(id('today-date')).textContent = `${cycleDay - offset + 1} de ${monthNames[month]}, año ${yearNumber}`;
-    document.getElementById(id('today-meta')).textContent = todayMeta;
     document.getElementById(id('day-number')).textContent = dayNumber;
     document.getElementById(id('prev')).addEventListener('click', () => {
       if (shownMonth === 0) { shownMonth = monthLengths.length - 1; shownYear--; } else shownMonth--;

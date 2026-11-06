@@ -1,0 +1,29 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "id": "baraqel",
+      "prompt": "Use case: stylized-concept. Create ONE landscape 3:2 illustration for an encyclopedia card about Watchers, matching rich painterly realism of a biblical atlas. Subject: Baraqel / Baraqijal, one of the Watchers of Enoch, a mature olive-skinned man with short black beard and dark feathered wings, standing on a rocky mountain observatory and studying an unlettered bronze celestial sphere beneath sharply visible constellations. Indigo robe with bronze details. Distinct portrait, contemplative, night blue with golden starlight. Astrology is suggested symbolically, no lightning powers. One character only, distinctive face and composition, no chained group scene, no other angels. All important features within frame, detailed natural feathers, cinematic yet restrained gold/blue lighting, readable at small size. Artistic interpretation. No text, letters, watermark, collage or borders.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-a2243651-0eca-4d51-944b-2cf1246434bc.png",
+      "destination": "assets/nefilim/baraqel-v1.png"
+    },
+    {
+      "id": "tamiel",
+      "prompt": "Use case: stylized-concept. Create ONE landscape 3:2 illustration for an encyclopedia card about Watchers, matching rich painterly realism of a biblical atlas. Subject: Tamiel / Tumiel, one of the Watchers of Enoch. Original symbolic portrait, not a claim of a specific textual attribute: a dark-skinned clean-shaven mature winged man with tightly curled short hair, wearing ochre and ivory ancient robes, seated alone on a weathered mountain terrace amid silver clouds, wings partly folded. Quiet overcast daylight, ancient rocky landscape. Hands resting naturally on knees, no magical tools or invented powers. One character only, distinctive face and composition, no chained group scene, no other angels. All important features within frame, detailed natural feathers, cinematic yet restrained gold/blue lighting, readable at small size. Artistic interpretation. No text, letters, watermark, collage or borders.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-94246d4c-ed3e-47af-9d56-fd88cd6da216.png",
+      "destination": "assets/nefilim/tamiel-v1.png"
+    },
+    {
+      "id": "ramiel",
+      "prompt": "Use case: stylized-concept. Create ONE landscape 3:2 illustration for an encyclopedia card about Watchers, matching rich painterly realism of a biblical atlas. Subject: Ramiel / Ramel, a Watcher named in Enoch, distinct from the resurrection angel Remiel. Original symbolic portrait without assigning a specific power: a pale olive-skinned older winged man with long silver hair and trimmed silver beard, burgundy and charcoal robes, standing alone on a rocky ridge above misty mountain valleys at twilight. Full dark wings curved behind shoulders, solemn expression, no souls, resurrection, scales or trumpets. One character only, distinctive face and composition, no chained group scene, no other angels. All important features within frame, detailed natural feathers, cinematic yet restrained gold/blue lighting, readable at small size. Artistic interpretation. No text, letters, watermark, collage or borders.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-3df6bc57-2258-4161-bb04-851c7e60741f.png",
+      "destination": "assets/nefilim/ramiel-v1.png"
+    },
+    {
+      "id": "kokabiel",
+      "prompt": "Use case: stylized-concept. Create one original landscape 3:2 illustration for the biblical encyclopedia card 'Kokabel / Kokabiel', a Watcher in 1 Enoch associated with knowledge of constellations. Show a single distinctive winged male figure, mature with long dark auburn hair tied loosely back and short auburn beard, wearing deep teal ancient robes with understated silver embroidery. He stands in three-quarter profile on a rugged mountain at night, one open hand gesturing toward prominent star constellations in the dark blue sky. Constellations are subtle thin lines between bright stars, NOT zodiac text or symbols. Beautiful broad charcoal-and-silver feathered wings frame the figure; torso, face and hand clear and anatomically natural. A quiet human pupil seen small from behind may be omitted: prefer ONLY the Watcher for a clear portrait. Painterly cinematic realism consistent with premium sacred illustrations, crisp feather and cloth details, silver moonlight and restrained warm rim light. Different appearance and composition from a man using an armillary globe: no globe, no books, no sun or moon portals, no architecture, no sphinx, no chained angels, no planets, no galaxies crowding sky. Face, gesture and constellations readable at card size with generous margins. Artistic interpretation not literal historical depiction. No text, no watermark, no borders, no collage.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-65491708-2319-4521-bbfd-0d74acadd68d.png",
+      "destination": "assets/nefilim/kokabiel-v1.png"
+    }
+  ]
+}

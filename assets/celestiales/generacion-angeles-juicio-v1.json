@@ -1,0 +1,41 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "id": "temeluchus",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Temeluchus / Temlakos, care-taking angel from the Apocalypse of Peter: solemn compassionate mature angel with olive skin and short dark hair, ivory and muted bronze robes, broad pale wings sheltering a cluster of small luminous abstract lights held safely above his open palms, quiet garden at the edge of a distant judgment landscape. Lights symbolize souls, no babies, no injured people, no violence. Protective guardian rather than monster. Premium painterly cinematic realism, ancient fabrics, natural feather detail, gold and blue palette. One main person, distinctive face and composition, full important objects in frame, generous margins, readable at thumbnail size. Symbolic artistic interpretation of apocalyptic literature. No text, letters, watermark, collage or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-793fa898-5e39-4df2-947d-9673d5228669.png",
+      "destination": "assets/celestiales/temeluchus-v1.png"
+    },
+    {
+      "id": "ezrael",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Ezrael, angel of wrath in the Ethiopic Apocalypse of Peter: stern dark-skinned winged adult in charcoal and deep copper robes standing at the threshold of a monumental dark stone gate illuminated by restrained distant fire. Holds a simple lowered staff; judgment conveyed through posture, not violence. No scythe, no skeletons, no tortured bodies, no gore. Strong individual face. Premium painterly cinematic realism, ancient fabrics, natural feather detail, gold and blue palette. One main person, distinctive face and composition, full important objects in frame, generous margins, readable at thumbnail size. Symbolic artistic interpretation of apocalyptic literature. No text, letters, watermark, collage or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-dec77d50-9a49-4084-8fab-155b4daaf409.png",
+      "destination": "assets/celestiales/ezrael-v1.png"
+    },
+    {
+      "id": "barakiel-juicio",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Barakiel of Sibylline Oracles II, an immortal angel who gathers souls for judgment: black-haired bearded winged figure in deep blue and silver standing on a misty path, raising a small silver lantern toward abstract distant soul-lights emerging from fog. No roses or iconography of the Orthodox blessing angel, no chained fallen Watchers, no torture. Premium painterly cinematic realism, ancient fabrics, natural feather detail, gold and blue palette. One main person, distinctive face and composition, full important objects in frame, generous margins, readable at thumbnail size. Symbolic artistic interpretation of apocalyptic literature. No text, letters, watermark, collage or modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-b2a1c1b5-648f-4503-b373-2db9991b20bf.png",
+      "destination": "assets/celestiales/barakiel-juicio-v1.png"
+    },
+    {
+      "id": "ramiel-juicio",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Ramiel of Sibylline Oracles II, angel gathering souls for judgment, distinct portrayal from the fallen Watcher Ramiel: mature olive-skinned clean-shaven man with shoulder-length brown hair, broad white wings, ivory and violet robes, standing at the top of luminous marble steps emerging from mist, one hand gesturing toward a distant radiant court. Pale dawn light; no silver-haired dark-winged fallen angel, no chains. Premium painterly cinematic realism, ancient fabrics, feather details, gold and blue undertones. Single main angel, distinctive face and composition, important objects within generous frame margins, readable at card size. Artistic interpretation: garments and props are symbolic, not a claim of textual description. No torture, injured bodies, text, letters, watermark, collage, modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-3110062f-f154-4425-9945-ee023f67ce03.png",
+      "destination": "assets/celestiales/ramiel-juicio-v1.png"
+    },
+    {
+      "id": "samiel-juicio",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Samiel of Sibylline Oracles II, angel among those gathering souls before judgment. Solemn older winged figure with tawny skin, cropped silver hair and short silver beard, deep green and bronze robes, holds a CLOSED unlettered bronze-bound book symbolically before a shadowy valley, distant radiant horizon. Portrait at right of composition facing left, striking bronze wings, no horns or demonic features. Do not depict Satan or a fallen Watcher. Premium painterly cinematic realism, ancient fabrics, feather details, gold and blue undertones. Single main angel, distinctive face and composition, important objects within generous frame margins, readable at card size. Artistic interpretation: garments and props are symbolic, not a claim of textual description. No torture, injured bodies, text, letters, watermark, collage, modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-a43e0817-1e3e-4d5e-a269-8dab6f3afac1.png",
+      "destination": "assets/celestiales/samiel-juicio-v1.png"
+    },
+    {
+      "id": "azael-juicio",
+      "prompt": "Use case: stylized-concept. One landscape 3:2 encyclopedia card illustration. Azael of Sibylline Oracles II, angel named among those bringing souls to judgment. Young adult winged figure with brown skin and long black braided hair, burgundy and ivory robes with gold clasps, walking through a monumental pale stone colonnade above clouds, one hand extended guiding luminous abstract distant soul-lights toward a bright court. Noble upright figure, no chains, no teaching weapons, not the bound Azazel of Enoch. Premium painterly cinematic realism, ancient fabrics, feather details, gold and blue undertones. Single main angel, distinctive face and composition, important objects within generous frame margins, readable at card size. Artistic interpretation: garments and props are symbolic, not a claim of textual description. No torture, injured bodies, text, letters, watermark, collage, modern objects.",
+      "source": "/Users/gadiel/.codex/generated_images/01a1adea-0602-78d3-ba59-2452f10967fb/exec-9075e0ae-bbb0-4f17-983f-77ba06ccddb0.png",
+      "destination": "assets/celestiales/azael-juicio-v1.png"
+    }
+  ]
+}

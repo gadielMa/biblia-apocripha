@@ -52,6 +52,7 @@ h1, h2, h3, h4 { line-height: 1.18; }
 .section-picker-links a[href="seccion.html?tema=calendario-jubileos"]:hover { box-shadow: 0 9px 20px #101d2b52; }
 .section-picker-links a[aria-current="page"] { border-color: #fff2e1fa; background: linear-gradient(120deg, #ffeed8fc, #e0a37dfa); color: #38271f; }
 .section-main { width: min(1280px, calc(100% - 2rem)); min-height: 65vh; flex: 1 0 auto; margin: 0 auto 2rem; padding: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--line); border-radius: 18px; background: var(--paper); box-shadow: 0 14px 42px #1b2b3f0c; }
+.section-main:has(> .timeline-view) { width: 100%; max-width: none; margin-inline: 0; padding: 1rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .section-main h1 { margin: 0; font-size: clamp(1.8rem, 3.5vw, 2.6rem); letter-spacing: -.035em; }
 .section-description { max-width: 920px; margin: .5rem 0 1.1rem; color: var(--muted); font-size: clamp(.95rem, 1.5vw, 1.05rem); }
 .loading-message { color: var(--muted); }
@@ -109,6 +110,19 @@ figure.messiah-book-art.birth-feature-art > img { display: block; width: 100%; m
 .kingdoms-banner figcaption { margin-top: .4rem; color: var(--muted); font-size: .78rem; }
 .extinct-card, .prophecy-card, .face-evidence { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #fbfcfd; }
 .extinct-card-image, .prophecy-card-image { display: block; width: 100%; max-height: 380px; object-fit: cover; }
+.extinct-view#celestiales-view .extinct-card-image { height: auto; object-fit: contain; }
+.people-region { margin: 2rem 0; }
+.people-region-layout { display: grid; grid-template-columns: minmax(240px, 340px) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+.people-map { min-width: 0; margin: 0; padding: .65rem; border: 1px solid var(--line); border-radius: 16px; background: #f5f1e8; }
+.people-map > a { display: block; }
+.people-map img { display: block; width: 100%; height: auto; border-radius: 9px; }
+.people-map figcaption { padding: .65rem .2rem .15rem; font-size: .85rem; line-height: 1.5; color: var(--muted); }
+.people-map figcaption a { display: inline-block; margin-left: .3rem; }
+.people-map-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 850px; margin: 1rem auto 1.5rem; align-items: start; }
+@media (max-width: 760px) {
+  .people-region-layout, .people-map-pair { grid-template-columns: minmax(0, 1fr); }
+  .people-map { width: min(100%, 460px); box-sizing: border-box; justify-self: center; }
+}
 .prophecies-intro > .prophecies-image { display: block; width: min(100%, 1100px); max-width: 100%; height: auto; max-height: 460px; margin: .8rem 0 1rem; border-radius: 12px; object-fit: contain; }
 .extinct-card-body, .prophecy-card { padding: 1rem; }
 .extinct-card h3, .prophecy-card h3 { margin: .2rem 0 .55rem; }
@@ -387,3 +401,6 @@ td:nth-child(2) { min-width: 280px; }
 .manifestations-view .manifestation-image-link { display: block; background: #eef1f4; }
 .manifestations-view .extinct-card-image { height: 380px; max-height: none; object-fit: contain; }
 .manifestations-view .manifestation-image-link:focus-visible { outline: 3px solid #205b59; outline-offset: -3px; }
+
+/* Mapa general de Dioses de pueblos, completo en todos los anchos. */
+.people-map.people-overview-map { width: 100%; max-width: none; margin: 0 0 1.5rem; box-sizing: border-box; }
