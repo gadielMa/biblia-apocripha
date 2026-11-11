@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="1000" viewBox="0 0 750 1000" role="img" aria-labelledby="title desc">
+<title id="title">Amón y los amonitas</title><desc id="desc">Esquema orientativo del sur del Levante. Amón se sitúa al este del Jordán y al norte de Moab, con su capital Rabá, actual Ammán.</desc>
+<rect width="750" height="1000" fill="#f4ecd9"/><rect x="25" y="25" width="700" height="950" rx="8" fill="none" stroke="#96866a" stroke-width="2"/>
+<g font-family="Georgia, serif" fill="#344139" text-anchor="middle"><text x="375" y="85" font-size="40">AMÓN</text><text x="375" y="125" font-size="20">Ubicación aproximada · Edad del Hierro</text></g>
+<path d="M25 170H185L170 285 145 410 100 565 60 710H25Z" fill="#b5d5dc" stroke="#83acb6" stroke-width="2"/>
+<path d="M363 170 C345 245 385 280 365 350 S350 440 370 520 L363 603" fill="none" stroke="#83acb6" stroke-width="7"/>
+<path d="M346 597 Q386 573 397 635 L385 750 Q370 791 340 771 L330 659Z" fill="#b5d5dc" stroke="#83acb6" stroke-width="2"/>
+<ellipse cx="525" cy="470" rx="135" ry="140" fill="#b5be8c" opacity=".7"/>
+<path d="M390 543 Q460 530 490 580 T710 605" fill="none" stroke="#83acb6" stroke-width="4"/>
+<g font-family="Georgia, serif" fill="#344139" font-size="25"><text x="490" y="412" font-size="38">AMÓN</text><circle cx="525" cy="490" r="7"/><text x="545" y="489">Rabá</text><text x="545" y="518" font-size="19">(Ammán)</text><circle cx="280" cy="623" r="6"/><text x="117" y="618">Jerusalén</text><text x="488" y="763" font-size="32">MOAB</text><text x="220" y="410" font-size="21">Jordán</text><text x="410" y="570" font-size="19">Jaboc / Zarqa</text><text x="350" y="841" font-size="23">Mar Muerto</text><text transform="translate(80 505) rotate(-77)" font-size="22" fill="#426d7a">Mar Mediterráneo</text></g>
+<path d="M656 263V198M645 215L656 196 667 215" fill="none" stroke="#344139" stroke-width="3"/><text x="656" y="185" font-family="Georgia, serif" font-size="23" text-anchor="middle" fill="#344139">N</text>
+<g font-family="sans-serif" font-size="18" fill="#605a4b" text-anchor="middle"><text x="375" y="910">Esquema geográfico · sin escala</text><text x="375" y="940">El sombreado no delimita fronteras históricas.</text></g></svg>
