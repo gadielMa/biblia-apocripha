@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v90';
+const CACHE = 'biblia-universal-v91';
 const APP_SHELL = [
   './',
   './index.html',
@@ -43,6 +43,7 @@ self.addEventListener('fetch', event => {
     url.pathname.includes('/assets/celestiales/') ||
     url.pathname.includes('/assets/manifestaciones/') ||
     url.pathname.includes('/assets/paralelismos/') ||
+    url.pathname.includes('/assets/dioses-hindues/') ||
     url.pathname.includes('/assets/objetos-seres/') ||
     url.pathname.includes('/assets/timeline/') ||
     url.pathname.endsWith('/scripts/section-page.mjs') ||

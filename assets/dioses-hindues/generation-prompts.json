@@ -1,17 +1,31 @@
 {
   "tool": "image_gen.imagegen (integrado)",
+  "note": "Ilustraciones modernas revisadas por el usuario; semejanzas visuales no implican identidad histórica.",
   "images": [
     {
       "path": "assets/dioses-hindues/horus-garuda.jpg",
-      "prompt": "Use case: historical-scene. Asset type: landscape diptych illustration for comparative religious iconography website, exactly two deities and each one's own traditional attributes. Primary request: Two distinct figures side by side: LEFT Horus, Egyptian male human body with falcon head, double crown of Egypt, linen kilt and ankh, Nile temple. RIGHT Garuda, Hindu divine eagle-man, golden eagle beak, majestic feathered wings and human torso, Indian ornaments, Hindu temple. A discreet cobra on the right below Garuda evokes his opposition to nagas. Clearly different traditions; neither figure is Vishnu. No shared invented attributes. Style: refined detailed painterly museum educational illustration, warm gold and deep blue, equal visual prominence, respectful religious imagery. Wide 3:2 composition, two complete figures visible without cropped crowns, clear central separation. No text, labels, watermarks or claims of historical identity. The illustration compares iconography and is not an ancient artifact."
+      "source": "exec-fd8dcbe2-95eb-4a0a-ad52-8bc3c399ef75.png",
+      "final_edit_prompt": "Cabezas de ave del mismo color, disco solar y aureola; una serpiente muerta a los pies de cada figura."
     },
     {
       "path": "assets/dioses-hindues/amon-vishnu.jpg",
-      "prompt": "Use case: historical-scene. Asset type: landscape diptych illustration for comparative religious iconography website, exactly two deities and each one's own traditional attributes. Primary request: Two distinct figures side by side: LEFT Amun in his blue-skinned HUMAN-headed Egyptian form, two tall feather crown, linen kilt, was scepter, a ram beside him, Egyptian temple. RIGHT Vishnu, blue-skinned HUMAN-headed Hindu god, four arms holding conch, chakra disc, lotus and mace, golden crown, the multihooded serpent Shesha behind him, Indian temple. Amun has exactly two arms. Vishnu has exactly four arms. Ram only beside Amun; Shesha only beside Vishnu. No tridents, no bird heads. Style: refined detailed painterly museum educational illustration, warm gold and deep blue, equal visual prominence, respectful religious imagery. Wide 3:2 composition, two complete figures visible without cropped crowns, clear central separation. No text, labels, watermarks or claims of historical identity. The illustration compares iconography and is not an ancient artifact."
+      "source": "exec-5e0c9132-2d96-4c7b-97f3-d5d2bff29bad.png",
+      "final_edit_prompt": "Mismo azul de piel; Amón-Ra con disco solar y Vishnú con aureola; loto azul a la izquierda y rosa a la derecha."
     },
     {
       "path": "assets/dioses-hindues/ptah-brahma.jpg",
-      "prompt": "Use case: historical-scene. Asset type: landscape diptych illustration for comparative religious iconography website, exactly two deities and each one's own traditional attributes. Primary request: Two distinct creator deities side by side: LEFT Ptah, Egyptian green-faced HUMAN head, tight skullcap and close-fitting white mummiform garment, both hands holding his characteristic combined was-djed-ankh staff, a black Apis bull with white forehead mark nearby, Egyptian temple. RIGHT Brahma, mature bearded Hindu creator seated on a lotus, four heads indicated by three visible human faces and one implied rear face, four arms with water pot, rosary and manuscript, white hamsa goose beside him, Indian temple. Do not give Brahma a bull or trident. Do not give Ptah a bird head. Style: refined detailed painterly museum educational illustration, warm gold and deep blue, equal visual prominence, respectful religious imagery. Wide 3:2 composition, two complete figures visible without cropped crowns, clear central separation. No text, labels, watermarks or claims of historical identity. The illustration compares iconography and is not an ancient artifact."
+      "source": "exec-eccda190-5a38-4d6c-994c-0fe4eab961a2.png",
+      "final_edit_prompt": "Lotos azules; cetro compuesto y collar de Ptah; Vedas y rosario de Brahma; Apis y hamsa."
+    },
+    {
+      "path": "assets/dioses-hindues/atum-shiva.jpg",
+      "source": "exec-d64be019-162d-4d10-a874-3d8fe5de18e6.png",
+      "final_edit_prompt": "Ambos toros blancos, cobra en la corona de Atum y en el cuello de Shiva; cuentas rudraksha visibles."
+    },
+    {
+      "path": "assets/dioses-hindues/serapis-yama.jpg",
+      "source": "exec-65feaada-a010-42c3-a654-1db8ef030d13.png",
+      "final_edit_prompt": "Ambos con el mismo modius dorado, por elección artística; Cerbero y búfalo; cetros y lazo."
     }
   ]
 }

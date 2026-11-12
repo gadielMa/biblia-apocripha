@@ -13,7 +13,7 @@ const sections = [
   ['celestiales', 'Celestiales', 'celestiales.html', 'extinct-view', ''],
   ['diablos', 'Diablos [33]', 'diablos.html', 'extinct-view', 'Nombres, figuras y tradiciones sobre adversarios espirituales.'],
   ['dioses-de-pueblos', 'Dioses de pueblos', 'dioses-de-pueblos.html', 'extinct-view', 'Divinidades de Canaán, Filistea, Fenicia, Moab y Amón, y sus relaciones con otras tradiciones.'],
-  ['dioses-hindues', 'Dioses hindúes', 'dioses-hindues.html', 'prayers-view', 'Horus y Garuda, Amón y Vishnu, Ptah y Brahma; Kali, sus batallas y Shiva bajo sus pies.'],
+  ['dioses-hindues', 'Dioses egipcios/hindúes', 'dioses-hindues.html', 'prayers-view', 'Atum y Shiva, Horus y Garuda, Amón y Vishnú, Ptah y Brahma, Serapis y Yama; Kali y sus batallas.'],
   ['dragones', 'Dragones', 'dragones.html', 'dragon-view', ''],
   ['el-pan-de-vida', 'El pan de vida', 'el-pan-de-vida.html', 'prayers-view', ''],
   ['mesias', 'El Mesías', 'mesias.html', 'prayers-view', 'Yahushúa (יְהוֹשֻׁעַ) (ya-hu-shú-a) es la forma hebrea del nombre de Jesús; Yashúa (ya-shú-a) es una abreviación, la última "a" practicamente no se pronuncia. Los antiguos escribas quisieron llamar a Yahushúa como Yeshúa o Yehoshúa para ocultar que Yahweh (YHWH) es Yahushúa, entonces cambiaron la fonética de la palabra de Ya por Ye. El griego Iēsous pasó al latín Iesus y de allí al español Jesús.'],
