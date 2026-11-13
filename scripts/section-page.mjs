@@ -34,7 +34,7 @@ const sections = [
   ['manifestaciones', 'Manifestaciones', 'manifestaciones.html', 'manifestations-view', 'Nuestra Señora del Pilar, Guadalupe y Coromoto: relatos de manifestaciones marianas y sus objetos de devoción.'],
   ['moises-y-yeshua', 'Moisés y Yashua', 'moises-yeshua.html', 'prayers-view', 'El gesto de Séfora en Éxodo 4 y el lavatorio de pies realizado por Yashua en Juan 13.'],
   ['objetos', 'Objetos [9]', 'objetos.html', 'extinct-view', 'Objetos, reliquias y elementos materiales de las tradiciones bíblicas.'],
-  ['objetos-de-jesus', 'Objetos de Jesús [4]', 'objetos-jesus.html', 'extinct-view', 'El sudario, las sandalias, la túnica y la Sábana Santa de Turín en los evangelios y las tradiciones sobre Jesús.'],
+  ['objetos-de-jesus', 'Objetos de Jesús [5]', 'objetos-jesus.html', 'extinct-view', 'El sudario, las sandalias, la túnica y la Sábana Santa de Turín en los evangelios y las tradiciones sobre Jesús.'],
   ['oraciones', 'Oraciones [11]', 'oraciones.html', 'prayers-view', 'Oraciones cristianas y sus textos de origen.'],
   ['pedro-traidor', 'Pedro traidor', 'pedro-traidor.html', 'prayers-view', ''],
   ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', ''],
