@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "prompts": [
+    [
+      "cruz",
+      "Landscape 3:2 editorial illustration, refined painterly realism, bronze gold and deep blue matching a comparative religious history website. Two separate museum-style subjects: left an ancient Assyrian limestone stela inspired by Shamshi-Adad V, bearded king in tall cap seen in profile with a clearly visible equal-armed flared cross pendant on his chest; right a close-up of a white wool papal pallium displaying small dark embroidered crosses, against a neutral ecclesiastical architectural background. Emphasize the two cross shapes, no person on right, no labels, no lettering, no watermark. Artist-created comparison of ancient and later religious forms, not a photograph or claim of historical derivation."
+    ],
+    [
+      "cayados",
+      "Landscape 3:2 editorial illustration, refined painterly realism, warm gold and bronze with deep blue shadows. A balanced comparison in two separate halves: left ancient Egyptian royal black-and-gold statuette with nemes headdress, holding a long slender shepherd's crook with a clearly curved hook at the top and a flail in the other hand; right an anonymous Catholic bishop in white-gold vestments and mitre holding a traditional long episcopal crozier with a clearly curved hook at the top. Frame both figures from knees upward so both staff tops and held shafts are fully visible. Clearly distinct historical settings, Egyptian sandstone on left and softly blurred church interior on right. Accurate elegant forms, no text, no labels, no watermark, no identifiable modern person. An original artistic comparison, not documentary photography."
+    ]
+  ]
+}

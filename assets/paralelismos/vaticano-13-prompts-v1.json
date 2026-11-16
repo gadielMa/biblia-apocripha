@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "prompts": [
+    [
+      "gestos",
+      "Use case: illustration-story. Original landscape 3:2 editorial comparison for an art history website. Two clearly separate balanced scenes, refined painterly realism with gold mosaic and deep blue tones: left, a Byzantine-inspired Christ Pantocrator mosaic figure from chest upward, clothed in red and blue robes, cross halo, holding closed book in left hand and raising right hand in blessing with index and middle fingers extended and other fingers folded. Make the raised hand anatomically clear. Right, a museum engraving-inspired Baphomet figure after Eliphas Levi, goat head, horns and torch between horns, wings, torso fully covered in a modest robe, one arm raised with index and middle fingers extended and other fingers folded, other hand pointing down. Frame from waist upward to emphasize the hands. Do not merge the figures or invent a shared shrine. No text, labels, watermark or claims of provenance. Artistic comparison of hand positions, not documentary photography."
+    ],
+    [
+      "gesto-666",
+      "Use case: illustration-story. Original landscape 3:2 contemporary symbolic editorial illustration. A single anatomically correct adult hand, palm forward, thumb and index finger touching to form a circle, other three fingers extended upward. Neutral dark-blue background, warm gold side lighting and detailed natural skin. To the side, the exact numerals '666' rendered once in restrained bronze lettering on a separate plain stone panel. This is an openly contemporary graphic association of a hand shape and numerals, no historical artifact, no religious person, no clergy, no logos, no stock watermark, no other text. Elegant restrained painterly realism matching a comparative symbolism website."
+    ]
+  ]
+}

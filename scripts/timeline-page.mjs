@@ -234,6 +234,7 @@ if (timelineTrack) {
     ['siglo 5 a. C. · 445 a. C.', 'Nehemías reconstruye los muros', 'Nehemías organiza la reconstrucción de las murallas de Jerusalén.', 'Nehemías 1–6', 'lectura/?obra=rvr1909-nehemias&capitulo=1', 'exile'],
     ['entre los siglos 6 y 5 a. C.', 'El mundo del Segundo Templo', 'Judea vive bajo imperios sucesivos; se desarrollan distintas corrientes y textos judíos.', 'Daniel 7 · contexto histórico', 'lectura/?obra=rvr1909-daniel&capitulo=7', 'exile'],
     ['c. 1 a. C. · fecha aproximada', 'La anunciación a María', 'Gabriel anuncia a María el nacimiento de Jesús. 1 Enoc presenta al Hijo del Hombre en una visión anterior: es un paralelo temático, no el relato de la anunciación.', 'Lucas 1:26–38 · paralelo temático: 1 Enoc 48:2–7', 'lectura/?obra=rvr1909-lucas&capitulo=1', 'jesus'],
+    ['antes del nacimiento de Jesús · relato apócrifo del siglo II', 'Cristo toma la forma de Gabriel y entra en María', 'En la Epístola de los Apóstoles, Cristo explica que tomó la forma del ángel Gabriel, se apareció a María y habló con ella. María creyó; después, él entró en su cuerpo y se hizo carne. El relato presenta a Cristo como su propio mensajero durante la encarnación.', 'Epístola de los Apóstoles 13–14', 'lectura/?obra=epistle-apostles-es&capitulo=14', 'jesus', 'assets/timeline/encarnacion-gabriel-maria-v1.png'],
     ['11 de septiembre de 1 a. C. · hipótesis', 'Jesús bebé', 'Mateo y Lucas sitúan el nacimiento de Jesús en Belén y narran sus primeros años. La fecha exacta es una hipótesis, no una fecha establecida por los Evangelios.', 'Lucas 2:1–20 · Mateo 1:18–25', 'lectura/?obra=rvr1909-lucas&capitulo=2', 'jesus'],
     ['genealogías de Jesús · comparación de relatos', 'Mateo y Lucas trazan linajes diferentes', 'Mateo 1 va de Abraham a Jesús y pasa por David y Salomón; Lucas 3 recorre la ascendencia desde Jesús hasta Adán y Dios, pasando por David y Natán. Mateo llama Jacob al padre de José; Lucas lo vincula con Heli. Juan no presenta una genealogía humana: su prólogo habla del Verbo preexistente. Son genealogías distintas. También hay una tensión cronológica entre el nacimiento bajo Herodes en Mateo y el censo de Quirinio en Lucas; se explica en la comparación enlazada.', 'Mateo 1:1–17; Lucas 3:23–38; Juan 1:1–18', 'seccion.html?tema=biblia-manipulada#genealogias-jesus', 'jesus'],
     ['infancia de Jesús · relato de Mateo', 'Huida a Egipto', 'Un ángel advierte a José en sueños que Herodes buscará al niño para matarlo. José sale de noche con María y Jesús rumbo a Egipto.', 'Mateo 2:13–15', 'lectura/?obra=rvr1909-mateo&capitulo=2#pasaje-2-13', 'jesus'],
@@ -565,6 +566,8 @@ if (timelineTrack) {
   moveOrderAfter('Los discípulos tocan a Jesús para comprobar que no es un fantasma', 'Las Apariciones post-Resurrección');
   moveOrderBefore('Muerte de Simón el Zelote', 'Muerte de Pedro');
   moveOrderBefore('Muerte de Judas Tadeo', 'Muerte de Pedro');
+  moveOrderBefore('Cristo toma la forma de Gabriel y entra en María', 'Jesús bebé');
+  moveOrderBefore('La anunciación a María', 'Cristo toma la forma de Gabriel y entra en María');
   const timelineImages = {
     'Israel aparece en la estela de Merneptah': ['assets/timeline/estela-merneptah-museo.png', 'Estela de Merneptah de granito oscuro con jeroglíficos, expuesta en una sala de museo'],
     'La vid del Edén según 3 Baruc': ['assets/timeline/3-baruc-vid-edén.png', 'Samael planta una vid en el jardín del Edén, según la tradición apócrifa de 3 Baruc'],
@@ -653,6 +656,7 @@ if (timelineTrack) {
     'Isaías y Emanuel': ['assets/timeline/isaias-emanuel.jpg', 'Isaías habla ante el rey Acaz mientras una mujer sostiene a su hijo'],
     'Daniel en el foso de los leones': ['assets/timeline/daniel-foso-leones.jpg', 'Daniel permanece a salvo entre los leones en el foso'],
     'La caída de Jericó': ['assets/extintos/muros-jerico-v2.jpg', 'Las murallas de Jericó se derrumban ante el pueblo de Israel'],
+    'Cristo toma la forma de Gabriel y entra en María': ['assets/timeline/encarnacion-gabriel-maria-v1.png', 'Representación simbólica de Cristo bajo apariencia angélica, convertido en luz que se dirige al vientre cubierto de María'],
     'La anunciación a María': ['assets/timeline/anunciacion-maria.jpg', 'El ángel Gabriel anuncia a María el nacimiento de Jesús'],
     'Los leones guían a la Sagrada Familia': ['assets/timeline/infancia-pseudomateo-leones.png', 'Leones y un leopardo acompañan a María, José y Jesús niño durante la huida por el desierto'],
     'La palmera ofrece sus frutos a la Sagrada Familia': ['assets/timeline/infancia-pseudomateo-palmera.png', 'La Sagrada Familia recoge dátiles durante su viaje por el desierto'],
@@ -864,6 +868,32 @@ if (timelineTrack) {
       quotation.append(document.createTextNode('Deuteronomio 32:8 - NTV'), document.createElement('br'));
       quotation.append(document.createTextNode('Cuando el Altísimo asignó territorios a las naciones, cuando dividió a la raza humana, fijó los límites de los pueblos según el número de su corte celestial.'));
       description.replaceChildren(quotation);
+    }
+    if (item[1] === 'Cristo toma la forma de Gabriel y entra en María') {
+      const badge = card.querySelector('.source-badge');
+      badge.className = 'source-badge apocryphal';
+      badge.textContent = 'Relato apócrifo';
+      const parallels = [
+        ['Corán 19:17–22', 'https://quran.com/maryam/17-22', 'Dios envía a María su Espíritu, que se presenta con apariencia humana y anuncia un hijo puro. El mensajero se identifica tradicionalmente con Gabriel.'],
+        ['Corán 21:91', 'https://quran.com/al-anbya/91', 'María guarda su castidad; Dios insufla de su Espíritu y hace de ella y de su hijo un signo para los pueblos.'],
+        ['Corán 66:12', 'https://quran.com/at-tahrim/12', 'El pasaje recuerda a María, hija de Imrán, su castidad y la insuflación del Espíritu divino.'],
+        ['Lucas 1:26–38', 'lectura/?obra=rvr1909-lucas&capitulo=1#pasaje-1-26', 'Gabriel anuncia el nacimiento de Jesús; el Espíritu Santo vendrá sobre María y el poder del Altísimo la cubrirá con su sombra.']
+      ];
+      parallels.forEach(([reference, href, text]) => {
+        const paragraph = document.createElement('p');
+        paragraph.className = 'timeline-description';
+        const label = document.createElement('strong');
+        label.textContent = `${reference}: `;
+        paragraph.append(label, document.createTextNode(text));
+        const link = document.createElement('a');
+        link.href = href;
+        link.textContent = reference;
+        if (href.startsWith('https://')) {
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+        }
+        card.append(paragraph, link);
+      });
     }
     const specificTimelineImage = timelineImages[item[1]];
     let image = card.querySelector('.timeline-image');

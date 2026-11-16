@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "prompts": [
+    {
+      "asset": "vaticano-05-mitra-apkallu-v2.png",
+      "prompt": "Edit Image 1, the target illustration of a Catholic mitre beside an ordinary fish head. Preserve the white-and-gold mitre on the left, its dark plinth, warm bronze and blue painterly style and overall composition. Replace only the fish-head object on the right with a full standing bearded ancient Mesopotamian fish-cloaked sage, inspired by the left ancient figure and right fish-cloaked figure in Image 2 (reference only). The figure has a human face visible beneath an entire fish head worn as a hood, fish mouth rising above his forehead, scaled fish skin draped down his back like a long cloak with tail near calves, human arms and legs, ankle-length ancient robe, small bucket in one hand. Pose in three-quarter profile so the fish hood silhouette is clearly comparable to the mitre. Render as an elegant ancient bronze statuette on the same right-hand plinth. Use reference for fish-cloak anatomy only. No cartoons of clergy, no copied text, no arrows, no lettering, no accusations or labels. This is an artistic comparison of shapes. Keep landscape 3:2."
+    },
+    {
+      "asset": "vaticano-09-gigante-atacama-v1.png",
+      "prompt": "Use case: illustration-story. Landscape 3:2 editorial illustration for a discussion of Pope Francis's Chile 2018 vestments and the Atacama Giant. Consistent style: refined painterly realism, warm bronze and cream, deep blue shadows, restrained gold. Compose a clearly separated visual comparison: on the left a white Catholic chasuble on a wooden hanger with a sand-colored central vertical band, a small cross near the upper chest and a small simple embroidered white anthropomorphic Atacama Giant motif below, upright stick-like human with outstretched angular arms and radiating straight lines around a rectangular head; on the right the real-world Cerro Unita desert hillside evoked with the large standing anthropomorphic Atacama Giant geoglyph traced on its slope. Accurate minimal geometric motif rather than alien creature, no demonic embellishments, no pope or identifiable person, no text, no labels, no watermark. Clearly an artistic illustration, not documentary evidence."
+    }
+  ]
+}

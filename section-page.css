@@ -443,3 +443,28 @@ td:nth-child(2) { min-width: 280px; }
 
 /* Mapa general de Dioses de pueblos, completo en todos los anchos. */
 .people-map.people-overview-map { width: 100%; max-width: none; margin: 0 0 1.5rem; box-sizing: border-box; }
+
+/* Biblia programada */
+.programmed-bible .comparison-card { scroll-margin-top: 1.5rem; }
+.programmed-bible cite { display: block; margin: .6rem 0; color: var(--muted); font-size: .85rem; }
+.programmed-bible pre { max-width: 100%; overflow-x: auto; padding: 1rem; border-radius: 10px; background: #edf2f5; font-size: .85rem; line-height: 1.7; }
+.programmed-bible :not(pre) > code { padding: .1rem .3rem; border-radius: 4px; background: #edf2f5; overflow-wrap: anywhere; }
+
+/* Todas las Religiones */
+.religions-page .comparison-card { scroll-margin-top: 1.5rem; }
+.religions-coincidence { padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+.religions-matches { margin: 0; padding: 0; list-style: none; }
+.religions-matches li { padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.religions-matches li:last-child { padding-bottom: 0; border-bottom: 0; }
+
+.religions-page .prayers-illustration { max-width: 840px; margin: 1.4rem auto; }
+.religions-page .prayers-illustration img { width: 100%; height: auto; max-height: none; }
+.religions-page .prayers-illustration figcaption { margin-top: .6rem; color: var(--muted); font-size: .82rem; line-height: 1.55; }
+
+.religions-page .religions-detail { color: var(--muted); font-size: .85rem; }
+.religions-page .comparison-copy cite { display: block; margin-bottom: .6rem; color: var(--muted); font-size: .85rem; }
+.religions-page article[id] { scroll-margin-top: 1.5rem; }
+
+/* Placa de nombres en la cabecera del catálogo */
+.catalog-names-banner { margin: 0 auto 1.5rem; }
+.catalog-names-banner img { display: block; width: auto; max-width: 100%; height: auto; max-height: 420px; margin-inline: auto; border-radius: 12px; }

@@ -7,6 +7,7 @@ const sections = [
   ['ascendidos', 'Ascendidos', 'ascendidos.html', 'extinct-view', ''],
   ['biblia-y-grecia', 'Dioses y paralelismos', 'biblia-grecia.html', 'prayers-view', ''],
   ['biblia-manipulada', 'Biblia manipulada', 'biblia-manipulada.html', 'prayers-view', 'Fuentes, editores, relatos paralelos y diferencias internas en la composición de los libros bíblicos.'],
+  ['biblia-programada', 'Biblia programada', 'biblia-programada.html', 'prayers-view', '13 paralelismos entre los relatos bíblicos, la programación y el ciclo de vida del software.'],
   ['calendario-jubileos', 'Calendario Los Jubileos', 'calendario-jubileos.html', 'jubilee-calendar-view', ''],
   ['campanas', 'Campanas', 'campanas.html', 'prayers-view', 'La historia, los símbolos y las tradiciones vinculadas con las campanas.'],
   ['catalogo', 'Catálogo', 'catalogo.html', 'catalog-view', 'Obras bíblicas y extracanónicas reunidas en el catálogo.'],
@@ -40,6 +41,8 @@ const sections = [
   ['piedras-de-ica', 'Piedras de Ica', 'piedras-ica.html', 'ica-view', ''],
   ['profecias', 'Profecías', 'profecias.html', 'prophecies-view', 'Textos proféticos y sus interpretaciones posteriores.'],
   ['sabana-santa', 'Sábana Santa', 'sabana-santa.html', 'extinct-view', 'La reliquia de Turín, su historia documentada y los estudios sobre ella.'],
+  ['todas-las-religiones', 'Todas las Religiones', 'todas-las-religiones.html', 'prayers-view', 'Creación, destrucción y mundo de los muertos en las tradiciones egipcia, nórdica, hindú y maya k’iche’, en paralelo con la Biblia.'],
+  ['vaticano-satanico', 'Vaticano Satanico', 'vaticano-satanico.html', 'prayers-view', 'Historia, arquitectura, símbolos antiguos, vestiduras y objetos religiosos.'],
   ['simbologia', 'Simbología', 'simbologia.html', 'prayers-view', '']
 ].map(([id, title, file, className, description]) => ({ id, title, file, className, description }));
 
@@ -74,7 +77,7 @@ if (!section) {
     });
     if (section.id === 'catalogo') await import('./catalog-page.mjs?v=72');
     if (section.id === 'calendario-jubileos') initializeCalendar();
-    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=78');
+    if (section.id === 'linea-de-tiempo') await import('./timeline-page.mjs?v=80');
     if (section.id === 'arbol-genealogico') await import('./genealogy-page.mjs?v=73');
     if (section.id === 'dragones') await import('./dragones-page.mjs');
   } catch (error) {

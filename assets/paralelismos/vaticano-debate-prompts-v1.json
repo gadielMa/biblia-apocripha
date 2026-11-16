@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "purpose": "Ocho ilustraciones para el debate previo a la sección sobre el Vaticano.",
+  "prompts": [
+    {
+      "name": "01-roma",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Vatican and Rome geographically: recognizable St Peter's Basilica dome and square in foreground, continuous city of Rome beyond with distant ancient Roman ruins and Colosseum. Warm late afternoon, architectural panorama. No battle, no demons or allegations."
+    },
+    {
+      "name": "02-aula-serpiente",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Visual comparison diptych with no text: left, symmetrical interior of the Paul VI audience hall, distinctive concrete ribbed vaulted ceiling sweeping toward the front stage, lateral oval window forms; right, naturalistic close-up of a snake's head with its two eyes, viewed frontally. Clearly separate the architecture from the animal; do not morph the building into a literal snake. Neutral architectural and natural history comparison."
+    },
+    {
+      "name": "03-obelisco",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Egyptian obelisk at the center of Saint Peter's Square in Vatican City, tall undecorated reddish granite monolith with a small cross on top, Bernini colonnades and basilica in background. Clear upright perspective and warm light. Evoke its ancient Egyptian origin through material and form, do not invent hieroglyphs."
+    },
+    {
+      "name": "04-sol-ra",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Visual comparison diptych without text: ancient Egyptian falcon-headed Ra with a round red-gold solar disk and cobra above his head, rendered like a museum relief on one side; a historical Christian golden sunburst monstrance with clear central circular host and small cross above on the other. Distinct objects on neutral dark museum backgrounds, accurate iconographic attributes, no insinuation that they are the same deity."
+    },
+    {
+      "name": "05-mitra-pez",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. A neutral morphology comparison for religious headwear: a tall white and gold episcopal mitre with two pointed lobes seen from side and slightly above, standing on a dark museum plinth; alongside a naturalistic upright fish head with open mouth, displayed as a separate natural-history illustration. Calm warm museum lighting, visibly separate subjects. Do not depict any invented Egyptian fish god or claim a historical origin."
+    },
+    {
+      "name": "06-espiral-triangular",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Minimal neutral educational illustration of one dark blue triangular inward spiral resembling a rounded triangular maze, on cream paper laid on a museum research desk, soft light and subtle paper texture. A generic geometric diagram with no surrounding church, clergy, people, sexual imagery, seals, police credentials, FBI logo, incriminating labels or other symbols. No text."
+    },
+    {
+      "name": "07-resurreccion",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Artistic architectural study of Pericle Fazzini's La Resurrezione in the Paul VI audience hall: monumental bronze and brass explosion of jagged branches and rocks, a central human figure of Christ rising with arms open, abstract flowing drapery and expressive bronze surfaces. Front view of the stage, warm wall and restrained lighting. No pope, no demon, no horns or devil imagery, faithfully evoke the existing sculpture as religious modern art."
+    },
+    {
+      "name": "08-pigna",
+      "prompt": "Use case: illustration-story. Create a standalone landscape 3:2 editorial illustration for a critical discussion of Vatican history and symbolism. Refined painterly realism, consistent warm stone and bronze, deep blue shadows, restrained gold light. No lettering, captions, watermarks or invented documentary markings. Treat as an openly artistic illustration, not photographic evidence. Faithful painterly architectural illustration of the Cortile della Pigna in the Vatican Museums: colossal weathered green bronze pine cone on a carved stone base, two smaller bronze peacocks symmetrically flanking it, huge warm ochre semicircular niche behind and broad marble staircase in foreground. No staff or walking stick, no deity, no occult additions."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-const CACHE = 'biblia-universal-v91';
+const CACHE = 'biblia-universal-v107';
 const APP_SHELL = [
   './',
   './index.html',

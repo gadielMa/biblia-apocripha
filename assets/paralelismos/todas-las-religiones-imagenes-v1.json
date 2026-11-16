@@ -1,0 +1,22 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "style": "Ilustraciones editoriales de religión comparada, azul profundo y dorado, composición horizontal.",
+  "prompts": [
+    {
+      "name": "creacion",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for a comparative religion library website. Style: refined painterly digital illustration, deep midnight blue, warm parchment gold, realistic textures, dramatic but restrained lighting, respectful mythological imagery. Wide 3:2 landscape composition, no text, no letters, no watermarks, no logos. Standalone finished image. Theme: LA CREACION, shared creation motifs. Show primordial dark ocean beneath an empty cosmic sky, a brilliant golden beam of first light opening through darkness and defining a new horizon, a mound of new earth rising from the waters, a subtle lotus and a long serpent upon the water. Depict the shared motifs of Egyptian Nun, Hindu cosmic waters and Shesha, Maya creation by word and Genesis light over the waters. Harmonious coherent scene, symbolic rather than presenting a single deity as belonging to every religion."
+    },
+    {
+      "name": "infierno",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for a comparative religion library website. Style: refined painterly digital illustration, deep midnight blue, warm parchment gold, realistic textures, dramatic but restrained lighting, respectful mythological imagery. Wide 3:2 landscape composition, no text, no letters, no watermarks, no logos. Standalone finished image. Theme: EL INFIERNO, shared underworld motifs. Show a solemn cavernous underworld with a dark red river and a narrow stone bridge descending toward ancient stone doorways. One shadowy dog guards the passage, distant roots and a restrained serpentine dragon silhouette, sharp obsidian-like rock formations. Evoke Hel, Naraka, Xibalba and Duat through darkness, dangerous waters, guardians and paths. No suffering bodies, no gore, no torture, no horned cartoon devil. Rich atmospheric depth and readable uncluttered composition."
+    },
+    {
+      "name": "fin",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for a comparative religion library website. Style: refined painterly digital illustration, deep midnight blue, warm parchment gold, realistic textures, dramatic but restrained lighting, respectful mythological imagery. Wide 3:2 landscape composition, no text, no letters, no watermarks, no logos. Standalone finished image. Theme: EL FIN / APOCALIPSIS, destruction and cosmic renewal. Show the old world dissolving in a dark storm and distant fire on one side, the ocean swallowing broken ancient stone structures, transitioning naturally into a new green earth rising from calm waters beneath a radiant golden dawn on the other side. Evoke Ragnarok, Egyptian return to primordial waters, Hindu cosmic dissolution and biblical new heaven and earth. One coherent panoramic symbolic scene, epic but serene, no modern city, no people in distress."
+    },
+    {
+      "name": "otras-coincidencias",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for a comparative religion library website. Style: refined painterly digital illustration, deep midnight blue, warm parchment gold, realistic textures, dramatic but restrained lighting, respectful mythological imagery. Wide 3:2 landscape composition, no text, no letters, no watermarks, no logos. Standalone finished image. Theme: OTRAS COINCIDENCIAS, flood survival, shared sacred knowledge and renewal. Show a sturdy ancient wooden vessel carrying pairs of subtle animal silhouettes across receding flood waters, emerging tree branches and mountain tops, a golden dawn. In foreground on a rocky shore, an open ancient manuscript beside maize ears, a small plain gourd and a sprouting seed. Evoke Noah and Bergelmir's survival by vessel and the Maya maize humanity and gourd episode as a symbolic editorial composition. Coherent naturalistic scene, no unrelated religious logos, no collage borders."
+    }
+  ]
+}
