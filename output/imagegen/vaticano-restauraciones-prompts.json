@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/Users/gadiel/.codex/generated_images/01a1e65d-3e10-7391-a596-1777487c8d4c/exec-73cc3486-6295-41a2-8c1f-ee384137c04c.png",
+    "prompt": "Use case: identity-preserve. Edit target: attached screenshot of Pope Francis facing a woman holding a wooden forked staff. Restore this exact photograph: remove all Instagram and phone interface overlays, crop away bottom interface, improve resolution, reduce compression and noise with natural conservative detail. Preserve exact identities, faces, smiles, poses, clothes, background and especially full geometry of the wooden Y-shaped staff and its crossbar. Do not invent or change fingers, objects or symbolism. Output one clean portrait image, no text.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "path": "/Users/gadiel/.codex/generated_images/01a1e65d-3e10-7391-a596-1777487c8d4c/exec-b8957e34-a4af-4b9c-935e-b963d169b071.png",
+    "prompt": "Use case: identity-preserve. Edit target: screenshot of Pope Francis beside an Asian cleric, both raising hands. Restore this exact photograph: remove all Instagram and phone interface overlays, crop away bottom interface, improve resolution and reduce blur/compression conservatively. Preserve exact people, faces, poses, finger positions, clothing, background, framing and colors. Do not reinterpret or change hand gestures. No additional objects or text. Output one clean portrait photograph.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "path": "/Users/gadiel/.codex/generated_images/01a1e65d-3e10-7391-a596-1777487c8d4c/exec-b678f625-4fe1-4904-b05e-145912dc8b41.png",
+    "prompt": "Use case: illustration-story. Reference: painted wooden folk devil figurine in attached screenshot. Create a detailed museum-style illustration of that folk carving, full body on a modest wooden pedestal, small horns, wings, long beard, aged green-painted wood with faded yellow and red accents, holding a long wooden staff with exactly TWO branches in a Y shape, clearly visible. Neutral dark warm background, soft directional lighting, crisp carved wood grain and paint wear. Centered complete figure, portrait composition. Inspired by reference, not a documentary photo. No people, no Instagram interface, no text or watermark.",
+    "tool": "built-in image_gen"
+  }
+]
